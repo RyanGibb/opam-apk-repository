@@ -1,0 +1,5 @@
+opam-version: "2.0"
+build: [
+  ["curl" "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/ncurses-dev-6.4_p20240420-r0.apk" "-o" "ncurses-dev-6.4_p20240420-r0.apk"]
+  ["sh" "-c" "apk add ./ncurses-dev-6.4_p20240420-r0.apk"]
+]

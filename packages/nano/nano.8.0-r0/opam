@@ -1,0 +1,8 @@
+opam-version: "2.0"
+build: [
+  ["curl" "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/nano-8.0-r0.apk" "-o" "nano-8.0-r0.apk"]
+  ["sh" "-c" "apk add ./nano-8.0-r0.apk"]
+]
+depends: [
+  "ncurses-dev"
+]
