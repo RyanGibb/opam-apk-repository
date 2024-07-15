@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add bacula-13.0.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del bacula"]
+]
+depends: [
+  "bacula-libs"
+  "libstdc++"
+  "lzo"
+  "musl"
+  "zlib"
+  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
+]
+
+extra-source "bacula-13.0.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/bacula-13.0.3-r0.apk"
+}

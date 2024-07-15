@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-apache-session-1.94-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-apache-session"]
+]
+depends: [
+  "perl"
+]
+
+extra-source "perl-apache-session-1.94-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-apache-session-1.94-r1.apk"
+}

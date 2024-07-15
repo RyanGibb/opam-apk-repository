@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add varnish-libs-7.5.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del varnish-libs"]
+]
+depends: [
+  "gcc"
+  "libgcc"
+  "musl"
+  "musl-dev"
+  "pcre2"
+]
+
+extra-source "varnish-libs-7.5.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/varnish-libs-7.5.0-r0.apk"
+}

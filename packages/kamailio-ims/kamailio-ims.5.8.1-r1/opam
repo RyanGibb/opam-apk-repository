@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add kamailio-ims-5.8.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del kamailio-ims"]
+]
+depends: [
+  "kamailio"
+  "libcrypto3"
+  "libmnl"
+  "libssl3"
+  "libxml2"
+  "musl"
+]
+
+extra-source "kamailio-ims-5.8.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/kamailio-ims-5.8.1-r1.apk"
+}

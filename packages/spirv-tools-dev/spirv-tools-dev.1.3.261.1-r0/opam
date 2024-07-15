@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add spirv-tools-dev-1.3.261.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del spirv-tools-dev"]
+]
+depends: [
+  "pkgconf"
+  "spirv-headers"
+  "spirv-tools"
+]
+
+extra-source "spirv-tools-dev-1.3.261.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/spirv-tools-dev-1.3.261.1-r0.apk"
+}

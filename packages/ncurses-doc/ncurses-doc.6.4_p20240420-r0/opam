@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ncurses-doc-6.4_p20240420-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ncurses-doc"]
+]
+
+
+extra-source "ncurses-doc-6.4_p20240420-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/ncurses-doc-6.4_p20240420-r0.apk"
+}

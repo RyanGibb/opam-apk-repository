@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add iputils-20240117-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del iputils"]
+]
+depends: [
+  "iputils-arping"
+  "iputils-clockdiff"
+  "iputils-ping"
+  "iputils-tracepath"
+]
+
+extra-source "iputils-20240117-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/iputils-20240117-r0.apk"
+}

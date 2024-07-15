@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add alsa-lib-dev-1.2.11-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del alsa-lib-dev"]
+]
+depends: [
+  "alsa-lib"
+  "pkgconf"
+]
+
+extra-source "alsa-lib-dev-1.2.11-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/alsa-lib-dev-1.2.11-r0.apk"
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add freeradius-dhcp-3.0.26-r8.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del freeradius-dhcp"]
+]
+depends: [
+  "freeradius"
+  "musl"
+]
+
+extra-source "freeradius-dhcp-3.0.26-r8.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/freeradius-dhcp-3.0.26-r8.apk"
+}

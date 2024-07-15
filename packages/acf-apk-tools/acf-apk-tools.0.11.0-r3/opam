@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add acf-apk-tools-0.11.0-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del acf-apk-tools"]
+]
+depends: [
+  "acf-core"
+  "apk-tools"
+  "lua-posix"
+]
+
+extra-source "acf-apk-tools-0.11.0-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/acf-apk-tools-0.11.0-r3.apk"
+}

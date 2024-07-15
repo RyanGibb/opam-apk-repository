@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gpm-libs-1.20.7-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gpm-libs"]
+]
+depends: [
+  "libncursesw"
+  "musl"
+]
+
+extra-source "gpm-libs-1.20.7-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/gpm-libs-1.20.7-r4.apk"
+}

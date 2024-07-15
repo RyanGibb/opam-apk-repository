@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add abseil-cpp-random-internal-pool-urbg-20230802.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del abseil-cpp-random-internal-pool-urbg"]
+]
+depends: [
+  "abseil-cpp-base"
+  "abseil-cpp-random-internal-randen"
+  "abseil-cpp-random-internal-randen-hwaes-impl"
+  "abseil-cpp-random-internal-randen-slow"
+  "abseil-cpp-random-internal-seed-material"
+  "abseil-cpp-random-seed-gen-exception"
+  "abseil-cpp-spinlock-wait"
+  "libgcc"
+  "libstdc++"
+  "musl"
+]
+
+extra-source "abseil-cpp-random-internal-pool-urbg-20230802.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/abseil-cpp-random-internal-pool-urbg-20230802.1-r0.apk"
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lld-17.0.6-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lld"]
+]
+depends: [
+  "libgcc"
+  "libstdc++"
+  "lld-libs"
+  "llvm17-libs"
+  "musl"
+  "scudo-malloc"
+]
+
+extra-source "lld-17.0.6-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lld-17.0.6-r0.apk"
+}

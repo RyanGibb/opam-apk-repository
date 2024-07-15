@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lua5.4-posixtz-0.5-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lua5.4-posixtz"]
+]
+depends: [
+  "musl"
+]
+
+extra-source "lua5.4-posixtz-0.5-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lua5.4-posixtz-0.5-r4.apk"
+}

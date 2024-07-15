@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add syslog-ng-http-4.7.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del syslog-ng-http"]
+]
+depends: [
+  "glib"
+  "ivykis"
+  "libcurl"
+  "musl"
+  "syslog-ng"
+]
+
+extra-source "syslog-ng-http-4.7.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/syslog-ng-http-4.7.1-r1.apk"
+}

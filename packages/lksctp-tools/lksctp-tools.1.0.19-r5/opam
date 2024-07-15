@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lksctp-tools-1.0.19-r5.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lksctp-tools"]
+]
+depends: [
+  "liblksctp"
+  "musl"
+]
+
+extra-source "lksctp-tools-1.0.19-r5.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lksctp-tools-1.0.19-r5.apk"
+}

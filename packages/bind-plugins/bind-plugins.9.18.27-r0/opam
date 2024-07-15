@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add bind-plugins-9.18.27-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del bind-plugins"]
+]
+depends: [
+  "bind"
+  "musl"
+]
+
+extra-source "bind-plugins-9.18.27-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/bind-plugins-9.18.27-r0.apk"
+}

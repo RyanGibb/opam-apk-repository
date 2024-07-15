@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add clang18-libclang-18.1.6-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del clang18-libclang"]
+]
+depends: [
+  "clang18-headers"
+  "libgcc"
+  "libstdc++"
+  "llvm18-libs"
+  "musl"
+]
+
+extra-source "clang18-libclang-18.1.6-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/clang18-libclang-18.1.6-r0.apk"
+}

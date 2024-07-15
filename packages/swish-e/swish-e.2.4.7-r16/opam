@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add swish-e-2.4.7-r16.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del swish-e"]
+]
+depends: [
+  "musl"
+  "perl-html-parser"
+  "perl-html-tagset"
+  "perl-libwww"
+]
+
+extra-source "swish-e-2.4.7-r16.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/swish-e-2.4.7-r16.apk"
+}

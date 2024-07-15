@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add bluez-hid2hci-5.76-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del bluez-hid2hci"]
+]
+depends: [
+  "dbus"
+  "eudev-libs"
+  "musl"
+]
+
+extra-source "bluez-hid2hci-5.76-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/bluez-hid2hci-5.76-r0.apk"
+}

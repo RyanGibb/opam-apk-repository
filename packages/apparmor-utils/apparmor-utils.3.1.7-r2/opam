@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add apparmor-utils-3.1.7-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del apparmor-utils"]
+]
+depends: [
+  "bash"
+  "libapparmor"
+  "libintl"
+  "musl"
+  "perl"
+  "py3-apparmor"
+  "python3"
+]
+
+extra-source "apparmor-utils-3.1.7-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/apparmor-utils-3.1.7-r2.apk"
+}

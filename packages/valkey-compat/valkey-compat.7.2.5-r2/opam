@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add valkey-compat-7.2.5-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del valkey-compat"]
+]
+depends: [
+  "valkey"
+  "valkey-cli"
+  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
+]
+conflicts: [
+  "redict-compat"
+  "redis"
+]
+extra-source "valkey-compat-7.2.5-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/valkey-compat-7.2.5-r2.apk"
+}

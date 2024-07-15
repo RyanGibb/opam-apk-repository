@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ulogd-xml-2.0.8-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ulogd-xml"]
+]
+depends: [
+  "libnetfilter_acct"
+  "libnetfilter_conntrack"
+  "libnetfilter_log"
+  "musl"
+  "ulogd"
+]
+
+extra-source "ulogd-xml-2.0.8-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/ulogd-xml-2.0.8-r3.apk"
+}

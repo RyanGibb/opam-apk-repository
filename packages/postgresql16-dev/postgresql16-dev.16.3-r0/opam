@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add postgresql16-dev-16.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del postgresql16-dev"]
+]
+depends: [
+  "clang16"
+  "icu-dev"
+  "libecpg-dev"
+  "libpq"
+  "libpq-dev"
+  "llvm16"
+  "lz4-dev"
+  "musl"
+  "openssl-dev"
+  "zstd-dev"
+]
+
+extra-source "postgresql16-dev-16.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/postgresql16-dev-16.3-r0.apk"
+}

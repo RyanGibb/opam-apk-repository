@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-git-svn-2.45.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-git-svn"]
+]
+depends: [
+  "git"
+  "perl-git"
+]
+
+extra-source "perl-git-svn-2.45.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-git-svn-2.45.2-r0.apk"
+}

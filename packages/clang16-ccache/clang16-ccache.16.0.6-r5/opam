@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add clang16-ccache-16.0.6-r5.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del clang16-ccache"]
+]
+
+
+extra-source "clang16-ccache-16.0.6-r5.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/clang16-ccache-16.0.6-r5.apk"
+}

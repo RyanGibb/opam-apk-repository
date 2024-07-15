@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libncurses%2B%2B-6.4_p20240420-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libncurses%2B%2B"]
+]
+
+
+extra-source "libncurses%2B%2B-6.4_p20240420-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libncurses%2B%2B-6.4_p20240420-r0.apk"
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add git-credential-libsecret-2.45.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del git-credential-libsecret"]
+]
+depends: [
+  "git"
+  "glib"
+  "libsecret"
+  "musl"
+]
+
+extra-source "git-credential-libsecret-2.45.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/git-credential-libsecret-2.45.2-r0.apk"
+}

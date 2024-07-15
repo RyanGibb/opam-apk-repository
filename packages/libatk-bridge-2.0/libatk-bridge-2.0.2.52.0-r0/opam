@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libatk-bridge-2.0-2.52.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libatk-bridge-2.0"]
+]
+depends: [
+  "at-spi2-core"
+  "dbus-libs"
+  "glib"
+  "libatk-1.0"
+  "musl"
+]
+
+extra-source "libatk-bridge-2.0-2.52.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libatk-bridge-2.0-2.52.0-r0.apk"
+}

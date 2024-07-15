@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add tinydns-openrc-1.05-r53.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del tinydns-openrc"]
+]
+
+
+extra-source "tinydns-openrc-1.05-r53.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/tinydns-openrc-1.05-r53.apk"
+}

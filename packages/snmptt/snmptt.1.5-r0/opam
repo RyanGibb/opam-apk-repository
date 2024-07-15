@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add snmptt-1.5-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del snmptt"]
+]
+depends: [
+  "perl"
+  "perl-config-inifiles"
+  "perl-list-moreutils"
+  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
+]
+
+extra-source "snmptt-1.5-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/snmptt-1.5-r0.apk"
+}

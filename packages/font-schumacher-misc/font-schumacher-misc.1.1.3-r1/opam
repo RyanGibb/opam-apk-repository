@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add font-schumacher-misc-1.1.3-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del font-schumacher-misc"]
+]
+depends: [
+  "encodings"
+  "font-alias"
+  "fontconfig"
+  "mkfontscale"
+]
+
+extra-source "font-schumacher-misc-1.1.3-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/font-schumacher-misc-1.1.3-r1.apk"
+}

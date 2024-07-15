@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py3-sphinxcontrib-websupport-pyc-1.2.4-r8.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py3-sphinxcontrib-websupport-pyc"]
+]
+depends: [
+  "py3-docutils"
+  "py3-jinja2"
+  "py3-sphinx"
+  "python3"
+]
+
+extra-source "py3-sphinxcontrib-websupport-pyc-1.2.4-r8.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/py3-sphinxcontrib-websupport-pyc-1.2.4-r8.apk"
+}

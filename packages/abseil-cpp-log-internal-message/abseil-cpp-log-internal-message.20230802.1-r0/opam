@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add abseil-cpp-log-internal-message-20230802.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del abseil-cpp-log-internal-message"]
+]
+depends: [
+  "abseil-cpp-base"
+  "abseil-cpp-examine-stack"
+  "abseil-cpp-log-globals"
+  "abseil-cpp-log-internal-format"
+  "abseil-cpp-log-internal-globals"
+  "abseil-cpp-log-internal-log-sink-set"
+  "abseil-cpp-log-internal-proto"
+  "abseil-cpp-raw-logging-internal"
+  "abseil-cpp-strerror"
+  "abseil-cpp-time"
+  "libgcc"
+  "libstdc++"
+  "musl"
+]
+
+extra-source "abseil-cpp-log-internal-message-20230802.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/abseil-cpp-log-internal-message-20230802.1-r0.apk"
+}

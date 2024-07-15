@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add tinc-1.0.36-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del tinc"]
+]
+depends: [
+  "libcrypto3"
+  "lzo"
+  "musl"
+  "zlib"
+]
+
+extra-source "tinc-1.0.36-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/tinc-1.0.36-r6.apk"
+}

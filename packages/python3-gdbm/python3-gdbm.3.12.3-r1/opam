@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add python3-gdbm-3.12.3-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del python3-gdbm"]
+]
+depends: [
+  "gdbm"
+  "libssl3"
+  "musl"
+]
+
+extra-source "python3-gdbm-3.12.3-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/python3-gdbm-3.12.3-r1.apk"
+}

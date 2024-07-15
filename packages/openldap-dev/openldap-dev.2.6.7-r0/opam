@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add openldap-dev-2.6.7-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del openldap-dev"]
+]
+depends: [
+  "cyrus-sasl-dev"
+  "libevent-dev"
+  "libldap"
+  "libsodium-dev"
+  "pkgconf"
+  "util-linux-dev"
+]
+
+extra-source "openldap-dev-2.6.7-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/openldap-dev-2.6.7-r0.apk"
+}

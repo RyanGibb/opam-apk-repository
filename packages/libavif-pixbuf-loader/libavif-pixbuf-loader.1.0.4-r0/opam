@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libavif-pixbuf-loader-1.0.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libavif-pixbuf-loader"]
+]
+depends: [
+  "gdk-pixbuf"
+  "glib"
+  "libavif"
+  "musl"
+]
+
+extra-source "libavif-pixbuf-loader-1.0.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libavif-pixbuf-loader-1.0.4-r0.apk"
+}

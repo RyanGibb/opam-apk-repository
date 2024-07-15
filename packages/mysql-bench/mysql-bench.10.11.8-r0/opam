@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mysql-bench-10.11.8-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mysql-bench"]
+]
+depends: [
+  "mariadb-client"
+]
+
+extra-source "mysql-bench-10.11.8-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/mysql-bench-10.11.8-r0.apk"
+}

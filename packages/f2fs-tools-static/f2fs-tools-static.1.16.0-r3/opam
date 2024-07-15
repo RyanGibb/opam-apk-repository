@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add f2fs-tools-static-1.16.0-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del f2fs-tools-static"]
+]
+
+
+extra-source "f2fs-tools-static-1.16.0-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/f2fs-tools-static-1.16.0-r3.apk"
+}

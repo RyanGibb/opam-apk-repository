@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add nagios-plugins-by_ssh-2.4.5-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del nagios-plugins-by_ssh"]
+]
+depends: [
+  "libcrypto3"
+  "musl"
+  "nagios-plugins"
+  ("openssh-client-default" | "openssh-client-krb5")
+]
+
+extra-source "nagios-plugins-by_ssh-2.4.5-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/nagios-plugins-by_ssh-2.4.5-r1.apk"
+}

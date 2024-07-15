@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add aconf-mod-openssh-0.8.1-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del aconf-mod-openssh"]
+]
+depends: [
+  "aconf"
+  "openssh"
+]
+
+extra-source "aconf-mod-openssh-0.8.1-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/aconf-mod-openssh-0.8.1-r2.apk"
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add kea-hook-flex-option-2.4.1-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del kea-hook-flex-option"]
+]
+depends: [
+  "kea-common"
+  "libgcc"
+  "musl"
+]
+
+extra-source "kea-hook-flex-option-2.4.1-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/kea-hook-flex-option-2.4.1-r2.apk"
+}

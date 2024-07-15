@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add icon-naming-utils-0.8.90-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del icon-naming-utils"]
+]
+depends: [
+  "perl-xml-simple"
+  "pkgconf"
+]
+
+extra-source "icon-naming-utils-0.8.90-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/icon-naming-utils-0.8.90-r4.apk"
+}

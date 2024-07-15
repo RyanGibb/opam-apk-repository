@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xz-doc-5.6.1-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xz-doc"]
+]
+
+
+extra-source "xz-doc-5.6.1-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/xz-doc-5.6.1-r3.apk"
+}

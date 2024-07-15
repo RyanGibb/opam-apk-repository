@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ortp-dev-5.3.38-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ortp-dev"]
+]
+depends: [
+  "ortp"
+  "pkgconf"
+]
+
+extra-source "ortp-dev-5.3.38-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/ortp-dev-5.3.38-r1.apk"
+}

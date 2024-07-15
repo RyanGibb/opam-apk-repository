@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add postgresql15-contrib-jit-15.7-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del postgresql15-contrib-jit"]
+]
+depends: [
+  "postgresql15-contrib"
+]
+
+extra-source "postgresql15-contrib-jit-15.7-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/postgresql15-contrib-jit-15.7-r0.apk"
+}

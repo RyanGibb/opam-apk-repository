@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libfido2-1.14.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libfido2"]
+]
+depends: [
+  "eudev-libs"
+  "libcbor"
+  "libcrypto3"
+  "musl"
+  "zlib"
+  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
+]
+
+extra-source "libfido2-1.14.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libfido2-1.14.0-r1.apk"
+}

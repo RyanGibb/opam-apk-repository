@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add curl-dev-8.8.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del curl-dev"]
+]
+depends: [
+  "brotli-dev"
+  "c-ares-dev"
+  "libcurl"
+  "libidn2-dev"
+  "libpsl-dev"
+  "nghttp2-dev"
+  "openssl-dev"
+  "pkgconf"
+  "zlib-dev"
+  "zstd-dev"
+]
+
+extra-source "curl-dev-8.8.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/curl-dev-8.8.0-r0.apk"
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add openvpn-auth-pam-2.6.11-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del openvpn-auth-pam"]
+]
+depends: [
+  "iproute2-minimal"
+  "linux-pam"
+  "musl"
+]
+
+extra-source "openvpn-auth-pam-2.6.11-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/openvpn-auth-pam-2.6.11-r0.apk"
+}

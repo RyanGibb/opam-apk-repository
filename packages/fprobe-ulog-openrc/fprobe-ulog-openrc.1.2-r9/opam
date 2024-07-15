@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add fprobe-ulog-openrc-1.2-r9.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del fprobe-ulog-openrc"]
+]
+
+
+extra-source "fprobe-ulog-openrc-1.2-r9.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/fprobe-ulog-openrc-1.2-r9.apk"
+}

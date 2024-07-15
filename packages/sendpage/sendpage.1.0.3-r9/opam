@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add sendpage-1.0.3-r9.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del sendpage"]
+]
+depends: [
+  "perl-dbi"
+  "perl-device-serialport"
+  "perl-mailtools"
+  "perl-net-snpp"
+  "perl-sys-hostname-long"
+  "perl-test-mockobject"
+]
+
+extra-source "sendpage-1.0.3-r9.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/sendpage-1.0.3-r9.apk"
+}

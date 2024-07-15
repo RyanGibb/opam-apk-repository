@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add apache2-ssl-2.4.61-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del apache2-ssl"]
+]
+depends: [
+  "apache2"
+  "libcrypto3"
+  "libssl3"
+  "musl"
+  "openssl"
+  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
+]
+
+extra-source "apache2-ssl-2.4.61-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/apache2-ssl-2.4.61-r0.apk"
+}

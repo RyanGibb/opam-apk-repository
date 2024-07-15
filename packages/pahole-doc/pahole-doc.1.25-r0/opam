@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add pahole-doc-1.25-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del pahole-doc"]
+]
+
+
+extra-source "pahole-doc-1.25-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/pahole-doc-1.25-r0.apk"
+}

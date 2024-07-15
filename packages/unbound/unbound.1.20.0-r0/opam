@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add unbound-1.20.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del unbound"]
+]
+depends: [
+  "dnssec-root"
+  "libcrypto3"
+  "libevent"
+  "libexpat"
+  "libssl3"
+  "musl"
+  "protobuf-c"
+  "unbound-libs"
+  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
+]
+
+extra-source "unbound-1.20.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/unbound-1.20.0-r0.apk"
+}

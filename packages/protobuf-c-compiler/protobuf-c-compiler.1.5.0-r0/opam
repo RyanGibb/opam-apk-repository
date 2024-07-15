@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add protobuf-c-compiler-1.5.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del protobuf-c-compiler"]
+]
+depends: [
+  "abseil-cpp-hash"
+  "abseil-cpp-log-internal-check-op"
+  "abseil-cpp-log-internal-message"
+  "abseil-cpp-raw-hash-set"
+  "abseil-cpp-raw-logging-internal"
+  "abseil-cpp-spinlock-wait"
+  "libgcc"
+  "libprotobuf"
+  "libprotoc"
+  "libstdc++"
+  "musl"
+]
+
+extra-source "protobuf-c-compiler-1.5.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/protobuf-c-compiler-1.5.0-r0.apk"
+}

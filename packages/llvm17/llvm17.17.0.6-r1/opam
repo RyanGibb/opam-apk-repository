@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add llvm17-17.0.6-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del llvm17"]
+]
+depends: [
+  "libgcc"
+  "libstdc++"
+  "llvm17-libs"
+  "llvm17-linker-tools"
+  "musl"
+  "zlib"
+  "zstd-libs"
+]
+
+extra-source "llvm17-17.0.6-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/llvm17-17.0.6-r1.apk"
+}

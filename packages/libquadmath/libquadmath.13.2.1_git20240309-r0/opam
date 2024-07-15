@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libquadmath-13.2.1_git20240309-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libquadmath"]
+]
+depends: [
+  "musl"
+]
+
+extra-source "libquadmath-13.2.1_git20240309-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libquadmath-13.2.1_git20240309-r0.apk"
+}

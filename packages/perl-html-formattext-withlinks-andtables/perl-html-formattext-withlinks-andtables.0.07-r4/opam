@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-html-formattext-withlinks-andtables-0.07-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-html-formattext-withlinks-andtables"]
+]
+depends: [
+  "perl"
+  "perl-html-formatter"
+  "perl-html-formattext-withlinks"
+  "perl-html-tree"
+]
+
+extra-source "perl-html-formattext-withlinks-andtables-0.07-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-html-formattext-withlinks-andtables-0.07-r4.apk"
+}

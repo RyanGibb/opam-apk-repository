@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add postgresql16-pltcl-16.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del postgresql16-pltcl"]
+]
+depends: [
+  "musl"
+  "pgtcl"
+  "postgresql16"
+  "tcl"
+]
+
+extra-source "postgresql16-pltcl-16.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/postgresql16-pltcl-16.3-r0.apk"
+}

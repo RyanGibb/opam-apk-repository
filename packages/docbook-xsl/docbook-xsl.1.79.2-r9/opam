@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add docbook-xsl-1.79.2-r9.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del docbook-xsl"]
+]
+depends: [
+  "docbook-xml"
+  "libxml2-utils"
+  "libxslt"
+  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
+]
+
+extra-source "docbook-xsl-1.79.2-r9.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/docbook-xsl-1.79.2-r9.apk"
+}

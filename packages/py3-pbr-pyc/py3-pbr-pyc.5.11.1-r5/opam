@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py3-pbr-pyc-5.11.1-r5.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py3-pbr-pyc"]
+]
+depends: [
+  "py3-setuptools"
+  "python3"
+]
+
+extra-source "py3-pbr-pyc-5.11.1-r5.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/py3-pbr-pyc-5.11.1-r5.apk"
+}

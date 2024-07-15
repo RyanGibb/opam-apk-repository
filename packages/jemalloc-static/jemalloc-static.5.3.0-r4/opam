@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add jemalloc-static-5.3.0-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del jemalloc-static"]
+]
+
+
+extra-source "jemalloc-static-5.3.0-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/jemalloc-static-5.3.0-r4.apk"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add unbound-dev-1.20.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del unbound-dev"]
+]
+depends: [
+  "expat-dev"
+  "libevent-dev"
+  "pkgconf"
+  "python3-dev"
+  "unbound-libs"
+]
+
+extra-source "unbound-dev-1.20.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/unbound-dev-1.20.0-r0.apk"
+}

@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libprotoc-24.4-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libprotoc"]
+]
+depends: [
+  "abseil-cpp-hash"
+  "abseil-cpp-log-internal-check-op"
+  "abseil-cpp-log-internal-conditions"
+  "abseil-cpp-log-internal-message"
+  "abseil-cpp-log-internal-nullguard"
+  "abseil-cpp-raw-hash-set"
+  "abseil-cpp-spinlock-wait"
+  "abseil-cpp-status"
+  "abseil-cpp-statusor"
+  "abseil-cpp-str-format-internal"
+  "abseil-cpp-strings"
+  "abseil-cpp-synchronization"
+  "abseil-cpp-throw-delegate"
+  "libgcc"
+  "libprotobuf"
+  "libstdc++"
+  "musl"
+]
+
+extra-source "libprotoc-24.4-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libprotoc-24.4-r1.apk"
+}

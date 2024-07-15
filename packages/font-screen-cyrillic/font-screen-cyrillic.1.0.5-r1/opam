@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add font-screen-cyrillic-1.0.5-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del font-screen-cyrillic"]
+]
+depends: [
+  "encodings"
+  "font-alias"
+  "fontconfig"
+  "mkfontscale"
+]
+
+extra-source "font-screen-cyrillic-1.0.5-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/font-screen-cyrillic-1.0.5-r1.apk"
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libpq-dev-16.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libpq-dev"]
+]
+depends: [
+  "libpq"
+  "musl"
+  "openssl-dev"
+  "pkgconf"
+]
+
+extra-source "libpq-dev-16.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libpq-dev-16.3-r0.apk"
+}

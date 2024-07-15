@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add subversion-yash-completion-2.56.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del subversion-yash-completion"]
+]
+depends: [
+  "yash-completion"
+]
+
+extra-source "subversion-yash-completion-2.56.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/subversion-yash-completion-2.56.1-r1.apk"
+}

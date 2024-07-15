@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libart-lgpl-dev-2.3.21-r8.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libart-lgpl-dev"]
+]
+depends: [
+  "libart-lgpl"
+  "pkgconf"
+]
+
+extra-source "libart-lgpl-dev-2.3.21-r8.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libart-lgpl-dev-2.3.21-r8.apk"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add sofia-sip-1.13.17-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del sofia-sip"]
+]
+depends: [
+  "glib"
+  "libcrypto3"
+  "libssl3"
+  "musl"
+  "zlib"
+]
+
+extra-source "sofia-sip-1.13.17-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/sofia-sip-1.13.17-r0.apk"
+}

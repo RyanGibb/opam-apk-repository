@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py3-tappy-3.1-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py3-tappy"]
+]
+depends: [
+  "python3"
+]
+
+extra-source "py3-tappy-3.1-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/py3-tappy-3.1-r4.apk"
+}

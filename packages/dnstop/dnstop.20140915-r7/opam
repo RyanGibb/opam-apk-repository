@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add dnstop-20140915-r7.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del dnstop"]
+]
+depends: [
+  "libncursesw"
+  "libpcap"
+  "musl"
+]
+
+extra-source "dnstop-20140915-r7.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/dnstop-20140915-r7.apk"
+}

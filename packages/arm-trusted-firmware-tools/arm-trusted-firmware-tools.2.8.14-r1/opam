@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add arm-trusted-firmware-tools-2.8.14-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del arm-trusted-firmware-tools"]
+]
+depends: [
+  "libcrypto3"
+  "musl"
+]
+
+extra-source "arm-trusted-firmware-tools-2.8.14-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/arm-trusted-firmware-tools-2.8.14-r1.apk"
+}

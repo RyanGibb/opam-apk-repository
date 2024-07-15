@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libnetfilter_cttimeout-dev-1.0.1-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libnetfilter_cttimeout-dev"]
+]
+depends: [
+  "libmnl-dev"
+  "libnetfilter_cttimeout"
+  "pkgconf"
+]
+
+extra-source "libnetfilter_cttimeout-dev-1.0.1-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libnetfilter_cttimeout-dev-1.0.1-r2.apk"
+}

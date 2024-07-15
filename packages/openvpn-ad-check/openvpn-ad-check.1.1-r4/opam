@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add openvpn-ad-check-1.1-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del openvpn-ad-check"]
+]
+depends: [
+  "lua-ldap"
+  "openvpn"
+]
+
+extra-source "openvpn-ad-check-1.1-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/openvpn-ad-check-1.1-r4.apk"
+}

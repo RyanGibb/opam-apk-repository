@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add postgresql16-16.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del postgresql16"]
+]
+depends: [
+  "icu-libs"
+  "libcrypto3"
+  "libldap"
+  "libpq"
+  "libssl3"
+  "libxml2"
+  "lz4-libs"
+  "musl"
+  "postgresql-common"
+  "postgresql16-client"
+  "tzdata"
+  "zlib"
+  "zstd-libs"
+  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
+]
+
+extra-source "postgresql16-16.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/postgresql16-16.3-r0.apk"
+}

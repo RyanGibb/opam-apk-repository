@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add postgresql15-dev-15.7-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del postgresql15-dev"]
+]
+depends: [
+  "clang16"
+  "icu-dev"
+  "libecpg-dev"
+  "libpq"
+  "libpq-dev"
+  "llvm16"
+  "lz4-dev"
+  "musl"
+  "openssl-dev"
+  "zstd-dev"
+]
+
+extra-source "postgresql15-dev-15.7-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/postgresql15-dev-15.7-r0.apk"
+}

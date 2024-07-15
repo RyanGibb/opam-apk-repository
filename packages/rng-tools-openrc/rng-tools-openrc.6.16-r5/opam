@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add rng-tools-openrc-6.16-r5.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del rng-tools-openrc"]
+]
+
+
+extra-source "rng-tools-openrc-6.16-r5.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/rng-tools-openrc-6.16-r5.apk"
+}

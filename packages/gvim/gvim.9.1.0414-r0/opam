@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gvim-9.1.0414-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gvim"]
+]
+depends: [
+  "cairo"
+  "gdk-pixbuf"
+  "glib"
+  "gtk+3.0"
+  "libice"
+  "libncursesw"
+  "libsm"
+  "libx11"
+  "libxt"
+  "musl"
+  "pango"
+  "vim-common"
+  "xxd"
+]
+
+extra-source "gvim-9.1.0414-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/gvim-9.1.0414-r0.apk"
+}

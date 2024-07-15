@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add avahi-compat-libdns_sd-0.8-r17.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del avahi-compat-libdns_sd"]
+]
+depends: [
+  "avahi-libs"
+  "musl"
+]
+
+extra-source "avahi-compat-libdns_sd-0.8-r17.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/avahi-compat-libdns_sd-0.8-r17.apk"
+}

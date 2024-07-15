@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add musl-obstack-dev-1.2.3-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del musl-obstack-dev"]
+]
+depends: [
+  "musl-obstack"
+  "pkgconf"
+]
+
+extra-source "musl-obstack-dev-1.2.3-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/musl-obstack-dev-1.2.3-r2.apk"
+}

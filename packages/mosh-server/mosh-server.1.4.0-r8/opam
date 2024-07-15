@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mosh-server-1.4.0-r8.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mosh-server"]
+]
+depends: [
+  "abseil-cpp-log-internal-check-op"
+  "abseil-cpp-log-internal-message"
+  "libcrypto3"
+  "libgcc"
+  "libncursesw"
+  "libprotobuf"
+  "libstdc++"
+  "musl"
+  "zlib"
+]
+
+extra-source "mosh-server-1.4.0-r8.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/mosh-server-1.4.0-r8.apk"
+}

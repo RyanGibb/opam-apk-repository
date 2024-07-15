@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add harfbuzz-dev-8.5.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del harfbuzz-dev"]
+]
+depends: [
+  "cairo-dev"
+  "freetype-dev"
+  "glib-dev"
+  "graphite2-dev"
+  "harfbuzz"
+  "harfbuzz-cairo"
+  "harfbuzz-gobject"
+  "harfbuzz-icu"
+  "harfbuzz-subset"
+  "icu-dev"
+  "pkgconf"
+]
+
+extra-source "harfbuzz-dev-8.5.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/harfbuzz-dev-8.5.0-r0.apk"
+}

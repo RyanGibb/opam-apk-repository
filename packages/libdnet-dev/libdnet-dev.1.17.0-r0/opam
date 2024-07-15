@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libdnet-dev-1.17.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libdnet-dev"]
+]
+depends: [
+  "libdnet"
+]
+
+extra-source "libdnet-dev-1.17.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libdnet-dev-1.17.0-r0.apk"
+}

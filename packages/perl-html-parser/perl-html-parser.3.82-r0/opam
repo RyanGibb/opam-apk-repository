@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-html-parser-3.82-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-html-parser"]
+]
+depends: [
+  "musl"
+  "perl"
+  "perl-html-tagset"
+  "perl-http-message"
+  "perl-uri"
+]
+
+extra-source "perl-html-parser-3.82-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-html-parser-3.82-r0.apk"
+}

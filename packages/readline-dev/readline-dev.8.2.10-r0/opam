@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add readline-dev-8.2.10-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del readline-dev"]
+]
+depends: [
+  "libhistory"
+  "ncurses-dev"
+  "pkgconf"
+  "readline"
+]
+
+extra-source "readline-dev-8.2.10-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/readline-dev-8.2.10-r0.apk"
+}

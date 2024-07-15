@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add clang15-extra-tools-15.0.7-r19.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del clang15-extra-tools"]
+]
+depends: [
+  "clang15-libs"
+  "fortify-headers"
+  "libgcc"
+  "libstdc++"
+  "llvm15-libs"
+  "musl"
+]
+
+extra-source "clang15-extra-tools-15.0.7-r19.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/clang15-extra-tools-15.0.7-r19.apk"
+}

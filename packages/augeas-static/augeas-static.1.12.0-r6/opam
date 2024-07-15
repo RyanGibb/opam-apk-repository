@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add augeas-static-1.12.0-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del augeas-static"]
+]
+
+
+extra-source "augeas-static-1.12.0-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/augeas-static-1.12.0-r6.apk"
+}

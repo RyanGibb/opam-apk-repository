@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add spirv-llvm-translator-dev-17.0.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del spirv-llvm-translator-dev"]
+]
+depends: [
+  "llvm17-dev"
+  "pkgconf"
+  "spirv-llvm-translator"
+  "spirv-llvm-translator-libs"
+  "spirv-tools-dev"
+]
+
+extra-source "spirv-llvm-translator-dev-17.0.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/spirv-llvm-translator-dev-17.0.0-r0.apk"
+}

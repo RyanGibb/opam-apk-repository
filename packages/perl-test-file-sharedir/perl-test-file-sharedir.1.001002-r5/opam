@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-test-file-sharedir-1.001002-r5.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-test-file-sharedir"]
+]
+depends: [
+  "perl"
+  "perl-class-tiny"
+  "perl-file-copy-recursive"
+  "perl-file-sharedir"
+  "perl-path-tiny"
+  "perl-scope-guard"
+]
+
+extra-source "perl-test-file-sharedir-1.001002-r5.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-test-file-sharedir-1.001002-r5.apk"
+}

@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add abseil-cpp-flags-parse-20230802.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del abseil-cpp-flags-parse"]
+]
+depends: [
+  "abseil-cpp-flags-config"
+  "abseil-cpp-flags-internal"
+  "abseil-cpp-flags-marshalling"
+  "abseil-cpp-flags-private-handle-accessor"
+  "abseil-cpp-flags-program-name"
+  "abseil-cpp-flags-reflection"
+  "abseil-cpp-flags-usage"
+  "abseil-cpp-flags-usage-internal"
+  "abseil-cpp-raw-logging-internal"
+  "abseil-cpp-strings"
+  "abseil-cpp-synchronization"
+  "libgcc"
+  "libstdc++"
+  "musl"
+]
+
+extra-source "abseil-cpp-flags-parse-20230802.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/abseil-cpp-flags-parse-20230802.1-r0.apk"
+}

@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add nodejs-libs-20.15.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del nodejs-libs"]
+]
+depends: [
+  "ada-libs"
+  "brotli-libs"
+  "c-ares"
+  "icu-libs"
+  "libbase64"
+  "libcrypto3"
+  "libgcc"
+  "libssl3"
+  "libstdc++"
+  "musl"
+  "nghttp2-libs"
+  "zlib"
+]
+
+extra-source "nodejs-libs-20.15.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/nodejs-libs-20.15.1-r0.apk"
+}

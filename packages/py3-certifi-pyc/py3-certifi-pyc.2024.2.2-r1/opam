@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py3-certifi-pyc-2024.2.2-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py3-certifi-pyc"]
+]
+depends: [
+  "ca-certificates-bundle"
+  "python3"
+]
+
+extra-source "py3-certifi-pyc-2024.2.2-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/py3-certifi-pyc-2024.2.2-r1.apk"
+}

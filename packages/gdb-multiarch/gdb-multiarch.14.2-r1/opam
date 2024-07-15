@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gdb-multiarch-14.2-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gdb-multiarch"]
+]
+depends: [
+  "gdb"
+  "gmp"
+  "libexpat"
+  "libgcc"
+  "libncursesw"
+  "libstdc++"
+  "mpfr4"
+  "musl"
+  "python3"
+  "readline"
+  "zlib"
+  "zstd-libs"
+]
+
+extra-source "gdb-multiarch-14.2-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/gdb-multiarch-14.2-r1.apk"
+}

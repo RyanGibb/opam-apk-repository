@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add linenoise-dev-1.0-r5.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del linenoise-dev"]
+]
+depends: [
+  "linenoise"
+]
+
+extra-source "linenoise-dev-1.0-r5.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/linenoise-dev-1.0-r5.apk"
+}

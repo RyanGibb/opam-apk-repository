@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py3-pytest-pyc-8.2.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py3-pytest-pyc"]
+]
+depends: [
+  "py3-iniconfig"
+  "py3-packaging"
+  "py3-pluggy"
+  "py3-py"
+  "python3"
+]
+
+extra-source "py3-pytest-pyc-8.2.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/py3-pytest-pyc-8.2.2-r0.apk"
+}

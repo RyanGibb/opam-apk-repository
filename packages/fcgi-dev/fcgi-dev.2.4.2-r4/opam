@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add fcgi-dev-2.4.2-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del fcgi-dev"]
+]
+depends: [
+  "fcgi"
+  "fcgi++"
+  "pkgconf"
+]
+
+extra-source "fcgi-dev-2.4.2-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/fcgi-dev-2.4.2-r4.apk"
+}

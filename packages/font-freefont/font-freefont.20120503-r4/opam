@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add font-freefont-20120503-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del font-freefont"]
+]
+depends: [
+  "encodings"
+  "fontconfig"
+  "mkfontscale"
+]
+
+extra-source "font-freefont-20120503-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/font-freefont-20120503-r4.apk"
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add dbus-x11-1.14.10-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del dbus-x11"]
+]
+depends: [
+  "dbus"
+  "dbus-libs"
+  "libx11"
+  "musl"
+]
+
+extra-source "dbus-x11-1.14.10-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/dbus-x11-1.14.10-r1.apk"
+}

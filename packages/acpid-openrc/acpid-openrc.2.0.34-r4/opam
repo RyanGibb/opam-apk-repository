@@ -1,0 +1,12 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add acpid-openrc-2.0.34-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del acpid-openrc"]
+]
+
+
+extra-source "acpid-openrc-2.0.34-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/acpid-openrc-2.0.34-r4.apk"
+}

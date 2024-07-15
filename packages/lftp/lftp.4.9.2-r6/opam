@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lftp-4.9.2-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lftp"]
+]
+depends: [
+  "libcrypto3"
+  "libncursesw"
+  "libssl3"
+  "libstdc++"
+  "musl"
+  "readline"
+  "zlib"
+]
+
+extra-source "lftp-4.9.2-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lftp-4.9.2-r6.apk"
+}

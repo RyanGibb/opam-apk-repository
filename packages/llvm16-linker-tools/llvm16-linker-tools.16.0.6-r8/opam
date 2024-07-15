@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add llvm16-linker-tools-16.0.6-r8.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del llvm16-linker-tools"]
+]
+depends: [
+  "libgcc"
+  "libstdc++"
+  "llvm16-libs"
+  "musl"
+]
+
+extra-source "llvm16-linker-tools-16.0.6-r8.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/llvm16-linker-tools-16.0.6-r8.apk"
+}
