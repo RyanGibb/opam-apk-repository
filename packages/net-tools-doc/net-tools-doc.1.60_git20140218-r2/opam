@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del net-tools-doc"]
 ]
 extra-source "net-tools-doc-1.60_git20140218-r2.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/net-tools-doc-1.60_git20140218-r2.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/net-tools-doc-1.60_git20140218-r2.apk"
 }

@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "freeradius-radclient" {= "3.0.20-r5"}
-]

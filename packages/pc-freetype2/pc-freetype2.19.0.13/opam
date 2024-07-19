@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "freetype-dev" {= "2.7.1-r2"}
-]

@@ -10,5 +10,5 @@ depends: [
   "unbound"
 ]
 extra-source "acf-unbound-0.1.0-r2.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/acf-unbound-0.1.0-r2.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/acf-unbound-0.1.0-r2.apk"
 }

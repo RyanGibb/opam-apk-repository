@@ -12,5 +12,5 @@ depends: [
   "perl-xml-parser"
 ]
 extra-source "intltool-0.51.0-r4.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/intltool-0.51.0-r4.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/intltool-0.51.0-r4.apk"
 }

@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del xf86-input-vmmouse-doc"]
 ]
 extra-source "xf86-input-vmmouse-doc-13.1.0-r4.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/xf86-input-vmmouse-doc-13.1.0-r4.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/xf86-input-vmmouse-doc-13.1.0-r4.apk"
 }

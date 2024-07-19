@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "liburing" {= "2.3-r2"}
-]

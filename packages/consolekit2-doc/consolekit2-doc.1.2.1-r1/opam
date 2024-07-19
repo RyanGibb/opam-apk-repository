@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del consolekit2-doc"]
 ]
 extra-source "consolekit2-doc-1.2.1-r1.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/consolekit2-doc-1.2.1-r1.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/consolekit2-doc-1.2.1-r1.apk"
 }

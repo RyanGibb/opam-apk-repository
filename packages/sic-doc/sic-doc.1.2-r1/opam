@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del sic-doc"]
 ]
 extra-source "sic-doc-1.2-r1.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/sic-doc-1.2-r1.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/sic-doc-1.2-r1.apk"
 }

@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del lcms2-doc"]
 ]
 extra-source "lcms2-doc-2.9-r1.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/lcms2-doc-2.9-r1.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/lcms2-doc-2.9-r1.apk"
 }

@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del iftop-doc"]
 ]
 extra-source "iftop-doc-0.17-r7.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/iftop-doc-0.17-r7.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/iftop-doc-0.17-r7.apk"
 }

@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "scdoc" {= "1.11.2-r0"}
+]

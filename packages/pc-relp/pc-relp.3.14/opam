@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "librelp-dev" {= "1.6.0-r0"}
+]

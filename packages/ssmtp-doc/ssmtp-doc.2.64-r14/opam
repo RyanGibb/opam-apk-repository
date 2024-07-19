@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del ssmtp-doc"]
 ]
 extra-source "ssmtp-doc-2.64-r14.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/ssmtp-doc-2.64-r14.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/ssmtp-doc-2.64-r14.apk"
 }

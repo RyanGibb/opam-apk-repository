@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del pound-doc"]
 ]
 extra-source "pound-doc-2.8-r0.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/pound-doc-2.8-r0.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/pound-doc-2.8-r0.apk"
 }

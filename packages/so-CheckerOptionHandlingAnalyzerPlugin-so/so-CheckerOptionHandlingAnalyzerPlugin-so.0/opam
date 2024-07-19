@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "clang" {= "9.0.0-r1"}
-]

@@ -14,5 +14,5 @@ depends: [
   "pkgconfig"
 ]
 extra-source "libxv-dev-1.0.11-r2.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libxv-dev-1.0.11-r2.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/libxv-dev-1.0.11-r2.apk"
 }

@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "libressl3-1-libtls" {= "3.1.5-r0"}
+]

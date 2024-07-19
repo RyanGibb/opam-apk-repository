@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "unionfs-fuse" {= "2.1-r0"}
+]

@@ -11,5 +11,5 @@ depends: [
   "so-libpanelw-so-6"
 ]
 extra-source "iptraf-ng-1.1.4-r4.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/iptraf-ng-1.1.4-r4.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/iptraf-ng-1.1.4-r4.apk"
 }

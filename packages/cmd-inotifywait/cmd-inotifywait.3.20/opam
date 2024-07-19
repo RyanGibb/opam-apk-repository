@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "inotify-tools" {= "4.23.9.0-r0"}
+]

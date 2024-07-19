@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del gross-doc"]
 ]
 extra-source "gross-doc-1.0.2-r11.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/gross-doc-1.0.2-r11.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/gross-doc-1.0.2-r11.apk"
 }

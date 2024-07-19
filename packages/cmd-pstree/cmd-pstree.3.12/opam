@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  ("pstree" {= "2.39-r1"} | "psmisc" {= "23.3-r0"})
+]

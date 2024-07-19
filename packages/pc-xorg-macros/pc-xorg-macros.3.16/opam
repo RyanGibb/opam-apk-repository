@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "util-macros" {= "1.19.3-r0"}
+]

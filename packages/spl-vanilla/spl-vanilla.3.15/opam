@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "zfs-lts" {= "5.15.140-r0"}
+]

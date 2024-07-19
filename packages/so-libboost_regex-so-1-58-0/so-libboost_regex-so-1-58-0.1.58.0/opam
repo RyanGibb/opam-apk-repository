@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "boost-regex" {= "1.58.0-r0"}
-]

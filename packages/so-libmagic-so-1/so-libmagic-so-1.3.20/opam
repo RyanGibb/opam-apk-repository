@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "libmagic" {= "5.45-r1"}
+]

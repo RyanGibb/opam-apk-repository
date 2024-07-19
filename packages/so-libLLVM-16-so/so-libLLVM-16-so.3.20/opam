@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "llvm16-libs" {= "16.0.6-r8"}
+]

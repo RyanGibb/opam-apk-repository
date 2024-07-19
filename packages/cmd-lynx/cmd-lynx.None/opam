@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "lynx" {= "2.8.8_p2-r8"}
-]

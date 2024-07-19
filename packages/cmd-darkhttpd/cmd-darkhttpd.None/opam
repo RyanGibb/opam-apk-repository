@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "darkhttpd" {= "1.12-r2"}
-]

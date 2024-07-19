@@ -1,4 +1,15 @@
 opam-version: "2.0"
-depends: [
-  "rng-tools-extra" {= "6.14-r3"}
+build: [
+  ["sh" "-c" "sudo apk add rng-tools-6.14-r3.apk"]
 ]
+remove: [
+  ["sh" "-c" "sudo apk del rng-tools"]
+]
+depends: [
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-1"
+  "so-libjitterentropy-so-3"
+]
+extra-source "rng-tools-6.14-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/rng-tools-6.14-r3.apk"
+}

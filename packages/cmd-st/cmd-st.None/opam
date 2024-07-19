@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "st" {= "0.8.1-r0"}
-]

@@ -10,5 +10,5 @@ depends: [
   "ppp"
 ]
 extra-source "acf-ppp-0.5.0-r2.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/acf-ppp-0.5.0-r2.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/acf-ppp-0.5.0-r2.apk"
 }

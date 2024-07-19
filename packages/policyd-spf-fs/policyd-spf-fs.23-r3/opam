@@ -10,5 +10,5 @@ depends: [
   "so-libspf2-so-2"
 ]
 extra-source "policyd-spf-fs-23-r3.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/policyd-spf-fs-23-r3.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/policyd-spf-fs-23-r3.apk"
 }

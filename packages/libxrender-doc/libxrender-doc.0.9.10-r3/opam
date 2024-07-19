@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del libxrender-doc"]
 ]
 extra-source "libxrender-doc-0.9.10-r3.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libxrender-doc-0.9.10-r3.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/libxrender-doc-0.9.10-r3.apk"
 }

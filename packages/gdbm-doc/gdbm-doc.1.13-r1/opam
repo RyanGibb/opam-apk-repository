@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del gdbm-doc"]
 ]
 extra-source "gdbm-doc-1.13-r1.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/gdbm-doc-1.13-r1.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/gdbm-doc-1.13-r1.apk"
 }

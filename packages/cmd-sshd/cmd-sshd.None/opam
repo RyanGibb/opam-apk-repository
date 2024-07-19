@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  ("openssh-server" {= "7.9_p1-r6"} | "openssh-server-pam" {= "7.9_p1-r6"})
-]

@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del ttf-ubuntu-font-family"]
 ]
 extra-source "ttf-ubuntu-font-family-0.83-r0.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/ttf-ubuntu-font-family-0.83-r0.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/ttf-ubuntu-font-family-0.83-r0.apk"
 }

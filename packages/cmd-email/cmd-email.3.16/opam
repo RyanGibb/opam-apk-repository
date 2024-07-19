@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "email" {= "3.1.4-r11"}
+]

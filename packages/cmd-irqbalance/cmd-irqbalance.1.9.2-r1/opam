@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "irqbalance" {= "1.9.2-r1"}
-]

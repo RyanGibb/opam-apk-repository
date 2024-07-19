@@ -10,5 +10,5 @@ depends: [
   "lua-socket"
 ]
 extra-source "lua-soap-3.0-r0.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/lua-soap-3.0-r0.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/lua-soap-3.0-r0.apk"
 }

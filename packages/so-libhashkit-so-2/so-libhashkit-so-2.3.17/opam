@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "libmemcached-libs" {= "1.0.18-r5"}
+]

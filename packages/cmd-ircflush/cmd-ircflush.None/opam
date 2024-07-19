@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "ircii" {= "20111115-r4"}
-]

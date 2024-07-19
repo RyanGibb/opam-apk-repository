@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "nfprofile" {= "1.6.22-r0"}
+]

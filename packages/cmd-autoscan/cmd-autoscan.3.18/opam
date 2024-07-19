@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "autoconf" {= "2.71-r2"}
+]

@@ -9,5 +9,5 @@ depends: [
   "mii-tool"
 ]
 extra-source "net-tools-dbg-1.60_git20140218-r2.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/net-tools-dbg-1.60_git20140218-r2.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/net-tools-dbg-1.60_git20140218-r2.apk"
 }

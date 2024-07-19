@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del gperf-doc"]
 ]
 extra-source "gperf-doc-3.1-r2.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/gperf-doc-3.1-r2.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/gperf-doc-3.1-r2.apk"
 }

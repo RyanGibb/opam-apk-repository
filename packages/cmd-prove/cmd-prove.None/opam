@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  ("perl-utils" {= "5.26.3-r1"} | "perl-test-harness-utils" {= "3.42-r0"})
-]

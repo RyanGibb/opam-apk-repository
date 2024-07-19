@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del font-alias"]
 ]
 extra-source "font-alias-1.0.3-r1.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/font-alias-1.0.3-r1.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/font-alias-1.0.3-r1.apk"
 }

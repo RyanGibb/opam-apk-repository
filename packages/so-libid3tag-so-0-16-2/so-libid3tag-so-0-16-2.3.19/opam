@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "libid3tag" {= "0.16.2-r2"}
+]

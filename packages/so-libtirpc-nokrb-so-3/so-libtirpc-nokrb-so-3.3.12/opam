@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "libtirpc-nokrb" {= "1.2.6-r0"}
+]

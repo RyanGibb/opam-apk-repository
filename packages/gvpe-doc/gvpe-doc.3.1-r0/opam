@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del gvpe-doc"]
 ]
 extra-source "gvpe-doc-3.1-r0.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/gvpe-doc-3.1-r0.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/gvpe-doc-3.1-r0.apk"
 }

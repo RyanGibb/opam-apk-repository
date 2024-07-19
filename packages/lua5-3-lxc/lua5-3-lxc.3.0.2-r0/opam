@@ -10,5 +10,5 @@ depends: [
   "so-liblxc-so-1"
 ]
 extra-source "lua5.3-lxc-3.0.2-r0.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/lua5.3-lxc-3.0.2-r0.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/lua5.3-lxc-3.0.2-r0.apk"
 }

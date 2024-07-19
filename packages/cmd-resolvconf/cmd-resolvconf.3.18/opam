@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "openresolv" {= "3.13.2-r0"}
+]

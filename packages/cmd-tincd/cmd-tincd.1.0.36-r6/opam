@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "tinc" {= "1.0.36-r6"}
-]

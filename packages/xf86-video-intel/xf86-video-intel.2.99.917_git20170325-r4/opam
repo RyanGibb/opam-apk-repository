@@ -9,7 +9,6 @@ depends: [
   "mesa-dri-intel"
   "so-libX11-so-6"
   "so-libX11-xcb-so-1"
-  "so-libXv-so-1"
   "so-libXvMC-so-1"
   "so-libc-musl-x86_64-so-1"
   "so-libdrm-so-2"
@@ -22,5 +21,5 @@ depends: [
   "so-libxcb-util-so-1"
 ]
 extra-source "xf86-video-intel-2.99.917_git20170325-r4.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/xf86-video-intel-2.99.917_git20170325-r4.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/xf86-video-intel-2.99.917_git20170325-r4.apk"
 }

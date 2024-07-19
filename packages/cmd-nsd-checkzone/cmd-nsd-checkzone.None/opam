@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "nsd" {= "4.1.26-r0"}
-]

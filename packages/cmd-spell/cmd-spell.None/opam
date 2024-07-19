@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "aspell-compat" {= "0.60.6.1-r14"}
-]

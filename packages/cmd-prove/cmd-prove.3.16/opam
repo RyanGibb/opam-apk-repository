@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  ("perl-test-harness-utils" {= "3.44-r0"} | "perl-utils" {= "5.34.2-r0"})
+]

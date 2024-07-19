@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "git-diff-highlight" {= "2.32.7-r0"}
+]

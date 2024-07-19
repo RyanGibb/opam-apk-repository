@@ -9,5 +9,5 @@ depends: [
   "pkgconfig"
 ]
 extra-source "libpthread-stubs-0.3-r5.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libpthread-stubs-0.3-r5.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libpthread-stubs-0.3-r5.apk"
 }

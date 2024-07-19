@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "fprobe" {= "1.1-r9"}
+]

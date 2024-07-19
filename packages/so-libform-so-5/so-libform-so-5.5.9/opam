@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "ncurses5-libs" {= "5.9-r1"}
-]

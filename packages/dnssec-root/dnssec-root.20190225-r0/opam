@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del dnssec-root"]
 ]
 extra-source "dnssec-root-20190225-r0.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/dnssec-root-20190225-r0.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/dnssec-root-20190225-r0.apk"
 }

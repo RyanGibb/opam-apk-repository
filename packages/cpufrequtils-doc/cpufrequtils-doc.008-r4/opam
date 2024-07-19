@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del cpufrequtils-doc"]
 ]
 extra-source "cpufrequtils-doc-008-r4.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/cpufrequtils-doc-008-r4.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/cpufrequtils-doc-008-r4.apk"
 }

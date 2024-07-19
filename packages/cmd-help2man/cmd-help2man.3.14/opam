@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "help2man" {= "1.48.3-r0"}
+]

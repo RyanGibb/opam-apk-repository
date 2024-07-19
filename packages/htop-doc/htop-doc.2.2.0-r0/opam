@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del htop-doc"]
 ]
 extra-source "htop-doc-2.2.0-r0.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/htop-doc-2.2.0-r0.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/htop-doc-2.2.0-r0.apk"
 }

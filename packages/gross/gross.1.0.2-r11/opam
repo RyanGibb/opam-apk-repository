@@ -11,5 +11,5 @@ depends: [
   "so-libcares-so-2"
 ]
 extra-source "gross-1.0.2-r11.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/gross-1.0.2-r11.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/gross-1.0.2-r11.apk"
 }

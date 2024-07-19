@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del rgb-doc"]
 ]
 extra-source "rgb-doc-1.0.6-r2.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/rgb-doc-1.0.6-r2.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/rgb-doc-1.0.6-r2.apk"
 }

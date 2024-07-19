@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  ("mdevd-openrc" {= "0.1.6.0-r1"} | "busybox-mdev-openrc" {= "1.35.0-r31"} | "udev-init-scripts-openrc" {= "35-r1"})
+]

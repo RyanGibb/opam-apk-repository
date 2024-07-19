@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "newt" {= "0.52.21-r0"}
-]

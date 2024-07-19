@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "ruby-bundler" {= "1.17.1-r0"}
-]

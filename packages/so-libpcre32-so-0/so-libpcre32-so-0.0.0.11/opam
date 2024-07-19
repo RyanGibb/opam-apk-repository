@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "libpcre32" {= "8.43-r1"}
-]

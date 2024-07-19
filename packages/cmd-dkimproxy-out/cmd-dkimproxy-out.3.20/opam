@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "dkimproxy" {= "1.4.1-r9"}
+]

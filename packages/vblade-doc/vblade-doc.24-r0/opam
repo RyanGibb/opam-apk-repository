@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del vblade-doc"]
 ]
 extra-source "vblade-doc-24-r0.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/vblade-doc-24-r0.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/vblade-doc-24-r0.apk"
 }

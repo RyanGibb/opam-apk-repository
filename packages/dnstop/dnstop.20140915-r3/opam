@@ -11,5 +11,5 @@ depends: [
   "so-libpcap-so-1"
 ]
 extra-source "dnstop-20140915-r3.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/dnstop-20140915-r3.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/dnstop-20140915-r3.apk"
 }

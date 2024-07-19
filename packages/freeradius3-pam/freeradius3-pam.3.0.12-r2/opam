@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "freeradius-pam" {= "3.0.12-r2"}
-]

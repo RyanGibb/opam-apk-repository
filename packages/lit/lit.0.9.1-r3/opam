@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  ("llvm10-test-utils" {= "10.0.0-r2"} | "llvm9-test-utils" {= "9.0.1-r3"})
-]

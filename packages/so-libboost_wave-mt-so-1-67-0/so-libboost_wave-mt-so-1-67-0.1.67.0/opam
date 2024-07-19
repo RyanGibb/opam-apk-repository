@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "boost-wave" {= "1.67.0-r2"}
-]

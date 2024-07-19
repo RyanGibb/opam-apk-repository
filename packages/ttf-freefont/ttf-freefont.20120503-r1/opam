@@ -12,5 +12,5 @@ depends: [
   "mkfontscale"
 ]
 extra-source "ttf-freefont-20120503-r1.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/ttf-freefont-20120503-r1.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/ttf-freefont-20120503-r1.apk"
 }

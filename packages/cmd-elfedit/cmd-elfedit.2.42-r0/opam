@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "binutils" {= "2.42-r0"}
-]

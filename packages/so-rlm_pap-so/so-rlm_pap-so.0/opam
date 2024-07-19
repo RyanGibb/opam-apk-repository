@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "freeradius" {= "3.0.17-r6"}
-]

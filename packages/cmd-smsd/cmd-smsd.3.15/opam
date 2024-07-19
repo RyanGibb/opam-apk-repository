@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "gnokii-smsd" {= "0.6.31-r12"}
+]

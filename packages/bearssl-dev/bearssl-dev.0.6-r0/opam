@@ -9,5 +9,5 @@ depends: [
   "bearssl" {= "0.6-r0"}
 ]
 extra-source "bearssl-dev-0.6-r0.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/bearssl-dev-0.6-r0.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/bearssl-dev-0.6-r0.apk"
 }

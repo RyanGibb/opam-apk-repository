@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del dkimproxy-doc"]
 ]
 extra-source "dkimproxy-doc-1.4.1-r5.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/dkimproxy-doc-1.4.1-r5.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/dkimproxy-doc-1.4.1-r5.apk"
 }

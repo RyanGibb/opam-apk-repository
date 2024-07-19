@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "libcap" {= "2.46-r0"}
+]

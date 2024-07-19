@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "lcms2-plugins" {= "2.15-r4"}
+]

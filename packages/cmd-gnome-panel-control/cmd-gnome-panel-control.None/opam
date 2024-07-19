@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "openbox-gnome" {= "3.6.1-r2"}
-]

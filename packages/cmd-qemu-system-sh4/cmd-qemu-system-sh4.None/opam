@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "qemu-system-sh4" {= "3.1.0-r3"}
-]

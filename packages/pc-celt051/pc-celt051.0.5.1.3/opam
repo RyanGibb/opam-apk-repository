@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "celt051-dev" {= "0.5.1.3-r0"}
-]

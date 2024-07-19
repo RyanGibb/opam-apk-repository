@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del elinks-lang"]
 ]
 extra-source "elinks-lang-0.13-r6.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/elinks-lang-0.13-r6.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/elinks-lang-0.13-r6.apk"
 }

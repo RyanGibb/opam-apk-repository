@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "glew" {= "1.10.0-r0"}
-]

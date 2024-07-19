@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "libva-dev" {= "1.6.1-r0"}
-]

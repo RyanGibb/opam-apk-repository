@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "libaio" {= "0.3.112-r2"}
+]

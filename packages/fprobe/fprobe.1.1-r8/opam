@@ -10,5 +10,5 @@ depends: [
   "so-libpcap-so-1"
 ]
 extra-source "fprobe-1.1-r8.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/fprobe-1.1-r8.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/fprobe-1.1-r8.apk"
 }

@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del spawn-fcgi-doc"]
 ]
 extra-source "spawn-fcgi-doc-1.6.4-r3.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/spawn-fcgi-doc-1.6.4-r3.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/spawn-fcgi-doc-1.6.4-r3.apk"
 }

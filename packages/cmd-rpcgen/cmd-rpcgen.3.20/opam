@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  ("rpcgen" {= "2.6.4-r1"} | "rpcsvc-proto" {= "1.4.4-r0"})
+]

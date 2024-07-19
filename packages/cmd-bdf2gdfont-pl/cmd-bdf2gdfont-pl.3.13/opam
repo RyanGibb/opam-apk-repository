@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "perl-gd" {= "2.73-r0"}
+]

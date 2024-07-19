@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "py3-django" {= "1.11.29-r1"}
-]

@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "vte3-dev" {= "0.56.3-r0"}
-]

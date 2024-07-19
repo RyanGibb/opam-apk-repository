@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "rest-dev" {= "0.7.93-r0"}
-]

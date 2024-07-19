@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "font-droid" {= "20200215-r2"}
+]

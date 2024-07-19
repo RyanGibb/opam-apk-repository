@@ -9,5 +9,5 @@ depends: [
   "rtnppd"
 ]
 extra-source "rtapd-dbg-1.7-r6.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/rtapd-dbg-1.7-r6.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/rtapd-dbg-1.7-r6.apk"
 }

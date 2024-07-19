@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del autoconf-doc"]
 ]
 extra-source "autoconf-doc-2.69-r2.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/autoconf-doc-2.69-r2.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/autoconf-doc-2.69-r2.apk"
 }

@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "dns-root-hints" {= "2024021501-r0"}
+]

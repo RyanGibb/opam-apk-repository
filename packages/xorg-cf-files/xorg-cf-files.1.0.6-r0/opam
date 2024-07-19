@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del xorg-cf-files"]
 ]
 extra-source "xorg-cf-files-1.0.6-r0.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/xorg-cf-files-1.0.6-r0.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/xorg-cf-files-1.0.6-r0.apk"
 }

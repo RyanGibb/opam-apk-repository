@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "udisks2-dev" {= "2.1.7-r0"}
-]

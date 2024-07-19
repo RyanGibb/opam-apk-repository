@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "libfontenc" {= "1.1.7-r4"}
+]

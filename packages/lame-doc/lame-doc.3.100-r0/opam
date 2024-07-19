@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del lame-doc"]
 ]
 extra-source "lame-doc-3.100-r0.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/lame-doc-3.100-r0.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/lame-doc-3.100-r0.apk"
 }

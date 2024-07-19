@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "gettext-libs" {= "0.19.8.1-r4"}
-]

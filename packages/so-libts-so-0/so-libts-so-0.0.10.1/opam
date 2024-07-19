@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "tslib" {= "1.19-r0"}
-]

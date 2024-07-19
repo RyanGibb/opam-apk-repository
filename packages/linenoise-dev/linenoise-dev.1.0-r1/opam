@@ -9,5 +9,5 @@ depends: [
   "linenoise" {= "1.0-r1"}
 ]
 extra-source "linenoise-dev-1.0-r1.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/linenoise-dev-1.0-r1.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/linenoise-dev-1.0-r1.apk"
 }

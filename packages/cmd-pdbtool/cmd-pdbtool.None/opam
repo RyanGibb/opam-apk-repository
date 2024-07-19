@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "syslog-ng" {= "3.19.1-r0"}
-]

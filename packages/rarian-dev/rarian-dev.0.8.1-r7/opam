@@ -10,5 +10,5 @@ depends: [
   "rarian" {= "0.8.1-r7"}
 ]
 extra-source "rarian-dev-0.8.1-r7.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/rarian-dev-0.8.1-r7.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/rarian-dev-0.8.1-r7.apk"
 }

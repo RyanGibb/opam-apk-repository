@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "libnfsidmap" {= "2.6.4-r1"}
+]

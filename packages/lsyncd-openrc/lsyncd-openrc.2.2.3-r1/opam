@@ -5,9 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del lsyncd-openrc"]
 ]
-depends: [
-  "rsync"
-]
 extra-source "lsyncd-openrc-2.2.3-r1.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/lsyncd-openrc-2.2.3-r1.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/lsyncd-openrc-2.2.3-r1.apk"
 }

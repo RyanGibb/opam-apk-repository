@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "hwloc-dev" {= "2.10.0-r0"}
-]

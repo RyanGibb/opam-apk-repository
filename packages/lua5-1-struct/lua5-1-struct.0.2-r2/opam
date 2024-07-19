@@ -9,5 +9,5 @@ depends: [
   "so-libc-musl-x86_64-so-1"
 ]
 extra-source "lua5.1-struct-0.2-r2.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/lua5.1-struct-0.2-r2.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/lua5.1-struct-0.2-r2.apk"
 }

@@ -10,5 +10,5 @@ depends: [
   "tar"
 ]
 extra-source "lxc-templates-legacy-3.0.3-r0.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/lxc-templates-legacy-3.0.3-r0.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/lxc-templates-legacy-3.0.3-r0.apk"
 }

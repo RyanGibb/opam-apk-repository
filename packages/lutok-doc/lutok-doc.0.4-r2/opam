@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del lutok-doc"]
 ]
 extra-source "lutok-doc-0.4-r2.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/lutok-doc-0.4-r2.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/lutok-doc-0.4-r2.apk"
 }

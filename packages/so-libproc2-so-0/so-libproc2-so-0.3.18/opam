@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "libproc2" {= "4.0.4-r0"}
+]

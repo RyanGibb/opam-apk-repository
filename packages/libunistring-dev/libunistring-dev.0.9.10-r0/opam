@@ -9,5 +9,5 @@ depends: [
   "libunistring" {= "0.9.10-r0"}
 ]
 extra-source "libunistring-dev-0.9.10-r0.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libunistring-dev-0.9.10-r0.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/libunistring-dev-0.9.10-r0.apk"
 }

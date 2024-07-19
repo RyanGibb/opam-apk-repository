@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "libisoburn-dev" {= "1.5.4-r2"}
+]

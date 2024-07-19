@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "snappy" {= "1.1.7-r1"}
-]

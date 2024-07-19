@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  ("openssh-client-krb5" {= "8.6_p1-r3"} | "openssh-client-default" {= "8.6_p1-r3"})
+]

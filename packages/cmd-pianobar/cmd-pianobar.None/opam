@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "pianobar" {= "2017.08.30-r0"}
-]

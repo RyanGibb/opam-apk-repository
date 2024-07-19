@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "libretls-dev" {= "3.3.3p1-r3"}
-]

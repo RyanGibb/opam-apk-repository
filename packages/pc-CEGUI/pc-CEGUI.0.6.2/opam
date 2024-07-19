@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "cegui06-dev" {= "0.6.2b-r15"}
-]

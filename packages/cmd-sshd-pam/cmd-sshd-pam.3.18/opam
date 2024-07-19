@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "openssh-server-pam" {= "9.3_p2-r2"}
+]

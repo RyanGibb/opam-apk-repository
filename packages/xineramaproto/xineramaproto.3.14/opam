@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "xorgproto" {= "2021.4-r0"}
+]

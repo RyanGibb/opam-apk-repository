@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "truecrypt" {= "7.1a-r3"}
-]

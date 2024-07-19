@@ -10,5 +10,5 @@ depends: [
   "pkgconfig"
 ]
 extra-source "libsamplerate-dev-0.1.9-r1.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libsamplerate-dev-0.1.9-r1.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/libsamplerate-dev-0.1.9-r1.apk"
 }

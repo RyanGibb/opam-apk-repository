@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "libical-dev" {= "3.0.8-r5"}
-]

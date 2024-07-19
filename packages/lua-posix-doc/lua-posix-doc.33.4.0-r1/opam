@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del lua-posix-doc"]
 ]
 extra-source "lua-posix-doc-33.4.0-r1.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/lua-posix-doc-33.4.0-r1.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/lua-posix-doc-33.4.0-r1.apk"
 }

@@ -11,5 +11,5 @@ depends: [
   "lua-ldap"
 ]
 extra-source "ssh-getkey-ldap-0.1.2-r0.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/ssh-getkey-ldap-0.1.2-r0.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/ssh-getkey-ldap-0.1.2-r0.apk"
 }

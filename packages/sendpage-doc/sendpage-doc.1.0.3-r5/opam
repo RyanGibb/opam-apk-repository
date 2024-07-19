@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del sendpage-doc"]
 ]
 extra-source "sendpage-doc-1.0.3-r5.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/sendpage-doc-1.0.3-r5.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/sendpage-doc-1.0.3-r5.apk"
 }

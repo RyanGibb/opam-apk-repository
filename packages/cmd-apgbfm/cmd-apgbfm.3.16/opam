@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "apg" {= "2.2.3-r6"}
+]

@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del netcat-openbsd-doc"]
 ]
 extra-source "netcat-openbsd-doc-1.130-r1.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/netcat-openbsd-doc-1.130-r1.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/netcat-openbsd-doc-1.130-r1.apk"
 }

@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "openpgm" {= "5.2.122-r1"}
-]

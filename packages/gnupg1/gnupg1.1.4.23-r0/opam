@@ -12,5 +12,5 @@ depends: [
   "so-libz-so-1"
 ]
 extra-source "gnupg1-1.4.23-r0.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/gnupg1-1.4.23-r0.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/gnupg1-1.4.23-r0.apk"
 }

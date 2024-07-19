@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "poppler" {= "0.32.0-r1"}
-]

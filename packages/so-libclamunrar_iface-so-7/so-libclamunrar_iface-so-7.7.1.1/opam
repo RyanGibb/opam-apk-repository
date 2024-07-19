@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "clamav-libunrar" {= "0.100.1-r0"}
-]

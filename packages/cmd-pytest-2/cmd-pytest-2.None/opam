@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "py2-pytest" {= "4.1.0-r0"}
-]

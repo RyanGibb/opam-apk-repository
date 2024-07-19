@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del perl-mozilla-ca"]
 ]
 extra-source "perl-mozilla-ca-20200520-r0.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/perl-mozilla-ca-20200520-r0.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-mozilla-ca-20200520-r0.apk"
 }

@@ -9,5 +9,5 @@ depends: [
   "lua"
 ]
 extra-source "lua-gversion-0.2.0-r2.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/lua-gversion-0.2.0-r2.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/lua-gversion-0.2.0-r2.apk"
 }

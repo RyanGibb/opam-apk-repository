@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  ("dropbear-scp" {= "2022.83-r2"} | "openssh-client-common" {= "9.3_p2-r2"})
-]

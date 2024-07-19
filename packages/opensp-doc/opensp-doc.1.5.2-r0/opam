@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del opensp-doc"]
 ]
 extra-source "opensp-doc-1.5.2-r0.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/opensp-doc-1.5.2-r0.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/opensp-doc-1.5.2-r0.apk"
 }

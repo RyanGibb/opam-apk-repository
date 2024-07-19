@@ -10,5 +10,5 @@ depends: [
   "freeradius" {> "3"}
 ]
 extra-source "acf-freeradius3-0.3.1-r0.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/acf-freeradius3-0.3.1-r0.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/acf-freeradius3-0.3.1-r0.apk"
 }

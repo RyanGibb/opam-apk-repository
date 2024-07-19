@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "libassuan-dev" {= "2.5.6-r0"}
+]

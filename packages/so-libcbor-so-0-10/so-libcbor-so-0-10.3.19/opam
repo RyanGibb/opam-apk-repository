@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "libcbor" {= "0.10.2-r1"}
+]

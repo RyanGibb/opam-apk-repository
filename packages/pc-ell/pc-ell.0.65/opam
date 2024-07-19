@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "ell-dev" {= "0.65-r0"}
-]

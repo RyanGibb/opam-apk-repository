@@ -10,5 +10,5 @@ depends: [
   "so-libev-so-4"
 ]
 extra-source "pingu-1.5-r2.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/pingu-1.5-r2.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/pingu-1.5-r2.apk"
 }

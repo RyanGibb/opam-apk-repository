@@ -11,5 +11,5 @@ depends: [
   "so-libstdc++-so-6"
 ]
 extra-source "gperf-3.1-r2.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/gperf-3.1-r2.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/gperf-3.1-r2.apk"
 }

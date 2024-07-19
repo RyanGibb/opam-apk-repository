@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "gtk-update-icon-cache" {= "2.24.33-r0"}
+]

@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "rsyslog-zmq" {= "8.40.0-r4"}
-]

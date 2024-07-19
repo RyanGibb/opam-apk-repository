@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del cdrkit-doc"]
 ]
 extra-source "cdrkit-doc-1.1.11-r2.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/cdrkit-doc-1.1.11-r2.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/cdrkit-doc-1.1.11-r2.apk"
 }

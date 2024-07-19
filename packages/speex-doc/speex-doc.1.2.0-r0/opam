@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del speex-doc"]
 ]
 extra-source "speex-doc-1.2.0-r0.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/speex-doc-1.2.0-r0.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/speex-doc-1.2.0-r0.apk"
 }

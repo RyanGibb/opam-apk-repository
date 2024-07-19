@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "libecpg-dev" {= "15.7-r0"}
+]

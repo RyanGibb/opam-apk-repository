@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del rrdcollect-doc"]
 ]
 extra-source "rrdcollect-doc-0.2.10-r1.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/rrdcollect-doc-0.2.10-r1.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/rrdcollect-doc-0.2.10-r1.apk"
 }

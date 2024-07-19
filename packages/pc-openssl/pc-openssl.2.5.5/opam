@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  ("openssl-dev" {= "1.0.2r-r0"} | "libressl-dev" {= "2.5.5-r2"})
-]

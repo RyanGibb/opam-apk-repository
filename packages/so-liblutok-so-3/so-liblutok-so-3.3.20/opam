@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "lutok" {= "0.4-r6"}
+]

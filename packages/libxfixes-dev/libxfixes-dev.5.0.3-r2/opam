@@ -13,5 +13,5 @@ depends: [
   "pkgconfig"
 ]
 extra-source "libxfixes-dev-5.0.3-r2.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libxfixes-dev-5.0.3-r2.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/libxfixes-dev-5.0.3-r2.apk"
 }

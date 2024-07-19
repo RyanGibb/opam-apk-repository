@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "speex-tools" {= "1.2.1-r2"}
+]

@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del ircservices-doc"]
 ]
 extra-source "ircservices-doc-5.1.24-r4.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/ircservices-doc-5.1.24-r4.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/ircservices-doc-5.1.24-r4.apk"
 }

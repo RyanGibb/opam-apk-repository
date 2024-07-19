@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del lua-optarg"]
 ]
 extra-source "lua-optarg-0.2-r1.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/lua-optarg-0.2-r1.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/lua-optarg-0.2-r1.apk"
 }

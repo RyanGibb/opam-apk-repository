@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del libxfixes-doc"]
 ]
 extra-source "libxfixes-doc-5.0.3-r2.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libxfixes-doc-5.0.3-r2.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/libxfixes-doc-5.0.3-r2.apk"
 }

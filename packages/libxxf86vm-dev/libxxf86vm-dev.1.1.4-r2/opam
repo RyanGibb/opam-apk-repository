@@ -13,5 +13,5 @@ depends: [
   "pkgconfig"
 ]
 extra-source "libxxf86vm-dev-1.1.4-r2.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libxxf86vm-dev-1.1.4-r2.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/libxxf86vm-dev-1.1.4-r2.apk"
 }

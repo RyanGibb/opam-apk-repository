@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del libnih-doc"]
 ]
 extra-source "libnih-doc-1.0.3-r5.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libnih-doc-1.0.3-r5.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/libnih-doc-1.0.3-r5.apk"
 }

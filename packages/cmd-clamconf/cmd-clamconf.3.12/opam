@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "clamav-daemon" {= "0.103.6-r0"}
+]

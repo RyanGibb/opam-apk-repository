@@ -22,5 +22,5 @@ depends: [
   "zstd"
 ]
 extra-source "linux-lts-dev-6.6.40-r0.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/linux-lts-dev-6.6.40-r0.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/linux-lts-dev-6.6.40-r0.apk"
 }

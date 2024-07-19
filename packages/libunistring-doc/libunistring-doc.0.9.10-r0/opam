@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del libunistring-doc"]
 ]
 extra-source "libunistring-doc-0.9.10-r0.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libunistring-doc-0.9.10-r0.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/libunistring-doc-0.9.10-r0.apk"
 }

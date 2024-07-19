@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "freetds" {= "1.00.104-r1"}
-]

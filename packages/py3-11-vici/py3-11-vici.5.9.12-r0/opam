@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "py3-vici" {= "5.9.12-r0"}
-]

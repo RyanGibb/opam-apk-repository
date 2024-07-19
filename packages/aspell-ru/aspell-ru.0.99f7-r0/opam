@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del aspell-ru"]
 ]
 extra-source "aspell-ru-0.99f7-r0.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/aspell-ru-0.99f7-r0.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/aspell-ru-0.99f7-r0.apk"
 }

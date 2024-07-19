@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "fftw-single-libs" {= "3.3.10-r0"}
+]

@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del dnstop-doc"]
 ]
 extra-source "dnstop-doc-20140915-r3.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/dnstop-doc-20140915-r3.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/dnstop-doc-20140915-r3.apk"
 }

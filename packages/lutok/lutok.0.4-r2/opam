@@ -12,5 +12,5 @@ depends: [
   "so-libstdc++-so-6"
 ]
 extra-source "lutok-0.4-r2.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/lutok-0.4-r2.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/lutok-0.4-r2.apk"
 }

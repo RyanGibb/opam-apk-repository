@@ -14,5 +14,5 @@ depends: [
   "util-macros"
 ]
 extra-source "font-cursor-misc-1.0.3-r1.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/font-cursor-misc-1.0.3-r1.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/font-cursor-misc-1.0.3-r1.apk"
 }

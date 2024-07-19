@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del expect-dev"]
 ]
 extra-source "expect-dev-5.45.4-r0.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/expect-dev-5.45.4-r0.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/expect-dev-5.45.4-r0.apk"
 }

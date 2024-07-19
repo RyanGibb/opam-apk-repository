@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "ctags" {= "0_git20200205-r0"}
+]

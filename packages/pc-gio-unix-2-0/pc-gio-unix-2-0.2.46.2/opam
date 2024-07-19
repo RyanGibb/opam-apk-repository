@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "glib-dev" {= "2.46.2-r0"}
-]

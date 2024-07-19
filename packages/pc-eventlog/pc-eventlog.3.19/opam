@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "eventlog-dev" {= "0.2.13-r4"}
+]

@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "liblockfile" {= "1.17-r0"}
+]

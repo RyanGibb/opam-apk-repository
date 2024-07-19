@@ -11,5 +11,5 @@ depends: [
   "git"
 ]
 extra-source "alpine-sdk-1.0-r0.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/alpine-sdk-1.0-r0.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/alpine-sdk-1.0-r0.apk"
 }

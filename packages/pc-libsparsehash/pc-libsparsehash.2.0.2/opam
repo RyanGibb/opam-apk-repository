@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "sparsehash" {= "2.0.3-r0"}
-]

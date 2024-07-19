@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "dpkg-dev" {= "1.21.21-r1"}
+]

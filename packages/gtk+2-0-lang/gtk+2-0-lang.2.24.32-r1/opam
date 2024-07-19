@@ -10,5 +10,5 @@ depends: [
   "shared-mime-info"
 ]
 extra-source "gtk+2.0-lang-2.24.32-r1.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/gtk+2.0-lang-2.24.32-r1.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/gtk+2.0-lang-2.24.32-r1.apk"
 }

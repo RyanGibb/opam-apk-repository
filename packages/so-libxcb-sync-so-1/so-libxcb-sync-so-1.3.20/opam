@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "libxcb" {= "1.16.1-r0"}
+]

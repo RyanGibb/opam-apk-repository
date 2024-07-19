@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "ser2net" {= "3.4-r1"}
-]

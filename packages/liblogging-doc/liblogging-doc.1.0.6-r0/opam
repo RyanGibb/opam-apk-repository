@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del liblogging-doc"]
 ]
 extra-source "liblogging-doc-1.0.6-r0.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/liblogging-doc-1.0.6-r0.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/liblogging-doc-1.0.6-r0.apk"
 }

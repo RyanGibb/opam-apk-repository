@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "libcrystalhd" {= "20130708-r2"}
-]

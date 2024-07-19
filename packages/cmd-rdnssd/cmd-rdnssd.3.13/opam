@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "rdnssd" {= "1.0.4-r4"}
+]

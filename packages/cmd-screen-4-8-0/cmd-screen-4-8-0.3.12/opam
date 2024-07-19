@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "screen" {= "4.8.0-r2"}
+]

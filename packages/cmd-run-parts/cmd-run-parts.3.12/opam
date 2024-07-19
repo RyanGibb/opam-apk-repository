@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "run-parts" {= "4.9.1-r1"}
+]

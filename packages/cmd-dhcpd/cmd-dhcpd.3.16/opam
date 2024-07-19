@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  ("dhcp-server-vanilla" {= "4.4.3_p1-r0"} | "dhcp-server-ldap" {= "4.4.3_p1-r0"})
+]

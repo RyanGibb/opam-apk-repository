@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del lua-lxc"]
 ]
 extra-source "lua-lxc-3.0.2-r0.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/lua-lxc-3.0.2-r0.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/lua-lxc-3.0.2-r0.apk"
 }

@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "xmlsec-nss" {= "1.2.29-r0"}
-]

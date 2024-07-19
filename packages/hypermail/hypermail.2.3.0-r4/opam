@@ -12,5 +12,5 @@ depends: [
   "so-libpcre-so-1"
 ]
 extra-source "hypermail-2.3.0-r4.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/hypermail-2.3.0-r4.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/hypermail-2.3.0-r4.apk"
 }

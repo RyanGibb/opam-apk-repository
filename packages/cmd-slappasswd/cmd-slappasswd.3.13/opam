@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "openldap" {= "2.4.57-r1"}
+]

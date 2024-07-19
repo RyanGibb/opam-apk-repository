@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  ("py3-mako" {= "1.0.7-r0"} | "py2-mako" {= "1.0.7-r0"})
-]

@@ -9,5 +9,5 @@ depends: [
   "initramfs-generator"
 ]
 extra-source "linux-virt-6.6.40-r0.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/linux-virt-6.6.40-r0.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/linux-virt-6.6.40-r0.apk"
 }

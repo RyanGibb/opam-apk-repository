@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "ccnet-libs" {= "4.2.2-r0"}
-]

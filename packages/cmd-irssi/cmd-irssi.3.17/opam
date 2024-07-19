@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "irssi" {= "1.4.4-r0"}
+]

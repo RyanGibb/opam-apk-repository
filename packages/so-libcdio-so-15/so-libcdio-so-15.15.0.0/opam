@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "libcdio" {= "0.92-r0"}
-]

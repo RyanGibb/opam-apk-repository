@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "botan" {= "2.11.0-r6"}
+]

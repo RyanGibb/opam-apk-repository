@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "dbus-libs" {= "1.10.14-r0"}
-]

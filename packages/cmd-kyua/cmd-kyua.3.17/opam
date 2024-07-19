@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "kyua" {= "0.13-r6"}
+]

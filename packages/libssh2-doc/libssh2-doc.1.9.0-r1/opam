@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del libssh2-doc"]
 ]
 extra-source "libssh2-doc-1.9.0-r1.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libssh2-doc-1.9.0-r1.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/libssh2-doc-1.9.0-r1.apk"
 }

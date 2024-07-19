@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del djbdns-doc"]
 ]
 extra-source "djbdns-doc-1.05-r47.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/djbdns-doc-1.05-r47.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/djbdns-doc-1.05-r47.apk"
 }

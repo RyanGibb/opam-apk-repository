@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "ortp-dev" {= "5.1.12-r1"}
+]

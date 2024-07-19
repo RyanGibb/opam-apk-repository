@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "mc" {= "4.8.24-r0"}
+]

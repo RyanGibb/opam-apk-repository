@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "haproxy" {= "2.4.22-r0"}
+]

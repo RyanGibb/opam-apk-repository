@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "unbound-libs" {= "1.5.8-r1"}
-]

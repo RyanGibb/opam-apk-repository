@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  ("postgresql15-plperl-contrib" {= "15.7-r0"} | "postgresql14-plperl-contrib" {= "14.12-r0"})
+]

@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "alsa-lib" {= "1.2.9-r1"}
+]

@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "perl-net-server" {= "2.010-r0"}
+]

@@ -12,5 +12,5 @@ depends: [
   "so-libpq-so-5"
 ]
 extra-source "pam-pgsql-0.7.3.2-r0.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/pam-pgsql-0.7.3.2-r0.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/pam-pgsql-0.7.3.2-r0.apk"
 }

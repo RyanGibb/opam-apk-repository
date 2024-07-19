@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "libxaw" {= "1.0.15-r1"}
+]

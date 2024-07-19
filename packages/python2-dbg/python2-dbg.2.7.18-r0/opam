@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del python2-dbg"]
 ]
 extra-source "python2-dbg-2.7.18-r0.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/python2-dbg-2.7.18-r0.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/python2-dbg-2.7.18-r0.apk"
 }

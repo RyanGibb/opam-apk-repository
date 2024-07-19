@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "qextserialport" {= "1.2_rc1-r0"}
-]

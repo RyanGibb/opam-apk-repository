@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  ("perl-encode-dev" {= "3.06-r0"} | "perl-dev" {= "5.30.3-r0"})
+]

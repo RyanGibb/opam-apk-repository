@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del p7zip-doc"]
 ]
 extra-source "p7zip-doc-16.02-r3.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/p7zip-doc-16.02-r3.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/p7zip-doc-16.02-r3.apk"
 }

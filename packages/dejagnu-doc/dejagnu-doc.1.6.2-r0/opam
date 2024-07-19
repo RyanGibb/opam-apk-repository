@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del dejagnu-doc"]
 ]
 extra-source "dejagnu-doc-1.6.2-r0.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/dejagnu-doc-1.6.2-r0.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/dejagnu-doc-1.6.2-r0.apk"
 }

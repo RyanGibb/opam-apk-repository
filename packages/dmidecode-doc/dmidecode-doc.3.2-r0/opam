@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del dmidecode-doc"]
 ]
 extra-source "dmidecode-doc-3.2-r0.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/dmidecode-doc-3.2-r0.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/dmidecode-doc-3.2-r0.apk"
 }

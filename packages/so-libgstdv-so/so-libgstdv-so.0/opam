@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "gst-plugins-good1" {= "1.10.4-r1"}
-]

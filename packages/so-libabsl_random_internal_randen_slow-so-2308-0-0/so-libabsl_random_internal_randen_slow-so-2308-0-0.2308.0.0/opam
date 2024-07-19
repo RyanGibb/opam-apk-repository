@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "abseil-cpp-random-internal-randen-slow" {= "20230802.1-r0"}
-]

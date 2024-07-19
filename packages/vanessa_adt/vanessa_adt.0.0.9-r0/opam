@@ -10,5 +10,5 @@ depends: [
   "so-libvanessa_logger-so-0"
 ]
 extra-source "vanessa_adt-0.0.9-r0.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/vanessa_adt-0.0.9-r0.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/vanessa_adt-0.0.9-r0.apk"
 }

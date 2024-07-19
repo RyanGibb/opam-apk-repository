@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "libiec61883-dev" {= "1.2.0-r2"}
-]

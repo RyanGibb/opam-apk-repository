@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "gpm-libs" {= "1.20.7-r2"}
+]

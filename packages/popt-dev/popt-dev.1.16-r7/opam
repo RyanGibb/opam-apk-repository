@@ -10,5 +10,5 @@ depends: [
   "popt" {= "1.16-r7"}
 ]
 extra-source "popt-dev-1.16-r7.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/popt-dev-1.16-r7.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/popt-dev-1.16-r7.apk"
 }

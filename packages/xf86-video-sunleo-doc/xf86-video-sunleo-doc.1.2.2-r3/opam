@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del xf86-video-sunleo-doc"]
 ]
 extra-source "xf86-video-sunleo-doc-1.2.2-r3.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/xf86-video-sunleo-doc-1.2.2-r3.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/xf86-video-sunleo-doc-1.2.2-r3.apk"
 }

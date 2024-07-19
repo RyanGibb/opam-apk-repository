@@ -12,5 +12,5 @@ depends: [
   "xcb-util-renderutil" {= "0.3.9-r1"}
 ]
 extra-source "xcb-util-renderutil-dev-0.3.9-r1.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/xcb-util-renderutil-dev-0.3.9-r1.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/xcb-util-renderutil-dev-0.3.9-r1.apk"
 }

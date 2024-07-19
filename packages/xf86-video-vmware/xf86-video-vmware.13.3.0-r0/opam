@@ -12,5 +12,5 @@ depends: [
   "so-libxatracker-so-2"
 ]
 extra-source "xf86-video-vmware-13.3.0-r0.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/xf86-video-vmware-13.3.0-r0.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/xf86-video-vmware-13.3.0-r0.apk"
 }

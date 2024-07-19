@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del tftp-hpa-doc"]
 ]
 extra-source "tftp-hpa-doc-5.2-r2.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/tftp-hpa-doc-5.2-r2.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/tftp-hpa-doc-5.2-r2.apk"
 }

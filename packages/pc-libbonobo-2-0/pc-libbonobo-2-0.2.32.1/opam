@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "libbonobo-dev" {= "2.32.1-r6"}
-]

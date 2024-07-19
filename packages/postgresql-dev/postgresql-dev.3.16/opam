@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  ("postgresql13-dev" {= "13.15-r0"} | "postgresql14-dev" {= "14.12-r0"})
+]

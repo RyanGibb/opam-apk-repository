@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  ("postgresql13-client" {= "13.13-r0"} | "postgresql14-client" {= "14.10-r0"})
+]

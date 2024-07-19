@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "libressl2-4-libcrypto" {= "2.4.4-r0"}
-]

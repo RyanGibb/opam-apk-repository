@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del font-vollkorn"]
 ]
 extra-source "font-vollkorn-4.105-r0.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/font-vollkorn-4.105-r0.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/font-vollkorn-4.105-r0.apk"
 }

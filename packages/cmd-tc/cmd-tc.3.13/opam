@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "iproute2-tc" {= "5.10.0-r1"}
+]

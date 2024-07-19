@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "kbd-bkeymaps" {= "2.2.0-r2"}
+]

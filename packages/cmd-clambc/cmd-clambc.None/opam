@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "clamav-scanner" {= "0.100.3-r0"}
-]

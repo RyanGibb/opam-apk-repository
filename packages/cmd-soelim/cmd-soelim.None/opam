@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  ("mdocml-soelim" {= "1.14.3-r0"} | "groff" {= "1.22.3-r2"})
-]

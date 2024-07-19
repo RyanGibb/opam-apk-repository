@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "knot-utils" {= "2.9.8-r0"}
+]

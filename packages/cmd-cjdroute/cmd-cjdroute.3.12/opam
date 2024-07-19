@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "cjdns" {= "20.6-r0"}
+]

@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del txt2man-doc"]
 ]
 extra-source "txt2man-doc-1.6.0-r0.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/txt2man-doc-1.6.0-r0.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/txt2man-doc-1.6.0-r0.apk"
 }

@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "fuse-dev" {= "2.9.8-r2"}
-]

@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "xf86-input-libinput-dev" {= "0.28.1-r0"}
-]

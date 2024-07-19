@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  ("diffutils" {= "3.9-r2"} | "subversion-tools" {= "1.14.2-r10"})
+]

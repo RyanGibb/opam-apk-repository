@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "perl-socket-getaddrinfo" {= "0.22-r2"}
+]

@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "samba-util-libs" {= "4.13.17-r0"}
+]

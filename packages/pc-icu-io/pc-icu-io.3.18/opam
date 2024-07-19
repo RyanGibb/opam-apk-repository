@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "icu-dev" {= "73.2-r2"}
+]

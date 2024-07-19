@@ -10,5 +10,5 @@ depends: [
   "pkgconfig"
 ]
 extra-source "libexif-dev-0.6.22-r0.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libexif-dev-0.6.22-r0.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/libexif-dev-0.6.22-r0.apk"
 }

@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "libatomic" {= "10.3.1_git20211027-r0"}
+]

@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "hunspell" {= "1.7.0-r1"}
-]

@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "musl" {= "1.1.24-r10"}
+]

@@ -1,4 +1,16 @@
 opam-version: "2.0"
-depends: [
-  "gvim" {= "8.2.4836-r1"}
+build: [
+  ["sh" "-c" "sudo apk add vim-8.2.4836-r1.apk"]
 ]
+remove: [
+  ["sh" "-c" "sudo apk del vim"]
+]
+depends: [
+  "so-libc-musl-x86_64-so-1"
+  "so-liblua-5-3-so-0"
+  "so-libncursesw-so-6"
+  "xxd"
+]
+extra-source "vim-8.2.4836-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/vim-8.2.4836-r1.apk"
+}

@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "libpanelw" {= "6.4_p20230506-r0"}
+]

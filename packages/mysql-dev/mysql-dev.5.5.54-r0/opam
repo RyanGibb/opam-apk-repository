@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "mariadb-dev" {= "5.5.54-r0"}
-]

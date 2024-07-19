@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "libdaemon" {= "0.14-r3"}
+]

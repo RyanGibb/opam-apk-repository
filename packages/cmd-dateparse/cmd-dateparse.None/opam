@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "perl-datetime-format-natural" {= "1.06-r0"}
-]

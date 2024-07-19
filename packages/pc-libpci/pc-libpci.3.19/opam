@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "pciutils-dev" {= "3.10.0-r0"}
+]

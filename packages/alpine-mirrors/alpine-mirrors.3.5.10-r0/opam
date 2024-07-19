@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del alpine-mirrors"]
 ]
 extra-source "alpine-mirrors-3.5.10-r0.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/alpine-mirrors-3.5.10-r0.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/alpine-mirrors-3.5.10-r0.apk"
 }

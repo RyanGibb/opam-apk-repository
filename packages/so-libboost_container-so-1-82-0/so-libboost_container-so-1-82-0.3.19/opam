@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "boost1-82-container" {= "1.82.0-r3"}
+]

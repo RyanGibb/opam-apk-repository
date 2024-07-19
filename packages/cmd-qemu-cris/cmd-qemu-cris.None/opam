@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "qemu-cris" {= "3.1.0-r3"}
-]

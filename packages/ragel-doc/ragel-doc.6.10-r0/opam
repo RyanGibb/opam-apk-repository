@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del ragel-doc"]
 ]
 extra-source "ragel-doc-6.10-r0.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/ragel-doc-6.10-r0.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/ragel-doc-6.10-r0.apk"
 }

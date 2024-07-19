@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "vanessa_socket" {= "0.0.13-r2"}
+]

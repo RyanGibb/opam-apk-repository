@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  ("dnsmasq-dnssec" {= "2.80-r4"} | "dnsmasq" {= "2.80-r4"})
-]

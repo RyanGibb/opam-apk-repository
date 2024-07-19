@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "luajit-dev" {= "2.1_p20210510-r3"}
+]

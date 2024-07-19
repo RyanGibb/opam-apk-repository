@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "gvim" {= "8.2.5000-r1"}
-]

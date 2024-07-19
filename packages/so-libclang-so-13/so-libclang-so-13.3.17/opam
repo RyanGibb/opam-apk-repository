@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "clang14-libclang" {= "14.0.6-r1"}
+]

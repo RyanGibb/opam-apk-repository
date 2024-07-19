@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "at-spi2-atk-dev" {= "2.22.0-r0"}
-]

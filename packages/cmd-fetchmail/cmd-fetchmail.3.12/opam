@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "fetchmail" {= "6.4.5-r0"}
+]

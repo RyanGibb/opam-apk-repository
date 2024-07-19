@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "gtkglext" {= "1.2.0-r12"}
-]

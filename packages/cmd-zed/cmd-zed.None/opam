@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "zfs" {= "0.7.12-r1"}
-]

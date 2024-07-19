@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "boost-container" {= "1.71.0-r1"}
-]

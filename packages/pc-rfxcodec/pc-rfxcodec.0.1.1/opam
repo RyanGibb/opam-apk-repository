@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "xrdp-dev" {= "0.9.2-r4"}
-]

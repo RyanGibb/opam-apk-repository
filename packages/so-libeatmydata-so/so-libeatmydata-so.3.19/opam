@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "libeatmydata" {= "131-r7"}
+]

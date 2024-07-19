@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "libelf" {= "0.190-r1"}
+]

@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del rlog-doc"]
 ]
 extra-source "rlog-doc-1.4-r4.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/rlog-doc-1.4-r4.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/rlog-doc-1.4-r4.apk"
 }

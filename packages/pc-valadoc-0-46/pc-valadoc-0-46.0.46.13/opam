@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "vala" {= "0.46.13-r0"}
-]

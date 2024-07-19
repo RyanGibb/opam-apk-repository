@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "libunique3-dev" {= "3.0.2-r0"}
-]

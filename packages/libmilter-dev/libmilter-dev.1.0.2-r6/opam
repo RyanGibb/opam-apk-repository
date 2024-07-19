@@ -9,5 +9,5 @@ depends: [
   "libmilter" {= "1.0.2-r6"}
 ]
 extra-source "libmilter-dev-1.0.2-r6.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libmilter-dev-1.0.2-r6.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/libmilter-dev-1.0.2-r6.apk"
 }

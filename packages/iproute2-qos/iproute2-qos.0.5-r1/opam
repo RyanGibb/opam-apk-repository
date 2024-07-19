@@ -9,5 +9,5 @@ depends: [
   "iproute2"
 ]
 extra-source "iproute2-qos-0.5-r1.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/iproute2-qos-0.5-r1.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/iproute2-qos-0.5-r1.apk"
 }

@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del pcmciautils-doc"]
 ]
 extra-source "pcmciautils-doc-018-r1.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/pcmciautils-doc-018-r1.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/pcmciautils-doc-018-r1.apk"
 }

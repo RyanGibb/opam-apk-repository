@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del xf86-video-intel-doc"]
 ]
 extra-source "xf86-video-intel-doc-2.99.917_git20170325-r4.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/xf86-video-intel-doc-2.99.917_git20170325-r4.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/xf86-video-intel-doc-2.99.917_git20170325-r4.apk"
 }

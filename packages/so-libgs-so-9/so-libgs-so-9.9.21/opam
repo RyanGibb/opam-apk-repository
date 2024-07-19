@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "ghostscript" {= "9.21-r0"}
-]

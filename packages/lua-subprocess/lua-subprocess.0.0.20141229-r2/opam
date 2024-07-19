@@ -6,5 +6,5 @@ remove: [
   ["sh" "-c" "sudo apk del lua-subprocess"]
 ]
 extra-source "lua-subprocess-0.0.20141229-r2.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/lua-subprocess-0.0.20141229-r2.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/lua-subprocess-0.0.20141229-r2.apk"
 }

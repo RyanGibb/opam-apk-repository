@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "gnupg-dirmngr" {= "2.2.31-r2"}
+]

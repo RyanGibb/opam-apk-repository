@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "taglib-dev" {= "1.10-r0"}
-]

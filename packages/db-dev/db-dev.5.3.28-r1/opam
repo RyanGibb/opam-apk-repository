@@ -10,5 +10,5 @@ depends: [
   "db-c++" {= "5.3.28-r1"}
 ]
 extra-source "db-dev-5.3.28-r1.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/db-dev-5.3.28-r1.apk"
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/db-dev-5.3.28-r1.apk"
 }

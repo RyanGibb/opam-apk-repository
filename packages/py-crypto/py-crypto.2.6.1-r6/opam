@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "py3-crypto" {= "2.6.1-r6"}
-]

@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "libre2" {= "2015.07.01-r0"}
-]
