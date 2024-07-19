@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del postgresql13-jit"]
 ]
 depends: [
+  "libgcc" {= "10.3.1_git20211027-r0"}
+  "libstdc++" {= "10.3.1_git20211027-r0"}
+  "llvm12-libs" {= "12.0.1-r0"}
+  "musl" {= "1.2.2-r9"}
   "postgresql13" {= "13.13-r0"}
-  "so-libLLVM-12-so"
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
-  "so-libstdc++-so-6"
 ]
 extra-source "postgresql13-jit-13.13-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/postgresql13-jit-13.13-r0.apk"

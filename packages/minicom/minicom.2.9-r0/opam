@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del minicom"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libintl-so-8"
-  "so-libncursesw-so-6"
+  "libintl" {= "0.22.5-r0"}
+  "libncursesw" {= "6.4_p20240420-r0"}
+  "musl" {= "1.2.5-r0"}
 ]
 extra-source "minicom-2.9-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/minicom-2.9-r0.apk"

@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del ngrep"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libpcap-so-1"
+  "libpcap" {= "1.10.1-r0"}
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "ngrep-1.47-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/ngrep-1.47-r1.apk"

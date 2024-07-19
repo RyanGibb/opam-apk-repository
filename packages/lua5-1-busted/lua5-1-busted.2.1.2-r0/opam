@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del lua5.1-busted"]
 ]
 depends: [
+  "lua-cliargs" {= "3.0_p2-r2"}
   "lua5-1"
   "lua5-1-cjson"
-  "lua5-1-cliargs"
   "lua5-1-filesystem"
   "lua5-1-luassert"
   "lua5-1-mediator"

@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del pgtcl"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libpq-so-5"
+  "libpq" {= "16.3-r0"}
+  "musl" {= "1.2.5-r0"}
   "tcl"
 ]
 extra-source "pgtcl-3.0.1-r0.apk" {

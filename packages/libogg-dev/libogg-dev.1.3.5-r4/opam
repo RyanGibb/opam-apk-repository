@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libogg" {= "1.3.5-r4"}
-  "pkgconfig"
+  "pkgconf" {= "1.9.5-r0"}
 ]
 extra-source "libogg-dev-1.3.5-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/libogg-dev-1.3.5-r4.apk"

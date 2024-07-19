@@ -7,11 +7,10 @@ remove: [
 ]
 depends: [
   "libgcrypt" {= "1.10.2-r1"}
-  "pc-gpg-error"
-  "pkgconfig"
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcrypt-so-20"
-  "so-libgpg-error-so-0"
+  "libgpg-error" {= "1.47-r1"}
+  "libgpg-error-dev" {= "1.47-r1"}
+  "musl" {= "1.2.4-r2"}
+  "pkgconf" {= "1.9.5-r0"}
 ]
 extra-source "libgcrypt-dev-1.10.2-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/libgcrypt-dev-1.10.2-r1.apk"

@@ -6,11 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del rust-clippy"]
 ]
 depends: [
+  "libgcc" {= "13.2.1_git20231014-r0"}
+  "musl" {= "1.2.4_git20230717-r4"}
   "rust" {= "1.76.0-r0"}
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
-  "so-librustc_driver-56e2d9f25bcc525c-so"
-  "so-libstd-01072ff1a54ef56b-so"
 ]
 extra-source "rust-clippy-1.76.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/rust-clippy-1.76.0-r0.apk"

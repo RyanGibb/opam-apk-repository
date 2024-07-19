@@ -6,12 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del freetds"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-3"
-  "so-libodbc-so-2"
-  "so-libodbcinst-so-2"
-  "so-libreadline-so-8"
-  "so-libssl-so-3"
+  "libcrypto3" {= "3.1.6-r2"}
+  "libssl3" {= "3.1.6-r2"}
+  "musl" {= "1.2.4_git20230717-r4"}
+  "readline" {= "8.2.1-r2"}
+  "unixodbc" {= "2.3.12-r0"}
 ]
 extra-source "freetds-1.4.10-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/freetds-1.4.10-r0.apk"

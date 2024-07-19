@@ -6,14 +6,14 @@ remove: [
   ["sh" "-c" "sudo apk del pinentry-curses-ss"]
 ]
 depends: [
-  "-bin-sh"
-  "so-libassuan-so-0"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcap-so-2"
-  "so-libglib-2-0-so-0"
-  "so-libgpg-error-so-0"
-  "so-libncursesw-so-6"
-  "so-libsecret-1-so-0"
+  "busybox" {= "1.35.0-r18"}
+  "glib" {= "2.72.4-r0"}
+  "libassuan" {= "2.5.6-r0"}
+  "libcap" {= "2.64-r1"}
+  "libgpg-error" {= "1.45-r0"}
+  "libsecret" {= "0.20.5-r0"}
+  "musl" {= "1.2.3-r3"}
+  "ncurses-libs" {= "6.3_p20220521-r1"}
 ]
 extra-source "pinentry-curses-ss-1.2.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/pinentry-curses-ss-1.2.0-r0.apk"

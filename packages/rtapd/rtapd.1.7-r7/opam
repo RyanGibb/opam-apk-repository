@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del rtapd"]
 ]
 depends: [
+  "libpq" {= "15.7-r0"}
+  "musl" {= "1.2.3-r5"}
   "rtnppd"
-  "so-libc-musl-x86_64-so-1"
-  "so-libpq-so-5"
 ]
 extra-source "rtapd-1.7-r7.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/rtapd-1.7-r7.apk"

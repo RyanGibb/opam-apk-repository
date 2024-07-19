@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del postgresql-client"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libedit-so-0"
-  "so-libpq-so-5"
-  "so-libz-so-1"
+  "libedit" {= "20191231.3.1-r0"}
+  "libpq" {= "12.10-r0"}
+  "musl" {= "1.1.24-r10"}
+  "zlib" {= "1.2.12-r3"}
 ]
 extra-source "postgresql-client-12.10-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/postgresql-client-12.10-r0.apk"

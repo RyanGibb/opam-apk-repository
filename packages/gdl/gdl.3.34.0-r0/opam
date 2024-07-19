@@ -6,14 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del gdl"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libcairo-so-2"
-  "so-libgdk-3-so-0"
-  "so-libgdk_pixbuf-2-0-so-0"
-  "so-libglib-2-0-so-0"
-  "so-libgobject-2-0-so-0"
-  "so-libgtk-3-so-0"
-  "so-libxml2-so-2"
+  "cairo" {= "1.16.0-r5"}
+  "gdk-pixbuf" {= "2.42.6-r1"}
+  "glib" {= "2.68.3-r0"}
+  "gtk+3-0" {= "3.24.28-r0"}
+  "libxml2" {= "2.9.14-r2"}
+  "musl" {= "1.2.2-r5"}
 ]
 extra-source "gdl-3.34.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/gdl-3.34.0-r0.apk"

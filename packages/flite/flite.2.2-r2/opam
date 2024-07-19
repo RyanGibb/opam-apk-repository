@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del flite"]
 ]
 depends: [
-  "so-libasound-so-2"
-  "so-libc-musl-x86_64-so-1"
+  "alsa-lib" {= "1.2.11-r0"}
+  "musl" {= "1.2.5-r0"}
 ]
 extra-source "flite-2.2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/flite-2.2-r2.apk"

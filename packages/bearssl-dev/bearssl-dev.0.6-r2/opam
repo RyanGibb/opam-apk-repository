@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "bearssl" {= "0.6-r2"}
-  "pkgconfig"
+  "pkgconf" {= "1.9.4-r0"}
 ]
 extra-source "bearssl-dev-0.6-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/bearssl-dev-0.6-r2.apk"

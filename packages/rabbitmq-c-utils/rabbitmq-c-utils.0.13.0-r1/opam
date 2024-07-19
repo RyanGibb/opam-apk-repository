@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del rabbitmq-c-utils"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libpopt-so-0"
-  "so-librabbitmq-so-4"
+  "musl" {= "1.2.4-r2"}
+  "popt" {= "1.19-r2"}
+  "rabbitmq-c" {= "0.13.0-r1"}
 ]
 extra-source "rabbitmq-c-utils-0.13.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/rabbitmq-c-utils-0.13.0-r1.apk"

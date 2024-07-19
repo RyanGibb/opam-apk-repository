@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del nghttp2-libs"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "nghttp2-libs-1.47.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/nghttp2-libs-1.47.0-r2.apk"

@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del samba-util-libs"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libgnutls-so-30"
-  "so-libtalloc-so-2"
-  "so-libtevent-so-0"
+  "gnutls" {= "3.7.7-r1"}
+  "musl" {= "1.2.3-r3"}
+  "talloc" {= "2.3.3-r1"}
+  "tevent" {= "0.11.0-r1"}
 ]
 extra-source "samba-util-libs-4.15.13-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/samba-util-libs-4.15.13-r0.apk"

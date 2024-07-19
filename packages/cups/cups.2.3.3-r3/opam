@@ -6,21 +6,20 @@ remove: [
   ["sh" "-c" "sudo apk del cups"]
 ]
 depends: [
-  "-bin-sh"
+  "avahi-libs" {= "0.8-r5"}
+  "busybox" {= "1.33.1-r8"}
   "cups-client"
   "cups-client" {= "2.3.3-r3"}
+  "cups-libs" {= "2.3.3-r3"}
   "dbus"
+  "dbus-libs" {= "1.12.24-r0"}
+  "libgcc" {= "10.3.1_git20210424-r2"}
+  "libpaper" {= "1.1.28-r0"}
+  "libstdc++" {= "10.3.1_git20210424-r2"}
+  "libusb" {= "1.0.24-r2"}
+  "musl" {= "1.2.2-r5"}
   "openssl"
   "poppler-utils"
-  "so-libavahi-client-so-3"
-  "so-libavahi-common-so-3"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcups-so-2"
-  "so-libdbus-1-so-3"
-  "so-libgcc_s-so-1"
-  "so-libpaper-so-1"
-  "so-libstdc++-so-6"
-  "so-libusb-1-0-so-0"
 ]
 extra-source "cups-2.3.3-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/cups-2.3.3-r3.apk"

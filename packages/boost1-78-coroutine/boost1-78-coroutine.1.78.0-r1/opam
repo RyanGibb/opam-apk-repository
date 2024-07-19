@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del boost1.78-coroutine"]
 ]
 depends: [
-  "so-libboost_context-so-1-78-0"
-  "so-libc-musl-x86_64-so-1"
+  "boost1-78-context" {= "1.78.0-r1"}
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "boost1.78-coroutine-1.78.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/boost1.78-coroutine-1.78.0-r1.apk"

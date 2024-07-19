@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del hwloc"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libudev-so-1"
-  "so-libxml2-so-2"
+  "eudev-libs" {= "3.2.14-r2"}
+  "libxml2" {= "2.12.7-r0"}
+  "musl" {= "1.2.5-r0"}
 ]
 extra-source "hwloc-2.10.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/hwloc-2.10.0-r0.apk"

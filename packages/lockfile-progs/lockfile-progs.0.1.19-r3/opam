@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del lockfile-progs"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-liblockfile-so-1"
+  "liblockfile" {= "1.17-r4"}
+  "musl" {= "1.2.5-r0"}
 ]
 extra-source "lockfile-progs-0.1.19-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lockfile-progs-0.1.19-r3.apk"

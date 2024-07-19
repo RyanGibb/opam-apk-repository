@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del lvm2"]
 ]
 depends: [
+  "device-mapper-event-libs" {= "2.02.187-r1"}
+  "device-mapper-libs" {= "2.02.187-r1"}
+  "libaio" {= "0.3.112-r1"}
+  "libblkid" {= "2.37.4-r0"}
   "lvm2-libs" {= "2.02.187-r1"}
-  "so-libaio-so-1"
-  "so-libblkid-so-1"
-  "so-libc-musl-x86_64-so-1"
-  "so-libdevmapper-event-so-1-02"
-  "so-libdevmapper-so-1-02"
+  "musl" {= "1.2.2-r5"}
 ]
 extra-source "lvm2-2.02.187-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/lvm2-2.02.187-r1.apk"

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del libbsd"]
 ]
 depends: [
+  "libmd" {= "1.0.4-r2"}
   "musl"
-  "so-libc-musl-x86_64-so-1"
-  "so-libmd-so-0"
+  "musl" {= "1.2.4-r2"}
 ]
 extra-source "libbsd-0.11.7-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/libbsd-0.11.7-r1.apk"

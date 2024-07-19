@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "kamailio"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-3"
-  "so-libunistring-so-5"
+  "libcrypto3" {= "3.1.6-r2"}
+  "libunistring" {= "1.1-r2"}
+  "musl" {= "1.2.4_git20230717-r4"}
 ]
 extra-source "kamailio-websocket-5.7.2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/kamailio-websocket-5.7.2-r2.apk"

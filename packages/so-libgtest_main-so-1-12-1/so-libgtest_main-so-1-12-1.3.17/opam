@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "gtest" {= "1.12.1-r0"}
-]

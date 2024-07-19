@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del boost1.80-context"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.2.3-r5"}
 ]
 extra-source "boost1.80-context-1.80.0-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/boost1.80-context-1.80.0-r3.apk"

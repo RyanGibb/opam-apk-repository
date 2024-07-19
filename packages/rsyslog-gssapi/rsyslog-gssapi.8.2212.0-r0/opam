@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del rsyslog-gssapi"]
 ]
 depends: [
+  "krb5-libs" {= "1.20.2-r0"}
+  "musl" {= "1.2.3-r5"}
   "rsyslog" {= "8.2212.0-r0"}
-  "so-libc-musl-x86_64-so-1"
-  "so-libgssapi_krb5-so-2"
 ]
 extra-source "rsyslog-gssapi-8.2212.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/rsyslog-gssapi-8.2212.0-r0.apk"

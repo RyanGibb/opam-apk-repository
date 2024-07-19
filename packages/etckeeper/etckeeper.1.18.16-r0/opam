@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del etckeeper"]
 ]
 depends: [
-  "-bin-sh"
+  "busybox" {= "1.33.1-r8"}
   "findutils"
   "git"
 ]

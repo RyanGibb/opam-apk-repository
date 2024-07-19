@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del mtd-utils-jffs"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-liblzo2-so-2"
-  "so-libz-so-1"
+  "lzo" {= "2.10-r5"}
+  "musl" {= "1.2.4-r2"}
+  "zlib" {= "1.2.13-r1"}
 ]
 extra-source "mtd-utils-jffs-2.1.5-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/mtd-utils-jffs-2.1.5-r1.apk"

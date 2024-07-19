@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "py3-ldb" {= "2.4.4-r0"}
-]

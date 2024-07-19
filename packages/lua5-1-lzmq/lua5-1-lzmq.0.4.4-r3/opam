@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del lua5.1-lzmq"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-liblua-so-5"
-  "so-libzmq-so-5"
+  "libzmq" {= "4.3.4-r0"}
+  "lua5-1-libs" {= "5.1.5-r11"}
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "lua5.1-lzmq-0.4.4-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/lua5.1-lzmq-0.4.4-r3.apk"

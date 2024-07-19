@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del zip"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.2.5-r0"}
   "unzip"
 ]
 extra-source "zip-3.0-r12.apk" {

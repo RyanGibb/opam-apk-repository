@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "bind-libs" {= "9.16.33-r0"}
-]

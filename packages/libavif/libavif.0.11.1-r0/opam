@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del libavif"]
 ]
 depends: [
-  "so-libaom-so-3"
-  "so-libc-musl-x86_64-so-1"
-  "so-libdav1d-so-6"
+  "aom-libs" {= "3.5.0-r0"}
+  "libdav1d" {= "1.0.0-r2"}
+  "musl" {= "1.2.3-r5"}
 ]
 extra-source "libavif-0.11.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libavif-0.11.1-r0.apk"

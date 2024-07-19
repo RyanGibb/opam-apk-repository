@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del tdb-dev"]
 ]
 depends: [
-  "pkgconfig"
+  "pkgconf" {= "2.2.0-r0"}
   "python3"
   "tdb-libs" {= "1.4.9-r1"}
 ]

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "lttng-ust" {= "2.13.8-r0"}
-  "pkgconfig"
+  "pkgconf" {= "2.2.0-r0"}
   "py3-lttng" {= "2.13.8-r0"}
   "userspace-rcu-dev" {> "0.10"}
 ]

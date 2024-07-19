@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del jq"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libonig-so-5"
+  "musl" {= "1.2.4-r2"}
+  "oniguruma" {= "6.9.8-r1"}
 ]
 extra-source "jq-1.6-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/jq-1.6-r4.apk"

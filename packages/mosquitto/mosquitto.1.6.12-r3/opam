@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del mosquitto"]
 ]
 depends: [
-  "-bin-sh"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-1-1"
-  "so-libmosquitto-so-1"
-  "so-libssl-so-1-1"
-  "so-libwebsockets-so-17"
+  "busybox" {= "1.32.1-r9"}
+  "libcrypto1-1" {= "1.1.1s-r0"}
+  "libssl1-1" {= "1.1.1s-r0"}
+  "libwebsockets" {= "4.1.6-r0"}
+  "mosquitto-libs" {= "1.6.12-r3"}
+  "musl" {= "1.2.2-r2"}
 ]
 extra-source "mosquitto-1.6.12-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/mosquitto-1.6.12-r3.apk"

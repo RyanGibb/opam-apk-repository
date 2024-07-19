@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del swish-e-dev"]
 ]
 depends: [
-  "pkgconfig"
+  "pkgconf" {= "1.7.4-r1"}
   "swish-e" {= "2.4.7-r11"}
 ]
 extra-source "swish-e-dev-2.4.7-r11.apk" {

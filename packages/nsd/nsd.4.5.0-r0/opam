@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del nsd"]
 ]
 depends: [
-  "-bin-sh"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-1-1"
-  "so-libevent-2-1-so-7"
-  "so-libssl-so-1-1"
+  "busybox" {= "1.35.0-r18"}
+  "libcrypto1-1" {= "1.1.1w-r1"}
+  "libevent" {= "2.1.12-r4"}
+  "libssl1-1" {= "1.1.1w-r1"}
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "nsd-4.5.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/nsd-4.5.0-r0.apk"

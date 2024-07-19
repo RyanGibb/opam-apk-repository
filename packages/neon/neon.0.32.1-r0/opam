@@ -7,11 +7,11 @@ remove: [
 ]
 depends: [
   "ca-certificates"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-1-1"
-  "so-libexpat-so-1"
-  "so-libssl-so-1-1"
-  "so-libz-so-1"
+  "expat" {= "2.5.0-r0"}
+  "libcrypto1-1" {= "1.1.1w-r1"}
+  "libssl1-1" {= "1.1.1w-r1"}
+  "musl" {= "1.2.2-r9"}
+  "zlib" {= "1.2.12-r3"}
 ]
 extra-source "neon-0.32.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/neon-0.32.1-r0.apk"

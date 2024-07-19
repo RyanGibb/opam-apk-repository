@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del lua5.1-xctrl"]
 ]
 depends: [
+  "libx11" {= "1.8.7-r0"}
+  "libxmu" {= "1.1.4-r0"}
   "lua5-1"
-  "so-libX11-so-6"
-  "so-libXmu-so-6"
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.2.3-r5"}
 ]
 extra-source "lua5.1-xctrl-2015.04.10-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lua5.1-xctrl-2015.04.10-r3.apk"

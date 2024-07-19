@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del efi-mkuki"]
 ]
 depends: [
-  "cmd-objcopy"
-  "efistub"
+  "binutils" {= "2.42-r0"}
+  "gummiboot-efistub" {= "48.1-r8"}
 ]
 extra-source "efi-mkuki-0.1.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/efi-mkuki-0.1.0-r1.apk"

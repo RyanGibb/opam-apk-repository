@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "bacula"
-  "so-libc-musl-x86_64-so-1"
-  "so-libsqlite3-so-0"
+  "musl" {= "1.2.2-r9"}
+  "sqlite-libs" {= "3.36.0-r0"}
 ]
 extra-source "bacula-sqlite-9.6.7-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/bacula-sqlite-9.6.7-r2.apk"

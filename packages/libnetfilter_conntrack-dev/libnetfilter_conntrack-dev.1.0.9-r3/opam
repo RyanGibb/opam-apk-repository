@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "libnetfilter_conntrack" {= "1.0.9-r3"}
-  "pc-libnfnetlink"
-  "pkgconfig"
+  "libnfnetlink-dev" {= "1.0.2-r3"}
+  "pkgconf" {= "2.2.0-r0"}
 ]
 extra-source "libnetfilter_conntrack-dev-1.0.9-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libnetfilter_conntrack-dev-1.0.9-r3.apk"

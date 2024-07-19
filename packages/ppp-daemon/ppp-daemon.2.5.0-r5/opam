@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del ppp-daemon"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-3"
-  "so-libpcap-so-1"
-  "so-libssl-so-3"
+  "libcrypto3" {= "3.3.1-r3"}
+  "libpcap" {= "1.10.4-r1"}
+  "libssl3" {= "3.3.1-r3"}
+  "musl" {= "1.2.5-r0"}
 ]
 extra-source "ppp-daemon-2.5.0-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/ppp-daemon-2.5.0-r5.apk"

@@ -6,11 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del dnsmasq-dnssec"]
 ]
 depends: [
-  "-bin-sh"
-  "so-libc-musl-x86_64-so-1"
-  "so-libgmp-so-10"
-  "so-libhogweed-so-6"
-  "so-libnettle-so-8"
+  "busybox" {= "1.32.1-r9"}
+  "gmp" {= "6.2.1-r1"}
+  "musl" {= "1.2.2-r2"}
+  "nettle" {= "3.7.3-r0"}
 ]
 conflicts: [
   "dnsmasq"

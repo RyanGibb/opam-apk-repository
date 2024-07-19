@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del squark"]
 ]
 depends: [
-  "-bin-sh"
   "haserl"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcmph-so-0"
-  "so-liblua-so-5"
-  "so-libnetsnmp-so-40"
+  "libcmph" {= "2.0.2-r5"}
+  "lua5-1-libs" {= "5.1.5-r13"}
+  "musl" {= "1.2.4_git20230717-r4"}
+  "net-snmp-libs" {= "5.9.4-r0"}
+  ("busybox-binsh" {= "1.36.1-r19"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.55-r0"})
 ]
 extra-source "squark-0.6.1-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/squark-0.6.1-r5.apk"

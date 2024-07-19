@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del vanessa_adt"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libvanessa_logger-so-0"
+  "musl" {= "1.2.3-r5"}
+  "vanessa_logger" {= "0.0.10-r2"}
 ]
 extra-source "vanessa_adt-0.0.9-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/vanessa_adt-0.0.9-r1.apk"

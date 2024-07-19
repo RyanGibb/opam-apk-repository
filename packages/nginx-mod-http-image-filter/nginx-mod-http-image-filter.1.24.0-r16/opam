@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del nginx-mod-http-image-filter"]
 ]
 depends: [
+  "libgd" {= "2.3.3-r8"}
+  "musl" {= "1.2.4_git20230717-r4"}
   "nginx"
-  "so-libc-musl-x86_64-so-1"
-  "so-libgd-so-3"
 ]
 extra-source "nginx-mod-http-image-filter-1.24.0-r16.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/nginx-mod-http-image-filter-1.24.0-r16.apk"

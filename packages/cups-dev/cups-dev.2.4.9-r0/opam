@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del cups-dev"]
 ]
 depends: [
+  "avahi-dev" {= "0.8-r17"}
   "cups-libs" {= "2.4.9-r0"}
   "gnutls-dev"
+  "gnutls-dev" {= "3.8.5-r0"}
   "libgcrypt-dev"
-  "pc-avahi-client"
-  "pc-gnutls"
-  "pkgconfig"
+  "pkgconf" {= "2.2.0-r0"}
   "zlib-dev"
 ]
 extra-source "cups-dev-2.4.9-r0.apk" {

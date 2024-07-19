@@ -6,17 +6,14 @@ remove: [
   ["sh" "-c" "sudo apk del gdk-pixbuf"]
 ]
 depends: [
-  "-bin-sh"
+  "glib" {= "2.74.7-r0"}
+  "libintl" {= "0.21.1-r1"}
+  "libjpeg-turbo" {= "2.1.4-r0"}
+  "libpng" {= "1.6.39-r0"}
+  "musl" {= "1.2.3-r5"}
   "shared-mime-info"
-  "so-libc-musl-x86_64-so-1"
-  "so-libgio-2-0-so-0"
-  "so-libglib-2-0-so-0"
-  "so-libgmodule-2-0-so-0"
-  "so-libgobject-2-0-so-0"
-  "so-libintl-so-8"
-  "so-libjpeg-so-8"
-  "so-libpng16-so-16"
-  "so-libtiff-so-5"
+  "tiff" {= "4.4.0-r4"}
+  ("yash-binsh" {= "2.53-r2"} | "busybox-binsh" {= "1.35.0-r31"} | "dash-binsh" {= "0.5.11.5-r2"})
 ]
 extra-source "gdk-pixbuf-2.42.10-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gdk-pixbuf-2.42.10-r0.apk"

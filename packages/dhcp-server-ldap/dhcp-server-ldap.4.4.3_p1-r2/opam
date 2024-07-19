@@ -7,11 +7,10 @@ remove: [
 ]
 depends: [
   "dhcp" {= "4.4.3_p1-r2"}
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
-  "so-libkrb5-so-3"
-  "so-liblber-so-2"
-  "so-libldap-so-2"
+  "krb5-libs" {= "1.20.2-r0"}
+  "libgcc" {= "12.2.1_git20220924-r10"}
+  "libldap" {= "2.6.5-r0"}
+  "musl" {= "1.2.4-r2"}
 ]
 extra-source "dhcp-server-ldap-4.4.3_p1-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/dhcp-server-ldap-4.4.3_p1-r2.apk"

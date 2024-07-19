@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del perl-b-cow"]
 ]
 depends: [
+  "musl" {= "1.2.3-r5"}
   "perl"
-  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "perl-b-cow-0.007-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-b-cow-0.007-r0.apk"

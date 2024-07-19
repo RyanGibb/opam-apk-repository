@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del which"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.2.5-r0"}
 ]
 extra-source "which-2.21-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/which-2.21-r5.apk"

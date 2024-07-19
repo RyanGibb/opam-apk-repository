@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "findutils" {= "4.9.0-r5"}
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.2.5-r0"}
 ]
 extra-source "findutils-locate-4.9.0-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/findutils-locate-4.9.0-r5.apk"

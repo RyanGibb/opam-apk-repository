@@ -7,10 +7,10 @@ remove: [
 ]
 depends: [
   "ldb" {= "2.2.3-r0"}
-  "pc-talloc"
-  "pc-tdb"
-  "pkgconfig"
+  "pkgconf" {= "1.7.3-r0"}
   "py3-ldb" {= "2.2.3-r0"}
+  "talloc-dev" {= "2.3.1-r0"}
+  "tdb-dev" {= "1.4.3-r0"}
 ]
 extra-source "ldb-dev-2.2.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/ldb-dev-2.2.3-r0.apk"

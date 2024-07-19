@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del ruby-rbs"]
 ]
 depends: [
+  "musl" {= "1.2.5-r0"}
   "ruby"
   "ruby-bundler"
-  "so-libc-musl-x86_64-so-1"
-  "so-libruby-so-3-3"
+  "ruby-libs" {= "3.3.3-r0"}
 ]
 extra-source "ruby-rbs-3.4.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/ruby-rbs-3.4.4-r0.apk"

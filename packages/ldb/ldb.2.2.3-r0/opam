@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del ldb"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-liblmdb-so-0"
-  "so-libtalloc-so-2"
-  "so-libtdb-so-1"
-  "so-libtevent-so-0"
+  "lmdb" {= "0.9.27-r0"}
+  "musl" {= "1.2.2-r2"}
+  "talloc" {= "2.3.1-r0"}
+  "tdb-libs" {= "1.4.3-r0"}
+  "tevent" {= "0.10.2-r0"}
 ]
 extra-source "ldb-2.2.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/ldb-2.2.3-r0.apk"

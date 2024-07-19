@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "npm" {= "12.22.12-r0"}
-]

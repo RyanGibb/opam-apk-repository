@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del gnutls-utils"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libgnutls-so-30"
-  "so-libtasn1-so-6"
+  "gnutls" {= "3.7.8-r3"}
+  "libtasn1" {= "4.19.0-r0"}
+  "musl" {= "1.2.3-r5"}
 ]
 extra-source "gnutls-utils-3.7.8-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gnutls-utils-3.7.8-r3.apk"

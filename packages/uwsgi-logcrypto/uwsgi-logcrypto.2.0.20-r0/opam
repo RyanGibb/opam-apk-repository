@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del uwsgi-logcrypto"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.2.3-r3"}
   "uwsgi"
 ]
 extra-source "uwsgi-logcrypto-2.0.20-r0.apk" {

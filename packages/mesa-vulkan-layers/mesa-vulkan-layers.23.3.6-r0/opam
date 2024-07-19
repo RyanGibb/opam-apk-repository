@@ -6,14 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del mesa-vulkan-layers"]
 ]
 depends: [
+  "libdrm" {= "2.4.118-r0"}
+  "libgcc" {= "13.2.1_git20231014-r0"}
+  "libstdc++" {= "13.2.1_git20231014-r0"}
+  "libxcb" {= "1.16-r0"}
+  "musl" {= "1.2.4_git20230717-r4"}
   "python3"
-  "so-libc-musl-x86_64-so-1"
-  "so-libdrm-so-2"
-  "so-libgcc_s-so-1"
-  "so-libstdc++-so-6"
-  "so-libwayland-client-so-0"
-  "so-libxcb-dri3-so-0"
-  "so-libxcb-so-1"
+  "wayland-libs-client" {= "1.22.0-r4"}
 ]
 extra-source "mesa-vulkan-layers-23.3.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/mesa-vulkan-layers-23.3.6-r0.apk"

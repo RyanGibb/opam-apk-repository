@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  ("postgresql15-pltcl" {= "15.7-r0"} | "postgresql14-pltcl" {= "14.12-r0"})
-]

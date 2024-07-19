@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "jack" {= "1.9.19-r2"}
-  "pkgconfig"
+  "pkgconf" {= "1.8.1-r0"}
 ]
 extra-source "jack-dev-1.9.19-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/jack-dev-1.9.19-r2.apk"

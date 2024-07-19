@@ -11,8 +11,8 @@ depends: [
   "libmount" {= "2.40.1-r1"}
   "libsmartcols" {= "2.40.1-r1"}
   "libuuid" {= "2.40.1-r1"}
-  "pc-sqlite3"
-  "pkgconfig"
+  "pkgconf" {= "2.2.0-r0"}
+  "sqlite-dev" {= "3.45.3-r1"}
   "util-linux" {= "2.40.1-r1"}
 ]
 extra-source "util-linux-dev-2.40.1-r1.apk" {

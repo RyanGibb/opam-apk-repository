@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del gmock"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
-  "so-libgtest-so-1-13-0"
-  "so-libstdc++-so-6"
+  "gtest" {= "1.13.0-r1"}
+  "libgcc" {= "12.2.1_git20220924-r10"}
+  "libstdc++" {= "12.2.1_git20220924-r10"}
+  "musl" {= "1.2.4-r2"}
 ]
 extra-source "gmock-1.13.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/gmock-1.13.0-r1.apk"

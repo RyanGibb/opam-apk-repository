@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del lvm2-lockd"]
 ]
 depends: [
+  "musl" {= "1.2.4_git20230717-r4"}
   "sanlock"
-  "so-libc-musl-x86_64-so-1"
-  "so-libsanlock_client-so-1"
+  "sanlock" {= "3.8.5-r4"}
 ]
 extra-source "lvm2-lockd-2.03.23-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/lvm2-lockd-2.03.23-r0.apk"

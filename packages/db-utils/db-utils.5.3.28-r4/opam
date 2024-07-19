@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del db-utils"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libdb-5-3-so"
+  "db" {= "5.3.28-r4"}
+  "musl" {= "1.2.4-r2"}
 ]
 extra-source "db-utils-5.3.28-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/db-utils-5.3.28-r4.apk"

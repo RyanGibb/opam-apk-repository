@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del speexdsp-dev"]
 ]
 depends: [
-  "pkgconfig"
+  "pkgconf" {= "1.9.5-r0"}
   "speexdsp" {= "1.2.1-r1"}
 ]
 extra-source "speexdsp-dev-1.2.1-r1.apk" {

@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "librrd" {= "1.7.2-r6"}
-]

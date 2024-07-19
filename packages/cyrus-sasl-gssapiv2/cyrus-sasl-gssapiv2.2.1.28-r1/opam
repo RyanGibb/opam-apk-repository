@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del cyrus-sasl-gssapiv2"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libgssapi-so-3"
+  "heimdal-libs" {= "7.7.1-r0"}
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "cyrus-sasl-gssapiv2-2.1.28-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/cyrus-sasl-gssapiv2-2.1.28-r1.apk"

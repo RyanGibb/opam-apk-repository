@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "libks" {= "1.7.0-r1"}
-]

@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "dovecot-sqlite" {= "2.3.17.1-r0"}
-]

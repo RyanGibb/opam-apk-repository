@@ -6,6 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del apr-util-dev"]
 ]
 depends: [
+  "apr-dev" {= "1.7.4-r0"}
   "apr-util" {= "1.6.3-r1"}
   "expat-dev"
   "gdbm-dev"
@@ -13,8 +14,7 @@ depends: [
   "mariadb-dev"
   "openldap-dev"
   "openssl-dev" {> "3"}
-  "pc-apr-1"
-  "pkgconfig"
+  "pkgconf" {= "2.2.0-r0"}
   "sqlite-dev"
 ]
 extra-source "apr-util-dev-1.6.3-r1.apk" {

@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del open-isns-lib"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-1-1"
+  "libcrypto1-1" {= "1.1.1w-r1"}
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "open-isns-lib-0.101-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/open-isns-lib-0.101-r2.apk"

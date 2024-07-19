@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del libxml2"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-liblzma-so-5"
-  "so-libz-so-1"
+  "musl" {= "1.2.3-r5"}
+  "xz-libs" {= "5.2.9-r0"}
+  "zlib" {= "1.2.13-r0"}
 ]
 extra-source "libxml2-2.10.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libxml2-2.10.4-r0.apk"

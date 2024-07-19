@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del hiredis-ssl"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-1-1"
-  "so-libssl-so-1-1"
+  "libcrypto1-1" {= "1.1.1t-r2"}
+  "libssl1-1" {= "1.1.1t-r2"}
+  "musl" {= "1.2.2-r5"}
 ]
 extra-source "hiredis-ssl-1.0.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/hiredis-ssl-1.0.0-r0.apk"

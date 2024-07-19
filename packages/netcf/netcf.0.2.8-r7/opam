@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del netcf"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libnetcf-so-1"
-  "so-libreadline-so-8"
+  "musl" {= "1.2.3-r5"}
+  "netcf-libs" {= "0.2.8-r7"}
+  "readline" {= "8.2.0-r0"}
 ]
 extra-source "netcf-0.2.8-r7.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/netcf-0.2.8-r7.apk"

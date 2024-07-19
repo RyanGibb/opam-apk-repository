@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del nvme-cli"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libjson-c-so-5"
-  "so-libnvme-mi-so-1"
-  "so-libnvme-so-1"
+  "json-c" {= "0.16-r3"}
+  "libnvme" {= "1.4-r1"}
+  "libnvmemi" {= "1.4-r1"}
+  "musl" {= "1.2.4-r2"}
 ]
 extra-source "nvme-cli-2.4-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/nvme-cli-2.4-r2.apk"

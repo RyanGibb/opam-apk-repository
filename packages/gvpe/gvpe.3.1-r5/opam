@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del gvpe"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-3"
-  "so-libgcc_s-so-1"
-  "so-libgmp-so-10"
-  "so-libstdc++-so-6"
+  "gmp" {= "6.2.1-r3"}
+  "libcrypto3" {= "3.1.6-r0"}
+  "libgcc" {= "12.2.1_git20220924-r10"}
+  "libstdc++" {= "12.2.1_git20220924-r10"}
+  "musl" {= "1.2.4-r2"}
 ]
 extra-source "gvpe-3.1-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/gvpe-3.1-r5.apk"

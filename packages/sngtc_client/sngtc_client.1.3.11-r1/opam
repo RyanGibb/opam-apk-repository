@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del sngtc_client"]
 ]
 depends: [
-  "so-libbctoolbox-so-1"
-  "so-libc-musl-x86_64-so-1"
-  "so-libortp-so-15"
+  "bctoolbox" {= "5.1.64-r0"}
+  "musl" {= "1.2.3-r5"}
+  "ortp" {= "5.1.64-r0"}
 ]
 extra-source "sngtc_client-1.3.11-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/sngtc_client-1.3.11-r1.apk"

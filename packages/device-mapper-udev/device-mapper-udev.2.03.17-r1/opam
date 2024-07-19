@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del device-mapper-udev"]
 ]
 depends: [
-  "-bin-sh"
   "lvm2-libs" {= "2.03.17-r1"}
+  ("yash-binsh" {= "2.53-r2"} | "busybox-binsh" {= "1.35.0-r31"} | "dash-binsh" {= "0.5.11.5-r2"})
 ]
 extra-source "device-mapper-udev-2.03.17-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/device-mapper-udev-2.03.17-r1.apk"

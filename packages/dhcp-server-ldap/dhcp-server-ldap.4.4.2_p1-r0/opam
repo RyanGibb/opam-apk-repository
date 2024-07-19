@@ -7,11 +7,10 @@ remove: [
 ]
 depends: [
   "dhcp"
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
-  "so-libkrb5-so-3"
-  "so-liblber-2-4-so-2"
-  "so-libldap-2-4-so-2"
+  "krb5-libs" {= "1.18.5-r0"}
+  "libgcc" {= "9.3.0-r2"}
+  "libldap" {= "2.4.58-r0"}
+  "musl" {= "1.1.24-r10"}
 ]
 conflicts: [
   "dhcp-server-vanilla"

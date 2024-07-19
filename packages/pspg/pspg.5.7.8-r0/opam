@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del pspg"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libncursesw-so-6"
-  "so-libpanelw-so-6"
-  "so-libpq-so-5"
-  "so-libreadline-so-8"
+  "libncursesw" {= "6.4_p20230506-r0"}
+  "libpanelw" {= "6.4_p20230506-r0"}
+  "libpq" {= "15.7-r0"}
+  "musl" {= "1.2.4-r2"}
+  "readline" {= "8.2.1-r1"}
 ]
 extra-source "pspg-5.7.8-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/pspg-5.7.8-r0.apk"

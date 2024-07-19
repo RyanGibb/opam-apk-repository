@@ -6,16 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del poppler"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libfontconfig-so-1"
-  "so-libfreetype-so-6"
-  "so-libjpeg-so-8"
-  "so-liblcms2-so-2"
-  "so-libopenjp2-so-7"
-  "so-libpng16-so-16"
-  "so-libstdc++-so-6"
-  "so-libtiff-so-5"
-  "so-libz-so-1"
+  "fontconfig" {= "2.13.1-r2"}
+  "freetype" {= "2.10.4-r2"}
+  "lcms2" {= "2.9-r1"}
+  "libjpeg-turbo" {= "2.1.0-r0"}
+  "libpng" {= "1.6.37-r1"}
+  "libstdc++" {= "9.3.0-r2"}
+  "musl" {= "1.1.24-r10"}
+  "openjpeg" {= "2.4.0-r1"}
+  "tiff" {= "4.1.0-r0"}
+  "zlib" {= "1.2.12-r3"}
 ]
 extra-source "poppler-0.88.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/poppler-0.88.0-r0.apk"

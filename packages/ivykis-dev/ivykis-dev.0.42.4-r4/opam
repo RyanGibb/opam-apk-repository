@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "ivykis" {= "0.42.4-r4"}
-  "pkgconfig"
+  "pkgconf" {= "1.9.5-r0"}
 ]
 extra-source "ivykis-dev-0.42.4-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/ivykis-dev-0.42.4-r4.apk"

@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  ("boost1-82-type_erasure" {= "1.82.0-r5"} | "boost1-84-type_erasure" {= "1.84.0-r1"})
-]

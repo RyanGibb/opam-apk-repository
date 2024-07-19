@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del libtiffxx"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libstdc++-so-6"
-  "so-libtiff-so-5"
+  "libstdc++" {= "9.3.0-r2"}
+  "musl" {= "1.1.24-r10"}
+  "tiff" {= "4.1.0-r0"}
 ]
 extra-source "libtiffxx-4.1.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/libtiffxx-4.1.0-r0.apk"

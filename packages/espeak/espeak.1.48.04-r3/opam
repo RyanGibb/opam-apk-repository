@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del espeak"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libportaudio-so-2"
+  "musl" {= "1.2.3-r5"}
+  "portaudio" {= "19.7.0-r0"}
 ]
 extra-source "espeak-1.48.04-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/espeak-1.48.04-r3.apk"

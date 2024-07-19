@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "uboot-tools" {= "2020.04-r0"}
-]

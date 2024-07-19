@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del libtxc_dxtn"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "libtxc_dxtn-1.0.1-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/libtxc_dxtn-1.0.1-r5.apk"

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del freeswitch-pgsql"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libfreeswitch-so-1"
-  "so-libpq-so-5"
+  "freeswitch" {= "1.10.11-r0"}
+  "libpq" {= "16.3-r0"}
+  "musl" {= "1.2.5-r0"}
 ]
 extra-source "freeswitch-pgsql-1.10.11-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/freeswitch-pgsql-1.10.11-r0.apk"

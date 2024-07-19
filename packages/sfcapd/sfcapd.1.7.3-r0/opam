@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del sfcapd"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libnfdump-1-7-3-so"
+  "musl" {= "1.2.5-r0"}
+  "nfdump" {= "1.7.3-r0"}
 ]
 extra-source "sfcapd-1.7.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/sfcapd-1.7.3-r0.apk"

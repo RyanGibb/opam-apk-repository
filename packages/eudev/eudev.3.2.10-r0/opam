@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del eudev"]
 ]
 depends: [
-  "-bin-sh"
+  "busybox" {= "1.33.1-r8"}
   "eudev-libs" {= "3.2.10-r0"}
-  "so-libblkid-so-1"
-  "so-libc-musl-x86_64-so-1"
-  "so-libkmod-so-2"
+  "kmod-libs" {= "29-r0"}
+  "libblkid" {= "2.37.4-r0"}
+  "musl" {= "1.2.2-r5"}
   "udev-init-scripts"
 ]
 extra-source "eudev-3.2.10-r0.apk" {

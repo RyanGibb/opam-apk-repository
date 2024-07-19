@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del xf86-video-vmware"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libdrm-so-2"
-  "so-libudev-so-1"
-  "so-libxatracker-so-2"
+  "eudev-libs" {= "3.2.9-r3"}
+  "libdrm" {= "2.4.102-r0"}
+  "mesa-xatracker" {= "20.0.7-r0"}
+  "musl" {= "1.1.24-r10"}
 ]
 extra-source "xf86-video-vmware-13.3.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/xf86-video-vmware-13.3.0-r0.apk"

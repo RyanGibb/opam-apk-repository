@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "py3-lxc" {= "5.0.0-r2"}
-]

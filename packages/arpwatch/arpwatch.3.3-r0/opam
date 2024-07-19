@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del arpwatch"]
 ]
 depends: [
-  "-bin-sh"
+  "libpcap" {= "1.10.1-r1"}
+  "musl" {= "1.2.3-r5"}
   "python3"
-  "so-libc-musl-x86_64-so-1"
-  "so-libpcap-so-1"
+  ("yash-binsh" {= "2.53-r2"} | "busybox-binsh" {= "1.35.0-r31"} | "dash-binsh" {= "0.5.11.5-r2"})
 ]
 extra-source "arpwatch-3.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/arpwatch-3.3-r0.apk"

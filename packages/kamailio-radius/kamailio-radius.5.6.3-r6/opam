@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del kamailio-radius"]
 ]
 depends: [
+  "freeradius-client" {= "1.1.7-r7"}
   "kamailio"
-  "so-libc-musl-x86_64-so-1"
-  "so-libfreeradius-client-so-2"
+  "musl" {= "1.2.4-r2"}
 ]
 extra-source "kamailio-radius-5.6.3-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/kamailio-radius-5.6.3-r6.apk"

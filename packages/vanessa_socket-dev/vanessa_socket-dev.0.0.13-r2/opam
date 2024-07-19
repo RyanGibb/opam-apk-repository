@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del vanessa_socket-dev"]
 ]
 depends: [
-  "pkgconfig"
+  "pkgconf" {= "2.2.0-r0"}
   "popt-dev"
   "vanessa_logger-dev"
   "vanessa_socket" {= "0.0.13-r2"}

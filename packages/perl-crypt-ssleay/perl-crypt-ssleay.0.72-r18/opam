@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del perl-crypt-ssleay"]
 ]
 depends: [
+  "libcrypto3" {= "3.0.14-r0"}
+  "libssl3" {= "3.0.14-r0"}
+  "musl" {= "1.2.3-r5"}
   "perl-path-class"
   "perl-try-tiny"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-3"
-  "so-libssl-so-3"
 ]
 extra-source "perl-crypt-ssleay-0.72-r18.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-crypt-ssleay-0.72-r18.apk"

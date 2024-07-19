@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "lttng-ust" {= "2.12.0-r1"}
-  "pc-liburcu-bp"
-  "pkgconfig"
+  "pkgconf" {= "1.7.2-r0"}
+  "userspace-rcu-dev" {= "0.12.1-r0"}
 ]
 extra-source "lttng-ust-dev-2.12.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/lttng-ust-dev-2.12.0-r1.apk"

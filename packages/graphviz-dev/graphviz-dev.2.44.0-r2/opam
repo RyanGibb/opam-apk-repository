@@ -17,7 +17,7 @@ depends: [
   "libsm-dev"
   "libxext-dev"
   "pango-dev"
-  "pkgconfig"
+  "pkgconf" {= "1.7.3-r0"}
   "python3-dev"
   "zlib-dev"
 ]

@@ -10,7 +10,7 @@ depends: [
   "krb5-libs" {= "1.21.3-r0"}
   "krb5-server-ldap" {= "1.21.3-r0"}
   "libverto-dev"
-  "pkgconfig"
+  "pkgconf" {= "2.2.0-r0"}
 ]
 extra-source "krb5-dev-1.21.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/krb5-dev-1.21.3-r0.apk"

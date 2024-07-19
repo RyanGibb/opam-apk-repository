@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del utmps-dev"]
 ]
 depends: [
-  "pc-skalibs"
-  "pkgconfig"
+  "pkgconf" {= "1.7.4-r1"}
+  "skalibs-dev" {= "2.10.0.3-r0"}
   "utmps" {= "0.1.0.2-r0"}
 ]
 extra-source "utmps-dev-0.1.0.2-r0.apk" {

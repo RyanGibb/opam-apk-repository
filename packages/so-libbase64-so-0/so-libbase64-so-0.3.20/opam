@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "libbase64" {= "0.5.2-r0"}
-]

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del yaml-dev"]
 ]
 depends: [
-  "pkgconfig"
+  "pkgconf" {= "1.9.4-r0"}
   "yaml" {= "0.2.5-r0"}
 ]
 extra-source "yaml-dev-0.2.5-r0.apk" {

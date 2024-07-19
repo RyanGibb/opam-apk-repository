@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del lua5.4-socket"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.2.3-r5"}
 ]
 extra-source "lua5.4-socket-3.1.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lua5.4-socket-3.1.0-r0.apk"

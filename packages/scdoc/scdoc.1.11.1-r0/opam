@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del scdoc"]
 ]
 depends: [
-  "pkgconfig"
+  "pkgconf" {= "1.7.4-r1"}
 ]
 extra-source "scdoc-1.11.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/scdoc-1.11.1-r0.apk"

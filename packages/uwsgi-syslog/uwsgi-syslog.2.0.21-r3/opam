@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del uwsgi-syslog"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.2.4-r2"}
   "uwsgi"
 ]
 extra-source "uwsgi-syslog-2.0.21-r3.apk" {

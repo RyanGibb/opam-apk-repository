@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del python3-dev"]
 ]
 depends: [
-  "pkgconfig"
+  "pkgconf" {= "1.7.4-r1"}
   "python3" {= "3.9.17-r0"}
 ]
 extra-source "python3-dev-3.9.17-r0.apk" {

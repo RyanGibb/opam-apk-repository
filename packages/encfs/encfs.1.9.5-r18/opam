@@ -7,13 +7,12 @@ remove: [
 ]
 depends: [
   "encfs-libs" {= "1.9.5-r18"}
-  "so-libc-musl-x86_64-so-1"
-  "so-libencfs-so-1-9"
-  "so-libfuse-so-2"
-  "so-libgcc_s-so-1"
-  "so-libintl-so-8"
-  "so-libssl-so-3"
-  "so-libstdc++-so-6"
+  "fuse" {= "2.9.9-r2"}
+  "libgcc" {= "12.2.1_git20220924-r4"}
+  "libintl" {= "0.21.1-r1"}
+  "libssl3" {= "3.0.14-r0"}
+  "libstdc++" {= "12.2.1_git20220924-r4"}
+  "musl" {= "1.2.3-r5"}
 ]
 extra-source "encfs-1.9.5-r18.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/encfs-1.9.5-r18.apk"

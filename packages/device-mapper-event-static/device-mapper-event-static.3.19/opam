@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "device-mapper-static" {= "2.03.23-r0"}
-]

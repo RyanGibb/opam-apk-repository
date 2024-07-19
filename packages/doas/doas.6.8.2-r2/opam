@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del doas"]
 ]
 depends: [
-  "-bin-sh"
-  "so-libc-musl-x86_64-so-1"
+  "busybox" {= "1.35.0-r18"}
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "doas-6.8.2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/doas-6.8.2-r2.apk"

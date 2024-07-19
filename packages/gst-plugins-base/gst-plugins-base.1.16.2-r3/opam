@@ -6,40 +6,29 @@ remove: [
   ["sh" "-c" "sudo apk del gst-plugins-base"]
 ]
 depends: [
-  "so-libEGL-so-1"
-  "so-libGL-so-1"
-  "so-libX11-so-6"
-  "so-libX11-xcb-so-1"
-  "so-libXext-so-6"
-  "so-libXv-so-1"
-  "so-libasound-so-2"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcairo-so-2"
-  "so-libcdda_interface-so-0"
-  "so-libcdda_paranoia-so-0"
-  "so-libgio-2-0-so-0"
-  "so-libglib-2-0-so-0"
-  "so-libgmodule-2-0-so-0"
-  "so-libgobject-2-0-so-0"
-  "so-libgstbase-1-0-so-0"
-  "so-libgstcontroller-1-0-so-0"
-  "so-libgstnet-1-0-so-0"
-  "so-libgstreamer-1-0-so-0"
-  "so-libintl-so-8"
-  "so-libogg-so-0"
-  "so-libopus-so-0"
-  "so-liborc-0-4-so-0"
-  "so-libpango-1-0-so-0"
-  "so-libpangocairo-1-0-so-0"
-  "so-libpng16-so-16"
-  "so-libtheoradec-so-1"
-  "so-libtheoraenc-so-1"
-  "so-libvorbis-so-0"
-  "so-libvorbisenc-so-2"
-  "so-libwayland-client-so-0"
-  "so-libwayland-egl-so-1"
-  "so-libxcb-so-1"
-  "so-libz-so-1"
+  "alsa-lib" {= "1.2.2-r0"}
+  "cairo" {= "1.16.0-r5"}
+  "cdparanoia-libs" {= "10.2-r8"}
+  "glib" {= "2.64.6-r0"}
+  "gstreamer" {= "1.16.2-r2"}
+  "libintl" {= "0.20.2-r0"}
+  "libogg" {= "1.3.4-r0"}
+  "libpng" {= "1.6.37-r1"}
+  "libtheora" {= "1.1.1-r14"}
+  "libvorbis" {= "1.3.6-r2"}
+  "libx11" {= "1.6.12-r1"}
+  "libxcb" {= "1.14-r1"}
+  "libxext" {= "1.3.4-r0"}
+  "libxv" {= "1.0.11-r2"}
+  "mesa-egl" {= "20.0.7-r0"}
+  "mesa-gl" {= "20.0.7-r0"}
+  "musl" {= "1.1.24-r10"}
+  "opus" {= "1.3.1-r0"}
+  "orc" {= "0.4.31-r2"}
+  "pango" {= "1.44.7-r2"}
+  "wayland-libs-client" {= "1.18.0-r4"}
+  "wayland-libs-egl" {= "1.18.0-r4"}
+  "zlib" {= "1.2.12-r3"}
 ]
 extra-source "gst-plugins-base-1.16.2-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/gst-plugins-base-1.16.2-r3.apk"

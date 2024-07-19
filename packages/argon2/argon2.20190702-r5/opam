@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del argon2"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.2.5-r0"}
 ]
 extra-source "argon2-20190702-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/argon2-20190702-r5.apk"

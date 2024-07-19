@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del perl-unix-syslog"]
 ]
 depends: [
+  "musl" {= "1.2.5-r0"}
   "perl"
-  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "perl-unix-syslog-1.1-r21.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-unix-syslog-1.1-r21.apk"

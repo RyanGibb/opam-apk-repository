@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del bash"]
 ]
 depends: [
-  "-bin-sh"
-  "so-libc-musl-x86_64-so-1"
-  "so-libreadline-so-8"
+  "musl" {= "1.2.4-r2"}
+  "readline" {= "8.2.1-r1"}
+  ("busybox-binsh" {= "1.36.1-r7"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.54-r3"})
 ]
 extra-source "bash-5.2.15-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/bash-5.2.15-r5.apk"

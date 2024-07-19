@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del tiff"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libjpeg-so-8"
-  "so-liblzma-so-5"
-  "so-libwebp-so-7"
-  "so-libz-so-1"
-  "so-libzstd-so-1"
+  "libjpeg-turbo" {= "2.1.4-r0"}
+  "libwebp" {= "1.2.4-r3"}
+  "musl" {= "1.2.3-r5"}
+  "xz-libs" {= "5.2.9-r0"}
+  "zlib" {= "1.2.13-r0"}
+  "zstd-libs" {= "1.5.5-r0"}
 ]
 extra-source "tiff-4.4.0-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/tiff-4.4.0-r4.apk"

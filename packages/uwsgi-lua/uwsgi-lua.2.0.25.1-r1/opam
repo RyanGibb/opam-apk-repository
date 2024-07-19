@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del uwsgi-lua"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-liblua-5-3-so-0"
+  "lua5-3-libs" {= "5.3.6-r6"}
+  "musl" {= "1.2.5-r0"}
   "uwsgi"
 ]
 extra-source "uwsgi-lua-2.0.25.1-r1.apk" {

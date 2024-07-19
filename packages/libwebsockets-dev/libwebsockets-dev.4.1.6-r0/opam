@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libwebsockets" {= "4.1.6-r0"}
-  "pkgconfig"
+  "pkgconf" {= "1.7.3-r0"}
 ]
 extra-source "libwebsockets-dev-4.1.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/libwebsockets-dev-4.1.6-r0.apk"

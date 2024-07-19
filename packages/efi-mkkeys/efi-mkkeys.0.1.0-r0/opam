@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del efi-mkkeys"]
 ]
 depends: [
-  "cmd-openssl"
-  "cmd-uuidgen"
   "efitools"
+  "openssl" {= "3.3.1-r3"}
+  "uuidgen" {= "2.40.1-r1"}
 ]
 extra-source "efi-mkkeys-0.1.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/efi-mkkeys-0.1.0-r0.apk"

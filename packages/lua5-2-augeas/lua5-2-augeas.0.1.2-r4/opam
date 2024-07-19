@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del lua5.2-augeas"]
 ]
 depends: [
-  "so-libaugeas-so-0"
-  "so-libc-musl-x86_64-so-1"
+  "augeas-libs" {= "1.12.0-r0"}
+  "musl" {= "1.2.2-r2"}
 ]
 extra-source "lua5.2-augeas-0.1.2-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/lua5.2-augeas-0.1.2-r4.apk"

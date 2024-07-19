@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del mariadb-common"]
 ]
 depends: [
-  "-bin-sh"
+  ("busybox-binsh" {= "1.36.1-r19"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.55-r0"})
 ]
 extra-source "mariadb-common-10.11.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/mariadb-common-10.11.6-r0.apk"

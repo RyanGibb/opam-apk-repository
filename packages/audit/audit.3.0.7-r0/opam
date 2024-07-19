@@ -6,11 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del audit"]
 ]
 depends: [
-  "-bin-sh"
-  "so-libaudit-so-1"
-  "so-libauparse-so-0"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcap-ng-so-0"
+  "audit-libs" {= "3.0.7-r0"}
+  "busybox" {= "1.35.0-r18"}
+  "libcap-ng" {= "0.8.3-r1"}
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "audit-3.0.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/audit-3.0.7-r0.apk"

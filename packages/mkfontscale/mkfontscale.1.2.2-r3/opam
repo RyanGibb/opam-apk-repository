@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del mkfontscale"]
 ]
 depends: [
-  "-bin-sh"
-  "so-libc-musl-x86_64-so-1"
-  "so-libfontenc-so-1"
-  "so-libfreetype-so-6"
-  "so-libz-so-1"
+  "freetype" {= "2.13.0-r5"}
+  "libfontenc" {= "1.1.7-r2"}
+  "musl" {= "1.2.4-r2"}
+  "zlib" {= "1.2.13-r1"}
+  ("busybox-binsh" {= "1.36.1-r7"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.54-r3"})
 ]
 extra-source "mkfontscale-1.2.2-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/mkfontscale-1.2.2-r3.apk"

@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del unbound-migrate"]
 ]
 depends: [
-  "-bin-sh"
   "apk-tools"
+  "busybox" {= "1.31.1-r22"}
   "dns-root-hints"
   "openrc"
 ]

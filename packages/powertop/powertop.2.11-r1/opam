@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del powertop"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
-  "so-libncursesw-so-6"
-  "so-libnl-so-1"
-  "so-libpci-so-3"
-  "so-libstdc++-so-6"
+  "libgcc" {= "9.3.0-r2"}
+  "libnl" {= "1.1.4-r1"}
+  "libstdc++" {= "9.3.0-r2"}
+  "musl" {= "1.1.24-r10"}
+  "ncurses-libs" {= "6.2_p20200523-r1"}
+  "pciutils-libs" {= "3.6.4-r0"}
 ]
 extra-source "powertop-2.11-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/powertop-2.11-r1.apk"

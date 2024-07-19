@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del umount"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libmount-so-1"
+  "libmount" {= "2.38.1-r1"}
+  "musl" {= "1.2.3-r5"}
 ]
 extra-source "umount-2.38.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/umount-2.38.1-r1.apk"

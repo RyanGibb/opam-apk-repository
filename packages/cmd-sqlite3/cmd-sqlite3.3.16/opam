@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "sqlite" {= "3.40.1-r1"}
-]

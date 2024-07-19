@@ -9,7 +9,7 @@ depends: [
   "cloog" {= "0.20.0-r1"}
   "gmp-dev"
   "isl-dev"
-  "pkgconfig"
+  "pkgconf" {= "1.8.1-r0"}
 ]
 extra-source "cloog-dev-0.20.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/cloog-dev-0.20.0-r1.apk"

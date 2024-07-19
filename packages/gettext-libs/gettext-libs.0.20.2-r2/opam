@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del gettext-libs"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libintl-so-8"
-  "so-libncursesw-so-6"
-  "so-libunistring-so-2"
+  "libintl" {= "0.20.2-r2"}
+  "libunistring" {= "0.9.10-r0"}
+  "musl" {= "1.2.2-r2"}
+  "ncurses-libs" {= "6.2_p20210109-r1"}
 ]
 extra-source "gettext-libs-0.20.2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/gettext-libs-0.20.2-r2.apk"

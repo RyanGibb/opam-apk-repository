@@ -6,13 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del mc"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libe2p-so-2"
-  "so-libglib-2-0-so-0"
-  "so-libgpm-so-2"
-  "so-libintl-so-8"
-  "so-libslang-so-2"
-  "so-libssh2-so-1"
+  "e2fsprogs-libs" {= "1.47.0-r5"}
+  "glib" {= "2.80.2-r0"}
+  "gpm-libs" {= "1.20.7-r4"}
+  "libintl" {= "0.22.5-r0"}
+  "libssh2" {= "1.11.0-r2"}
+  "musl" {= "1.2.5-r0"}
+  "slang" {= "2.3.3-r3"}
 ]
 extra-source "mc-4.8.31-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/mc-4.8.31-r0.apk"

@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "graphviz" {= "8.0.5-r1"}
-]

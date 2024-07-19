@@ -6,12 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del util-linux-login"]
 ]
 depends: [
+  "libeconf" {= "0.5.2-r1"}
+  "libsmartcols" {= "2.38.1-r8"}
+  "linux-pam" {= "1.5.2-r10"}
+  "musl" {= "1.2.4-r2"}
   "runuser" {= "2.38.1-r8"}
-  "so-libc-musl-x86_64-so-1"
-  "so-libeconf-so-0"
-  "so-libpam-so-0"
-  "so-libpam_misc-so-0"
-  "so-libsmartcols-so-1"
 ]
 extra-source "util-linux-login-2.38.1-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/util-linux-login-2.38.1-r8.apk"

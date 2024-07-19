@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del libxft-dev"]
 ]
 depends: [
+  "fontconfig-dev" {= "2.13.1-r4"}
+  "freetype-dev" {= "2.10.4-r3"}
   "libxft" {= "2.3.3-r0"}
-  "pc-fontconfig"
-  "pc-freetype2"
-  "pc-xproto"
-  "pc-xrender"
-  "pkgconfig"
+  "libxrender-dev" {= "0.9.10-r3"}
+  "pkgconf" {= "1.7.4-r1"}
+  "xorgproto" {= "2021.4-r0"}
   "zlib-dev"
 ]
 extra-source "libxft-dev-2.3.3-r0.apk" {

@@ -8,13 +8,13 @@ remove: [
 depends: [
   "bash"
   "ghostscript"
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
-  "so-libintl-so-8"
-  "so-libstdc++-so-6"
-  "so-libtiff-so-6"
-  "so-libz-so-1"
+  "libgcc" {= "12.2.1_git20220924-r10"}
+  "libintl" {= "0.21.1-r7"}
+  "libstdc++" {= "12.2.1_git20220924-r10"}
+  "musl" {= "1.2.4-r2"}
+  "tiff" {= "4.5.1-r0"}
   "tiff-tools"
+  "zlib" {= "1.2.13-r1"}
 ]
 extra-source "hylafax-6.0.7-r9.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/hylafax-6.0.7-r9.apk"

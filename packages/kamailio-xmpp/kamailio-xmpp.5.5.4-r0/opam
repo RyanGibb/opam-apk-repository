@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del kamailio-xmpp"]
 ]
 depends: [
+  "expat" {= "2.6.2-r0"}
   "kamailio"
-  "so-libc-musl-x86_64-so-1"
-  "so-libexpat-so-1"
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "kamailio-xmpp-5.5.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/kamailio-xmpp-5.5.4-r0.apk"

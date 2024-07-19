@@ -6,22 +6,21 @@ remove: [
   ["sh" "-c" "sudo apk del nfs-utils"]
 ]
 depends: [
+  "device-mapper-libs" {= "2.02.187-r2"}
+  "keyutils-libs" {= "1.6.3-r1"}
+  "krb5-libs" {= "1.19.4-r0"}
+  "libblkid" {= "2.38-r1"}
+  "libcap" {= "2.64-r1"}
+  "libcom_err" {= "1.46.6-r0"}
+  "libevent" {= "2.1.12-r4"}
+  "libmount" {= "2.38-r1"}
+  "libnfsidmap" {= "2.6.1-r1"}
+  "libtirpc" {= "1.3.2-r1"}
+  "libuuid" {= "2.38-r1"}
+  "musl" {= "1.2.3-r3"}
   "python3"
   "rpcbind"
-  "so-libblkid-so-1"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcap-so-2"
-  "so-libcom_err-so-2"
-  "so-libdevmapper-so-1-02"
-  "so-libevent_core-2-1-so-7"
-  "so-libgssapi_krb5-so-2"
-  "so-libkeyutils-so-1"
-  "so-libkrb5-so-3"
-  "so-libmount-so-1"
-  "so-libnfsidmap-so-1"
-  "so-libsqlite3-so-0"
-  "so-libtirpc-so-3"
-  "so-libuuid-so-1"
+  "sqlite-libs" {= "3.40.1-r1"}
 ]
 extra-source "nfs-utils-2.6.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/nfs-utils-2.6.1-r1.apk"

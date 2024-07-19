@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "inih-inireader" {= "53-r1"}
-]

@@ -6,15 +6,15 @@ remove: [
   ["sh" "-c" "sudo apk del squid"]
 ]
 depends: [
-  "-bin-sh"
+  "busybox" {= "1.35.0-r18"}
+  "libcap" {= "2.64-r1"}
+  "libcrypto1-1" {= "1.1.1w-r1"}
+  "libgcc" {= "11.2.1_git20220219-r2"}
+  "libltdl" {= "2.4.7-r0"}
+  "libssl1-1" {= "1.1.1w-r1"}
+  "libstdc++" {= "11.2.1_git20220219-r2"}
   "logrotate"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcap-so-2"
-  "so-libcrypto-so-1-1"
-  "so-libgcc_s-so-1"
-  "so-libltdl-so-7"
-  "so-libssl-so-1-1"
-  "so-libstdc++-so-6"
+  "musl" {= "1.2.3-r3"}
   "squid-lang-es" {= "5.5-r1"}
 ]
 extra-source "squid-5.5-r1.apk" {

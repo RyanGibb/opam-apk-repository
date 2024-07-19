@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del xz-dev"]
 ]
 depends: [
-  "pkgconfig"
+  "pkgconf" {= "2.2.0-r0"}
   "xz" {= "5.6.1-r3"}
   "xz-libs" {= "5.6.1-r3"}
 ]

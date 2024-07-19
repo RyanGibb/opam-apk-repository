@@ -8,7 +8,7 @@ remove: [
 depends: [
   "freeswitch" {= "1.10.3-r2"}
   "freeswitch-freetdm" {= "1.10.3-r2"}
-  "pkgconfig"
+  "pkgconf" {= "1.7.2-r0"}
 ]
 extra-source "freeswitch-dev-1.10.3-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/freeswitch-dev-1.10.3-r2.apk"

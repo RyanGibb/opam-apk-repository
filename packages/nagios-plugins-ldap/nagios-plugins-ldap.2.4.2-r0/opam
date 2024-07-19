@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del nagios-plugins-ldap"]
 ]
 depends: [
+  "libcrypto3" {= "3.0.14-r0"}
+  "libldap" {= "2.6.3-r6"}
+  "libssl3" {= "3.0.14-r0"}
+  "musl" {= "1.2.3-r5"}
   "nagios-plugins"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-3"
-  "so-libldap-so-2"
-  "so-libssl-so-3"
 ]
 extra-source "nagios-plugins-ldap-2.4.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nagios-plugins-ldap-2.4.2-r0.apk"

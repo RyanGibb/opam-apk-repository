@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  ("postgresql-bdr" {= "9.4.14_p1-r9"} | "postgresql" {= "13.12-r0"})
-]

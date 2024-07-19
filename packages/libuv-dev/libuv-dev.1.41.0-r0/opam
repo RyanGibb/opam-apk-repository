@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libuv" {= "1.41.0-r0"}
-  "pkgconfig"
+  "pkgconf" {= "1.7.4-r1"}
 ]
 extra-source "libuv-dev-1.41.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/libuv-dev-1.41.0-r0.apk"

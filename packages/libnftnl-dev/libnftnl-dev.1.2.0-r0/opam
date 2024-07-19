@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "libmnl-dev"
+  "libmnl-dev" {= "1.0.4-r1"}
   "libnftnl-libs" {= "1.2.0-r0"}
-  "pc-libmnl"
-  "pkgconfig"
+  "pkgconf" {= "1.7.4-r1"}
 ]
 extra-source "libnftnl-dev-1.2.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/libnftnl-dev-1.2.0-r0.apk"

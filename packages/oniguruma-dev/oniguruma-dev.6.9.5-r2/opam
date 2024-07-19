@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "oniguruma" {= "6.9.5-r2"}
-  "pkgconfig"
+  "pkgconf" {= "1.7.2-r0"}
 ]
 extra-source "oniguruma-dev-6.9.5-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/oniguruma-dev-6.9.5-r2.apk"

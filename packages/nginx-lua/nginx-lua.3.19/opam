@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "nginx-mod-http-lua" {= "1.24.0-r16"}
-]

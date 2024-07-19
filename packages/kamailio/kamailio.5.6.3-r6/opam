@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del kamailio"]
 ]
 depends: [
-  "-bin-sh"
   "gawk"
-  "so-libc-musl-x86_64-so-1"
-  "so-libpcre-so-1"
-  "so-libz-so-1"
+  "musl" {= "1.2.4-r2"}
+  "pcre" {= "8.45-r3"}
+  "zlib" {= "1.2.13-r1"}
+  ("busybox-binsh" {= "1.36.1-r7"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.54-r3"})
 ]
 extra-source "kamailio-5.6.3-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/kamailio-5.6.3-r6.apk"

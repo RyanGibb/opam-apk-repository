@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del nginx-mod-stream-js"]
 ]
 depends: [
+  "libxml2" {= "2.11.8-r0"}
+  "musl" {= "1.2.4_git20230717-r4"}
   "nginx"
   "nginx-mod-stream"
-  "so-libc-musl-x86_64-so-1"
-  "so-libxml2-so-2"
 ]
 extra-source "nginx-mod-stream-js-1.24.0-r16.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/nginx-mod-stream-js-1.24.0-r16.apk"

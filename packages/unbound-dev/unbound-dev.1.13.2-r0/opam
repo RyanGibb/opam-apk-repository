@@ -7,11 +7,10 @@ remove: [
 ]
 depends: [
   "expat-dev"
-  "pc-libcrypto"
-  "pc-libevent"
-  "pc-libssl"
-  "pc-python3"
-  "pkgconfig"
+  "libevent-dev" {= "2.1.12-r2"}
+  "openssl-dev" {= "1.1.1t-r2"}
+  "pkgconf" {= "1.7.4-r1"}
+  "python3-dev" {= "3.9.17-r0"}
   "unbound-libs" {= "1.13.2-r0"}
 ]
 extra-source "unbound-dev-1.13.2-r0.apk" {

@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del open-iscsi"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-3"
-  "so-libisns-so-0"
-  "so-libkmod-so-2"
-  "so-libmount-so-1"
-  "so-libopeniscsiusr-so-0"
+  "kmod-libs" {= "30-r1"}
+  "libcrypto3" {= "3.0.14-r0"}
+  "libmount" {= "2.38.1-r1"}
+  "musl" {= "1.2.3-r5"}
+  "open-iscsi-libs" {= "2.1.8-r0"}
+  "open-isns-lib" {= "0.102-r0"}
 ]
 extra-source "open-iscsi-2.1.8-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/open-iscsi-2.1.8-r0.apk"

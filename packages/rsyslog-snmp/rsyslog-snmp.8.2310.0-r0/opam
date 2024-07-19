@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del rsyslog-snmp"]
 ]
 depends: [
+  "musl" {= "1.2.4_git20230717-r4"}
+  "net-snmp-libs" {= "5.9.4-r0"}
   "rsyslog" {= "8.2310.0-r0"}
-  "so-libc-musl-x86_64-so-1"
-  "so-libnetsnmp-so-40"
 ]
 extra-source "rsyslog-snmp-8.2310.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/rsyslog-snmp-8.2310.0-r0.apk"

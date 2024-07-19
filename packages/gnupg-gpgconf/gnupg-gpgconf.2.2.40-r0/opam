@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del gnupg-gpgconf"]
 ]
 depends: [
+  "libassuan" {= "2.5.6-r0"}
+  "libgcrypt" {= "1.10.1-r0"}
+  "libgpg-error" {= "1.46-r1"}
+  "musl" {= "1.2.3-r5"}
   "pinentry"
-  "so-libassuan-so-0"
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcrypt-so-20"
-  "so-libgpg-error-so-0"
 ]
 extra-source "gnupg-gpgconf-2.2.40-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gnupg-gpgconf-2.2.40-r0.apk"

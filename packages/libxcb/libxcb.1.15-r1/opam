@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del libxcb"]
 ]
 depends: [
-  "so-libXau-so-6"
-  "so-libXdmcp-so-6"
-  "so-libc-musl-x86_64-so-1"
+  "libxau" {= "1.0.11-r2"}
+  "libxdmcp" {= "1.1.4-r2"}
+  "musl" {= "1.2.4-r2"}
 ]
 extra-source "libxcb-1.15-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/libxcb-1.15-r1.apk"

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del dbus-daemon-launch-helper"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libdbus-1-so-3"
-  "so-libexpat-so-1"
+  "dbus-libs" {= "1.14.8-r0"}
+  "libexpat" {= "2.6.2-r0"}
+  "musl" {= "1.2.4-r2"}
 ]
 extra-source "dbus-daemon-launch-helper-1.14.8-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/dbus-daemon-launch-helper-1.14.8-r0.apk"

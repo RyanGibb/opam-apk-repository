@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del iw"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libnl-3-so-200"
-  "so-libnl-genl-3-so-200"
+  "libnl3" {= "3.9.0-r1"}
+  "musl" {= "1.2.5-r0"}
 ]
 extra-source "iw-6.9-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/iw-6.9-r0.apk"

@@ -22,11 +22,11 @@ depends: [
   "linux-headers"
   "lzo-dev"
   "ncurses-dev"
-  "openssl1-1-compat-dev"
+  "openssl-dev" {= "1.1.1w-r1"}
   "pciutils-dev"
   "perl"
   "perl-dev"
-  "pkgconfig"
+  "pkgconf" {= "1.8.1-r0"}
   "python3-dev"
   "spice-dev"
   "texinfo"

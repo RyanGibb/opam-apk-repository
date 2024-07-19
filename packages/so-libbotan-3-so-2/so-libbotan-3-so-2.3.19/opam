@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "botan3-libs" {= "3.2.0-r0"}
-]

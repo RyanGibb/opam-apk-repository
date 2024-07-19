@@ -6,17 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del bind-libs"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-1-1"
-  "so-libfstrm-so-0"
-  "so-libgssapi_krb5-so-2"
-  "so-libjson-c-so-5"
-  "so-libkrb5-so-3"
-  "so-libprotobuf-c-so-1"
-  "so-libssl-so-1-1"
-  "so-libuv-so-1"
-  "so-libxml2-so-2"
-  "so-libz-so-1"
+  "fstrm" {= "0.6.1-r0"}
+  "json-c" {= "0.15-r1"}
+  "krb5-libs" {= "1.19.4-r0"}
+  "libcrypto1-1" {= "1.1.1w-r1"}
+  "libssl1-1" {= "1.1.1w-r1"}
+  "libuv" {= "1.42.0-r0"}
+  "libxml2" {= "2.9.14-r2"}
+  "musl" {= "1.2.2-r9"}
+  "protobuf-c" {= "1.4.0-r0"}
+  "zlib" {= "1.2.12-r3"}
 ]
 extra-source "bind-libs-9.16.44-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/bind-libs-9.16.44-r0.apk"

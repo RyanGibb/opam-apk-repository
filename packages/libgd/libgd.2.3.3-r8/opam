@@ -6,15 +6,15 @@ remove: [
   ["sh" "-c" "sudo apk del libgd"]
 ]
 depends: [
-  "so-libXpm-so-4"
-  "so-libavif-so-16"
-  "so-libc-musl-x86_64-so-1"
-  "so-libfontconfig-so-1"
-  "so-libfreetype-so-6"
-  "so-libjpeg-so-8"
-  "so-libpng16-so-16"
-  "so-libtiff-so-6"
-  "so-libwebp-so-7"
+  "fontconfig" {= "2.14.2-r4"}
+  "freetype" {= "2.13.2-r0"}
+  "libavif" {= "1.0.3-r0"}
+  "libjpeg-turbo" {= "3.0.1-r0"}
+  "libpng" {= "1.6.40-r0"}
+  "libwebp" {= "1.3.2-r0"}
+  "libxpm" {= "3.5.17-r0"}
+  "musl" {= "1.2.4_git20230717-r4"}
+  "tiff" {= "4.6.0-r0"}
 ]
 extra-source "libgd-2.3.3-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/libgd-2.3.3-r8.apk"

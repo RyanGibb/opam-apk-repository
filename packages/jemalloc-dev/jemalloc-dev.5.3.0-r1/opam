@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "jemalloc" {= "5.3.0-r1"}
-  "pkgconfig"
+  "pkgconf" {= "1.9.4-r0"}
 ]
 extra-source "jemalloc-dev-5.3.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/jemalloc-dev-5.3.0-r1.apk"

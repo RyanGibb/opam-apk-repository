@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "busybox-suid" {= "1.32.1-r9"}
-]

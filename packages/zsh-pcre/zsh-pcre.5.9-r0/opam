@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del zsh-pcre"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libpcre-so-1"
+  "musl" {= "1.2.3-r5"}
+  "pcre" {= "8.45-r2"}
   "zsh" {= "5.9-r0"}
 ]
 extra-source "zsh-pcre-5.9-r0.apk" {

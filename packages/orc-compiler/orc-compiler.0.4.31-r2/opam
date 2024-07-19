@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del orc-compiler"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-liborc-0-4-so-0"
+  "musl" {= "1.1.24-r10"}
+  "orc" {= "0.4.31-r2"}
 ]
 extra-source "orc-compiler-0.4.31-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/orc-compiler-0.4.31-r2.apk"

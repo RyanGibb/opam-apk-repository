@@ -8,9 +8,8 @@ remove: [
 depends: [
   "libapparmor" {= "3.1.7-r2"}
   "linux-pam"
-  "so-libapparmor-so-1"
-  "so-libc-musl-x86_64-so-1"
-  "so-libpam-so-0"
+  "linux-pam" {= "1.6.0-r0"}
+  "musl" {= "1.2.5-r0"}
 ]
 extra-source "apparmor-pam-3.1.7-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/apparmor-pam-3.1.7-r2.apk"

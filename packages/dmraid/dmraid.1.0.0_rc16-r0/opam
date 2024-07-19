@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del dmraid"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libdevmapper-event-so-1-02"
-  "so-libdevmapper-so-1-02"
+  "device-mapper-event-libs" {= "2.02.187-r2"}
+  "device-mapper-libs" {= "2.02.187-r2"}
+  "musl" {= "1.2.2-r9"}
 ]
 extra-source "dmraid-1.0.0_rc16-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/dmraid-1.0.0_rc16-r0.apk"

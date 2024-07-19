@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "libhistory" {= "8.1.1-r0"}
-  "pc-ncurses"
-  "pkgconfig"
+  "ncurses-dev" {= "6.3_p20211120-r2"}
+  "pkgconf" {= "1.8.1-r0"}
   "readline" {= "8.1.1-r0"}
 ]
 extra-source "readline-dev-8.1.1-r0.apk" {

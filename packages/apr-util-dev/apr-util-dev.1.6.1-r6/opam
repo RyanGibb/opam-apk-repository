@@ -7,14 +7,14 @@ remove: [
 ]
 depends: [
   "apr-dev"
+  "apr-dev" {= "1.7.0-r0"}
   "apr-util" {= "1.6.1-r6"}
   "db-dev"
   "expat-dev"
   "mariadb-dev"
   "openldap-dev"
   "openssl-dev"
-  "pc-apr-1"
-  "pkgconfig"
+  "pkgconf" {= "1.7.2-r0"}
   "postgresql-dev"
   "sqlite-dev"
 ]

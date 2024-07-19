@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del uwsgi-fastrouter"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.2.3-r3"}
   "uwsgi"
   "uwsgi-corerouter"
 ]

@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del postfix-pgsql"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libpq-so-5"
+  "libpq" {= "15.7-r0"}
+  "musl" {= "1.2.3-r5"}
 ]
 extra-source "postfix-pgsql-3.7.11-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/postfix-pgsql-3.7.11-r0.apk"

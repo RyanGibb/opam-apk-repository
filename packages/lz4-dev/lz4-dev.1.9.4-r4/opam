@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "lz4-libs" {= "1.9.4-r4"}
-  "pkgconfig"
+  "pkgconf" {= "1.9.5-r0"}
 ]
 extra-source "lz4-dev-1.9.4-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/lz4-dev-1.9.4-r4.apk"

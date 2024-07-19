@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "libdrm" {= "2.4.118-r0"}
+  "libpciaccess-dev" {= "0.17-r2"}
   "linux-headers"
-  "pc-pciaccess" {>= "0.10"}
-  "pkgconfig"
+  "pkgconf" {= "2.1.0-r0"}
 ]
 extra-source "libdrm-dev-2.4.118-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/libdrm-dev-2.4.118-r0.apk"

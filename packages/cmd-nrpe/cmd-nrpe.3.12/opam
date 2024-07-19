@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "nrpe" {= "3.2.1-r3"}
-]

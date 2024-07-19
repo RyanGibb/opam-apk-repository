@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del rsyslog-hiredis"]
 ]
 depends: [
+  "hiredis" {= "1.0.2-r1"}
+  "musl" {= "1.2.3-r5"}
   "rsyslog" {= "8.2212.0-r0"}
-  "so-libc-musl-x86_64-so-1"
-  "so-libhiredis-so-1-0-0"
 ]
 extra-source "rsyslog-hiredis-8.2212.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/rsyslog-hiredis-8.2212.0-r0.apk"

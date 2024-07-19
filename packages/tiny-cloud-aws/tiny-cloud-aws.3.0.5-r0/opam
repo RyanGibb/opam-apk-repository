@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del tiny-cloud-aws"]
 ]
 depends: [
-  "-bin-sh"
   "ifupdown-ng"
   "iproute2-minimal"
   "nvme-cli"
   "tiny-cloud" {= "3.0.5-r0"}
+  ("busybox-binsh" {= "1.36.1-r7"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.54-r3"})
 ]
 extra-source "tiny-cloud-aws-3.0.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/tiny-cloud-aws-3.0.5-r0.apk"

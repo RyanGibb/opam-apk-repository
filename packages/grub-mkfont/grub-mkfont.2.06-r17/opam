@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del grub-mkfont"]
 ]
 depends: [
+  "device-mapper-libs" {= "2.03.23-r0"}
+  "freetype" {= "2.13.2-r0"}
   "grub"
-  "so-libc-musl-x86_64-so-1"
-  "so-libdevmapper-so-1-02"
-  "so-libfreetype-so-6"
+  "musl" {= "1.2.4_git20230717-r4"}
 ]
 extra-source "grub-mkfont-2.06-r17.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/grub-mkfont-2.06-r17.apk"

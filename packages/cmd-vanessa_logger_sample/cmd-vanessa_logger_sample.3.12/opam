@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "vanessa_logger" {= "0.0.10-r0"}
-]

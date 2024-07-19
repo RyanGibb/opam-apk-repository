@@ -7,10 +7,10 @@ remove: [
 ]
 depends: [
   "dbus"
-  "so-libc-musl-x86_64-so-1"
-  "so-libglib-2-0-so-0"
-  "so-libreadline-so-8"
-  "so-libudev-so-1"
+  "eudev-libs" {= "3.2.11-r0"}
+  "glib" {= "2.72.4-r0"}
+  "musl" {= "1.2.3-r3"}
+  "readline" {= "8.1.2-r0"}
 ]
 extra-source "bluez-deprecated-5.65-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/bluez-deprecated-5.65-r0.apk"

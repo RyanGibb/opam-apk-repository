@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del pm-utils-dev"]
 ]
 depends: [
-  "pkgconfig"
+  "pkgconf" {= "2.2.0-r0"}
 ]
 extra-source "pm-utils-dev-1.4.1-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/pm-utils-dev-1.4.1-r5.apk"

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del libutempter"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libskarnet-so-2-13"
-  "so-libutmps-so-0-1"
+  "musl" {= "1.2.4-r2"}
+  "skalibs" {= "2.13.1.1-r1"}
+  "utmps-libs" {= "0.1.2.1-r1"}
 ]
 extra-source "libutempter-1.2.1-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/libutempter-1.2.1-r8.apk"

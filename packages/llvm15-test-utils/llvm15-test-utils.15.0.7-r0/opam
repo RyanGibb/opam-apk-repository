@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del llvm15-test-utils"]
 ]
 depends: [
+  "libgcc" {= "12.2.1_git20220924-r4"}
+  "libstdc++" {= "12.2.1_git20220924-r4"}
+  "musl" {= "1.2.3-r5"}
   "py3-setuptools"
   "python3"
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
-  "so-libstdc++-so-6"
 ]
 extra-source "llvm15-test-utils-15.0.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/llvm15-test-utils-15.0.7-r0.apk"

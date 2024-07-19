@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "check" {= "0.14.0-r0"}
-  "pkgconfig"
+  "pkgconf" {= "1.7.2-r0"}
 ]
 extra-source "check-dev-0.14.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/check-dev-0.14.0-r0.apk"

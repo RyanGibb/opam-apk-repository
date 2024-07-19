@@ -6,11 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del net-snmp"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libnetsnmp-so-40"
-  "so-libnetsnmpagent-so-40"
-  "so-libnetsnmpmibs-so-40"
-  "so-libnetsnmptrapd-so-40"
+  "musl" {= "1.2.2-r2"}
+  "net-snmp-agent-libs" {= "5.9.3-r0"}
+  "net-snmp-libs" {= "5.9.3-r0"}
 ]
 extra-source "net-snmp-5.9.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/net-snmp-5.9.3-r0.apk"

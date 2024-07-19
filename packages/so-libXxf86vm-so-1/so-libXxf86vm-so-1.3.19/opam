@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "libxxf86vm" {= "1.1.5-r5"}
-]

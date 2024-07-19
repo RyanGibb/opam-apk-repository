@@ -7,15 +7,14 @@ remove: [
 ]
 depends: [
   "gnupg-gpgconf" {= "2.2.31-r2"}
-  "so-libassuan-so-0"
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcrypt-so-20"
-  "so-libgnutls-so-30"
-  "so-libgpg-error-so-0"
-  "so-libksba-so-8"
-  "so-liblber-so-2"
-  "so-libldap-so-2"
-  "so-libnpth-so-0"
+  "gnutls" {= "3.7.1-r2"}
+  "libassuan" {= "2.5.6-r0"}
+  "libgcrypt" {= "1.9.4-r0"}
+  "libgpg-error" {= "1.42-r1"}
+  "libksba" {= "1.6.4-r0"}
+  "libldap" {= "2.6.2-r0"}
+  "musl" {= "1.2.2-r9"}
+  "npth" {= "1.6-r1"}
 ]
 extra-source "gnupg-dirmngr-2.2.31-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/gnupg-dirmngr-2.2.31-r2.apk"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del sshpass"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.2.5-r0"}
 ]
 extra-source "sshpass-1.10-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/sshpass-1.10-r0.apk"

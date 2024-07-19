@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del vim"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libncursesw-so-6"
+  "libncursesw" {= "6.4_p20240420-r0"}
+  "musl" {= "1.2.5-r0"}
   "vim-common" {= "9.1.0414-r0"}
   "xxd" {= "9.1.0414-r0"}
 ]

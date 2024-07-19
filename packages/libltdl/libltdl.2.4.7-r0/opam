@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del libltdl"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "libltdl-2.4.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/libltdl-2.4.7-r0.apk"

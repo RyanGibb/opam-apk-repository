@@ -8,7 +8,7 @@ remove: [
 depends: [
   "libcrypto3" {= "3.3.1-r3"}
   "libssl3" {= "3.3.1-r3"}
-  "pkgconfig"
+  "pkgconf" {= "2.2.0-r0"}
 ]
 extra-source "openssl-dev-3.3.1-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/openssl-dev-3.3.1-r3.apk"

@@ -6,12 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del bctoolbox"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
-  "so-libmbedcrypto-so-7"
-  "so-libmbedtls-so-14"
-  "so-libmbedx509-so-1"
-  "so-libstdc++-so-6"
+  "libgcc" {= "11.2.1_git20220219-r2"}
+  "libstdc++" {= "11.2.1_git20220219-r2"}
+  "mbedtls" {= "2.28.8-r0"}
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "bctoolbox-5.1.17-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/bctoolbox-5.1.17-r1.apk"

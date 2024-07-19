@@ -6,13 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del kamailio-kazoo"]
 ]
 depends: [
+  "json-c" {= "0.14-r1"}
   "kamailio"
-  "so-libc-musl-x86_64-so-1"
-  "so-libevent-2-1-so-7"
-  "so-libjson-c-so-5"
-  "so-librabbitmq-so-4"
-  "so-libsrdb1-so-1"
-  "so-libuuid-so-1"
+  "kamailio" {= "5.3.7-r2"}
+  "libevent" {= "2.1.11-r1"}
+  "libuuid" {= "2.37.4-r0"}
+  "musl" {= "1.1.24-r10"}
+  "rabbitmq-c" {= "0.10.0-r1"}
 ]
 extra-source "kamailio-kazoo-5.3.7-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/kamailio-kazoo-5.3.7-r2.apk"

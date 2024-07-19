@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del perl-dbd-odbc"]
 ]
 depends: [
+  "musl" {= "1.2.2-r5"}
   "perl"
   "perl-dbi"
-  "so-libc-musl-x86_64-so-1"
-  "so-libodbc-so-2"
+  "unixodbc" {= "2.3.9-r1"}
 ]
 extra-source "perl-dbd-odbc-1.61-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/perl-dbd-odbc-1.61-r1.apk"

@@ -6,16 +6,14 @@ remove: [
   ["sh" "-c" "sudo apk del jack-example-clients"]
 ]
 depends: [
-  "so-libasound-so-2"
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
-  "so-libjack-so-0"
-  "so-libjacknet-so-0"
-  "so-libjackserver-so-0"
-  "so-libreadline-so-8"
-  "so-libsamplerate-so-0"
-  "so-libsndfile-so-1"
-  "so-libstdc++-so-6"
+  "alsa-lib" {= "1.2.2-r0"}
+  "jack" {= "1.9.14-r0"}
+  "libgcc" {= "9.3.0-r2"}
+  "libsamplerate" {= "0.1.9-r1"}
+  "libsndfile" {= "1.0.28-r8"}
+  "libstdc++" {= "9.3.0-r2"}
+  "musl" {= "1.1.24-r10"}
+  "readline" {= "8.0.4-r0"}
 ]
 extra-source "jack-example-clients-1.9.14-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/jack-example-clients-1.9.14-r0.apk"

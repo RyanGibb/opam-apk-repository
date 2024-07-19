@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del libnetfilter_log-dev"]
 ]
 depends: [
+  "libmnl-dev" {= "1.0.5-r2"}
   "libnetfilter_log" {= "1.0.2-r2"}
+  "libnfnetlink-dev" {= "1.0.2-r3"}
   "linux-headers"
-  "pc-libmnl" {>= "1.0.3"}
-  "pc-libnfnetlink" {>= "0.0.41"}
-  "pkgconfig"
+  "pkgconf" {= "2.2.0-r0"}
 ]
 extra-source "libnetfilter_log-dev-1.0.2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libnetfilter_log-dev-1.0.2-r2.apk"

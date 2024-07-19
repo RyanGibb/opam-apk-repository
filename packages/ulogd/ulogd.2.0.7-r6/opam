@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del ulogd"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libmnl-so-0"
-  "so-libnetfilter_acct-so-1"
-  "so-libnetfilter_conntrack-so-3"
-  "so-libnetfilter_log-so-1"
-  "so-libnfnetlink-so-0"
+  "libmnl" {= "1.0.4-r0"}
+  "libnetfilter_acct" {= "1.0.3-r0"}
+  "libnetfilter_conntrack" {= "1.0.8-r0"}
+  "libnetfilter_log" {= "1.0.1-r3"}
+  "libnfnetlink" {= "1.0.1-r2"}
+  "musl" {= "1.1.24-r10"}
 ]
 extra-source "ulogd-2.0.7-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/ulogd-2.0.7-r6.apk"

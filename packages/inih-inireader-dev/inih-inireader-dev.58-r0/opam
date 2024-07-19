@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del inih-inireader-dev"]
 ]
 depends: [
+  "inih-dev" {= "58-r0"}
   "inih-inireader" {= "58-r0"}
-  "pc-inih"
-  "pkgconfig"
+  "pkgconf" {= "2.2.0-r0"}
 ]
 extra-source "inih-inireader-dev-58-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/inih-inireader-dev-58-r0.apk"

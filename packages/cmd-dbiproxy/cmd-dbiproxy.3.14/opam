@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "perl-dbi" {= "1.643-r1"}
-]

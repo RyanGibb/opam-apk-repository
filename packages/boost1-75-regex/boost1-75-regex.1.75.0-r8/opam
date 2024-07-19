@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del boost1.75-regex"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
-  "so-libicui18n-so-67"
-  "so-libicuuc-so-67"
+  "icu-libs" {= "67.1-r2"}
+  "libgcc" {= "10.3.1_git20210424-r2"}
+  "musl" {= "1.2.2-r5"}
 ]
 extra-source "boost1.75-regex-1.75.0-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/boost1.75-regex-1.75.0-r8.apk"

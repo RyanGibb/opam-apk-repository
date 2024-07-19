@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "xspice" {= "0.1.5-r6"}
-]

@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del acf-freeswitch-vmail"]
 ]
 depends: [
-  "-bin-sh"
   "acf-core"
+  "busybox" {= "1.31.1-r22"}
   "freeswitch"
   "lua-socket"
   "lua-sql-sqlite3"

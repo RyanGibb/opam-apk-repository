@@ -9,8 +9,8 @@ depends: [
   "encodings"
   "font-alias"
   "fontconfig"
-  "mkfontdir"
   "mkfontscale"
+  "mkfontscale" {= "1.2.2-r0"}
   "util-macros"
 ]
 extra-source "font-misc-misc-1.1.2-r1.apk" {

@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del ethtool"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libmnl-so-0"
+  "libmnl" {= "1.0.5-r0"}
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "ethtool-5.17-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/ethtool-5.17-r0.apk"

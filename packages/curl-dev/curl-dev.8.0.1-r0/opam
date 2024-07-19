@@ -10,7 +10,7 @@ depends: [
   "libcurl" {= "8.0.1-r0"}
   "nghttp2-dev"
   "openssl-dev"
-  "pkgconfig"
+  "pkgconf" {= "1.7.4-r1"}
   "zlib-dev"
 ]
 extra-source "curl-dev-8.0.1-r0.apk" {

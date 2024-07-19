@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del dnstop"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libncursesw-so-6"
-  "so-libpcap-so-1"
+  "libpcap" {= "1.9.1-r2"}
+  "musl" {= "1.1.24-r10"}
+  "ncurses-libs" {= "6.2_p20200523-r1"}
 ]
 extra-source "dnstop-20140915-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/dnstop-20140915-r3.apk"

@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del glslang"]
 ]
 depends: [
-  "so-libSPIRV-Tools-opt-so"
-  "so-libSPIRV-Tools-so"
-  "so-libc-musl-x86_64-so-1"
-  "so-libstdc++-so-6"
+  "libstdc++" {= "10.2.1_pre1-r3"}
+  "musl" {= "1.2.2-r2"}
+  "spirv-tools" {= "2020.3-r0"}
 ]
 extra-source "glslang-8.13.3743-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/glslang-8.13.3743-r0.apk"

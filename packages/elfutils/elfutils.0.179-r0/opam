@@ -6,12 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del elfutils"]
 ]
 depends: [
-  "so-libasm-so-1"
-  "so-libc-musl-x86_64-so-1"
-  "so-libdw-so-1"
-  "so-libelf-so-1"
-  "so-libobstack-so-0"
-  "so-libstdc++-so-6"
+  "libelf" {= "0.179-r0"}
+  "libstdc++" {= "9.3.0-r2"}
+  "musl" {= "1.1.24-r10"}
+  "musl-obstack" {= "1.1-r1"}
 ]
 extra-source "elfutils-0.179-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/elfutils-0.179-r0.apk"

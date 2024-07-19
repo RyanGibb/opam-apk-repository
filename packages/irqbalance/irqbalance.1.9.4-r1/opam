@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del irqbalance"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libglib-2-0-so-0"
-  "so-libncursesw-so-6"
-  "so-libnuma-so-1"
+  "glib" {= "2.80.2-r0"}
+  "libncursesw" {= "6.4_p20240420-r0"}
+  "musl" {= "1.2.5-r0"}
+  "numactl" {= "2.0.18-r0"}
 ]
 extra-source "irqbalance-1.9.4-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/irqbalance-1.9.4-r1.apk"

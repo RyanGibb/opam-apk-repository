@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "gstreamer-dev" {= "1.18.5-r0"}
-]

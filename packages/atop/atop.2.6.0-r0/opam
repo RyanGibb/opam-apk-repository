@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del atop"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libncursesw-so-6"
-  "so-libz-so-1"
+  "musl" {= "1.2.2-r9"}
+  "ncurses-libs" {= "6.3_p20211120-r2"}
+  "zlib" {= "1.2.12-r3"}
 ]
 extra-source "atop-2.6.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/atop-2.6.0-r0.apk"

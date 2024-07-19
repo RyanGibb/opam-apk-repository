@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "mariadb-connector-c" {= "3.3.3-r0"}
+  "musl" {= "1.2.3-r5"}
   "openssl-dev" {> "3"}
-  "pkgconfig"
-  "so-libc-musl-x86_64-so-1"
+  "pkgconf" {= "1.9.4-r0"}
   "zlib-dev"
 ]
 extra-source "mariadb-connector-c-dev-3.3.3-r0.apk" {

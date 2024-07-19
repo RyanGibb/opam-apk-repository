@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "busybox" {= "1.33.1-r8"}
-]

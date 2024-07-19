@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del goaccess"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libintl-so-8"
-  "so-libmaxminddb-so-0"
-  "so-libncursesw-so-6"
+  "libintl" {= "0.21-r2"}
+  "libmaxminddb-libs" {= "1.6.0-r1"}
+  "musl" {= "1.2.3-r3"}
+  "ncurses-libs" {= "6.3_p20220521-r1"}
 ]
 extra-source "goaccess-1.5.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/goaccess-1.5.7-r0.apk"

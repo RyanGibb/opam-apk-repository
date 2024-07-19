@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del inih-inireader"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
-  "so-libinih-so-0"
-  "so-libstdc++-so-6"
+  "inih" {= "56-r0"}
+  "libgcc" {= "12.2.1_git20220924-r4"}
+  "libstdc++" {= "12.2.1_git20220924-r4"}
+  "musl" {= "1.2.3-r5"}
 ]
 extra-source "inih-inireader-56-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/inih-inireader-56-r0.apk"

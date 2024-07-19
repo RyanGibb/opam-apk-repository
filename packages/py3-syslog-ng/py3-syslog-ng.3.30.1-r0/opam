@@ -6,11 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del py3-syslog-ng"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libevtlog-3-30-so-0"
-  "so-libglib-2-0-so-0"
-  "so-libpython3-8-so-1-0"
-  "so-libsyslog-ng-3-30-so-0"
+  "glib" {= "2.66.8-r0"}
+  "musl" {= "1.2.2-r2"}
+  "python3" {= "3.8.15-r0"}
+  "syslog-ng" {= "3.30.1-r0"}
 ]
 extra-source "py3-syslog-ng-3.30.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/py3-syslog-ng-3.30.1-r0.apk"

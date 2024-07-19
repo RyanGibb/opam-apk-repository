@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "ntfs-3g-libs" {= "2022.5.17-r0"}
-  "pkgconfig"
+  "pkgconf" {= "1.8.1-r0"}
 ]
 extra-source "ntfs-3g-dev-2022.5.17-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/ntfs-3g-dev-2022.5.17-r0.apk"

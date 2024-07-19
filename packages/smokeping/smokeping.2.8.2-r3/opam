@@ -6,7 +6,6 @@ remove: [
   ["sh" "-c" "sudo apk del smokeping"]
 ]
 depends: [
-  "-bin-sh"
   "font-dejavu"
   "fping"
   "perl"
@@ -32,6 +31,7 @@ depends: [
   "perl-text-soundex"
   "perl-uri"
   "rrdtool"
+  ("busybox-binsh" {= "1.36.1-r29"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.56.1-r1"})
 ]
 extra-source "smokeping-2.8.2-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/smokeping-2.8.2-r3.apk"

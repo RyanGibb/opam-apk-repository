@@ -7,10 +7,10 @@ remove: [
 ]
 depends: [
   "kamailio"
+  "kamailio" {= "5.6.3-r6"}
   "kamailio-db"
-  "so-libc-musl-x86_64-so-1"
-  "so-libsqlite3-so-0"
-  "so-libsrdb1-so-1"
+  "musl" {= "1.2.4-r2"}
+  "sqlite-libs" {= "3.41.2-r3"}
 ]
 extra-source "kamailio-sqlite-5.6.3-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/kamailio-sqlite-5.6.3-r6.apk"

@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "aspell"
+  "musl" {= "1.2.3-r5"}
   "perl"
-  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "aspell-utils-0.60.8-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/aspell-utils-0.60.8-r2.apk"

@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "freeswitch-sounds-pt-br-karina-8000" {= "1.0.51-r4"}
-]

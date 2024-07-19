@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del libprotobuf"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
-  "so-libstdc++-so-6"
-  "so-libz-so-1"
+  "libgcc" {= "11.2.1_git20220219-r2"}
+  "libstdc++" {= "11.2.1_git20220219-r2"}
+  "musl" {= "1.2.3-r3"}
+  "zlib" {= "1.2.12-r3"}
 ]
 extra-source "libprotobuf-3.18.1-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/libprotobuf-3.18.1-r3.apk"

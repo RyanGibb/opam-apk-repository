@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del lua-inspect"]
 ]
 depends: [
-  "lua"
+  ("lua5-2" {= "5.2.4-r7"} | "lua5-1" {= "5.1.5-r8"} | "lua5-3" {= "5.3.6-r1"} | "luajit" {= "2.1_p20210510-r0"} | "lua5-4" {= "5.4.3-r1"})
 ]
 extra-source "lua-inspect-3.1.1-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lua-inspect-3.1.1-r3.apk"

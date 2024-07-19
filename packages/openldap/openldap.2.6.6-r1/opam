@@ -6,13 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del openldap"]
 ]
 depends: [
-  "-bin-sh"
-  "so-libc-musl-x86_64-so-1"
-  "so-liblber-so-2"
-  "so-libldap-so-2"
-  "so-libltdl-so-7"
-  "so-libsasl2-so-3"
-  "so-libuuid-so-1"
+  "libldap" {= "2.6.6-r1"}
+  "libltdl" {= "2.4.7-r3"}
+  "libsasl" {= "2.1.28-r5"}
+  "libuuid" {= "2.39.3-r0"}
+  "musl" {= "1.2.4_git20230717-r4"}
+  ("busybox-binsh" {= "1.36.1-r19"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.55-r0"})
 ]
 extra-source "openldap-2.6.6-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/openldap-2.6.6-r1.apk"

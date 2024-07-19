@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del freeswitch-snmp"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libfreeswitch-so-1"
-  "so-libnetsnmp-so-40"
-  "so-libnetsnmpagent-so-40"
+  "freeswitch" {= "1.10.6-r0"}
+  "musl" {= "1.2.2-r5"}
+  "net-snmp-agent-libs" {= "5.9.3-r1"}
+  "net-snmp-libs" {= "5.9.3-r1"}
 ]
 extra-source "freeswitch-snmp-1.10.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/freeswitch-snmp-1.10.6-r0.apk"

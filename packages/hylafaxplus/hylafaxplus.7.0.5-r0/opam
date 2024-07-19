@@ -9,15 +9,15 @@ depends: [
   "bash"
   "findutils"
   "ghostscript"
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
-  "so-liblcms2-so-2"
-  "so-libldap-so-2"
-  "so-libssl-so-1-1"
-  "so-libstdc++-so-6"
-  "so-libtiff-so-5"
-  "so-libz-so-1"
+  "lcms2" {= "2.13.1-r0"}
+  "libgcc" {= "11.2.1_git20220219-r2"}
+  "libldap" {= "2.6.3-r3"}
+  "libssl1-1" {= "1.1.1w-r1"}
+  "libstdc++" {= "11.2.1_git20220219-r2"}
+  "musl" {= "1.2.3-r3"}
+  "tiff" {= "4.4.0-r4"}
   "tiff-tools"
+  "zlib" {= "1.2.12-r3"}
 ]
 conflicts: [
   "hylafax"

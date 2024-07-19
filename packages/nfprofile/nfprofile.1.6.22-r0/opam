@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del nfprofile"]
 ]
 depends: [
+  "librrd" {= "1.7.2-r4"}
+  "musl" {= "1.2.2-r2"}
   "nfdump"
-  "so-libc-musl-x86_64-so-1"
-  "so-libnfdump-1-6-22-so"
-  "so-librrd-so-8"
+  "nfdump" {= "1.6.22-r0"}
 ]
 extra-source "nfprofile-1.6.22-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/nfprofile-1.6.22-r0.apk"

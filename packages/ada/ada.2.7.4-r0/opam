@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del ada"]
 ]
 depends: [
-  "so-libada-so-2"
-  "so-libc-musl-x86_64-so-1"
-  "so-libfmt-so-10"
-  "so-libgcc_s-so-1"
-  "so-libstdc++-so-6"
+  "ada-libs" {= "2.7.4-r0"}
+  "fmt" {= "10.1.1-r0"}
+  "libgcc" {= "13.2.1_git20231014-r0"}
+  "libstdc++" {= "13.2.1_git20231014-r0"}
+  "musl" {= "1.2.4_git20230717-r4"}
 ]
 extra-source "ada-2.7.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/ada-2.7.4-r0.apk"

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del aspell-libs"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libintl-so-8"
-  "so-libstdc++-so-6"
+  "libintl" {= "0.21.1-r1"}
+  "libstdc++" {= "12.2.1_git20220924-r4"}
+  "musl" {= "1.2.3-r5"}
 ]
 extra-source "aspell-libs-0.60.8-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/aspell-libs-0.60.8-r2.apk"

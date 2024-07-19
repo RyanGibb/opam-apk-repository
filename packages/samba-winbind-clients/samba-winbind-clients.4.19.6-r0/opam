@@ -6,30 +6,14 @@ remove: [
   ["sh" "-c" "sudo apk del samba-winbind-clients"]
 ]
 depends: [
+  "gnutls" {= "3.8.5-r0"}
+  "libwbclient" {= "4.19.6-r0"}
+  "musl" {= "1.2.5-r0"}
+  "popt" {= "1.19-r3"}
   "samba-libs" {= "4.19.6-r0"}
-  "so-libauthkrb5-samba4-so"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcliauth-samba4-so"
-  "so-libcmdline-samba4-so"
-  "so-libgenrand-samba4-so"
-  "so-libgensec-samba4-so"
-  "so-libgnutls-so-30"
-  "so-libgse-samba4-so"
-  "so-libpopt-so-0"
-  "so-libreplace-samba4-so"
-  "so-libsamba-credentials-so-1"
-  "so-libsamba-debug-samba4-so"
-  "so-libsamba-errors-so-1"
-  "so-libsamba-hostconfig-so-0"
-  "so-libsamba-security-samba4-so"
-  "so-libsamba-util-so-0"
-  "so-libsamba3-util-samba4-so"
-  "so-libsecrets3-samba4-so"
-  "so-libsmbconf-so-0"
-  "so-libtalloc-so-2"
-  "so-libtevent-so-0"
-  "so-libtevent-util-so-0"
-  "so-libwbclient-so-0"
+  "samba-util-libs" {= "4.19.6-r0"}
+  "talloc" {= "2.4.2-r1"}
+  "tevent" {= "0.16.1-r0"}
 ]
 extra-source "samba-winbind-clients-4.19.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/samba-winbind-clients-4.19.6-r0.apk"

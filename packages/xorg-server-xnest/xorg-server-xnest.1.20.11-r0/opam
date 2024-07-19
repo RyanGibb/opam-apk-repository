@@ -8,14 +8,14 @@ remove: [
 depends: [
   "font-cursor-misc"
   "font-misc-misc"
-  "so-libX11-so-6"
-  "so-libXau-so-6"
-  "so-libXdmcp-so-6"
-  "so-libXext-so-6"
-  "so-libXfont2-so-2"
-  "so-libc-musl-x86_64-so-1"
-  "so-libnettle-so-7"
-  "so-libpixman-1-so-0"
+  "libx11" {= "1.6.12-r1"}
+  "libxau" {= "1.0.9-r0"}
+  "libxdmcp" {= "1.1.3-r0"}
+  "libxext" {= "1.3.4-r0"}
+  "libxfont2" {= "2.0.4-r0"}
+  "musl" {= "1.1.24-r10"}
+  "nettle" {= "3.5.1-r2"}
+  "pixman" {= "0.40.0-r2"}
   "xinit"
   "xkbcomp"
   "xkeyboard-config"

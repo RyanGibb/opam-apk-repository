@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "kamailio"
-  "so-libc-musl-x86_64-so-1"
-  "so-libev-so-4"
-  "so-libmosquitto-so-1"
+  "libev" {= "4.33-r1"}
+  "mosquitto-libs" {= "2.0.18-r0"}
+  "musl" {= "1.2.5-r0"}
 ]
 extra-source "kamailio-mqtt-5.8.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/kamailio-mqtt-5.8.1-r1.apk"

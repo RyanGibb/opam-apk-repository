@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "freeradius" {= "3.0.21-r7"}
-  "so-libc-musl-x86_64-so-1"
-  "so-libodbc-so-2"
+  "musl" {= "1.2.2-r2"}
+  "unixodbc" {= "2.3.9-r1"}
 ]
 extra-source "freeradius-unixodbc-3.0.21-r7.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/freeradius-unixodbc-3.0.21-r7.apk"

@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "pango" {= "1.50.13-r0"}
-]

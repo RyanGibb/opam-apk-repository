@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del dbus"]
 ]
 depends: [
-  "-bin-sh"
-  "so-libc-musl-x86_64-so-1"
-  "so-libdbus-1-so-3"
-  "so-libexpat-so-1"
+  "dbus-libs" {= "1.14.10-r0"}
+  "libexpat" {= "2.6.2-r0"}
+  "musl" {= "1.2.4_git20230717-r4"}
+  ("busybox-binsh" {= "1.36.1-r19"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.55-r0"})
 ]
 extra-source "dbus-1.14.10-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/dbus-1.14.10-r0.apk"

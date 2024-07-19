@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del ccache"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
-  "so-libhiredis-so-1-1-0"
-  "so-libstdc++-so-6"
-  "so-libxxhash-so-0"
-  "so-libzstd-so-1"
+  "hiredis" {= "1.2.0-r0"}
+  "libgcc" {= "13.2.1_git20231014-r0"}
+  "libstdc++" {= "13.2.1_git20231014-r0"}
+  "libxxhash" {= "0.8.2-r2"}
+  "musl" {= "1.2.4_git20230717-r4"}
+  "zstd-libs" {= "1.5.5-r8"}
 ]
 extra-source "ccache-4.8.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/ccache-4.8.3-r0.apk"

@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "runuser" {= "2.37.4-r0"}
-]

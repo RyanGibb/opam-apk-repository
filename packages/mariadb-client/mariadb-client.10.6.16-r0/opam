@@ -6,14 +6,14 @@ remove: [
   ["sh" "-c" "sudo apk del mariadb-client"]
 ]
 depends: [
+  "libcrypto3" {= "3.0.14-r0"}
+  "libgcc" {= "12.2.1_git20220924-r4"}
+  "libssl3" {= "3.0.14-r0"}
+  "libstdc++" {= "12.2.1_git20220924-r4"}
   "mariadb-common" {= "10.6.16-r0"}
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-3"
-  "so-libgcc_s-so-1"
-  "so-libncursesw-so-6"
-  "so-libssl-so-3"
-  "so-libstdc++-so-6"
-  "so-libz-so-1"
+  "musl" {= "1.2.3-r5"}
+  "ncurses-libs" {= "6.3_p20221119-r1"}
+  "zlib" {= "1.2.13-r0"}
 ]
 extra-source "mariadb-client-10.6.16-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mariadb-client-10.6.16-r0.apk"

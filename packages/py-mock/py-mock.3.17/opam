@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "py3-mock" {= "4.0.3-r3"}
-]

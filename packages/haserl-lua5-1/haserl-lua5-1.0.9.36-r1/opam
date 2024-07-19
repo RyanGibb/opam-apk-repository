@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del haserl-lua5.1"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-liblua-so-5"
+  "lua5-1-libs" {= "5.1.5-r11"}
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "haserl-lua5.1-0.9.36-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/haserl-lua5.1-0.9.36-r1.apk"

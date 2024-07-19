@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del freeswitch-sangoma"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libfreeswitch-so-1"
-  "so-libsngtc_node-so"
+  "freeswitch" {= "1.10.5-r1"}
+  "musl" {= "1.2.2-r2"}
+  "sngtc_client" {= "1.3.9-r2"}
 ]
 extra-source "freeswitch-sangoma-1.10.5-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/freeswitch-sangoma-1.10.5-r1.apk"

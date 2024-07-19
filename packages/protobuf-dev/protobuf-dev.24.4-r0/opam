@@ -6,44 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del protobuf-dev"]
 ]
 depends: [
+  "abseil-cpp-dev" {= "20230802.1-r0"}
   "libprotobuf" {= "24.4-r0"}
   "libprotobuf-lite" {= "24.4-r0"}
   "libprotoc" {= "24.4-r0"}
-  "pc-absl_absl_check"
-  "pc-absl_absl_log"
-  "pc-absl_algorithm"
-  "pc-absl_base"
-  "pc-absl_bind_front"
-  "pc-absl_bits"
-  "pc-absl_btree"
-  "pc-absl_cleanup"
-  "pc-absl_cord"
-  "pc-absl_core_headers"
-  "pc-absl_debugging"
-  "pc-absl_die_if_null"
-  "pc-absl_dynamic_annotations"
-  "pc-absl_flags"
-  "pc-absl_flat_hash_map"
-  "pc-absl_flat_hash_set"
-  "pc-absl_function_ref"
-  "pc-absl_hash"
-  "pc-absl_layout"
-  "pc-absl_log_initialize"
-  "pc-absl_log_severity"
-  "pc-absl_memory"
-  "pc-absl_node_hash_map"
-  "pc-absl_node_hash_set"
-  "pc-absl_optional"
-  "pc-absl_span"
-  "pc-absl_status"
-  "pc-absl_statusor"
-  "pc-absl_strings"
-  "pc-absl_synchronization"
-  "pc-absl_time"
-  "pc-absl_type_traits"
-  "pc-absl_utility"
-  "pc-absl_variant"
-  "pkgconfig"
+  "pkgconf" {= "2.1.0-r0"}
   "protoc" {= "24.4-r0"}
   "zlib-dev"
 ]

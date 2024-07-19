@@ -8,8 +8,8 @@ remove: [
 depends: [
   "libgcrypt" {= "1.8.8-r1"}
   "libgpg-error-dev"
-  "pc-gpg-error"
-  "pkgconfig"
+  "libgpg-error-dev" {= "1.41-r0"}
+  "pkgconf" {= "1.7.3-r0"}
 ]
 extra-source "libgcrypt-dev-1.8.8-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/libgcrypt-dev-1.8.8-r1.apk"

@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del llvm14"]
 ]
 depends: [
-  "-bin-sh"
-  "so-libLLVM-14-so"
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
-  "so-libstdc++-so-6"
-  "so-libz-so-1"
+  "libgcc" {= "13.2.1_git20231014-r0"}
+  "libstdc++" {= "13.2.1_git20231014-r0"}
+  "llvm14-libs" {= "14.0.6-r17"}
+  "musl" {= "1.2.4_git20230717-r4"}
+  "zlib" {= "1.3.1-r0"}
+  ("busybox-binsh" {= "1.36.1-r19"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.55-r0"})
 ]
 extra-source "llvm14-14.0.6-r17.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/llvm14-14.0.6-r17.apk"

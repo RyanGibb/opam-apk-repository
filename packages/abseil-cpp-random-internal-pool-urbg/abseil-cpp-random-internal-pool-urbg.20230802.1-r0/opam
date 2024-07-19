@@ -6,16 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del abseil-cpp-random-internal-pool-urbg"]
 ]
 depends: [
-  "so-libabsl_base-so-2308-0-0"
-  "so-libabsl_random_internal_randen-so-2308-0-0"
-  "so-libabsl_random_internal_randen_hwaes_impl-so-2308-0-0"
-  "so-libabsl_random_internal_randen_slow-so-2308-0-0"
-  "so-libabsl_random_internal_seed_material-so-2308-0-0"
-  "so-libabsl_random_seed_gen_exception-so-2308-0-0"
-  "so-libabsl_spinlock_wait-so-2308-0-0"
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
-  "so-libstdc++-so-6"
+  "abseil-cpp-base" {= "20230802.1-r0"}
+  "abseil-cpp-random-internal-randen" {= "20230802.1-r0"}
+  "abseil-cpp-random-internal-randen-hwaes-impl" {= "20230802.1-r0"}
+  "abseil-cpp-random-internal-randen-slow" {= "20230802.1-r0"}
+  "abseil-cpp-random-internal-seed-material" {= "20230802.1-r0"}
+  "abseil-cpp-random-seed-gen-exception" {= "20230802.1-r0"}
+  "abseil-cpp-spinlock-wait" {= "20230802.1-r0"}
+  "libgcc" {= "13.2.1_git20240309-r0"}
+  "libstdc++" {= "13.2.1_git20240309-r0"}
+  "musl" {= "1.2.5-r0"}
 ]
 extra-source "abseil-cpp-random-internal-pool-urbg-20230802.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/abseil-cpp-random-internal-pool-urbg-20230802.1-r0.apk"

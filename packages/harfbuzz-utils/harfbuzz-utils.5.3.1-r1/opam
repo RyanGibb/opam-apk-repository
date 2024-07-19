@@ -6,12 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del harfbuzz-utils"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libcairo-so-2"
-  "so-libfreetype-so-6"
-  "so-libglib-2-0-so-0"
-  "so-libharfbuzz-so-0"
-  "so-libharfbuzz-subset-so-0"
+  "cairo" {= "1.17.6-r3"}
+  "freetype" {= "2.12.1-r0"}
+  "glib" {= "2.74.7-r0"}
+  "harfbuzz" {= "5.3.1-r1"}
+  "musl" {= "1.2.3-r5"}
 ]
 extra-source "harfbuzz-utils-5.3.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/harfbuzz-utils-5.3.1-r1.apk"

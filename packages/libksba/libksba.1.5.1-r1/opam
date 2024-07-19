@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del libksba"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libgpg-error-so-0"
+  "libgpg-error" {= "1.42-r0"}
+  "musl" {= "1.2.2-r5"}
 ]
 extra-source "libksba-1.5.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/libksba-1.5.1-r1.apk"

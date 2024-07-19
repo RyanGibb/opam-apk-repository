@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del openssh"]
 ]
 depends: [
-  "openssh-client"
+  "libcrypto1-1" {= "1.1.1w-r1"}
+  "musl" {= "1.2.3-r3"}
   "openssh-server"
   "openssh-sftp-server"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-1-1"
+  ("openssh-client-krb5" {= "9.0_p1-r5"} | "openssh-client-default" {= "9.0_p1-r5"})
 ]
 extra-source "openssh-9.0_p1-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/openssh-9.0_p1-r5.apk"

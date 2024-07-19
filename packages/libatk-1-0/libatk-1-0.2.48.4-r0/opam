@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del libatk-1.0"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libglib-2-0-so-0"
-  "so-libgobject-2-0-so-0"
-  "so-libintl-so-8"
+  "glib" {= "2.76.6-r0"}
+  "libintl" {= "0.21.1-r7"}
+  "musl" {= "1.2.4-r2"}
 ]
 extra-source "libatk-1.0-2.48.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/libatk-1.0-2.48.4-r0.apk"

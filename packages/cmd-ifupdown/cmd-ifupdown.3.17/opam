@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "ifupdown-ng" {= "0.12.1-r1"}
-]

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del agetty-openrc"]
 ]
 depends: [
-  "ifupdown-any"
+  ("busybox-ifupdown" {= "1.36.1-r29"} | "ifupdown-ng" {= "0.12.1-r5"})
 ]
 extra-source "agetty-openrc-0.54-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/agetty-openrc-0.54-r1.apk"

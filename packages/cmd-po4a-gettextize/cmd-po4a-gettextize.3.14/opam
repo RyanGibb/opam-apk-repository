@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "po4a" {= "0.63-r0"}
-]

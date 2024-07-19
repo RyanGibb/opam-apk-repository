@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del perl-sub-name"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.2.2-r5"}
 ]
 extra-source "perl-sub-name-0.26-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/perl-sub-name-0.26-r2.apk"

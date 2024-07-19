@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del libevdev"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.1.24-r10"}
 ]
 extra-source "libevdev-1.9.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/libevdev-1.9.0-r0.apk"

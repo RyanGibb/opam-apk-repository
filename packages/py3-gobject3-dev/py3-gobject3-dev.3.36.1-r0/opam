@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del py3-gobject3-dev"]
 ]
 depends: [
-  "pc-gobject-2-0"
-  "pc-libffi"
-  "pkgconfig"
+  "glib-dev" {= "2.64.6-r0"}
+  "libffi-dev" {= "3.3-r2"}
+  "pkgconf" {= "1.7.2-r0"}
 ]
 extra-source "py3-gobject3-dev-3.36.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/py3-gobject3-dev-3.36.1-r0.apk"

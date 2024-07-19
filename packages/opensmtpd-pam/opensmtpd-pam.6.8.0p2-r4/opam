@@ -6,16 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del opensmtpd-pam"]
 ]
 depends: [
+  "db" {= "5.3.28-r1"}
+  "fts" {= "1.2.7-r1"}
+  "libasr" {= "1.0.4-r2"}
+  "libcrypto1-1" {= "1.1.1w-r1"}
+  "libevent" {= "2.1.12-r4"}
+  "libssl1-1" {= "1.1.1w-r1"}
+  "linux-pam" {= "1.5.2-r0"}
+  "musl" {= "1.2.3-r3"}
   "opensmtpd" {= "6.8.0p2-r4"}
-  "so-libasr-so-0"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-1-1"
-  "so-libdb-5-3-so"
-  "so-libevent-2-1-so-7"
-  "so-libfts-so-0"
-  "so-libpam-so-0"
-  "so-libssl-so-1-1"
-  "so-libz-so-1"
+  "zlib" {= "1.2.12-r3"}
 ]
 extra-source "opensmtpd-pam-6.8.0p2-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/opensmtpd-pam-6.8.0p2-r4.apk"

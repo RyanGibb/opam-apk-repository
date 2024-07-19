@@ -7,10 +7,9 @@ remove: [
 ]
 depends: [
   "freetype" {= "2.12.1-r0"}
-  "so-libX11-so-6"
-  "so-libc-musl-x86_64-so-1"
-  "so-libfreetype-so-6"
-  "so-libpng16-so-16"
+  "libpng" {= "1.6.39-r0"}
+  "libx11" {= "1.8.7-r0"}
+  "musl" {= "1.2.3-r5"}
 ]
 extra-source "freetype-demos-2.12.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/freetype-demos-2.12.1-r0.apk"

@@ -6,13 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del clamav-daemon"]
 ]
 depends: [
-  "-bin-sh"
+  "busybox" {= "1.32.1-r9"}
   "clamav-clamdscan"
+  "clamav-libs" {= "0.103.6-r0"}
   "freshclam"
-  "so-libc-musl-x86_64-so-1"
-  "so-libclamav-so-9"
-  "so-libncursesw-so-6"
-  "so-libz-so-1"
+  "musl" {= "1.2.2-r2"}
+  "ncurses-libs" {= "6.2_p20210109-r1"}
+  "zlib" {= "1.2.12-r3"}
 ]
 extra-source "clamav-daemon-0.103.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/clamav-daemon-0.103.6-r0.apk"

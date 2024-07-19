@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del ulogd-xml"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libnetfilter_acct-so-1"
-  "so-libnetfilter_conntrack-so-3"
-  "so-libnetfilter_log-so-1"
+  "libnetfilter_acct" {= "1.0.3-r0"}
+  "libnetfilter_conntrack" {= "1.0.8-r0"}
+  "libnetfilter_log" {= "1.0.1-r3"}
+  "musl" {= "1.1.24-r10"}
   "ulogd" {= "2.0.7-r6"}
 ]
 extra-source "ulogd-xml-2.0.7-r6.apk" {

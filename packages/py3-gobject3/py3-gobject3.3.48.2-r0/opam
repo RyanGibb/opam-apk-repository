@@ -6,15 +6,14 @@ remove: [
   ["sh" "-c" "sudo apk del py3-gobject3"]
 ]
 depends: [
+  "cairo" {= "1.18.0-r0"}
+  "cairo-gobject" {= "1.18.0-r0"}
+  "glib" {= "2.80.2-r0"}
+  "gobject-introspection" {= "1.80.1-r2"}
+  "libffi" {= "3.4.6-r0"}
+  "musl" {= "1.2.5-r0"}
   "python3"
   "python3" {>= "3.12"}
-  "so-libc-musl-x86_64-so-1"
-  "so-libcairo-gobject-so-2"
-  "so-libcairo-so-2"
-  "so-libffi-so-8"
-  "so-libgirepository-1-0-so-1"
-  "so-libglib-2-0-so-0"
-  "so-libgobject-2-0-so-0"
 ]
 extra-source "py3-gobject3-3.48.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/py3-gobject3-3.48.2-r0.apk"

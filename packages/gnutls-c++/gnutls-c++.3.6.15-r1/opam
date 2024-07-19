@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del gnutls-c++"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
-  "so-libgnutls-so-30"
-  "so-libstdc++-so-6"
+  "gnutls" {= "3.6.15-r1"}
+  "libgcc" {= "9.3.0-r2"}
+  "libstdc++" {= "9.3.0-r2"}
+  "musl" {= "1.1.24-r10"}
 ]
 extra-source "gnutls-c++-3.6.15-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/gnutls-c++-3.6.15-r1.apk"

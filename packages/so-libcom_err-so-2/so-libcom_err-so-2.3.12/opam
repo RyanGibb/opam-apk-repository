@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "libcom_err" {= "1.45.6-r0"}
-]

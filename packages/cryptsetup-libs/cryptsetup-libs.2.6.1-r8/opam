@@ -6,13 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del cryptsetup-libs"]
 ]
 depends: [
-  "so-libargon2-so-1"
-  "so-libblkid-so-1"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-3"
-  "so-libdevmapper-so-1-02"
-  "so-libjson-c-so-5"
-  "so-libuuid-so-1"
+  "argon2-libs" {= "20190702-r5"}
+  "device-mapper-libs" {= "2.03.23-r0"}
+  "json-c" {= "0.17-r0"}
+  "libblkid" {= "2.39.3-r0"}
+  "libcrypto3" {= "3.1.6-r2"}
+  "libuuid" {= "2.39.3-r0"}
+  "musl" {= "1.2.4_git20230717-r4"}
 ]
 extra-source "cryptsetup-libs-2.6.1-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/cryptsetup-libs-2.6.1-r8.apk"

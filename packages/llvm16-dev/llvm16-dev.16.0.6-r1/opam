@@ -7,12 +7,12 @@ remove: [
 ]
 depends: [
   "libffi-dev"
+  "libgcc" {= "12.2.1_git20220924-r10"}
+  "libstdc++" {= "12.2.1_git20220924-r10"}
   "llvm16" {= "16.0.6-r1"}
   "llvm16-libs" {= "16.0.6-r1"}
   "llvm16-test-utils" {= "16.0.6-r1"}
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
-  "so-libstdc++-so-6"
+  "musl" {= "1.2.4-r2"}
   "zlib-dev"
   "zstd-dev"
 ]

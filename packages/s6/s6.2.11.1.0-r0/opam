@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del s6"]
 ]
 depends: [
-  "-bin-sh"
+  "busybox" {= "1.35.0-r18"}
+  "execline" {= "2.8.3.0-r1"}
+  "musl" {= "1.2.3-r3"}
   "s6-ipcserver"
-  "so-libc-musl-x86_64-so-1"
-  "so-libexecline-so-2-8"
-  "so-libskarnet-so-2-11"
+  "skalibs" {= "2.11.2.0-r0"}
 ]
 extra-source "s6-2.11.1.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/s6-2.11.1.0-r0.apk"

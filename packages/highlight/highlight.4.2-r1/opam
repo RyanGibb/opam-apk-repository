@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del highlight"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
-  "so-liblua-5-4-so-0"
-  "so-libstdc++-so-6"
+  "libgcc" {= "11.2.1_git20220219-r2"}
+  "libstdc++" {= "11.2.1_git20220219-r2"}
+  "lua5-4-libs" {= "5.4.4-r5"}
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "highlight-4.2-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/highlight-4.2-r1.apk"

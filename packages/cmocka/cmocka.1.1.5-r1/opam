@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del cmocka"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.2.2-r9"}
 ]
 extra-source "cmocka-1.1.5-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/cmocka-1.1.5-r1.apk"

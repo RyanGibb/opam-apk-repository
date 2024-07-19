@@ -9,9 +9,9 @@ depends: [
   "fontconfig-dev"
   "libx11-dev"
   "libxft-dev"
-  "pc-tcl" {>= "8.6"}
-  "pkgconfig"
+  "pkgconf" {= "1.7.4-r1"}
   "tcl-dev"
+  "tcl-dev" {= "8.6.10-r1"}
   "tk" {= "8.6.10-r1"}
 ]
 extra-source "tk-dev-8.6.10-r1.apk" {

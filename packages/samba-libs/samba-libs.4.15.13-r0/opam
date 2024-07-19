@@ -6,29 +6,20 @@ remove: [
   ["sh" "-c" "sudo apk del samba-libs"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libcap-so-2"
-  "so-libcom_err-samba4-so-0"
-  "so-libgenrand-samba4-so"
-  "so-libgnutls-so-30"
-  "so-libiov-buf-samba4-so"
-  "so-libjansson-so-4"
-  "so-liblber-so-2"
-  "so-libldap-so-2"
-  "so-libldb-so-2"
-  "so-libpam-so-0"
-  "so-libpopt-so-0"
-  "so-libreplace-samba4-so"
-  "so-libsamba-debug-samba4-so"
-  "so-libsamba-util-so-0"
-  "so-libsocket-blocking-samba4-so"
-  "so-libsys-rw-samba4-so"
-  "so-libtalloc-so-2"
-  "so-libtdb-so-1"
-  "so-libtevent-so-0"
-  "so-libtime-basic-samba4-so"
-  "so-libwbclient-so-0"
-  "so-libz-so-1"
+  "gnutls" {= "3.7.7-r1"}
+  "jansson" {= "2.14-r0"}
+  "ldb" {= "2.4.4-r0"}
+  "libcap" {= "2.64-r1"}
+  "libldap" {= "2.6.3-r3"}
+  "libwbclient" {= "4.15.13-r0"}
+  "linux-pam" {= "1.5.2-r0"}
+  "musl" {= "1.2.3-r3"}
+  "popt" {= "1.18-r0"}
+  "samba-util-libs" {= "4.15.13-r0"}
+  "talloc" {= "2.3.3-r1"}
+  "tdb-libs" {= "1.4.6-r0"}
+  "tevent" {= "0.11.0-r1"}
+  "zlib" {= "1.2.12-r3"}
 ]
 extra-source "samba-libs-4.15.13-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/samba-libs-4.15.13-r0.apk"

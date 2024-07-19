@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del kamailio-extras"]
 ]
 depends: [
+  "hiredis" {= "1.2.0-r0"}
   "kamailio"
-  "so-libc-musl-x86_64-so-1"
-  "so-libevent-2-1-so-7"
-  "so-libhiredis-so-1-1-0"
-  "so-libsrdb1-so-1"
+  "kamailio" {= "5.8.1-r1"}
+  "libevent" {= "2.1.12-r7"}
+  "musl" {= "1.2.5-r0"}
 ]
 extra-source "kamailio-extras-5.8.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/kamailio-extras-5.8.1-r1.apk"

@@ -6,12 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del dbus-glib"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libdbus-1-so-3"
-  "so-libexpat-so-1"
-  "so-libgio-2-0-so-0"
-  "so-libglib-2-0-so-0"
-  "so-libgobject-2-0-so-0"
+  "dbus-libs" {= "1.14.8-r0"}
+  "expat" {= "2.6.2-r0"}
+  "glib" {= "2.72.4-r0"}
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "dbus-glib-0.112-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/dbus-glib-0.112-r0.apk"

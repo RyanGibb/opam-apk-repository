@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del rdiff-backup"]
 ]
 depends: [
+  "librsync" {= "2.3.1-r1"}
+  "musl" {= "1.2.2-r2"}
   "python3"
-  "so-libc-musl-x86_64-so-1"
-  "so-librsync-so-2"
 ]
 extra-source "rdiff-backup-2.0.5-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/rdiff-backup-2.0.5-r2.apk"

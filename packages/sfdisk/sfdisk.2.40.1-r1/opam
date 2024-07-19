@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del sfdisk"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libfdisk-so-1"
-  "so-libncursesw-so-6"
-  "so-libsmartcols-so-1"
+  "libfdisk" {= "2.40.1-r1"}
+  "libncursesw" {= "6.4_p20240420-r0"}
+  "libsmartcols" {= "2.40.1-r1"}
+  "musl" {= "1.2.5-r0"}
 ]
 extra-source "sfdisk-2.40.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/sfdisk-2.40.1-r1.apk"

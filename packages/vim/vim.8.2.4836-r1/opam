@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del vim"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-liblua-5-3-so-0"
-  "so-libncursesw-so-6"
+  "lua5-3-libs" {= "5.3.6-r1"}
+  "musl" {= "1.2.2-r9"}
+  "ncurses-libs" {= "6.3_p20211120-r2"}
   "xxd"
 ]
 extra-source "vim-8.2.4836-r1.apk" {

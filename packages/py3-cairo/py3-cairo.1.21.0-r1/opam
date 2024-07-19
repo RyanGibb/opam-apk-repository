@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del py3-cairo"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libcairo-so-2"
+  "cairo" {= "1.17.6-r3"}
+  "musl" {= "1.2.3-r5"}
 ]
 extra-source "py3-cairo-1.21.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/py3-cairo-1.21.0-r1.apk"

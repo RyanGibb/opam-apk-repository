@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del spandsp3-dev"]
 ]
 depends: [
-  "pkgconfig"
+  "pkgconf" {= "1.9.4-r0"}
   "spandsp3" {= "0_git20201102-r0"}
 ]
 extra-source "spandsp3-dev-0_git20201102-r0.apk" {

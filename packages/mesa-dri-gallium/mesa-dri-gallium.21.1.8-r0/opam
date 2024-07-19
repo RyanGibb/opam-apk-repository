@@ -6,20 +6,17 @@ remove: [
   ["sh" "-c" "sudo apk del mesa-dri-gallium"]
 ]
 depends: [
+  "expat" {= "2.5.0-r0"}
+  "libdrm" {= "2.4.106-r0"}
+  "libelf" {= "0.182-r1"}
+  "libgcc" {= "10.3.1_git20210424-r2"}
+  "libstdc++" {= "10.3.1_git20210424-r2"}
+  "llvm11-libs" {= "11.1.0-r2"}
   "mesa" {= "21.1.8-r0"}
-  "so-libLLVM-11-so"
-  "so-libc-musl-x86_64-so-1"
-  "so-libdrm-so-2"
-  "so-libdrm_amdgpu-so-1"
-  "so-libdrm_nouveau-so-2"
-  "so-libdrm_radeon-so-1"
-  "so-libelf-so-1"
-  "so-libexpat-so-1"
-  "so-libgcc_s-so-1"
-  "so-libglapi-so-0"
-  "so-libstdc++-so-6"
-  "so-libz-so-1"
-  "so-libzstd-so-1"
+  "mesa-glapi" {= "21.1.8-r0"}
+  "musl" {= "1.2.2-r5"}
+  "zlib" {= "1.2.12-r3"}
+  "zstd-libs" {= "1.4.9-r1"}
 ]
 extra-source "mesa-dri-gallium-21.1.8-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/mesa-dri-gallium-21.1.8-r0.apk"

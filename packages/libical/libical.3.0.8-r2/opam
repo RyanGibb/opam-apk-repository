@@ -6,14 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del libical"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libdb-5-3-so"
-  "so-libgcc_s-so-1"
-  "so-libglib-2-0-so-0"
-  "so-libgobject-2-0-so-0"
-  "so-libicui18n-so-67"
-  "so-libicuuc-so-67"
-  "so-libstdc++-so-6"
+  "db" {= "5.3.28-r1"}
+  "glib" {= "2.64.6-r0"}
+  "icu-libs" {= "67.1-r0"}
+  "libgcc" {= "9.3.0-r2"}
+  "libstdc++" {= "9.3.0-r2"}
+  "musl" {= "1.1.24-r10"}
 ]
 extra-source "libical-3.0.8-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/libical-3.0.8-r2.apk"

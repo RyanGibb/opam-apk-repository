@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del mrtg"]
 ]
 depends: [
+  "libgd" {= "2.3.2-r1"}
+  "musl" {= "1.2.2-r5"}
   "perl"
-  "so-libc-musl-x86_64-so-1"
-  "so-libgd-so-3"
 ]
 extra-source "mrtg-2.17.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/mrtg-2.17.7-r0.apk"

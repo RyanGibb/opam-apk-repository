@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del freetdm"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libfreeswitch-so-1"
+  "freeswitch" {= "1.10.11-r0"}
+  "musl" {= "1.2.5-r0"}
 ]
 extra-source "freetdm-0_git20210830-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/freetdm-0_git20210830-r5.apk"

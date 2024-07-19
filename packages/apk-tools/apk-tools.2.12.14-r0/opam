@@ -7,11 +7,11 @@ remove: [
 ]
 depends: [
   "ca-certificates-bundle"
+  "libcrypto3" {= "3.0.14-r0"}
+  "libssl3" {= "3.0.14-r0"}
+  "musl" {= "1.2.3-r5"}
   "musl" {>= "1.2"}
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-3"
-  "so-libssl-so-3"
-  "so-libz-so-1"
+  "zlib" {= "1.2.13-r0"}
 ]
 extra-source "apk-tools-2.12.14-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/apk-tools-2.12.14-r0.apk"

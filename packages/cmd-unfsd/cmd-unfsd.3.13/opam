@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "unfs3" {= "0.9.22-r5"}
-]

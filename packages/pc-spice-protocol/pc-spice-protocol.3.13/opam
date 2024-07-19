@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "spice-protocol" {= "0.14.3-r0"}
-]

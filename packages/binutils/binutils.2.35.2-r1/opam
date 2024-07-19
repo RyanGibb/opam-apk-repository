@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del binutils"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
-  "so-libstdc++-so-6"
-  "so-libz-so-1"
+  "libgcc" {= "10.2.1_pre1-r3"}
+  "libstdc++" {= "10.2.1_pre1-r3"}
+  "musl" {= "1.2.2-r2"}
+  "zlib" {= "1.2.12-r3"}
 ]
 extra-source "binutils-2.35.2-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/binutils-2.35.2-r1.apk"

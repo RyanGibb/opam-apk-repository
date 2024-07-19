@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del uwsgi-rawrouter"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.2.5-r0"}
   "uwsgi"
   "uwsgi-corerouter"
 ]

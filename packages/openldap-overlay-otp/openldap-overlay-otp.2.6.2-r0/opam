@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del openldap-overlay-otp"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-1-1"
-  "so-liblber-so-2"
+  "libcrypto1-1" {= "1.1.1w-r1"}
+  "libldap" {= "2.6.2-r0"}
+  "musl" {= "1.2.2-r9"}
 ]
 extra-source "openldap-overlay-otp-2.6.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/openldap-overlay-otp-2.6.2-r0.apk"

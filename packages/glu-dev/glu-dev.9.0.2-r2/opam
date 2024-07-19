@@ -8,8 +8,8 @@ remove: [
 depends: [
   "glu" {= "9.0.2-r2"}
   "mesa-dev"
-  "pc-osmesa"
-  "pkgconfig"
+  "mesa-dev" {= "22.2.5-r1"}
+  "pkgconf" {= "1.9.4-r0"}
 ]
 extra-source "glu-dev-9.0.2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/glu-dev-9.0.2-r2.apk"

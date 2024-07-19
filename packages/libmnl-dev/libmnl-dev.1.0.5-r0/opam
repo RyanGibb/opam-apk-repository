@@ -8,7 +8,7 @@ remove: [
 depends: [
   "libmnl" {= "1.0.5-r0"}
   "linux-headers"
-  "pkgconfig"
+  "pkgconf" {= "1.9.4-r0"}
 ]
 extra-source "libmnl-dev-1.0.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libmnl-dev-1.0.5-r0.apk"

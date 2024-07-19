@@ -9,7 +9,7 @@ depends: [
   "libjpeg-turbo-dev"
   "libtiffxx" {= "4.4.0-r1"}
   "libwebp-dev"
-  "pkgconfig"
+  "pkgconf" {= "1.7.4-r1"}
   "tiff" {= "4.4.0-r1"}
   "xz-dev"
   "zlib-dev"

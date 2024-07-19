@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del fish"]
 ]
 depends: [
-  "-bin-sh"
   "bc"
-  "so-libc-musl-x86_64-so-1"
-  "so-libncursesw-so-6"
-  "so-libpcre2-32-so-0"
-  "so-libstdc++-so-6"
+  "busybox" {= "1.31.1-r22"}
+  "libpcre2-32" {= "10.35-r0"}
+  "libstdc++" {= "9.3.0-r2"}
+  "musl" {= "1.1.24-r10"}
+  "ncurses-libs" {= "6.2_p20200523-r1"}
 ]
 extra-source "fish-3.1.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/fish-3.1.2-r0.apk"

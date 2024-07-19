@@ -24,7 +24,7 @@ depends: [
   "pciutils-dev"
   "perl"
   "perl-dev"
-  "pkgconfig"
+  "pkgconf" {= "1.9.4-r0"}
   "python3-dev"
   "spice-dev"
   "texinfo"

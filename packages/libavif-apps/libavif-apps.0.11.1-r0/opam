@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del libavif-apps"]
 ]
 depends: [
-  "so-libavif-so-15"
-  "so-libc-musl-x86_64-so-1"
-  "so-libjpeg-so-8"
-  "so-libpng16-so-16"
+  "libavif" {= "0.11.1-r0"}
+  "libjpeg-turbo" {= "2.1.4-r0"}
+  "libpng" {= "1.6.39-r0"}
+  "musl" {= "1.2.3-r5"}
 ]
 extra-source "libavif-apps-0.11.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libavif-apps-0.11.1-r0.apk"

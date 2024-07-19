@@ -9,8 +9,8 @@ depends: [
   "encodings"
   "font-alias"
   "fontconfig"
-  "mkfontdir"
   "mkfontscale"
+  "mkfontscale" {= "1.2.2-r0"}
 ]
 extra-source "font-bh-lucidatypewriter-75dpi-1.0.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/font-bh-lucidatypewriter-75dpi-1.0.3-r0.apk"

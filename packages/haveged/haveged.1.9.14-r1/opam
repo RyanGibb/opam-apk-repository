@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del haveged"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.2.2-r5"}
 ]
 extra-source "haveged-1.9.14-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/haveged-1.9.14-r1.apk"

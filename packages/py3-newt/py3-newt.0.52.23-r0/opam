@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del py3-newt"]
 ]
 depends: [
+  "musl" {= "1.2.3-r5"}
   "newt" {= "0.52.23-r0"}
   "python3"
-  "so-libc-musl-x86_64-so-1"
-  "so-libnewt-so-0-52"
 ]
 extra-source "py3-newt-0.52.23-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/py3-newt-0.52.23-r0.apk"

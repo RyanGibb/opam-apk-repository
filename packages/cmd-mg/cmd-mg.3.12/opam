@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "mg" {= "20200215-r0"}
-]

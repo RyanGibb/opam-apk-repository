@@ -10,7 +10,7 @@ depends: [
   "libpcre2-16" {= "10.42-r2"}
   "libpcre2-32" {= "10.42-r2"}
   "pcre2" {= "10.42-r2"}
-  "pkgconfig"
+  "pkgconf" {= "2.1.0-r0"}
   "zlib-dev"
 ]
 extra-source "pcre2-dev-10.42-r2.apk" {

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del boost1.82-contract"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
-  "so-libstdc++-so-6"
+  "libgcc" {= "12.2.1_git20220924-r10"}
+  "libstdc++" {= "12.2.1_git20220924-r10"}
+  "musl" {= "1.2.4-r2"}
 ]
 extra-source "boost1.82-contract-1.82.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/boost1.82-contract-1.82.0-r1.apk"

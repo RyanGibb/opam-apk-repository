@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del mandoc-soelim"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "mandoc-soelim-1.14.6-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/mandoc-soelim-1.14.6-r1.apk"

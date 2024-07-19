@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "xmlrpc-c++" {= "1.51.07-r0"}
-]

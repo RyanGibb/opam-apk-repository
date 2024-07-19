@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del asterisk-alsa"]
 ]
 depends: [
-  "so-libasound-so-2"
-  "so-libc-musl-x86_64-so-1"
+  "alsa-lib" {= "1.2.5.1-r1"}
+  "musl" {= "1.2.2-r9"}
 ]
 extra-source "asterisk-alsa-18.2.2-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/asterisk-alsa-18.2.2-r6.apk"

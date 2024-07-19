@@ -6,12 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del librtmp"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libgmp-so-10"
-  "so-libgnutls-so-30"
-  "so-libhogweed-so-6"
-  "so-libnettle-so-8"
-  "so-libz-so-1"
+  "gmp" {= "6.2.1-r2"}
+  "gnutls" {= "3.7.7-r1"}
+  "musl" {= "1.2.3-r3"}
+  "nettle" {= "3.7.3-r0"}
+  "zlib" {= "1.2.12-r3"}
 ]
 extra-source "librtmp-2.4_git20190330-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/librtmp-2.4_git20190330-r1.apk"

@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del apache2"]
 ]
 depends: [
-  "-bin-sh"
-  "so-libapr-1-so-0"
-  "so-libaprutil-1-so-0"
-  "so-libc-musl-x86_64-so-1"
-  "so-libpcre-so-1"
-  "so-libz-so-1"
+  "apr" {= "1.7.0-r1"}
+  "apr-util" {= "1.6.1-r7"}
+  "busybox" {= "1.32.1-r9"}
+  "musl" {= "1.2.2-r2"}
+  "pcre" {= "8.44-r0"}
+  "zlib" {= "1.2.12-r3"}
 ]
 extra-source "apache2-2.4.54-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/apache2-2.4.54-r0.apk"

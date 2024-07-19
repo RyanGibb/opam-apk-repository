@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "kamailio"
-  "so-libc-musl-x86_64-so-1"
-  "so-libstdc++-so-6"
+  "libstdc++" {= "12.2.1_git20220924-r4"}
+  "musl" {= "1.2.3-r5"}
 ]
 extra-source "kamailio-sqlang-5.6.3-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/kamailio-sqlang-5.6.3-r1.apk"

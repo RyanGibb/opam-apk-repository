@@ -6,17 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del postgresql13"]
 ]
 depends: [
-  "-bin-sh"
+  "busybox" {= "1.35.0-r18"}
+  "icu-libs" {= "71.1-r2"}
+  "libcrypto1-1" {= "1.1.1w-r1"}
+  "libldap" {= "2.6.3-r3"}
+  "libpq" {= "14.12-r0"}
+  "libssl1-1" {= "1.1.1w-r1"}
+  "libxml2" {= "2.9.14-r2"}
+  "musl" {= "1.2.3-r3"}
   "postgresql-common"
   "postgresql13-client"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-1-1"
-  "so-libicui18n-so-71"
-  "so-libicuuc-so-71"
-  "so-libldap-so-2"
-  "so-libpq-so-5"
-  "so-libssl-so-1-1"
-  "so-libxml2-so-2"
   "tzdata"
 ]
 extra-source "postgresql13-13.15-r0.apk" {

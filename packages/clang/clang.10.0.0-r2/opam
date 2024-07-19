@@ -6,13 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del clang"]
 ]
 depends: [
-  "so-libLLVM-10-so"
-  "so-libc-musl-x86_64-so-1"
-  "so-libclang-cpp-so-10"
-  "so-libclang-so-10"
-  "so-libgcc_s-so-1"
-  "so-libstdc++-so-6"
-  "so-libxml2-so-2"
+  "clang-libs" {= "10.0.0-r2"}
+  "libgcc" {= "9.3.0-r2"}
+  "libstdc++" {= "9.3.0-r2"}
+  "libxml2" {= "2.9.14-r0"}
+  "llvm10-libs" {= "10.0.0-r2"}
+  "musl" {= "1.1.24-r10"}
 ]
 extra-source "clang-10.0.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/clang-10.0.0-r2.apk"

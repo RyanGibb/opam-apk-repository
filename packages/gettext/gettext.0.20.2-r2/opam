@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del gettext"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libgomp-so-1"
-  "so-libintl-so-8"
-  "so-libtextstyle-so-0"
-  "so-libunistring-so-2"
-  "so-libxml2-so-2"
+  "gettext-libs" {= "0.20.2-r2"}
+  "libgomp" {= "10.2.1_pre1-r3"}
+  "libintl" {= "0.20.2-r2"}
+  "libunistring" {= "0.9.10-r0"}
+  "libxml2" {= "2.9.14-r2"}
+  "musl" {= "1.2.2-r2"}
 ]
 extra-source "gettext-0.20.2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/gettext-0.20.2-r2.apk"

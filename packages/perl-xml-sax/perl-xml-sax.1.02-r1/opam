@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del perl-xml-sax"]
 ]
 depends: [
-  "-bin-sh"
   "perl"
   "perl-xml-namespacesupport"
   "perl-xml-sax-base"
+  ("busybox-binsh" {= "1.36.1-r7"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.54-r3"})
 ]
 extra-source "perl-xml-sax-1.02-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-xml-sax-1.02-r1.apk"

@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  ("perl-utils" {= "5.32.0-r0"} | "perl-encode" {= "3.08-r0"})
-]

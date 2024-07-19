@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "numactl" {= "2.0.16-r1"}
-  "pkgconfig"
+  "pkgconf" {= "1.9.4-r0"}
 ]
 extra-source "numactl-dev-2.0.16-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/numactl-dev-2.0.16-r1.apk"

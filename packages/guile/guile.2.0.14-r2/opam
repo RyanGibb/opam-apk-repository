@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del guile"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libguile-2-0-so-22"
+  "guile-libs" {= "2.0.14-r2"}
+  "musl" {= "1.2.2-r2"}
 ]
 extra-source "guile-2.0.14-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/guile-2.0.14-r2.apk"

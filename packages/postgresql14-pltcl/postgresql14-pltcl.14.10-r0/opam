@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del postgresql14-pltcl"]
 ]
 depends: [
+  "musl" {= "1.2.2-r9"}
   "pgtcl"
   "postgresql14" {= "14.10-r0"}
-  "so-libc-musl-x86_64-so-1"
-  "so-libtcl8-6-so"
+  "tcl" {= "8.6.11-r1"}
 ]
 extra-source "postgresql14-pltcl-14.10-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/postgresql14-pltcl-14.10-r0.apk"

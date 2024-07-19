@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del xf86-input-evdev-dev"]
 ]
 depends: [
-  "pkgconfig"
+  "pkgconf" {= "1.7.2-r0"}
 ]
 extra-source "xf86-input-evdev-dev-2.10.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/xf86-input-evdev-dev-2.10.6-r0.apk"

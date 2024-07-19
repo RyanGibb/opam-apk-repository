@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  ("py3-setuptools" {= "65.6.0-r0"} | "py3-setuptools-stage0" {= "52.0.0-r0"})
-]

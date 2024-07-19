@@ -6,14 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del libxrandr-dev"]
 ]
 depends: [
+  "libx11-dev" {= "1.6.12-r1"}
   "libxext-dev"
+  "libxext-dev" {= "1.3.4-r0"}
   "libxrandr" {= "1.5.2-r0"}
-  "pc-randrproto" {>= "1.5"}
-  "pc-x11"
-  "pc-xext"
-  "pc-xproto"
-  "pc-xrender"
-  "pkgconfig"
+  "libxrender-dev" {= "0.9.10-r3"}
+  "pkgconf" {= "1.7.2-r0"}
+  "xorgproto" {= "2020.1-r0"}
 ]
 extra-source "libxrandr-dev-1.5.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/libxrandr-dev-1.5.2-r0.apk"

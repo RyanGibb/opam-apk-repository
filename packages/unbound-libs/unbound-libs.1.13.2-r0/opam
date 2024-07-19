@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del unbound-libs"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-1-1"
-  "so-libevent-2-1-so-7"
-  "so-libssl-so-1-1"
+  "libcrypto1-1" {= "1.1.1t-r2"}
+  "libevent" {= "2.1.12-r2"}
+  "libssl1-1" {= "1.1.1t-r2"}
+  "musl" {= "1.2.2-r5"}
 ]
 extra-source "unbound-libs-1.13.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/unbound-libs-1.13.2-r0.apk"

@@ -8,9 +8,9 @@ remove: [
 depends: [
   "gpg" {= "2.2.31-r2"}
   "gpg-agent" {= "2.2.31-r2"}
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcrypt-so-20"
-  "so-libgpg-error-so-0"
+  "libgcrypt" {= "1.9.4-r0"}
+  "libgpg-error" {= "1.42-r1"}
+  "musl" {= "1.2.2-r9"}
 ]
 extra-source "gpg-wks-server-2.2.31-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/gpg-wks-server-2.2.31-r2.apk"

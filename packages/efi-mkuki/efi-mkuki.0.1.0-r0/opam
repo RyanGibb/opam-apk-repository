@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del efi-mkuki"]
 ]
 depends: [
-  "cmd-objcopy"
+  "binutils" {= "2.41-r0"}
   "gummiboot-efistub"
 ]
 extra-source "efi-mkuki-0.1.0-r0.apk" {

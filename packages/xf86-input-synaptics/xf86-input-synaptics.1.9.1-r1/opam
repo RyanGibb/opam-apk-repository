@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del xf86-input-synaptics"]
 ]
 depends: [
-  "so-libX11-so-6"
-  "so-libXi-so-6"
-  "so-libXtst-so-6"
-  "so-libc-musl-x86_64-so-1"
-  "so-libevdev-so-2"
+  "libevdev" {= "1.9.0-r0"}
+  "libx11" {= "1.6.12-r1"}
+  "libxi" {= "1.7.10-r0"}
+  "libxtst" {= "1.2.3-r3"}
+  "musl" {= "1.1.24-r10"}
 ]
 extra-source "xf86-input-synaptics-1.9.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/xf86-input-synaptics-1.9.1-r1.apk"

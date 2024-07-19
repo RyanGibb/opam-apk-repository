@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del rsyslog"]
 ]
 depends: [
-  "-bin-sh"
-  "so-libc-musl-x86_64-so-1"
-  "so-libestr-so-0"
-  "so-libfastjson-so-4"
-  "so-libuuid-so-1"
-  "so-libz-so-1"
+  "libestr" {= "0.1.11-r3"}
+  "libfastjson" {= "1.2304.0-r1"}
+  "libuuid" {= "2.38.1-r8"}
+  "musl" {= "1.2.4-r2"}
+  "zlib" {= "1.2.13-r1"}
+  ("busybox-binsh" {= "1.36.1-r7"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.54-r3"})
 ]
 extra-source "rsyslog-8.2306.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/rsyslog-8.2306.0-r2.apk"

@@ -6,19 +6,18 @@ remove: [
   ["sh" "-c" "sudo apk del dovecot"]
 ]
 depends: [
-  "-bin-sh"
+  "busybox" {= "1.33.1-r8"}
+  "dovecot-pigeonhole-plugin" {= "2.3.15-r0"}
+  "icu-libs" {= "67.1-r2"}
+  "libbz2" {= "1.0.8-r1"}
+  "libcap" {= "2.50-r0"}
+  "libcrypto1-1" {= "1.1.1t-r2"}
+  "libsodium" {= "1.0.18-r0"}
+  "libssl1-1" {= "1.1.1t-r2"}
+  "musl" {= "1.2.2-r5"}
   "openssl"
-  "so-libbz2-so-1"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcap-so-2"
-  "so-libcrypto-so-1-1"
-  "so-libdovecot-sieve-so-0"
-  "so-libicui18n-so-67"
-  "so-libicuuc-so-67"
-  "so-liblzma-so-5"
-  "so-libsodium-so-23"
-  "so-libssl-so-1-1"
-  "so-libz-so-1"
+  "xz-libs" {= "5.2.5-r1"}
+  "zlib" {= "1.2.12-r3"}
 ]
 extra-source "dovecot-2.3.15-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/dovecot-2.3.15-r0.apk"

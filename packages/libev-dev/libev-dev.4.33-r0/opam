@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libev" {= "4.33-r0"}
-  "pkgconfig"
+  "pkgconf" {= "1.9.4-r0"}
 ]
 extra-source "libev-dev-4.33-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libev-dev-4.33-r0.apk"

@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del openntpd"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libtls-standalone-so-1"
+  "libtls-standalone" {= "2.9.1-r1"}
+  "musl" {= "1.1.24-r10"}
 ]
 extra-source "openntpd-6.2_p3-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/openntpd-6.2_p3-r3.apk"

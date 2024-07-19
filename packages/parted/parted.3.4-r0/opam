@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del parted"]
 ]
 depends: [
-  "so-libblkid-so-1"
-  "so-libc-musl-x86_64-so-1"
-  "so-libdevmapper-so-1-02"
-  "so-libncursesw-so-6"
-  "so-libreadline-so-8"
-  "so-libuuid-so-1"
+  "device-mapper-libs" {= "2.02.187-r2"}
+  "libblkid" {= "2.37.4-r0"}
+  "libuuid" {= "2.37.4-r0"}
+  "musl" {= "1.2.2-r9"}
+  "ncurses-libs" {= "6.3_p20211120-r2"}
+  "readline" {= "8.1.1-r0"}
 ]
 extra-source "parted-3.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/parted-3.4-r0.apk"

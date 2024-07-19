@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "boost1-75-stacktrace_basic" {= "1.75.0-r8"}
-]

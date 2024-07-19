@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  ("hylafaxplus" {= "7.0.3-r1"} | "hylafax" {= "6.0.7-r3"} | "sendpage" {= "1.0.3-r5"})
-]

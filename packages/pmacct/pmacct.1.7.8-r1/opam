@@ -6,17 +6,17 @@ remove: [
   ["sh" "-c" "sudo apk del pmacct"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libhiredis-so-1-1-0"
-  "so-libjansson-so-4"
-  "so-libmariadb-so-3"
-  "so-libmaxminddb-so-0"
-  "so-libnetfilter_log-so-1"
-  "so-libpcap-so-1"
-  "so-libpq-so-5"
-  "so-librabbitmq-so-4"
-  "so-libsqlite3-so-0"
-  "so-libstdc++-so-6"
+  "hiredis" {= "1.2.0-r0"}
+  "jansson" {= "2.14-r4"}
+  "libmaxminddb-libs" {= "1.9.1-r0"}
+  "libnetfilter_log" {= "1.0.2-r2"}
+  "libpcap" {= "1.10.4-r1"}
+  "libpq" {= "16.3-r0"}
+  "libstdc++" {= "13.2.1_git20240309-r0"}
+  "mariadb-connector-c" {= "3.3.10-r0"}
+  "musl" {= "1.2.5-r0"}
+  "rabbitmq-c" {= "0.14.0-r0"}
+  "sqlite-libs" {= "3.45.3-r1"}
 ]
 extra-source "pmacct-1.7.8-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/pmacct-1.7.8-r1.apk"

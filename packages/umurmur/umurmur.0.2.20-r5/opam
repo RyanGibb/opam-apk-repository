@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del umurmur"]
 ]
 depends: [
-  "-bin-sh"
-  "so-libc-musl-x86_64-so-1"
-  "so-libconfig-so-11"
-  "so-libcrypto-so-3"
-  "so-libprotobuf-c-so-1"
-  "so-libssl-so-3"
+  "libconfig" {= "1.7.3-r3"}
+  "libcrypto3" {= "3.1.6-r2"}
+  "libssl3" {= "3.1.6-r2"}
+  "musl" {= "1.2.4_git20230717-r4"}
+  "protobuf-c" {= "1.4.1-r7"}
+  ("busybox-binsh" {= "1.36.1-r19"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.55-r0"})
 ]
 extra-source "umurmur-0.2.20-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/umurmur-0.2.20-r5.apk"

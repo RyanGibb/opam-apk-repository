@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del gitolite"]
 ]
 depends: [
-  "-bin-sh"
+  "busybox" {= "1.32.1-r9"}
   "git"
   "perl"
 ]

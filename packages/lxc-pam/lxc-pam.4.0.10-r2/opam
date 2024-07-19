@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del lxc-pam"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
-  "so-libpam-so-0"
+  "libgcc" {= "10.3.1_git20210424-r2"}
+  "linux-pam" {= "1.5.1-r1"}
+  "musl" {= "1.2.2-r5"}
 ]
 extra-source "lxc-pam-4.0.10-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/lxc-pam-4.0.10-r2.apk"

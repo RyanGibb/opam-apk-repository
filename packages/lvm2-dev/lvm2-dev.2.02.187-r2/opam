@@ -10,8 +10,8 @@ depends: [
   "device-mapper-libs" {= "2.02.187-r2"}
   "linux-headers"
   "lvm2-libs" {= "2.02.187-r2"}
-  "pc-blkid"
-  "pkgconfig"
+  "pkgconf" {= "1.8.1-r0"}
+  "util-linux-dev" {= "2.38-r1"}
 ]
 extra-source "lvm2-dev-2.02.187-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/lvm2-dev-2.02.187-r2.apk"

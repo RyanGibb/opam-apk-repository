@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "irssi"
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "irssi-proxy-1.2.3-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/irssi-proxy-1.2.3-r3.apk"

@@ -8,8 +8,8 @@ remove: [
 depends: [
   "net-snmp-agent-libs" {= "5.9.3-r1"}
   "net-snmp-libs" {= "5.9.3-r1"}
-  "openssl1-1-compat-dev"
-  "pkgconfig"
+  "openssl-dev" {= "1.1.1w-r1"}
+  "pkgconf" {= "1.8.1-r0"}
 ]
 extra-source "net-snmp-dev-5.9.3-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/net-snmp-dev-5.9.3-r1.apk"

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del py-unbound"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libpython3-10-so-1-0"
-  "so-libunbound-so-8"
+  "musl" {= "1.2.3-r3"}
+  "python3" {= "3.10.14-r1"}
+  "unbound-libs" {= "1.15.0-r0"}
 ]
 extra-source "py-unbound-1.15.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/py-unbound-1.15.0-r0.apk"

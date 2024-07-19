@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del openrc"]
 ]
 depends: [
-  "-bin-sh"
-  "ifupdown-any"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcap-so-2"
+  "libcap2" {= "2.69-r0"}
+  "musl" {= "1.2.4-r2"}
+  ("busybox-binsh" {= "1.36.1-r7"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.54-r3"})
+  ("busybox-ifupdown" {= "1.36.1-r7"} | "ifupdown" {= "0.8.41-r1"} | "ifupdown-ng" {= "0.12.1-r2"})
 ]
 extra-source "openrc-0.48-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/openrc-0.48-r0.apk"

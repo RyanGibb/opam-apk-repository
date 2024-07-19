@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del eggdrop-logs2html"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libtcl8-6-so"
+  "musl" {= "1.2.3-r3"}
+  "tcl" {= "8.6.12-r1"}
 ]
 extra-source "eggdrop-logs2html-1.8.4-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/eggdrop-logs2html-1.8.4-r4.apk"

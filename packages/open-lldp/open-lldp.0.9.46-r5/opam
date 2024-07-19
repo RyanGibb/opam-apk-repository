@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del open-lldp"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libconfig-so-11"
-  "so-libnl-so-1"
+  "libconfig" {= "1.7.3-r0"}
+  "libnl" {= "1.1.4-r1"}
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "open-lldp-0.9.46-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/open-lldp-0.9.46-r5.apk"

@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del libnftnl"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libmnl-so-0"
+  "libmnl" {= "1.0.5-r2"}
+  "musl" {= "1.2.5-r0"}
 ]
 extra-source "libnftnl-1.2.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libnftnl-1.2.6-r0.apk"

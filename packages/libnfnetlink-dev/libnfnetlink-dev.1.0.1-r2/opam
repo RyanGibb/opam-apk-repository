@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libnfnetlink" {= "1.0.1-r2"}
-  "pkgconfig"
+  "pkgconf" {= "1.7.4-r1"}
 ]
 extra-source "libnfnetlink-dev-1.0.1-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/libnfnetlink-dev-1.0.1-r2.apk"

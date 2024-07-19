@@ -6,13 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del boost1.82-iostreams"]
 ]
 depends: [
-  "so-libbz2-so-1"
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
-  "so-liblzma-so-5"
-  "so-libstdc++-so-6"
-  "so-libz-so-1"
-  "so-libzstd-so-1"
+  "libbz2" {= "1.0.8-r5"}
+  "libgcc" {= "12.2.1_git20220924-r10"}
+  "libstdc++" {= "12.2.1_git20220924-r10"}
+  "musl" {= "1.2.4-r2"}
+  "xz-libs" {= "5.4.3-r0"}
+  "zlib" {= "1.2.13-r1"}
+  "zstd-libs" {= "1.5.5-r4"}
 ]
 extra-source "boost1.82-iostreams-1.82.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/boost1.82-iostreams-1.82.0-r1.apk"

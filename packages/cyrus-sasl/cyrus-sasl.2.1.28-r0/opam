@@ -6,11 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del cyrus-sasl"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libgdbm-so-6"
-  "so-libkrb5-so-26"
-  "so-libroken-so-18"
-  "so-libsasl2-so-3"
+  "gdbm" {= "1.22-r0"}
+  "heimdal-libs" {= "7.7.1-r0"}
+  "libsasl" {= "2.1.28-r0"}
+  "musl" {= "1.2.2-r9"}
 ]
 extra-source "cyrus-sasl-2.1.28-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/cyrus-sasl-2.1.28-r0.apk"

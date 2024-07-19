@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del libxkbcommon"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libxml2-so-2"
+  "libxml2" {= "2.12.7-r0"}
+  "musl" {= "1.2.5-r0"}
   "xkeyboard-config"
 ]
 extra-source "libxkbcommon-1.7.0-r0.apk" {

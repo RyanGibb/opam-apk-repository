@@ -6,13 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del apr-util-dev"]
 ]
 depends: [
+  "apr-dev" {= "1.7.0-r1"}
   "apr-util" {= "1.6.1-r7"}
   "expat-dev"
   "mariadb-dev"
   "openldap-dev"
   "openssl-dev"
-  "pc-apr-1"
-  "pkgconfig"
+  "pkgconf" {= "1.7.3-r0"}
   "postgresql-dev"
   "sqlite-dev"
 ]

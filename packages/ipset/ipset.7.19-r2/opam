@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del ipset"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libmnl-so-0"
+  "libmnl" {= "1.0.5-r2"}
+  "musl" {= "1.2.4_git20230717-r4"}
 ]
 extra-source "ipset-7.19-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/ipset-7.19-r2.apk"

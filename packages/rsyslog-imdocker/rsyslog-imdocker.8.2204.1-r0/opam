@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del rsyslog-imdocker"]
 ]
 depends: [
+  "libcurl" {= "8.5.0-r0"}
+  "musl" {= "1.2.3-r3"}
   "rsyslog" {= "8.2204.1-r0"}
-  "so-libc-musl-x86_64-so-1"
-  "so-libcurl-so-4"
 ]
 extra-source "rsyslog-imdocker-8.2204.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/rsyslog-imdocker-8.2204.1-r0.apk"

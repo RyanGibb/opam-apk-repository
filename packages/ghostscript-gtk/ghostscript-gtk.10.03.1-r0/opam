@@ -6,14 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del ghostscript-gtk"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libcairo-so-2"
-  "so-libgdk-3-so-0"
-  "so-libgdk_pixbuf-2-0-so-0"
-  "so-libglib-2-0-so-0"
-  "so-libgobject-2-0-so-0"
-  "so-libgs-so-10"
-  "so-libgtk-3-so-0"
+  "cairo" {= "1.18.0-r0"}
+  "gdk-pixbuf" {= "2.42.11-r1"}
+  "ghostscript" {= "10.03.1-r0"}
+  "glib" {= "2.80.2-r0"}
+  "gtk+3-0" {= "3.24.42-r0"}
+  "musl" {= "1.2.5-r0"}
 ]
 extra-source "ghostscript-gtk-10.03.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/ghostscript-gtk-10.03.1-r0.apk"

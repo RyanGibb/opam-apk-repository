@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del in-sync"]
 ]
 depends: [
-  "-bin-sh"
   "inotify-tools"
   "rsync"
+  ("busybox-binsh" {= "1.36.1-r29"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.56.1-r1"})
 ]
 extra-source "in-sync-1.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/in-sync-1.1-r0.apk"

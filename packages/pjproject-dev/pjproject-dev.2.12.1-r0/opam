@@ -10,9 +10,9 @@ depends: [
   "gsm-dev"
   "libsamplerate-dev"
   "libsrtp-dev"
-  "openssl1-1-compat-dev"
+  "openssl-dev" {= "1.1.1w-r1"}
   "pjproject" {= "2.12.1-r0"}
-  "pkgconfig"
+  "pkgconf" {= "1.8.1-r0"}
   "portaudio-dev"
   "speex-dev"
   "speexdsp-dev"

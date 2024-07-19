@@ -9,7 +9,7 @@ depends: [
   "libprotobuf" {= "3.12.2-r0"}
   "libprotobuf-lite" {= "3.12.2-r0"}
   "libprotoc" {= "3.12.2-r0"}
-  "pkgconfig"
+  "pkgconf" {= "1.7.2-r0"}
   "protoc" {= "3.12.2-r0"}
   "zlib-dev"
 ]

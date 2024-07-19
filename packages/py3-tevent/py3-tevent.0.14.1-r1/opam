@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del py3-tevent"]
 ]
 depends: [
+  "musl" {= "1.2.4-r2"}
   "python3" {>= "3.11"}
-  "so-libc-musl-x86_64-so-1"
-  "so-libtalloc-so-2"
-  "so-libtevent-so-0"
+  "talloc" {= "2.4.2-r0"}
+  "tevent" {= "0.14.1-r1"}
 ]
 extra-source "py3-tevent-0.14.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/py3-tevent-0.14.1-r1.apk"

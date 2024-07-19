@@ -9,12 +9,12 @@ depends: [
   "clang16"
   "icu-dev"
   "libecpg-dev"
+  "libpq" {= "16.3-r0"}
   "libpq-dev"
   "llvm16"
   "lz4-dev"
+  "musl" {= "1.2.5-r0"}
   "openssl-dev"
-  "so-libc-musl-x86_64-so-1"
-  "so-libpq-so-5"
   "zstd-dev"
 ]
 extra-source "postgresql15-dev-15.7-r0.apk" {

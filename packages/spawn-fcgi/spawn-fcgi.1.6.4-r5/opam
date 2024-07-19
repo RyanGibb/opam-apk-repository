@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del spawn-fcgi"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.2.3-r5"}
 ]
 extra-source "spawn-fcgi-1.6.4-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/spawn-fcgi-1.6.4-r5.apk"

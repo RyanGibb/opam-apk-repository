@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del nginx-mod-http-vod"]
 ]
 depends: [
+  "libcrypto1-1" {= "1.1.1w-r1"}
+  "libxml2" {= "2.9.14-r2"}
+  "musl" {= "1.2.2-r9"}
   "nginx"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-1-1"
-  "so-libxml2-so-2"
-  "so-libz-so-1"
+  "zlib" {= "1.2.12-r3"}
 ]
 extra-source "nginx-mod-http-vod-1.20.2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/nginx-mod-http-vod-1.20.2-r2.apk"

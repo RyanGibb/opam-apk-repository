@@ -6,16 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del git-email"]
 ]
 depends: [
+  "libcrypto1-1" {= "1.1.1t-r2"}
+  "libcurl" {= "8.0.1-r0"}
+  "libssl1-1" {= "1.1.1t-r2"}
+  "musl" {= "1.2.2-r5"}
+  "pcre2" {= "10.36-r1"}
   "perl"
   "perl-authen-sasl"
   "perl-git" {= "2.32.7-r0"}
   "perl-net-smtp-ssl"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-1-1"
-  "so-libcurl-so-4"
-  "so-libpcre2-8-so-0"
-  "so-libssl-so-1-1"
-  "so-libz-so-1"
+  "zlib" {= "1.2.12-r3"}
 ]
 extra-source "git-email-2.32.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/git-email-2.32.7-r0.apk"

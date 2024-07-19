@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del libnfsidmap-ldap"]
 ]
 depends: [
+  "krb5-libs" {= "1.21.3-r0"}
+  "libldap" {= "2.6.7-r0"}
+  "musl" {= "1.2.5-r0"}
   "python3"
   "rpcbind"
-  "so-libc-musl-x86_64-so-1"
-  "so-libgssapi_krb5-so-2"
-  "so-libldap-so-2"
 ]
 extra-source "libnfsidmap-ldap-2.6.4-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libnfsidmap-ldap-2.6.4-r1.apk"

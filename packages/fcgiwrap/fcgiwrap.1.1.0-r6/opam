@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del fcgiwrap"]
 ]
 depends: [
-  "-bin-sh"
-  "so-libc-musl-x86_64-so-1"
-  "so-libfcgi-so-0"
+  "busybox" {= "1.35.0-r18"}
+  "fcgi" {= "2.4.2-r1"}
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "fcgiwrap-1.1.0-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/fcgiwrap-1.1.0-r6.apk"

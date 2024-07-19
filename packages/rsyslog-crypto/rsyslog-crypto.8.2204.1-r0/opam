@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del rsyslog-crypto"]
 ]
 depends: [
+  "libgcrypt" {= "1.10.1-r0"}
+  "musl" {= "1.2.3-r3"}
   "rsyslog" {= "8.2204.1-r0"}
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcrypt-so-20"
 ]
 extra-source "rsyslog-crypto-8.2204.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/rsyslog-crypto-8.2204.1-r0.apk"

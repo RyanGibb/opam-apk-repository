@@ -7,11 +7,10 @@ remove: [
 ]
 depends: [
   "cairo-dev"
+  "cairo-dev" {= "1.18.0-r0"}
   "glib-dev"
-  "pc-cairo" {>= "1.16.0"}
-  "pc-glib-2-0" {>= "2.64"}
-  "pc-gobject-2-0" {>= "2.64"}
-  "pkgconfig"
+  "glib-dev" {= "2.80.2-r0"}
+  "pkgconf" {= "2.2.0-r0"}
   "poppler" {= "24.02.0-r1"}
   "poppler-glib" {= "24.02.0-r1"}
 ]

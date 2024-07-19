@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "ell" {= "0.61-r0"}
-  "pkgconfig"
+  "pkgconf" {= "2.1.0-r0"}
 ]
 extra-source "ell-dev-0.61-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/ell-dev-0.61-r0.apk"

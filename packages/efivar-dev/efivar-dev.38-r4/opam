@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "efivar-libs" {= "38-r4"}
-  "pkgconfig"
+  "pkgconf" {= "2.1.0-r0"}
 ]
 extra-source "efivar-dev-38-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/efivar-dev-38-r4.apk"

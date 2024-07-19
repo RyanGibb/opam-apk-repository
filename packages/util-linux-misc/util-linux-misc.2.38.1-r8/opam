@@ -6,16 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del util-linux-misc"]
 ]
 depends: [
-  "-bin-sh"
+  "libblkid" {= "2.38.1-r8"}
+  "libfdisk" {= "2.38.1-r8"}
+  "libmount" {= "2.38.1-r8"}
+  "libncursesw" {= "6.4_p20230506-r0"}
+  "libsmartcols" {= "2.38.1-r8"}
+  "libuuid" {= "2.38.1-r8"}
+  "musl" {= "1.2.4-r2"}
   "setarch" {= "2.38.1-r8"}
-  "so-libblkid-so-1"
-  "so-libc-musl-x86_64-so-1"
-  "so-libfdisk-so-1"
-  "so-libmount-so-1"
-  "so-libncursesw-so-6"
-  "so-libsmartcols-so-1"
-  "so-libuuid-so-1"
-  "so-libz-so-1"
+  "zlib" {= "1.2.13-r1"}
+  ("busybox-binsh" {= "1.36.1-r7"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.54-r3"})
 ]
 extra-source "util-linux-misc-2.38.1-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/util-linux-misc-2.38.1-r8.apk"

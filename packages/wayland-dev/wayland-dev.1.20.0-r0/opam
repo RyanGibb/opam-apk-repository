@@ -6,13 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del wayland-dev"]
 ]
 depends: [
+  "expat" {= "2.6.2-r0"}
   "expat-dev"
   "libffi-dev"
-  "pc-libffi"
-  "pkgconfig"
-  "so-libc-musl-x86_64-so-1"
-  "so-libexpat-so-1"
-  "so-libxml2-so-2"
+  "libffi-dev" {= "3.4.2-r1"}
+  "libxml2" {= "2.9.14-r2"}
+  "musl" {= "1.2.3-r3"}
+  "pkgconf" {= "1.8.1-r0"}
   "wayland-libs-client" {= "1.20.0-r0"}
   "wayland-libs-cursor" {= "1.20.0-r0"}
   "wayland-libs-egl" {= "1.20.0-r0"}

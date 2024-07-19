@@ -6,14 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del vde2"]
 ]
 depends: [
-  "-bin-sh"
+  "busybox" {= "1.34.1-r7"}
+  "libcrypto1-1" {= "1.1.1w-r1"}
+  "libpcap" {= "1.10.1-r0"}
+  "musl" {= "1.2.2-r9"}
   "openssl"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-1-1"
-  "so-libpcap-so-1"
-  "so-libvdehist-so-0"
-  "so-libvdemgmt-so-0"
-  "so-libvdeplug-so-3"
+  "vde2-libs" {= "2.3.2-r15"}
 ]
 extra-source "vde2-2.3.2-r15.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/vde2-2.3.2-r15.apk"

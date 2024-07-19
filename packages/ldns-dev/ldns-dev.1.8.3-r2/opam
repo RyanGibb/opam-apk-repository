@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "ldns" {= "1.8.3-r2"}
+  "openssl-dev" {= "3.3.1-r3"}
   "openssl-dev" {> "3"}
-  "pc-libcrypto"
-  "pkgconfig"
+  "pkgconf" {= "2.2.0-r0"}
 ]
 extra-source "ldns-dev-1.8.3-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/ldns-dev-1.8.3-r2.apk"

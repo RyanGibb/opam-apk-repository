@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del arm-trusted-firmware-tools"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-3"
+  "libcrypto3" {= "3.3.1-r3"}
+  "musl" {= "1.2.5-r0"}
 ]
 extra-source "arm-trusted-firmware-tools-2.8.14-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/arm-trusted-firmware-tools-2.8.14-r1.apk"

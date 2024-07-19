@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del xz"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-liblzma-so-5"
+  "musl" {= "1.2.4_git20230717-r4"}
+  "xz-libs" {= "5.4.5-r0"}
 ]
 extra-source "xz-5.4.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/xz-5.4.5-r0.apk"

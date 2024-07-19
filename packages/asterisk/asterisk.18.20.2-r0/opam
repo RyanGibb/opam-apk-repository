@@ -6,29 +6,23 @@ remove: [
   ["sh" "-c" "sudo apk del asterisk"]
 ]
 depends: [
-  "-bin-sh"
-  "so-libc-client-so-1"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcap-so-2"
-  "so-libcrypto-so-3"
-  "so-libcurl-so-4"
-  "so-libedit-so-0"
-  "so-libjansson-so-4"
-  "so-liblua-so-5"
-  "so-libpj-so-2"
-  "so-libpjlib-util-so-2"
-  "so-libpjmedia-so-2"
-  "so-libpjnath-so-2"
-  "so-libpjsip-simple-so-2"
-  "so-libpjsip-so-2"
-  "so-libpjsip-ua-so-2"
-  "so-libportaudio-so-2"
-  "so-libsqlite3-so-0"
-  "so-libssl-so-3"
-  "so-libunbound-so-8"
-  "so-libuuid-so-1"
-  "so-libxml2-so-2"
-  "so-libz-so-1"
+  "c-client" {= "2007f-r15"}
+  "jansson" {= "2.14-r3"}
+  "libcap2" {= "2.69-r0"}
+  "libcrypto3" {= "3.1.6-r0"}
+  "libcurl" {= "8.5.0-r0"}
+  "libedit" {= "20221030.3.1-r1"}
+  "libssl3" {= "3.1.6-r0"}
+  "libuuid" {= "2.38.1-r8"}
+  "libxml2" {= "2.11.8-r0"}
+  "lua5-1-libs" {= "5.1.5-r12"}
+  "musl" {= "1.2.4-r2"}
+  "pjproject" {= "2.14-r0"}
+  "portaudio" {= "19.7.0-r1"}
+  "sqlite-libs" {= "3.41.2-r3"}
+  "unbound-libs" {= "1.20.0-r0"}
+  "zlib" {= "1.2.13-r1"}
+  ("busybox-binsh" {= "1.36.1-r7"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.54-r3"})
 ]
 extra-source "asterisk-18.20.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/asterisk-18.20.2-r0.apk"

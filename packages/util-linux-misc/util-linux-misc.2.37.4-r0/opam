@@ -6,15 +6,15 @@ remove: [
   ["sh" "-c" "sudo apk del util-linux-misc"]
 ]
 depends: [
-  "so-libblkid-so-1"
-  "so-libc-musl-x86_64-so-1"
-  "so-libeconf-so-0"
-  "so-libfdisk-so-1"
-  "so-libmount-so-1"
-  "so-libncursesw-so-6"
-  "so-libsmartcols-so-1"
-  "so-libuuid-so-1"
-  "so-libz-so-1"
+  "libblkid" {= "2.37.4-r0"}
+  "libeconf" {= "0.4.2-r0"}
+  "libfdisk" {= "2.37.4-r0"}
+  "libmount" {= "2.37.4-r0"}
+  "libsmartcols" {= "2.37.4-r0"}
+  "libuuid" {= "2.37.4-r0"}
+  "musl" {= "1.2.2-r9"}
+  "ncurses-libs" {= "6.3_p20211120-r2"}
+  "zlib" {= "1.2.12-r3"}
 ]
 extra-source "util-linux-misc-2.37.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/util-linux-misc-2.37.4-r0.apk"

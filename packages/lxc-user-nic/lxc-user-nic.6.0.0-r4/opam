@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del lxc-user-nic"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libcap-so-2"
-  "so-libgcc_s-so-1"
-  "so-liblxc-so-1"
+  "libcap2" {= "2.70-r0"}
+  "libgcc" {= "13.2.1_git20240309-r0"}
+  "lxc-libs" {= "6.0.0-r4"}
+  "musl" {= "1.2.5-r0"}
 ]
 extra-source "lxc-user-nic-6.0.0-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lxc-user-nic-6.0.0-r4.apk"

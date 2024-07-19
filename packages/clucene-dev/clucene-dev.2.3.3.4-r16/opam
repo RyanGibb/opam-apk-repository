@@ -9,7 +9,7 @@ depends: [
   "boost-dev"
   "clucene" {= "2.3.3.4-r16"}
   "clucene-contribs" {= "2.3.3.4-r16"}
-  "pkgconfig"
+  "pkgconf" {= "1.9.4-r0"}
   "zlib-dev"
 ]
 extra-source "clucene-dev-2.3.3.4-r16.apk" {

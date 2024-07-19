@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "kamailio"
-  "so-libc-musl-x86_64-so-1"
-  "so-libsctp-so-1"
+  "liblksctp" {= "1.0.19-r3"}
+  "musl" {= "1.2.4-r2"}
 ]
 extra-source "kamailio-sctp-5.6.3-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/kamailio-sctp-5.6.3-r6.apk"

@@ -6,12 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del dovecot-fts-lucene"]
 ]
 depends: [
+  "clucene" {= "2.3.3.4-r9"}
   "dovecot" {= "2.3.15-r0"}
-  "so-libc-musl-x86_64-so-1"
-  "so-libclucene-core-so-1"
-  "so-libclucene-shared-so-1"
-  "so-libgcc_s-so-1"
-  "so-libstdc++-so-6"
+  "libgcc" {= "10.3.1_git20210424-r2"}
+  "libstdc++" {= "10.3.1_git20210424-r2"}
+  "musl" {= "1.2.2-r5"}
 ]
 extra-source "dovecot-fts-lucene-2.3.15-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/dovecot-fts-lucene-2.3.15-r0.apk"

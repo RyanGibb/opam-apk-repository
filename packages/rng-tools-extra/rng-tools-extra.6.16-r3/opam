@@ -6,14 +6,14 @@ remove: [
   ["sh" "-c" "sudo apk del rng-tools-extra"]
 ]
 depends: [
-  "-bin-sh"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcap-so-2"
-  "so-libcrypto-so-3"
-  "so-libcurl-so-4"
-  "so-libjansson-so-4"
-  "so-libjitterentropy-so-3"
-  "so-librtlsdr-so-2"
+  "jansson" {= "2.14-r4"}
+  "jitterentropy-library" {= "3.4.1-r0"}
+  "libcap2" {= "2.69-r1"}
+  "libcrypto3" {= "3.1.6-r2"}
+  "libcurl" {= "8.5.0-r0"}
+  "librtlsdr" {= "2.0.1-r0"}
+  "musl" {= "1.2.4_git20230717-r4"}
+  ("busybox-binsh" {= "1.36.1-r19"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.55-r0"})
 ]
 extra-source "rng-tools-extra-6.16-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/rng-tools-extra-6.16-r3.apk"

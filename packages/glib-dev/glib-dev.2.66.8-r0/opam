@@ -11,19 +11,16 @@ depends: [
   "docbook-xsl"
   "gettext-dev"
   "glib" {= "2.66.8-r0"}
+  "libffi-dev" {= "3.3-r2"}
+  "libintl" {= "0.20.2-r2"}
   "libxml2-utils"
   "libxslt"
-  "pc-libffi" {>= "3.0.0"}
-  "pc-libpcre" {>= "8.31"}
-  "pc-mount" {>= "2.23"}
-  "pc-zlib"
-  "pkgconfig"
+  "musl" {= "1.2.2-r2"}
+  "pcre-dev" {= "8.44-r0"}
+  "pkgconf" {= "1.7.3-r0"}
   "python3"
-  "so-libc-musl-x86_64-so-1"
-  "so-libgio-2-0-so-0"
-  "so-libglib-2-0-so-0"
-  "so-libgobject-2-0-so-0"
-  "so-libintl-so-8"
+  "util-linux-dev" {= "2.37.4-r0"}
+  "zlib-dev" {= "1.2.12-r3"}
 ]
 extra-source "glib-dev-2.66.8-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/glib-dev-2.66.8-r0.apk"

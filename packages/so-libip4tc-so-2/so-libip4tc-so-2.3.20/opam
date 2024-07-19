@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "libip4tc" {= "1.8.10-r3"}
-]

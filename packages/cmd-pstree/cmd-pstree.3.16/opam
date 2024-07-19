@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  ("psmisc" {= "23.5-r0"} | "pstree" {= "2.39-r1"})
-]

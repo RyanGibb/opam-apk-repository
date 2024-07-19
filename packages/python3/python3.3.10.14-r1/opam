@@ -6,21 +6,20 @@ remove: [
   ["sh" "-c" "sudo apk del python3"]
 ]
 depends: [
+  "gdbm" {= "1.23-r0"}
+  "libbz2" {= "1.0.8-r4"}
+  "libcrypto3" {= "3.0.14-r0"}
+  "libexpat" {= "2.6.2-r0"}
   "libexpat" {>= "2.6.0"}
-  "so-libbz2-so-1"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-3"
-  "so-libexpat-so-1"
-  "so-libffi-so-8"
-  "so-libgdbm_compat-so-4"
-  "so-liblzma-so-5"
-  "so-libmpdec-so-3"
-  "so-libncursesw-so-6"
-  "so-libpanelw-so-6"
-  "so-libreadline-so-8"
-  "so-libsqlite3-so-0"
-  "so-libssl-so-3"
-  "so-libz-so-1"
+  "libffi" {= "3.4.4-r0"}
+  "libssl3" {= "3.0.14-r0"}
+  "mpdecimal" {= "2.5.1-r1"}
+  "musl" {= "1.2.3-r5"}
+  "ncurses-libs" {= "6.3_p20221119-r1"}
+  "readline" {= "8.2.0-r0"}
+  "sqlite-libs" {= "3.40.1-r1"}
+  "xz-libs" {= "5.2.9-r0"}
+  "zlib" {= "1.2.13-r0"}
 ]
 extra-source "python3-3.10.14-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/python3-3.10.14-r1.apk"

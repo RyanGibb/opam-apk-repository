@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "lxc-libs" {= "4.0.12-r2"}
-  "pkgconfig"
+  "pkgconf" {= "1.8.1-r0"}
 ]
 extra-source "lxc-dev-4.0.12-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/lxc-dev-4.0.12-r2.apk"

@@ -11,8 +11,8 @@ depends: [
   "libecpg-dev"
   "libpq-dev"
   "llvm13"
-  "openssl1-1-compat-dev"
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.2.3-r3"}
+  "openssl-dev" {= "1.1.1w-r1"}
 ]
 extra-source "postgresql13-dev-13.15-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/postgresql13-dev-13.15-r0.apk"

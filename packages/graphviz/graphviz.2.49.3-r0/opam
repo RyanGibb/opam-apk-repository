@@ -6,20 +6,17 @@ remove: [
   ["sh" "-c" "sudo apk del graphviz"]
 ]
 depends: [
-  "-bin-sh"
-  "so-libX11-so-6"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcairo-so-2"
-  "so-libexpat-so-1"
-  "so-libgcc_s-so-1"
-  "so-libglib-2-0-so-0"
-  "so-libgobject-2-0-so-0"
-  "so-libltdl-so-7"
-  "so-libpango-1-0-so-0"
-  "so-libpangocairo-1-0-so-0"
-  "so-libpangoft2-1-0-so-0"
-  "so-libstdc++-so-6"
-  "so-libz-so-1"
+  "busybox" {= "1.34.1-r7"}
+  "cairo" {= "1.16.0-r5"}
+  "expat" {= "2.5.0-r0"}
+  "glib" {= "2.70.5-r0"}
+  "libgcc" {= "10.3.1_git20211027-r0"}
+  "libltdl" {= "2.4.6-r7"}
+  "libstdc++" {= "10.3.1_git20211027-r0"}
+  "libx11" {= "1.7.3.1-r1"}
+  "musl" {= "1.2.2-r9"}
+  "pango" {= "1.48.10-r0"}
+  "zlib" {= "1.2.12-r3"}
 ]
 extra-source "graphviz-2.49.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/graphviz-2.49.3-r0.apk"

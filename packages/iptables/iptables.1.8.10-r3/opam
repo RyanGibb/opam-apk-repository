@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del iptables"]
 ]
 depends: [
-  "-bin-sh"
-  "so-libc-musl-x86_64-so-1"
-  "so-libmnl-so-0"
-  "so-libnftnl-so-11"
-  "so-libxtables-so-12"
+  "libmnl" {= "1.0.5-r2"}
+  "libnftnl" {= "1.2.6-r0"}
+  "libxtables" {= "1.8.10-r3"}
+  "musl" {= "1.2.5-r0"}
+  ("busybox-binsh" {= "1.36.1-r29"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.56.1-r1"})
 ]
 extra-source "iptables-1.8.10-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/iptables-1.8.10-r3.apk"

@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del postfix-stone"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libpostfix-global-so"
-  "so-libpostfix-util-so"
+  "musl" {= "1.2.5-r0"}
+  "postfix" {= "3.9.0-r1"}
 ]
 extra-source "postfix-stone-3.9.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/postfix-stone-3.9.0-r1.apk"

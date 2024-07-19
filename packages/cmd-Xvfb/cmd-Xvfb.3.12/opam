@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "xvfb" {= "1.20.11-r0"}
-]

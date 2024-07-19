@@ -9,7 +9,7 @@ depends: [
   "eudev-dev"
   "pcsc-lite-libs" {= "2.0.0-r2"}
   "pcsc-lite-spy-libs" {= "2.0.0-r2"}
-  "pkgconfig"
+  "pkgconf" {= "2.1.0-r0"}
 ]
 extra-source "pcsc-lite-dev-2.0.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/pcsc-lite-dev-2.0.0-r2.apk"

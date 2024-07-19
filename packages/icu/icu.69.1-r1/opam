@@ -6,13 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del icu"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
-  "so-libicui18n-so-69"
-  "so-libicuio-so-69"
-  "so-libicutu-so-69"
-  "so-libicuuc-so-69"
-  "so-libstdc++-so-6"
+  "icu-libs" {= "69.1-r1"}
+  "libgcc" {= "10.3.1_git20211027-r0"}
+  "libstdc++" {= "10.3.1_git20211027-r0"}
+  "musl" {= "1.2.2-r9"}
 ]
 extra-source "icu-69.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/icu-69.1-r1.apk"

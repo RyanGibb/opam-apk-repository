@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del perl-digest-sha1"]
 ]
 depends: [
+  "musl" {= "1.2.4_git20230717-r4"}
   "perl"
-  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "perl-digest-sha1-2.13-r17.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/perl-digest-sha1-2.13-r17.apk"

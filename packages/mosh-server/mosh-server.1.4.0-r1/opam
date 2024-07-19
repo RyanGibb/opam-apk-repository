@@ -6,13 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del mosh-server"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-3"
-  "so-libgcc_s-so-1"
-  "so-libncursesw-so-6"
-  "so-libprotobuf-so-32"
-  "so-libstdc++-so-6"
-  "so-libz-so-1"
+  "libcrypto3" {= "3.1.6-r0"}
+  "libgcc" {= "12.2.1_git20220924-r10"}
+  "libncursesw" {= "6.4_p20230506-r0"}
+  "libprotobuf" {= "3.21.12-r2"}
+  "libstdc++" {= "12.2.1_git20220924-r10"}
+  "musl" {= "1.2.4-r2"}
+  "zlib" {= "1.2.13-r1"}
 ]
 extra-source "mosh-server-1.4.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/mosh-server-1.4.0-r1.apk"

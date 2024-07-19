@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del iniparser"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.2.5-r0"}
 ]
 extra-source "iniparser-4.2.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/iniparser-4.2.1-r0.apk"

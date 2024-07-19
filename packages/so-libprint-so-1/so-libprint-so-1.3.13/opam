@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "kamailio" {= "5.4.2-r3"}
-]

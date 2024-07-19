@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del libunistring"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.2.2-r9"}
 ]
 extra-source "libunistring-0.9.10-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libunistring-0.9.10-r1.apk"

@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del ruby-google-protobuf"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libruby-so-3-2"
+  "musl" {= "1.2.4_git20230717-r4"}
+  "ruby-libs" {= "3.2.4-r0"}
 ]
 extra-source "ruby-google-protobuf-24.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/ruby-google-protobuf-24.4-r0.apk"

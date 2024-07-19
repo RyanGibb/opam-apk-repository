@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del nginx-mod-http-keyval"]
 ]
 depends: [
+  "hiredis" {= "1.2.0-r0"}
+  "musl" {= "1.2.4_git20230717-r4"}
   "nginx"
-  "so-libc-musl-x86_64-so-1"
-  "so-libhiredis-so-1-1-0"
 ]
 extra-source "nginx-mod-http-keyval-1.24.0-r16.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/nginx-mod-http-keyval-1.24.0-r16.apk"

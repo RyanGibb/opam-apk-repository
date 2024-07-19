@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "mtd-utils-flash" {= "2.1.4-r1"}
-]

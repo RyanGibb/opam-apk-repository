@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del perl-dbd-sqlite"]
 ]
 depends: [
+  "musl" {= "1.2.4-r2"}
   "perl"
   "perl-dbi"
-  "so-libc-musl-x86_64-so-1"
-  "so-libsqlite3-so-0"
+  "sqlite-libs" {= "3.41.2-r3"}
 ]
 extra-source "perl-dbd-sqlite-1.72-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-dbd-sqlite-1.72-r1.apk"

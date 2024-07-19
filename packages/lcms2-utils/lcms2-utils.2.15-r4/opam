@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del lcms2-utils"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libjpeg-so-8"
-  "so-liblcms2-so-2"
-  "so-libtiff-so-6"
+  "lcms2" {= "2.15-r4"}
+  "libjpeg-turbo" {= "3.0.1-r0"}
+  "musl" {= "1.2.4_git20230717-r4"}
+  "tiff" {= "4.6.0-r0"}
 ]
 extra-source "lcms2-utils-2.15-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/lcms2-utils-2.15-r4.apk"

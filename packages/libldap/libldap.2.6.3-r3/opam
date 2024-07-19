@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del libldap"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-1-1"
-  "so-libsasl2-so-3"
-  "so-libssl-so-1-1"
+  "libcrypto1-1" {= "1.1.1w-r1"}
+  "libsasl" {= "2.1.28-r1"}
+  "libssl1-1" {= "1.1.1w-r1"}
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "libldap-2.6.3-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/libldap-2.6.3-r3.apk"

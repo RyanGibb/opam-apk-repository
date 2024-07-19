@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "libarchive-dev" {= "3.7.2-r0"}
-]

@@ -10,25 +10,22 @@ depends: [
   "cairo-gobject" {= "1.17.6-r3"}
   "cairo-tools" {= "1.17.6-r3"}
   "fontconfig-dev"
+  "fontconfig-dev" {= "2.14.1-r0"}
   "freetype-dev"
+  "freetype-dev" {= "2.12.1-r0"}
+  "glib-dev" {= "2.74.7-r0"}
+  "libpng-dev" {= "1.6.39-r0"}
+  "libx11-dev" {= "1.8.7-r0"}
+  "libxcb-dev" {= "1.15-r0"}
   "libxext-dev"
+  "libxext-dev" {= "1.3.5-r0"}
   "libxrender-dev"
-  "pc-fontconfig" {>= "2.2.95"}
-  "pc-freetype2" {>= "9.7.3"}
-  "pc-glib-2-0" {>= "2.14"}
-  "pc-gobject-2-0"
-  "pc-libpng"
-  "pc-pixman-1" {>= "0.36.0"}
-  "pc-x11"
-  "pc-xcb" {>= "1.6"}
-  "pc-xcb-render" {>= "1.6"}
-  "pc-xcb-shm"
-  "pc-xext"
-  "pc-xrender" {>= "0.6"}
-  "pc-zlib"
+  "libxrender-dev" {= "0.9.11-r0"}
   "pixman-dev"
-  "pkgconfig"
+  "pixman-dev" {= "0.42.2-r0"}
+  "pkgconf" {= "1.9.4-r0"}
   "xcb-util-dev"
+  "zlib-dev" {= "1.2.13-r0"}
 ]
 extra-source "cairo-dev-1.17.6-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/cairo-dev-1.17.6-r3.apk"

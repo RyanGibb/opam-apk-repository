@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del grub"]
 ]
 depends: [
-  "-bin-sh"
-  "initramfs-generator"
-  "so-libc-musl-x86_64-so-1"
-  "so-libdevmapper-so-1-02"
-  "so-liblzma-so-5"
+  "device-mapper-libs" {= "2.03.21-r3"}
+  "mkinitfs" {= "3.8.1-r0"}
+  "musl" {= "1.2.4-r2"}
+  "xz-libs" {= "5.4.3-r0"}
+  ("busybox-binsh" {= "1.36.1-r7"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.54-r3"})
 ]
 extra-source "grub-2.06-r12.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/grub-2.06-r12.apk"

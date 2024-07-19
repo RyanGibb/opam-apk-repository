@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del libx11"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libxcb-so-1"
+  "libxcb" {= "1.14-r2"}
+  "musl" {= "1.2.2-r5"}
 ]
 extra-source "libx11-1.7.3.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/libx11-1.7.3.1-r0.apk"

@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del texinfo"]
 ]
 depends: [
-  "-bin-sh"
+  "libncursesw" {= "6.4_p20231125-r0"}
+  "musl" {= "1.2.4_git20230717-r4"}
   "perl"
-  "so-libc-musl-x86_64-so-1"
-  "so-libncursesw-so-6"
+  ("busybox-binsh" {= "1.36.1-r19"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.55-r0"})
 ]
 extra-source "texinfo-7.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/texinfo-7.1-r0.apk"

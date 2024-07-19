@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "gsm-tools" {= "1.0.22-r3"}
-]

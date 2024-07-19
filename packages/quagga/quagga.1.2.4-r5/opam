@@ -6,13 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del quagga"]
 ]
 depends: [
-  "-bin-sh"
+  "busybox" {= "1.35.0-r18"}
+  "c-ares" {= "1.19.1-r1"}
   "iproute2"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcares-so-2"
-  "so-libnetsnmp-so-40"
-  "so-libnetsnmpagent-so-40"
-  "so-libreadline-so-8"
+  "musl" {= "1.2.3-r3"}
+  "net-snmp-agent-libs" {= "5.9.3-r1"}
+  "net-snmp-libs" {= "5.9.3-r1"}
+  "readline" {= "8.1.2-r0"}
 ]
 extra-source "quagga-1.2.4-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/quagga-1.2.4-r5.apk"

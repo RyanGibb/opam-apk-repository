@@ -6,13 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del gcr-ssh-agent"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libgck-1-so-0"
-  "so-libgcr-base-3-so-1"
-  "so-libgio-2-0-so-0"
-  "so-libglib-2-0-so-0"
-  "so-libgobject-2-0-so-0"
-  "so-libsecret-1-so-0"
+  "gcr-base" {= "3.41.1-r5"}
+  "glib" {= "2.78.6-r0"}
+  "libsecret" {= "0.21.2-r0"}
+  "musl" {= "1.2.4_git20230717-r4"}
 ]
 extra-source "gcr-ssh-agent-3.41.1-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/gcr-ssh-agent-3.41.1-r5.apk"

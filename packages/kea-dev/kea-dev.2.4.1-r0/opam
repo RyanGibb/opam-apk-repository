@@ -9,13 +9,10 @@ depends: [
   "boost-dev"
   "kea-common" {= "2.4.1-r0"}
   "kea-dhcp-ddns" {= "2.4.1-r0"}
+  "libgcc" {= "13.2.1_git20231014-r0"}
+  "libstdc++" {= "13.2.1_git20231014-r0"}
   "log4cplus-dev"
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
-  "so-libkea-exceptions-so-23"
-  "so-libkea-log-so-48"
-  "so-libkea-util-so-68"
-  "so-libstdc++-so-6"
+  "musl" {= "1.2.4_git20230717-r4"}
 ]
 extra-source "kea-dev-2.4.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/kea-dev-2.4.1-r0.apk"

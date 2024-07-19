@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del libkcapi-tools"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libkcapi-so-1"
+  "libkcapi" {= "1.4.0-r0"}
+  "musl" {= "1.2.3-r5"}
 ]
 extra-source "libkcapi-tools-1.4.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libkcapi-tools-1.4.0-r0.apk"

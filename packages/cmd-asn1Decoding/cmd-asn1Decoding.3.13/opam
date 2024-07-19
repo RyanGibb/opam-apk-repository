@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "libtasn1-progs" {= "4.16.0-r1"}
-]

@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "bash"
-  "so-libc-musl-x86_64-so-1"
-  "so-librrd-so-8"
-  "so-libsensors-so-5"
+  "librrd" {= "1.7.2-r3"}
+  "lm-sensors" {= "3.6.0-r0"}
+  "musl" {= "1.1.24-r10"}
   "sysfsutils"
 ]
 extra-source "lm-sensors-sensord-3.6.0-r0.apk" {

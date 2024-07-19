@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del mariadb-plugin-rocksdb"]
 ]
 depends: [
+  "libgcc" {= "10.3.1_git20211027-r0"}
+  "libstdc++" {= "10.3.1_git20211027-r0"}
   "mariadb" {= "10.6.14-r0"}
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
-  "so-libstdc++-so-6"
-  "so-libz-so-1"
+  "musl" {= "1.2.2-r9"}
+  "zlib" {= "1.2.12-r3"}
 ]
 extra-source "mariadb-plugin-rocksdb-10.6.14-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/mariadb-plugin-rocksdb-10.6.14-r0.apk"

@@ -6,88 +6,24 @@ remove: [
   ["sh" "-c" "sudo apk del py3-samba"]
 ]
 depends: [
+  "gnutls" {= "3.8.4-r0"}
+  "ldb" {= "2.7.2-r1"}
+  "musl" {= "1.2.4_git20230717-r4"}
+  "py3-ldb" {= "2.7.2-r1"}
+  "py3-talloc" {= "2.4.2-r0"}
   "py3-tdb"
+  "python3" {= "3.11.9-r0"}
   "python3" {>= "3.11"}
-  "so-libMESSAGING-SEND-samba4-so"
-  "so-libMESSAGING-samba4-so"
-  "so-libaddns-samba4-so"
-  "so-libads-samba4-so"
-  "so-libauth-unix-token-samba4-so"
-  "so-libauth4-samba4-so"
-  "so-libauthkrb5-samba4-so"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcli-ldap-samba4-so"
-  "so-libcli-nbt-samba4-so"
-  "so-libcli-smb-common-samba4-so"
-  "so-libcliauth-samba4-so"
-  "so-libcluster-samba4-so"
-  "so-libcmdline-contexts-samba4-so"
-  "so-libcmdline-samba4-so"
-  "so-libcom-err-samba4-so"
-  "so-libcommon-auth-samba4-so"
-  "so-libdb-glue-samba4-so"
-  "so-libdbwrap-samba4-so"
-  "so-libdcerpc-binding-so-0"
-  "so-libdcerpc-samba-samba4-so"
-  "so-libdcerpc-samba4-so"
-  "so-libdcerpc-so-0"
-  "so-libdnsserver-common-samba4-so"
-  "so-libdsdb-garbage-collect-tombstones-samba4-so"
-  "so-libevents-samba4-so"
-  "so-libflag-mapping-samba4-so"
-  "so-libgenrand-samba4-so"
-  "so-libgensec-samba4-so"
-  "so-libgnutls-so-30"
-  "so-libgpo-samba4-so"
-  "so-libgse-samba4-so"
-  "so-libgssapi-samba4-so"
-  "so-libkrb5-samba4-so"
-  "so-libkrb5samba-samba4-so"
-  "so-libldb-so-2"
-  "so-libldbsamba-samba4-so"
-  "so-liblibcli-lsa3-samba4-so"
-  "so-liblibcli-netlogon3-samba4-so"
-  "so-liblibsmb-samba4-so"
-  "so-libmsrpc3-samba4-so"
-  "so-libndr-krb5pac-so-0"
-  "so-libndr-nbt-so-0"
-  "so-libndr-samba-samba4-so"
-  "so-libndr-samba4-so"
-  "so-libndr-so-3"
-  "so-libndr-standard-so-0"
-  "so-libnetif-samba4-so"
-  "so-libposix-eadb-samba4-so"
-  "so-libpyldb-util-cpython-311-x86-64-linux-musl-so-2"
-  "so-libpytalloc-util-cpython-311-x86-64-linux-musl-so-2"
-  "so-libpython3-11-so-1-0"
-  "so-libregistry-samba4-so"
-  "so-libreplace-samba4-so"
-  "so-libsamba-credentials-so-1"
-  "so-libsamba-debug-samba4-so"
-  "so-libsamba-errors-so-1"
-  "so-libsamba-hostconfig-so-0"
-  "so-libsamba-net-cpython-311-x86-64-linux-musl-samba4-so"
-  "so-libsamba-passdb-so-0"
-  "so-libsamba-policy-cpython-311-x86-64-linux-musl-so-0"
-  "so-libsamba-python-cpython-311-x86-64-linux-musl-samba4-so"
-  "so-libsamba-security-samba4-so"
-  "so-libsamba-util-so-0"
-  "so-libsamba3-util-samba4-so"
-  "so-libsamdb-common-samba4-so"
-  "so-libsamdb-so-0"
-  "so-libscavenge-dns-records-samba4-so"
-  "so-libsecrets3-samba4-so"
-  "so-libserver-role-samba4-so"
-  "so-libsmbconf-so-0"
-  "so-libsmbd-base-samba4-so"
-  "so-libstable-sort-samba4-so"
-  "so-libtalloc-so-2"
-  "so-libtdb-wrap-samba4-so"
-  "so-libtevent-so-0"
-  "so-libtevent-util-so-0"
-  "so-libtrusts-util-samba4-so"
-  "so-libutil-reg-samba4-so"
-  "so-libxattr-tdb-samba4-so"
+  "samba-client-libs" {= "4.18.9-r0"}
+  "samba-common-server-libs" {= "4.18.9-r0"}
+  "samba-dc-libs" {= "4.18.9-r0"}
+  "samba-libs" {= "4.18.9-r0"}
+  "samba-libs-py3" {= "4.18.9-r0"}
+  "samba-server" {= "4.18.9-r0"}
+  "samba-server-libs" {= "4.18.9-r0"}
+  "samba-util-libs" {= "4.18.9-r0"}
+  "talloc" {= "2.4.2-r0"}
+  "tevent" {= "0.15.0-r0"}
 ]
 extra-source "py3-samba-4.18.9-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/py3-samba-4.18.9-r0.apk"

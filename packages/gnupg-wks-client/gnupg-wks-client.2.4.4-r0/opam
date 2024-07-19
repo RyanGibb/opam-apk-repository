@@ -9,10 +9,10 @@ depends: [
   "gnupg-dirmngr" {= "2.4.4-r0"}
   "gpg" {= "2.4.4-r0"}
   "gpg-agent" {= "2.4.4-r0"}
-  "so-libassuan-so-0"
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcrypt-so-20"
-  "so-libgpg-error-so-0"
+  "libassuan" {= "2.5.6-r1"}
+  "libgcrypt" {= "1.10.3-r0"}
+  "libgpg-error" {= "1.47-r2"}
+  "musl" {= "1.2.4_git20230717-r4"}
 ]
 extra-source "gnupg-wks-client-2.4.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/gnupg-wks-client-2.4.4-r0.apk"

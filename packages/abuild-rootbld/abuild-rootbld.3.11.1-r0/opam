@@ -8,7 +8,7 @@ remove: [
 depends: [
   "abuild"
   "bubblewrap"
-  "cmd-envsubst"
+  "gettext-envsubst" {= "0.21.1-r7"}
   "git"
 ]
 extra-source "abuild-rootbld-3.11.1-r0.apk" {

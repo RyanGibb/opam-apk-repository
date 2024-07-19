@@ -6,16 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del gdb-multiarch"]
 ]
 depends: [
+  "expat" {= "2.5.0-r0"}
   "gdb"
-  "so-libc-musl-x86_64-so-1"
-  "so-libexpat-so-1"
-  "so-libgcc_s-so-1"
-  "so-libgmp-so-10"
-  "so-libncursesw-so-6"
-  "so-libpython3-9-so-1-0"
-  "so-libreadline-so-8"
-  "so-libstdc++-so-6"
-  "so-libz-so-1"
+  "gmp" {= "6.2.1-r1"}
+  "libgcc" {= "10.3.1_git20211027-r0"}
+  "libstdc++" {= "10.3.1_git20211027-r0"}
+  "musl" {= "1.2.2-r9"}
+  "ncurses-libs" {= "6.3_p20211120-r2"}
+  "python3" {= "3.9.18-r0"}
+  "readline" {= "8.1.1-r0"}
+  "zlib" {= "1.2.12-r3"}
 ]
 extra-source "gdb-multiarch-11.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/gdb-multiarch-11.1-r0.apk"

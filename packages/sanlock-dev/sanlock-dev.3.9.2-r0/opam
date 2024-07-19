@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del sanlock-dev"]
 ]
 depends: [
-  "pkgconfig"
+  "pkgconf" {= "2.2.0-r0"}
   "sanlock" {= "3.9.2-r0"}
 ]
 extra-source "sanlock-dev-3.9.2-r0.apk" {

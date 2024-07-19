@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del goaccess"]
 ]
 depends: [
-  "so-libGeoIP-so-1"
-  "so-libc-musl-x86_64-so-1"
-  "so-libintl-so-8"
-  "so-libncursesw-so-6"
+  "geoip" {= "1.6.12-r2"}
+  "libintl" {= "0.21-r0"}
+  "musl" {= "1.2.2-r9"}
+  "ncurses-libs" {= "6.3_p20211120-r2"}
 ]
 extra-source "goaccess-1.5.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/goaccess-1.5.2-r0.apk"

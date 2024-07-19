@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del perl"]
 ]
 depends: [
-  "so-libbz2-so-1"
-  "so-libc-musl-x86_64-so-1"
-  "so-libz-so-1"
+  "libbz2" {= "1.0.8-r1"}
+  "musl" {= "1.2.2-r5"}
+  "zlib" {= "1.2.12-r3"}
 ]
 extra-source "perl-5.32.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/perl-5.32.1-r0.apk"

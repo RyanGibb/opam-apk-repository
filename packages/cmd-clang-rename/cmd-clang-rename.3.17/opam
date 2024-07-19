@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  ("clang15-extra-tools" {= "15.0.7-r0"} | "clang14" {= "14.0.6-r1"})
-]

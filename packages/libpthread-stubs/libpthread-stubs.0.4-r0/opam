@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del libpthread-stubs"]
 ]
 depends: [
-  "pkgconfig"
+  "pkgconf" {= "1.9.5-r0"}
 ]
 extra-source "libpthread-stubs-0.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/libpthread-stubs-0.4-r0.apk"

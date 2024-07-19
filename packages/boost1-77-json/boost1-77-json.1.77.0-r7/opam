@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del boost1.77-json"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
+  "libgcc" {= "11.2.1_git20220219-r2"}
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "boost1.77-json-1.77.0-r7.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/boost1.77-json-1.77.0-r7.apk"

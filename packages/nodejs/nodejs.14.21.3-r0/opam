@@ -6,19 +6,18 @@ remove: [
   ["sh" "-c" "sudo apk del nodejs"]
 ]
 depends: [
-  "-bin-sh"
+  "brotli-libs" {= "1.0.9-r5"}
+  "busybox" {= "1.33.1-r8"}
+  "c-ares" {= "1.17.2-r0"}
   "ca-certificates"
+  "libcrypto1-1" {= "1.1.1t-r2"}
+  "libgcc" {= "10.3.1_git20210424-r2"}
+  "libssl1-1" {= "1.1.1t-r2"}
+  "libstdc++" {= "10.3.1_git20210424-r2"}
+  "musl" {= "1.2.2-r5"}
+  "nghttp2-libs" {= "1.43.0-r0"}
   "nghttp2-libs" {>= "1.41"}
-  "so-libbrotlidec-so-1"
-  "so-libbrotlienc-so-1"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcares-so-2"
-  "so-libcrypto-so-1-1"
-  "so-libgcc_s-so-1"
-  "so-libnghttp2-so-14"
-  "so-libssl-so-1-1"
-  "so-libstdc++-so-6"
-  "so-libz-so-1"
+  "zlib" {= "1.2.12-r3"}
 ]
 extra-source "nodejs-14.21.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/nodejs-14.21.3-r0.apk"

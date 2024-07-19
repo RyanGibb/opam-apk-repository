@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "libimagequant-dev" {= "2.15.1-r0"}
-]

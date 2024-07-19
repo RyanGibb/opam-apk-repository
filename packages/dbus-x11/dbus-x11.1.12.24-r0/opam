@@ -7,11 +7,11 @@ remove: [
 ]
 depends: [
   "dbus" {= "1.12.24-r0"}
-  "so-libICE-so-6"
-  "so-libSM-so-6"
-  "so-libX11-so-6"
-  "so-libc-musl-x86_64-so-1"
-  "so-libdbus-1-so-3"
+  "dbus-libs" {= "1.12.24-r0"}
+  "libice" {= "1.0.10-r0"}
+  "libsm" {= "1.2.3-r0"}
+  "libx11" {= "1.7.3.1-r0"}
+  "musl" {= "1.2.2-r5"}
 ]
 extra-source "dbus-x11-1.12.24-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/dbus-x11-1.12.24-r0.apk"

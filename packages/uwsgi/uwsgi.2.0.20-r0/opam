@@ -6,16 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del uwsgi"]
 ]
 depends: [
-  "-bin-sh"
+  "busybox" {= "1.35.0-r18"}
+  "jansson" {= "2.14-r0"}
+  "libcap" {= "2.64-r1"}
+  "libcrypto1-1" {= "1.1.1w-r1"}
+  "libssl1-1" {= "1.1.1w-r1"}
+  "libxml2" {= "2.9.14-r2"}
   "mailcap"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcap-so-2"
-  "so-libcrypto-so-1-1"
-  "so-libjansson-so-4"
-  "so-libpcre-so-1"
-  "so-libssl-so-1-1"
-  "so-libxml2-so-2"
-  "so-libz-so-1"
+  "musl" {= "1.2.3-r3"}
+  "pcre" {= "8.45-r2"}
+  "zlib" {= "1.2.12-r3"}
 ]
 extra-source "uwsgi-2.0.20-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/uwsgi-2.0.20-r0.apk"

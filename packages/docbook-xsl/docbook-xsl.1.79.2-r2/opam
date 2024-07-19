@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del docbook-xsl"]
 ]
 depends: [
-  "-bin-sh"
+  "busybox" {= "1.33.1-r8"}
   "docbook-xml"
   "libxml2-utils"
   "libxslt"

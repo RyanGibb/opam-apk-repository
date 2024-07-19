@@ -6,19 +6,18 @@ remove: [
   ["sh" "-c" "sudo apk del postgresql"]
 ]
 depends: [
-  "-bin-sh"
+  "busybox" {= "1.31.1-r22"}
+  "icu-libs" {= "67.1-r0"}
+  "libcrypto1-1" {= "1.1.1o-r0"}
+  "libgcc" {= "9.3.0-r2"}
+  "libldap" {= "2.4.58-r0"}
+  "libpq" {= "12.10-r0"}
+  "libssl1-1" {= "1.1.1o-r0"}
+  "libstdc++" {= "9.3.0-r2"}
+  "libxml2" {= "2.9.14-r0"}
+  "llvm10-libs" {= "10.0.0-r2"}
+  "musl" {= "1.1.24-r10"}
   "postgresql-client"
-  "so-libLLVM-10-so"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-1-1"
-  "so-libgcc_s-so-1"
-  "so-libicui18n-so-67"
-  "so-libicuuc-so-67"
-  "so-libldap-2-4-so-2"
-  "so-libpq-so-5"
-  "so-libssl-so-1-1"
-  "so-libstdc++-so-6"
-  "so-libxml2-so-2"
   "tzdata"
 ]
 extra-source "postgresql-12.10-r0.apk" {

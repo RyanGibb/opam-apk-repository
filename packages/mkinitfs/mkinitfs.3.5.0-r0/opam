@@ -8,12 +8,12 @@ remove: [
 depends: [
   "apk-tools" {>= "2.9.1"}
   "busybox" {>= "1.28.2-r1"}
+  "cryptsetup-libs" {= "2.3.7-r0"}
   "kmod"
+  "kmod-libs" {= "29-r0"}
   "lddtree" {>= "1.25"}
-  "so-libblkid-so-1"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcryptsetup-so-12"
-  "so-libkmod-so-2"
+  "libblkid" {= "2.37.4-r0"}
+  "musl" {= "1.2.2-r5"}
 ]
 extra-source "mkinitfs-3.5.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/mkinitfs-3.5.0-r0.apk"

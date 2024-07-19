@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del llvm13-libs"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libffi-so-8"
-  "so-libgcc_s-so-1"
-  "so-libstdc++-so-6"
-  "so-libxml2-so-2"
-  "so-libz-so-1"
+  "libffi" {= "3.4.2-r1"}
+  "libgcc" {= "11.2.1_git20220219-r2"}
+  "libstdc++" {= "11.2.1_git20220219-r2"}
+  "libxml2" {= "2.9.14-r2"}
+  "musl" {= "1.2.3-r3"}
+  "zlib" {= "1.2.12-r3"}
 ]
 extra-source "llvm13-libs-13.0.1-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/llvm13-libs-13.0.1-r2.apk"

@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del py3-ldb"]
 ]
 depends: [
+  "ldb" {= "2.7.2-r1"}
+  "musl" {= "1.2.4_git20230717-r4"}
+  "python3" {= "3.11.9-r0"}
   "python3" {>= "3.11"}
-  "so-libc-musl-x86_64-so-1"
-  "so-libldb-so-2"
-  "so-libpython3-11-so-1-0"
-  "so-libtalloc-so-2"
+  "talloc" {= "2.4.2-r0"}
 ]
 extra-source "py3-ldb-2.7.2-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/py3-ldb-2.7.2-r1.apk"

@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "ngtcp2-gnutls" {= "1.5.0-r0"}
-]

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "mpg123-libs" {= "1.32.3-r0"}
-  "pkgconfig"
+  "pkgconf" {= "2.1.0-r0"}
 ]
 extra-source "mpg123-dev-1.32.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/mpg123-dev-1.32.3-r0.apk"

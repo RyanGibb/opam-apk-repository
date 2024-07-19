@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del iproute2-tc"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libelf-so-1"
-  "so-libxtables-so-12"
+  "iptables" {= "1.8.7-r1"}
+  "libelf" {= "0.185-r0"}
+  "musl" {= "1.2.2-r9"}
 ]
 extra-source "iproute2-tc-5.15.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/iproute2-tc-5.15.0-r0.apk"

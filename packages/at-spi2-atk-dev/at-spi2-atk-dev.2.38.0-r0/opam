@@ -7,13 +7,11 @@ remove: [
 ]
 depends: [
   "at-spi2-atk" {= "2.38.0-r0"}
+  "at-spi2-core-dev" {= "2.44.1-r0"}
   "atk-dev"
-  "pc-atspi-2" {>= "2.33.2"}
-  "pc-dbus-1" {>= "1.5"}
-  "pc-glib-2-0" {>= "2.32.0"}
-  "pc-gmodule-2-0" {>= "2.0.0"}
-  "pc-gobject-2-0" {>= "2.0.0"}
-  "pkgconfig"
+  "dbus-dev" {= "1.14.8-r0"}
+  "glib-dev" {= "2.72.4-r0"}
+  "pkgconf" {= "1.8.1-r0"}
 ]
 extra-source "at-spi2-atk-dev-2.38.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/at-spi2-atk-dev-2.38.0-r0.apk"

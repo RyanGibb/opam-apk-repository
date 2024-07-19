@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del opennhrp"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libcares-so-2"
+  "c-ares" {= "1.19.1-r1"}
+  "musl" {= "1.2.3-r5"}
 ]
 extra-source "opennhrp-0.14.1-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/opennhrp-0.14.1-r8.apk"

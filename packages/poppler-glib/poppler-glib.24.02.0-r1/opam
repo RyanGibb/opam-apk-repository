@@ -6,14 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del poppler-glib"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libcairo-so-2"
-  "so-libfreetype-so-6"
-  "so-libgio-2-0-so-0"
-  "so-libglib-2-0-so-0"
-  "so-libgobject-2-0-so-0"
-  "so-libpoppler-so-134"
-  "so-libstdc++-so-6"
+  "cairo" {= "1.18.0-r0"}
+  "freetype" {= "2.13.2-r0"}
+  "glib" {= "2.80.2-r0"}
+  "libstdc++" {= "13.2.1_git20240309-r0"}
+  "musl" {= "1.2.5-r0"}
+  "poppler" {= "24.02.0-r1"}
 ]
 extra-source "poppler-glib-24.02.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/poppler-glib-24.02.0-r1.apk"

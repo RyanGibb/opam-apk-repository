@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "gettext" {= "0.21.1-r7"}
-]

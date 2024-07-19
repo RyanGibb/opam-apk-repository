@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del brotli"]
 ]
 depends: [
-  "so-libbrotlidec-so-1"
-  "so-libbrotlienc-so-1"
-  "so-libc-musl-x86_64-so-1"
+  "brotli-libs" {= "1.1.0-r2"}
+  "musl" {= "1.2.5-r0"}
 ]
 extra-source "brotli-1.1.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/brotli-1.1.0-r2.apk"

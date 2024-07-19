@@ -8,12 +8,10 @@ remove: [
 depends: [
   "gcr" {= "3.41.1-r5"}
   "gcr-base" {= "3.41.1-r5"}
-  "pc-gio-2-0" {>= "2.44"}
-  "pc-glib-2-0" {>= "2.44"}
-  "pc-gobject-2-0" {>= "2.44"}
-  "pc-gtk+-3-0" {>= "3.22"}
-  "pc-p11-kit-1" {>= "0.19.0"}
-  "pkgconfig"
+  "glib-dev" {= "2.78.6-r0"}
+  "gtk+3-0-dev" {= "3.24.41-r0"}
+  "p11-kit-dev" {= "0.25.3-r0"}
+  "pkgconf" {= "2.1.0-r0"}
 ]
 extra-source "gcr-dev-3.41.1-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/gcr-dev-3.41.1-r5.apk"

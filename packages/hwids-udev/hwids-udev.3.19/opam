@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "eudev-hwids" {= "3.2.14-r1"}
-]

@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del apcupsd-webif"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libgd-so-3"
+  "libgd" {= "2.3.2-r1"}
+  "musl" {= "1.2.2-r5"}
   "util-linux"
 ]
 extra-source "apcupsd-webif-3.14.14-r1.apk" {

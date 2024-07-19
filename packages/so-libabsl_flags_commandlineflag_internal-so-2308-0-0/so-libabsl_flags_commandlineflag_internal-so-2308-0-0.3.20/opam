@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "abseil-cpp-flags-commandlineflag-internal" {= "20230802.1-r0"}
-]

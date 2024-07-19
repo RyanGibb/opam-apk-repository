@@ -6,18 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del consolekit2"]
 ]
 depends: [
+  "dbus-libs" {= "1.12.18-r0"}
   "eudev"
+  "eudev-libs" {= "3.2.9-r3"}
+  "glib" {= "2.64.6-r0"}
+  "libintl" {= "0.20.2-r0"}
+  "libx11" {= "1.6.12-r1"}
+  "musl" {= "1.1.24-r10"}
   "polkit"
-  "so-libX11-so-6"
-  "so-libc-musl-x86_64-so-1"
-  "so-libdbus-1-so-3"
-  "so-libgio-2-0-so-0"
-  "so-libglib-2-0-so-0"
-  "so-libgobject-2-0-so-0"
-  "so-libintl-so-8"
-  "so-libpolkit-gobject-1-so-0"
-  "so-libudev-so-1"
-  "so-libz-so-1"
+  "polkit" {= "0.116-r1"}
+  "zlib" {= "1.2.12-r3"}
 ]
 extra-source "consolekit2-1.2.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/consolekit2-1.2.1-r1.apk"

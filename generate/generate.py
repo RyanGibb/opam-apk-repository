@@ -77,18 +77,14 @@ def process_index(alpine_version):
             provides = line[2:].strip().split()
             packages[pkg]["provides"] = [parse_provides_entry(provide) for provide in provides]
 
-    virtual_packages = {}
-    for package in packages.keys():
-        for provide_name, provide_version in packages[package]["provides"]:
+    package_provides = {}
+    for pkg in packages.keys():
+        for provide_name, provide_version in packages[pkg]["provides"]:
             if not provide_name in packages:
-              if provide_name in virtual_packages:
-                  virtual_packages[provide_name]["dependencies"].append(package)
+              if provide_name in package_provides:
+                  package_provides[provide_name].append(pkg)
               else:
-                  virtual_packages[provide_name] = {}
-                  virtual_packages[provide_name]["dependencies"] = [package]
-              #virtual_packages[provide_name]["version"] = provide_version
-              # unique per-alpine version
-              virtual_packages[provide_name]["version"] = alpine_version[1:]
+                  package_provides[provide_name] = [pkg]
 
     for pkg in packages.keys():
         version = packages[pkg]["version"]
@@ -107,8 +103,13 @@ def process_index(alpine_version):
                 dep_name = dep.split('=')[0].split('>=')[0].split('<=')[0].split('<')[0].split('>')[0].split('~')[0]
                 if dep_name in packages:
                     package_depends.append(convert_dep_to_opam(dep))
-                elif dep_name in virtual_packages:
-                    package_depends.append(convert_dep_to_opam(dep))
+                elif dep_name in package_provides:
+                    providers = package_provides[dep_name]
+                    if len(providers) == 1:
+                        dep = providers[0]
+                        package_depends.append(convert_dep_to_opam(providers[0], version=packages[dep]["version"]))
+                    else:
+                        package_depends.append(f"({' | '.join(convert_dep_to_opam(p, version=packages[p]['version']) for p in providers)})")
                 else:
                     print(f"Couldn't find dep {dep} for package {apk_name}")
 
@@ -140,38 +141,6 @@ extra-source "{apk_name}.apk" {{
         pkg_name = sanitize_package_name(pkg)
         opam_dir = os.path.join(base_dir, pkg_name, f"{pkg_name}.{version}")
         os.makedirs(opam_dir, exist_ok=True)
-        opam_file_path = os.path.join(opam_dir, 'opam')
-        with open(opam_file_path, 'w') as opam_file:
-            opam_file.write(opam_content)
-
-    for pkg in virtual_packages.keys():
-        version = virtual_packages[pkg]["version"]
-        deps = virtual_packages[pkg]["dependencies"]
-
-        package_depends = []
-        if len(deps) == 1:
-            dep = deps[0]
-            ver = packages[dep]["version"]
-            package_depends.append(f'"{sanitize_package_name(dep)}" {{= "{ver}"}}')
-        else:
-            dep_versions = [(dep, packages[dep]["version"]) for dep in deps]
-            joined = ' | '.join(f'"{sanitize_package_name(dep)}" {{= "{ver}"}}' for dep, ver in dep_versions)
-            package_depends.append(f"({joined})")
-
-        package_depends = sorted(set(package_depends))
-        formatted_depends = '\n  '.join(package_depends) if package_depends else ''
-        opam_depends = f'depends: [\n  {formatted_depends}\n]' if formatted_depends else ''
-        opam_template = """opam-version: "2.0"
-{depends}
-"""
-        opam_content = opam_template.format(
-            depends=opam_depends,
-        )
-
-        pkg_name = sanitize_package_name(pkg)
-        opam_dir = os.path.join(base_dir, pkg_name, f"{pkg_name}.{version}")
-        os.makedirs(opam_dir, exist_ok=True)
-
         opam_file_path = os.path.join(opam_dir, 'opam')
         with open(opam_file_path, 'w') as opam_file:
             opam_file.write(opam_content)

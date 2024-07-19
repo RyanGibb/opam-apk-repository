@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del py3-tdb"]
 ]
 depends: [
+  "musl" {= "1.2.4-r2"}
   "python3" {>= "3.11"}
-  "so-libc-musl-x86_64-so-1"
-  "so-libtdb-so-1"
+  "tdb-libs" {= "1.4.8-r1"}
 ]
 extra-source "py3-tdb-1.4.8-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/py3-tdb-1.4.8-r1.apk"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del snort-dev"]
 ]
 depends: [
-  "pkgconfig"
+  "pkgconf" {= "1.8.1-r0"}
   "snort" {= "2.9.18-r0"}
 ]
 extra-source "snort-dev-2.9.18-r0.apk" {

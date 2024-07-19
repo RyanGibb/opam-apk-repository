@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del freeradius-client"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libnettle-so-8"
+  "musl" {= "1.2.5-r0"}
+  "nettle" {= "3.9.1-r0"}
 ]
 extra-source "freeradius-client-1.1.7-r7.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/freeradius-client-1.1.7-r7.apk"

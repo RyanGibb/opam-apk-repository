@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del lua5.3-sec"]
 ]
 depends: [
+  "libcrypto1-1" {= "1.1.1w-r1"}
+  "libssl1-1" {= "1.1.1w-r1"}
   "lua5-3-socket"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-1-1"
-  "so-libssl-so-1-1"
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "lua5.3-sec-1.0.2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/lua5.3-sec-1.0.2-r2.apk"

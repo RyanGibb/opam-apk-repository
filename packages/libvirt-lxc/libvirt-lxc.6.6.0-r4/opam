@@ -6,17 +6,17 @@ remove: [
   ["sh" "-c" "sudo apk del libvirt-lxc"]
 ]
 depends: [
+  "fuse" {= "2.9.9-r1"}
+  "glib" {= "2.64.6-r0"}
+  "libblkid" {= "2.37.4-r0"}
+  "libcap-ng" {= "0.7.10-r1"}
+  "libgcc" {= "9.3.0-r2"}
+  "libintl" {= "0.20.2-r0"}
+  "libtirpc" {= "1.2.6-r0"}
   "libvirt-common-drivers" {= "6.6.0-r4"}
   "libvirt-daemon" {= "6.6.0-r4"}
-  "so-libblkid-so-1"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcap-ng-so-0"
-  "so-libfuse-so-2"
-  "so-libgcc_s-so-1"
-  "so-libglib-2-0-so-0"
-  "so-libintl-so-8"
-  "so-libtirpc-so-3"
-  "so-libvirt-so-0"
+  "libvirt-libs" {= "6.6.0-r4"}
+  "musl" {= "1.1.24-r10"}
 ]
 extra-source "libvirt-lxc-6.6.0-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/libvirt-lxc-6.6.0-r4.apk"

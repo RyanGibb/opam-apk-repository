@@ -9,13 +9,13 @@ depends: [
   "apk-tools" {>= "2.9.1"}
   "busybox" {>= "1.28.2-r1"}
   "busybox-binsh"
+  "cryptsetup-libs" {= "2.6.1-r3"}
   "kmod"
+  "kmod-libs" {= "30-r3"}
   "lddtree" {>= "1.25"}
+  "libblkid" {= "2.38.1-r8"}
   "mdev-conf"
-  "so-libblkid-so-1"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcryptsetup-so-12"
-  "so-libkmod-so-2"
+  "musl" {= "1.2.4-r2"}
 ]
 extra-source "mkinitfs-3.8.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/mkinitfs-3.8.1-r0.apk"

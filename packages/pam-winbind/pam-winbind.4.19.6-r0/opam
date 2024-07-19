@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del pam-winbind"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libpam-so-0"
-  "so-libtalloc-so-2"
+  "linux-pam" {= "1.6.0-r0"}
+  "musl" {= "1.2.5-r0"}
+  "talloc" {= "2.4.2-r1"}
 ]
 extra-source "pam-winbind-4.19.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/pam-winbind-4.19.6-r0.apk"

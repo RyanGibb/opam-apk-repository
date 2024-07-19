@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del atk"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libglib-2-0-so-0"
-  "so-libgobject-2-0-so-0"
-  "so-libintl-so-8"
+  "glib" {= "2.72.4-r0"}
+  "libintl" {= "0.21-r2"}
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "atk-2.38.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/atk-2.38.0-r0.apk"

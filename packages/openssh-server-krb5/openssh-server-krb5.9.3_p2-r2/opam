@@ -6,14 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del openssh-server-krb5"]
 ]
 depends: [
+  "krb5-libs" {= "1.20.2-r0"}
+  "libcrypto3" {= "3.1.6-r0"}
+  "linux-pam" {= "1.5.2-r10"}
+  "musl" {= "1.2.4-r2"}
   "openssh-keygen" {= "9.3_p2-r2"}
   "openssh-server-common" {= "9.3_p2-r2"}
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-3"
-  "so-libgssapi_krb5-so-2"
-  "so-libkrb5-so-3"
-  "so-libpam-so-0"
-  "so-libz-so-1"
+  "zlib" {= "1.2.13-r1"}
 ]
 extra-source "openssh-server-krb5-9.3_p2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/openssh-server-krb5-9.3_p2-r2.apk"

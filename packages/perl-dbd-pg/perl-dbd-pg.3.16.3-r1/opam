@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del perl-dbd-pg"]
 ]
 depends: [
+  "libpq" {= "15.7-r0"}
+  "musl" {= "1.2.4-r2"}
   "perl"
   "perl-dbi"
-  "so-libc-musl-x86_64-so-1"
-  "so-libpq-so-5"
 ]
 extra-source "perl-dbd-pg-3.16.3-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-dbd-pg-3.16.3-r1.apk"

@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "dconf" {= "0.38.0-r0"}
-]

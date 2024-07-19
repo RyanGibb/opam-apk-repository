@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "batctl" {= "2022.3-r0"}
-]

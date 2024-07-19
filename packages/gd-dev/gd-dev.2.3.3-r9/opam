@@ -6,19 +6,19 @@ remove: [
   ["sh" "-c" "sudo apk del gd-dev"]
 ]
 depends: [
+  "fontconfig-dev" {= "2.15.0-r1"}
+  "freetype-dev" {= "2.13.2-r0"}
   "gd"
+  "libavif-dev" {= "1.0.4-r0"}
   "libgd" {= "2.3.3-r9"}
-  "pc-fontconfig"
-  "pc-freetype2" {>= "9.8.3"}
-  "pc-libavif" {>= "0.8.2"}
-  "pc-libjpeg"
-  "pc-libpng"
-  "pc-libtiff-4"
-  "pc-libwebp" {>= "0.2.0"}
-  "pc-xpm"
-  "pc-zlib"
+  "libjpeg-turbo-dev" {= "3.0.3-r0"}
+  "libpng-dev" {= "1.6.43-r0"}
+  "libwebp-dev" {= "1.3.2-r0"}
+  "libxpm-dev" {= "3.5.17-r0"}
   "perl"
-  "pkgconfig"
+  "pkgconf" {= "2.2.0-r0"}
+  "tiff-dev" {= "4.6.0t-r0"}
+  "zlib-dev" {= "1.3.1-r1"}
 ]
 extra-source "gd-dev-2.3.3-r9.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/gd-dev-2.3.3-r9.apk"

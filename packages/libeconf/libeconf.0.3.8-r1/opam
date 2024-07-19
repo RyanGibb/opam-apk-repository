@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del libeconf"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.2.2-r5"}
 ]
 extra-source "libeconf-0.3.8-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/libeconf-0.3.8-r1.apk"

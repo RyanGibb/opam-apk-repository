@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "freeradius" {= "3.0.23-r0"}
+  "musl" {= "1.2.2-r5"}
   "perl"
-  "so-libc-musl-x86_64-so-1"
-  "so-libperl-so"
+  "perl" {= "5.32.1-r0"}
 ]
 extra-source "freeradius-perl-3.0.23-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/freeradius-perl-3.0.23-r0.apk"

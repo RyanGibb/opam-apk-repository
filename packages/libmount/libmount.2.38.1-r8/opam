@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del libmount"]
 ]
 depends: [
-  "so-libblkid-so-1"
-  "so-libc-musl-x86_64-so-1"
+  "libblkid" {= "2.38.1-r8"}
+  "musl" {= "1.2.4-r2"}
 ]
 extra-source "libmount-2.38.1-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/libmount-2.38.1-r8.apk"

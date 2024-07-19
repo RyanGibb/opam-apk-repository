@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del rsyslog-zmq"]
 ]
 depends: [
+  "czmq" {= "4.2.1-r4"}
+  "musl" {= "1.2.4_git20230717-r4"}
   "rsyslog" {= "8.2310.0-r0"}
-  "so-libc-musl-x86_64-so-1"
-  "so-libczmq-so-4"
 ]
 extra-source "rsyslog-zmq-8.2310.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/rsyslog-zmq-8.2310.0-r0.apk"

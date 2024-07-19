@@ -6,28 +6,19 @@ remove: [
   ["sh" "-c" "sudo apk del graphviz"]
 ]
 depends: [
-  "-bin-sh"
-  "so-libX11-so-6"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcairo-so-2"
-  "so-libcdt-so-5"
-  "so-libcgraph-so-6"
-  "so-libexpat-so-1"
-  "so-libgcc_s-so-1"
-  "so-libgd-so-3"
-  "so-libglib-2-0-so-0"
-  "so-libgobject-2-0-so-0"
-  "so-libgvc-so-6"
-  "so-libgvpr-so-2"
-  "so-liblab_gamut-so-1"
-  "so-libpango-1-0-so-0"
-  "so-libpangocairo-1-0-so-0"
-  "so-libpangoft2-1-0-so-0"
-  "so-libpathplan-so-4"
-  "so-libstdc++-so-6"
-  "so-libwebp-so-7"
-  "so-libxdot-so-4"
-  "so-libz-so-1"
+  "cairo" {= "1.18.0-r0"}
+  "glib" {= "2.80.2-r0"}
+  "graphviz-libs" {= "9.0.0-r1"}
+  "libexpat" {= "2.6.2-r0"}
+  "libgcc" {= "13.2.1_git20240309-r0"}
+  "libgd" {= "2.3.3-r9"}
+  "libstdc++" {= "13.2.1_git20240309-r0"}
+  "libwebp" {= "1.3.2-r0"}
+  "libx11" {= "1.8.9-r1"}
+  "musl" {= "1.2.5-r0"}
+  "pango" {= "1.52.2-r0"}
+  "zlib" {= "1.3.1-r1"}
+  ("busybox-binsh" {= "1.36.1-r29"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.56.1-r1"})
 ]
 extra-source "graphviz-9.0.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/graphviz-9.0.0-r1.apk"

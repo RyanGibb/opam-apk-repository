@@ -7,10 +7,10 @@ remove: [
 ]
 depends: [
   "kamailio"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcurl-so-4"
-  "so-libsrdb1-so-1"
-  "so-libxml2-so-2"
+  "kamailio" {= "5.7.2-r2"}
+  "libcurl" {= "8.5.0-r0"}
+  "libxml2" {= "2.11.8-r0"}
+  "musl" {= "1.2.4_git20230717-r4"}
 ]
 extra-source "kamailio-presence-5.7.2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/kamailio-presence-5.7.2-r2.apk"

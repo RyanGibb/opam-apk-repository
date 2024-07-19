@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del spandsp-dev"]
 ]
 depends: [
-  "pkgconfig"
+  "pkgconf" {= "1.9.4-r0"}
   "spandsp" {= "0.0.6-r2"}
 ]
 extra-source "spandsp-dev-0.0.6-r2.apk" {

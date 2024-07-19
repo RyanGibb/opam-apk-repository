@@ -6,7 +6,6 @@ remove: [
   ["sh" "-c" "sudo apk del awall"]
 ]
 depends: [
-  "-bin-sh"
   "drill"
   "ip6tables"
   "ipset"
@@ -20,6 +19,7 @@ depends: [
   "lua5-4-posix"
   "lua5-4-stringy"
   "xtables-addons"
+  ("busybox-binsh" {= "1.36.1-r7"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.54-r3"})
 ]
 extra-source "awall-1.12.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/awall-1.12.2-r0.apk"

@@ -6,11 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del pcre-tools"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libpcre-so-1"
-  "so-libpcre16-so-0"
-  "so-libpcre32-so-0"
-  "so-libpcreposix-so-0"
+  "libpcre16" {= "8.44-r0"}
+  "libpcre32" {= "8.44-r0"}
+  "musl" {= "1.2.2-r5"}
+  "pcre" {= "8.44-r0"}
 ]
 extra-source "pcre-tools-8.44-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/pcre-tools-8.44-r0.apk"

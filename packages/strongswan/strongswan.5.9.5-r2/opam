@@ -6,14 +6,14 @@ remove: [
   ["sh" "-c" "sudo apk del strongswan"]
 ]
 depends: [
-  "-bin-sh"
+  "busybox" {= "1.35.0-r18"}
+  "gmp" {= "6.2.1-r2"}
   "iproute2"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcap-so-2"
-  "so-libcrypto-so-1-1"
-  "so-libcurl-so-4"
-  "so-libgmp-so-10"
-  "so-libsqlite3-so-0"
+  "libcap" {= "2.64-r1"}
+  "libcrypto1-1" {= "1.1.1w-r1"}
+  "libcurl" {= "8.5.0-r0"}
+  "musl" {= "1.2.3-r3"}
+  "sqlite-libs" {= "3.40.1-r1"}
 ]
 extra-source "strongswan-5.9.5-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/strongswan-5.9.5-r2.apk"

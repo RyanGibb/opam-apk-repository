@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del lua5.1-cqueues"]
 ]
 depends: [
+  "libcrypto3" {= "3.3.1-r3"}
+  "libssl3" {= "3.3.1-r3"}
   "lua5-1"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-3"
-  "so-libssl-so-3"
+  "musl" {= "1.2.5-r0"}
 ]
 extra-source "lua5.1-cqueues-20200726-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lua5.1-cqueues-20200726-r5.apk"

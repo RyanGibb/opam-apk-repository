@@ -6,16 +6,15 @@ remove: [
   ["sh" "-c" "sudo apk del rdesktop"]
 ]
 depends: [
-  "so-libX11-so-6"
-  "so-libXcursor-so-1"
-  "so-libXrandr-so-2"
-  "so-libc-musl-x86_64-so-1"
-  "so-libgmp-so-10"
-  "so-libgnutls-so-30"
-  "so-libhogweed-so-5"
-  "so-libnettle-so-7"
-  "so-libsamplerate-so-0"
-  "so-libtasn1-so-6"
+  "gmp" {= "6.2.1-r1"}
+  "gnutls" {= "3.6.15-r1"}
+  "libsamplerate" {= "0.1.9-r1"}
+  "libtasn1" {= "4.16.0-r1"}
+  "libx11" {= "1.6.12-r1"}
+  "libxcursor" {= "1.2.0-r0"}
+  "libxrandr" {= "1.5.2-r0"}
+  "musl" {= "1.1.24-r10"}
+  "nettle" {= "3.5.1-r2"}
 ]
 extra-source "rdesktop-1.9.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/rdesktop-1.9.0-r0.apk"

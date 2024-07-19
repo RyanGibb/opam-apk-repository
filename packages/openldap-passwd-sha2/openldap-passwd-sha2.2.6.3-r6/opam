@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del openldap-passwd-sha2"]
 ]
 depends: [
+  "libldap" {= "2.6.3-r6"}
+  "musl" {= "1.2.3-r5"}
   "openldap"
-  "so-libc-musl-x86_64-so-1"
-  "so-liblber-so-2"
 ]
 extra-source "openldap-passwd-sha2-2.6.3-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/openldap-passwd-sha2-2.6.3-r6.apk"

@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del protobuf-c-compiler"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
-  "so-libprotobuf-so-32"
-  "so-libprotoc-so-32"
-  "so-libstdc++-so-6"
+  "libgcc" {= "12.2.1_git20220924-r4"}
+  "libprotobuf" {= "3.21.9-r0"}
+  "libprotoc" {= "3.21.9-r0"}
+  "libstdc++" {= "12.2.1_git20220924-r4"}
+  "musl" {= "1.2.3-r5"}
 ]
 extra-source "protobuf-c-compiler-1.4.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/protobuf-c-compiler-1.4.1-r1.apk"

@@ -6,76 +6,23 @@ remove: [
   ["sh" "-c" "sudo apk del samba-dc-libs"]
 ]
 depends: [
+  "gnutls" {= "3.8.4-r0"}
+  "ldb" {= "2.7.2-r1"}
+  "libwbclient" {= "4.18.9-r0"}
+  "musl" {= "1.2.4_git20230717-r4"}
+  "popt" {= "1.19-r3"}
   "samba-client" {= "4.18.9-r0"}
+  "samba-client-libs" {= "4.18.9-r0"}
+  "samba-common-server-libs" {= "4.18.9-r0"}
   "samba-common-tools" {= "4.18.9-r0"}
+  "samba-libs" {= "4.18.9-r0"}
+  "samba-libs-py3" {= "4.18.9-r0"}
   "samba-server" {= "4.18.9-r0"}
-  "so-libMESSAGING-SEND-samba4-so"
-  "so-libMESSAGING-samba4-so"
-  "so-libasn1-samba4-so"
-  "so-libasn1util-samba4-so"
-  "so-libauthkrb5-samba4-so"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcli-cldap-samba4-so"
-  "so-libcli-ldap-common-samba4-so"
-  "so-libcli-ldap-samba4-so"
-  "so-libcli-nbt-samba4-so"
-  "so-libcliauth-samba4-so"
-  "so-libclidns-samba4-so"
-  "so-libcluster-samba4-so"
-  "so-libcom-err-samba4-so"
-  "so-libcommon-auth-samba4-so"
-  "so-libdbwrap-samba4-so"
-  "so-libdcerpc-binding-so-0"
-  "so-libdcerpc-samba-samba4-so"
-  "so-libdcerpc-samba4-so"
-  "so-libdcerpc-server-core-so-0"
-  "so-libdcerpc-so-0"
-  "so-libdsdb-garbage-collect-tombstones-samba4-so"
-  "so-libevents-samba4-so"
-  "so-libflag-mapping-samba4-so"
-  "so-libgenrand-samba4-so"
-  "so-libgensec-samba4-so"
-  "so-libgnutls-so-30"
-  "so-libgssapi-samba4-so"
-  "so-libhcrypto-samba4-so"
-  "so-libheimbase-samba4-so"
-  "so-libhx509-samba4-so"
-  "so-libkrb5-samba4-so"
-  "so-libkrb5samba-samba4-so"
-  "so-libldb-so-2"
-  "so-libldbsamba-samba4-so"
-  "so-libmessages-dgm-samba4-so"
-  "so-libndr-krb5pac-so-0"
-  "so-libndr-nbt-so-0"
-  "so-libndr-samba-samba4-so"
-  "so-libndr-samba4-so"
-  "so-libndr-so-3"
-  "so-libndr-standard-so-0"
-  "so-libnetif-samba4-so"
-  "so-libnpa-tstream-samba4-so"
-  "so-libpopt-so-0"
-  "so-libreplace-samba4-so"
-  "so-libroken-samba4-so"
-  "so-libsamba-credentials-so-1"
-  "so-libsamba-debug-samba4-so"
-  "so-libsamba-errors-so-1"
-  "so-libsamba-hostconfig-so-0"
-  "so-libsamba-modules-samba4-so"
-  "so-libsamba-net-cpython-311-x86-64-linux-musl-samba4-so"
-  "so-libsamba-security-samba4-so"
-  "so-libsamba-sockets-samba4-so"
-  "so-libsamba-util-so-0"
-  "so-libsamdb-common-samba4-so"
-  "so-libsamdb-so-0"
-  "so-libsmb-transport-samba4-so"
-  "so-libsmbclient-raw-samba4-so"
-  "so-libsocket-blocking-samba4-so"
-  "so-libtalloc-so-2"
-  "so-libtdb-so-1"
-  "so-libtevent-so-0"
-  "so-libtevent-util-so-0"
-  "so-libtime-basic-samba4-so"
-  "so-libwbclient-so-0"
+  "samba-server-libs" {= "4.18.9-r0"}
+  "samba-util-libs" {= "4.18.9-r0"}
+  "talloc" {= "2.4.2-r0"}
+  "tdb-libs" {= "1.4.9-r0"}
+  "tevent" {= "0.15.0-r0"}
 ]
 extra-source "samba-dc-libs-4.18.9-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/samba-dc-libs-4.18.9-r0.apk"

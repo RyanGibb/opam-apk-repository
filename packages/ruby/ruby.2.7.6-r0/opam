@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del ruby"]
 ]
 depends: [
-  "-bin-sh"
+  "busybox" {= "1.32.1-r9"}
   "ca-certificates"
-  "so-libc-musl-x86_64-so-1"
-  "so-libruby-so-2-7"
+  "musl" {= "1.2.2-r2"}
+  "ruby-libs" {= "2.7.6-r0"}
 ]
 extra-source "ruby-2.7.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/ruby-2.7.6-r0.apk"

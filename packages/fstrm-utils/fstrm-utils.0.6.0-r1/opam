@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del fstrm-utils"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libevent-2-1-so-7"
-  "so-libfstrm-so-0"
+  "fstrm" {= "0.6.0-r1"}
+  "libevent" {= "2.1.12-r1"}
+  "musl" {= "1.2.2-r2"}
 ]
 extra-source "fstrm-utils-0.6.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/fstrm-utils-0.6.0-r1.apk"

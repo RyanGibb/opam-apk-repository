@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del sqlite-dev"]
 ]
 depends: [
-  "pkgconfig"
+  "pkgconf" {= "1.8.1-r0"}
   "sqlite-libs" {= "3.36.0-r0"}
 ]
 extra-source "sqlite-dev-3.36.0-r0.apk" {

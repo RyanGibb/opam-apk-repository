@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del dnscache"]
 ]
 depends: [
-  "-bin-sh"
+  "busybox" {= "1.35.0-r18"}
   "djbdns-common"
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "dnscache-1.05-r47.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/dnscache-1.05-r47.apk"

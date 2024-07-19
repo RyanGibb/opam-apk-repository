@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del uwsgi-pam"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libpam-so-0"
+  "linux-pam" {= "1.6.0-r0"}
+  "musl" {= "1.2.5-r0"}
   "uwsgi"
 ]
 extra-source "uwsgi-pam-2.0.25.1-r1.apk" {

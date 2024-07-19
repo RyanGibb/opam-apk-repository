@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "lua5-1-dev" {= "5.1.5-r11"}
-]

@@ -10,7 +10,7 @@ depends: [
   "botan-libs" {= "2.11.0-r6"}
   "bzip2-dev"
   "openssl-dev"
-  "pkgconfig"
+  "pkgconf" {= "1.7.3-r0"}
   "sqlite-dev"
   "xz-dev"
   "zlib-dev"

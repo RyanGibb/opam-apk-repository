@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del rdnssd"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "rdnssd-1.0.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/rdnssd-1.0.5-r0.apk"

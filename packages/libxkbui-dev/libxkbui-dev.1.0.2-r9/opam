@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del libxkbui-dev"]
 ]
 depends: [
+  "libx11-dev" {= "1.6.12-r1"}
   "libxkbui" {= "1.0.2-r9"}
-  "pc-kbproto"
-  "pc-x11"
-  "pc-xt"
-  "pkgconfig"
+  "libxt-dev" {= "1.2.0-r0"}
+  "pkgconf" {= "1.7.2-r0"}
   "xorgproto"
+  "xorgproto" {= "2020.1-r0"}
 ]
 extra-source "libxkbui-dev-1.0.2-r9.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/libxkbui-dev-1.0.2-r9.apk"

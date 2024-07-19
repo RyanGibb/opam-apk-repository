@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del protobuf-c-dev"]
 ]
 depends: [
-  "pkgconfig"
+  "pkgconf" {= "2.1.0-r0"}
   "protobuf-c" {= "1.4.1-r7"}
   "protobuf-c-compiler" {= "1.4.1-r7"}
 ]

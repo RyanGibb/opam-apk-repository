@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del graphviz-libs"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libexpat-so-1"
-  "so-libz-so-1"
+  "libexpat" {= "2.6.2-r0"}
+  "musl" {= "1.2.4-r2"}
+  "zlib" {= "1.2.13-r1"}
 ]
 extra-source "graphviz-libs-8.0.5-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/graphviz-libs-8.0.5-r1.apk"

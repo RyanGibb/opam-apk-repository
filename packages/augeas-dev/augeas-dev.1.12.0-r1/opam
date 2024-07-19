@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "augeas-libs" {= "1.12.0-r1"}
-  "pc-libxml-2-0"
-  "pkgconfig"
+  "libxml2-dev" {= "2.10.4-r0"}
+  "pkgconf" {= "1.9.4-r0"}
 ]
 extra-source "augeas-dev-1.12.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/augeas-dev-1.12.0-r1.apk"

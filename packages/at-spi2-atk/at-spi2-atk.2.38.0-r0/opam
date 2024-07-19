@@ -6,13 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del at-spi2-atk"]
 ]
 depends: [
-  "so-libatk-1-0-so-0"
-  "so-libatspi-so-0"
-  "so-libc-musl-x86_64-so-1"
-  "so-libdbus-1-so-3"
-  "so-libglib-2-0-so-0"
-  "so-libgmodule-2-0-so-0"
-  "so-libgobject-2-0-so-0"
+  "at-spi2-core" {= "2.44.1-r0"}
+  "atk" {= "2.38.0-r0"}
+  "dbus-libs" {= "1.14.8-r0"}
+  "glib" {= "2.72.4-r0"}
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "at-spi2-atk-2.38.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/at-spi2-atk-2.38.0-r0.apk"

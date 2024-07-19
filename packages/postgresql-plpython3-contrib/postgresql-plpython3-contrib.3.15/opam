@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  ("postgresql13-plpython3-contrib" {= "13.13-r0"} | "postgresql14-plpython3-contrib" {= "14.10-r0"})
-]

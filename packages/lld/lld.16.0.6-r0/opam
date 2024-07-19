@@ -6,17 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del lld"]
 ]
 depends: [
+  "libgcc" {= "12.2.1_git20220924-r10"}
+  "libstdc++" {= "12.2.1_git20220924-r10"}
+  "lld-libs" {= "16.0.6-r0"}
+  "llvm16-libs" {= "16.0.6-r1"}
+  "musl" {= "1.2.4-r2"}
   "scudo-malloc"
-  "so-libLLVM-16-so"
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
-  "so-liblldCOFF-so-16"
-  "so-liblldCommon-so-16"
-  "so-liblldELF-so-16"
-  "so-liblldMachO-so-16"
-  "so-liblldMinGW-so-16"
-  "so-liblldWasm-so-16"
-  "so-libstdc++-so-6"
 ]
 extra-source "lld-16.0.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/lld-16.0.6-r0.apk"

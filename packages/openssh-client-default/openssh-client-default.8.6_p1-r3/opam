@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del openssh-client-default"]
 ]
 depends: [
+  "libcrypto1-1" {= "1.1.1t-r2"}
+  "musl" {= "1.2.2-r5"}
   "openssh-client-common" {= "8.6_p1-r3"}
   "openssh-keygen" {= "8.6_p1-r3"}
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-1-1"
-  "so-libz-so-1"
+  "zlib" {= "1.2.12-r3"}
 ]
 conflicts: [
   "openssh-client-krb5"

@@ -7,10 +7,9 @@ remove: [
 ]
 depends: [
   "git"
-  "so-libc-musl-x86_64-so-1"
-  "so-libncursesw-so-6"
-  "so-libpcre2-8-so-0"
-  "so-libpcre2-posix-so-3"
+  "libncursesw" {= "6.4_p20240420-r0"}
+  "musl" {= "1.2.5-r0"}
+  "pcre2" {= "10.43-r0"}
 ]
 extra-source "tig-2.5.10-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/tig-2.5.10-r0.apk"

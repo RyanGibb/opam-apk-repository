@@ -6,13 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del gnupg-utils"]
 ]
 depends: [
-  "so-libassuan-so-0"
-  "so-libbz2-so-1"
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcrypt-so-20"
-  "so-libgpg-error-so-0"
-  "so-libksba-so-8"
-  "so-libz-so-1"
+  "libassuan" {= "2.5.7-r0"}
+  "libbz2" {= "1.0.8-r6"}
+  "libgcrypt" {= "1.10.3-r0"}
+  "libgpg-error" {= "1.49-r0"}
+  "libksba" {= "1.6.6-r0"}
+  "musl" {= "1.2.5-r0"}
+  "zlib" {= "1.3.1-r1"}
 ]
 extra-source "gnupg-utils-2.4.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/gnupg-utils-2.4.5-r0.apk"

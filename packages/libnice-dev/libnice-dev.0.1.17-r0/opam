@@ -6,11 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del libnice-dev"]
 ]
 depends: [
+  "glib-dev" {= "2.64.6-r0"}
+  "gnutls-dev" {= "3.6.15-r1"}
   "libnice" {= "0.1.17-r0"}
-  "pc-gio-2-0" {>= "2.54"}
-  "pc-gnutls" {>= "2.12.0"}
-  "pc-gthread-2-0"
-  "pkgconfig"
+  "pkgconf" {= "1.7.2-r0"}
 ]
 extra-source "libnice-dev-0.1.17-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/libnice-dev-0.1.17-r0.apk"

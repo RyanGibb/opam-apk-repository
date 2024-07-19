@@ -6,17 +6,17 @@ remove: [
   ["sh" "-c" "sudo apk del pjproject"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-3"
-  "so-libgcc_s-so-1"
-  "so-libgsm-so-1"
-  "so-libportaudio-so-2"
-  "so-libsamplerate-so-0"
-  "so-libspeex-so-1"
-  "so-libspeexdsp-so-1"
-  "so-libsrtp2-so-1"
-  "so-libssl-so-3"
-  "so-libstdc++-so-6"
+  "gsm" {= "1.0.22-r3"}
+  "libcrypto3" {= "3.1.6-r2"}
+  "libgcc" {= "13.2.1_git20231014-r0"}
+  "libsamplerate" {= "0.2.2-r3"}
+  "libsrtp" {= "2.5.0-r1"}
+  "libssl3" {= "3.1.6-r2"}
+  "libstdc++" {= "13.2.1_git20231014-r0"}
+  "musl" {= "1.2.4_git20230717-r4"}
+  "portaudio" {= "19.7.0-r2"}
+  "speex" {= "1.2.1-r2"}
+  "speexdsp" {= "1.2.1-r2"}
 ]
 extra-source "pjproject-2.14-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/pjproject-2.14-r0.apk"

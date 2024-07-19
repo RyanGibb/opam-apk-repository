@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "hdparm" {= "9.60-r0"}
-]

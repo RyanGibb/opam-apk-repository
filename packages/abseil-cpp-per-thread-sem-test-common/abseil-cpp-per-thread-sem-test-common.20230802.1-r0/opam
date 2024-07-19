@@ -6,15 +6,15 @@ remove: [
   ["sh" "-c" "sudo apk del abseil-cpp-per-thread-sem-test-common"]
 ]
 depends: [
-  "so-libabsl_base-so-2308-0-0"
-  "so-libabsl_kernel_timeout_internal-so-2308-0-0"
-  "so-libabsl_strings-so-2308-0-0"
-  "so-libabsl_synchronization-so-2308-0-0"
-  "so-libabsl_time-so-2308-0-0"
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
-  "so-libgtest-so-1-14-0"
-  "so-libstdc++-so-6"
+  "abseil-cpp-base" {= "20230802.1-r0"}
+  "abseil-cpp-kernel-timeout-internal" {= "20230802.1-r0"}
+  "abseil-cpp-strings" {= "20230802.1-r0"}
+  "abseil-cpp-synchronization" {= "20230802.1-r0"}
+  "abseil-cpp-time" {= "20230802.1-r0"}
+  "gtest" {= "1.14.0-r2"}
+  "libgcc" {= "13.2.1_git20240309-r0"}
+  "libstdc++" {= "13.2.1_git20240309-r0"}
+  "musl" {= "1.2.5-r0"}
 ]
 extra-source "abseil-cpp-per-thread-sem-test-common-20230802.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/abseil-cpp-per-thread-sem-test-common-20230802.1-r0.apk"

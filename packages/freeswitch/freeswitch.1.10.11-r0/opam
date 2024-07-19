@@ -6,34 +6,34 @@ remove: [
   ["sh" "-c" "sudo apk del freeswitch"]
 ]
 depends: [
-  "-bin-sh"
+  "lame-libs" {= "3.100-r5"}
+  "ldns" {= "1.8.3-r2"}
+  "libcrypto3" {= "3.3.1-r3"}
+  "libcurl" {= "8.8.0-r0"}
+  "libedit" {= "20240517.3.1-r0"}
+  "libgcc" {= "13.2.1_git20240309-r0"}
+  "libks" {= "1.8.2-r1"}
+  "libncursesw" {= "6.4_p20240420-r0"}
+  "libpq" {= "16.3-r0"}
+  "libshout" {= "2.4.6-r3"}
+  "libsndfile" {= "1.2.2-r0"}
+  "libssl3" {= "3.3.1-r3"}
+  "libstdc++" {= "13.2.1_git20240309-r0"}
+  "libuuid" {= "2.40.1-r1"}
+  "lua5-3-libs" {= "5.3.6-r6"}
+  "mpg123-libs" {= "1.32.6-r0"}
+  "musl" {= "1.2.5-r0"}
+  "opus" {= "1.5.2-r0"}
+  "pcre" {= "8.45-r3"}
+  "portaudio" {= "19.7.0-r2"}
   "python3" {>= "3.12"}
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-3"
-  "so-libcurl-so-4"
-  "so-libedit-so-0"
-  "so-libgcc_s-so-1"
-  "so-libks-so-1"
-  "so-libldns-so-3"
-  "so-liblua-5-3-so-0"
-  "so-libmp3lame-so-0"
-  "so-libmpg123-so-0"
-  "so-libncursesw-so-6"
-  "so-libodbc-so-2"
-  "so-libopus-so-0"
-  "so-libpcre-so-1"
-  "so-libportaudio-so-2"
-  "so-libpq-so-5"
-  "so-libshout-so-3"
-  "so-libsndfile-so-1"
-  "so-libsofia-sip-ua-so-0"
-  "so-libspandsp-so-3"
-  "so-libspeex-so-1"
-  "so-libspeexdsp-so-1"
-  "so-libsqlite3-so-0"
-  "so-libssl-so-3"
-  "so-libstdc++-so-6"
-  "so-libuuid-so-1"
+  "sofia-sip" {= "1.13.17-r0"}
+  "spandsp3" {= "0_git20201102-r3"}
+  "speex" {= "1.2.1-r2"}
+  "speexdsp" {= "1.2.1-r2"}
+  "sqlite-libs" {= "3.45.3-r1"}
+  "unixodbc" {= "2.3.12-r0"}
+  ("busybox-binsh" {= "1.36.1-r29"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.56.1-r1"})
 ]
 extra-source "freeswitch-1.10.11-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/freeswitch-1.10.11-r0.apk"

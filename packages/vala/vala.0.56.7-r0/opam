@@ -6,18 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del vala"]
 ]
 depends: [
+  "glib" {= "2.76.6-r0"}
   "glib-dev"
-  "pc-glib-2-0"
-  "pc-gmodule-2-0"
-  "pc-gobject-2-0"
-  "pc-libgvc"
-  "pkgconfig"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcgraph-so-6"
-  "so-libglib-2-0-so-0"
-  "so-libgmodule-2-0-so-0"
-  "so-libgobject-2-0-so-0"
-  "so-libgvc-so-6"
+  "glib-dev" {= "2.76.6-r0"}
+  "graphviz-dev" {= "8.0.5-r1"}
+  "graphviz-libs" {= "8.0.5-r1"}
+  "musl" {= "1.2.4-r2"}
+  "pkgconf" {= "1.9.5-r0"}
 ]
 extra-source "vala-0.56.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/vala-0.56.7-r0.apk"

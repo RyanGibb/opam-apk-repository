@@ -6,16 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del nmap"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-1-1"
-  "so-libgcc_s-so-1"
-  "so-liblua-5-3-so-0"
-  "so-libpcap-so-1"
-  "so-libpcre-so-1"
-  "so-libssh2-so-1"
-  "so-libssl-so-1-1"
-  "so-libstdc++-so-6"
-  "so-libz-so-1"
+  "libcrypto1-1" {= "1.1.1t-r2"}
+  "libgcc" {= "10.3.1_git20210424-r2"}
+  "libpcap" {= "1.10.0-r0"}
+  "libssh2" {= "1.9.0-r1"}
+  "libssl1-1" {= "1.1.1t-r2"}
+  "libstdc++" {= "10.3.1_git20210424-r2"}
+  "lua5-3-libs" {= "5.3.6-r0"}
+  "musl" {= "1.2.2-r5"}
+  "pcre" {= "8.44-r0"}
+  "zlib" {= "1.2.12-r3"}
 ]
 extra-source "nmap-7.91-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/nmap-7.91-r0.apk"

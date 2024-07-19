@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del squashfs-tools"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-liblz4-so-1"
-  "so-liblzma-so-5"
-  "so-liblzo2-so-2"
-  "so-libz-so-1"
-  "so-libzstd-so-1"
+  "lz4-libs" {= "1.9.3-r1"}
+  "lzo" {= "2.10-r3"}
+  "musl" {= "1.2.3-r3"}
+  "xz-libs" {= "5.2.5-r1"}
+  "zlib" {= "1.2.12-r3"}
+  "zstd-libs" {= "1.5.2-r1"}
 ]
 extra-source "squashfs-tools-4.5.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/squashfs-tools-4.5.1-r0.apk"

@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "libvirt-client" {= "6.6.0-r4"}
-]

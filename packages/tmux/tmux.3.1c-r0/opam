@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del tmux"]
 ]
 depends: [
+  "libevent" {= "2.1.12-r1"}
+  "musl" {= "1.2.2-r2"}
+  "ncurses-libs" {= "6.2_p20210109-r1"}
   "ncurses-terminfo-base"
-  "so-libc-musl-x86_64-so-1"
-  "so-libevent-2-1-so-7"
-  "so-libncursesw-so-6"
 ]
 extra-source "tmux-3.1c-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/tmux-3.1c-r0.apk"

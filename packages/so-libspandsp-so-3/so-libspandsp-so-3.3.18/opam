@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "spandsp3" {= "0_git20201102-r3"}
-]

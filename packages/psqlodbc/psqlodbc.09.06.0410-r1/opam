@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del psqlodbc"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libodbcinst-so-2"
-  "so-libpq-so-5"
+  "libpq" {= "13.12-r0"}
+  "musl" {= "1.2.2-r2"}
+  "unixodbc" {= "2.3.9-r1"}
 ]
 extra-source "psqlodbc-09.06.0410-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/psqlodbc-09.06.0410-r1.apk"

@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del boost1.76-log"]
 ]
 depends: [
-  "so-libboost_filesystem-so-1-76-0"
-  "so-libboost_thread-so-1-76-0"
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
+  "boost1-76-filesystem" {= "1.76.0-r0"}
+  "boost1-76-thread" {= "1.76.0-r0"}
+  "libgcc" {= "10.3.1_git20210424-r2"}
+  "musl" {= "1.2.2-r5"}
 ]
 extra-source "boost1.76-log-1.76.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/boost1.76-log-1.76.0-r0.apk"

@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "py3-django-sorl-thumbnail" {= "12.5.0-r1"}
-]

@@ -6,11 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del nss-pam-ldapd"]
 ]
 depends: [
-  "-bin-sh"
-  "so-libc-musl-x86_64-so-1"
-  "so-liblber-2-4-so-2"
-  "so-libldap_r-2-4-so-2"
-  "so-libpam-so-0"
+  "busybox" {= "1.33.1-r8"}
+  "libldap" {= "2.4.58-r0"}
+  "linux-pam" {= "1.5.1-r1"}
+  "musl" {= "1.2.2-r5"}
 ]
 extra-source "nss-pam-ldapd-0.9.11-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/nss-pam-ldapd-0.9.11-r1.apk"

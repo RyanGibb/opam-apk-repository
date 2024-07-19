@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del dkimproxy"]
 ]
 depends: [
-  "-bin-sh"
   "perl-error"
   "perl-mail-dkim"
   "perl-net-server"
+  ("yash-binsh" {= "2.53-r2"} | "busybox-binsh" {= "1.35.0-r31"} | "dash-binsh" {= "0.5.11.5-r2"})
 ]
 extra-source "dkimproxy-1.4.1-r7.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dkimproxy-1.4.1-r7.apk"

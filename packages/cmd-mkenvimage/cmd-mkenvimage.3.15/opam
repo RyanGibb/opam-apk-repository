@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "u-boot-tools" {= "2021.10-r5"}
-]

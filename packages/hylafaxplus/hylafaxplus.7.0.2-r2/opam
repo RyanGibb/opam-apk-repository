@@ -8,15 +8,15 @@ remove: [
 depends: [
   "bash"
   "ghostscript"
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
-  "so-liblcms2-so-2"
-  "so-libldap-2-4-so-2"
-  "so-libssl-so-1-1"
-  "so-libstdc++-so-6"
-  "so-libtiff-so-5"
-  "so-libz-so-1"
+  "lcms2" {= "2.9-r1"}
+  "libgcc" {= "9.3.0-r2"}
+  "libldap" {= "2.4.58-r0"}
+  "libssl1-1" {= "1.1.1o-r0"}
+  "libstdc++" {= "9.3.0-r2"}
+  "musl" {= "1.1.24-r10"}
+  "tiff" {= "4.1.0-r0"}
   "tiff-tools"
+  "zlib" {= "1.2.12-r3"}
 ]
 conflicts: [
   "hylafax"

@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "xfsprogs" {= "6.8.0-r0"}
-]

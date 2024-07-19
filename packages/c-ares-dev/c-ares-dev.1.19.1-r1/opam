@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "c-ares" {= "1.19.1-r1"}
-  "pkgconfig"
+  "pkgconf" {= "1.9.5-r0"}
 ]
 extra-source "c-ares-dev-1.19.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/c-ares-dev-1.19.1-r1.apk"

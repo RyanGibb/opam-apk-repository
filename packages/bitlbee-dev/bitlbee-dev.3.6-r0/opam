@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del bitlbee-dev"]
 ]
 depends: [
-  "pc-glib-2-0"
-  "pkgconfig"
+  "glib-dev" {= "2.66.8-r0"}
+  "pkgconf" {= "1.7.3-r0"}
 ]
 extra-source "bitlbee-dev-3.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/bitlbee-dev-3.6-r0.apk"

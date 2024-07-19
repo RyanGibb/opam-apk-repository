@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del rng-tools"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-1-1"
-  "so-libjitterentropy-so-3"
+  "jitterentropy-library" {= "3.0.1-r0"}
+  "libcrypto1-1" {= "1.1.1t-r2"}
+  "musl" {= "1.2.2-r5"}
 ]
 extra-source "rng-tools-6.12-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/rng-tools-6.12-r0.apk"

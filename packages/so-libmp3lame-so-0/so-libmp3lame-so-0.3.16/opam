@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "lame" {= "3.100-r0"}
-]

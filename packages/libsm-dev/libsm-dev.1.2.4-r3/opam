@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del libsm-dev"]
 ]
 depends: [
+  "libice-dev" {= "1.1.1-r5"}
   "libsm" {= "1.2.4-r3"}
-  "pc-ice"
-  "pc-uuid"
-  "pc-xproto"
-  "pkgconfig"
+  "pkgconf" {= "2.1.0-r0"}
+  "util-linux-dev" {= "2.39.3-r0"}
+  "xorgproto" {= "2023.2-r0"}
 ]
 extra-source "libsm-dev-1.2.4-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/libsm-dev-1.2.4-r3.apk"

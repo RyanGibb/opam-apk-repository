@@ -7,17 +7,17 @@ remove: [
 ]
 depends: [
   "binutils"
+  "gmp" {= "6.2.1-r1"}
+  "isl22" {= "0.22-r0"}
   "libatomic" {= "10.3.1_git20211027-r0"}
+  "libgcc" {= "10.3.1_git20211027-r0"}
   "libgomp" {= "10.3.1_git20211027-r0"}
   "libgphobos" {= "10.3.1_git20211027-r0"}
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
-  "so-libgmp-so-10"
-  "so-libisl-so-22"
-  "so-libmpc-so-3"
-  "so-libmpfr-so-6"
-  "so-libstdc++-so-6"
-  "so-libz-so-1"
+  "libstdc++" {= "10.3.1_git20211027-r0"}
+  "mpc1" {= "1.2.1-r0"}
+  "mpfr4" {= "4.1.0-r0"}
+  "musl" {= "1.2.2-r9"}
+  "zlib" {= "1.2.12-r3"}
 ]
 extra-source "gcc-10.3.1_git20211027-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/gcc-10.3.1_git20211027-r0.apk"

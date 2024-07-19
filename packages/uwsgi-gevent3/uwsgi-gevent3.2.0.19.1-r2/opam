@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del uwsgi-gevent3"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.2.2-r9"}
   "uwsgi"
 ]
 extra-source "uwsgi-gevent3-2.0.19.1-r2.apk" {

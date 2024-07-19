@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del openldap-overlay-dds"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-liblber-2-4-so-2"
-  "so-libldap_r-2-4-so-2"
+  "libldap" {= "2.4.58-r0"}
+  "musl" {= "1.2.2-r5"}
 ]
 extra-source "openldap-overlay-dds-2.4.58-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/openldap-overlay-dds-2.4.58-r0.apk"

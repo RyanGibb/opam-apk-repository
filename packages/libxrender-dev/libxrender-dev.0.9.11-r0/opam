@@ -6,11 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del libxrender-dev"]
 ]
 depends: [
+  "libx11-dev" {= "1.8.7-r0"}
   "libxrender" {= "0.9.11-r0"}
-  "pc-renderproto" {>= "0.9"}
-  "pc-x11"
-  "pc-xproto"
-  "pkgconfig"
+  "pkgconf" {= "1.9.4-r0"}
+  "xorgproto" {= "2022.2-r0"}
 ]
 extra-source "libxrender-dev-0.9.11-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libxrender-dev-0.9.11-r0.apk"

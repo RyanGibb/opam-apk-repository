@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "fuse-common"
-  "so-libc-musl-x86_64-so-1"
-  "so-libfuse3-so-3"
+  "fuse3-libs" {= "3.10.4-r0"}
+  "musl" {= "1.2.2-r5"}
 ]
 extra-source "fuse3-3.10.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/fuse3-3.10.4-r0.apk"

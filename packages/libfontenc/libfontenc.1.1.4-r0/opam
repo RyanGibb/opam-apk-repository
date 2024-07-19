@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del libfontenc"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libz-so-1"
+  "musl" {= "1.2.3-r3"}
+  "zlib" {= "1.2.12-r3"}
 ]
 extra-source "libfontenc-1.1.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/libfontenc-1.1.4-r0.apk"

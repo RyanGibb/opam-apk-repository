@@ -10,7 +10,7 @@ depends: [
   "krb5-dev"
   "libtirpc" {= "1.2.6-r0"}
   "libtirpc-nokrb" {= "1.2.6-r0"}
-  "pkgconfig"
+  "pkgconf" {= "1.7.2-r0"}
 ]
 extra-source "libtirpc-dev-1.2.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/libtirpc-dev-1.2.6-r0.apk"

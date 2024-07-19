@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del nginx-mod-devel-kit"]
 ]
 depends: [
+  "musl" {= "1.2.4_git20230717-r4"}
   "nginx"
-  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "nginx-mod-devel-kit-1.24.0-r16.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/nginx-mod-devel-kit-1.24.0-r16.apk"

@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del nginx-mod-http-auth-jwt"]
 ]
 depends: [
+  "jansson" {= "2.14-r4"}
+  "libcrypto3" {= "3.1.6-r2"}
+  "musl" {= "1.2.4_git20230717-r4"}
   "nginx"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-3"
-  "so-libjansson-so-4"
 ]
 extra-source "nginx-mod-http-auth-jwt-1.24.0-r16.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/nginx-mod-http-auth-jwt-1.24.0-r16.apk"

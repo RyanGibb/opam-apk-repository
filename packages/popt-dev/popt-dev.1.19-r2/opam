@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del popt-dev"]
 ]
 depends: [
-  "pkgconfig"
+  "pkgconf" {= "1.9.5-r0"}
   "popt" {= "1.19-r2"}
 ]
 extra-source "popt-dev-1.19-r2.apk" {

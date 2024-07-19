@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "nftables" {= "1.0.9-r2"}
-  "pkgconfig"
+  "pkgconf" {= "2.2.0-r0"}
 ]
 extra-source "nftables-dev-1.0.9-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/nftables-dev-1.0.9-r2.apk"

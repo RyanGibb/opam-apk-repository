@@ -8,7 +8,7 @@ remove: [
 depends: [
   "linux-headers"
   "nspr" {= "4.35-r4"}
-  "pkgconfig"
+  "pkgconf" {= "2.2.0-r0"}
 ]
 extra-source "nspr-dev-4.35-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/nspr-dev-4.35-r4.apk"

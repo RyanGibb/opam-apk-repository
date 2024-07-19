@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  ("openrc" {= "0.42.1-r22"} | "minicom" {= "2.8-r0"})
-]

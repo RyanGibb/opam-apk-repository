@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del sudo"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libz-so-1"
+  "musl" {= "1.2.2-r5"}
+  "zlib" {= "1.2.12-r3"}
 ]
 extra-source "sudo-1.9.12_p2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/sudo-1.9.12_p2-r0.apk"

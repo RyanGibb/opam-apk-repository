@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del perl-html-parser"]
 ]
 depends: [
+  "musl" {= "1.2.3-r3"}
   "perl"
   "perl-html-tagset"
   "perl-http-message"
   "perl-uri"
-  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "perl-html-parser-3.78-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/perl-html-parser-3.78-r0.apk"

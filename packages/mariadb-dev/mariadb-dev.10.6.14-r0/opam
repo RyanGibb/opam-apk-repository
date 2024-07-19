@@ -9,7 +9,7 @@ depends: [
   "mariadb-connector-c-dev"
   "mariadb-embedded" {= "10.6.14-r0"}
   "openssl-dev"
-  "pkgconfig"
+  "pkgconf" {= "1.8.1-r0"}
   "zlib-dev"
 ]
 extra-source "mariadb-dev-10.6.14-r0.apk" {

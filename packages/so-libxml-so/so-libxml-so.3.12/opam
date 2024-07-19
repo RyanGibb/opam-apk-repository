@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "syslog-ng-xml" {= "3.27.1-r0"}
-]

@@ -8,9 +8,8 @@ remove: [
 depends: [
   "dovecot-ldap" {= "2.3.21-r17"}
   "dovecot-pigeonhole-plugin" {= "2.3.21-r17"}
-  "so-libc-musl-x86_64-so-1"
-  "so-liblber-so-2"
-  "so-libldap-so-2"
+  "libldap" {= "2.6.7-r0"}
+  "musl" {= "1.2.5-r0"}
 ]
 extra-source "dovecot-pigeonhole-plugin-ldap-2.3.21-r17.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/dovecot-pigeonhole-plugin-ldap-2.3.21-r17.apk"

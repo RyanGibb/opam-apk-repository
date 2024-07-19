@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del fish-tools"]
 ]
 depends: [
-  "cmd-man"
   "fish"
+  "mandoc" {= "1.14.6-r6"}
   "python3"
 ]
 extra-source "fish-tools-3.5.1-r1.apk" {

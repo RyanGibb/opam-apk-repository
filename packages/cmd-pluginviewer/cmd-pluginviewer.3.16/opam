@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "cyrus-sasl" {= "2.1.28-r1"}
-]

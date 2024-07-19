@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del drill"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libldns-so-3"
+  "ldns" {= "1.7.1-r1"}
+  "musl" {= "1.2.2-r5"}
 ]
 extra-source "drill-1.7.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/drill-1.7.1-r1.apk"

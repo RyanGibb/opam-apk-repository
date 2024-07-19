@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "argon2-libs" {= "20190702-r4"}
-  "pkgconfig"
+  "pkgconf" {= "1.9.5-r0"}
 ]
 extra-source "argon2-dev-20190702-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/argon2-dev-20190702-r4.apk"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del pcsc-lite-spy-libs"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.2.5-r0"}
 ]
 extra-source "pcsc-lite-spy-libs-2.2.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/pcsc-lite-spy-libs-2.2.3-r0.apk"

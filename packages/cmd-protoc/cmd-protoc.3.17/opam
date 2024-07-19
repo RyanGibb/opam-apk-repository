@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "protoc" {= "3.21.9-r0"}
-]

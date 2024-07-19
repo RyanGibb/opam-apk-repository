@@ -6,26 +6,21 @@ remove: [
   ["sh" "-c" "sudo apk del bind"]
 ]
 depends: [
-  "-bin-sh"
   "bind-dnssec-root" {= "9.16.33-r0"}
+  "bind-libs" {= "9.16.33-r0"}
   "bind-tools"
+  "busybox" {= "1.32.1-r9"}
   "dns-root-hints"
-  "so-libbind9-9-16-33-so"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcap-so-2"
-  "so-libcrypto-so-1-1"
-  "so-libdns-9-16-33-so"
-  "so-libfstrm-so-0"
-  "so-libisc-9-16-33-so"
-  "so-libisccc-9-16-33-so"
-  "so-libisccfg-9-16-33-so"
-  "so-libjson-c-so-5"
-  "so-libldap-2-4-so-2"
-  "so-libns-9-16-33-so"
-  "so-libprotobuf-c-so-1"
-  "so-libuv-so-1"
-  "so-libxml2-so-2"
-  "so-libz-so-1"
+  "fstrm" {= "0.6.0-r1"}
+  "json-c" {= "0.15-r1"}
+  "libcap" {= "2.46-r0"}
+  "libcrypto1-1" {= "1.1.1s-r0"}
+  "libldap" {= "2.4.57-r1"}
+  "libuv" {= "1.40.0-r0"}
+  "libxml2" {= "2.9.14-r2"}
+  "musl" {= "1.2.2-r2"}
+  "protobuf-c" {= "1.3.3-r4"}
+  "zlib" {= "1.2.12-r3"}
 ]
 extra-source "bind-9.16.33-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/bind-9.16.33-r0.apk"

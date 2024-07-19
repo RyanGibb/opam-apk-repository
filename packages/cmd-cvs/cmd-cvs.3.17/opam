@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "cvs" {= "1.12.13-r2"}
-]

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del ada-libs"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
-  "so-libstdc++-so-6"
+  "libgcc" {= "13.2.1_git20231014-r0"}
+  "libstdc++" {= "13.2.1_git20231014-r0"}
+  "musl" {= "1.2.4_git20230717-r4"}
 ]
 extra-source "ada-libs-2.7.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/ada-libs-2.7.4-r0.apk"

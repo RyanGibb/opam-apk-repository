@@ -11,8 +11,8 @@ depends: [
   "libx11-dev"
   "libxext-dev"
   "libxfixes-dev"
-  "pc-wayland-client"
-  "pkgconfig"
+  "pkgconf" {= "1.7.3-r0"}
+  "wayland-dev" {= "1.18.0-r5"}
 ]
 extra-source "libva-dev-2.10.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/libva-dev-2.10.0-r0.apk"

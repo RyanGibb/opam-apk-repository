@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del lua5.3-sql-postgres"]
 ]
 depends: [
+  "libpq" {= "12.10-r0"}
   "lua5-3"
-  "so-libc-musl-x86_64-so-1"
-  "so-libpq-so-5"
+  "musl" {= "1.1.24-r10"}
 ]
 extra-source "lua5.3-sql-postgres-2.5.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/lua5.3-sql-postgres-2.5.0-r1.apk"

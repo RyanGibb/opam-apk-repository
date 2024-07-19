@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  ("icu-data-en" {= "74.1-r0"} | "icu-data-full" {= "74.1-r0"})
-]

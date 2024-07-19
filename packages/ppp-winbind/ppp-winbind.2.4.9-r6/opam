@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del ppp-winbind"]
 ]
 depends: [
+  "musl" {= "1.2.3-r5"}
   "ppp-daemon"
-  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "ppp-winbind-2.4.9-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ppp-winbind-2.4.9-r6.apk"

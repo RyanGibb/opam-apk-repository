@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "libretls" {= "3.5.2-r0"}
-  "openssl1-1-compat-dev"
-  "pkgconfig"
+  "openssl-dev" {= "1.1.1w-r1"}
+  "pkgconf" {= "1.8.1-r0"}
 ]
 extra-source "libretls-dev-3.5.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/libretls-dev-3.5.2-r0.apk"

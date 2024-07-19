@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del cunit"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.2.3-r5"}
 ]
 extra-source "cunit-2.1.3-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/cunit-2.1.3-r4.apk"

@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "kamailio"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcurl-so-4"
-  "so-libevent-2-1-so-7"
+  "libcurl" {= "8.5.0-r0"}
+  "libevent" {= "2.1.12-r5"}
+  "musl" {= "1.2.3-r5"}
 ]
 extra-source "kamailio-http_async-5.6.3-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/kamailio-http_async-5.6.3-r1.apk"

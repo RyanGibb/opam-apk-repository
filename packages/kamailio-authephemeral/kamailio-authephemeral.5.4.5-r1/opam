@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "kamailio"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-1-1"
+  "libcrypto1-1" {= "1.1.1t-r2"}
+  "musl" {= "1.2.2-r5"}
 ]
 extra-source "kamailio-authephemeral-5.4.5-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/kamailio-authephemeral-5.4.5-r1.apk"

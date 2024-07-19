@@ -6,11 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del llvm10-dev"]
 ]
 depends: [
+  "libstdc++" {= "10.2.1_pre1-r3"}
   "llvm10" {= "10.0.1-r1"}
   "llvm10-libs" {= "10.0.1-r1"}
-  "so-libLLVM-10-so"
-  "so-libc-musl-x86_64-so-1"
-  "so-libstdc++-so-6"
+  "musl" {= "1.2.2-r2"}
 ]
 extra-source "llvm10-dev-10.0.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/llvm10-dev-10.0.1-r1.apk"

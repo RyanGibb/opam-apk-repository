@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del pam-pgsql"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcrypt-so-20"
-  "so-libpam-so-0"
-  "so-libpq-so-5"
+  "libgcrypt" {= "1.10.1-r0"}
+  "libpq" {= "14.12-r0"}
+  "linux-pam" {= "1.5.2-r0"}
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "pam-pgsql-0.7.3.2-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/pam-pgsql-0.7.3.2-r1.apk"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del ppp-chat"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "ppp-chat-2.4.9-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/ppp-chat-2.4.9-r4.apk"

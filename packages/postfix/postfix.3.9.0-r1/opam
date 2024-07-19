@@ -6,13 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del postfix"]
 ]
 depends: [
-  "-bin-sh"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-3"
-  "so-libicuuc-so-74"
-  "so-liblmdb-so-0"
-  "so-libsasl2-so-3"
-  "so-libssl-so-3"
+  "icu-libs" {= "74.2-r0"}
+  "libcrypto3" {= "3.3.1-r3"}
+  "libsasl" {= "2.1.28-r6"}
+  "libssl3" {= "3.3.1-r3"}
+  "lmdb" {= "0.9.32-r0"}
+  "musl" {= "1.2.5-r0"}
+  ("busybox-binsh" {= "1.36.1-r29"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.56.1-r1"})
 ]
 extra-source "postfix-3.9.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/postfix-3.9.0-r1.apk"

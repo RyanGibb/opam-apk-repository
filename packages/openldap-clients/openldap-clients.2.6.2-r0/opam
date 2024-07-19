@@ -6,11 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del openldap-clients"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-liblber-so-2"
-  "so-libldap-so-2"
-  "so-libsasl2-so-3"
-  "so-libuuid-so-1"
+  "libldap" {= "2.6.2-r0"}
+  "libsasl" {= "2.1.28-r0"}
+  "libuuid" {= "2.37.4-r0"}
+  "musl" {= "1.2.2-r9"}
 ]
 extra-source "openldap-clients-2.6.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/openldap-clients-2.6.2-r0.apk"

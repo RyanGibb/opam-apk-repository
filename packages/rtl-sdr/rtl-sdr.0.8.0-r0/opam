@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del rtl-sdr"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-librtlsdr-so-0"
+  "librtlsdr" {= "0.8.0-r0"}
+  "musl" {= "1.2.4-r2"}
 ]
 extra-source "rtl-sdr-0.8.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/rtl-sdr-0.8.0-r0.apk"

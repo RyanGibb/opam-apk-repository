@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del distcc-pump"]
 ]
 depends: [
+  "musl" {= "1.2.4_git20230717-r4"}
   "python3" {>= "3.11"}
-  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "distcc-pump-3.4-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/distcc-pump-3.4-r8.apk"

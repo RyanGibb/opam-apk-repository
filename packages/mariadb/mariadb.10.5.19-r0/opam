@@ -6,21 +6,21 @@ remove: [
   ["sh" "-c" "sudo apk del mariadb"]
 ]
 depends: [
-  "-bin-sh"
+  "busybox" {= "1.33.1-r8"}
+  "libaio" {= "0.3.112-r1"}
+  "libcrypto1-1" {= "1.1.1t-r2"}
+  "libcurl" {= "8.0.1-r0"}
+  "libgcc" {= "10.3.1_git20210424-r2"}
+  "libssl1-1" {= "1.1.1t-r2"}
+  "libstdc++" {= "10.3.1_git20210424-r2"}
+  "libxml2" {= "2.9.14-r2"}
+  "linux-pam" {= "1.5.1-r1"}
   "mariadb-common"
-  "so-libaio-so-1"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-1-1"
-  "so-libcurl-so-4"
-  "so-libgcc_s-so-1"
-  "so-liblzma-so-5"
-  "so-libncursesw-so-6"
-  "so-libpam-so-0"
-  "so-libpcre2-8-so-0"
-  "so-libssl-so-1-1"
-  "so-libstdc++-so-6"
-  "so-libxml2-so-2"
-  "so-libz-so-1"
+  "musl" {= "1.2.2-r5"}
+  "ncurses-libs" {= "6.2_p20210612-r1"}
+  "pcre2" {= "10.36-r1"}
+  "xz-libs" {= "5.2.5-r1"}
+  "zlib" {= "1.2.12-r3"}
 ]
 extra-source "mariadb-10.5.19-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/mariadb-10.5.19-r0.apk"

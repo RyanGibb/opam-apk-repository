@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del gnokii-libs"]
 ]
 depends: [
-  "so-libbluetooth-so-3"
-  "so-libc-musl-x86_64-so-1"
-  "so-libglib-2-0-so-0"
-  "so-libical-so-3"
-  "so-libintl-so-8"
-  "so-libusb-0-1-so-4"
+  "bluez-libs" {= "5.65-r0"}
+  "glib" {= "2.72.4-r0"}
+  "libical" {= "3.0.14-r0"}
+  "libintl" {= "0.21-r2"}
+  "libusb-compat" {= "0.1.7-r1"}
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "gnokii-libs-0.6.31-r12.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/gnokii-libs-0.6.31-r12.apk"

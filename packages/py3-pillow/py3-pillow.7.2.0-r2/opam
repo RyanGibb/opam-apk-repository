@@ -6,19 +6,17 @@ remove: [
   ["sh" "-c" "sudo apk del py3-pillow"]
 ]
 depends: [
+  "freetype" {= "2.10.4-r3"}
+  "lcms2" {= "2.11-r0"}
+  "libimagequant" {= "2.13.1-r0"}
+  "libjpeg-turbo" {= "2.1.0-r0"}
+  "libwebp" {= "1.1.0-r0"}
+  "libxcb" {= "1.14-r1"}
+  "musl" {= "1.2.2-r2"}
+  "openjpeg" {= "2.4.0-r1"}
   "py3-olefile"
-  "so-libc-musl-x86_64-so-1"
-  "so-libfreetype-so-6"
-  "so-libimagequant-so-0"
-  "so-libjpeg-so-8"
-  "so-liblcms2-so-2"
-  "so-libopenjp2-so-7"
-  "so-libtiff-so-5"
-  "so-libwebp-so-7"
-  "so-libwebpdemux-so-2"
-  "so-libwebpmux-so-3"
-  "so-libxcb-so-1"
-  "so-libz-so-1"
+  "tiff" {= "4.4.0-r0"}
+  "zlib" {= "1.2.12-r3"}
 ]
 extra-source "py3-pillow-7.2.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/py3-pillow-7.2.0-r2.apk"

@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "help2man" {= "1.48.5-r0"}
-]

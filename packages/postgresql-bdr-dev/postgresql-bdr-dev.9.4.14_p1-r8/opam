@@ -6,13 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del postgresql-bdr-dev"]
 ]
 depends: [
+  "libpq" {= "13.12-r0"}
   "libxml2-dev"
+  "musl" {= "1.2.2-r2"}
   "openssl-dev"
-  "pkgconfig"
+  "pkgconf" {= "1.7.3-r0"}
   "postgresql-bdr-libs" {= "9.4.14_p1-r8"}
   "readline-dev"
-  "so-libc-musl-x86_64-so-1"
-  "so-libpq-so-5"
   "zlib-dev"
 ]
 extra-source "postgresql-bdr-dev-9.4.14_p1-r8.apk" {

@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del dwarf-tools"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libdwarf-so-0"
-  "so-libgcc_s-so-1"
-  "so-liblibdwarfp-so-0"
-  "so-libstdc++-so-6"
+  "libdwarf" {= "0.8.0-r0"}
+  "libgcc" {= "13.2.1_git20231014-r0"}
+  "liblibdwarfp" {= "0.8.0-r0"}
+  "libstdc++" {= "13.2.1_git20231014-r0"}
+  "musl" {= "1.2.4_git20230717-r4"}
 ]
 extra-source "dwarf-tools-0.8.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/dwarf-tools-0.8.0-r0.apk"

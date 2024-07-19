@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del openldap-back-sql"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-liblber-2-4-so-2"
-  "so-libldap_r-2-4-so-2"
-  "so-libodbc-so-2"
+  "libldap" {= "2.4.57-r1"}
+  "musl" {= "1.2.2-r2"}
+  "unixodbc" {= "2.3.9-r1"}
 ]
 extra-source "openldap-back-sql-2.4.57-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/openldap-back-sql-2.4.57-r1.apk"

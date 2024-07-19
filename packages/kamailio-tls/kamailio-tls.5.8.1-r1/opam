@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "kamailio"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-3"
-  "so-libssl-so-3"
+  "libcrypto3" {= "3.3.1-r3"}
+  "libssl3" {= "3.3.1-r3"}
+  "musl" {= "1.2.5-r0"}
 ]
 extra-source "kamailio-tls-5.8.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/kamailio-tls-5.8.1-r1.apk"

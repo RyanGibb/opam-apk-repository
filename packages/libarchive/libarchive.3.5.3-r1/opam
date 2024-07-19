@@ -6,15 +6,15 @@ remove: [
   ["sh" "-c" "sudo apk del libarchive"]
 ]
 depends: [
-  "so-libacl-so-1"
-  "so-libbz2-so-1"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-1-1"
-  "so-libexpat-so-1"
-  "so-liblz4-so-1"
-  "so-liblzma-so-5"
-  "so-libz-so-1"
-  "so-libzstd-so-1"
+  "expat" {= "2.5.0-r0"}
+  "libacl" {= "2.2.53-r0"}
+  "libbz2" {= "1.0.8-r1"}
+  "libcrypto1-1" {= "1.1.1t-r2"}
+  "lz4-libs" {= "1.9.3-r1"}
+  "musl" {= "1.2.2-r5"}
+  "xz-libs" {= "5.2.5-r1"}
+  "zlib" {= "1.2.12-r3"}
+  "zstd-libs" {= "1.4.9-r1"}
 ]
 extra-source "libarchive-3.5.3-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/libarchive-3.5.3-r1.apk"

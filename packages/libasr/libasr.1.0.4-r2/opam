@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del libasr"]
 ]
 depends: [
-  "so-libbsd-so-0"
-  "so-libc-musl-x86_64-so-1"
+  "libbsd" {= "0.11.6-r2"}
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "libasr-1.0.4-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/libasr-1.0.4-r2.apk"

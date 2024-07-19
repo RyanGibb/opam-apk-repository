@@ -7,36 +7,27 @@ remove: [
 ]
 depends: [
   "bash"
+  "glib" {= "2.76.6-r0"}
+  "gnutls" {= "3.8.4-r0"}
   "iproute2"
+  "libaio" {= "0.3.113-r1"}
+  "libbz2" {= "1.0.8-r5"}
+  "libcap-ng" {= "0.8.3-r3"}
+  "libcurl" {= "8.5.0-r0"}
+  "libgcc" {= "12.2.1_git20220924-r10"}
+  "libjpeg-turbo" {= "2.1.5.1-r3"}
+  "libncursesw" {= "6.4_p20230506-r0"}
+  "libsasl" {= "2.1.28-r4"}
   "logrotate"
+  "lzo" {= "2.10-r5"}
+  "musl" {= "1.2.4-r2"}
+  "pciutils-libs" {= "3.10.0-r0"}
+  "pixman" {= "0.42.2-r1"}
   "seabios-bin"
-  "so-libaio-so-1"
-  "so-libbz2-so-1"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcap-ng-so-0"
-  "so-libcurl-so-4"
-  "so-libgcc_s-so-1"
-  "so-libgio-2-0-so-0"
-  "so-libglib-2-0-so-0"
-  "so-libgmodule-2-0-so-0"
-  "so-libgnutls-so-30"
-  "so-libgobject-2-0-so-0"
-  "so-libjpeg-so-8"
-  "so-liblzo2-so-2"
-  "so-libncursesw-so-6"
-  "so-libpci-so-3"
-  "so-libpixman-1-so-0"
-  "so-libsasl2-so-3"
-  "so-libspice-server-so-1"
-  "so-libxenctrl-so-4-17"
-  "so-libxendevicemodel-so-1"
-  "so-libxenevtchn-so-1"
-  "so-libxenforeignmemory-so-1"
-  "so-libxengnttab-so-1"
-  "so-libxenstore-so-4"
-  "so-libxentoolcore-so-1"
-  "so-libz-so-1"
-  "so-libzstd-so-1"
+  "spice" {= "0.15.2-r1"}
+  "xen-libs" {= "4.17.4-r0"}
+  "zlib" {= "1.2.13-r1"}
+  "zstd-libs" {= "1.5.5-r4"}
 ]
 extra-source "xen-qemu-4.17.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/xen-qemu-4.17.4-r0.apk"

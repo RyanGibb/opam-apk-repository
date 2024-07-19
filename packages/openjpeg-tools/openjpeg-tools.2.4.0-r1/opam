@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del openjpeg-tools"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-liblcms2-so-2"
-  "so-libopenjp2-so-7"
-  "so-libpng16-so-16"
-  "so-libtiff-so-5"
+  "lcms2" {= "2.12-r1"}
+  "libpng" {= "1.6.37-r1"}
+  "musl" {= "1.2.2-r5"}
+  "openjpeg" {= "2.4.0-r1"}
+  "tiff" {= "4.4.0-r1"}
 ]
 extra-source "openjpeg-tools-2.4.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/openjpeg-tools-2.4.0-r1.apk"

@@ -6,16 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del ghostscript"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libcups-so-2"
-  "so-libfontconfig-so-1"
-  "so-libfreetype-so-6"
-  "so-libjbig2dec-so-0"
-  "so-libjpeg-so-8"
-  "so-liblcms2-so-2"
-  "so-libpng16-so-16"
-  "so-libtiff-so-5"
-  "so-libz-so-1"
+  "cups-libs" {= "2.3.3-r2"}
+  "fontconfig" {= "2.13.1-r3"}
+  "freetype" {= "2.10.4-r3"}
+  "jbig2dec" {= "0.19-r0"}
+  "lcms2" {= "2.11-r0"}
+  "libjpeg-turbo" {= "2.1.0-r0"}
+  "libpng" {= "1.6.37-r1"}
+  "musl" {= "1.2.2-r2"}
+  "tiff" {= "4.4.0-r0"}
+  "zlib" {= "1.2.12-r3"}
 ]
 extra-source "ghostscript-9.53.3-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/ghostscript-9.53.3-r1.apk"

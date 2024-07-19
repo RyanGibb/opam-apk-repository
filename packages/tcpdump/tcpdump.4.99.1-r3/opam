@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del tcpdump"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-1-1"
-  "so-libpcap-so-1"
+  "libcrypto1-1" {= "1.1.1w-r1"}
+  "libpcap" {= "1.10.1-r0"}
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "tcpdump-4.99.1-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/tcpdump-4.99.1-r3.apk"

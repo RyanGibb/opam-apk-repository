@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del mpc1"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libgmp-so-10"
-  "so-libmpfr-so-6"
+  "gmp" {= "6.2.1-r1"}
+  "mpfr4" {= "4.0.2-r4"}
+  "musl" {= "1.1.24-r10"}
 ]
 extra-source "mpc1-1.1.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/mpc1-1.1.0-r1.apk"

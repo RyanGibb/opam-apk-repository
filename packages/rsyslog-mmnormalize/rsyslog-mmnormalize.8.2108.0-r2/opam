@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del rsyslog-mmnormalize"]
 ]
 depends: [
+  "liblognorm" {= "2.0.6-r2"}
+  "musl" {= "1.2.2-r9"}
   "rsyslog" {= "8.2108.0-r2"}
-  "so-libc-musl-x86_64-so-1"
-  "so-liblognorm-so-5"
 ]
 extra-source "rsyslog-mmnormalize-8.2108.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/rsyslog-mmnormalize-8.2108.0-r2.apk"

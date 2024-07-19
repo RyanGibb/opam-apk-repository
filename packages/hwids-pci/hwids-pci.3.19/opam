@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "hwdata-pci" {= "0.377.2-r0"}
-]

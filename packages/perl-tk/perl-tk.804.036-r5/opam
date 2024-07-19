@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del perl-tk"]
 ]
 depends: [
+  "libpng" {= "1.6.43-r0"}
+  "libx11" {= "1.8.9-r1"}
+  "musl" {= "1.2.5-r0"}
   "perl"
-  "so-libX11-so-6"
-  "so-libc-musl-x86_64-so-1"
-  "so-libpng16-so-16"
 ]
 extra-source "perl-tk-804.036-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-tk-804.036-r5.apk"

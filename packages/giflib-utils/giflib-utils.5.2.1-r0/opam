@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del giflib-utils"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "giflib-utils-5.2.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/giflib-utils-5.2.1-r0.apk"

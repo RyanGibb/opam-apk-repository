@@ -7,8 +7,7 @@ remove: [
 ]
 depends: [
   "gdbm" {= "1.22-r0"}
-  "so-libc-musl-x86_64-so-1"
-  "so-libgdbm-so-6"
+  "musl" {= "1.2.2-r9"}
 ]
 extra-source "gdbm-tools-1.22-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/gdbm-tools-1.22-r0.apk"

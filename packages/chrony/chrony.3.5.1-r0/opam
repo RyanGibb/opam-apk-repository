@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del chrony"]
 ]
 depends: [
-  "-bin-sh"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcap-so-2"
+  "busybox" {= "1.31.1-r22"}
+  "libcap" {= "2.27-r0"}
+  "musl" {= "1.1.24-r10"}
 ]
 extra-source "chrony-3.5.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/chrony-3.5.1-r0.apk"

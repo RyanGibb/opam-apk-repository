@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del libnetfilter_conntrack"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libmnl-so-0"
-  "so-libnfnetlink-so-0"
+  "libmnl" {= "1.0.5-r1"}
+  "libnfnetlink" {= "1.0.2-r2"}
+  "musl" {= "1.2.4-r2"}
 ]
 extra-source "libnetfilter_conntrack-1.0.9-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/libnetfilter_conntrack-1.0.9-r2.apk"

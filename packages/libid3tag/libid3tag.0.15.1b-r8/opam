@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del libid3tag"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libz-so-1"
+  "musl" {= "1.2.2-r9"}
+  "zlib" {= "1.2.12-r3"}
 ]
 extra-source "libid3tag-0.15.1b-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libid3tag-0.15.1b-r8.apk"

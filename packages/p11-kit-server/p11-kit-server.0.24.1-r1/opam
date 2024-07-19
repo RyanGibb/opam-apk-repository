@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del p11-kit-server"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libffi-so-8"
-  "so-libp11-kit-so-0"
+  "libffi" {= "3.4.4-r0"}
+  "musl" {= "1.2.3-r5"}
+  "p11-kit" {= "0.24.1-r1"}
 ]
 extra-source "p11-kit-server-0.24.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/p11-kit-server-0.24.1-r1.apk"

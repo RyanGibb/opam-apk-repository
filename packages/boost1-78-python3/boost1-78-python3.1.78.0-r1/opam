@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del boost1.78-python3"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
-  "so-libpython3-10-so-1-0"
+  "libgcc" {= "11.2.1_git20220219-r2"}
+  "musl" {= "1.2.3-r3"}
+  "python3" {= "3.10.14-r1"}
 ]
 extra-source "boost1.78-python3-1.78.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/boost1.78-python3-1.78.0-r1.apk"

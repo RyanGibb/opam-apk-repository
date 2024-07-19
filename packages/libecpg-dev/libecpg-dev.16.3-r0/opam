@@ -8,9 +8,8 @@ remove: [
 depends: [
   "libecpg" {= "16.3-r0"}
   "libpq-dev" {= "16.3-r0"}
-  "pc-libpq"
-  "pkgconfig"
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.2.5-r0"}
+  "pkgconf" {= "2.2.0-r0"}
 ]
 extra-source "libecpg-dev-16.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libecpg-dev-16.3-r0.apk"

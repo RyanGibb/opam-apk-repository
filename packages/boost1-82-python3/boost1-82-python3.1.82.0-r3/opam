@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del boost1.82-python3"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
-  "so-libpython3-11-so-1-0"
-  "so-libstdc++-so-6"
+  "libgcc" {= "13.2.1_git20231014-r0"}
+  "libstdc++" {= "13.2.1_git20231014-r0"}
+  "musl" {= "1.2.4_git20230717-r4"}
+  "python3" {= "3.11.9-r0"}
 ]
 extra-source "boost1.82-python3-1.82.0-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/boost1.82-python3-1.82.0-r3.apk"

@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del clang"]
 ]
 depends: [
-  "so-libLLVM-13-so"
-  "so-libc-musl-x86_64-so-1"
-  "so-libclang-cpp-so-13"
-  "so-libstdc++-so-6"
+  "clang-libs" {= "13.0.1-r1"}
+  "libstdc++" {= "11.2.1_git20220219-r2"}
+  "llvm13-libs" {= "13.0.1-r2"}
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "clang-13.0.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/clang-13.0.1-r1.apk"

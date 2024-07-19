@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del openldap-back-asyncmeta"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-liblber-so-2"
-  "so-libldap-so-2"
+  "libldap" {= "2.6.3-r3"}
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "openldap-back-asyncmeta-2.6.3-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/openldap-back-asyncmeta-2.6.3-r3.apk"

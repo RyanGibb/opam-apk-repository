@@ -8,8 +8,8 @@ remove: [
 depends: [
   "ipset" {= "7.17-r1"}
   "libmnl-dev"
-  "pc-libmnl" {>= "1"}
-  "pkgconfig"
+  "libmnl-dev" {= "1.0.5-r1"}
+  "pkgconf" {= "1.9.5-r0"}
 ]
 extra-source "ipset-dev-7.17-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/ipset-dev-7.17-r1.apk"

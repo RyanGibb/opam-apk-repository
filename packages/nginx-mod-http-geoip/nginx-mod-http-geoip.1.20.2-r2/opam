@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del nginx-mod-http-geoip"]
 ]
 depends: [
+  "geoip" {= "1.6.12-r2"}
+  "musl" {= "1.2.2-r9"}
   "nginx"
-  "so-libGeoIP-so-1"
-  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "nginx-mod-http-geoip-1.20.2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/nginx-mod-http-geoip-1.20.2-r2.apk"

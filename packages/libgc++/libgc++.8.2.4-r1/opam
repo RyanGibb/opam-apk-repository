@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del libgc++"]
 ]
 depends: [
-  "so-libgc-so-1"
-  "so-libstdc++-so-6"
+  "gc" {= "8.2.4-r1"}
+  "libstdc++" {= "13.2.1_git20231014-r0"}
 ]
 extra-source "libgc++-8.2.4-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/libgc++-8.2.4-r1.apk"

@@ -10,7 +10,7 @@ depends: [
   "libevent-dev"
   "libldap" {= "2.6.7-r0"}
   "libsodium-dev"
-  "pkgconfig"
+  "pkgconf" {= "2.2.0-r0"}
   "util-linux-dev"
 ]
 extra-source "openldap-dev-2.6.7-r0.apk" {

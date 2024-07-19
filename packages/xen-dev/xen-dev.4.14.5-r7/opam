@@ -21,11 +21,10 @@ depends: [
   "lzo-dev"
   "ncurses-dev"
   "openssl-dev"
-  "pc-zlib"
   "pciutils-dev"
   "perl"
   "perl-dev"
-  "pkgconfig"
+  "pkgconf" {= "1.7.3-r0"}
   "python3-dev"
   "spice-dev"
   "texinfo"
@@ -34,6 +33,7 @@ depends: [
   "xz-dev"
   "yajl-dev"
   "zlib-dev"
+  "zlib-dev" {= "1.2.12-r3"}
 ]
 extra-source "xen-dev-4.14.5-r7.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/xen-dev-4.14.5-r7.apk"

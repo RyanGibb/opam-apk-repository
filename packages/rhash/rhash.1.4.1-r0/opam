@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del rhash"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-librhash-so-0"
+  "musl" {= "1.2.2-r5"}
+  "rhash-libs" {= "1.4.1-r0"}
 ]
 extra-source "rhash-1.4.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/rhash-1.4.1-r0.apk"

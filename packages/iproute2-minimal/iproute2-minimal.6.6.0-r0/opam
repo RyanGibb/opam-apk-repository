@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del iproute2-minimal"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libcap-so-2"
-  "so-libelf-so-1"
-  "so-libmnl-so-0"
+  "libcap2" {= "2.69-r1"}
+  "libelf" {= "0.190-r1"}
+  "libmnl" {= "1.0.5-r2"}
+  "musl" {= "1.2.4_git20230717-r4"}
 ]
 extra-source "iproute2-minimal-6.6.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/iproute2-minimal-6.6.0-r0.apk"

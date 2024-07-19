@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del perl-mime-base64"]
 ]
 depends: [
+  "musl" {= "1.2.2-r5"}
   "perl"
-  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "perl-mime-base64-3.16-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/perl-mime-base64-3.16-r1.apk"

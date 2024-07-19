@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del poppler-utils"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libcairo-so-2"
-  "so-libfreetype-so-6"
-  "so-liblcms2-so-2"
-  "so-libpoppler-so-105"
-  "so-libstdc++-so-6"
+  "cairo" {= "1.16.0-r4"}
+  "freetype" {= "2.10.4-r3"}
+  "lcms2" {= "2.11-r0"}
+  "libstdc++" {= "10.2.1_pre1-r3"}
+  "musl" {= "1.2.2-r2"}
+  "poppler" {= "20.12.1-r0"}
 ]
 extra-source "poppler-utils-20.12.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/poppler-utils-20.12.1-r0.apk"

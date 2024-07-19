@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "openssh-keygen" {= "9.0_p1-r5"}
-]

@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del gpgv"]
 ]
 depends: [
-  "so-libbz2-so-1"
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcrypt-so-20"
-  "so-libgpg-error-so-0"
-  "so-libz-so-1"
+  "libbz2" {= "1.0.8-r1"}
+  "libgcrypt" {= "1.9.4-r0"}
+  "libgpg-error" {= "1.42-r1"}
+  "musl" {= "1.2.2-r9"}
+  "zlib" {= "1.2.12-r3"}
 ]
 conflicts: [
   "gnupg1"

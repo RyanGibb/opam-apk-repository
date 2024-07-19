@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del openldap-back-bdb"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libdb-5-3-so"
-  "so-liblber-2-4-so-2"
-  "so-libldap_r-2-4-so-2"
+  "db" {= "5.3.28-r1"}
+  "libldap" {= "2.4.58-r0"}
+  "musl" {= "1.2.2-r5"}
 ]
 extra-source "openldap-back-bdb-2.4.58-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/openldap-back-bdb-2.4.58-r0.apk"

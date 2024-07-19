@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del rlog-dev"]
 ]
 depends: [
-  "pkgconfig"
+  "pkgconf" {= "1.9.4-r0"}
   "rlog" {= "1.4-r6"}
 ]
 extra-source "rlog-dev-1.4-r6.apk" {

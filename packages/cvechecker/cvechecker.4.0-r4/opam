@@ -6,16 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del cvechecker"]
 ]
 depends: [
-  "-bin-sh"
   "gawk"
   "jq"
+  "libbsd" {= "0.12.2-r0"}
+  "libconfig" {= "1.7.3-r3"}
   "libxslt"
-  "so-libbsd-so-0"
-  "so-libc-musl-x86_64-so-1"
-  "so-libconfig-so-11"
-  "so-libmariadb-so-3"
-  "so-libsqlite3-so-0"
+  "mariadb-connector-c" {= "3.3.10-r0"}
+  "musl" {= "1.2.5-r0"}
+  "sqlite-libs" {= "3.45.3-r1"}
   "wget"
+  ("busybox-binsh" {= "1.36.1-r29"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.56.1-r1"})
 ]
 extra-source "cvechecker-4.0-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/cvechecker-4.0-r4.apk"

@@ -8,9 +8,7 @@ remove: [
 depends: [
   "libdw" {= "0.190-r1"}
   "libelf" {= "0.190-r1"}
-  "so-libc-musl-x86_64-so-1"
-  "so-libdw-so-1"
-  "so-libelf-so-1"
+  "musl" {= "1.2.4_git20230717-r4"}
 ]
 extra-source "libasm-0.190-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/libasm-0.190-r1.apk"

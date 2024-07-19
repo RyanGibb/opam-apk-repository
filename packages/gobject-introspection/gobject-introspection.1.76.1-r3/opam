@@ -6,12 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del gobject-introspection"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libffi-so-8"
-  "so-libgio-2-0-so-0"
-  "so-libglib-2-0-so-0"
-  "so-libgmodule-2-0-so-0"
-  "so-libgobject-2-0-so-0"
+  "glib" {= "2.76.6-r0"}
+  "libffi" {= "3.4.4-r2"}
+  "musl" {= "1.2.4-r2"}
 ]
 extra-source "gobject-introspection-1.76.1-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/gobject-introspection-1.76.1-r3.apk"

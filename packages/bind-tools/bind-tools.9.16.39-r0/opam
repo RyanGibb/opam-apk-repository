@@ -6,15 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del bind-tools"]
 ]
 depends: [
-  "so-libbind9-9-16-39-so"
-  "so-libc-musl-x86_64-so-1"
-  "so-libdns-9-16-39-so"
-  "so-libirs-9-16-39-so"
-  "so-libisc-9-16-39-so"
-  "so-libisccfg-9-16-39-so"
-  "so-libkrb5-so-3"
-  "so-libns-9-16-39-so"
-  "so-libprotobuf-c-so-1"
+  "bind-libs" {= "9.16.39-r0"}
+  "krb5-libs" {= "1.18.5-r0"}
+  "musl" {= "1.2.2-r5"}
+  "protobuf-c" {= "1.3.3-r6"}
 ]
 extra-source "bind-tools-9.16.39-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/bind-tools-9.16.39-r0.apk"

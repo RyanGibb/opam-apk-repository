@@ -6,15 +6,15 @@ remove: [
   ["sh" "-c" "sudo apk del nghttp2"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libcares-so-2"
-  "so-libcrypto-so-3"
-  "so-libev-so-4"
-  "so-libgcc_s-so-1"
-  "so-libnghttp2-so-14"
-  "so-libssl-so-3"
-  "so-libstdc++-so-6"
-  "so-libz-so-1"
+  "c-ares" {= "1.19.1-r1"}
+  "libcrypto3" {= "3.1.6-r0"}
+  "libev" {= "4.33-r1"}
+  "libgcc" {= "12.2.1_git20220924-r10"}
+  "libssl3" {= "3.1.6-r0"}
+  "libstdc++" {= "12.2.1_git20220924-r10"}
+  "musl" {= "1.2.4-r2"}
+  "nghttp2-libs" {= "1.57.0-r0"}
+  "zlib" {= "1.2.13-r1"}
 ]
 extra-source "nghttp2-1.57.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/nghttp2-1.57.0-r0.apk"

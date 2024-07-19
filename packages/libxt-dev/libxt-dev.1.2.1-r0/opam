@@ -6,13 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del libxt-dev"]
 ]
 depends: [
+  "libice-dev" {= "1.0.10-r1"}
   "libsm-dev"
+  "libsm-dev" {= "1.2.3-r1"}
+  "libx11-dev" {= "1.8.7-r0"}
   "libxt" {= "1.2.1-r0"}
-  "pc-ice"
-  "pc-sm"
-  "pc-x11"
-  "pc-xproto"
-  "pkgconfig"
+  "pkgconf" {= "1.9.4-r0"}
+  "xorgproto" {= "2022.2-r0"}
 ]
 extra-source "libxt-dev-1.2.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libxt-dev-1.2.1-r0.apk"

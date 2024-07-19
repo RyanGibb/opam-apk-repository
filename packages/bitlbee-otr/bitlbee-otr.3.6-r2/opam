@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del bitlbee-otr"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcrypt-so-20"
-  "so-libotr-so-5"
+  "libgcrypt" {= "1.9.4-r0"}
+  "libotr" {= "4.1.1-r2"}
+  "musl" {= "1.2.2-r9"}
 ]
 extra-source "bitlbee-otr-3.6-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/bitlbee-otr-3.6-r2.apk"

@@ -6,14 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del kea-hook-bootp"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
-  "so-libkea-asiolink-so-56"
-  "so-libkea-dhcp++-so-74"
-  "so-libkea-exceptions-so-23"
-  "so-libkea-log-so-48"
-  "so-libkea-process-so-57"
-  "so-libkea-stats-so-29"
+  "kea-common" {= "2.4.1-r0"}
+  "libgcc" {= "13.2.1_git20231014-r0"}
+  "musl" {= "1.2.4_git20230717-r4"}
 ]
 extra-source "kea-hook-bootp-2.4.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/kea-hook-bootp-2.4.1-r0.apk"

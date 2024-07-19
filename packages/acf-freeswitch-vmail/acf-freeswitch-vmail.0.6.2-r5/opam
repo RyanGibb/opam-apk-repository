@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del acf-freeswitch-vmail"]
 ]
 depends: [
-  "-bin-sh"
   "acf-core"
   "freeswitch"
   "lua-socket"
   "lua-sql-sqlite3"
+  ("busybox-binsh" {= "1.36.1-r29"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.56.1-r1"})
 ]
 extra-source "acf-freeswitch-vmail-0.6.2-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/acf-freeswitch-vmail-0.6.2-r5.apk"

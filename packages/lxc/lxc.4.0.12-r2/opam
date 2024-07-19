@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del lxc"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libcap-so-2"
-  "so-libgcc_s-so-1"
-  "so-liblxc-so-1"
-  "so-libseccomp-so-2"
+  "libcap" {= "2.64-r1"}
+  "libgcc" {= "11.2.1_git20220219-r2"}
+  "libseccomp" {= "2.5.2-r1"}
+  "lxc-libs" {= "4.0.12-r2"}
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "lxc-4.0.12-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/lxc-4.0.12-r2.apk"

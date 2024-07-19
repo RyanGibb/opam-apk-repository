@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "abseil-cpp-flags-private-handle-accessor" {= "20230802.1-r0"}
-]

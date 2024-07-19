@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del nagios-plugins-mrtg"]
 ]
 depends: [
+  "libcrypto3" {= "3.1.6-r0"}
+  "musl" {= "1.2.4-r2"}
   "nagios-plugins"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-3"
 ]
 extra-source "nagios-plugins-mrtg-2.4.5-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/nagios-plugins-mrtg-2.4.5-r2.apk"

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del rsyslog-tls"]
 ]
 depends: [
+  "gnutls" {= "3.8.4-r0"}
+  "musl" {= "1.2.4_git20230717-r4"}
   "rsyslog" {= "8.2310.0-r0"}
-  "so-libc-musl-x86_64-so-1"
-  "so-libgnutls-so-30"
 ]
 extra-source "rsyslog-tls-8.2310.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/rsyslog-tls-8.2310.0-r0.apk"

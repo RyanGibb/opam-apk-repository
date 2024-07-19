@@ -6,15 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del nss-tools"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libnspr4-so"
-  "so-libnss3-so"
-  "so-libnssutil3-so"
-  "so-libplc4-so"
-  "so-libplds4-so"
-  "so-libsmime3-so"
-  "so-libssl3-so"
-  "so-libz-so-1"
+  "musl" {= "1.2.4_git20230717-r4"}
+  "nspr" {= "4.35-r4"}
+  "nss" {= "3.99-r0"}
+  "zlib" {= "1.3.1-r0"}
 ]
 extra-source "nss-tools-3.99-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/nss-tools-3.99-r0.apk"

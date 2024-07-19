@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del linux-pam"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libutmps-so-0-1"
+  "musl" {= "1.2.4_git20230717-r4"}
+  "utmps-libs" {= "0.1.2.2-r0"}
 ]
 extra-source "linux-pam-1.5.3-r7.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/linux-pam-1.5.3-r7.apk"

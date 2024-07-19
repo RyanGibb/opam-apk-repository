@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "git" {= "2.38.5-r0"}
-  "so-libc-musl-x86_64-so-1"
-  "so-libpcre2-8-so-0"
-  "so-libz-so-1"
+  "musl" {= "1.2.3-r5"}
+  "pcre2" {= "10.42-r0"}
+  "zlib" {= "1.2.13-r0"}
 ]
 extra-source "git-scalar-2.38.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/git-scalar-2.38.5-r0.apk"

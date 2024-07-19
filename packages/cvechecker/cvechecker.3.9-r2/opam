@@ -6,13 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del cvechecker"]
 ]
 depends: [
-  "-bin-sh"
+  "busybox" {= "1.31.1-r22"}
   "gawk"
+  "libconfig" {= "1.7.2-r0"}
   "libxslt"
-  "so-libc-musl-x86_64-so-1"
-  "so-libconfig-so-11"
-  "so-libmariadb-so-3"
-  "so-libsqlite3-so-0"
+  "mariadb-connector-c" {= "3.1.8-r1"}
+  "musl" {= "1.1.24-r10"}
+  "sqlite-libs" {= "3.32.1-r1"}
   "wget"
 ]
 extra-source "cvechecker-3.9-r2.apk" {

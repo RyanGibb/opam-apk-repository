@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del libcrypto1.1"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "libcrypto1.1-1.1.1w-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/libcrypto1.1-1.1.1w-r1.apk"

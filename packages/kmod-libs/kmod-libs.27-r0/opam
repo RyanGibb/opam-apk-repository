@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del kmod-libs"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-1-1"
-  "so-liblzma-so-5"
-  "so-libz-so-1"
+  "libcrypto1-1" {= "1.1.1o-r0"}
+  "musl" {= "1.1.24-r10"}
+  "xz-libs" {= "5.2.5-r1"}
+  "zlib" {= "1.2.12-r3"}
 ]
 extra-source "kmod-libs-27-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/kmod-libs-27-r0.apk"

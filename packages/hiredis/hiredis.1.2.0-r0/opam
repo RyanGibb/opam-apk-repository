@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del hiredis"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.2.5-r0"}
 ]
 extra-source "hiredis-1.2.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/hiredis-1.2.0-r0.apk"

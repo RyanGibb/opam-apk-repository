@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "gnokii-smsd"
-  "so-libc-musl-x86_64-so-1"
-  "so-libpq-so-5"
+  "libpq" {= "14.12-r0"}
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "gnokii-smsd-pgsql-0.6.31-r12.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/gnokii-smsd-pgsql-0.6.31-r12.apk"

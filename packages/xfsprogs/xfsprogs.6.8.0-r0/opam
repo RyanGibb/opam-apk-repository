@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del xfsprogs"]
 ]
 depends: [
-  "so-libblkid-so-1"
-  "so-libc-musl-x86_64-so-1"
-  "so-libinih-so-0"
-  "so-liburcu-so-8"
-  "so-libuuid-so-1"
+  "inih" {= "58-r0"}
+  "libblkid" {= "2.40.1-r1"}
+  "libuuid" {= "2.40.1-r1"}
+  "musl" {= "1.2.5-r0"}
+  "userspace-rcu" {= "0.14.0-r2"}
 ]
 extra-source "xfsprogs-6.8.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/xfsprogs-6.8.0-r0.apk"

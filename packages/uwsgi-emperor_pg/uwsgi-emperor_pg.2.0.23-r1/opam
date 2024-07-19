@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del uwsgi-emperor_pg"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libpq-so-5"
+  "libpq" {= "16.3-r0"}
+  "musl" {= "1.2.4_git20230717-r4"}
   "uwsgi"
 ]
 extra-source "uwsgi-emperor_pg-2.0.23-r1.apk" {

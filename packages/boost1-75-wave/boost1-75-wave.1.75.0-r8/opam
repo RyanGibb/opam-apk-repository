@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del boost1.75-wave"]
 ]
 depends: [
-  "so-libboost_thread-so-1-75-0"
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
+  "boost1-75-thread" {= "1.75.0-r8"}
+  "libgcc" {= "10.3.1_git20210424-r2"}
+  "musl" {= "1.2.2-r5"}
 ]
 extra-source "boost1.75-wave-1.75.0-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/boost1.75-wave-1.75.0-r8.apk"

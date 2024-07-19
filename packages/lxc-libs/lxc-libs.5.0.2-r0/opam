@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del lxc-libs"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libcap-so-2"
-  "so-libgcc_s-so-1"
-  "so-libseccomp-so-2"
+  "libcap2" {= "2.66-r1"}
+  "libgcc" {= "12.2.1_git20220924-r4"}
+  "libseccomp" {= "2.5.4-r0"}
+  "musl" {= "1.2.3-r5"}
 ]
 extra-source "lxc-libs-5.0.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lxc-libs-5.0.2-r0.apk"

@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del ltrace"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libelf-so-1"
+  "libelf" {= "0.186-r0"}
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "ltrace-0.7.3-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/ltrace-0.7.3-r4.apk"

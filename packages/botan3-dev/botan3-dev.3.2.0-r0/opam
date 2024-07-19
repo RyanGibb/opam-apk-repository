@@ -9,7 +9,7 @@ depends: [
   "boost-dev"
   "botan3-libs" {= "3.2.0-r0"}
   "bzip2-dev"
-  "pkgconfig"
+  "pkgconf" {= "2.1.0-r0"}
   "sqlite-dev"
   "xz-dev"
   "zlib-dev"

@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del guile-libs"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libffi-so-7"
-  "so-libgc-so-1"
-  "so-libgmp-so-10"
-  "so-libunistring-so-2"
+  "gc" {= "8.0.4-r5"}
+  "gmp" {= "6.2.1-r1"}
+  "libffi" {= "3.3-r2"}
+  "libunistring" {= "0.9.10-r1"}
+  "musl" {= "1.2.2-r5"}
 ]
 extra-source "guile-libs-3.0.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/guile-libs-3.0.6-r0.apk"

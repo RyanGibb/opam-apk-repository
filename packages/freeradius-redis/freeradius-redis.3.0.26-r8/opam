@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "freeradius" {= "3.0.26-r8"}
-  "so-libc-musl-x86_64-so-1"
-  "so-libhiredis-so-1-1-0"
+  "hiredis" {= "1.2.0-r0"}
+  "musl" {= "1.2.5-r0"}
 ]
 extra-source "freeradius-redis-3.0.26-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/freeradius-redis-3.0.26-r8.apk"

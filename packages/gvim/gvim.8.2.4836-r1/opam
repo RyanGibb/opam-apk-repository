@@ -6,22 +6,18 @@ remove: [
   ["sh" "-c" "sudo apk del gvim"]
 ]
 depends: [
-  "so-libICE-so-6"
-  "so-libSM-so-6"
-  "so-libX11-so-6"
-  "so-libXt-so-6"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcairo-so-2"
-  "so-libgdk-3-so-0"
-  "so-libgdk_pixbuf-2-0-so-0"
-  "so-libgio-2-0-so-0"
-  "so-libglib-2-0-so-0"
-  "so-libgobject-2-0-so-0"
-  "so-libgtk-3-so-0"
-  "so-liblua-5-3-so-0"
-  "so-libncursesw-so-6"
-  "so-libpango-1-0-so-0"
-  "so-libpangocairo-1-0-so-0"
+  "cairo" {= "1.16.0-r5"}
+  "gdk-pixbuf" {= "2.42.8-r0"}
+  "glib" {= "2.70.5-r0"}
+  "gtk+3-0" {= "3.24.30-r0"}
+  "libice" {= "1.0.10-r0"}
+  "libsm" {= "1.2.3-r0"}
+  "libx11" {= "1.7.3.1-r1"}
+  "libxt" {= "1.2.1-r0"}
+  "lua5-3-libs" {= "5.3.6-r1"}
+  "musl" {= "1.2.2-r9"}
+  "ncurses-libs" {= "6.3_p20211120-r2"}
+  "pango" {= "1.48.10-r0"}
   "xxd"
 ]
 extra-source "gvim-8.2.4836-r1.apk" {

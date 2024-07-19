@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del mosquitto-libs++"]
 ]
 depends: [
-  "so-libmosquitto-so-1"
-  "so-libstdc++-so-6"
+  "libstdc++" {= "9.3.0-r2"}
+  "mosquitto-libs" {= "1.6.9-r1"}
 ]
 extra-source "mosquitto-libs++-1.6.9-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/mosquitto-libs++-1.6.9-r1.apk"

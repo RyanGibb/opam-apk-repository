@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del gsm-tools"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libgsm-so-1"
+  "gsm" {= "1.0.19-r1"}
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "gsm-tools-1.0.19-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/gsm-tools-1.0.19-r1.apk"

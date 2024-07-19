@@ -6,13 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del conntrack-tools"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libmnl-so-0"
-  "so-libnetfilter_conntrack-so-3"
-  "so-libnetfilter_cthelper-so-0"
-  "so-libnetfilter_cttimeout-so-1"
-  "so-libnetfilter_queue-so-1"
-  "so-libnfnetlink-so-0"
+  "libmnl" {= "1.0.4-r1"}
+  "libnetfilter_conntrack" {= "1.0.8-r0"}
+  "libnetfilter_cthelper" {= "1.0.0-r1"}
+  "libnetfilter_cttimeout" {= "1.0.0-r1"}
+  "libnetfilter_queue" {= "1.0.5-r0"}
+  "libnfnetlink" {= "1.0.1-r2"}
+  "musl" {= "1.2.2-r2"}
 ]
 extra-source "conntrack-tools-1.4.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/conntrack-tools-1.4.6-r0.apk"

@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del jack"]
 ]
 depends: [
-  "so-libasound-so-2"
-  "so-libc-musl-x86_64-so-1"
-  "so-libdbus-1-so-3"
-  "so-libgcc_s-so-1"
-  "so-libsamplerate-so-0"
-  "so-libstdc++-so-6"
+  "alsa-lib" {= "1.2.2-r0"}
+  "dbus-libs" {= "1.12.18-r0"}
+  "libgcc" {= "9.3.0-r2"}
+  "libsamplerate" {= "0.1.9-r1"}
+  "libstdc++" {= "9.3.0-r2"}
+  "musl" {= "1.1.24-r10"}
 ]
 extra-source "jack-1.9.14-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/jack-1.9.14-r0.apk"

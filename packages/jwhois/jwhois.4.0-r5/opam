@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del jwhois"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libgdbm-so-6"
+  "gdbm" {= "1.19-r0"}
+  "musl" {= "1.2.2-r5"}
 ]
 extra-source "jwhois-4.0-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/jwhois-4.0-r5.apk"

@@ -6,19 +6,15 @@ remove: [
   ["sh" "-c" "sudo apk del gcr"]
 ]
 depends: [
+  "cairo" {= "1.17.8-r1"}
+  "gcr-base" {= "3.41.1-r3"}
   "gcr-ssh-agent" {= "3.41.1-r3"}
-  "so-libc-musl-x86_64-so-1"
-  "so-libcairo-so-2"
-  "so-libgck-1-so-0"
-  "so-libgcr-base-3-so-1"
-  "so-libgdk-3-so-0"
-  "so-libgdk_pixbuf-2-0-so-0"
-  "so-libgio-2-0-so-0"
-  "so-libglib-2-0-so-0"
-  "so-libgobject-2-0-so-0"
-  "so-libgtk-3-so-0"
-  "so-libintl-so-8"
-  "so-libpango-1-0-so-0"
+  "gdk-pixbuf" {= "2.42.10-r5"}
+  "glib" {= "2.76.6-r0"}
+  "gtk+3-0" {= "3.24.41-r0"}
+  "libintl" {= "0.21.1-r7"}
+  "musl" {= "1.2.4-r2"}
+  "pango" {= "1.50.14-r1"}
 ]
 extra-source "gcr-3.41.1-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/gcr-3.41.1-r3.apk"

@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del acf-core"]
 ]
 depends: [
-  "-bin-sh"
   "acf-jquery"
   "acf-lib"
   "acf-skins"
+  "busybox" {= "1.31.1-r22"}
   "haserl-lua5-2"
   "lua-json4"
   "lua5-2"

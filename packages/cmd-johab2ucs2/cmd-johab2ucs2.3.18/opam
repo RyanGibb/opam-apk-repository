@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "unifont-tools" {= "15.0.01-r3"}
-]

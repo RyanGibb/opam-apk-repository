@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del rsyslog-libdbi"]
 ]
 depends: [
+  "libdbi" {= "0.9.0-r0"}
+  "musl" {= "1.1.24-r10"}
   "rsyslog" {= "8.2004.0-r2"}
-  "so-libc-musl-x86_64-so-1"
-  "so-libdbi-so-1"
 ]
 extra-source "rsyslog-libdbi-8.2004.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/rsyslog-libdbi-8.2004.0-r2.apk"

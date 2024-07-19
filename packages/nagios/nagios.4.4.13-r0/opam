@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del nagios"]
 ]
 depends: [
-  "-bin-sh"
+  "libcrypto3" {= "3.1.6-r0"}
+  "libgd" {= "2.3.3-r7"}
+  "libssl3" {= "3.1.6-r0"}
+  "musl" {= "1.2.4-r2"}
   "perl"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-3"
-  "so-libgd-so-3"
-  "so-libssl-so-3"
+  ("busybox-binsh" {= "1.36.1-r7"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.54-r3"})
 ]
 extra-source "nagios-4.4.13-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/nagios-4.4.13-r0.apk"

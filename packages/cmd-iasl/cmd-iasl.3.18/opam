@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "iasl" {= "20221020-r1"}
-]

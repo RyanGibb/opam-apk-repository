@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del grub-mount"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libdevmapper-so-1-02"
-  "so-libfuse-so-2"
+  "device-mapper-libs" {= "2.03.23-r0"}
+  "fuse" {= "2.9.9-r5"}
+  "musl" {= "1.2.4_git20230717-r4"}
 ]
 extra-source "grub-mount-2.06-r17.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/grub-mount-2.06-r17.apk"

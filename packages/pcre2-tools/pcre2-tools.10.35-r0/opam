@@ -6,13 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del pcre2-tools"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libedit-so-0"
-  "so-libpcre2-16-so-0"
-  "so-libpcre2-32-so-0"
-  "so-libpcre2-8-so-0"
-  "so-libpcre2-posix-so-2"
-  "so-libz-so-1"
+  "libedit" {= "20191231.3.1-r0"}
+  "libpcre2-16" {= "10.35-r0"}
+  "libpcre2-32" {= "10.35-r0"}
+  "musl" {= "1.1.24-r10"}
+  "pcre2" {= "10.35-r0"}
+  "zlib" {= "1.2.12-r3"}
 ]
 extra-source "pcre2-tools-10.35-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/pcre2-tools-10.35-r0.apk"

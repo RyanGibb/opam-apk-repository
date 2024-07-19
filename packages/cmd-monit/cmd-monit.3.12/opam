@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "monit" {= "5.26.0-r2"}
-]

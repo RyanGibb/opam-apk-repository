@@ -7,12 +7,11 @@ remove: [
 ]
 depends: [
   "freeradius" {= "3.0.21-r7"}
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-1-1"
-  "so-libfreeradius-radius-so"
-  "so-libfreeradius-server-so"
-  "so-libssl-so-1-1"
-  "so-libtalloc-so-2"
+  "freeradius-lib" {= "3.0.21-r7"}
+  "libcrypto1-1" {= "1.1.1s-r0"}
+  "libssl1-1" {= "1.1.1s-r0"}
+  "musl" {= "1.2.2-r2"}
+  "talloc" {= "2.3.1-r0"}
 ]
 extra-source "freeradius-eap-3.0.21-r7.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/freeradius-eap-3.0.21-r7.apk"

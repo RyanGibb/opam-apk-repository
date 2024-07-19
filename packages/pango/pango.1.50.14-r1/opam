@@ -6,19 +6,17 @@ remove: [
   ["sh" "-c" "sudo apk del pango"]
 ]
 depends: [
-  "-bin-sh"
-  "so-libX11-so-6"
-  "so-libXft-so-2"
-  "so-libXrender-so-1"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcairo-so-2"
-  "so-libfontconfig-so-1"
-  "so-libfreetype-so-6"
-  "so-libfribidi-so-0"
-  "so-libgio-2-0-so-0"
-  "so-libglib-2-0-so-0"
-  "so-libgobject-2-0-so-0"
-  "so-libharfbuzz-so-0"
+  "cairo" {= "1.17.8-r1"}
+  "fontconfig" {= "2.14.2-r3"}
+  "freetype" {= "2.13.0-r5"}
+  "fribidi" {= "1.0.13-r0"}
+  "glib" {= "2.76.6-r0"}
+  "harfbuzz" {= "7.3.0-r0"}
+  "libx11" {= "1.8.7-r0"}
+  "libxft" {= "2.3.8-r1"}
+  "libxrender" {= "0.9.11-r3"}
+  "musl" {= "1.2.4-r2"}
+  ("busybox-binsh" {= "1.36.1-r7"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.54-r3"})
 ]
 extra-source "pango-1.50.14-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/pango-1.50.14-r1.apk"

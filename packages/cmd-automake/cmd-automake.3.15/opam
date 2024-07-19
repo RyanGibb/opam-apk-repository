@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "automake" {= "1.16.4-r1"}
-]

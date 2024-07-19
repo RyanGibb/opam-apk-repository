@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "busybox"
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "busybox-extras-1.35.0-r18.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/busybox-extras-1.35.0-r18.apk"

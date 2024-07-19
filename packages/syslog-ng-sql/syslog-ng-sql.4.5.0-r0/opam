@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del syslog-ng-sql"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-3"
-  "so-libdbi-so-1"
-  "so-libsyslog-ng-4-5-so-0"
+  "libcrypto3" {= "3.1.6-r2"}
+  "libdbi" {= "0.9.0-r4"}
+  "musl" {= "1.2.4_git20230717-r4"}
+  "syslog-ng" {= "4.5.0-r0"}
 ]
 extra-source "syslog-ng-sql-4.5.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/syslog-ng-sql-4.5.0-r0.apk"

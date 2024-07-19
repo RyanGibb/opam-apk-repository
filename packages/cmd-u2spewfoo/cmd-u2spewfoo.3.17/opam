@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "snort" {= "2.9.20-r0"}
-]

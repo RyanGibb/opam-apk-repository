@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del perl-gd"]
 ]
 depends: [
+  "libgd" {= "2.3.3-r8"}
+  "musl" {= "1.2.4_git20230717-r4"}
   "perl"
-  "so-libc-musl-x86_64-so-1"
-  "so-libgd-so-3"
 ]
 extra-source "perl-gd-2.78-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/perl-gd-2.78-r0.apk"

@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del audit"]
 ]
 depends: [
-  "so-libaudit-so-1"
-  "so-libauparse-so-0"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcap-ng-so-0"
+  "audit-libs" {= "2.8.5-r0"}
+  "libcap-ng" {= "0.7.10-r1"}
+  "musl" {= "1.1.24-r10"}
 ]
 extra-source "audit-2.8.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/audit-2.8.5-r0.apk"

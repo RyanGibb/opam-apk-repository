@@ -6,11 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del bitlbee"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcrypt-so-20"
-  "so-libglib-2-0-so-0"
-  "so-libgmodule-2-0-so-0"
-  "so-libgnutls-so-30"
+  "glib" {= "2.70.5-r0"}
+  "gnutls" {= "3.7.1-r2"}
+  "libgcrypt" {= "1.9.4-r0"}
+  "musl" {= "1.2.2-r9"}
 ]
 extra-source "bitlbee-3.6-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/bitlbee-3.6-r2.apk"

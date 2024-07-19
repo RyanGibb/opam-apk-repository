@@ -10,7 +10,7 @@ depends: [
   "gzip"
   "neon" {= "0.32.4-r0"}
   "openssl-dev" {> "3"}
-  "pkgconfig"
+  "pkgconf" {= "1.9.4-r0"}
   "xmlto"
   "zlib-dev"
 ]

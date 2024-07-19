@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "bash"
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.2.3-r3"}
   "sysfsutils"
 ]
 extra-source "lm-sensors-3.6.0-r1.apk" {

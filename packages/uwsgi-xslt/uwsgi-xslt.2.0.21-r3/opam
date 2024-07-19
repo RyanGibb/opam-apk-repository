@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del uwsgi-xslt"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libxml2-so-2"
-  "so-libxslt-so-1"
+  "libxml2" {= "2.11.8-r0"}
+  "libxslt" {= "1.1.38-r0"}
+  "musl" {= "1.2.4-r2"}
   "uwsgi"
 ]
 extra-source "uwsgi-xslt-2.0.21-r3.apk" {

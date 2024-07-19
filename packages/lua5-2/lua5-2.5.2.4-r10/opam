@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del lua5.2"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-liblua-5-2-so-0"
+  "lua5-2-libs" {= "5.2.4-r10"}
+  "musl" {= "1.2.3-r5"}
 ]
 extra-source "lua5.2-5.2.4-r10.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lua5.2-5.2.4-r10.apk"

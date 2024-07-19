@@ -6,16 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del mariadb-embedded"]
 ]
 depends: [
+  "libaio" {= "0.3.112-r1"}
+  "libcrypto1-1" {= "1.1.1t-r2"}
+  "libgcc" {= "10.3.1_git20210424-r2"}
+  "libssl1-1" {= "1.1.1t-r2"}
+  "libstdc++" {= "10.3.1_git20210424-r2"}
   "mariadb-common" {= "10.5.19-r0"}
-  "so-libaio-so-1"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-1-1"
-  "so-libgcc_s-so-1"
-  "so-liblzma-so-5"
-  "so-libpcre2-8-so-0"
-  "so-libssl-so-1-1"
-  "so-libstdc++-so-6"
-  "so-libz-so-1"
+  "musl" {= "1.2.2-r5"}
+  "pcre2" {= "10.36-r1"}
+  "xz-libs" {= "5.2.5-r1"}
+  "zlib" {= "1.2.12-r3"}
 ]
 extra-source "mariadb-embedded-10.5.19-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/mariadb-embedded-10.5.19-r0.apk"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libattr" {= "2.5.1-r0"}
-  "pkgconfig"
+  "pkgconf" {= "1.7.4-r1"}
 ]
 extra-source "attr-dev-2.5.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/attr-dev-2.5.1-r0.apk"

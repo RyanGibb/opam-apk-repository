@@ -6,20 +6,17 @@ remove: [
   ["sh" "-c" "sudo apk del pango-dev"]
 ]
 depends: [
+  "cairo-dev" {= "1.16.0-r4"}
+  "fontconfig-dev" {= "2.13.1-r3"}
+  "freetype-dev" {= "2.10.4-r3"}
+  "fribidi-dev" {= "1.0.10-r0"}
+  "glib-dev" {= "2.66.8-r0"}
+  "harfbuzz-dev" {= "2.7.4-r1"}
+  "libxft-dev" {= "2.3.3-r0"}
+  "libxrender-dev" {= "0.9.10-r3"}
   "pango" {= "1.48.2-r0"}
   "pango-tools" {= "1.48.2-r0"}
-  "pc-cairo" {>= "1.12.10"}
-  "pc-fontconfig" {>= "2.11.91"}
-  "pc-freetype2"
-  "pc-fribidi" {>= "0.19.7"}
-  "pc-gio-2-0" {>= "2.62"}
-  "pc-glib-2-0" {>= "2.62"}
-  "pc-gobject-2-0" {>= "2.62"}
-  "pc-harfbuzz" {>= "2.0.0"}
-  "pc-harfbuzz-gobject" {>= "2.0.0"}
-  "pc-xft" {>= "2.0.0"}
-  "pc-xrender"
-  "pkgconfig"
+  "pkgconf" {= "1.7.3-r0"}
 ]
 extra-source "pango-dev-1.48.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/pango-dev-1.48.2-r0.apk"

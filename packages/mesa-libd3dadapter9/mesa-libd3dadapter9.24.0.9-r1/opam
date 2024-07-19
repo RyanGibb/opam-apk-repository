@@ -6,20 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del mesa-libd3dadapter9"]
 ]
 depends: [
+  "libdrm" {= "2.4.120-r0"}
+  "libelf" {= "0.191-r0"}
+  "libexpat" {= "2.6.2-r0"}
+  "libgcc" {= "13.2.1_git20240309-r0"}
+  "libstdc++" {= "13.2.1_git20240309-r0"}
+  "llvm17-libs" {= "17.0.6-r1"}
   "mesa" {= "24.0.9-r1"}
-  "so-libLLVM-17-so"
-  "so-libc-musl-x86_64-so-1"
-  "so-libdrm-so-2"
-  "so-libdrm_amdgpu-so-1"
-  "so-libdrm_intel-so-1"
-  "so-libdrm_nouveau-so-2"
-  "so-libdrm_radeon-so-1"
-  "so-libelf-so-1"
-  "so-libexpat-so-1"
-  "so-libgcc_s-so-1"
-  "so-libstdc++-so-6"
-  "so-libz-so-1"
-  "so-libzstd-so-1"
+  "musl" {= "1.2.5-r0"}
+  "zlib" {= "1.3.1-r1"}
+  "zstd-libs" {= "1.5.6-r0"}
 ]
 extra-source "mesa-libd3dadapter9-24.0.9-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/mesa-libd3dadapter9-24.0.9-r1.apk"

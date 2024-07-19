@@ -6,17 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del xen-libs"]
 ]
 depends: [
-  "so-libbz2-so-1"
-  "so-libc-musl-x86_64-so-1"
-  "so-libext2fs-so-2"
-  "so-liblzma-so-5"
-  "so-liblzo2-so-2"
-  "so-libnl-3-so-200"
-  "so-libnl-route-3-so-200"
-  "so-libuuid-so-1"
-  "so-libyajl-so-2"
-  "so-libz-so-1"
-  "so-libzstd-so-1"
+  "e2fsprogs-libs" {= "1.46.6-r0"}
+  "libbz2" {= "1.0.8-r1"}
+  "libnl3" {= "3.5.0-r0"}
+  "libuuid" {= "2.37.4-r0"}
+  "lzo" {= "2.10-r2"}
+  "musl" {= "1.2.2-r9"}
+  "xz-libs" {= "5.2.5-r1"}
+  "yajl" {= "2.1.0-r2"}
+  "zlib" {= "1.2.12-r3"}
+  "zstd-libs" {= "1.5.0-r0"}
 ]
 extra-source "xen-libs-4.15.5-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/xen-libs-4.15.5-r4.apk"

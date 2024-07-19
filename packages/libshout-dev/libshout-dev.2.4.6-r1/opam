@@ -6,13 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del libshout-dev"]
 ]
 depends: [
+  "libogg-dev" {= "1.3.5-r2"}
   "libshout" {= "2.4.6-r1"}
-  "pc-libssl"
-  "pc-ogg"
-  "pc-speex"
-  "pc-theora"
-  "pc-vorbis"
-  "pkgconfig"
+  "libtheora-dev" {= "1.1.1-r16"}
+  "libvorbis-dev" {= "1.3.7-r0"}
+  "openssl-dev" {= "3.0.14-r0"}
+  "pkgconf" {= "1.9.4-r0"}
+  "speex-dev" {= "1.2.1-r0"}
 ]
 extra-source "libshout-dev-2.4.6-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libshout-dev-2.4.6-r1.apk"

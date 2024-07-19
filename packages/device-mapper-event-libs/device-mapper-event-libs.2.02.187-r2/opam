@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del device-mapper-event-libs"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libdevmapper-so-1-02"
+  "device-mapper-libs" {= "2.02.187-r2"}
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "device-mapper-event-libs-2.02.187-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/device-mapper-event-libs-2.02.187-r2.apk"

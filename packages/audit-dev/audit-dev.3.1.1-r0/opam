@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "audit-libs" {= "3.1.1-r0"}
+  "libcap-ng-dev" {= "0.8.3-r3"}
   "linux-headers"
-  "pc-libcap-ng"
-  "pkgconfig"
+  "pkgconf" {= "1.9.5-r0"}
 ]
 extra-source "audit-dev-3.1.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/audit-dev-3.1.1-r0.apk"

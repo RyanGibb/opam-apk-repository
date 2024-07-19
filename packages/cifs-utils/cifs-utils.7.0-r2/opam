@@ -6,13 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del cifs-utils"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libcap-so-2"
-  "so-libgssapi_krb5-so-2"
-  "so-libkeyutils-so-1"
-  "so-libkrb5-so-3"
-  "so-libtalloc-so-2"
-  "so-libwbclient-so-0"
+  "keyutils-libs" {= "1.6.3-r3"}
+  "krb5-libs" {= "1.21.3-r0"}
+  "libcap2" {= "2.69-r1"}
+  "libwbclient" {= "4.18.9-r0"}
+  "musl" {= "1.2.4_git20230717-r4"}
+  "talloc" {= "2.4.2-r0"}
 ]
 extra-source "cifs-utils-7.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/cifs-utils-7.0-r2.apk"

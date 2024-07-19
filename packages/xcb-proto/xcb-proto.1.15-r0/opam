@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del xcb-proto"]
 ]
 depends: [
-  "pkgconfig"
+  "pkgconf" {= "1.8.1-r0"}
 ]
 extra-source "xcb-proto-1.15-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/xcb-proto-1.15-r0.apk"

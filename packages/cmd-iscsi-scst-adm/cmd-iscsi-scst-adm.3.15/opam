@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "iscsi-scst" {= "2.2.1-r3"}
-]

@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "gyp" {= "20230301-r2"}
-]

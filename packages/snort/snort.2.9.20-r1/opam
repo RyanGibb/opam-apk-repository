@@ -6,15 +6,15 @@ remove: [
   ["sh" "-c" "sudo apk del snort"]
 ]
 depends: [
-  "-bin-sh"
-  "so-libc-musl-x86_64-so-1"
-  "so-libdnet-so-1"
-  "so-liblzma-so-5"
-  "so-libnetfilter_queue-so-1"
-  "so-libpcap-so-1"
-  "so-libpcre-so-1"
-  "so-libsfbpf-so-0"
-  "so-libz-so-1"
+  "daq-sfbpf" {= "2.0.7-r2"}
+  "libdnet" {= "1.16.4-r1"}
+  "libnetfilter_queue" {= "1.0.5-r2"}
+  "libpcap" {= "1.10.4-r1"}
+  "musl" {= "1.2.4-r2"}
+  "pcre" {= "8.45-r3"}
+  "xz-libs" {= "5.4.3-r0"}
+  "zlib" {= "1.2.13-r1"}
+  ("busybox-binsh" {= "1.36.1-r7"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.54-r3"})
 ]
 extra-source "snort-2.9.20-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/snort-2.9.20-r1.apk"

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del rsnapshot"]
 ]
 depends: [
-  "openssh-client"
   "perl"
   "rsync"
+  ("openssh-client-krb5" {= "9.0_p1-r5"} | "openssh-client-default" {= "9.0_p1-r5"})
 ]
 extra-source "rsnapshot-1.4.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/rsnapshot-1.4.4-r0.apk"

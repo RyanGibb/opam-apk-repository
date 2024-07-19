@@ -9,7 +9,7 @@ depends: [
   "libressl3-1-libcrypto" {= "3.1.5-r0"}
   "libressl3-1-libssl" {= "3.1.5-r0"}
   "libressl3-1-libtls" {= "3.1.5-r0"}
-  "pkgconfig"
+  "pkgconf" {= "1.7.3-r0"}
 ]
 extra-source "libressl-dev-3.1.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/libressl-dev-3.1.5-r0.apk"

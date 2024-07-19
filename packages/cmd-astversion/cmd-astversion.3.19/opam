@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "asterisk" {= "20.5.2-r0"}
-]

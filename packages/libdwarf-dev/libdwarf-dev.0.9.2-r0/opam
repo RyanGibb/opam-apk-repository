@@ -8,8 +8,8 @@ remove: [
 depends: [
   "libdwarf" {= "0.9.2-r0"}
   "liblibdwarfp" {= "0.9.2-r0"}
-  "pc-libzstd"
-  "pkgconfig"
+  "pkgconf" {= "2.2.0-r0"}
+  "zstd-dev" {= "1.5.6-r0"}
 ]
 extra-source "libdwarf-dev-0.9.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libdwarf-dev-0.9.2-r0.apk"

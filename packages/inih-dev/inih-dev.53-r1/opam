@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "inih" {= "53-r1"}
-  "pkgconfig"
+  "pkgconf" {= "1.8.1-r0"}
 ]
 extra-source "inih-dev-53-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/inih-dev-53-r1.apk"

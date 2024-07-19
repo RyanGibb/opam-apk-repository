@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del openssh-sk-helper"]
 ]
 depends: [
+  "libcrypto3" {= "3.0.14-r0"}
+  "libfido2" {= "1.12.0-r0"}
+  "musl" {= "1.2.3-r5"}
   "openssh-keygen" {= "9.1_p1-r6"}
   "openssh-server-common" {= "9.1_p1-r6"}
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-3"
-  "so-libfido2-so-1"
 ]
 extra-source "openssh-sk-helper-9.1_p1-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/openssh-sk-helper-9.1_p1-r6.apk"

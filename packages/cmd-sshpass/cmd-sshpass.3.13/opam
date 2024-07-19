@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "sshpass" {= "1.06-r0"}
-]

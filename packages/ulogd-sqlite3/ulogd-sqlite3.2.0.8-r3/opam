@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del ulogd-sqlite3"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libsqlite3-so-0"
+  "musl" {= "1.2.5-r0"}
+  "sqlite-libs" {= "3.45.3-r1"}
   "ulogd" {= "2.0.8-r3"}
 ]
 extra-source "ulogd-sqlite3-2.0.8-r3.apk" {

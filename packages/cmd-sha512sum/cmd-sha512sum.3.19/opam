@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "coreutils-sha512sum" {= "9.4-r2"}
-]

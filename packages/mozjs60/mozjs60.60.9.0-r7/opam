@@ -6,15 +6,14 @@ remove: [
   ["sh" "-c" "sudo apk del mozjs60"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libffi-so-7"
-  "so-libgcc_s-so-1"
-  "so-libicui18n-so-67"
-  "so-libicuuc-so-67"
-  "so-libnspr4-so"
-  "so-libreadline-so-8"
-  "so-libstdc++-so-6"
-  "so-libz-so-1"
+  "icu-libs" {= "67.1-r0"}
+  "libffi" {= "3.3-r2"}
+  "libgcc" {= "9.3.0-r2"}
+  "libstdc++" {= "9.3.0-r2"}
+  "musl" {= "1.1.24-r10"}
+  "nspr" {= "4.27-r0"}
+  "readline" {= "8.0.4-r0"}
+  "zlib" {= "1.2.12-r3"}
 ]
 extra-source "mozjs60-60.9.0-r7.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/mozjs60-60.9.0-r7.apk"

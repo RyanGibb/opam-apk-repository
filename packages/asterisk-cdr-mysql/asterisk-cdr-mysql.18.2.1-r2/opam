@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del asterisk-cdr-mysql"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libmariadb-so-3"
+  "mariadb-connector-c" {= "3.1.11-r0"}
+  "musl" {= "1.2.2-r2"}
 ]
 extra-source "asterisk-cdr-mysql-18.2.1-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/asterisk-cdr-mysql-18.2.1-r2.apk"

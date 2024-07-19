@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del libxrender"]
 ]
 depends: [
-  "so-libX11-so-6"
-  "so-libc-musl-x86_64-so-1"
+  "libx11" {= "1.8.7-r0"}
+  "musl" {= "1.2.4_git20230717-r4"}
 ]
 extra-source "libxrender-0.9.11-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/libxrender-0.9.11-r4.apk"

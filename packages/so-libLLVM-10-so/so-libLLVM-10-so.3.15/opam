@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "llvm10-libs" {= "10.0.1-r4"}
-]

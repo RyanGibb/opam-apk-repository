@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del lua5.3-apk"]
 ]
 depends: [
+  "apk-tools" {= "2.12.7-r3"}
   "ca-certificates-bundle"
+  "musl" {= "1.2.2-r9"}
   "musl" {>= "1.2"}
-  "so-libapk-so-3-12-0"
-  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "lua5.3-apk-2.12.7-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lua5.3-apk-2.12.7-r3.apk"

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del libverto-libevent"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libevent-2-1-so-7"
-  "so-libverto-so-1"
+  "libevent" {= "2.1.12-r4"}
+  "libverto" {= "0.3.2-r0"}
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "libverto-libevent-0.3.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/libverto-libevent-0.3.2-r0.apk"

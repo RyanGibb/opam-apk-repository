@@ -9,7 +9,7 @@ depends: [
   "gc-dev"
   "guile"
   "guile-libs" {= "3.0.6-r0"}
-  "pkgconfig"
+  "pkgconf" {= "1.7.4-r1"}
 ]
 extra-source "guile-dev-3.0.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/guile-dev-3.0.6-r0.apk"

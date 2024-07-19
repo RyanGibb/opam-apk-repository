@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "libquadmath" {= "12.2.1_git20220924-r10"}
-]

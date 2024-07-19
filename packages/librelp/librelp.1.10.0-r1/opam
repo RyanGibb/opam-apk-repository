@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del librelp"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-3"
-  "so-libgnutls-so-30"
-  "so-libssl-so-3"
+  "gnutls" {= "3.7.8-r3"}
+  "libcrypto3" {= "3.0.14-r0"}
+  "libssl3" {= "3.0.14-r0"}
+  "musl" {= "1.2.3-r5"}
 ]
 extra-source "librelp-1.10.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/librelp-1.10.0-r1.apk"

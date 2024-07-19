@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del py3-dbus"]
 ]
 depends: [
+  "dbus-libs" {= "1.12.24-r0"}
+  "glib" {= "2.68.3-r0"}
+  "musl" {= "1.2.2-r5"}
   "python3"
-  "so-libc-musl-x86_64-so-1"
-  "so-libdbus-1-so-3"
-  "so-libglib-2-0-so-0"
 ]
 extra-source "py3-dbus-1.2.16-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/py3-dbus-1.2.16-r3.apk"

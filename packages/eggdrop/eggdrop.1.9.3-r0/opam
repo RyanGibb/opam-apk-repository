@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del eggdrop"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-3"
-  "so-libssl-so-3"
-  "so-libtcl8-6-so"
-  "so-libz-so-1"
+  "libcrypto3" {= "3.0.14-r0"}
+  "libssl3" {= "3.0.14-r0"}
+  "musl" {= "1.2.3-r5"}
+  "tcl" {= "8.6.12-r1"}
+  "zlib" {= "1.2.13-r0"}
 ]
 extra-source "eggdrop-1.9.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/eggdrop-1.9.3-r0.apk"

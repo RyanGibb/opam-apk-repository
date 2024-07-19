@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "drbd-utils" {= "9.22.0-r1"}
-]

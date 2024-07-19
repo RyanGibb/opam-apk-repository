@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del libcap-ng"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.2.4_git20230717-r4"}
 ]
 extra-source "libcap-ng-0.8.3-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/libcap-ng-0.8.3-r4.apk"

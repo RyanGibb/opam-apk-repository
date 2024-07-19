@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del s6-rc"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libexecline-so-2-8"
-  "so-libs6-so-2-10"
-  "so-libskarnet-so-2-10"
+  "execline" {= "2.8.0.1-r0"}
+  "musl" {= "1.2.2-r5"}
+  "s6" {= "2.10.0.3-r0"}
+  "skalibs" {= "2.10.0.3-r0"}
 ]
 extra-source "s6-rc-0.5.2.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/s6-rc-0.5.2.2-r0.apk"

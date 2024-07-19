@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del libgphobos"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
-  "so-libucontext-so-1"
+  "libgcc" {= "12.2.1_git20220924-r4"}
+  "libucontext" {= "1.2-r0"}
+  "musl" {= "1.2.3-r5"}
 ]
 extra-source "libgphobos-12.2.1_git20220924-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libgphobos-12.2.1_git20220924-r4.apk"

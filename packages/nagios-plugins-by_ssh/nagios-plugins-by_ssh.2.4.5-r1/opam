@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del nagios-plugins-by_ssh"]
 ]
 depends: [
+  "libcrypto3" {= "3.3.1-r3"}
+  "musl" {= "1.2.5-r0"}
   "nagios-plugins"
-  "openssh-client"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-3"
+  ("openssh-client-default" {= "9.7_p1-r4"} | "openssh-client-krb5" {= "9.7_p1-r4"})
 ]
 extra-source "nagios-plugins-by_ssh-2.4.5-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/nagios-plugins-by_ssh-2.4.5-r1.apk"

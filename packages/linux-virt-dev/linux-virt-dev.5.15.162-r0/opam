@@ -11,13 +11,13 @@ depends: [
   "elfutils-dev"
   "flex"
   "gmp-dev"
+  "libcrypto3" {= "3.0.14-r0"}
+  "libelf" {= "0.187-r2"}
+  "libstdc++" {= "12.2.1_git20220924-r4"}
   "mpc1-dev"
   "mpfr-dev"
+  "musl" {= "1.2.3-r5"}
   "perl"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-3"
-  "so-libelf-so-1"
-  "so-libstdc++-so-6"
   "zstd"
 ]
 extra-source "linux-virt-dev-5.15.162-r0.apk" {

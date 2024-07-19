@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del iproute2-ss"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libcap-so-2"
-  "so-libmnl-so-0"
+  "libcap" {= "2.64-r1"}
+  "libmnl" {= "1.0.5-r0"}
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "iproute2-ss-5.17.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/iproute2-ss-5.17.0-r0.apk"

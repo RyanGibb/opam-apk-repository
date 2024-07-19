@@ -6,13 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del nftables"]
 ]
 depends: [
-  "-bin-sh"
-  "so-libc-musl-x86_64-so-1"
-  "so-libgmp-so-10"
-  "so-libjansson-so-4"
-  "so-libmnl-so-0"
-  "so-libnftnl-so-11"
-  "so-libreadline-so-8"
+  "busybox" {= "1.35.0-r18"}
+  "gmp" {= "6.2.1-r2"}
+  "jansson" {= "2.14-r0"}
+  "libmnl" {= "1.0.5-r0"}
+  "libnftnl" {= "1.2.3-r0"}
+  "musl" {= "1.2.3-r3"}
+  "readline" {= "8.1.2-r0"}
 ]
 extra-source "nftables-1.0.2-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/nftables-1.0.2-r1.apk"

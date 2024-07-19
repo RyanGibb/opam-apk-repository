@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "font-freefont" {= "20120503-r3"}
-]

@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del libgccjit"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libgmp-so-10"
-  "so-libisl-so-23"
-  "so-libmpc-so-3"
-  "so-libmpfr-so-6"
-  "so-libz-so-1"
+  "gmp" {= "6.2.1-r3"}
+  "mpc1" {= "1.3.1-r1"}
+  "mpfr4" {= "4.2.0_p12-r0"}
+  "musl" {= "1.2.4-r2"}
+  "zlib" {= "1.2.13-r1"}
+  ("isl25" {= "0.25-r2"} | "isl26" {= "0.26-r1"})
 ]
 extra-source "libgccjit-12.2.1_git20220924-r10.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/libgccjit-12.2.1_git20220924-r10.apk"

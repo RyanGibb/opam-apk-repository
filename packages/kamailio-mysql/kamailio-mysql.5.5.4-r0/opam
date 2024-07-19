@@ -7,11 +7,10 @@ remove: [
 ]
 depends: [
   "kamailio"
+  "kamailio" {= "5.5.4-r0"}
   "kamailio-db"
-  "so-libc-musl-x86_64-so-1"
-  "so-libmariadb-so-3"
-  "so-libsrdb1-so-1"
-  "so-libsrdb2-so-1"
+  "mariadb-connector-c" {= "3.1.13-r4"}
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "kamailio-mysql-5.5.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/kamailio-mysql-5.5.4-r0.apk"

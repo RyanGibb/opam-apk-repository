@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del spice-protocol"]
 ]
 depends: [
-  "pkgconfig"
+  "pkgconf" {= "1.7.2-r0"}
 ]
 extra-source "spice-protocol-0.14.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/spice-protocol-0.14.1-r0.apk"

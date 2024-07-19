@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del cdparanoia"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libcdda_interface-so-0"
-  "so-libcdda_paranoia-so-0"
+  "cdparanoia-libs" {= "10.2-r10"}
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "cdparanoia-10.2-r10.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/cdparanoia-10.2-r10.apk"

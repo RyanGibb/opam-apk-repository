@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "rsyslog-libdbi" {= "8.2404.0-r0"}
-]

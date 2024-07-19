@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "ez-ipupdate" {= "3.0.10-r13"}
-]

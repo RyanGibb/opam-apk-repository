@@ -8,7 +8,7 @@ remove: [
 depends: [
   "gmp-dev"
   "libucontext-dev"
-  "pkgconfig"
+  "pkgconf" {= "1.7.4-r1"}
   "ruby" {= "2.7.8-r0"}
   "ruby-libs" {= "2.7.8-r0"}
 ]

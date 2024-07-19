@@ -6,15 +6,15 @@ remove: [
   ["sh" "-c" "sudo apk del perdition"]
 ]
 depends: [
-  "-bin-sh"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-1-1"
-  "so-libgdbm-so-6"
-  "so-libpopt-so-0"
-  "so-libssl-so-1-1"
-  "so-libvanessa_adt-so-1"
-  "so-libvanessa_logger-so-0"
-  "so-libvanessa_socket-so-2"
+  "busybox" {= "1.35.0-r18"}
+  "gdbm" {= "1.23-r0"}
+  "libcrypto1-1" {= "1.1.1w-r1"}
+  "libssl1-1" {= "1.1.1w-r1"}
+  "musl" {= "1.2.3-r3"}
+  "popt" {= "1.18-r0"}
+  "vanessa_adt" {= "0.0.9-r1"}
+  "vanessa_logger" {= "0.0.10-r1"}
+  "vanessa_socket" {= "0.0.13-r0"}
 ]
 extra-source "perdition-2.2-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/perdition-2.2-r3.apk"

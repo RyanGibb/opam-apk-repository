@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del py3-libfdt"]
 ]
 depends: [
+  "musl" {= "1.2.3-r5"}
   "python3"
-  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "py3-libfdt-1.6.1-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/py3-libfdt-1.6.1-r2.apk"

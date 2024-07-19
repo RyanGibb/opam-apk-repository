@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del harfbuzz-cairo"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libcairo-so-2"
-  "so-libharfbuzz-so-0"
+  "cairo" {= "1.18.0-r0"}
+  "harfbuzz" {= "8.3.0-r0"}
+  "musl" {= "1.2.4_git20230717-r4"}
 ]
 extra-source "harfbuzz-cairo-8.3.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/harfbuzz-cairo-8.3.0-r0.apk"

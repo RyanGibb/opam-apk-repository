@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "curl"
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.2.2-r9"}
 ]
 extra-source "libmaxminddb-1.6.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libmaxminddb-1.6.0-r0.apk"

@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "argon2-libs" {= "20190702-r1"}
-]

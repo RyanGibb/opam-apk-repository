@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del memcached"]
 ]
 depends: [
-  "-bin-sh"
-  "so-libc-musl-x86_64-so-1"
-  "so-libevent-2-1-so-7"
-  "so-libsasl2-so-3"
-  "so-libseccomp-so-2"
+  "busybox" {= "1.33.1-r8"}
+  "libevent" {= "2.1.12-r2"}
+  "libsasl" {= "2.1.28-r0"}
+  "libseccomp" {= "2.5.1-r2"}
+  "musl" {= "1.2.2-r5"}
 ]
 extra-source "memcached-1.6.9-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/memcached-1.6.9-r0.apk"

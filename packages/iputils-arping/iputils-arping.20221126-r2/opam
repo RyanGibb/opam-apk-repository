@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del iputils-arping"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libcap-so-2"
+  "libcap2" {= "2.69-r1"}
+  "musl" {= "1.2.4_git20230717-r4"}
 ]
 extra-source "iputils-arping-20221126-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/iputils-arping-20221126-r2.apk"

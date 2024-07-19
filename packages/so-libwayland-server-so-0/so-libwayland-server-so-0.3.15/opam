@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "wayland-libs-server" {= "1.19.0-r1"}
-]

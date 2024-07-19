@@ -7,15 +7,15 @@ remove: [
 ]
 depends: [
   "device-mapper"
+  "device-mapper-libs" {= "2.03.21-r3"}
   "eudev"
-  "pkgconfig"
-  "so-libaio-so-1"
-  "so-libc-musl-x86_64-so-1"
-  "so-libdevmapper-so-1-02"
-  "so-libjson-c-so-5"
-  "so-libmount-so-1"
-  "so-libudev-so-1"
-  "so-liburcu-so-8"
+  "eudev-libs" {= "3.2.11-r8"}
+  "json-c" {= "0.16-r3"}
+  "libaio" {= "0.3.113-r1"}
+  "libmount" {= "2.38.1-r8"}
+  "musl" {= "1.2.4-r2"}
+  "pkgconf" {= "1.9.5-r0"}
+  "userspace-rcu" {= "0.14.0-r1"}
 ]
 extra-source "multipath-tools-0.9.5-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/multipath-tools-0.9.5-r1.apk"

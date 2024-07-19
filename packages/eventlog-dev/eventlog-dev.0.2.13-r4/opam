@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "eventlog" {= "0.2.13-r4"}
-  "pkgconfig"
+  "pkgconf" {= "2.2.0-r0"}
 ]
 extra-source "eventlog-dev-0.2.13-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/eventlog-dev-0.2.13-r4.apk"

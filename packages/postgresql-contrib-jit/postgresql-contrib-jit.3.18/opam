@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  ("postgresql14-contrib-jit" {= "14.12-r0"} | "postgresql15-contrib-jit" {= "15.7-r0"})
-]

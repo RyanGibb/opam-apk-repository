@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del lua5.3-ldbus"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libdbus-1-so-3"
+  "dbus-libs" {= "1.14.8-r0"}
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "lua5.3-ldbus-20150430-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/lua5.3-ldbus-20150430-r2.apk"

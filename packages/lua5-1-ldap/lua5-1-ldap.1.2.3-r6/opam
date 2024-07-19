@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del lua5.1-ldap"]
 ]
 depends: [
+  "libldap" {= "2.4.58-r0"}
   "lua5-1"
-  "so-libc-musl-x86_64-so-1"
-  "so-liblber-2-4-so-2"
-  "so-libldap-2-4-so-2"
+  "musl" {= "1.1.24-r10"}
 ]
 extra-source "lua5.1-ldap-1.2.3-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/lua5.1-ldap-1.2.3-r6.apk"

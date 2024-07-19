@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del policyd-spf-fs"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libspf2-so-2"
+  "libspf2" {= "1.2.11-r0"}
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "policyd-spf-fs-23-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/policyd-spf-fs-23-r3.apk"

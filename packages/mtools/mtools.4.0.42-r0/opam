@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del mtools"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.2.3-r5"}
 ]
 extra-source "mtools-4.0.42-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mtools-4.0.42-r0.apk"

@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "gnutls-dev" {= "3.7.7-r1"}
-]

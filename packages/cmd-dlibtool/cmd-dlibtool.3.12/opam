@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "slibtool" {= "0.5.28-r0"}
-]

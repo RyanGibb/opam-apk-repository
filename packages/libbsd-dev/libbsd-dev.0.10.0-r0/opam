@@ -9,7 +9,7 @@ depends: [
   "bsd-compat-headers"
   "libbsd" {= "0.10.0-r0"}
   "linux-headers"
-  "pkgconfig"
+  "pkgconf" {= "1.7.3-r0"}
 ]
 extra-source "libbsd-dev-0.10.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/libbsd-dev-0.10.0-r0.apk"

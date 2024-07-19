@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "apk-tools" {= "2.12.14-r0"}
-  "pc-openssl"
-  "pc-zlib"
-  "pkgconfig"
+  "openssl-dev" {= "3.0.14-r0"}
+  "pkgconf" {= "1.9.4-r0"}
+  "zlib-dev" {= "1.2.13-r0"}
 ]
 extra-source "apk-tools-dev-2.12.14-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/apk-tools-dev-2.12.14-r0.apk"

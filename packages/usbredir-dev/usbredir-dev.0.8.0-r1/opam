@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del usbredir-dev"]
 ]
 depends: [
-  "pc-libusb-1-0"
-  "pkgconfig"
+  "libusb-dev" {= "1.0.23-r0"}
+  "pkgconf" {= "1.7.2-r0"}
   "usbredir" {= "0.8.0-r1"}
 ]
 extra-source "usbredir-dev-0.8.0-r1.apk" {

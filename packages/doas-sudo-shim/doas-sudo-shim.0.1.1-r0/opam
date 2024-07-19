@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del doas-sudo-shim"]
 ]
 depends: [
-  "cmd-doas"
+  "doas" {= "6.8.2-r3"}
 ]
 conflicts: [
   "sudo"

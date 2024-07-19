@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del uwsgi-emperor_zeromq"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libzmq-so-5"
+  "libzmq" {= "4.3.3-r1"}
+  "musl" {= "1.2.2-r2"}
   "uwsgi"
 ]
 extra-source "uwsgi-emperor_zeromq-2.0.19.1-r1.apk" {

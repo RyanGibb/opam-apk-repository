@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del libgmpxx"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
-  "so-libgmp-so-10"
-  "so-libstdc++-so-6"
+  "gmp" {= "6.2.1-r3"}
+  "libgcc" {= "12.2.1_git20220924-r10"}
+  "libstdc++" {= "12.2.1_git20220924-r10"}
+  "musl" {= "1.2.4-r2"}
 ]
 extra-source "libgmpxx-6.2.1-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/libgmpxx-6.2.1-r3.apk"

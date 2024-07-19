@@ -7,8 +7,7 @@ remove: [
 ]
 depends: [
   "iptables" {= "1.8.8-r1"}
-  "so-libc-musl-x86_64-so-1"
-  "so-libxtables-so-12"
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "ip6tables-1.8.8-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/ip6tables-1.8.8-r1.apk"

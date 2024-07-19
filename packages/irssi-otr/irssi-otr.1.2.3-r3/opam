@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "irssi"
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcrypt-so-20"
-  "so-libotr-so-5"
+  "libgcrypt" {= "1.10.1-r0"}
+  "libotr" {= "4.1.1-r2"}
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "irssi-otr-1.2.3-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/irssi-otr-1.2.3-r3.apk"

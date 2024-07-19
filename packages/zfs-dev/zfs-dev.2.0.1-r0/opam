@@ -10,15 +10,14 @@ depends: [
   "e2fsprogs-dev"
   "glib-dev"
   "libtirpc-dev"
+  "libtirpc-dev" {= "1.3.1-r1"}
   "openssl-dev"
-  "pc-blkid"
-  "pc-libcrypto"
-  "pc-libtirpc"
-  "pc-uuid"
-  "pc-zlib"
-  "pkgconfig"
+  "openssl-dev" {= "1.1.1s-r0"}
+  "pkgconf" {= "1.7.3-r0"}
   "util-linux-dev"
+  "util-linux-dev" {= "2.37.4-r0"}
   "zfs-libs" {= "2.0.1-r0"}
+  "zlib-dev" {= "1.2.12-r3"}
 ]
 extra-source "zfs-dev-2.0.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/zfs-dev-2.0.1-r0.apk"

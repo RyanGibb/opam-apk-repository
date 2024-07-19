@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "freeradius" {= "3.0.23-r0"}
-  "so-libc-musl-x86_64-so-1"
-  "so-libpam-so-0"
+  "linux-pam" {= "1.5.1-r1"}
+  "musl" {= "1.2.2-r5"}
 ]
 extra-source "freeradius-pam-3.0.23-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/freeradius-pam-3.0.23-r0.apk"

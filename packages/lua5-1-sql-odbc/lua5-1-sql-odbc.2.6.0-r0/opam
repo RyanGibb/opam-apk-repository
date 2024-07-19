@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "lua5-1"
-  "so-libc-musl-x86_64-so-1"
-  "so-libodbc-so-2"
+  "musl" {= "1.2.2-r2"}
+  "unixodbc" {= "2.3.9-r1"}
 ]
 extra-source "lua5.1-sql-odbc-2.6.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/lua5.1-sql-odbc-2.6.0-r0.apk"

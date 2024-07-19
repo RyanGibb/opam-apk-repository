@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del asterisk-mobile"]
 ]
 depends: [
-  "so-libbluetooth-so-3"
-  "so-libc-musl-x86_64-so-1"
+  "bluez-libs" {= "5.64-r0"}
+  "musl" {= "1.2.2-r9"}
 ]
 extra-source "asterisk-mobile-18.2.2-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/asterisk-mobile-18.2.2-r6.apk"

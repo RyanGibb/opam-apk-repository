@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libxxhash" {= "0.8.2-r2"}
-  "pkgconfig"
+  "pkgconf" {= "2.2.0-r0"}
 ]
 extra-source "xxhash-dev-0.8.2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/xxhash-dev-0.8.2-r2.apk"

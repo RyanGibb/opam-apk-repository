@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del perl-xml-parser"]
 ]
 depends: [
+  "libexpat" {= "2.6.2-r0"}
+  "musl" {= "1.2.4_git20230717-r4"}
   "perl"
   "perl-libwww"
-  "so-libc-musl-x86_64-so-1"
-  "so-libexpat-so-1"
 ]
 extra-source "perl-xml-parser-2.46-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/perl-xml-parser-2.46-r6.apk"

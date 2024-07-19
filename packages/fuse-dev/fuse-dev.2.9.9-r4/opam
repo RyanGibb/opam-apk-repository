@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "fuse" {= "2.9.9-r4"}
-  "pkgconfig"
+  "pkgconf" {= "1.9.5-r0"}
 ]
 extra-source "fuse-dev-2.9.9-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/fuse-dev-2.9.9-r4.apk"

@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del libisoburn"]
 ]
 depends: [
-  "so-libburn-so-4"
-  "so-libc-musl-x86_64-so-1"
-  "so-libedit-so-0"
-  "so-libisofs-so-6"
+  "libburn" {= "1.5.6-r0"}
+  "libedit" {= "20240517.3.1-r0"}
+  "libisofs" {= "1.5.6-r0"}
+  "musl" {= "1.2.5-r0"}
 ]
 extra-source "libisoburn-1.5.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libisoburn-1.5.6-r0.apk"

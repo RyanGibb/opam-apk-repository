@@ -7,10 +7,10 @@ remove: [
 ]
 depends: [
   "libxau-dev"
+  "libxau-dev" {= "1.0.10-r0"}
   "libxcb" {= "1.15-r0"}
-  "pc-xau" {>= "0.99.2"}
-  "pc-xdmcp"
-  "pkgconfig"
+  "libxdmcp-dev" {= "1.1.4-r0"}
+  "pkgconf" {= "1.9.4-r0"}
   "xcb-proto"
 ]
 extra-source "libxcb-dev-1.15-r0.apk" {

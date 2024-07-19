@@ -6,14 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del gnutls"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libgmp-so-10"
-  "so-libhogweed-so-6"
-  "so-libnettle-so-8"
-  "so-libp11-kit-so-0"
-  "so-libtasn1-so-6"
-  "so-libunistring-so-2"
-  "so-libz-so-1"
+  "gmp" {= "6.2.1-r2"}
+  "libtasn1" {= "4.18.0-r1"}
+  "libunistring" {= "1.0-r0"}
+  "musl" {= "1.2.3-r3"}
+  "nettle" {= "3.7.3-r0"}
+  "p11-kit" {= "0.24.1-r0"}
+  "zlib" {= "1.2.12-r3"}
 ]
 extra-source "gnutls-3.7.7-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/gnutls-3.7.7-r1.apk"

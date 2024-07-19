@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del uwsgi-ugreen"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libucontext-so-1"
+  "libucontext" {= "1.1-r0"}
+  "musl" {= "1.2.2-r9"}
   "uwsgi"
 ]
 extra-source "uwsgi-ugreen-2.0.19.1-r2.apk" {

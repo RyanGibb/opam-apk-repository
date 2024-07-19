@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del libnfsidmap"]
 ]
 depends: [
+  "musl" {= "1.2.4-r2"}
   "python3"
   "rpcbind"
-  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "libnfsidmap-2.6.3-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/libnfsidmap-2.6.3-r1.apk"

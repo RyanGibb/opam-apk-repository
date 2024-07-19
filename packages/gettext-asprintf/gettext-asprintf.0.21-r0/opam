@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del gettext-asprintf"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libstdc++-so-6"
+  "libstdc++" {= "10.3.1_git20211027-r0"}
+  "musl" {= "1.2.2-r9"}
 ]
 extra-source "gettext-asprintf-0.21-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/gettext-asprintf-0.21-r0.apk"

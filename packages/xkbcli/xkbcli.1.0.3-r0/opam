@@ -6,13 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del xkbcli"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libwayland-client-so-0"
-  "so-libxcb-so-1"
-  "so-libxcb-xkb-so-1"
-  "so-libxkbcommon-so-0"
-  "so-libxkbcommon-x11-so-0"
-  "so-libxkbregistry-so-0"
+  "libxcb" {= "1.14-r1"}
+  "libxkbcommon" {= "1.0.3-r0"}
+  "libxkbcommon-x11" {= "1.0.3-r0"}
+  "musl" {= "1.2.2-r2"}
+  "wayland-libs-client" {= "1.18.0-r5"}
   "xkeyboard-config"
 ]
 extra-source "xkbcli-1.0.3-r0.apk" {

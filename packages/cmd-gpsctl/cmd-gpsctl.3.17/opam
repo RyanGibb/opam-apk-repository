@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "gpsd-clients" {= "3.24-r0"}
-]

@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "lua5-4"
-  "so-libc-musl-x86_64-so-1"
-  "so-libsqlite3-so-0"
+  "musl" {= "1.2.4_git20230717-r4"}
+  "sqlite-libs" {= "3.44.2-r0"}
 ]
 extra-source "lua5.4-dbi-sqlite3-0.7.2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/lua5.4-dbi-sqlite3-0.7.2-r2.apk"

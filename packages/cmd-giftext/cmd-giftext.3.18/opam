@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "giflib-utils" {= "5.2.2-r0"}
-]

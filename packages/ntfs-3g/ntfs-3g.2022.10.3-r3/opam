@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del ntfs-3g"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libntfs-3g-so-89"
+  "musl" {= "1.2.5-r0"}
+  "ntfs-3g-libs" {= "2022.10.3-r3"}
 ]
 extra-source "ntfs-3g-2022.10.3-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/ntfs-3g-2022.10.3-r3.apk"

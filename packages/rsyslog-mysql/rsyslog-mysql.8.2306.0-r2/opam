@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del rsyslog-mysql"]
 ]
 depends: [
+  "mariadb-connector-c" {= "3.3.5-r0"}
+  "musl" {= "1.2.4-r2"}
   "rsyslog" {= "8.2306.0-r2"}
-  "so-libc-musl-x86_64-so-1"
-  "so-libmariadb-so-3"
 ]
 extra-source "rsyslog-mysql-8.2306.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/rsyslog-mysql-8.2306.0-r2.apk"

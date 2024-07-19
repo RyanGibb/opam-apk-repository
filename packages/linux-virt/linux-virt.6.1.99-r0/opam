@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del linux-virt"]
 ]
 depends: [
-  "initramfs-generator"
+  "mkinitfs" {= "3.8.1-r0"}
 ]
 extra-source "linux-virt-6.1.99-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/linux-virt-6.1.99-r0.apk"

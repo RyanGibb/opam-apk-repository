@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del distcc"]
 ]
 depends: [
-  "-bin-sh"
-  "so-libc-musl-x86_64-so-1"
-  "so-libpopt-so-0"
+  "busybox" {= "1.33.1-r8"}
+  "musl" {= "1.2.2-r5"}
+  "popt" {= "1.18-r0"}
 ]
 extra-source "distcc-3.3.5-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/distcc-3.3.5-r1.apk"

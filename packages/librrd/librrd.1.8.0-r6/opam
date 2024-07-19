@@ -6,14 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del librrd"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libcairo-so-2"
-  "so-libglib-2-0-so-0"
-  "so-libgobject-2-0-so-0"
-  "so-libpango-1-0-so-0"
-  "so-libpangocairo-1-0-so-0"
-  "so-libpng16-so-16"
-  "so-libxml2-so-2"
+  "cairo" {= "1.18.0-r0"}
+  "glib" {= "2.80.2-r0"}
+  "libpng" {= "1.6.43-r0"}
+  "libxml2" {= "2.12.7-r0"}
+  "musl" {= "1.2.5-r0"}
+  "pango" {= "1.52.2-r0"}
 ]
 extra-source "librrd-1.8.0-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/librrd-1.8.0-r6.apk"

@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del flac"]
 ]
 depends: [
-  "so-libFLAC-so-12"
-  "so-libc-musl-x86_64-so-1"
+  "flac-libs" {= "1.4.3-r0"}
+  "musl" {= "1.2.4-r2"}
 ]
 extra-source "flac-1.4.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/flac-1.4.3-r0.apk"

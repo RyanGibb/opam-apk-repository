@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del libva"]
 ]
 depends: [
-  "so-libX11-so-6"
-  "so-libXext-so-6"
-  "so-libXfixes-so-3"
-  "so-libc-musl-x86_64-so-1"
-  "so-libdrm-so-2"
-  "so-libwayland-client-so-0"
+  "libdrm" {= "2.4.109-r0"}
+  "libx11" {= "1.7.3.1-r1"}
+  "libxext" {= "1.3.4-r0"}
+  "libxfixes" {= "6.0.0-r0"}
+  "musl" {= "1.2.2-r9"}
+  "wayland-libs-client" {= "1.19.0-r1"}
 ]
 extra-source "libva-2.13.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libva-2.13.0-r0.apk"

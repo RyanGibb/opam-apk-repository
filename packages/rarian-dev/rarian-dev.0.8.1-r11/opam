@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del rarian-dev"]
 ]
 depends: [
-  "pkgconfig"
+  "pkgconf" {= "2.2.0-r0"}
   "rarian" {= "0.8.1-r11"}
 ]
 extra-source "rarian-dev-0.8.1-r11.apk" {

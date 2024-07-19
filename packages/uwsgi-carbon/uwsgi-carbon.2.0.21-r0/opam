@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del uwsgi-carbon"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.2.3-r5"}
   "uwsgi"
 ]
 extra-source "uwsgi-carbon-2.0.21-r0.apk" {

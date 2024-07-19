@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libestr" {= "0.1.11-r3"}
-  "pkgconfig"
+  "pkgconf" {= "1.9.5-r0"}
 ]
 extra-source "libestr-dev-0.1.11-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/libestr-dev-0.1.11-r3.apk"

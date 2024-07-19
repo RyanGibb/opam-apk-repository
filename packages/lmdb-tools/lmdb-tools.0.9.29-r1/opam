@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del lmdb-tools"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-liblmdb-so-0"
+  "lmdb" {= "0.9.29-r1"}
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "lmdb-tools-0.9.29-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/lmdb-tools-0.9.29-r1.apk"

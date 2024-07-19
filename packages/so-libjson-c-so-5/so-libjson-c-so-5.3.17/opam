@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "json-c" {= "0.16-r2"}
-]

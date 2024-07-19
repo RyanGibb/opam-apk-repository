@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "mii-tool" {= "1.60_git20140218-r2"}
-]

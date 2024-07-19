@@ -6,12 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del syslog-ng-http"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libcurl-so-4"
-  "so-libevtlog-3-36-so-0"
-  "so-libglib-2-0-so-0"
-  "so-libivykis-so-0"
-  "so-libsyslog-ng-3-36-so-0"
+  "glib" {= "2.72.4-r0"}
+  "ivykis" {= "0.42.4-r0"}
+  "libcurl" {= "8.5.0-r0"}
+  "musl" {= "1.2.3-r3"}
+  "syslog-ng" {= "3.36.1-r0"}
 ]
 extra-source "syslog-ng-http-3.36.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/syslog-ng-http-3.36.1-r0.apk"

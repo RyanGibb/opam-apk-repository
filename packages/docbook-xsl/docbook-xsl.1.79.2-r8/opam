@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del docbook-xsl"]
 ]
 depends: [
-  "-bin-sh"
   "docbook-xml"
   "libxml2-utils"
   "libxslt"
+  ("busybox-binsh" {= "1.36.1-r19"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.55-r0"})
 ]
 extra-source "docbook-xsl-1.79.2-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/docbook-xsl-1.79.2-r8.apk"

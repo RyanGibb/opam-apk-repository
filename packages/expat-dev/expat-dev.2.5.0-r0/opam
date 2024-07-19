@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "expat" {= "2.5.0-r0"}
-  "pkgconfig"
+  "pkgconf" {= "1.8.1-r0"}
 ]
 extra-source "expat-dev-2.5.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/expat-dev-2.5.0-r0.apk"

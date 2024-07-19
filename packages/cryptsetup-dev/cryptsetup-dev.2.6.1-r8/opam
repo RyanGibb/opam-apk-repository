@@ -7,10 +7,10 @@ remove: [
 ]
 depends: [
   "cryptsetup-libs" {= "2.6.1-r8"}
-  "pc-devmapper"
-  "pc-json-c"
-  "pc-uuid"
-  "pkgconfig"
+  "json-c-dev" {= "0.17-r0"}
+  "lvm2-dev" {= "2.03.23-r0"}
+  "pkgconf" {= "2.1.0-r0"}
+  "util-linux-dev" {= "2.39.3-r0"}
 ]
 extra-source "cryptsetup-dev-2.6.1-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/cryptsetup-dev-2.6.1-r8.apk"

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del liblognorm"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libestr-so-0"
-  "so-libfastjson-so-4"
+  "libestr" {= "0.1.11-r1"}
+  "libfastjson" {= "1.2304.0-r0"}
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "liblognorm-2.0.6-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/liblognorm-2.0.6-r2.apk"

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del libxslt"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcrypt-so-20"
-  "so-libxml2-so-2"
+  "libgcrypt" {= "1.10.2-r1"}
+  "libxml2" {= "2.11.8-r0"}
+  "musl" {= "1.2.4-r2"}
 ]
 extra-source "libxslt-1.1.38-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/libxslt-1.1.38-r0.apk"

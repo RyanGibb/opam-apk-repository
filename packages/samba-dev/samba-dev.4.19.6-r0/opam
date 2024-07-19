@@ -6,17 +6,17 @@ remove: [
   ["sh" "-c" "sudo apk del samba-dev"]
 ]
 depends: [
+  "ldb-dev" {= "2.8.0-r1"}
   "libsmbclient" {= "4.19.6-r0"}
   "libwbclient" {= "4.19.6-r0"}
-  "pc-ldb"
-  "pc-talloc"
-  "pc-tevent"
-  "pkgconfig"
+  "pkgconf" {= "2.2.0-r0"}
   "samba-client-libs" {= "4.19.6-r0"}
   "samba-common-server-libs" {= "4.19.6-r0"}
   "samba-dc-libs" {= "4.19.6-r0"}
   "samba-libs" {= "4.19.6-r0"}
   "samba-util-libs" {= "4.19.6-r0"}
+  "talloc-dev" {= "2.4.2-r1"}
+  "tevent-dev" {= "0.16.1-r0"}
 ]
 extra-source "samba-dev-4.19.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/samba-dev-4.19.6-r0.apk"

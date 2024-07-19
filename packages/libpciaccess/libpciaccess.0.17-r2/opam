@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "hwdata-pci"
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.2.4_git20230717-r4"}
 ]
 extra-source "libpciaccess-0.17-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/libpciaccess-0.17-r2.apk"

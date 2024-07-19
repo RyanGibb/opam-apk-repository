@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del perl-rrd"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-librrd-so-8"
+  "librrd" {= "1.7.2-r6"}
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "perl-rrd-1.7.2-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/perl-rrd-1.7.2-r6.apk"

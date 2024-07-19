@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del postfix-pcre"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libpcre-so-1"
+  "musl" {= "1.2.2-r9"}
+  "pcre" {= "8.45-r1"}
 ]
 extra-source "postfix-pcre-3.6.11-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/postfix-pcre-3.6.11-r0.apk"

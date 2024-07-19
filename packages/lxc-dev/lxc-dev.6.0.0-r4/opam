@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del lxc-dev"]
 ]
 depends: [
+  "dbus-dev" {= "1.14.10-r1"}
+  "libcap-dev" {= "2.70-r0"}
+  "libseccomp-dev" {= "2.5.5-r1"}
   "lxc-libs" {= "6.0.0-r4"}
-  "pc-dbus-1"
-  "pc-libcap"
-  "pc-libseccomp"
-  "pkgconfig"
+  "pkgconf" {= "2.2.0-r0"}
 ]
 extra-source "lxc-dev-6.0.0-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lxc-dev-6.0.0-r4.apk"

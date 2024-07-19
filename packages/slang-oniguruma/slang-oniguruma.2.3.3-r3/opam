@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del slang-oniguruma"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libonig-so-5"
+  "musl" {= "1.2.5-r0"}
+  "oniguruma" {= "6.9.9-r0"}
 ]
 extra-source "slang-oniguruma-2.3.3-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/slang-oniguruma-2.3.3-r3.apk"

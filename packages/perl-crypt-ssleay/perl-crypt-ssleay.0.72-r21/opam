@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del perl-crypt-ssleay"]
 ]
 depends: [
+  "libcrypto3" {= "3.3.1-r3"}
+  "libssl3" {= "3.3.1-r3"}
+  "musl" {= "1.2.5-r0"}
   "perl"
   "perl-lwp-protocol-https"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-3"
-  "so-libssl-so-3"
 ]
 extra-source "perl-crypt-ssleay-0.72-r21.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-crypt-ssleay-0.72-r21.apk"

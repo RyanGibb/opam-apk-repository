@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del pinentry"]
 ]
 depends: [
-  "-bin-sh"
-  "so-libassuan-so-0"
-  "so-libc-musl-x86_64-so-1"
-  "so-libgpg-error-so-0"
-  "so-libncursesw-so-6"
+  "libassuan" {= "2.5.6-r0"}
+  "libgpg-error" {= "1.46-r1"}
+  "musl" {= "1.2.3-r5"}
+  "ncurses-libs" {= "6.3_p20221119-r1"}
+  ("yash-binsh" {= "2.53-r2"} | "busybox-binsh" {= "1.35.0-r31"} | "dash-binsh" {= "0.5.11.5-r2"})
 ]
 extra-source "pinentry-1.2.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/pinentry-1.2.1-r0.apk"

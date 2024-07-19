@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del openldap-overlay-homedir"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-liblber-so-2"
-  "so-libldap-so-2"
+  "libldap" {= "2.6.5-r0"}
+  "musl" {= "1.2.4-r2"}
 ]
 extra-source "openldap-overlay-homedir-2.6.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/openldap-overlay-homedir-2.6.5-r0.apk"

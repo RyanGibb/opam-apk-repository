@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "kea-admin" {= "2.4.1-r0"}
-]

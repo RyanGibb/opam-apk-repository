@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del numactl-tools"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libnuma-so-1"
+  "musl" {= "1.2.3-r5"}
+  "numactl" {= "2.0.16-r1"}
 ]
 extra-source "numactl-tools-2.0.16-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/numactl-tools-2.0.16-r1.apk"

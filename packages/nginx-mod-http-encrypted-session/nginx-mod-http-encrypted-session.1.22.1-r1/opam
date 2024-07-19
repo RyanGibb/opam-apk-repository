@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del nginx-mod-http-encrypted-session"]
 ]
 depends: [
+  "musl" {= "1.2.3-r5"}
   "nginx"
   "nginx-mod-devel-kit"
-  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "nginx-mod-http-encrypted-session-1.22.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nginx-mod-http-encrypted-session-1.22.1-r1.apk"

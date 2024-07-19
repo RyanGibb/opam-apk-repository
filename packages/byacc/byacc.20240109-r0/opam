@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del byacc"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.2.5-r0"}
 ]
 conflicts: [
   "bison"

@@ -6,23 +6,18 @@ remove: [
   ["sh" "-c" "sudo apk del gtk+3.0-demo"]
 ]
 depends: [
+  "atk" {= "2.36.0-r0"}
+  "cairo" {= "1.16.0-r5"}
+  "gdk-pixbuf" {= "2.42.8-r0"}
+  "glib" {= "2.70.5-r0"}
+  "gtk+3-0" {= "3.24.30-r0"}
   "gtk-update-icon-cache"
+  "harfbuzz" {= "3.0.0-r2"}
+  "libepoxy" {= "1.5.9-r0"}
+  "libintl" {= "0.21-r0"}
+  "musl" {= "1.2.2-r9"}
+  "pango" {= "1.48.10-r0"}
   "shared-mime-info"
-  "so-libatk-1-0-so-0"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcairo-so-2"
-  "so-libepoxy-so-0"
-  "so-libgdk-3-so-0"
-  "so-libgdk_pixbuf-2-0-so-0"
-  "so-libgio-2-0-so-0"
-  "so-libglib-2-0-so-0"
-  "so-libgobject-2-0-so-0"
-  "so-libgtk-3-so-0"
-  "so-libharfbuzz-so-0"
-  "so-libintl-so-8"
-  "so-libpango-1-0-so-0"
-  "so-libpangocairo-1-0-so-0"
-  "so-libpangoft2-1-0-so-0"
 ]
 extra-source "gtk+3.0-demo-3.24.30-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/gtk+3.0-demo-3.24.30-r0.apk"

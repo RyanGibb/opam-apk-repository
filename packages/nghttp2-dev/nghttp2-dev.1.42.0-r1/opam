@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "nghttp2-libs" {= "1.42.0-r1"}
-  "pkgconfig"
+  "pkgconf" {= "1.7.3-r0"}
 ]
 extra-source "nghttp2-dev-1.42.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/nghttp2-dev-1.42.0-r1.apk"

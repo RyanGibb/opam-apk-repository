@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "mpg123-dev" {= "1.26.0-r0"}
-]

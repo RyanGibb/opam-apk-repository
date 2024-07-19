@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del ulogd-json"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libjansson-so-4"
+  "jansson" {= "2.14-r0"}
+  "musl" {= "1.2.3-r3"}
   "ulogd" {= "2.0.7-r8"}
 ]
 extra-source "ulogd-json-2.0.7-r8.apk" {

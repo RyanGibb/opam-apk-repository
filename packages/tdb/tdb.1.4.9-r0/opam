@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del tdb"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libtdb-so-1"
+  "musl" {= "1.2.4_git20230717-r4"}
+  "tdb-libs" {= "1.4.9-r0"}
 ]
 extra-source "tdb-1.4.9-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/tdb-1.4.9-r0.apk"

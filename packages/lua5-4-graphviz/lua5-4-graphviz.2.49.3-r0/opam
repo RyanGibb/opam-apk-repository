@@ -6,12 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del lua5.4-graphviz"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libcgraph-so-6"
-  "so-libgcc_s-so-1"
-  "so-libgvc-so-6"
-  "so-liblua-5-4-so-0"
-  "so-libstdc++-so-6"
+  "graphviz" {= "2.49.3-r0"}
+  "libgcc" {= "10.3.1_git20211027-r0"}
+  "libstdc++" {= "10.3.1_git20211027-r0"}
+  "lua5-4-libs" {= "5.4.3-r1"}
+  "musl" {= "1.2.2-r9"}
 ]
 extra-source "lua5.4-graphviz-2.49.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/lua5.4-graphviz-2.49.3-r0.apk"

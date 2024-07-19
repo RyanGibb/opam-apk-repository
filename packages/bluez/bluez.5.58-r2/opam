@@ -7,12 +7,12 @@ remove: [
 ]
 depends: [
   "dbus"
-  "so-libc-musl-x86_64-so-1"
-  "so-libdbus-1-so-3"
-  "so-libglib-2-0-so-0"
-  "so-libjson-c-so-5"
-  "so-libreadline-so-8"
-  "so-libudev-so-1"
+  "dbus-libs" {= "1.12.24-r0"}
+  "eudev-libs" {= "3.2.10-r0"}
+  "glib" {= "2.68.3-r0"}
+  "json-c" {= "0.15-r1"}
+  "musl" {= "1.2.2-r5"}
+  "readline" {= "8.1.0-r0"}
 ]
 extra-source "bluez-5.58-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/bluez-5.58-r2.apk"

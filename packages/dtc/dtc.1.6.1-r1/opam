@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del dtc"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libfdt-so-1"
+  "libfdt" {= "1.6.1-r1"}
+  "musl" {= "1.2.3-r3"}
 ]
 extra-source "dtc-1.6.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/dtc-1.6.1-r1.apk"

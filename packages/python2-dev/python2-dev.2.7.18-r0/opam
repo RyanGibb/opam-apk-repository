@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del python2-dev"]
 ]
 depends: [
-  "pkgconfig"
+  "pkgconf" {= "1.7.2-r0"}
   "python2" {= "2.7.18-r0"}
 ]
 extra-source "python2-dev-2.7.18-r0.apk" {

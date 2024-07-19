@@ -6,13 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del links"]
 ]
 depends: [
-  "so-libbz2-so-1"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-1-1"
-  "so-libevent-2-1-so-7"
-  "so-libssl-so-1-1"
-  "so-libz-so-1"
-  "so-libzstd-so-1"
+  "libbz2" {= "1.0.8-r1"}
+  "libcrypto1-1" {= "1.1.1s-r0"}
+  "libevent" {= "2.1.12-r1"}
+  "libssl1-1" {= "1.1.1s-r0"}
+  "musl" {= "1.2.2-r2"}
+  "zlib" {= "1.2.12-r3"}
+  "zstd-libs" {= "1.4.9-r0"}
 ]
 extra-source "links-2.21-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/links-2.21-r1.apk"

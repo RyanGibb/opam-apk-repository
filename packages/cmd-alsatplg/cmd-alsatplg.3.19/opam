@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "alsa-utils" {= "1.2.10-r0"}
-]

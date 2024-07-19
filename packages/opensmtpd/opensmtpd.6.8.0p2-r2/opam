@@ -6,16 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del opensmtpd"]
 ]
 depends: [
-  "-bin-sh"
+  "busybox" {= "1.33.1-r8"}
   "ca-certificates"
-  "so-libasr-so-0"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-1-1"
-  "so-libdb-5-3-so"
-  "so-libevent-2-1-so-7"
-  "so-libfts-so-0"
-  "so-libssl-so-1-1"
-  "so-libz-so-1"
+  "db" {= "5.3.28-r1"}
+  "fts" {= "1.2.7-r1"}
+  "libasr" {= "1.0.4-r0"}
+  "libcrypto1-1" {= "1.1.1t-r2"}
+  "libevent" {= "2.1.12-r2"}
+  "libssl1-1" {= "1.1.1t-r2"}
+  "musl" {= "1.2.2-r5"}
+  "zlib" {= "1.2.12-r3"}
 ]
 conflicts: [
   "postfix"

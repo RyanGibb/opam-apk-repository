@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del lua5.2-curl"]
 ]
 depends: [
+  "libcurl" {= "8.8.0-r0"}
   "lua5-2"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcurl-so-4"
+  "musl" {= "1.2.5-r0"}
 ]
 extra-source "lua5.2-curl-0.3.13-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lua5.2-curl-0.3.13-r1.apk"

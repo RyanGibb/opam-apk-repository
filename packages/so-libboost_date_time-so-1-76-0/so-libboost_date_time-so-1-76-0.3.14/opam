@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "boost1-76-date_time" {= "1.76.0-r0"}
-]

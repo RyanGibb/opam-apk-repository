@@ -6,16 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del kea-hook-stat-cmds"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
-  "so-libkea-cc-so-54"
-  "so-libkea-dhcpsrv-so-90"
-  "so-libkea-exceptions-so-23"
-  "so-libkea-hooks-so-78"
-  "so-libkea-log-so-48"
-  "so-libkea-process-so-57"
-  "so-libkea-stats-so-29"
-  "so-libkea-util-so-68"
+  "kea-common" {= "2.4.1-r2"}
+  "libgcc" {= "13.2.1_git20240309-r0"}
+  "musl" {= "1.2.5-r0"}
 ]
 extra-source "kea-hook-stat-cmds-2.4.1-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/kea-hook-stat-cmds-2.4.1-r2.apk"

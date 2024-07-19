@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "musl-fts" {= "1.2.7-r5"}
-  "pkgconfig"
+  "pkgconf" {= "1.9.5-r0"}
 ]
 extra-source "musl-fts-dev-1.2.7-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/musl-fts-dev-1.2.7-r5.apk"

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del nrpe-plugin"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-3"
-  "so-libssl-so-3"
+  "libcrypto3" {= "3.0.14-r0"}
+  "libssl3" {= "3.0.14-r0"}
+  "musl" {= "1.2.3-r5"}
 ]
 extra-source "nrpe-plugin-4.1.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nrpe-plugin-4.1.0-r1.apk"

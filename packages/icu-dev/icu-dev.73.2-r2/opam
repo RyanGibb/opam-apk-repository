@@ -8,12 +8,10 @@ remove: [
 depends: [
   "icu" {= "73.2-r2"}
   "icu-libs" {= "73.2-r2"}
-  "pkgconfig"
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
-  "so-libicutu-so-73"
-  "so-libicuuc-so-73"
-  "so-libstdc++-so-6"
+  "libgcc" {= "12.2.1_git20220924-r10"}
+  "libstdc++" {= "12.2.1_git20220924-r10"}
+  "musl" {= "1.2.4-r2"}
+  "pkgconf" {= "1.9.5-r0"}
 ]
 extra-source "icu-dev-73.2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/icu-dev-73.2-r2.apk"

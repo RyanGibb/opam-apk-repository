@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del acl"]
 ]
 depends: [
-  "so-libacl-so-1"
-  "so-libc-musl-x86_64-so-1"
+  "libacl" {= "2.3.1-r1"}
+  "musl" {= "1.2.3-r5"}
 ]
 extra-source "acl-2.3.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/acl-2.3.1-r1.apk"

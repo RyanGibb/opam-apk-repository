@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "pixman-dev" {= "0.42.2-r1"}
-]

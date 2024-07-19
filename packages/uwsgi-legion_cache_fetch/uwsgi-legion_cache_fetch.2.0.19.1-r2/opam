@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del uwsgi-legion_cache_fetch"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
+  "musl" {= "1.2.2-r9"}
   "uwsgi"
 ]
 extra-source "uwsgi-legion_cache_fetch-2.0.19.1-r2.apk" {

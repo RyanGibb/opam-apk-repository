@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "libsecret-dev" {= "0.20.3-r0"}
-]

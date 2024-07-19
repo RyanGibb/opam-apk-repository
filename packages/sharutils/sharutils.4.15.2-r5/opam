@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "bzip2"
-  "so-libc-musl-x86_64-so-1"
-  "so-libintl-so-8"
+  "libintl" {= "0.22.3-r0"}
+  "musl" {= "1.2.4_git20230717-r4"}
   "xz"
 ]
 extra-source "sharutils-4.15.2-r5.apk" {

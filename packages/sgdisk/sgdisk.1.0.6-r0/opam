@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del sgdisk"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
-  "so-libpopt-so-0"
-  "so-libstdc++-so-6"
-  "so-libuuid-so-1"
+  "libgcc" {= "9.3.0-r2"}
+  "libstdc++" {= "9.3.0-r2"}
+  "libuuid" {= "2.37.4-r0"}
+  "musl" {= "1.1.24-r10"}
+  "popt" {= "1.16-r7"}
 ]
 extra-source "sgdisk-1.0.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/sgdisk-1.0.6-r0.apk"

@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "cutter" {= "1.04-r1"}
-]

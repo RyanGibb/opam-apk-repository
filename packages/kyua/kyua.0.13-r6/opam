@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del kyua"]
 ]
 depends: [
-  "so-libatf-c++-so-2"
-  "so-libc-musl-x86_64-so-1"
-  "so-libgcc_s-so-1"
-  "so-liblutok-so-3"
-  "so-libsqlite3-so-0"
-  "so-libstdc++-so-6"
+  "atf" {= "0.21-r4"}
+  "libgcc" {= "12.2.1_git20220924-r4"}
+  "libstdc++" {= "12.2.1_git20220924-r4"}
+  "lutok" {= "0.4-r3"}
+  "musl" {= "1.2.3-r5"}
+  "sqlite-libs" {= "3.40.1-r1"}
 ]
 extra-source "kyua-0.13-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/kyua-0.13-r6.apk"

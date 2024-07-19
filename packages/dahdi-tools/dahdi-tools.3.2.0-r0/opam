@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del dahdi-tools"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libnewt-so-0-52"
+  "musl" {= "1.2.3-r5"}
+  "newt" {= "0.52.23-r0"}
 ]
 extra-source "dahdi-tools-3.2.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dahdi-tools-3.2.0-r0.apk"

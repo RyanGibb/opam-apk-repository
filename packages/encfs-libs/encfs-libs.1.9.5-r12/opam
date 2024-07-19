@@ -6,14 +6,14 @@ remove: [
   ["sh" "-c" "sudo apk del encfs-libs"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-1-1"
-  "so-libfuse-so-2"
-  "so-libgcc_s-so-1"
-  "so-libintl-so-8"
-  "so-libssl-so-1-1"
-  "so-libstdc++-so-6"
-  "so-libtinyxml2-so-9"
+  "fuse" {= "2.9.9-r1"}
+  "libcrypto1-1" {= "1.1.1w-r1"}
+  "libgcc" {= "10.3.1_git20211027-r0"}
+  "libintl" {= "0.21-r0"}
+  "libssl1-1" {= "1.1.1w-r1"}
+  "libstdc++" {= "10.3.1_git20211027-r0"}
+  "musl" {= "1.2.2-r9"}
+  "tinyxml2" {= "9.0.0-r0"}
 ]
 extra-source "encfs-libs-1.9.5-r12.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/encfs-libs-1.9.5-r12.apk"

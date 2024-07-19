@@ -9,11 +9,10 @@ depends: [
   "clang14-libclang" {= "14.0.6-r7"}
   "clang14-libs" {= "14.0.6-r7"}
   "gcc"
+  "libstdc++" {= "13.2.1_git20231014-r0"}
   "libstdc++-dev"
-  "so-libLLVM-14-so"
-  "so-libc-musl-x86_64-so-1"
-  "so-libclang-cpp-so-14"
-  "so-libstdc++-so-6"
+  "llvm14-libs" {= "14.0.6-r17"}
+  "musl" {= "1.2.4_git20230717-r4"}
 ]
 extra-source "clang14-14.0.6-r7.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/clang14-14.0.6-r7.apk"

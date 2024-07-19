@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del strace"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libdw-so-1"
+  "libelf" {= "0.185-r0"}
+  "musl" {= "1.2.2-r9"}
 ]
 extra-source "strace-5.14-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/strace-5.14-r0.apk"

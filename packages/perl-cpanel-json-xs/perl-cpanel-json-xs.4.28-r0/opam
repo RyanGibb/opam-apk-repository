@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del perl-cpanel-json-xs"]
 ]
 depends: [
+  "musl" {= "1.2.3-r3"}
   "perl"
-  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "perl-cpanel-json-xs-4.28-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/perl-cpanel-json-xs-4.28-r0.apk"

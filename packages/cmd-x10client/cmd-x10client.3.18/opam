@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "perl-x10" {= "0.04-r5"}
-]

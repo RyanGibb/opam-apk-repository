@@ -7,9 +7,8 @@ remove: [
 ]
 depends: [
   "dovecot" {= "2.3.15-r0"}
-  "so-libc-musl-x86_64-so-1"
-  "so-libgssapi-so-3"
-  "so-libkrb5-so-26"
+  "heimdal-libs" {= "7.7.1-r1"}
+  "musl" {= "1.2.2-r5"}
 ]
 extra-source "dovecot-gssapi-2.3.15-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/dovecot-gssapi-2.3.15-r0.apk"

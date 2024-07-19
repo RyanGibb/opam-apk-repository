@@ -6,12 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del libxdamage-dev"]
 ]
 depends: [
+  "libx11-dev" {= "1.6.12-r1"}
   "libxdamage" {= "1.1.5-r0"}
-  "pc-damageproto" {>= "1.1"}
-  "pc-x11"
-  "pc-xfixes"
-  "pc-xproto"
-  "pkgconfig"
+  "libxfixes-dev" {= "5.0.3-r2"}
+  "pkgconf" {= "1.7.2-r0"}
+  "xorgproto" {= "2020.1-r0"}
 ]
 extra-source "libxdamage-dev-1.1.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/libxdamage-dev-1.1.5-r0.apk"

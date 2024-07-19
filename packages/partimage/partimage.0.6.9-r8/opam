@@ -6,16 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del partimage"]
 ]
 depends: [
-  "so-libbz2-so-1"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcrypto-so-1-1"
-  "so-libgcc_s-so-1"
-  "so-libintl-so-8"
-  "so-libnewt-so-0-52"
-  "so-libslang-so-2"
-  "so-libssl-so-1-1"
-  "so-libstdc++-so-6"
-  "so-libz-so-1"
+  "libbz2" {= "1.0.8-r1"}
+  "libcrypto1-1" {= "1.1.1t-r2"}
+  "libgcc" {= "10.3.1_git20210424-r2"}
+  "libintl" {= "0.21-r0"}
+  "libssl1-1" {= "1.1.1t-r2"}
+  "libstdc++" {= "10.3.1_git20210424-r2"}
+  "musl" {= "1.2.2-r5"}
+  "newt" {= "0.52.21-r0"}
+  "slang" {= "2.3.2-r0"}
+  "zlib" {= "1.2.12-r3"}
 ]
 extra-source "partimage-0.6.9-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/partimage-0.6.9-r8.apk"

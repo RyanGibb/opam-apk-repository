@@ -9,7 +9,7 @@ depends: [
   "docbook-xsl"
   "glib-dev"
   "pkgconf"
-  "pkgconfig"
+  "pkgconf" {= "1.8.1-r0"}
   "py3-pygments"
   "py3-six"
   "python3"

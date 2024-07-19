@@ -6,12 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del e2fsprogs"]
 ]
 depends: [
-  "so-libblkid-so-1"
-  "so-libc-musl-x86_64-so-1"
-  "so-libcom_err-so-2"
-  "so-libe2p-so-2"
-  "so-libext2fs-so-2"
-  "so-libuuid-so-1"
+  "e2fsprogs-libs" {= "1.46.6-r0"}
+  "libblkid" {= "2.38.1-r1"}
+  "libcom_err" {= "1.46.6-r0"}
+  "libuuid" {= "2.38.1-r1"}
+  "musl" {= "1.2.3-r5"}
 ]
 extra-source "e2fsprogs-1.46.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/e2fsprogs-1.46.6-r0.apk"

@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del knot-mod-dnstap"]
 ]
 depends: [
+  "fstrm" {= "0.6.1-r4"}
   "knot" {= "3.3.5-r0"}
-  "so-libc-musl-x86_64-so-1"
-  "so-libfstrm-so-0"
-  "so-libprotobuf-c-so-1"
+  "musl" {= "1.2.5-r0"}
+  "protobuf-c" {= "1.5.0-r0"}
 ]
 extra-source "knot-mod-dnstap-3.3.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/knot-mod-dnstap-3.3.5-r0.apk"

@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del tcl"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libz-so-1"
+  "musl" {= "1.1.24-r10"}
+  "zlib" {= "1.2.12-r3"}
 ]
 extra-source "tcl-8.6.10-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/tcl-8.6.10-r0.apk"

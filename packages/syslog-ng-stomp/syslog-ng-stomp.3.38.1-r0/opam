@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del syslog-ng-stomp"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libsyslog-ng-3-38-so-0"
+  "musl" {= "1.2.3-r5"}
+  "syslog-ng" {= "3.38.1-r0"}
 ]
 extra-source "syslog-ng-stomp-3.38.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/syslog-ng-stomp-3.38.1-r0.apk"

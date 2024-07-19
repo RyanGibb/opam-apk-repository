@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del rtmpdump"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-librtmp-so-1"
+  "librtmp" {= "2.4_git20190330-r4"}
+  "musl" {= "1.2.5-r0"}
 ]
 extra-source "rtmpdump-2.4_git20190330-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/rtmpdump-2.4_git20190330-r4.apk"

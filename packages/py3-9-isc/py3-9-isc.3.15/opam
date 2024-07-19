@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "py3-bind" {= "9.16.44-r0"}
-]

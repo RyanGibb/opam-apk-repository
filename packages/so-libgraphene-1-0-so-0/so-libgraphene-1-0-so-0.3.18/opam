@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "graphene" {= "1.10.8-r2"}
-]

@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del rsyslog-mmcount"]
 ]
 depends: [
+  "musl" {= "1.2.4_git20230717-r4"}
   "rsyslog" {= "8.2310.0-r0"}
-  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "rsyslog-mmcount-8.2310.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/rsyslog-mmcount-8.2310.0-r0.apk"

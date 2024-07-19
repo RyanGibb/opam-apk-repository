@@ -1,4 +1,0 @@
-opam-version: "2.0"
-depends: [
-  "api-sanity-checker" {= "1.98.7-r4"}
-]

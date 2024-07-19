@@ -6,11 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del libavif-pixbuf-loader"]
 ]
 depends: [
-  "so-libavif-so-16"
-  "so-libc-musl-x86_64-so-1"
-  "so-libgdk_pixbuf-2-0-so-0"
-  "so-libglib-2-0-so-0"
-  "so-libgobject-2-0-so-0"
+  "gdk-pixbuf" {= "2.42.10-r6"}
+  "glib" {= "2.78.6-r0"}
+  "libavif" {= "1.0.3-r0"}
+  "musl" {= "1.2.4_git20230717-r4"}
 ]
 extra-source "libavif-pixbuf-loader-1.0.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/libavif-pixbuf-loader-1.0.3-r0.apk"

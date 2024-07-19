@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del py3-dbus-dev"]
 ]
 depends: [
-  "pc-dbus-1" {>= "1.0"}
-  "pkgconfig"
+  "dbus-dev" {= "1.12.26-r0"}
+  "pkgconf" {= "1.8.1-r0"}
   "py3-dbus"
 ]
 extra-source "py3-dbus-dev-1.2.18-r0.apk" {

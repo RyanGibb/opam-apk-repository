@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libnl" {= "1.1.4-r2"}
-  "pkgconfig"
+  "pkgconf" {= "1.9.4-r0"}
 ]
 extra-source "libnl-dev-1.1.4-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libnl-dev-1.1.4-r2.apk"

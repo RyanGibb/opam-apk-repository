@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del openvpn-dev"]
 ]
 depends: [
-  "openssl1-1-compat-dev"
+  "openssl-dev" {= "1.1.1w-r1"}
 ]
 extra-source "openvpn-dev-2.5.6-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/openvpn-dev-2.5.6-r1.apk"

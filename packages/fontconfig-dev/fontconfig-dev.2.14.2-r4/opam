@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del fontconfig-dev"]
 ]
 depends: [
+  "expat-dev" {= "2.6.2-r0"}
   "fontconfig" {= "2.14.2-r4"}
-  "pc-expat"
-  "pc-freetype2" {>= "21.0.15"}
-  "pkgconfig"
+  "freetype-dev" {= "2.13.2-r0"}
+  "pkgconf" {= "2.1.0-r0"}
 ]
 extra-source "fontconfig-dev-2.14.2-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/fontconfig-dev-2.14.2-r4.apk"

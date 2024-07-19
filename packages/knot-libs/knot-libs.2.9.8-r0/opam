@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del knot-libs"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libgnutls-so-30"
-  "so-liblmdb-so-0"
+  "gnutls" {= "3.6.15-r1"}
+  "lmdb" {= "0.9.25-r1"}
+  "musl" {= "1.1.24-r10"}
 ]
 extra-source "knot-libs-2.9.8-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/knot-libs-2.9.8-r0.apk"

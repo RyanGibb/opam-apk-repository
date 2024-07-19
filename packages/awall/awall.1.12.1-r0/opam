@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del awall"]
 ]
 depends: [
-  "-bin-sh"
+  "busybox" {= "1.35.0-r18"}
   "drill"
   "ip6tables"
   "ipset"

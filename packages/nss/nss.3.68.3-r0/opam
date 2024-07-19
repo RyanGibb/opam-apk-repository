@@ -6,11 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del nss"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libnspr4-so"
-  "so-libplc4-so"
-  "so-libplds4-so"
-  "so-libsqlite3-so-0"
+  "musl" {= "1.1.24-r10"}
+  "nspr" {= "4.27-r0"}
+  "sqlite-libs" {= "3.32.1-r1"}
 ]
 extra-source "nss-3.68.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/nss-3.68.3-r0.apk"

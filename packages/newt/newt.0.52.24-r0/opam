@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del newt"]
 ]
 depends: [
-  "so-libc-musl-x86_64-so-1"
-  "so-libpopt-so-0"
-  "so-libslang-so-2"
+  "musl" {= "1.2.4_git20230717-r4"}
+  "popt" {= "1.19-r3"}
+  "slang" {= "2.3.3-r3"}
 ]
 extra-source "newt-0.52.24-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/newt-0.52.24-r0.apk"

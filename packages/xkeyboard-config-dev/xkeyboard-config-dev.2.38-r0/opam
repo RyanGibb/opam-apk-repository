@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del xkeyboard-config-dev"]
 ]
 depends: [
-  "pkgconfig"
+  "pkgconf" {= "1.9.5-r0"}
   "xkeyboard-config"
 ]
 extra-source "xkeyboard-config-dev-2.38-r0.apk" {

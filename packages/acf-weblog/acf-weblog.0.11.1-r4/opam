@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del acf-weblog"]
 ]
 depends: [
-  "-bin-sh"
   "acf-core"
   "lua-sql-postgres"
   "lua-subprocess"
-  "postgresql-client"
   "wget"
+  ("busybox-binsh" {= "1.36.1-r29"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.56.1-r1"})
+  ("postgresql15-client" {= "15.7-r0"} | "postgresql16-client" {= "16.3-r0"})
 ]
 extra-source "acf-weblog-0.11.1-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/acf-weblog-0.11.1-r4.apk"
