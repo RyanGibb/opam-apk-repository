@@ -6,13 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del haproxy"]
 ]
 depends: [
-  "busybox"
-  "libressl2.6-libcrypto"
-  "libressl2.6-libssl"
-  "lua5.3-libs"
-  "musl"
-  "pcre"
-  "zlib"
+  "-bin-sh"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-42"
+  "so-liblua-5-3-so-0"
+  "so-libpcre-so-1"
+  "so-libssl-so-44"
+  "so-libz-so-1"
 ]
 extra-source "haproxy-1.7.9-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/haproxy-1.7.9-r1.apk"

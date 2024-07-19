@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "akms" {= "0.2.0-r0"}
+]

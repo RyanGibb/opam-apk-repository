@@ -9,6 +9,9 @@ depends: [
   "gdk-pixbuf" {= "2.32.2-r2"}
   "glib-dev"
   "libpng-dev"
+  "pc-gmodule-no-export-2-0"
+  "pc-gobject-2-0"
+  "pc-libpng16"
   "pkgconfig"
 ]
 extra-source "gdk-pixbuf-dev-2.32.2-r2.apk" {

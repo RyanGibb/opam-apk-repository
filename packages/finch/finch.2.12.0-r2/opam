@@ -6,13 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del finch"]
 ]
 depends: [
-  "glib"
-  "libintl"
-  "libpurple"
-  "libx11"
-  "libxml2"
-  "musl"
-  "ncurses-libs"
+  "so-libX11-so-6"
+  "so-libc-musl-x86_64-so-1"
+  "so-libglib-2-0-so-0"
+  "so-libgmodule-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libintl-so-8"
+  "so-libncursesw-so-6"
+  "so-libpanelw-so-6"
+  "so-libpurple-so-0"
+  "so-libxml2-so-2"
 ]
 extra-source "finch-2.12.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/finch-2.12.0-r2.apk"

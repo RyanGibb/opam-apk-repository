@@ -6,18 +6,19 @@ remove: [
   ["sh" "-c" "sudo apk del gnupg"]
 ]
 depends: [
-  "gnutls"
-  "libassuan"
-  "libbz2"
-  "libgcrypt"
-  "libgpg-error"
-  "libksba"
-  "libldap"
-  "musl"
-  "npth"
   "pinentry"
-  "sqlite-libs"
-  "zlib"
+  "so-libassuan-so-0"
+  "so-libbz2-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcrypt-so-20"
+  "so-libgnutls-so-30"
+  "so-libgpg-error-so-0"
+  "so-libksba-so-8"
+  "so-liblber-2-4-so-2"
+  "so-libldap-2-4-so-2"
+  "so-libnpth-so-0"
+  "so-libsqlite3-so-0"
+  "so-libz-so-1"
 ]
 extra-source "gnupg-2.2.31-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/gnupg-2.2.31-r1.apk"

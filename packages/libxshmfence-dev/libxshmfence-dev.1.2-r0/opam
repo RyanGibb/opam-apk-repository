@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libxshmfence" {= "1.2-r0"}
-  "pkgconf"
+  "pkgconfig"
   "xproto"
 ]
 extra-source "libxshmfence-dev-1.2-r0.apk" {

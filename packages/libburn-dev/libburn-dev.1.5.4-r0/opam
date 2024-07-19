@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libburn" {= "1.5.4-r0"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "libburn-dev-1.5.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/libburn-dev-1.5.4-r0.apk"

@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gtk+2.0-dev-2.24.31-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gtk+2.0-dev"]
+]
+depends: [
+  "atk-dev"
+  "cairo-dev"
+  "gtk+2-0" {= "2.24.31-r1"}
+  "intltool"
+  "libxdamage-dev"
+  "pango-dev"
+  "pc-atk"
+  "pc-cairo"
+  "pc-gdk-pixbuf-2-0"
+  "pc-gio-2-0"
+  "pc-pango"
+  "pc-pangocairo"
+  "pc-pangoft2"
+  "pkgconfig"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcairo-so-2"
+  "so-libgdk-x11-2-0-so-0"
+  "so-libgdk_pixbuf-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libgtk-x11-2-0-so-0"
+  "so-libpango-1-0-so-0"
+  "so-libpangocairo-1-0-so-0"
+]
+extra-source "gtk+2.0-dev-2.24.31-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/gtk+2.0-dev-2.24.31-r1.apk"
+}

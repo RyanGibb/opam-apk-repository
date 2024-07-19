@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "nodejs-libs" {= "20.15.1-r0"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "nodejs-dev-20.15.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/nodejs-dev-20.15.1-r0.apk"

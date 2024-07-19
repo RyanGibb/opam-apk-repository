@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del hwloc-tools"]
 ]
 depends: [
-  "cairo"
-  "hwloc"
-  "libncursesw"
-  "libx11"
-  "musl"
+  "so-libX11-so-6"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcairo-so-2"
+  "so-libhwloc-so-15"
+  "so-libncursesw-so-6"
 ]
 extra-source "hwloc-tools-2.10.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/hwloc-tools-2.10.0-r0.apk"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del debian-archive-keyring"]
 ]
 depends: [
-  "gnupg1"
+  "gnupg"
 ]
 extra-source "debian-archive-keyring-2018.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/debian-archive-keyring-2018.1-r0.apk"

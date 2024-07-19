@@ -8,7 +8,7 @@ remove: [
 depends: [
   "libxml2-dev"
   "openssl-dev"
-  "pkgconf"
+  "pkgconfig"
   "postgresql-bdr" {= "9.4.14_p1-r1"}
   "readline-dev"
   "zlib-dev"

@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del gnupg-utils"]
 ]
 depends: [
-  "libbz2"
-  "libgcrypt"
-  "libgpg-error"
-  "libksba"
-  "musl"
-  "zlib"
+  "so-libbz2-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcrypt-so-20"
+  "so-libgpg-error-so-0"
+  "so-libksba-so-8"
+  "so-libz-so-1"
 ]
 extra-source "gnupg-utils-2.2.40-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gnupg-utils-2.2.40-r0.apk"

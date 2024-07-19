@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "bash"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "libpaper-1.1.24-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/libpaper-1.1.24-r2.apk"

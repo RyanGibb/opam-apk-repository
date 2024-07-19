@@ -9,6 +9,8 @@ depends: [
   "expat-dev"
   "fontconfig" {= "2.11.1-r4"}
   "freetype-dev"
+  "pc-expat"
+  "pc-freetype2"
   "pkgconfig"
 ]
 extra-source "fontconfig-dev-2.11.1-r4.apk" {

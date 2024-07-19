@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "ortp" {= "1.0.2-r0"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "ortp-dev-1.0.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/ortp-dev-1.0.2-r0.apk"

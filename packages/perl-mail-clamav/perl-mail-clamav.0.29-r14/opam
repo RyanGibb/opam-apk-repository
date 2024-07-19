@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "clamav"
-  "clamav-libs"
-  "musl"
   "perl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libclamav-so-7"
 ]
 extra-source "perl-mail-clamav-0.29-r14.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/perl-mail-clamav-0.29-r14.apk"

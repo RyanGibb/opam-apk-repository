@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del email2trac"]
 ]
 depends: [
-  "musl"
+  "so-libc-musl-x86_64-so-1"
   "trac"
 ]
 extra-source "email2trac-2.5.0-r0.apk" {

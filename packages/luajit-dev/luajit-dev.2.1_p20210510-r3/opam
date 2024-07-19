@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "luajit" {= "2.1_p20210510-r3"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "luajit-dev-2.1_p20210510-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/luajit-dev-2.1_p20210510-r3.apk"

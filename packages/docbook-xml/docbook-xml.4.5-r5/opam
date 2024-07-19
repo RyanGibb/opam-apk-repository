@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del docbook-xml"]
 ]
 depends: [
-  "busybox"
+  "-bin-sh"
   "libxml2-utils"
 ]
 extra-source "docbook-xml-4.5-r5.apk" {

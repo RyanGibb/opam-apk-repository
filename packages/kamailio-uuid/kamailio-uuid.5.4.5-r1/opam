@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "kamailio"
-  "libuuid"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libuuid-so-1"
 ]
 extra-source "kamailio-uuid-5.4.5-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/kamailio-uuid-5.4.5-r1.apk"

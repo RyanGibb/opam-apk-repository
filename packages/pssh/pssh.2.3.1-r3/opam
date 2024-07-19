@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del pssh"]
 ]
 depends: [
-  "openssh-client"
+  "cmd-ssh"
   "python3"
 ]
 extra-source "pssh-2.3.1-r3.apk" {

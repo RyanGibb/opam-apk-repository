@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del grep"]
 ]
 depends: [
-  "musl"
-  "pcre"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpcre-so-1"
 ]
 extra-source "grep-2.27-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/grep-2.27-r0.apk"

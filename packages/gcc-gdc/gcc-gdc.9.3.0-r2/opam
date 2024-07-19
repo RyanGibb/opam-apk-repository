@@ -9,8 +9,8 @@ depends: [
   "gcc" {= "9.3.0-r2"}
   "libgphobos" {= "9.3.0-r2"}
   "libucontext-dev"
-  "musl"
   "musl-dev"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "gcc-gdc-9.3.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/gcc-gdc-9.3.0-r2.apk"

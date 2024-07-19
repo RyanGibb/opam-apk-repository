@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del py3-btrfs-progs"]
 ]
 depends: [
-  "btrfs-progs-libs"
-  "musl"
-  "python3"
+  "so-libbtrfsutil-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpython3-6m-so-1-0"
 ]
 extra-source "py3-btrfs-progs-4.17-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/py3-btrfs-progs-4.17-r1.apk"

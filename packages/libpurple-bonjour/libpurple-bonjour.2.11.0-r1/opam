@@ -6,12 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del libpurple-bonjour"]
 ]
 depends: [
-  "avahi-glib"
-  "avahi-libs"
-  "glib"
-  "libintl"
-  "libxml2"
-  "musl"
+  "so-libavahi-client-so-3"
+  "so-libavahi-common-so-3"
+  "so-libavahi-glib-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libglib-2-0-so-0"
+  "so-libintl-so-8"
+  "so-libxml2-so-2"
 ]
 extra-source "libpurple-bonjour-2.11.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/libpurple-bonjour-2.11.0-r1.apk"

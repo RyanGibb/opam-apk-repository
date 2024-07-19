@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del libressl"]
 ]
 depends: [
-  "libressl3.0-libcrypto"
-  "libressl3.0-libssl"
-  "libressl3.0-libtls"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-45"
+  "so-libssl-so-47"
+  "so-libtls-so-19"
 ]
 extra-source "libressl-3.0.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/libressl-3.0.2-r0.apk"

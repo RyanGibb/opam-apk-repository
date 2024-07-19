@@ -9,19 +9,21 @@ depends: [
   "acl-dev"
   "celt051-dev"
   "cyrus-sasl-dev"
-  "glib-dev"
   "gst-plugins-base1-dev"
-  "gtk+3.0-dev"
+  "gtk+3-0-dev"
   "libjpeg-turbo-dev"
   "libxrandr-dev"
   "lz4-dev"
   "openssl-dev"
-  "pixman-dev"
+  "pc-glib-2-0"
+  "pc-gtk+-3-0" {>= "2.91.3"}
+  "pc-openssl"
+  "pc-pixman-1" {>= "0.17.7"}
+  "pc-spice-protocol"
   "pkgconfig"
   "polkit-dev"
   "spice-glib" {= "0.29-r0"}
   "spice-gtk" {= "0.29-r0"}
-  "spice-protocol"
   "zlib-dev"
 ]
 extra-source "spice-gtk-dev-0.29-r0.apk" {

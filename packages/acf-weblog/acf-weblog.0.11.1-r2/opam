@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del acf-weblog"]
 ]
 depends: [
+  "-bin-sh"
   "acf-core"
-  "busybox"
   "lua-sql-postgres"
   "lua-subprocess"
-  "postgresql-bdr-client"
+  "postgresql-client"
   "wget"
 ]
 extra-source "acf-weblog-0.11.1-r2.apk" {

@@ -7,9 +7,10 @@ remove: [
 ]
 depends: [
   "kamailio"
-  "libxml2"
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libsrdb1-so-1"
+  "so-libxml2-so-2"
+  "so-libz-so-1"
 ]
 extra-source "kamailio-xml-4.2.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/kamailio-xml-4.2.7-r0.apk"

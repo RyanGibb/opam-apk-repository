@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del libxrandr"]
 ]
 depends: [
-  "libx11"
-  "libxext"
-  "libxrender"
-  "musl"
+  "so-libX11-so-6"
+  "so-libXext-so-6"
+  "so-libXrender-so-1"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "libxrandr-1.5.1-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libxrandr-1.5.1-r2.apk"

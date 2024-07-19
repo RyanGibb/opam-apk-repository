@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del syslog-ng-amqp"]
 ]
 depends: [
-  "musl"
-  "rabbitmq-c"
-  "syslog-ng"
+  "so-libc-musl-x86_64-so-1"
+  "so-librabbitmq-so-4"
+  "so-libsyslog-ng-4-5-so-0"
 ]
 extra-source "syslog-ng-amqp-4.5.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/syslog-ng-amqp-4.5.0-r0.apk"

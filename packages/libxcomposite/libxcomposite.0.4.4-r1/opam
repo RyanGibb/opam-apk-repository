@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del libxcomposite"]
 ]
 depends: [
-  "libx11"
-  "musl"
+  "so-libX11-so-6"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "libxcomposite-0.4.4-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/libxcomposite-0.4.4-r1.apk"

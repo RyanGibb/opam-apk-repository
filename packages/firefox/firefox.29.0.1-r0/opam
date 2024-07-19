@@ -6,13 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del firefox"]
 ]
 depends: [
-  "gdk-pixbuf"
-  "glib"
-  "gtk+2.0"
-  "libstdc++"
-  "musl"
-  "nspr"
-  "xulrunner"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgdk-x11-2-0-so-0"
+  "so-libgdk_pixbuf-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libgtk-x11-2-0-so-0"
+  "so-libmozalloc-so"
+  "so-libnspr4-so"
+  "so-libstdc++-so-6"
+  "so-libxul-so"
   "xulrunner" {>= "29.0.1"}
 ]
 extra-source "firefox-29.0.1-r0.apk" {

@@ -7,14 +7,14 @@ remove: [
 ]
 depends: [
   "gcc" {= "8.3.0-r0"}
-  "gmp"
-  "isl"
   "libc-dev"
   "libstdc++" {= "8.3.0-r0"}
-  "mpc1"
-  "mpfr3"
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgmp-so-10"
+  "so-libisl-so-15"
+  "so-libmpc-so-3"
+  "so-libmpfr-so-4"
+  "so-libz-so-1"
 ]
 extra-source "g++-8.3.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/g++-8.3.0-r0.apk"

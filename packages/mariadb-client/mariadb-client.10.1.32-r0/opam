@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del mariadb-client"]
 ]
 depends: [
-  "libressl2.4-libcrypto"
-  "libressl2.4-libssl"
   "mariadb-common"
-  "musl"
-  "ncurses-libs"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-38"
+  "so-libncursesw-so-6"
+  "so-libssl-so-39"
+  "so-libz-so-1"
 ]
 extra-source "mariadb-client-10.1.32-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/mariadb-client-10.1.32-r0.apk"

@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del iproute2"]
 ]
 depends: [
-  "busybox"
-  "iptables"
-  "libelf"
-  "musl"
+  "-bin-sh"
+  "so-libc-musl-x86_64-so-1"
+  "so-libelf-so-1"
+  "so-libxtables-so-12"
 ]
 extra-source "iproute2-5.6.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/iproute2-5.6.0-r0.apk"

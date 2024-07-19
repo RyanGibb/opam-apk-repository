@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del gtk+"]
 ]
 depends: [
-  "gtk+2.0" {>= "2.24.31"}
+  "gtk+2-0" {>= "2.24.31"}
 ]
 extra-source "gtk+-2.24.31-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/gtk+-2.24.31-r1.apk"

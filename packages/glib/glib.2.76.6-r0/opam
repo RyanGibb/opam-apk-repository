@@ -6,13 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del glib"]
 ]
 depends: [
-  "libffi"
-  "libintl"
-  "libmount"
-  "musl"
-  "pcre2"
-  "zlib"
-  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
+  "-bin-sh"
+  "so-libc-musl-x86_64-so-1"
+  "so-libffi-so-8"
+  "so-libintl-so-8"
+  "so-libmount-so-1"
+  "so-libpcre2-8-so-0"
+  "so-libz-so-1"
 ]
 extra-source "glib-2.76.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/glib-2.76.6-r0.apk"

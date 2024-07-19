@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "orc" {= "0.4.31-r0"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "orc-dev-0.4.31-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/orc-dev-0.4.31-r0.apk"

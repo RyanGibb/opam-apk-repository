@@ -6,14 +6,15 @@ remove: [
   ["sh" "-c" "sudo apk del atkmm"]
 ]
 depends: [
-  "atk"
-  "glib"
-  "glibmm"
-  "libgcc"
-  "libintl"
-  "libsigc++"
-  "libstdc++"
-  "musl"
+  "so-libatk-1-0-so-0"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libglib-2-0-so-0"
+  "so-libglibmm-2-4-so-1"
+  "so-libgobject-2-0-so-0"
+  "so-libintl-so-8"
+  "so-libsigc-2-0-so-0"
+  "so-libstdc++-so-6"
 ]
 extra-source "atkmm-2.22.7-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/atkmm-2.22.7-r1.apk"

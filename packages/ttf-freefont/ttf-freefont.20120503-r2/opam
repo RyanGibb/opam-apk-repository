@@ -8,6 +8,7 @@ remove: [
 depends: [
   "encodings"
   "fontconfig"
+  "mkfontdir"
   "mkfontscale"
 ]
 extra-source "ttf-freefont-20120503-r2.apk" {

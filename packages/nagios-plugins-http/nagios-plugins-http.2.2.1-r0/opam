@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del nagios-plugins-http"]
 ]
 depends: [
-  "libressl2.5-libcrypto"
-  "libressl2.5-libssl"
-  "musl"
   "nagios-plugins"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-41"
+  "so-libssl-so-43"
 ]
 extra-source "nagios-plugins-http-2.2.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/nagios-plugins-http-2.2.1-r0.apk"

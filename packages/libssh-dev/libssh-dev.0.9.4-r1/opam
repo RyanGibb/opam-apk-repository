@@ -8,7 +8,7 @@ remove: [
 depends: [
   "libssh" {= "0.9.4-r1"}
   "openssl-dev"
-  "pkgconf"
+  "pkgconfig"
   "zlib-dev"
 ]
 extra-source "libssh-dev-0.9.4-r1.apk" {

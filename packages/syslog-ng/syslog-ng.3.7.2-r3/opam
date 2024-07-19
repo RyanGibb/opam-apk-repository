@@ -7,14 +7,16 @@ remove: [
 ]
 depends: [
   "busybox"
-  "eventlog"
-  "glib"
-  "hiredis"
-  "libressl2.4-libcrypto"
-  "libressl2.4-libssl"
-  "musl"
-  "pcre"
-  "python2"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-38"
+  "so-libevtlog-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgmodule-2-0-so-0"
+  "so-libgthread-2-0-so-0"
+  "so-libhiredis-so-0-13"
+  "so-libpcre-so-1"
+  "so-libpython2-7-so-1-0"
+  "so-libssl-so-39"
 ]
 extra-source "syslog-ng-3.7.2-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/syslog-ng-3.7.2-r3.apk"

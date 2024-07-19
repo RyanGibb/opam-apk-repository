@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "busybox-static" {= "1.35.0-r31"}
+]

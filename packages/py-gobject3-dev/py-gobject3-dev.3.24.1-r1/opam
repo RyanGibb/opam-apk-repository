@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del py-gobject3-dev"]
 ]
 depends: [
-  "glib-dev"
-  "libffi-dev"
-  "pkgconf"
+  "pc-gobject-2-0"
+  "pc-libffi"
+  "pkgconfig"
   "python2-dev"
   "python3-dev"
 ]

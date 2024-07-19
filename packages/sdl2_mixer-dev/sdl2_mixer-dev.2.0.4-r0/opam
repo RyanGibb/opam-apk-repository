@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del sdl2_mixer-dev"]
 ]
 depends: [
-  "pkgconf"
-  "sdl2-dev"
+  "pc-sdl2" {>= "2.0.7"}
+  "pkgconfig"
   "sdl2_mixer" {= "2.0.4-r0"}
 ]
 extra-source "sdl2_mixer-dev-2.0.4-r0.apk" {

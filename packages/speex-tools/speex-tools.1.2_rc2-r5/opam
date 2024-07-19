@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del speex-tools"]
 ]
 depends: [
-  "libogg"
-  "musl"
-  "speex"
-  "speexdsp"
+  "so-libc-musl-x86_64-so-1"
+  "so-libogg-so-0"
+  "so-libspeex-so-1"
+  "so-libspeexdsp-so-1"
 ]
 extra-source "speex-tools-1.2_rc2-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/speex-tools-1.2_rc2-r5.apk"

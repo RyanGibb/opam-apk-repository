@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "util-linux-login" {= "2.38-r1"}
+]

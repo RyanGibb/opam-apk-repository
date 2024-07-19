@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del lsblk"]
 ]
 depends: [
-  "libblkid"
-  "libmount"
-  "libsmartcols"
-  "musl"
+  "so-libblkid-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libmount-so-1"
+  "so-libsmartcols-so-1"
 ]
 extra-source "lsblk-2.38.1-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/lsblk-2.38.1-r8.apk"

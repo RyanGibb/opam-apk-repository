@@ -8,10 +8,11 @@ remove: [
 depends: [
   "bash"
   "libpq"
-  "libssl1.1"
-  "musl"
-  "readline"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpq-so-5"
+  "so-libreadline-so-8"
+  "so-libssl-so-1-1"
+  "so-libz-so-1"
 ]
 extra-source "postgresql-bdr-client-9.4.14_p1-r9.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/postgresql-bdr-client-9.4.14_p1-r9.apk"

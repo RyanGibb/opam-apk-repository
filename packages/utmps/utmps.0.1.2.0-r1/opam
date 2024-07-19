@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del utmps"]
 ]
 depends: [
-  "musl"
+  "-bin-sh"
   "s6-ipcserver"
-  "skalibs"
-  ("yash-binsh" | "busybox-binsh" | "dash-binsh")
+  "so-libc-musl-x86_64-so-1"
+  "so-libskarnet-so-2-12"
 ]
 extra-source "utmps-0.1.2.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/utmps-0.1.2.0-r1.apk"

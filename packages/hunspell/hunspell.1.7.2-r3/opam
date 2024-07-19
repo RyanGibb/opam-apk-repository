@@ -6,13 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del hunspell"]
 ]
 depends: [
-  "libgcc"
-  "libhunspell"
-  "libintl"
-  "libncursesw"
-  "libstdc++"
-  "musl"
-  "readline"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libhunspell-1-7-so-0"
+  "so-libintl-so-8"
+  "so-libncursesw-so-6"
+  "so-libreadline-so-8"
+  "so-libstdc++-so-6"
 ]
 extra-source "hunspell-1.7.2-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/hunspell-1.7.2-r3.apk"

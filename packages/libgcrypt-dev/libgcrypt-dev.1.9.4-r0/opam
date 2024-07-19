@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del libgcrypt-dev"]
 ]
 depends: [
-  "libgcrypt"
   "libgcrypt" {= "1.9.4-r0"}
-  "libgpg-error"
-  "libgpg-error-dev"
-  "musl"
-  "pkgconf"
+  "pc-gpg-error"
+  "pkgconfig"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcrypt-so-20"
+  "so-libgpg-error-so-0"
 ]
 extra-source "libgcrypt-dev-1.9.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libgcrypt-dev-1.9.4-r0.apk"

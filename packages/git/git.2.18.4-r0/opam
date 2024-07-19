@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del git"]
 ]
 depends: [
-  "expat"
-  "libcurl"
-  "musl"
-  "pcre2"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcurl-so-4"
+  "so-libexpat-so-1"
+  "so-libpcre2-8-so-0"
+  "so-libz-so-1"
 ]
 extra-source "git-2.18.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/git-2.18.4-r0.apk"

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del ragel"]
 ]
 depends: [
-  "libgcc"
-  "libstdc++"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libstdc++-so-6"
 ]
 extra-source "ragel-6.8-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/ragel-6.8-r0.apk"

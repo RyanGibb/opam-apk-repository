@@ -6,9 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del dovecot-lmtpd"]
 ]
 depends: [
-  "dovecot"
   "dovecot" {= "2.3.15-r0"}
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libdovecot-lda-so-0"
+  "so-libdovecot-so-0"
+  "so-libdovecot-storage-so-0"
 ]
 extra-source "dovecot-lmtpd-2.3.15-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/dovecot-lmtpd-2.3.15-r0.apk"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "directfb" {= "1.7.7-r1"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "directfb-dev-1.7.7-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/directfb-dev-1.7.7-r1.apk"

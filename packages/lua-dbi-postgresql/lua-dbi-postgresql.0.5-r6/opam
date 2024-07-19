@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "lua-dbi"
-  "musl"
-  ("pgcluster-libpq" | "libpq")
+  "so-libc-musl-x86_64-so-1"
+  "so-libpq-so-5"
 ]
 extra-source "lua-dbi-postgresql-0.5-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/lua-dbi-postgresql-0.5-r6.apk"

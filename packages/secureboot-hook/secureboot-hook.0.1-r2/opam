@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del secureboot-hook"]
 ]
 depends: [
-  "busybox"
+  "-bin-sh"
   "efi-mkuki"
   "kernel-hooks"
   "mkinitfs"

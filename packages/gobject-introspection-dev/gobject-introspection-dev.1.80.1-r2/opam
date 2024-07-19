@@ -7,16 +7,19 @@ remove: [
 ]
 depends: [
   "cairo-dev"
-  "glib"
-  "glib-dev"
-  "gobject-introspection"
   "gobject-introspection" {= "1.80.1-r2"}
-  "libffi"
   "libtool"
-  "musl"
-  "pkgconf"
+  "pc-glib-2-0" {>= "2.80.0"}
+  "pc-gobject-2-0" {>= "2.80.0"}
+  "pkgconfig"
   "py3-setuptools"
   "python3"
+  "so-libc-musl-x86_64-so-1"
+  "so-libffi-so-8"
+  "so-libgio-2-0-so-0"
+  "so-libgirepository-1-0-so-1"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
 ]
 extra-source "gobject-introspection-dev-1.80.1-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/gobject-introspection-dev-1.80.1-r2.apk"

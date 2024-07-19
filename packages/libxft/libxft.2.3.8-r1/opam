@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del libxft"]
 ]
 depends: [
-  "fontconfig"
-  "freetype"
-  "libx11"
-  "libxrender"
-  "musl"
+  "so-libX11-so-6"
+  "so-libXrender-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libfontconfig-so-1"
+  "so-libfreetype-so-6"
 ]
 extra-source "libxft-2.3.8-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/libxft-2.3.8-r1.apk"

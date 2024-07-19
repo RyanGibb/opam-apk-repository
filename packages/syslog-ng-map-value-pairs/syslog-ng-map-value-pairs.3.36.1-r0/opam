@@ -6,9 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del syslog-ng-map-value-pairs"]
 ]
 depends: [
-  "glib"
-  "musl"
-  "syslog-ng"
+  "so-libc-musl-x86_64-so-1"
+  "so-libevtlog-3-36-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libsyslog-ng-3-36-so-0"
 ]
 extra-source "syslog-ng-map-value-pairs-3.36.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/syslog-ng-map-value-pairs-3.36.1-r0.apk"

@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "mosquitto-clients" {= "2.0.18-r0"}
+]

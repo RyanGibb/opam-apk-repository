@@ -8,7 +8,7 @@ remove: [
 depends: [
   "mosquitto-libs" {= "1.6.9-r1"}
   "mosquitto-libs++" {= "1.6.9-r1"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "mosquitto-dev-1.6.9-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/mosquitto-dev-1.6.9-r1.apk"

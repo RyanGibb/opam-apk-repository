@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del bc"]
 ]
 depends: [
-  "musl"
-  "readline"
+  "so-libc-musl-x86_64-so-1"
+  "so-libreadline-so-7"
 ]
 extra-source "bc-1.07.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/bc-1.07.1-r0.apk"

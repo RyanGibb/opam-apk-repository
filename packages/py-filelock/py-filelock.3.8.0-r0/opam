@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "py3-filelock" {= "3.8.0-r0"}
+]

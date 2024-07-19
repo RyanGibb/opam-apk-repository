@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "xbitmaps" {= "1.1.2-r1"}
+]

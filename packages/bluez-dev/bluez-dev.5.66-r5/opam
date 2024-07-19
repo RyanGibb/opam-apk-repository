@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "bluez-libs" {= "5.66-r5"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "bluez-dev-5.66-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/bluez-dev-5.66-r5.apk"

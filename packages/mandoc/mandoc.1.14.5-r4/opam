@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del mandoc"]
 ]
 depends: [
-  "busybox"
-  "musl"
-  "zlib"
+  "-bin-sh"
+  "so-libc-musl-x86_64-so-1"
+  "so-libz-so-1"
 ]
 extra-source "mandoc-1.14.5-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/mandoc-1.14.5-r4.apk"

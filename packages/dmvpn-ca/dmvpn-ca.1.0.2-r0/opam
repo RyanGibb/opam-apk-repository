@@ -8,12 +8,12 @@ remove: [
 depends: [
   "lua-asn1"
   "lua-dmvpn"
-  "lua5.2"
-  "lua5.2-lyaml"
-  "lua5.2-ossl"
-  "lua5.2-posix"
-  "lua5.2-sql-sqlite3"
-  "lua5.2-stringy"
+  "lua5-2"
+  "lua5-2-lyaml"
+  "lua5-2-ossl"
+  "lua5-2-posix"
+  "lua5-2-sql-sqlite3"
+  "lua5-2-stringy"
 ]
 extra-source "dmvpn-ca-1.0.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/dmvpn-ca-1.0.2-r0.apk"

@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "neon-dev" {= "0.31.2-r0"}
+]

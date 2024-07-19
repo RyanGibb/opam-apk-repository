@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "xkeyboard-config" {= "2.29-r0"}
+]

@@ -6,6 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del rasqal-dev"]
 ]
 depends: [
+  "pc-raptor2" {>= "2.0.7"}
   "pkgconfig"
   "raptor2-dev"
   "rasqal" {= "0.9.33-r0"}

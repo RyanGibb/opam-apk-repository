@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "live-media" {= "2015.11.09-r0"}
+]

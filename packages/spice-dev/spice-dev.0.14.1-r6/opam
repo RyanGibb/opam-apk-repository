@@ -7,11 +7,15 @@ remove: [
 ]
 depends: [
   "celt051-dev"
-  "glib-dev"
   "libxinerama-dev"
-  "openssl-dev"
+  "pc-gio-2-0" {>= "2.32"}
+  "pc-glib-2-0" {>= "2.32"}
+  "pc-gobject-2-0" {>= "2.32"}
+  "pc-openssl"
+  "pc-pixman-1" {>= "0.17.7"}
+  "pc-spice-protocol" {>= "0.12.14"}
   "pixman-dev"
-  "pkgconf"
+  "pkgconfig"
   "spice-protocol"
   "spice-server" {= "0.14.1-r6"}
 ]

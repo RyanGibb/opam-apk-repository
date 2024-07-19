@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del testdisk"]
 ]
 depends: [
-  "e2fsprogs-libs"
-  "libjpeg-turbo"
-  "libncursesw"
-  "musl"
-  "ntfs-3g-libs"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libext2fs-so-2"
+  "so-libjpeg-so-8"
+  "so-libncursesw-so-6"
+  "so-libntfs-3g-so-89"
+  "so-libz-so-1"
 ]
 extra-source "testdisk-7.2-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/testdisk-7.2-r1.apk"

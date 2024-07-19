@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del mailx"]
 ]
 depends: [
-  "libbsd"
-  "liblockfile"
-  "musl"
+  "so-libbsd-so-0"
+  "so-libc-musl-x86_64-so-1"
+  "so-liblockfile-so-1"
 ]
 extra-source "mailx-8.1.2_git20220412-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/mailx-8.1.2_git20220412-r1.apk"

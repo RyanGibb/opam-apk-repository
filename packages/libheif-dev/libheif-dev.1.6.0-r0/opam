@@ -8,7 +8,7 @@ remove: [
 depends: [
   "libde265-dev"
   "libheif" {= "1.6.0-r0"}
-  "pkgconf"
+  "pkgconfig"
   "x265-dev"
 ]
 extra-source "libheif-dev-1.6.0-r0.apk" {

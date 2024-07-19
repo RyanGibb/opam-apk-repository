@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "minizip" {= "1.2.8-r0"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "minizip-dev-1.2.8-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/minizip-dev-1.2.8-r0.apk"

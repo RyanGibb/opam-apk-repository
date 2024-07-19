@@ -6,10 +6,19 @@ remove: [
   ["sh" "-c" "sudo apk del kea-hook-mysql-cb"]
 ]
 depends: [
-  "kea-common"
-  "libgcc"
-  "mariadb-connector-c"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libkea-asiolink-so-56"
+  "so-libkea-cc-so-54"
+  "so-libkea-database-so-48"
+  "so-libkea-dhcp++-so-74"
+  "so-libkea-dhcpsrv-so-90"
+  "so-libkea-exceptions-so-23"
+  "so-libkea-log-so-48"
+  "so-libkea-mysql-so-53"
+  "so-libkea-process-so-57"
+  "so-libkea-util-so-68"
+  "so-libmariadb-so-3"
 ]
 extra-source "kea-hook-mysql-cb-2.4.1-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/kea-hook-mysql-cb-2.4.1-r2.apk"

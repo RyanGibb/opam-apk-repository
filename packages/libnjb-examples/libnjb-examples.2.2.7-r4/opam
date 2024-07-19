@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del libnjb-examples"]
 ]
 depends: [
-  "libnjb"
-  "musl"
-  "ncurses-libs"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libncursesw-so-6"
+  "so-libnjb-so-5"
+  "so-libz-so-1"
 ]
 extra-source "libnjb-examples-2.2.7-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libnjb-examples-2.2.7-r4.apk"

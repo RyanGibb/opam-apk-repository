@@ -7,14 +7,14 @@ remove: [
 ]
 depends: [
   "busybox"
-  "hiredis"
-  "libgcc"
-  "libstdc++"
-  "lua5.1-libs"
   "minetest-common"
-  "musl"
-  "sqlite-libs"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libhiredis-so-0-13"
+  "so-liblua-so-5"
+  "so-libsqlite3-so-0"
+  "so-libstdc++-so-6"
+  "so-libz-so-1"
 ]
 extra-source "minetest-server-0.4.12-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/minetest-server-0.4.12-r0.apk"

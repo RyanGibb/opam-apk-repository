@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del zeromq-dev"]
 ]
 depends: [
-  "libsodium-dev"
   "libzmq" {= "4.3.5-r2"}
-  "pkgconf"
+  "pc-libsodium"
+  "pkgconfig"
 ]
 extra-source "zeromq-dev-4.3.5-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/zeromq-dev-4.3.5-r2.apk"

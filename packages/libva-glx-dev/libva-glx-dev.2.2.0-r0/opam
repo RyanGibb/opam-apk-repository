@@ -9,7 +9,7 @@ depends: [
   "libva-dev"
   "libva-glx" {= "2.2.0-r0"}
   "mesa-dev"
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "libva-glx-dev-2.2.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libva-glx-dev-2.2.0-r0.apk"

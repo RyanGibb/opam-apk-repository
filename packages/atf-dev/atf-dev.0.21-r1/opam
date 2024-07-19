@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "atf" {= "0.21-r1"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "atf-dev-0.21-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/atf-dev-0.21-r1.apk"

@@ -1,0 +1,53 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gst-plugins-good0.10-0.10.31-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gst-plugins-good0.10"]
+]
+depends: [
+  "so-libFLAC-so-8"
+  "so-libX11-so-6"
+  "so-libXext-so-6"
+  "so-libXv-so-1"
+  "so-libavc1394-so-0"
+  "so-libbz2-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libdv-so-4"
+  "so-libgcc_s-so-1"
+  "so-libgio-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libgstaudio-0-10-so-0"
+  "so-libgstbase-0-10-so-0"
+  "so-libgstcontroller-0-10-so-0"
+  "so-libgstfft-0-10-so-0"
+  "so-libgstinterfaces-0-10-so-0"
+  "so-libgstnetbuffer-0-10-so-0"
+  "so-libgstpbutils-0-10-so-0"
+  "so-libgstreamer-0-10-so-0"
+  "so-libgstriff-0-10-so-0"
+  "so-libgstrtp-0-10-so-0"
+  "so-libgstrtsp-0-10-so-0"
+  "so-libgstsdp-0-10-so-0"
+  "so-libgsttag-0-10-so-0"
+  "so-libgstvideo-0-10-so-0"
+  "so-libiec61883-so-0"
+  "so-libintl-so-8"
+  "so-libjpeg-so-8"
+  "so-liborc-0-4-so-0"
+  "so-libraw1394-so-11"
+  "so-librom1394-so-0"
+  "so-libshout-so-3"
+  "so-libsoup-2-4-so-1"
+  "so-libsoup-gnome-2-4-so-1"
+  "so-libspeex-so-1"
+  "so-libstdc++-so-6"
+  "so-libtag-so-1"
+  "so-libwavpack-so-1"
+  "so-libxml2-so-2"
+  "so-libz-so-1"
+]
+extra-source "gst-plugins-good0.10-0.10.31-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/gst-plugins-good0.10-0.10.31-r0.apk"
+}

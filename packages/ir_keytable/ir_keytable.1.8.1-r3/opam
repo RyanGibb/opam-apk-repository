@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del ir_keytable"]
 ]
 depends: [
-  "libintl"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libintl-so-8"
 ]
 extra-source "ir_keytable-1.8.1-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/ir_keytable-1.8.1-r3.apk"

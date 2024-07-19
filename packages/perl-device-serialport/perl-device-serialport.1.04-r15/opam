@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del perl-device-serialport"]
 ]
 depends: [
-  "musl"
   "perl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "perl-device-serialport-1.04-r15.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/perl-device-serialport-1.04-r15.apk"

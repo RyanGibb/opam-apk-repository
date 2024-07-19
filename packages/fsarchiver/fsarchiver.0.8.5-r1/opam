@@ -6,17 +6,18 @@ remove: [
   ["sh" "-c" "sudo apk del fsarchiver"]
 ]
 depends: [
-  "e2fsprogs-libs"
-  "libblkid"
-  "libbz2"
-  "libgcrypt"
-  "libuuid"
-  "lz4-libs"
-  "lzo"
-  "musl"
-  "xz-libs"
-  "zlib"
-  "zstd-libs"
+  "so-libblkid-so-1"
+  "so-libbz2-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libe2p-so-2"
+  "so-libext2fs-so-2"
+  "so-libgcrypt-so-20"
+  "so-liblz4-so-1"
+  "so-liblzma-so-5"
+  "so-liblzo2-so-2"
+  "so-libuuid-so-1"
+  "so-libz-so-1"
+  "so-libzstd-so-1"
 ]
 extra-source "fsarchiver-0.8.5-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/fsarchiver-0.8.5-r1.apk"

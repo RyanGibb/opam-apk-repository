@@ -6,9 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del dovecot-submissiond"]
 ]
 depends: [
-  "dovecot"
   "dovecot" {= "2.3.10.1-r1"}
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libdovecot-login-so-0"
+  "so-libdovecot-so-0"
+  "so-libdovecot-storage-so-0"
 ]
 extra-source "dovecot-submissiond-2.3.10.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/dovecot-submissiond-2.3.10.1-r1.apk"

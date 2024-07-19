@@ -9,9 +9,9 @@ depends: [
   "fastjar"
   "gcc-java" {= "6.3.0-r4"}
   "java-common"
-  "libgcc"
-  "libgcj"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libgcj-so-17"
 ]
 extra-source "java-gcj-compat-6.3.0-r7.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/java-gcj-compat-6.3.0-r7.apk"

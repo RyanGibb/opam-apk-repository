@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del libgsasl"]
 ]
 depends: [
-  "krb5-libs"
-  "libgcrypt"
-  "libidn"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcrypt-so-20"
+  "so-libgssapi_krb5-so-2"
+  "so-libidn-so-12"
 ]
 extra-source "libgsasl-1.8.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/libgsasl-1.8.1-r0.apk"

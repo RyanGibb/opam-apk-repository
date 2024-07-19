@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del logrotate"]
 ]
 depends: [
-  "musl"
-  "popt"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpopt-so-0"
 ]
 extra-source "logrotate-3.8.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/logrotate-3.8.7-r0.apk"

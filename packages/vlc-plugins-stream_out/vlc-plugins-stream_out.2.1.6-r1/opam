@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del vlc-plugins-stream_out"]
 ]
 depends: [
-  "dbus-libs"
-  "libgcrypt"
-  "libgpg-error"
-  "musl"
-  "vlc-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libdbus-1-so-3"
+  "so-libgcrypt-so-20"
+  "so-libgpg-error-so-0"
+  "so-libvlccore-so-7"
 ]
 extra-source "vlc-plugins-stream_out-2.1.6-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/vlc-plugins-stream_out-2.1.6-r1.apk"

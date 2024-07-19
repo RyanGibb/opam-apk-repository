@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del rabbitmq-c"]
 ]
 depends: [
-  "libcrypto1.1"
-  "libssl1.1"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-1"
+  "so-libssl-so-1-1"
 ]
 extra-source "rabbitmq-c-0.8.0-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/rabbitmq-c-0.8.0-r5.apk"

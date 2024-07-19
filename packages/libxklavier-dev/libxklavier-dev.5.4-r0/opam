@@ -11,6 +11,9 @@ depends: [
   "libxkbfile-dev"
   "libxklavier" {= "5.4-r0"}
   "libxml2-dev"
+  "pc-glib-2-0"
+  "pc-gobject-2-0"
+  "pc-libxml-2-0"
   "pkgconfig"
 ]
 extra-source "libxklavier-dev-5.4-r0.apk" {

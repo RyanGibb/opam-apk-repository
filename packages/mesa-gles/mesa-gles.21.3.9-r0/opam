@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "mesa" {= "21.3.9-r0"}
-  "mesa-glapi"
+  "so-libglapi-so-0"
 ]
 extra-source "mesa-gles-21.3.9-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/mesa-gles-21.3.9-r0.apk"

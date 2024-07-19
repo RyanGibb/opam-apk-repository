@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "acf-core"
-  "freeradius"
+  "freeradius3"
   "lua"
 ]
 extra-source "acf-freeradius3-0.1.3-r0.apk" {

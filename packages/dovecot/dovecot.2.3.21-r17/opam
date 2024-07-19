@@ -6,20 +6,21 @@ remove: [
   ["sh" "-c" "sudo apk del dovecot"]
 ]
 depends: [
-  "icu-libs"
-  "libbz2"
-  "libcap2"
-  "libcrypto3"
-  "libsodium"
-  "libssl3"
-  "libstemmer"
-  "lz4-libs"
-  "musl"
+  "-bin-sh"
   "openssl" {> "3"}
-  "xz-libs"
-  "zlib"
-  "zstd-libs"
-  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
+  "so-libbz2-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcap-so-2"
+  "so-libcrypto-so-3"
+  "so-libicui18n-so-74"
+  "so-libicuuc-so-74"
+  "so-liblz4-so-1"
+  "so-liblzma-so-5"
+  "so-libsodium-so-26"
+  "so-libssl-so-3"
+  "so-libstemmer-so-2"
+  "so-libz-so-1"
+  "so-libzstd-so-1"
 ]
 extra-source "dovecot-2.3.21-r17.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/dovecot-2.3.21-r17.apk"

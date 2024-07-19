@@ -6,13 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del xfce4-taskmanager"]
 ]
 depends: [
-  "cairo"
-  "glib"
-  "gtk+2.0"
-  "libintl"
-  "libx11"
-  "libxmu"
-  "musl"
+  "so-libX11-so-6"
+  "so-libXmu-so-6"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcairo-so-2"
+  "so-libgdk-x11-2-0-so-0"
+  "so-libgio-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libgtk-x11-2-0-so-0"
+  "so-libintl-so-8"
 ]
 extra-source "xfce4-taskmanager-1.2.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/xfce4-taskmanager-1.2.0-r0.apk"

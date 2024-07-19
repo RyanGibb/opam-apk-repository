@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del libquvi-scripts-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "libquvi-scripts-dev-0.9.20131130-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/libquvi-scripts-dev-0.9.20131130-r0.apk"

@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "bitlbee-dev" {= "3.6-r2"}
+]

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del talloc-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
   "py2-talloc" {= "2.1.14-r0"}
   "py3-talloc" {= "2.1.14-r0"}
   "talloc" {= "2.1.14-r0"}

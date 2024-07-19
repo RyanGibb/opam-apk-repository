@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del abseil-cpp-random-internal-randen"]
 ]
 depends: [
-  "abseil-cpp-random-internal-randen-hwaes"
-  "abseil-cpp-random-internal-randen-hwaes-impl"
-  "abseil-cpp-random-internal-randen-slow"
-  "libgcc"
-  "libstdc++"
+  "so-libabsl_random_internal_randen_hwaes-so-2308-0-0"
+  "so-libabsl_random_internal_randen_hwaes_impl-so-2308-0-0"
+  "so-libabsl_random_internal_randen_slow-so-2308-0-0"
+  "so-libgcc_s-so-1"
+  "so-libstdc++-so-6"
 ]
 extra-source "abseil-cpp-random-internal-randen-20230802.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/abseil-cpp-random-internal-randen-20230802.1-r0.apk"

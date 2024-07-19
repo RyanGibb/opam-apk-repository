@@ -6,17 +6,20 @@ remove: [
   ["sh" "-c" "sudo apk del xfce4-appfinder"]
 ]
 depends: [
-  "dbus-glib"
-  "dbus-libs"
-  "garcon"
-  "gdk-pixbuf"
-  "glib"
-  "gtk+2.0"
   "hicolor-icon-theme"
-  "libxfce4ui"
-  "libxfce4util"
-  "musl"
-  "xfconf"
+  "so-libc-musl-x86_64-so-1"
+  "so-libdbus-1-so-3"
+  "so-libdbus-glib-1-so-2"
+  "so-libgarcon-1-so-0"
+  "so-libgdk-x11-2-0-so-0"
+  "so-libgdk_pixbuf-2-0-so-0"
+  "so-libgio-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libgtk-x11-2-0-so-0"
+  "so-libxfce4ui-1-so-0"
+  "so-libxfce4util-so-6"
+  "so-libxfconf-0-so-2"
 ]
 extra-source "xfce4-appfinder-4.10.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/xfce4-appfinder-4.10.1-r1.apk"

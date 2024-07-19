@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del libcdio-paranoia-dev"]
 ]
 depends: [
-  "libcdio-dev"
   "libcdio-paranoia" {= "2.0.0-r0"}
-  "pkgconf"
+  "pc-libcdio"
+  "pkgconfig"
 ]
 extra-source "libcdio-paranoia-dev-2.0.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/libcdio-paranoia-dev-2.0.0-r0.apk"

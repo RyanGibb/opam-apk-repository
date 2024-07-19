@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del libunique-dev"]
 ]
 depends: [
-  "gtk+2.0-dev"
   "libunique" {= "1.1.6-r5"}
+  "pc-gtk+-2-0"
   "pkgconfig"
 ]
 extra-source "libunique-dev-1.1.6-r5.apk" {

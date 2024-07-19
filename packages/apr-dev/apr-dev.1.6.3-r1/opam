@@ -8,7 +8,7 @@ remove: [
 depends: [
   "apr"
   "bash"
-  "pkgconf"
+  "pkgconfig"
   "util-linux-dev"
 ]
 extra-source "apr-dev-1.6.3-r1.apk" {

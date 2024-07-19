@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del vanessa_logger-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
   "vanessa_logger" {= "0.0.10-r1"}
 ]
 extra-source "vanessa_logger-dev-0.0.10-r1.apk" {

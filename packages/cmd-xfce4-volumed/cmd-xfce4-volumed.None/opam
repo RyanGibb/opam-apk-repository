@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "xfce4-volumed" {= "0.1.13-r1"}
+]

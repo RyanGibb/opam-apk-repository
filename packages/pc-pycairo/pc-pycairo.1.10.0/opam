@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "py2-cairo-dev" {= "1.10.0-r0"}
+]

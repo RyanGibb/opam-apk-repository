@@ -12,7 +12,7 @@ depends: [
   "libsamplerate-dev"
   "libsrtp-dev"
   "pjproject" {= "2.5.5-r3"}
-  "pkgconf"
+  "pkgconfig"
   "portaudio-dev"
   "speex-dev"
   "speexdsp-dev"

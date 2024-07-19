@@ -10,18 +10,20 @@ depends: [
   "docbook-xml"
   "docbook-xsl"
   "gettext-dev"
-  "glib"
   "glib" {= "2.74.7-r0"}
-  "libffi-dev"
-  "libintl"
   "libxml2-utils"
   "libxslt"
-  "musl"
-  "pcre2-dev"
-  "pkgconf"
+  "pc-libffi" {>= "3.0.0"}
+  "pc-libpcre2-8" {>= "10.32"}
+  "pc-mount" {>= "2.23"}
+  "pc-zlib"
+  "pkgconfig"
   "python3"
-  "util-linux-dev"
-  "zlib-dev"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgio-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libintl-so-8"
 ]
 extra-source "glib-dev-2.74.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/glib-dev-2.74.7-r0.apk"

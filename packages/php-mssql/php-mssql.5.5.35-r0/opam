@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del php-mssql"]
 ]
 depends: [
-  "freetds"
-  "musl"
   "php"
   "php-cgi"
+  "so-libc-musl-x86_64-so-1"
+  "so-libsybdb-so-5"
 ]
 extra-source "php-mssql-5.5.35-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/php-mssql-5.5.35-r0.apk"

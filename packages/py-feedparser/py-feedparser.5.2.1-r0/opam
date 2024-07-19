@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del py-feedparser"]
 ]
 depends: [
-  "python2"
+  "python"
 ]
 extra-source "py-feedparser-5.2.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/py-feedparser-5.2.1-r0.apk"

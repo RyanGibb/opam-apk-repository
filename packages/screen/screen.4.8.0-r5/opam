@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del screen"]
 ]
 depends: [
-  "libutempter"
-  "musl"
-  "ncurses-libs"
-  "utmps"
+  "so-libc-musl-x86_64-so-1"
+  "so-libncursesw-so-6"
+  "so-libutempter-so-0"
+  "so-libutmps-so-0-1"
 ]
 extra-source "screen-4.8.0-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/screen-4.8.0-r5.apk"

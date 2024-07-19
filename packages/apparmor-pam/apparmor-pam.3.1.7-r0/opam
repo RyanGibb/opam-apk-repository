@@ -6,10 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del apparmor-pam"]
 ]
 depends: [
-  "libapparmor"
   "libapparmor" {= "3.1.7-r0"}
   "linux-pam"
-  "musl"
+  "so-libapparmor-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpam-so-0"
 ]
 extra-source "apparmor-pam-3.1.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/apparmor-pam-3.1.7-r0.apk"

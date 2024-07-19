@@ -6,8 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del libdrm-tests"]
 ]
 depends: [
-  "libdrm"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libdrm-so-2"
+  "so-libdrm_amdgpu-so-1"
+  "so-libdrm_etnaviv-so-1"
+  "so-libdrm_exynos-so-1"
+  "so-libdrm_tegra-so-0"
 ]
 extra-source "libdrm-tests-2.4.118-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/libdrm-tests-2.4.118-r0.apk"

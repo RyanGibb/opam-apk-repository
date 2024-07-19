@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del telegram-cli"]
 ]
 depends: [
-  "libconfig"
-  "libcrypto1.0"
-  "libevent"
-  "musl"
-  "readline"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libconfig-so-9"
+  "so-libcrypto-so-1-0-0"
+  "so-libevent-2-0-so-5"
+  "so-libreadline-so-6"
+  "so-libz-so-1"
 ]
 extra-source "telegram-cli-1.0.5.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/telegram-cli-1.0.5.1-r0.apk"

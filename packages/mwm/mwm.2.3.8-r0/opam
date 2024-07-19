@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del mwm"]
 ]
 depends: [
-  "libx11"
-  "libxext"
-  "libxt"
-  "motif"
-  "musl"
+  "so-libX11-so-6"
+  "so-libXext-so-6"
+  "so-libXm-so-4"
+  "so-libXt-so-6"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "mwm-2.3.8-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/mwm-2.3.8-r0.apk"

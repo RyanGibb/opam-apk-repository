@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del libinput-libs"]
 ]
 depends: [
-  "eudev-libs"
-  "libevdev"
-  "mtdev"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libevdev-so-2"
+  "so-libmtdev-so-1"
+  "so-libudev-so-1"
 ]
 extra-source "libinput-libs-1.10.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/libinput-libs-1.10.5-r0.apk"

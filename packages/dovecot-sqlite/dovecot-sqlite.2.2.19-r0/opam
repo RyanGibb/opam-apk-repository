@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del dovecot-sqlite"]
 ]
 depends: [
-  "musl"
   "openssl"
-  "sqlite-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libsqlite3-so-0"
 ]
 extra-source "dovecot-sqlite-2.2.19-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/dovecot-sqlite-2.2.19-r0.apk"

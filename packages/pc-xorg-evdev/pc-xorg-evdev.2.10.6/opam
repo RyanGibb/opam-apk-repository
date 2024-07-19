@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "xf86-input-evdev-dev" {= "2.10.6-r0"}
+]

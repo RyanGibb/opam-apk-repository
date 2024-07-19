@@ -10,7 +10,7 @@ depends: [
   "libressl-dev"
   "libssh2-dev"
   "nghttp2-dev"
-  "pkgconf"
+  "pkgconfig"
   "zlib-dev"
 ]
 extra-source "curl-dev-7.61.1-r3.apk" {

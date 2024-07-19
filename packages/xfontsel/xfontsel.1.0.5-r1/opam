@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del xfontsel"]
 ]
 depends: [
-  "libx11"
-  "libxaw"
-  "libxmu"
-  "libxt"
-  "musl"
+  "so-libX11-so-6"
+  "so-libXaw-so-7"
+  "so-libXmu-so-6"
+  "so-libXt-so-6"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "xfontsel-1.0.5-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/xfontsel-1.0.5-r1.apk"

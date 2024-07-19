@@ -6,12 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del py3-gv"]
 ]
 depends: [
-  "graphviz-libs"
-  "libgcc"
-  "libstdc++"
-  "musl"
   "python3"
   "python3" {>= "3.11"}
+  "so-libc-musl-x86_64-so-1"
+  "so-libcgraph-so-6"
+  "so-libgcc_s-so-1"
+  "so-libgvc-so-6"
+  "so-libstdc++-so-6"
 ]
 extra-source "py3-gv-8.0.5-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/py3-gv-8.0.5-r1.apk"

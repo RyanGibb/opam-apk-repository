@@ -6,17 +6,20 @@ remove: [
   ["sh" "-c" "sudo apk del xf86-video-intel"]
 ]
 depends: [
-  "eudev-libs"
-  "libdrm"
-  "libpciaccess"
-  "libx11"
-  "libxcb"
-  "libxv"
-  "libxvmc"
   "mesa-dri-intel"
-  "musl"
-  "pixman"
-  "xcb-util"
+  "so-libX11-so-6"
+  "so-libX11-xcb-so-1"
+  "so-libXv-so-1"
+  "so-libXvMC-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libdrm-so-2"
+  "so-libdrm_intel-so-1"
+  "so-libpciaccess-so-0"
+  "so-libpixman-1-so-0"
+  "so-libudev-so-1"
+  "so-libxcb-dri2-so-0"
+  "so-libxcb-so-1"
+  "so-libxcb-util-so-1"
 ]
 extra-source "xf86-video-intel-2.99.917_git20170325-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/xf86-video-intel-2.99.917_git20170325-r0.apk"

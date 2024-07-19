@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del xcb-proto"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
   "python3" {>= "3.12"}
 ]
 extra-source "xcb-proto-1.16.0-r1.apk" {

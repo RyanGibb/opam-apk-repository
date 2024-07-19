@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "gnome-common" {= "3.18.0-r1"}
+]

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del p11-kit-trust"]
 ]
 depends: [
-  "libtasn1"
-  "musl"
-  "p11-kit"
+  "so-libc-musl-x86_64-so-1"
+  "so-libp11-kit-so-0"
+  "so-libtasn1-so-6"
 ]
 extra-source "p11-kit-trust-0.24.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/p11-kit-trust-0.24.0-r1.apk"

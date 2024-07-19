@@ -9,7 +9,7 @@ depends: [
   "expat-dev"
   "neon" {= "0.30.2-r6"}
   "openssl-dev"
-  "pkgconf"
+  "pkgconfig"
   "zlib-dev"
 ]
 extra-source "neon-dev-0.30.2-r6.apk" {

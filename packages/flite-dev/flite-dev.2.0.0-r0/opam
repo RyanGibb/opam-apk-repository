@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "flite" {= "2.0.0-r0"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "flite-dev-2.0.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/flite-dev-2.0.0-r0.apk"

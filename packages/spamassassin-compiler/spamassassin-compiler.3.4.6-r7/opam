@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "gcc"
+  "libc-dev"
   "make"
-  "musl-dev"
   "perl-dev"
   "perl-mail-spamassassin"
   "re2c"

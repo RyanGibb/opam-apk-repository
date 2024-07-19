@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del fish-tools"]
 ]
 depends: [
+  "cmd-man"
   "fish"
-  "mdocml"
   "python3"
 ]
 extra-source "fish-tools-3.0.2-r5.apk" {

@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "iptables" {= "1.4.21-r4"}
+]

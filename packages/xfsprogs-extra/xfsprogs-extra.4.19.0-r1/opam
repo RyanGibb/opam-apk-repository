@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del xfsprogs-extra"]
 ]
 depends: [
-  "libuuid"
-  "musl"
   "python3"
+  "so-libc-musl-x86_64-so-1"
+  "so-libuuid-so-1"
   "xfsprogs"
 ]
 extra-source "xfsprogs-extra-4.19.0-r1.apk" {

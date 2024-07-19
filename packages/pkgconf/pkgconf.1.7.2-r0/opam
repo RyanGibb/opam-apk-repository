@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del pkgconf"]
 ]
 depends: [
-  "musl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "pkgconf-1.7.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/pkgconf-1.7.2-r0.apk"

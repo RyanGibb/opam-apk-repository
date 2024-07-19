@@ -8,6 +8,8 @@ remove: [
 depends: [
   "glib-dev"
   "libffi-dev"
+  "pc-gobject-2-0"
+  "pc-libffi"
   "pkgconfig"
 ]
 extra-source "py-gobject3-dev-3.18.2-r0.apk" {

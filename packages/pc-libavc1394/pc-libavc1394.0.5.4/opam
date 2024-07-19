@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "libavc1394-dev" {= "0.5.4-r2"}
+]

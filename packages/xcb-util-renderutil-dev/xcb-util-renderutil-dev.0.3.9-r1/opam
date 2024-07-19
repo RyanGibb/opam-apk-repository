@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del xcb-util-renderutil-dev"]
 ]
 depends: [
-  "libxcb-dev"
-  "pkgconf"
+  "pc-xcb-render"
+  "pkgconfig"
   "xcb-util-dev"
   "xcb-util-renderutil" {= "0.3.9-r1"}
 ]

@@ -6,17 +6,17 @@ remove: [
   ["sh" "-c" "sudo apk del rxvt-unicode"]
 ]
 depends: [
-  "fontconfig"
-  "gdk-pixbuf"
-  "glib"
-  "libgcc"
-  "libx11"
-  "libxft"
-  "libxrender"
-  "musl"
-  "perl"
   "rxvt-unicode-terminfo"
-  "startup-notification"
+  "so-libX11-so-6"
+  "so-libXft-so-2"
+  "so-libXrender-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libfontconfig-so-1"
+  "so-libgcc_s-so-1"
+  "so-libgdk_pixbuf-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libperl-so"
+  "so-libstartup-notification-1-so-0"
 ]
 extra-source "rxvt-unicode-9.22-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/rxvt-unicode-9.22-r8.apk"

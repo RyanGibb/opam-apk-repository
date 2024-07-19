@@ -6,8 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del serf-dev"]
 ]
 depends: [
-  "openssl-dev"
-  "pkgconf"
+  "pc-libcrypto"
+  "pc-libssl"
+  "pkgconfig"
   "serf" {= "1.3.9-r7"}
 ]
 extra-source "serf-dev-1.3.9-r7.apk" {

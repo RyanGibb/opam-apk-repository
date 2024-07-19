@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del afpfs-ng"]
 ]
 depends: [
-  "libedit"
-  "libgcrypt"
-  "musl"
-  "ncurses-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libedit-so-0"
+  "so-libgcrypt-so-20"
+  "so-libncurses-so-5"
 ]
 extra-source "afpfs-ng-0.8.1-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/afpfs-ng-0.8.1-r5.apk"

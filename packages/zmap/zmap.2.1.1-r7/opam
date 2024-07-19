@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del zmap"]
 ]
 depends: [
-  "gmp"
-  "hiredis"
-  "json-c"
-  "libpcap"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgmp-so-10"
+  "so-libhiredis-so-1-0-0"
+  "so-libjson-c-so-5"
+  "so-libpcap-so-1"
 ]
 extra-source "zmap-2.1.1-r7.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/zmap-2.1.1-r7.apk"

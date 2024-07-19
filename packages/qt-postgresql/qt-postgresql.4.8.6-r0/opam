@@ -7,11 +7,12 @@ remove: [
 ]
 depends: [
   "ca-certificates"
-  "libgcc"
-  "libstdc++"
-  "musl"
-  "qt"
-  ("pgcluster-libpq" | "libpq")
+  "so-libQtCore-so-4"
+  "so-libQtSql-so-4"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libpq-so-5"
+  "so-libstdc++-so-6"
 ]
 extra-source "qt-postgresql-4.8.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/qt-postgresql-4.8.6-r0.apk"

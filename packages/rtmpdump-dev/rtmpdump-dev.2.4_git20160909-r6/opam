@@ -6,10 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del rtmpdump-dev"]
 ]
 depends: [
-  "gnutls-dev"
   "librtmp" {= "2.4_git20160909-r6"}
-  "nettle-dev"
-  "pkgconf"
+  "pc-gnutls"
+  "pc-hogweed"
+  "pc-nettle"
+  "pkgconfig"
   "zlib-dev"
 ]
 extra-source "rtmpdump-dev-2.4_git20160909-r6.apk" {

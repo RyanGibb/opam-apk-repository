@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del apache2-http2"]
 ]
 depends: [
-  "libcrypto1.1"
-  "musl"
-  "nghttp2-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-1"
+  "so-libnghttp2-so-14"
 ]
 extra-source "apache2-http2-2.4.53-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/apache2-http2-2.4.53-r0.apk"

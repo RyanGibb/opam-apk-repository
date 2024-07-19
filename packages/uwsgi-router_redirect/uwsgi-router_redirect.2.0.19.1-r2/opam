@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del uwsgi-router_redirect"]
 ]
 depends: [
-  "musl"
+  "so-libc-musl-x86_64-so-1"
   "uwsgi"
 ]
 extra-source "uwsgi-router_redirect-2.0.19.1-r2.apk" {

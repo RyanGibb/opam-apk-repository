@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del portaudio-dev"]
 ]
 depends: [
-  "alsa-lib-dev"
   "libportaudiocxx" {= "190600.20161030-r1"}
-  "pkgconf"
+  "pc-alsa"
+  "pkgconfig"
   "portaudio" {= "190600.20161030-r1"}
 ]
 extra-source "portaudio-dev-190600.20161030-r1.apk" {

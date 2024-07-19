@@ -11,16 +11,27 @@ depends: [
   "clutter" {= "1.26.2-r1"}
   "cogl-dev"
   "gdk-pixbuf-dev"
-  "glib-dev"
   "json-glib-dev"
-  "libx11-dev"
   "libxcomposite-dev"
-  "libxdamage-dev"
-  "libxext-dev"
   "libxi-dev"
   "mesa-dev"
   "pango-dev"
-  "pkgconf"
+  "pc-atk"
+  "pc-atk" {>= "2.5.3"}
+  "pc-cairo-gobject" {>= "1.14.0"}
+  "pc-cogl-1-0" {>= "1.21.2"}
+  "pc-cogl-pango-1-0"
+  "pc-cogl-path-1-0"
+  "pc-gio-2-0" {>= "2.44.0"}
+  "pc-json-glib-1-0" {>= "0.12.0"}
+  "pc-pangocairo" {>= "1.30"}
+  "pc-pangoft2"
+  "pc-x11"
+  "pc-xcomposite" {>= "0.4"}
+  "pc-xdamage"
+  "pc-xext"
+  "pc-xi"
+  "pkgconfig"
 ]
 extra-source "clutter-dev-1.26.2-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/clutter-dev-1.26.2-r1.apk"

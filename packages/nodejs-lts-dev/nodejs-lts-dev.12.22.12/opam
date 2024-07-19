@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "nodejs-dev" {= "12.22.12-r0"}
+]

@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del geoip"]
 ]
 depends: [
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libz-so-1"
 ]
 extra-source "geoip-1.5.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/geoip-1.5.1-r0.apk"

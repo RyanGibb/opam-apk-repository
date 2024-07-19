@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del libnih"]
 ]
 depends: [
-  "dbus-libs"
-  "expat"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libdbus-1-so-3"
+  "so-libexpat-so-1"
 ]
 extra-source "libnih-1.0.3-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libnih-1.0.3-r5.apk"

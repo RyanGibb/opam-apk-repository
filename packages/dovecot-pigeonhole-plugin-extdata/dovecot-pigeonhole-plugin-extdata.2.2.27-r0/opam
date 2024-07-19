@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "dovecot-pigeonhole-plugin"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "dovecot-pigeonhole-plugin-extdata-2.2.27-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/dovecot-pigeonhole-plugin-extdata-2.2.27-r0.apk"

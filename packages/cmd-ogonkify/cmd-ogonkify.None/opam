@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "a2ps" {= "4.14-r7"}
+]

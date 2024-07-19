@@ -7,10 +7,10 @@ remove: [
 ]
 depends: [
   "bash"
-  "elfutils-libelf"
   "gmp-dev"
-  "libstdc++"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libelf-so-1"
+  "so-libstdc++-so-6"
 ]
 extra-source "linux-hardened-dev-4.9.65-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/linux-hardened-dev-4.9.65-r1.apk"

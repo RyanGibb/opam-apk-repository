@@ -6,15 +6,18 @@ remove: [
   ["sh" "-c" "sudo apk del libvirt-xen"]
 ]
 depends: [
-  "glib"
-  "libgcc"
-  "libintl"
   "libvirt-common-drivers" {= "6.6.0-r4"}
   "libvirt-daemon" {= "6.6.0-r4"}
-  "libvirt-libs"
-  "libxml2"
-  "musl"
-  "xen-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libglib-2-0-so-0"
+  "so-libintl-so-8"
+  "so-libvirt-so-0"
+  "so-libxenlight-so-4-13"
+  "so-libxenstore-so-3-0"
+  "so-libxentoollog-so-1"
+  "so-libxlutil-so-4-13"
+  "so-libxml2-so-2"
 ]
 extra-source "libvirt-xen-6.6.0-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/libvirt-xen-6.6.0-r4.apk"

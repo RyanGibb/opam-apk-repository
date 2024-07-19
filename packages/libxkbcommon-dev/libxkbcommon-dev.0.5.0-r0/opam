@@ -6,8 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del libxkbcommon-dev"]
 ]
 depends: [
-  "libxcb-dev"
   "libxkbcommon" {= "0.5.0-r0"}
+  "pc-xcb"
+  "pc-xcb-xkb"
   "pkgconfig"
 ]
 extra-source "libxkbcommon-dev-0.5.0-r0.apk" {

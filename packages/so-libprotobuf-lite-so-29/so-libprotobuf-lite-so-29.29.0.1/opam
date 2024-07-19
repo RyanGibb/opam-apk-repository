@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "libprotobuf-lite" {= "3.18.1-r3"}
+]

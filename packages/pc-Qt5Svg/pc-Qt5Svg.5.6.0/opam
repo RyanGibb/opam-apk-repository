@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "qt5-qtsvg-dev" {= "5.6.0-r0"}
+]

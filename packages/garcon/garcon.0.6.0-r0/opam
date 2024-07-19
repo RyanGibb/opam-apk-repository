@@ -6,15 +6,19 @@ remove: [
   ["sh" "-c" "sudo apk del garcon"]
 ]
 depends: [
-  "gdk-pixbuf"
-  "glib"
-  "gtk+2.0"
-  "gtk+3.0"
-  "libintl"
-  "libxfce4ui"
-  "libxfce4ui-gtk3"
-  "libxfce4util"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgdk-3-so-0"
+  "so-libgdk-x11-2-0-so-0"
+  "so-libgdk_pixbuf-2-0-so-0"
+  "so-libgio-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libgtk-3-so-0"
+  "so-libgtk-x11-2-0-so-0"
+  "so-libintl-so-8"
+  "so-libxfce4ui-1-so-0"
+  "so-libxfce4ui-2-so-0"
+  "so-libxfce4util-so-7"
 ]
 extra-source "garcon-0.6.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/garcon-0.6.0-r0.apk"

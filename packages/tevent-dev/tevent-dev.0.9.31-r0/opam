@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del tevent-dev"]
 ]
 depends: [
-  "pkgconf"
-  "talloc-dev"
+  "pc-talloc"
+  "pkgconfig"
   "tevent" {= "0.9.31-r0"}
 ]
 extra-source "tevent-dev-0.9.31-r0.apk" {

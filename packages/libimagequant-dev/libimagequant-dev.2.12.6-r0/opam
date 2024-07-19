@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libimagequant" {= "2.12.6-r0"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "libimagequant-dev-2.12.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/libimagequant-dev-2.12.6-r0.apk"

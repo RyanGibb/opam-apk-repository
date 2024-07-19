@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del rsyslog-rabbitmq"]
 ]
 depends: [
-  "musl"
-  "rabbitmq-c"
   "rsyslog" {= "8.2310.0-r0"}
+  "so-libc-musl-x86_64-so-1"
+  "so-librabbitmq-so-4"
 ]
 extra-source "rsyslog-rabbitmq-8.2310.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/rsyslog-rabbitmq-8.2310.0-r0.apk"

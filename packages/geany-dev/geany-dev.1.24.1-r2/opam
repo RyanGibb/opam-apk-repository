@@ -9,7 +9,7 @@ depends: [
   "geany" {= "1.24.1-r2"}
   "geany-doc" {= "1.24.1-r2"}
   "geany-lang" {= "1.24.1-r2"}
-  "gtk+2.0-dev"
+  "gtk+2-0-dev"
   "pkgconfig"
 ]
 extra-source "geany-dev-1.24.1-r2.apk" {

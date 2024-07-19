@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del sems-mp3"]
 ]
 depends: [
-  "lame"
-  "musl"
   "sems"
+  "so-libc-musl-x86_64-so-1"
+  "so-libmp3lame-so-0"
 ]
 extra-source "sems-mp3-1.6.0-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/sems-mp3-1.6.0-r8.apk"

@@ -6,9 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del glibmm-dev"]
 ]
 depends: [
-  "glib-dev"
   "glibmm" {= "2.46.2-r0"}
   "libsigc++-dev"
+  "pc-gio-2-0"
+  "pc-gobject-2-0"
+  "pc-sigc++-2-0"
   "pkgconfig"
 ]
 extra-source "glibmm-dev-2.46.2-r0.apk" {

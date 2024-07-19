@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  ("llvm14-test-utils" {= "14.0.6-r17"} | "llvm15-test-utils" {= "15.0.7-r12"} | "llvm16-test-utils" {= "16.0.6-r7"} | "llvm17-test-utils" {= "17.0.5-r0"})
+]

@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del xmlsec-dev"]
 ]
 depends: [
-  "libxml2-dev"
-  "libxslt-dev"
-  "nspr-dev"
-  "nss-dev"
-  "pkgconf"
+  "pc-libxml-2-0" {>= "2.8.0"}
+  "pc-libxslt" {>= "1.0.20"}
+  "pc-mozilla-nss" {>= "1.4"}
+  "pc-nspr" {>= "1.4"}
+  "pkgconfig"
   "xmlsec" {= "1.2.29-r0"}
 ]
 extra-source "xmlsec-dev-1.2.29-r0.apk" {

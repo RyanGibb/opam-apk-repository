@@ -6,10 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del nginx-mod-http-xslt-filter"]
 ]
 depends: [
-  "libxml2"
-  "libxslt"
-  "musl"
   "nginx"
+  "so-libc-musl-x86_64-so-1"
+  "so-libexslt-so-0"
+  "so-libxml2-so-2"
+  "so-libxslt-so-1"
 ]
 extra-source "nginx-mod-http-xslt-filter-1.16.1-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/nginx-mod-http-xslt-filter-1.16.1-r3.apk"

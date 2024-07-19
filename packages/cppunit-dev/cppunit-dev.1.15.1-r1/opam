@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "cppunit" {= "1.15.1-r1"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "cppunit-dev-1.15.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/cppunit-dev-1.15.1-r1.apk"

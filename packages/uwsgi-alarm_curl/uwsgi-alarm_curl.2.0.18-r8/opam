@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del uwsgi-alarm_curl"]
 ]
 depends: [
-  "libcurl"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcurl-so-4"
   "uwsgi"
 ]
 extra-source "uwsgi-alarm_curl-2.0.18-r8.apk" {

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del xrdb"]
 ]
 depends: [
-  "libx11"
-  "libxmu"
-  "musl"
+  "so-libX11-so-6"
+  "so-libXmuu-so-1"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "xrdb-1.1.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/xrdb-1.1.0-r0.apk"

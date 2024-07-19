@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del ircii"]
 ]
 depends: [
-  "libcrypto1.1"
-  "libssl1.1"
-  "musl"
-  "ncurses-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-1"
+  "so-libncursesw-so-6"
+  "so-libssl-so-1-1"
 ]
 extra-source "ircii-20190117-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/ircii-20190117-r0.apk"

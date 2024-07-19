@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del libinput-dev"]
 ]
 depends: [
-  "eudev-dev"
   "libinput" {= "1.7.2-r0"}
-  "pkgconf"
+  "pc-libudev"
+  "pkgconfig"
 ]
 extra-source "libinput-dev-1.7.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/libinput-dev-1.7.2-r0.apk"

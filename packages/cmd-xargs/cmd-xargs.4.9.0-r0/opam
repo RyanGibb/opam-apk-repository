@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "findutils" {= "4.9.0-r0"}
+]

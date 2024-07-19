@@ -6,12 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del chezdav"]
 ]
 depends: [
-  "avahi-glib"
-  "glib"
-  "libintl"
-  "libsoup"
-  "musl"
-  "phodav"
+  "so-libavahi-gobject-so-0"
+  "so-libc-musl-x86_64-so-1"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libintl-so-8"
+  "so-libphodav-2-0-so-0"
+  "so-libsoup-2-4-so-1"
 ]
 extra-source "chezdav-2.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/chezdav-2.2-r0.apk"

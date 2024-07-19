@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libressl-dev"
-  "pkgconf"
+  "pkgconfig"
   "popt-dev"
   "rabbitmq-c" {= "0.8.0-r4"}
 ]

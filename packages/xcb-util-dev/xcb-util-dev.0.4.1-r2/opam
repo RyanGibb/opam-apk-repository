@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libxcb-dev"
-  "pkgconf"
+  "pkgconfig"
   "util-macros"
   "xcb-util" {= "0.4.1-r2"}
 ]

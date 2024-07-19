@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del pidgin-otr"]
 ]
 depends: [
-  "libgcrypt"
-  "libotr"
-  "musl"
   "pidgin"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcrypt-so-20"
+  "so-libotr-so-5"
 ]
 extra-source "pidgin-otr-4.0.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/pidgin-otr-4.0.2-r0.apk"

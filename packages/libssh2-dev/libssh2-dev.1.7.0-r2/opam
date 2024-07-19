@@ -8,9 +8,11 @@ remove: [
 depends: [
   "libressl-dev"
   "libssh2" {= "1.7.0-r2"}
-  "pkgconf"
+  "pc-libcrypto"
+  "pc-libssl"
+  "pc-zlib"
+  "pkgconfig"
   "zlib-dev"
-  ("libressl-dev" | "openssl-dev")
 ]
 extra-source "libssh2-dev-1.7.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/libssh2-dev-1.7.0-r2.apk"

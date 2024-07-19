@@ -6,11 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del lld"]
 ]
 depends: [
-  "libgcc"
-  "libstdc++"
-  "lld-libs"
-  "llvm15-libs"
-  "musl"
+  "so-libLLVM-15-so"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-liblldCOFF-so-15"
+  "so-liblldCommon-so-15"
+  "so-liblldELF-so-15"
+  "so-liblldMachO-so-15"
+  "so-liblldMinGW-so-15"
+  "so-liblldWasm-so-15"
+  "so-libstdc++-so-6"
 ]
 extra-source "lld-15.0.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lld-15.0.7-r0.apk"

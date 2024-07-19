@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "bdftopcf"
-  "musl"
   "perl-gd"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "unifont-tools-15.0.01-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/unifont-tools-15.0.01-r3.apk"

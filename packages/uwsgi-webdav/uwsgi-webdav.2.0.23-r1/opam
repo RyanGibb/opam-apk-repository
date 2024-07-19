@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del uwsgi-webdav"]
 ]
 depends: [
-  "libxml2"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libxml2-so-2"
   "uwsgi"
 ]
 extra-source "uwsgi-webdav-2.0.23-r1.apk" {

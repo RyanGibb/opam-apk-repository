@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "busybox"
-  "iptables"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libxtables-so-11"
 ]
 extra-source "iproute2-4.4.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/iproute2-4.4.0-r1.apk"

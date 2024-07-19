@@ -7,6 +7,10 @@ remove: [
 ]
 depends: [
   "mesa-dev"
+  "pc-Qt5Core"
+  "pc-Qt5Gui"
+  "pc-Qt5Script"
+  "pc-Qt5Widgets"
   "pkgconfig"
   "qt5-qtbase-dev"
   "qt5-qtquick1" {= "5.5.1-r0"}

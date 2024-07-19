@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del ksymoops"]
 ]
 depends: [
-  "binutils-libs"
-  "musl"
+  "so-libbfd-2-24-so"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "ksymoops-2.4.11-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/ksymoops-2.4.11-r6.apk"

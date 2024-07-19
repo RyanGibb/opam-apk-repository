@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del mesa-gbm"]
 ]
 depends: [
-  "expat"
-  "libdrm"
-  "libstdc++"
   "mesa" {= "21.3.9-r0"}
-  "musl"
-  "wayland-libs-server"
+  "so-libc-musl-x86_64-so-1"
+  "so-libdrm-so-2"
+  "so-libexpat-so-1"
+  "so-libstdc++-so-6"
+  "so-libwayland-server-so-0"
 ]
 extra-source "mesa-gbm-21.3.9-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/mesa-gbm-21.3.9-r0.apk"

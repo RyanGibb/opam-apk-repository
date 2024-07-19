@@ -6,9 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del kamailio-redis"]
 ]
 depends: [
-  "hiredis"
   "kamailio"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libhiredis-so-0-13"
+  "so-libkcore-so-1"
 ]
 extra-source "kamailio-redis-4.2.7-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/kamailio-redis-4.2.7-r4.apk"

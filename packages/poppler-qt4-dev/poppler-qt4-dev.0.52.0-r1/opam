@@ -12,7 +12,7 @@ depends: [
   "lcms2-dev"
   "libxml2-dev"
   "openjpeg-dev"
-  "pkgconf"
+  "pkgconfig"
   "poppler-dev" {>= "0.52.0"}
   "poppler-qt4" {= "0.52.0-r1"}
   "qt-dev"

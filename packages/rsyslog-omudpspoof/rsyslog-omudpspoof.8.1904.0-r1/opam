@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "rsyslog-udpspoof" {= "8.1904.0-r1"}
+]

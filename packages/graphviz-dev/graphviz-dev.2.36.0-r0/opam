@@ -17,7 +17,7 @@ depends: [
   "graphviz-doc" {= "2.36.0-r0"}
   "graphviz-graphs" {= "2.36.0-r0"}
   "graphviz-gtk" {= "2.36.0-r0"}
-  "gtk+2.0-dev"
+  "gtk+2-0-dev"
   "libjpeg-turbo-dev"
   "libpng-dev"
   "librsvg-dev"
@@ -25,7 +25,7 @@ depends: [
   "libtool"
   "libxext-dev"
   "lua-graphviz" {= "2.36.0-r0"}
-  "lua5.2-dev"
+  "lua5-2-dev"
   "m4"
   "pango-dev"
   "pkgconfig"

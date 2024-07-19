@@ -6,8 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del wireshark-dev"]
 ]
 depends: [
-  "glib-dev"
-  "pkgconf"
+  "pc-glib-2-0"
+  "pc-gmodule-2-0"
+  "pc-gthread-2-0"
+  "pkgconfig"
   "wireshark-common" {= "2.2.15-r0"}
 ]
 extra-source "wireshark-dev-2.2.15-r0.apk" {

@@ -10,7 +10,7 @@ depends: [
   "audacious-dbg" {= "3.6.1-r0"}
   "audacious-lang" {= "3.6.1-r0"}
   "dbus-glib-dev"
-  "gtk+2.0-dev"
+  "gtk+2-0-dev"
   "pkgconfig"
 ]
 extra-source "audacious-dev-3.6.1-r0.apk" {

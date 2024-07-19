@@ -6,22 +6,22 @@ remove: [
   ["sh" "-c" "sudo apk del abuild"]
 ]
 depends: [
+  "-bin-sh"
   "apk-tools" {>= "2.0.7-r1"}
   "attr"
+  "cmd-getcap"
   "curl"
   "fakeroot"
   "libc-utils"
-  "libcap-getcap"
-  "libcrypto3"
   "lzip"
-  "musl"
   "openssl" {> "3"}
   "patch"
   "pkgconf"
   "scanelf"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-3"
+  "so-libz-so-1"
   "tar"
-  "zlib"
-  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
 ]
 extra-source "abuild-3.12.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/abuild-3.12.0-r0.apk"

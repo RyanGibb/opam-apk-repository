@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del libdc1394"]
 ]
 depends: [
-  "libraw1394"
-  "libusb"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libraw1394-so-11"
+  "so-libusb-1-0-so-0"
 ]
 extra-source "libdc1394-2.2.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/libdc1394-2.2.6-r0.apk"

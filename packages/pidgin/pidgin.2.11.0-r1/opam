@@ -6,18 +6,20 @@ remove: [
   ["sh" "-c" "sudo apk del pidgin"]
 ]
 depends: [
-  "atk"
-  "cairo"
-  "gdk-pixbuf"
-  "glib"
-  "gtk+2.0"
-  "gtkspell"
-  "libice"
-  "libintl"
-  "libpurple"
-  "libsm"
-  "musl"
-  "pango"
+  "so-libICE-so-6"
+  "so-libSM-so-6"
+  "so-libatk-1-0-so-0"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcairo-so-2"
+  "so-libgdk-x11-2-0-so-0"
+  "so-libgdk_pixbuf-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libgtk-x11-2-0-so-0"
+  "so-libgtkspell-so-0"
+  "so-libintl-so-8"
+  "so-libpango-1-0-so-0"
+  "so-libpurple-so-0"
 ]
 extra-source "pidgin-2.11.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/pidgin-2.11.0-r1.apk"

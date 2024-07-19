@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "upower" {= "0.99.7-r0"}
+]

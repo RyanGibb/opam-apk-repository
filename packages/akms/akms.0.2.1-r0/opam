@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del akms"]
 ]
 depends: [
+  "-bin-sh"
   "bubblewrap"
+  "cmd-depmod"
   "kernel-hooks"
-  "kmod"
-  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
 ]
 extra-source "akms-0.2.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/akms-0.2.1-r0.apk"

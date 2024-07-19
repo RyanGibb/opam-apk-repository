@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libisofs" {= "1.5.2-r0"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "libisofs-dev-1.5.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/libisofs-dev-1.5.2-r0.apk"

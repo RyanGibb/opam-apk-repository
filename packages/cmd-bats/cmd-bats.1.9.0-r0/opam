@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "bats" {= "1.9.0-r0"}
+]

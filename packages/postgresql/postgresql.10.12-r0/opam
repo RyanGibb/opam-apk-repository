@@ -1,21 +1,4 @@
 opam-version: "2.0"
-build: [
-  ["sh" "-c" "sudo apk add postgresql-10.12-r0.apk"]
-]
-remove: [
-  ["sh" "-c" "sudo apk del postgresql"]
-]
 depends: [
-  "busybox"
-  "libldap"
-  "libpq"
-  "libressl2.7-libcrypto"
-  "libressl2.7-libssl"
-  "libxml2"
-  "musl"
-  "postgresql-client"
-  "tzdata"
+  "postgresql-bdr" {= "9.4.14_p1-r0"}
 ]
-extra-source "postgresql-10.12-r0.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/postgresql-10.12-r0.apk"
-}

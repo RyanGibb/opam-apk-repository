@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del nginx-mod-http-echo"]
 ]
 depends: [
-  "musl"
   "nginx"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "nginx-mod-http-echo-1.26.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/nginx-mod-http-echo-1.26.1-r0.apk"

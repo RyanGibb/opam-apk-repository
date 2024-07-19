@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del libxxf86vm-dev"]
 ]
 depends: [
-  "libx11-dev"
-  "libxext-dev"
   "libxxf86vm" {= "1.1.5-r5"}
-  "pkgconf"
-  "xorgproto"
+  "pc-x11"
+  "pc-xext"
+  "pc-xf86vidmodeproto"
+  "pkgconfig"
 ]
 extra-source "libxxf86vm-dev-1.1.5-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/libxxf86vm-dev-1.1.5-r5.apk"

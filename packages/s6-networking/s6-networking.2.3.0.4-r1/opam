@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del s6-networking"]
 ]
 depends: [
-  "bearssl"
-  "musl"
-  "s6"
-  "s6-dns"
-  "skalibs"
+  "so-libbearssl-so-0"
+  "so-libc-musl-x86_64-so-1"
+  "so-libs6-so-2-8"
+  "so-libs6dns-so-2-3"
+  "so-libskarnet-so-2-8"
 ]
 extra-source "s6-networking-2.3.0.4-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/s6-networking-2.3.0.4-r1.apk"

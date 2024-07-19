@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del clang17-libs"]
 ]
 depends: [
-  "libgcc"
-  "libstdc++"
-  "llvm17-libs"
-  "musl"
+  "so-libLLVM-17-so"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libstdc++-so-6"
 ]
 extra-source "clang17-libs-17.0.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/clang17-libs-17.0.5-r0.apk"

@@ -6,17 +6,17 @@ remove: [
   ["sh" "-c" "sudo apk del libcurl"]
 ]
 depends: [
-  "brotli-libs"
-  "c-ares"
   "ca-certificates"
-  "libcrypto3"
-  "libidn2"
-  "libpsl"
-  "libssl3"
-  "musl"
-  "nghttp2-libs"
-  "zlib"
-  "zstd-libs"
+  "so-libbrotlidec-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcares-so-2"
+  "so-libcrypto-so-3"
+  "so-libidn2-so-0"
+  "so-libnghttp2-so-14"
+  "so-libpsl-so-5"
+  "so-libssl-so-3"
+  "so-libz-so-1"
+  "so-libzstd-so-1"
 ]
 extra-source "libcurl-8.8.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libcurl-8.8.0-r0.apk"

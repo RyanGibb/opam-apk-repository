@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libtasn1" {= "4.14-r0"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "libtasn1-dev-4.14-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libtasn1-dev-4.14-r0.apk"

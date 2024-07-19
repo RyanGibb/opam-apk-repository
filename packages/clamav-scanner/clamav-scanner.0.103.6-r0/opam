@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del clamav-scanner"]
 ]
 depends: [
-  "clamav-libs"
   "freshclam"
-  "libcrypto1.1"
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libclamav-so-9"
+  "so-libcrypto-so-1-1"
+  "so-libz-so-1"
 ]
 extra-source "clamav-scanner-0.103.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/clamav-scanner-0.103.6-r0.apk"

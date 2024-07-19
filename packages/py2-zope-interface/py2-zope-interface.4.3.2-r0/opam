@@ -6,8 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del py2-zope-interface"]
 ]
 depends: [
-  "musl"
   "python2"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpython2-7-so-1-0"
 ]
 extra-source "py2-zope-interface-4.3.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/py2-zope-interface-4.3.2-r0.apk"

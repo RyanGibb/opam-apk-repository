@@ -7,11 +7,12 @@ remove: [
 ]
 depends: [
   "dbus"
-  "dbus-libs"
-  "libcrypto1.0"
-  "libnl3"
-  "libssl1.0"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-0-0"
+  "so-libdbus-1-so-3"
+  "so-libnl-3-so-200"
+  "so-libnl-genl-3-so-200"
+  "so-libssl-so-1-0-0"
 ]
 extra-source "wpa_supplicant-2.3-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/wpa_supplicant-2.3-r2.apk"

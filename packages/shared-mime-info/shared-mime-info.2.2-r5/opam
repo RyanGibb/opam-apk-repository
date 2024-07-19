@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del shared-mime-info"]
 ]
 depends: [
-  "glib"
-  "libxml2"
-  "musl"
-  "pkgconf"
-  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
+  "-bin-sh"
+  "pkgconfig"
+  "so-libc-musl-x86_64-so-1"
+  "so-libglib-2-0-so-0"
+  "so-libxml2-so-2"
 ]
 extra-source "shared-mime-info-2.2-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/shared-mime-info-2.2-r5.apk"

@@ -7,15 +7,15 @@ remove: [
 ]
 depends: [
   "gcc" {= "10.2.1_pre1-r3"}
-  "gmp"
-  "isl22"
   "libgphobos" {= "10.2.1_pre1-r3"}
   "libucontext-dev"
-  "mpc1"
-  "mpfr4"
-  "musl"
   "musl-dev"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgmp-so-10"
+  "so-libisl-so-22"
+  "so-libmpc-so-3"
+  "so-libmpfr-so-6"
+  "so-libz-so-1"
 ]
 extra-source "gcc-gdc-10.2.1_pre1-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/gcc-gdc-10.2.1_pre1-r3.apk"

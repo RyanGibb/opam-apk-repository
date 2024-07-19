@@ -6,13 +6,15 @@ remove: [
   ["sh" "-c" "sudo apk del gtk-murrine-engine"]
 ]
 depends: [
-  "cairo"
-  "gdk-pixbuf"
-  "glib"
-  "gtk+2.0"
-  "musl"
-  "pango"
-  "pixman"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcairo-so-2"
+  "so-libgdk-x11-2-0-so-0"
+  "so-libgdk_pixbuf-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libgtk-x11-2-0-so-0"
+  "so-libpangocairo-1-0-so-0"
+  "so-libpixman-1-so-0"
 ]
 extra-source "gtk-murrine-engine-0.98.2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/gtk-murrine-engine-0.98.2-r2.apk"

@@ -6,9 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del net-snmp-perl"]
 ]
 depends: [
-  "musl"
-  "net-snmp-agent-libs"
-  "net-snmp-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libnetsnmp-so-30"
+  "so-libnetsnmpagent-so-30"
+  "so-libnetsnmptrapd-so-30"
 ]
 extra-source "net-snmp-perl-5.7.3-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/net-snmp-perl-5.7.3-r5.apk"

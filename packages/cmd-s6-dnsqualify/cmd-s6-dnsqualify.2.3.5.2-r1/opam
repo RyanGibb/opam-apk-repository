@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "s6-dns" {= "2.3.5.2-r1"}
+]

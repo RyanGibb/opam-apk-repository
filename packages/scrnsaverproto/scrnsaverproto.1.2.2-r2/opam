@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del scrnsaverproto"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "scrnsaverproto-1.2.2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/scrnsaverproto-1.2.2-r2.apk"

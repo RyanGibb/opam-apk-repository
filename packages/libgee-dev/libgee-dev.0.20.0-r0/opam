@@ -6,9 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del libgee-dev"]
 ]
 depends: [
-  "glib-dev"
   "libgee" {= "0.20.0-r0"}
-  "pkgconf"
+  "pc-glib-2-0"
+  "pc-gobject-2-0"
+  "pkgconfig"
 ]
 extra-source "libgee-dev-0.20.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/libgee-dev-0.20.0-r0.apk"

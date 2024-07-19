@@ -6,9 +6,17 @@ remove: [
   ["sh" "-c" "sudo apk del ffmpeg"]
 ]
 depends: [
-  "ffmpeg-libs"
-  "musl"
-  "sdl2"
+  "so-libSDL2-2-0-so-0"
+  "so-libavcodec-so-57"
+  "so-libavdevice-so-57"
+  "so-libavfilter-so-6"
+  "so-libavformat-so-57"
+  "so-libavresample-so-3"
+  "so-libavutil-so-55"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpostproc-so-54"
+  "so-libswresample-so-2"
+  "so-libswscale-so-4"
 ]
 extra-source "ffmpeg-3.4-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/ffmpeg-3.4-r1.apk"

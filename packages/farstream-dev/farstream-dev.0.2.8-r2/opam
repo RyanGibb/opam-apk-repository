@@ -10,7 +10,9 @@ depends: [
   "gst-plugins-base-dev"
   "gstreamer-dev"
   "libnice-dev"
-  "pkgconf"
+  "pc-gstreamer-1-0"
+  "pc-gstreamer-base-1-0"
+  "pkgconfig"
 ]
 extra-source "farstream-dev-0.2.8-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/farstream-dev-0.2.8-r2.apk"

@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del tcpflow"]
 ]
 depends: [
-  "libcrypto3"
-  "libgcc"
-  "libpcap"
-  "libstdc++"
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-3"
+  "so-libgcc_s-so-1"
+  "so-libpcap-so-1"
+  "so-libstdc++-so-6"
+  "so-libz-so-1"
 ]
 extra-source "tcpflow-1.6.1-r14.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/tcpflow-1.6.1-r14.apk"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del postfix-redis"]
 ]
 depends: [
-  "hiredis"
+  "so-libhiredis-so-1-0-0"
 ]
 extra-source "postfix-redis-3.7.11-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/postfix-redis-3.7.11-r0.apk"

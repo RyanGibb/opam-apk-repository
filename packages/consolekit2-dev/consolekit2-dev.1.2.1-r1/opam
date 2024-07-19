@@ -7,9 +7,11 @@ remove: [
 ]
 depends: [
   "consolekit2" {= "1.2.1-r1"}
-  "dbus-dev"
-  "glib-dev"
-  "pkgconf"
+  "pc-dbus-1"
+  "pc-gio-2-0"
+  "pc-glib-2-0"
+  "pc-gobject-2-0"
+  "pkgconfig"
 ]
 extra-source "consolekit2-dev-1.2.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/consolekit2-dev-1.2.1-r1.apk"

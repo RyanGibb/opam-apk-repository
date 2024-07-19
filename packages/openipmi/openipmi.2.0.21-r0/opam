@@ -6,11 +6,17 @@ remove: [
   ["sh" "-c" "sudo apk del openipmi"]
 ]
 depends: [
-  "glib"
-  "musl"
-  "ncurses-libs"
-  "net-snmp-libs"
-  "openipmi-libs"
+  "so-libOpenIPMI-so-0"
+  "so-libOpenIPMIcmdlang-so-0"
+  "so-libOpenIPMIglib-so-0"
+  "so-libOpenIPMIposix-so-0"
+  "so-libOpenIPMIui-so-1"
+  "so-libOpenIPMIutils-so-0"
+  "so-libc-musl-x86_64-so-1"
+  "so-libglib-2-0-so-0"
+  "so-libgthread-2-0-so-0"
+  "so-libncurses-so-5"
+  "so-libnetsnmp-so-30"
 ]
 extra-source "openipmi-2.0.21-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/openipmi-2.0.21-r0.apk"

@@ -7,10 +7,10 @@ remove: [
 ]
 depends: [
   "finch" {= "2.11.0-r1"}
-  "glib-dev"
-  "gtk+2.0-dev"
   "libpurple" {= "2.11.0-r1"}
-  "pkgconf"
+  "pc-glib-2-0"
+  "pc-gtk+-2-0"
+  "pkgconfig"
 ]
 extra-source "pidgin-dev-2.11.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/pidgin-dev-2.11.0-r1.apk"

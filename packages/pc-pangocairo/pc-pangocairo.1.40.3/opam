@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "pango-dev" {= "1.40.3-r0"}
+]

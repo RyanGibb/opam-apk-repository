@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del charybdis"]
 ]
 depends: [
-  "busybox"
-  "libcrypto1.1"
-  "libssl1.1"
-  "musl"
-  "zlib"
+  "-bin-sh"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-1"
+  "so-libssl-so-1-1"
+  "so-libz-so-1"
 ]
 extra-source "charybdis-3.5.6-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/charybdis-3.5.6-r1.apk"

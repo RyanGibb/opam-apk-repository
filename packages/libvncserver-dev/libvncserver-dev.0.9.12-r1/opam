@@ -21,8 +21,8 @@ depends: [
   "libxtst-dev"
   "lzo-dev"
   "openssl-dev"
-  "pkgconf"
-  "zlib-dev"
+  "pc-zlib"
+  "pkgconfig"
 ]
 extra-source "libvncserver-dev-0.9.12-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/libvncserver-dev-0.9.12-r1.apk"

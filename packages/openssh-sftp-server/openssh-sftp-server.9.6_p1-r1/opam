@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del openssh-sftp-server"]
 ]
 depends: [
-  "musl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "openssh-sftp-server-9.6_p1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/openssh-sftp-server-9.6_p1-r1.apk"

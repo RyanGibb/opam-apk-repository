@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del cracklib"]
 ]
 depends: [
-  "musl"
-  "zlib"
-  ("yash-binsh" | "busybox-binsh" | "dash-binsh")
+  "-bin-sh"
+  "so-libc-musl-x86_64-so-1"
+  "so-libz-so-1"
 ]
 extra-source "cracklib-2.9.8-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/cracklib-2.9.8-r0.apk"

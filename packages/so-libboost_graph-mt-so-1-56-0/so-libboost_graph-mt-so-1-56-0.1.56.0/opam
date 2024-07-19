@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "boost-graph" {= "1.56.0-r0"}
+]

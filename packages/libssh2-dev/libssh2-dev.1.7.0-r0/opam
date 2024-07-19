@@ -8,6 +8,9 @@ remove: [
 depends: [
   "libssh2" {= "1.7.0-r0"}
   "openssl-dev"
+  "pc-libcrypto"
+  "pc-libssl"
+  "pc-zlib"
   "pkgconfig"
   "zlib-dev"
 ]

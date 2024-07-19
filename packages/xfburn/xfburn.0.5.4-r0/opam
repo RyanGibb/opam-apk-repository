@@ -7,16 +7,19 @@ remove: [
 ]
 depends: [
   "desktop-file-utils"
-  "exo"
-  "gdk-pixbuf"
-  "glib"
-  "gtk+2.0"
   "hicolor-icon-theme"
-  "libburn"
-  "libisofs"
-  "libxfce4ui"
-  "libxfce4util"
-  "musl"
+  "so-libburn-so-4"
+  "so-libc-musl-x86_64-so-1"
+  "so-libexo-1-so-0"
+  "so-libgdk-x11-2-0-so-0"
+  "so-libgdk_pixbuf-2-0-so-0"
+  "so-libgio-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libgtk-x11-2-0-so-0"
+  "so-libisofs-so-6"
+  "so-libxfce4ui-1-so-0"
+  "so-libxfce4util-so-7"
 ]
 extra-source "xfburn-0.5.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/xfburn-0.5.4-r0.apk"

@@ -6,12 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del gvfs-gphoto2"]
 ]
 depends: [
-  "glib"
-  "gvfs"
-  "libgphoto2"
-  "libgudev"
-  "libintl"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgio-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libgphoto2-so-6"
+  "so-libgphoto2_port-so-12"
+  "so-libgudev-1-0-so-0"
+  "so-libgvfscommon-so"
+  "so-libgvfsdaemon-so"
+  "so-libintl-so-8"
 ]
 extra-source "gvfs-gphoto2-1.34.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/gvfs-gphoto2-1.34.1-r1.apk"

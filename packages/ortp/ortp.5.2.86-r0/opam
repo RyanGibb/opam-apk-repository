@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del ortp"]
 ]
 depends: [
-  "bctoolbox"
-  "libgcc"
-  "libstdc++"
-  "musl"
+  "so-libbctoolbox-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libstdc++-so-6"
 ]
 extra-source "ortp-5.2.86-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/ortp-5.2.86-r0.apk"

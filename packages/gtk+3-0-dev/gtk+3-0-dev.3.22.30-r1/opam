@@ -1,0 +1,65 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gtk+3.0-dev-3.22.30-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gtk+3.0-dev"]
+]
+depends: [
+  "at-spi2-atk-dev"
+  "atk-dev"
+  "cairo-dev"
+  "fontconfig-dev"
+  "gdk-pixbuf-dev"
+  "glib-dev"
+  "gtk+3-0" {= "3.22.30-r1"}
+  "intltool"
+  "libepoxy-dev"
+  "libx11-dev"
+  "libxcomposite-dev"
+  "libxcursor-dev"
+  "libxdamage-dev"
+  "libxext-dev"
+  "libxfixes-dev"
+  "libxi-dev"
+  "libxinerama-dev"
+  "libxkbcommon-dev"
+  "libxrandr-dev"
+  "pango-dev"
+  "pc-atk"
+  "pc-atk" {>= "2.15.1"}
+  "pc-atk-bridge-2-0"
+  "pc-cairo"
+  "pc-cairo" {>= "1.14.0"}
+  "pc-cairo-gobject" {>= "1.14.0"}
+  "pc-cairo-xlib"
+  "pc-epoxy" {>= "1.0"}
+  "pc-fontconfig"
+  "pc-gdk-pixbuf-2-0" {>= "2.30.0"}
+  "pc-gio-2-0" {>= "2.49.4"}
+  "pc-gio-unix-2-0" {>= "2.49.4"}
+  "pc-pango"
+  "pc-pangocairo"
+  "pc-pangoft2"
+  "pc-wayland-client" {>= "1.9.91"}
+  "pc-wayland-cursor" {>= "1.9.91"}
+  "pc-wayland-egl"
+  "pc-x11"
+  "pc-xcomposite"
+  "pc-xcursor"
+  "pc-xdamage"
+  "pc-xext"
+  "pc-xfixes"
+  "pc-xi"
+  "pc-xinerama"
+  "pc-xkbcommon" {>= "0.2.0"}
+  "pc-xrandr"
+  "pkgconfig"
+  "wayland-dev"
+  "wayland-libs-client"
+  "wayland-libs-cursor"
+  "wayland-protocols"
+]
+extra-source "gtk+3.0-dev-3.22.30-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/gtk+3.0-dev-3.22.30-r1.apk"
+}

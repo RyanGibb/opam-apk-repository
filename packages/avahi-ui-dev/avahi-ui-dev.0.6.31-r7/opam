@@ -10,9 +10,13 @@ depends: [
   "avahi-ui" {= "0.6.31-r7"}
   "avahi-ui-gtk3" {= "0.6.31-r7"}
   "gdbm-dev"
-  "gtk+2.0-dev"
-  "gtk+3.0-dev"
-  "pkgconf"
+  "gtk+2-0-dev"
+  "gtk+3-0-dev"
+  "pc-avahi-client"
+  "pc-avahi-glib"
+  "pc-gtk+-2-0"
+  "pc-gtk+-3-0"
+  "pkgconfig"
 ]
 extra-source "avahi-ui-dev-0.6.31-r7.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/avahi-ui-dev-0.6.31-r7.apk"

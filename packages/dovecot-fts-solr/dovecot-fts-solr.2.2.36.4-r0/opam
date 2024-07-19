@@ -7,8 +7,9 @@ remove: [
 ]
 depends: [
   "dovecot"
-  "expat"
-  "musl"
+  "so-lib20_fts_plugin-so"
+  "so-libc-musl-x86_64-so-1"
+  "so-libexpat-so-1"
 ]
 extra-source "dovecot-fts-solr-2.2.36.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/dovecot-fts-solr-2.2.36.4-r0.apk"

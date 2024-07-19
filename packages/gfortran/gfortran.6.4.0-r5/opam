@@ -7,14 +7,14 @@ remove: [
 ]
 depends: [
   "gcc" {= "6.4.0-r5"}
-  "gmp"
-  "isl"
   "libgfortran" {= "6.4.0-r5"}
   "libquadmath" {= "6.4.0-r5"}
-  "mpc1"
-  "mpfr3"
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgmp-so-10"
+  "so-libisl-so-15"
+  "so-libmpc-so-3"
+  "so-libmpfr-so-4"
+  "so-libz-so-1"
 ]
 extra-source "gfortran-6.4.0-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/gfortran-6.4.0-r5.apk"

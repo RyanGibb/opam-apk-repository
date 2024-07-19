@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del wxbase"]
 ]
 depends: [
-  "expat"
-  "libgcc"
-  "libstdc++"
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libexpat-so-1"
+  "so-libgcc_s-so-1"
+  "so-libstdc++-so-6"
+  "so-libz-so-1"
 ]
 extra-source "wxbase-2.8.12.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/wxbase-2.8.12.1-r1.apk"

@@ -9,7 +9,10 @@ depends: [
   "dbus-dev"
   "dbus-glib-dev"
   "glib-dev"
-  "pkgconf"
+  "pc-dbus-1"
+  "pc-dbus-glib-1"
+  "pc-gobject-2-0"
+  "pkgconfig"
   "xfconf" {= "4.12.1-r0"}
 ]
 extra-source "xfconf-dev-4.12.1-r0.apk" {

@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del acf-weblog"]
 ]
 depends: [
+  "-bin-sh"
   "acf-core"
-  "busybox"
   "lua-sql-postgres"
   "lua-subprocess"
   "postgresql-client"

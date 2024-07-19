@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "dbus-libs" {= "1.12.16-r1"}
-  "pkgconf"
+  "pkgconfig"
   "util-linux-dev"
 ]
 extra-source "dbus-dev-1.12.16-r1.apk" {

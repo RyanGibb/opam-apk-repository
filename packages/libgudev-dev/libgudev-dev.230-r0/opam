@@ -6,8 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del libgudev-dev"]
 ]
 depends: [
-  "glib-dev"
   "libgudev" {= "230-r0"}
+  "pc-glib-2-0"
+  "pc-gobject-2-0"
   "pkgconfig"
 ]
 extra-source "libgudev-dev-230-r0.apk" {

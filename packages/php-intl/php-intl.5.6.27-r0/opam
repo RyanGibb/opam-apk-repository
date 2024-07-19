@@ -6,11 +6,14 @@ remove: [
   ["sh" "-c" "sudo apk del php-intl"]
 ]
 depends: [
-  "icu-libs"
-  "libgcc"
-  "musl"
   "php"
   "php-cli"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libicudata-so-55"
+  "so-libicui18n-so-55"
+  "so-libicuio-so-55"
+  "so-libicuuc-so-55"
 ]
 extra-source "php-intl-5.6.27-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/php-intl-5.6.27-r0.apk"

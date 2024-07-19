@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del perl-net-ssleay"]
 ]
 depends: [
-  "libcrypto3"
-  "libssl3"
-  "musl"
   "perl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-3"
+  "so-libssl-so-3"
 ]
 extra-source "perl-net-ssleay-1.92-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-net-ssleay-1.92-r4.apk"

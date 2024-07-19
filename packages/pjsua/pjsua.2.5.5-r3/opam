@@ -6,8 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del pjsua"]
 ]
 depends: [
-  "musl"
-  "pjproject"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpj-so-2"
+  "so-libpjlib-util-so-2"
+  "so-libpjmedia-so-2"
+  "so-libpjsip-simple-so-2"
+  "so-libpjsip-so-2"
+  "so-libpjsua-so-2"
 ]
 extra-source "pjsua-2.5.5-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/pjsua-2.5.5-r3.apk"

@@ -6,11 +6,15 @@ remove: [
   ["sh" "-c" "sudo apk del alsa-utils"]
 ]
 depends: [
-  "alsa-lib"
   "dialog"
-  "fftw-single-libs"
-  "musl"
-  "ncurses-libs"
+  "so-libasound-so-2"
+  "so-libatopology-so-2"
+  "so-libc-musl-x86_64-so-1"
+  "so-libfftw3f-so-3"
+  "so-libformw-so-6"
+  "so-libmenuw-so-6"
+  "so-libncursesw-so-6"
+  "so-libpanelw-so-6"
 ]
 extra-source "alsa-utils-1.2.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/alsa-utils-1.2.1-r0.apk"

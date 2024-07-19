@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del xgamma"]
 ]
 depends: [
-  "libx11"
-  "libxxf86vm"
-  "musl"
+  "so-libX11-so-6"
+  "so-libXxf86vm-so-1"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "xgamma-1.0.3-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/xgamma-1.0.3-r2.apk"

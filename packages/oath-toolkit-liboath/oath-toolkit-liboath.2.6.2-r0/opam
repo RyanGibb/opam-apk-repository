@@ -8,8 +8,8 @@ remove: [
 depends: [
   "cvs"
   "diffutils"
-  "musl"
   "perl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "oath-toolkit-liboath-2.6.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/oath-toolkit-liboath-2.6.2-r0.apk"

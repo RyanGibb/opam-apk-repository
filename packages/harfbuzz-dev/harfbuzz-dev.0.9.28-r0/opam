@@ -6,14 +6,14 @@ remove: [
   ["sh" "-c" "sudo apk del harfbuzz-dev"]
 ]
 depends: [
-  "cairo"
-  "glib"
-  "harfbuzz"
   "harfbuzz" {= "0.9.28-r0"}
   "harfbuzz-icu" {= "0.9.28-r0"}
-  "libstdc++"
-  "musl"
   "pkgconfig"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcairo-so-2"
+  "so-libglib-2-0-so-0"
+  "so-libharfbuzz-so-0"
+  "so-libstdc++-so-6"
 ]
 extra-source "harfbuzz-dev-0.9.28-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/harfbuzz-dev-0.9.28-r0.apk"

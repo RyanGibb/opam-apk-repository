@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del libevent"]
 ]
 depends: [
-  "libressl2.5-libcrypto"
-  "libressl2.5-libssl"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-41"
+  "so-libssl-so-43"
 ]
 extra-source "libevent-2.1.8-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/libevent-2.1.8-r1.apk"

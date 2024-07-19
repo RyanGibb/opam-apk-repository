@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del lvm2-dmeventd"]
 ]
 depends: [
-  "device-mapper-event-libs"
-  "device-mapper-libs"
   "lvm2-libs" {= "2.02.178-r0"}
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libdevmapper-event-so-1-02"
+  "so-libdevmapper-so-1-02"
 ]
 extra-source "lvm2-dmeventd-2.02.178-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/lvm2-dmeventd-2.02.178-r0.apk"

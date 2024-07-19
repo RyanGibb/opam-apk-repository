@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del xspice"]
 ]
 depends: [
-  "libxfont2"
-  "musl"
   "python2"
-  "spice-server"
+  "so-libXfont2-so-2"
+  "so-libc-musl-x86_64-so-1"
+  "so-libspice-server-so-1"
 ]
 extra-source "xspice-0.1.5-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/xspice-0.1.5-r3.apk"

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del php5-sysvsem"]
 ]
 depends: [
-  "musl"
   "php5"
   "php5-cli"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "php5-sysvsem-5.6.36-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/php5-sysvsem-5.6.36-r0.apk"

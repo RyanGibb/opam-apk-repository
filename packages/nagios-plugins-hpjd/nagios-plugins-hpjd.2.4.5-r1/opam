@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del nagios-plugins-hpjd"]
 ]
 depends: [
-  "libcrypto3"
-  "musl"
   "nagios-plugins"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-3"
 ]
 extra-source "nagios-plugins-hpjd-2.4.5-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/nagios-plugins-hpjd-2.4.5-r1.apk"

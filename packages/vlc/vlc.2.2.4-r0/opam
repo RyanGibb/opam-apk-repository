@@ -6,10 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del vlc"]
 ]
 depends: [
-  "dbus-libs"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libdbus-1-so-3"
+  "so-libvlc-so-5"
+  "so-libvlccore-so-8"
   "ttf-dejavu"
-  "vlc-libs"
   "vlc-plugins"
   "vlc-xorg" {= "2.2.4-r0"}
 ]

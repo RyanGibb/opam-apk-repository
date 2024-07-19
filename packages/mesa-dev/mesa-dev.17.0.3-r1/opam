@@ -25,9 +25,19 @@ depends: [
   "mesa-libwayland-egl" {= "17.0.3-r1"}
   "mesa-osmesa" {= "17.0.3-r1"}
   "mesa-xatracker" {= "17.0.3-r1"}
-  "pkgconf"
+  "pc-libdrm" {>= "2.4.66"}
+  "pc-wayland-client"
+  "pc-x11"
+  "pc-x11-xcb"
+  "pc-xcb"
+  "pc-xcb-dri2" {>= "1.8"}
+  "pc-xcb-glx" {>= "1.8.1"}
+  "pc-xdamage"
+  "pc-xext"
+  "pc-xfixes"
+  "pc-xxf86vm"
+  "pkgconfig"
   "presentproto"
-  "wayland-dev"
 ]
 extra-source "mesa-dev-17.0.3-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/mesa-dev-17.0.3-r1.apk"

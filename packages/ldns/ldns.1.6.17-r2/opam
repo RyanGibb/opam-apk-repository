@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del ldns"]
 ]
 depends: [
-  "libcrypto1.0"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-0-0"
 ]
 extra-source "ldns-1.6.17-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/ldns-1.6.17-r2.apk"

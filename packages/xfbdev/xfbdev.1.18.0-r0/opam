@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del xfbdev"]
 ]
 depends: [
-  "libcrypto1.0"
-  "libxau"
-  "libxdmcp"
-  "libxfont"
-  "musl"
-  "pixman"
+  "so-libXau-so-6"
+  "so-libXdmcp-so-6"
+  "so-libXfont-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-0-0"
+  "so-libpixman-1-so-0"
 ]
 extra-source "xfbdev-1.18.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/xfbdev-1.18.0-r0.apk"

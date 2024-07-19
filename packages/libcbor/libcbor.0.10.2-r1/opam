@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del libcbor"]
 ]
 depends: [
-  "musl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "libcbor-0.10.2-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/libcbor-0.10.2-r1.apk"

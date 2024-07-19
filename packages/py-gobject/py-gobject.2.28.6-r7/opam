@@ -6,9 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del py-gobject"]
 ]
 depends: [
-  "glib"
-  "libffi"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libffi-so-6"
+  "so-libgio-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libgthread-2-0-so-0"
 ]
 extra-source "py-gobject-2.28.6-r7.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/py-gobject-2.28.6-r7.apk"

@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del libmicrohttpd-dev"]
 ]
 depends: [
-  "gnutls-dev"
   "libmicrohttpd" {= "0.9.49-r0"}
+  "pc-gnutls"
   "pkgconfig"
 ]
 extra-source "libmicrohttpd-dev-0.9.49-r0.apk" {

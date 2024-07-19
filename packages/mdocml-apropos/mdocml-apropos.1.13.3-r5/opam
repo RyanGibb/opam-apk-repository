@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "busybox"
-  "mdocml"
-  "musl"
-  "sqlite-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libmandoc-so"
+  "so-libsqlite3-so-0"
 ]
 extra-source "mdocml-apropos-1.13.3-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/mdocml-apropos-1.13.3-r5.apk"

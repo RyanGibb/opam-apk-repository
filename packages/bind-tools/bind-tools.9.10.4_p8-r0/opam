@@ -6,8 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del bind-tools"]
 ]
 depends: [
-  "bind-libs"
-  "musl"
+  "so-libbind9-so-140"
+  "so-libc-musl-x86_64-so-1"
+  "so-libdns-so-165"
+  "so-libisc-so-160"
+  "so-libisccfg-so-140"
+  "so-liblwres-so-141"
 ]
 extra-source "bind-tools-9.10.4_p8-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/bind-tools-9.10.4_p8-r0.apk"

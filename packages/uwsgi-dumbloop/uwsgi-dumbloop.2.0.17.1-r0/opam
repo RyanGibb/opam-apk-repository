@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del uwsgi-dumbloop"]
 ]
 depends: [
-  "musl"
+  "so-libc-musl-x86_64-so-1"
   "uwsgi"
 ]
 extra-source "uwsgi-dumbloop-2.0.17.1-r0.apk" {

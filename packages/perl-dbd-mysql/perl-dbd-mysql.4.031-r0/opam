@@ -6,13 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del perl-dbd-mysql"]
 ]
 depends: [
-  "libcrypto1.0"
-  "libssl1.0"
-  "mariadb-libs"
-  "musl"
   "perl"
   "perl-dbi"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-0-0"
+  "so-libmysqlclient-so-18"
+  "so-libssl-so-1-0-0"
+  "so-libz-so-1"
 ]
 extra-source "perl-dbd-mysql-4.031-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/perl-dbd-mysql-4.031-r0.apk"

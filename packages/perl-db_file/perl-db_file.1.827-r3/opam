@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del perl-db_file"]
 ]
 depends: [
-  "db"
-  "musl"
   "perl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libdb-5-3-so"
 ]
 extra-source "perl-db_file-1.827-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/perl-db_file-1.827-r3.apk"

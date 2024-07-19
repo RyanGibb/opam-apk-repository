@@ -7,14 +7,15 @@ remove: [
 ]
 depends: [
   "busybox"
-  "libbz2"
-  "libcap"
-  "libldap"
   "libressl"
-  "libressl2.4-libcrypto"
-  "libressl2.4-libssl"
-  "musl"
-  "zlib"
+  "so-libbz2-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcap-so-2"
+  "so-libcrypto-so-38"
+  "so-liblber-2-4-so-2"
+  "so-libldap-2-4-so-2"
+  "so-libssl-so-39"
+  "so-libz-so-1"
 ]
 extra-source "dovecot-2.2.27-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/dovecot-2.2.27-r0.apk"

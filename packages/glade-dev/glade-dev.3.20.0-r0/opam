@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "glade" {= "3.20.0-r0"}
-  "gtk+3.0-dev"
-  "libxml2-dev"
+  "pc-gtk+-3-0" {>= "2.91.2"}
+  "pc-libxml-2-0" {>= "2.4.0"}
   "pkgconfig"
 ]
 extra-source "glade-dev-3.20.0-r0.apk" {

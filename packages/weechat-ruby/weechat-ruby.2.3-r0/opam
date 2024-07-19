@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del weechat-ruby"]
 ]
 depends: [
-  "musl"
-  "ruby-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libruby-so-2-5"
   "weechat"
 ]
 extra-source "weechat-ruby-2.3-r0.apk" {

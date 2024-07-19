@@ -6,14 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del rrdtool"]
 ]
 depends: [
-  "cairo"
   "font-sony-misc"
-  "glib"
-  "libintl"
-  "libpng"
-  "libxml2"
-  "musl"
-  "pango"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcairo-so-2"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libintl-so-8"
+  "so-libpango-1-0-so-0"
+  "so-libpangocairo-1-0-so-0"
+  "so-libpng16-so-16"
+  "so-libxml2-so-2"
 ]
 extra-source "rrdtool-1.4.8-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/rrdtool-1.4.8-r3.apk"

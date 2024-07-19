@@ -7,8 +7,9 @@ remove: [
 ]
 depends: [
   "irssi"
-  "musl"
   "perl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libperl-so"
 ]
 extra-source "irssi-perl-1.2.2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/irssi-perl-1.2.2-r2.apk"

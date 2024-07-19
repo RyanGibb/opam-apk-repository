@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del qpdf-dev"]
 ]
 depends: [
-  "libjpeg-turbo-dev"
-  "pkgconf"
+  "pc-libjpeg"
+  "pc-zlib"
+  "pkgconfig"
   "qpdf-libs" {= "7.0.0-r0"}
-  "zlib-dev"
 ]
 extra-source "qpdf-dev-7.0.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/qpdf-dev-7.0.0-r0.apk"

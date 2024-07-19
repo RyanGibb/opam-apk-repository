@@ -7,8 +7,9 @@ remove: [
 ]
 depends: [
   "enchant" {= "1.6.0-r14"}
-  "glib-dev"
-  "pkgconf"
+  "pc-glib-2-0"
+  "pc-gmodule-no-export-2-0"
+  "pkgconfig"
 ]
 extra-source "enchant-dev-1.6.0-r14.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/enchant-dev-1.6.0-r14.apk"

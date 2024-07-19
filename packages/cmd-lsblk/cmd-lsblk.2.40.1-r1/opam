@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "lsblk" {= "2.40.1-r1"}
+]

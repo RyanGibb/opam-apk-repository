@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "boost1-78-wserialization" {= "1.78.0-r1"}
+]

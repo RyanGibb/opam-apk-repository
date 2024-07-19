@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del ulogd-pgsql"]
 ]
 depends: [
-  "libpq"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpq-so-5"
   "ulogd" {= "2.0.8-r3"}
 ]
 extra-source "ulogd-pgsql-2.0.8-r3.apk" {

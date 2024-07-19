@@ -6,15 +6,15 @@ remove: [
   ["sh" "-c" "sudo apk del nodejs"]
 ]
 depends: [
-  "c-ares"
   "ca-certificates"
-  "http-parser"
-  "libcrypto1.1"
-  "libgcc"
-  "libssl1.1"
-  "libstdc++"
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcares-so-2"
+  "so-libcrypto-so-1-1"
+  "so-libgcc_s-so-1"
+  "so-libhttp_parser-so-2-9"
+  "so-libssl-so-1-1"
+  "so-libstdc++-so-6"
+  "so-libz-so-1"
 ]
 extra-source "nodejs-10.24.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/nodejs-10.24.1-r0.apk"

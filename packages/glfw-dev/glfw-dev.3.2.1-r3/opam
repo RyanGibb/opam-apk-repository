@@ -7,14 +7,15 @@ remove: [
 ]
 depends: [
   "glfw" {= "3.2.1-r3"}
-  "libx11-dev"
-  "libxcursor-dev"
   "libxinerama-dev"
-  "libxrandr-dev"
-  "libxxf86vm-dev"
   "linux-headers"
   "mesa-dev"
-  "pkgconf"
+  "pc-x11"
+  "pc-xcursor"
+  "pc-xinerama"
+  "pc-xrandr"
+  "pc-xxf86vm"
+  "pkgconfig"
 ]
 extra-source "glfw-dev-3.2.1-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/glfw-dev-3.2.1-r3.apk"

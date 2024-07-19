@@ -6,18 +6,21 @@ remove: [
   ["sh" "-c" "sudo apk del wine"]
 ]
 depends: [
-  "alsa-lib"
-  "gettext"
-  "glib"
-  "gst-plugins-base0.10"
-  "gstreamer0.10"
-  "libgcc"
-  "libldap"
-  "libx11"
-  "libxext"
-  "libxml2"
-  "musl"
-  "zlib"
+  "so-libX11-so-6"
+  "so-libXext-so-6"
+  "so-libasound-so-2"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libgettextpo-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libgstapp-0-10-so-0"
+  "so-libgstreamer-0-10-so-0"
+  "so-libgthread-2-0-so-0"
+  "so-liblber-2-4-so-2"
+  "so-libldap_r-2-4-so-2"
+  "so-libxml2-so-2"
+  "so-libz-so-1"
 ]
 extra-source "wine-1.7.35-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/wine-1.7.35-r0.apk"

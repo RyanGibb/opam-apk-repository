@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "pcre-dev" {= "8.39-r0"}
+]

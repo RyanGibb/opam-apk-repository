@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del wavpack-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
   "wavpack" {= "5.1.0-r4"}
 ]
 extra-source "wavpack-dev-5.1.0-r4.apk" {

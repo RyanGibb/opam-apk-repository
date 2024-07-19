@@ -9,6 +9,7 @@ depends: [
   "encodings"
   "font-alias"
   "fontconfig"
+  "mkfontdir"
   "mkfontscale"
 ]
 extra-source "font-misc-ethiopic-1.0.4-r0.apk" {

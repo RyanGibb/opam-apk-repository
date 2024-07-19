@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "mcookie" {= "2.38.1-r1"}
+]

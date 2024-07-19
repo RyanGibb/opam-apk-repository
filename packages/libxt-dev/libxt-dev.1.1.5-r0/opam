@@ -6,11 +6,14 @@ remove: [
   ["sh" "-c" "sudo apk del libxt-dev"]
 ]
 depends: [
-  "libice-dev"
   "libsm-dev"
   "libx11-dev"
   "libxt" {= "1.1.5-r0"}
-  "pkgconf"
+  "pc-ice"
+  "pc-sm"
+  "pc-x11"
+  "pc-xproto"
+  "pkgconfig"
   "xproto"
 ]
 extra-source "libxt-dev-1.1.5-r0.apk" {

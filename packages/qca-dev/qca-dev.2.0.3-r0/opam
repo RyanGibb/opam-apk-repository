@@ -6,7 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del qca-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pc-QtCore"
+  "pkgconfig"
   "qca" {= "2.0.3-r0"}
   "qt-dev"
 ]

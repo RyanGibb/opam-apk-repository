@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del py3-nvme"]
 ]
 depends: [
-  "libnvme"
-  "musl"
   "python3" {>= "3.12"}
+  "so-libc-musl-x86_64-so-1"
+  "so-libnvme-so-1"
 ]
 extra-source "py3-nvme-1.9-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/py3-nvme-1.9-r0.apk"

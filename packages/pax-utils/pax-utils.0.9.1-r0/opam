@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del pax-utils"]
 ]
 depends: [
-  "musl"
   "scanelf"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "pax-utils-0.9.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/pax-utils-0.9.1-r0.apk"

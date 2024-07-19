@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "kamailio"
-  "libuuid"
-  "musl"
-  "rabbitmq-c"
+  "so-libc-musl-x86_64-so-1"
+  "so-librabbitmq-so-4"
+  "so-libuuid-so-1"
 ]
 extra-source "kamailio-rabbitmq-5.8.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/kamailio-rabbitmq-5.8.1-r1.apk"

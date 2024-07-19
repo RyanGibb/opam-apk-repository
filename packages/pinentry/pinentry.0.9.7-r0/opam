@@ -7,11 +7,11 @@ remove: [
 ]
 depends: [
   "busybox"
-  "libassuan"
-  "libcap"
-  "libgpg-error"
-  "musl"
-  "ncurses-libs"
+  "so-libassuan-so-0"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcap-so-2"
+  "so-libgpg-error-so-0"
+  "so-libncursesw-so-6"
 ]
 extra-source "pinentry-0.9.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/pinentry-0.9.7-r0.apk"

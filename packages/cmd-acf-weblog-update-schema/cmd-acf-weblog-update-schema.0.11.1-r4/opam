@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "acf-weblog" {= "0.11.1-r4"}
+]

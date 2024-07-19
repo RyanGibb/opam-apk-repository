@@ -7,11 +7,11 @@ remove: [
 ]
 depends: [
   "dmenu"
-  "fontconfig"
-  "libx11"
-  "libxft"
-  "libxinerama"
-  "musl"
+  "so-libX11-so-6"
+  "so-libXft-so-2"
+  "so-libXinerama-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libfontconfig-so-1"
   "st"
 ]
 extra-source "dwm-6.1-r1.apk" {

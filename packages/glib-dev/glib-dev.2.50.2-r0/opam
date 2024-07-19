@@ -8,15 +8,17 @@ remove: [
 depends: [
   "bzip2-dev"
   "gettext-dev"
-  "glib"
   "glib" {= "2.50.2-r0"}
   "libffi-dev"
-  "libintl"
-  "musl"
-  "pcre-dev"
+  "pc-libpcre"
   "perl"
-  "pkgconf"
+  "pkgconfig"
   "python2"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgio-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libintl-so-8"
   "util-linux-dev"
   "zlib-dev"
 ]

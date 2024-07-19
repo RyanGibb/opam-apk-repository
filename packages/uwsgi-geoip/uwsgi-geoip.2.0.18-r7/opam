@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del uwsgi-geoip"]
 ]
 depends: [
-  "geoip"
-  "musl"
+  "so-libGeoIP-so-1"
+  "so-libc-musl-x86_64-so-1"
   "uwsgi"
 ]
 extra-source "uwsgi-geoip-2.0.18-r7.apk" {

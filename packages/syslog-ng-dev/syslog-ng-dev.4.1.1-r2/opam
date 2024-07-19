@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del syslog-ng-dev"]
 ]
 depends: [
-  "glib-dev"
-  "pkgconf"
+  "pc-glib-2-0"
+  "pkgconfig"
   "syslog-ng" {= "4.1.1-r2"}
 ]
 extra-source "syslog-ng-dev-4.1.1-r2.apk" {

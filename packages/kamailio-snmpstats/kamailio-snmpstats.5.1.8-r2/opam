@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "kamailio"
-  "musl"
-  "net-snmp-agent-libs"
-  "net-snmp-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libnetsnmp-so-30"
+  "so-libnetsnmpagent-so-30"
 ]
 extra-source "kamailio-snmpstats-5.1.8-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/kamailio-snmpstats-5.1.8-r2.apk"

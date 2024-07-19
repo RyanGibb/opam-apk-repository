@@ -6,16 +6,19 @@ remove: [
   ["sh" "-c" "sudo apk del transmission"]
 ]
 depends: [
-  "gdk-pixbuf"
-  "glib"
-  "gtk+3.0"
-  "libcurl"
-  "libevent"
-  "libintl"
-  "libressl2.6-libcrypto"
-  "musl"
-  "pango"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-42"
+  "so-libcurl-so-4"
+  "so-libevent-2-1-so-6"
+  "so-libgdk-3-so-0"
+  "so-libgdk_pixbuf-2-0-so-0"
+  "so-libgio-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libgtk-3-so-0"
+  "so-libintl-so-8"
+  "so-libpango-1-0-so-0"
+  "so-libz-so-1"
 ]
 extra-source "transmission-2.92-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/transmission-2.92-r8.apk"

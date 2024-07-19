@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del sc"]
 ]
 depends: [
-  "musl"
-  "ncurses-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libncursesw-so-6"
 ]
 extra-source "sc-7.16-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/sc-7.16-r6.apk"

@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "uwsgi-python3" {= "2.0.25.1-r1"}
+]

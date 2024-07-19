@@ -8,7 +8,7 @@ remove: [
 depends: [
   "dconf"
   "gnome-icon-theme"
-  "gtk+3.0"
+  "gtk+3-0"
   "gtk-vnc" {>= "0.5.2-r2"}
   "libosinfo"
   "libvirt-glib"

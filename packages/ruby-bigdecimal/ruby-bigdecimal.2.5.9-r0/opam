@@ -6,8 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del ruby-bigdecimal"]
 ]
 depends: [
-  "musl"
   "ruby-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libruby-so-2-5"
 ]
 extra-source "ruby-bigdecimal-2.5.9-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/ruby-bigdecimal-2.5.9-r0.apk"

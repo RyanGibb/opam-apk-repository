@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del dovecot-gssapi"]
 ]
 depends: [
-  "heimdal-libs"
-  "musl"
   "openssl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgssapi-so-3"
 ]
 extra-source "dovecot-gssapi-2.2.19-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/dovecot-gssapi-2.2.19-r0.apk"

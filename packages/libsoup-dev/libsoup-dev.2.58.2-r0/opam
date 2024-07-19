@@ -6,11 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del libsoup-dev"]
 ]
 depends: [
-  "glib-dev"
   "gnutls-dev"
   "libsoup" {= "2.58.2-r0"}
-  "libxml2-dev"
-  "pkgconf"
+  "pc-gio-2-0"
+  "pc-glib-2-0"
+  "pc-gobject-2-0"
+  "pc-libxml-2-0"
+  "pkgconfig"
   "sqlite-dev"
 ]
 extra-source "libsoup-dev-2.58.2-r0.apk" {

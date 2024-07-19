@@ -6,11 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del libxkbui-dev"]
 ]
 depends: [
-  "kbproto"
   "libx11-dev"
   "libxkbui" {= "1.0.2-r7"}
   "libxt-dev"
-  "pkgconf"
+  "pc-kbproto"
+  "pc-x11"
+  "pc-xt"
+  "pkgconfig"
   "xproto"
 ]
 extra-source "libxkbui-dev-1.0.2-r7.apk" {

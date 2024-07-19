@@ -6,10 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del hostapd"]
 ]
 depends: [
-  "libcrypto3"
-  "libnl3"
-  "libssl3"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-3"
+  "so-libnl-3-so-200"
+  "so-libnl-genl-3-so-200"
+  "so-libssl-so-3"
 ]
 extra-source "hostapd-2.10-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/hostapd-2.10-r6.apk"

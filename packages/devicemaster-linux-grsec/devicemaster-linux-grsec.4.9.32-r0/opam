@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "devicemaster-linux-hardened" {= "4.9.32-r0"}
+]

@@ -7,7 +7,8 @@ remove: [
 ]
 depends: [
   "gst-plugins-bad1" {= "1.6.1-r0"}
-  "gstreamer1-dev"
+  "pc-gstreamer-1-0"
+  "pc-gstreamer-base-1-0"
   "pkgconfig"
 ]
 extra-source "gst-plugins-bad1-dev-1.6.1-r0.apk" {

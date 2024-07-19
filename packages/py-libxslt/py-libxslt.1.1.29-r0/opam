@@ -6,13 +6,14 @@ remove: [
   ["sh" "-c" "sudo apk del py-libxslt"]
 ]
 depends: [
-  "libgcrypt"
-  "libgpg-error"
-  "libxml2"
-  "libxslt"
-  "musl"
-  "python"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libexslt-so-0"
+  "so-libgcrypt-so-20"
+  "so-libgpg-error-so-0"
+  "so-libpython2-7-so-1-0"
+  "so-libxml2-so-2"
+  "so-libxslt-so-1"
+  "so-libz-so-1"
 ]
 extra-source "py-libxslt-1.1.29-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/py-libxslt-1.1.29-r0.apk"

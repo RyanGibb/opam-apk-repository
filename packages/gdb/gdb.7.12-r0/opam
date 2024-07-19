@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del gdb"]
 ]
 depends: [
-  "expat"
-  "musl"
-  "ncurses-libs"
-  "python2"
-  "readline"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libexpat-so-1"
+  "so-libncursesw-so-6"
+  "so-libpython2-7-so-1-0"
+  "so-libreadline-so-6"
+  "so-libz-so-1"
 ]
 extra-source "gdb-7.12-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/gdb-7.12-r0.apk"

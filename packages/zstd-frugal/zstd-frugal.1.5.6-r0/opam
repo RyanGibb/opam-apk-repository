@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del zstd-frugal"]
 ]
 depends: [
-  "musl"
-  "zstd-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libzstd-so-1"
 ]
 extra-source "zstd-frugal-1.5.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/zstd-frugal-1.5.6-r0.apk"

@@ -7,12 +7,12 @@ remove: [
 ]
 depends: [
   "ca-certificates"
-  "libressl2.7-libcrypto"
-  "libressl2.7-libssl"
-  "libssh2"
-  "musl"
-  "nghttp2-libs"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-43"
+  "so-libnghttp2-so-14"
+  "so-libssh2-so-1"
+  "so-libssl-so-45"
+  "so-libz-so-1"
 ]
 extra-source "libcurl-7.61.1-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/libcurl-7.61.1-r3.apk"

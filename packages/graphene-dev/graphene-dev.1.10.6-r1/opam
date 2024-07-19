@@ -6,9 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del graphene-dev"]
 ]
 depends: [
-  "glib-dev"
   "graphene" {= "1.10.6-r1"}
-  "pkgconf"
+  "pc-gobject-2-0"
+  "pc-gobject-2-0" {>= "2.30.0"}
+  "pkgconfig"
 ]
 extra-source "graphene-dev-1.10.6-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/graphene-dev-1.10.6-r1.apk"

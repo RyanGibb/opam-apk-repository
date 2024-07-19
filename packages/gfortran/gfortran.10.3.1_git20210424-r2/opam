@@ -7,14 +7,14 @@ remove: [
 ]
 depends: [
   "gcc" {= "10.3.1_git20210424-r2"}
-  "gmp"
-  "isl22"
   "libgfortran" {= "10.3.1_git20210424-r2"}
   "libquadmath" {= "10.3.1_git20210424-r2"}
-  "mpc1"
-  "mpfr4"
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgmp-so-10"
+  "so-libisl-so-22"
+  "so-libmpc-so-3"
+  "so-libmpfr-so-6"
+  "so-libz-so-1"
 ]
 extra-source "gfortran-10.3.1_git20210424-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/gfortran-10.3.1_git20210424-r2.apk"

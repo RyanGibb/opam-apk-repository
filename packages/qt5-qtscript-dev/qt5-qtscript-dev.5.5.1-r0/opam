@@ -6,6 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del qt5-qtscript-dev"]
 ]
 depends: [
+  "pc-Qt5Core"
   "pkgconfig"
   "qt5-qtbase-dev"
   "qt5-qtscript" {= "5.5.1-r0"}

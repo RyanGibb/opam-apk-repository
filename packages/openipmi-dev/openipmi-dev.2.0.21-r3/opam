@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del openipmi-dev"]
 ]
 depends: [
-  "ncurses-dev"
   "openipmi-lanserv" {= "2.0.21-r3"}
   "openipmi-libs" {= "2.0.21-r3"}
+  "pc-ncurses"
   "pkgconfig"
 ]
 extra-source "openipmi-dev-2.0.21-r3.apk" {

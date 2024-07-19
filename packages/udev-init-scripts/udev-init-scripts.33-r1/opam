@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del udev-init-scripts"]
 ]
 depends: [
-  "busybox"
+  "-bin-sh"
 ]
 extra-source "udev-init-scripts-33-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/udev-init-scripts-33-r1.apk"

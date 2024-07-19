@@ -7,15 +7,16 @@ remove: [
 ]
 depends: [
   "expat-dev"
-  "gtk+2.0-dev"
-  "libgcc"
+  "gtk+2-0-dev"
   "libjpeg-turbo-dev"
   "libpng-dev"
   "libsm-dev"
-  "libstdc++"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libstdc++-so-6"
+  "so-libwx_baseu-2-8-so-0"
+  "so-libwx_baseu_xml-2-8-so-0"
   "tiff-dev"
-  "wxbase"
   "wxbase" {= "2.8.12.1-r1"}
   "wxgtk" {= "2.8.12.1-r1"}
   "wxgtk-lang" {= "2.8.12.1-r1"}

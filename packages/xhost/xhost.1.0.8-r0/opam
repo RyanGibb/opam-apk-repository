@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del xhost"]
 ]
 depends: [
-  "libx11"
-  "libxmu"
-  "musl"
+  "so-libX11-so-6"
+  "so-libXmuu-so-1"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "xhost-1.0.8-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/xhost-1.0.8-r0.apk"

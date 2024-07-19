@@ -6,8 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del openldap-overlay-auditlog"]
 ]
 depends: [
-  "libldap"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-liblber-2-4-so-2"
+  "so-libldap_r-2-4-so-2"
 ]
 extra-source "openldap-overlay-auditlog-2.4.57-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/openldap-overlay-auditlog-2.4.57-r1.apk"

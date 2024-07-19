@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "gegl-dev" {= "0.2.0-r5"}
+]

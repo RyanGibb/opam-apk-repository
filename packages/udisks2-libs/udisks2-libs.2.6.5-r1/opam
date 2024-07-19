@@ -6,8 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del udisks2-libs"]
 ]
 depends: [
-  "glib"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgio-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
 ]
 extra-source "udisks2-libs-2.6.5-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/udisks2-libs-2.6.5-r1.apk"

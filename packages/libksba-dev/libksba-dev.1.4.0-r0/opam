@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del libksba-dev"]
 ]
 depends: [
-  "libgpg-error-dev"
   "libksba" {= "1.4.0-r0"}
-  "pkgconf"
+  "pc-gpg-error"
+  "pkgconfig"
 ]
 extra-source "libksba-dev-1.4.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/libksba-dev-1.4.0-r0.apk"

@@ -6,15 +6,17 @@ remove: [
   ["sh" "-c" "sudo apk del polkit"]
 ]
 depends: [
-  "busybox"
-  "expat"
-  "glib"
-  "libgcc"
-  "libintl"
-  "libstdc++"
-  "linux-pam"
-  "mozjs60"
-  "musl"
+  "-bin-sh"
+  "so-libc-musl-x86_64-so-1"
+  "so-libexpat-so-1"
+  "so-libgcc_s-so-1"
+  "so-libgio-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libintl-so-8"
+  "so-libmozjs-60-so-0"
+  "so-libpam-so-0"
+  "so-libstdc++-so-6"
 ]
 extra-source "polkit-0.116-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/polkit-0.116-r0.apk"

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del libxpm-dev"]
 ]
 depends: [
-  "libx11-dev"
   "libxpm" {= "3.5.15-r0"}
-  "pkgconf"
+  "pc-x11"
+  "pkgconfig"
 ]
 extra-source "libxpm-dev-3.5.15-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libxpm-dev-3.5.15-r0.apk"

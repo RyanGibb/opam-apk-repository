@@ -18,7 +18,7 @@ depends: [
   "libsm-dev"
   "libxext-dev"
   "pango-dev"
-  "pkgconf"
+  "pkgconfig"
   "zlib-dev"
 ]
 extra-source "graphviz-dev-2.38.0-r6.apk" {

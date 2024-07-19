@@ -6,8 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del avahi-compat-libdns_sd"]
 ]
 depends: [
-  "avahi-libs"
-  "musl"
+  "so-libavahi-client-so-3"
+  "so-libavahi-common-so-3"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "avahi-compat-libdns_sd-0.6.32-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/avahi-compat-libdns_sd-0.6.32-r5.apk"

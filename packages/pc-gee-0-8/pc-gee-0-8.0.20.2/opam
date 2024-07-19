@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "libgee-dev" {= "0.20.2-r0"}
+]

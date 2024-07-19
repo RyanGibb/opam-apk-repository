@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libxml2" {= "2.9.9-r5"}
-  "pkgconf"
+  "pkgconfig"
   "zlib-dev"
 ]
 extra-source "libxml2-dev-2.9.9-r5.apk" {

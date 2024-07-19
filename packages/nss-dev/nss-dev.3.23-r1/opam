@@ -8,6 +8,7 @@ remove: [
 depends: [
   "nspr-dev"
   "nss"
+  "pc-nspr" {>= "3.23"}
   "pkgconfig"
 ]
 extra-source "nss-dev-3.23-r1.apk" {

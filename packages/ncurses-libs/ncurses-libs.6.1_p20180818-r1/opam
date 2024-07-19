@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del ncurses-libs"]
 ]
 depends: [
-  "musl"
   "ncurses-terminfo" {= "6.1_p20180818-r1"}
   "ncurses-terminfo-base"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "ncurses-libs-6.1_p20180818-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/ncurses-libs-6.1_p20180818-r1.apk"

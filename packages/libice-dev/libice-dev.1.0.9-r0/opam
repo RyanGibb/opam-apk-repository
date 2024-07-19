@@ -7,6 +7,7 @@ remove: [
 ]
 depends: [
   "libice" {= "1.0.9-r0"}
+  "pc-xproto"
   "pkgconfig"
   "xproto"
 ]

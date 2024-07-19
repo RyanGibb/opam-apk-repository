@@ -9,7 +9,7 @@ depends: [
   "clamav-libs" {= "0.101.5-r0"}
   "clamav-libunrar" {= "0.101.5-r0"}
   "openssl-dev"
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "clamav-dev-0.101.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/clamav-dev-0.101.5-r0.apk"

@@ -7,11 +7,12 @@ remove: [
 ]
 depends: [
   "ca-certificates"
-  "libgcc"
-  "libstdc++"
-  "musl"
-  "qt"
-  "sqlite-libs"
+  "so-libQtCore-so-4"
+  "so-libQtSql-so-4"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libsqlite3-so-0"
+  "so-libstdc++-so-6"
 ]
 extra-source "qt-sqlite-4.8.5-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/qt-sqlite-4.8.5-r2.apk"

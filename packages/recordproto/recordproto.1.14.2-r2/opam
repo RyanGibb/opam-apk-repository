@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del recordproto"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "recordproto-1.14.2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/recordproto-1.14.2-r2.apk"

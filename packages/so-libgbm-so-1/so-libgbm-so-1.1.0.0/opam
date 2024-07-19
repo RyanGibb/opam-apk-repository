@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "mesa-gbm" {= "18.1.7-r2"}
+]

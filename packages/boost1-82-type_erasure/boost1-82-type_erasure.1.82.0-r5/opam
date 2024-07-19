@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add boost1.82-type_erasure-1.82.0-r5.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del boost1.82-type_erasure"]
+]
+depends: [
+  "boost1-82-libs"
+  "so-libboost_thread-so-1-82-0"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libstdc++-so-6"
+]
+extra-source "boost1.82-type_erasure-1.82.0-r5.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/boost1.82-type_erasure-1.82.0-r5.apk"
+}

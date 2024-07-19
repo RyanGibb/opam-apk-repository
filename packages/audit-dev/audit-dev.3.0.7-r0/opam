@@ -8,7 +8,7 @@ remove: [
 depends: [
   "audit-libs" {= "3.0.7-r0"}
   "linux-headers"
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "audit-dev-3.0.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/audit-dev-3.0.7-r0.apk"

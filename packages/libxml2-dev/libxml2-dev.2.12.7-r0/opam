@@ -8,7 +8,9 @@ remove: [
 depends: [
   "libxml2" {= "2.12.7-r0"}
   "libxml2-utils" {= "2.12.7-r0"}
-  "pkgconf"
+  "pc-liblzma"
+  "pc-zlib"
+  "pkgconfig"
   "xz-dev"
   "zlib-dev"
 ]

@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del compiler-rt"]
 ]
 depends: [
-  "libgcc"
-  "libstdc++"
-  "musl"
   "scudo-malloc" {= "16.0.6-r1"}
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libstdc++-so-6"
 ]
 extra-source "compiler-rt-16.0.6-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/compiler-rt-16.0.6-r1.apk"

@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del perl-crypt-rijndael"]
 ]
 depends: [
-  "musl"
   "perl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "perl-crypt-rijndael-1.15-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/perl-crypt-rijndael-1.15-r0.apk"

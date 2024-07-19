@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del py2-psycopg2"]
 ]
 depends: [
-  "libpq"
-  "musl"
   "py-egenix-mx-base"
-  "python2"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpq-so-5"
+  "so-libpython2-7-so-1-0"
 ]
 extra-source "py2-psycopg2-2.7.3.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/py2-psycopg2-2.7.3.2-r0.apk"

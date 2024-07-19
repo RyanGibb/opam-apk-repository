@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del openldap-passwd-argon2"]
 ]
 depends: [
-  "libldap"
-  "libsodium"
-  "musl"
   "openldap"
+  "so-libc-musl-x86_64-so-1"
+  "so-liblber-so-2"
+  "so-libsodium-so-23"
 ]
 extra-source "openldap-passwd-argon2-2.6.3-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/openldap-passwd-argon2-2.6.3-r6.apk"

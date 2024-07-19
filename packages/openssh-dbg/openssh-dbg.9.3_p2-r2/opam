@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del openssh-dbg"]
 ]
 depends: [
+  "openssh-client"
   "openssh-server"
   "openssh-sftp-server"
-  ("openssh-client-default" | "openssh-client-krb5")
 ]
 extra-source "openssh-dbg-9.3_p2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/openssh-dbg-9.3_p2-r2.apk"

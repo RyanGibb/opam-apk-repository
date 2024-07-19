@@ -6,11 +6,15 @@ remove: [
   ["sh" "-c" "sudo apk del kamailio-presence"]
 ]
 depends: [
-  "curl"
   "kamailio"
-  "libxml2"
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcurl-so-4"
+  "so-libkcore-so-1"
+  "so-libkmi-so-1"
+  "so-libsrdb1-so-1"
+  "so-libsrutils-so-1"
+  "so-libxml2-so-2"
+  "so-libz-so-1"
 ]
 extra-source "kamailio-presence-4.1.5-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/kamailio-presence-4.1.5-r4.apk"

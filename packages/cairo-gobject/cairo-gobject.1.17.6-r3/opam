@@ -6,8 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del cairo-gobject"]
 ]
 depends: [
-  "cairo"
-  "glib"
+  "so-libcairo-so-2"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
 ]
 extra-source "cairo-gobject-1.17.6-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/cairo-gobject-1.17.6-r3.apk"

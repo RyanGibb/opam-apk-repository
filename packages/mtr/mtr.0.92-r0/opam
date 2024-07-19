@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del mtr"]
 ]
 depends: [
-  "libcap"
-  "musl"
   "ncurses"
-  "ncurses-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcap-so-2"
+  "so-libncursesw-so-6"
 ]
 extra-source "mtr-0.92-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/mtr-0.92-r0.apk"

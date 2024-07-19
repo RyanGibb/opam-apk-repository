@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del libxtst"]
 ]
 depends: [
-  "libx11"
-  "libxext"
-  "musl"
+  "so-libX11-so-6"
+  "so-libXext-so-6"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "libxtst-1.2.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libxtst-1.2.4-r0.apk"

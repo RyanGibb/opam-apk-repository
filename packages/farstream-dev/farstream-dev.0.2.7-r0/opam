@@ -10,6 +10,8 @@ depends: [
   "gst-plugins-base1-dev"
   "gstreamer1-dev"
   "libnice-dev"
+  "pc-gstreamer-1-0"
+  "pc-gstreamer-base-1-0"
   "pkgconfig"
 ]
 extra-source "farstream-dev-0.2.7-r0.apk" {

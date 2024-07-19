@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "ncurses" {= "6.3_p20220521-r1"}
+]

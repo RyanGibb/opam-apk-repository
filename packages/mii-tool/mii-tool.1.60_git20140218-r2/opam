@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del mii-tool"]
 ]
 depends: [
-  "musl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "mii-tool-1.60_git20140218-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/mii-tool-1.60_git20140218-r2.apk"

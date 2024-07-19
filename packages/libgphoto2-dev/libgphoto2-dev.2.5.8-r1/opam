@@ -9,6 +9,7 @@ depends: [
   "libexif-dev"
   "libgphoto2" {= "2.5.8-r1"}
   "libusb-dev"
+  "pc-libexif" {>= "0.6.13"}
   "pkgconfig"
 ]
 extra-source "libgphoto2-dev-2.5.8-r1.apk" {

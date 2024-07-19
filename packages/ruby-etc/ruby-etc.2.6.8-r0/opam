@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del ruby-etc"]
 ]
 depends: [
-  "musl"
-  "ruby-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libruby-so-2-6"
 ]
 extra-source "ruby-etc-2.6.8-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/ruby-etc-2.6.8-r0.apk"

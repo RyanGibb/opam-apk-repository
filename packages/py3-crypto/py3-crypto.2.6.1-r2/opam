@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del py3-crypto"]
 ]
 depends: [
-  "gmp"
-  "musl"
-  "python3"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgmp-so-10"
+  "so-libpython3-6m-so-1-0"
 ]
 extra-source "py3-crypto-2.6.1-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/py3-crypto-2.6.1-r2.apk"

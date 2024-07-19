@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libdav1d" {= "1.2.1-r0"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "dav1d-dev-1.2.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/dav1d-dev-1.2.1-r0.apk"

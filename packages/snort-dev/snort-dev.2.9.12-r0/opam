@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del snort-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "snort-dev-2.9.12-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/snort-dev-2.9.12-r0.apk"

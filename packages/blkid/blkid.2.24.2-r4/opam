@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del blkid"]
 ]
 depends: [
-  "libblkid"
-  "musl"
+  "so-libblkid-so-1"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "blkid-2.24.2-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/blkid-2.24.2-r4.apk"

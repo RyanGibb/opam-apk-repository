@@ -6,10 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del qt5-qtbase-odbc"]
 ]
 depends: [
-  "libstdc++"
-  "musl"
-  "qt5-qtbase"
-  "unixodbc"
+  "so-libQt5Core-so-5"
+  "so-libQt5Sql-so-5"
+  "so-libc-musl-x86_64-so-1"
+  "so-libodbc-so-2"
+  "so-libstdc++-so-6"
 ]
 extra-source "qt5-qtbase-odbc-5.6.1_p1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/qt5-qtbase-odbc-5.6.1_p1-r1.apk"

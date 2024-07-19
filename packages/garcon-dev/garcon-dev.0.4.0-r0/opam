@@ -8,8 +8,14 @@ remove: [
 depends: [
   "garcon" {= "0.4.0-r0"}
   "glib-dev"
-  "gtk+2.0-dev"
+  "gtk+2-0-dev"
   "libxfce4ui-dev"
+  "pc-gio-2-0"
+  "pc-glib-2-0"
+  "pc-gobject-2-0"
+  "pc-gthread-2-0"
+  "pc-gtk+-2-0"
+  "pc-libxfce4ui-1"
   "pkgconfig"
 ]
 extra-source "garcon-dev-0.4.0-r0.apk" {

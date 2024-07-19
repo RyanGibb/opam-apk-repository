@@ -8,11 +8,11 @@ remove: [
 depends: [
   "apache2"
   "busybox"
-  "libcrypto1.0"
-  "libssl1.0"
-  "libuuid"
-  "musl"
   "openssl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-0-0"
+  "so-libssl-so-1-0-0"
+  "so-libuuid-so-1"
 ]
 extra-source "apache2-ssl-2.4.16-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/apache2-ssl-2.4.16-r0.apk"

@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "ca-certificates-cacert"
-  "libcrypto1.1"
-  "libssl1.1"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-1"
+  "so-libssl-so-1-1"
 ]
 extra-source "libtls-standalone-2.9.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/libtls-standalone-2.9.1-r0.apk"

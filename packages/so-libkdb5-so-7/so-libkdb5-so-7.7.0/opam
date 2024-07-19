@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "krb5-libs" {= "1.12.4-r2"}
+]

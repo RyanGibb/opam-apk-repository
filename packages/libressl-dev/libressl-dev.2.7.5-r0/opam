@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del libressl-dev"]
 ]
 depends: [
-  "libressl2.7-libcrypto" {= "2.7.5-r0"}
-  "libressl2.7-libssl" {= "2.7.5-r0"}
-  "libressl2.7-libtls" {= "2.7.5-r0"}
-  "pkgconf"
+  "libressl2-7-libcrypto" {= "2.7.5-r0"}
+  "libressl2-7-libssl" {= "2.7.5-r0"}
+  "libressl2-7-libtls" {= "2.7.5-r0"}
+  "pkgconfig"
 ]
 extra-source "libressl-dev-2.7.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libressl-dev-2.7.5-r0.apk"

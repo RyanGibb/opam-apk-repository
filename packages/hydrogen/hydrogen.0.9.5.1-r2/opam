@@ -6,17 +6,19 @@ remove: [
   ["sh" "-c" "sudo apk del hydrogen"]
 ]
 depends: [
-  "alsa-lib"
-  "jack"
-  "libarchive"
-  "libgcc"
-  "libsndfile"
-  "libstdc++"
-  "musl"
-  "portaudio"
-  "qt"
-  "qt-x11"
-  "zlib"
+  "so-libQtCore-so-4"
+  "so-libQtGui-so-4"
+  "so-libQtNetwork-so-4"
+  "so-libQtXml-so-4"
+  "so-libarchive-so-13"
+  "so-libasound-so-2"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libjack-so-0"
+  "so-libportaudio-so-2"
+  "so-libsndfile-so-1"
+  "so-libstdc++-so-6"
+  "so-libz-so-1"
 ]
 extra-source "hydrogen-0.9.5.1-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/hydrogen-0.9.5.1-r2.apk"

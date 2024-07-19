@@ -6,11 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del libxscrnsaver-dev"]
 ]
 depends: [
-  "libx11-dev"
   "libxext-dev"
   "libxscrnsaver" {= "1.2.2-r2"}
-  "pkgconf"
-  "scrnsaverproto"
+  "pc-scrnsaverproto"
+  "pc-x11"
+  "pc-xext"
+  "pkgconfig"
 ]
 extra-source "libxscrnsaver-dev-1.2.2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/libxscrnsaver-dev-1.2.2-r2.apk"

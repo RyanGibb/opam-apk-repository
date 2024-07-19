@@ -8,7 +8,7 @@ remove: [
 depends: [
   "gc" {= "7.6.4-r2"}
   "libgc++" {= "7.6.4-r2"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "gc-dev-7.6.4-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/gc-dev-7.6.4-r2.apk"

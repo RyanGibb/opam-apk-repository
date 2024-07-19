@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del p11-kit"]
 ]
 depends: [
-  "libffi"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libffi-so-7"
 ]
 extra-source "p11-kit-0.23.22-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/p11-kit-0.23.22-r0.apk"

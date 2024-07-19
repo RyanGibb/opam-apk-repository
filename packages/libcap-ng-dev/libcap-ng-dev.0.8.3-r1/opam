@@ -8,7 +8,7 @@ remove: [
 depends: [
   "libcap-ng" {= "0.8.3-r1"}
   "linux-headers"
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "libcap-ng-dev-0.8.3-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libcap-ng-dev-0.8.3-r1.apk"

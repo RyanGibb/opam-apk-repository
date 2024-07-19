@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del drbd-utils-pacemaker"]
 ]
 depends: [
-  "drbd-utils"
+  "drbd"
 ]
 extra-source "drbd-utils-pacemaker-8.9.9-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/drbd-utils-pacemaker-8.9.9-r0.apk"

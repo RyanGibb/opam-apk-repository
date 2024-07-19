@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "v86d" {= "0.1.10-r2"}
+]

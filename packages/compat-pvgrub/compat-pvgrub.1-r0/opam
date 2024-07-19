@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del compat-pvgrub"]
 ]
 depends: [
-  "busybox"
+  "-bin-sh"
 ]
 extra-source "compat-pvgrub-1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/compat-pvgrub-1-r0.apk"

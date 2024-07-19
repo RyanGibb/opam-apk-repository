@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "busybox"
-  "libmpdclient"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libmpdclient-so-2"
 ]
 extra-source "ympd-1.2.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/ympd-1.2.3-r0.apk"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libmd" {= "1.0.4-r0"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "libmd-dev-1.0.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libmd-dev-1.0.4-r0.apk"

@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  ("postgresql15-jit" {= "15.7-r0"} | "postgresql16-jit" {= "16.3-r0"})
+]

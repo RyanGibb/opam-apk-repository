@@ -9,6 +9,7 @@ depends: [
   "encodings"
   "font-alias"
   "fontconfig"
+  "mkfontdir"
   "mkfontscale"
 ]
 extra-source "font-bh-ttf-1.0.3-r1.apk" {

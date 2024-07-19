@@ -6,10 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del libxkbui-dev"]
 ]
 depends: [
-  "libx11-dev"
   "libxkbui" {= "1.0.2-r9"}
-  "libxt-dev"
-  "pkgconf"
+  "pc-kbproto"
+  "pc-x11"
+  "pc-xt"
+  "pkgconfig"
   "xorgproto"
 ]
 extra-source "libxkbui-dev-1.0.2-r9.apk" {

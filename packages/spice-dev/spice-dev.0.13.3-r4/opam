@@ -7,14 +7,19 @@ remove: [
 ]
 depends: [
   "celt051-dev"
-  "glib-dev"
   "libressl-dev"
   "libxinerama-dev"
+  "pc-celt051" {>= "0.5.1.1"}
+  "pc-gio-2-0" {>= "2.22"}
+  "pc-glib-2-0" {>= "2.22"}
+  "pc-gobject-2-0" {>= "2.22"}
+  "pc-openssl"
+  "pc-pixman-1" {>= "0.17.7"}
+  "pc-spice-protocol" {>= "0.12.12"}
   "pixman-dev"
-  "pkgconf"
+  "pkgconfig"
   "spice-protocol"
   "spice-server" {= "0.13.3-r4"}
-  ("openssl-dev" | "libressl-dev")
 ]
 extra-source "spice-dev-0.13.3-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/spice-dev-0.13.3-r4.apk"

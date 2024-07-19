@@ -6,14 +6,15 @@ remove: [
   ["sh" "-c" "sudo apk del mesa-gbm"]
 ]
 depends: [
-  "libdrm"
-  "libgcc"
-  "libstdc++"
-  "libudev"
-  "libxcb"
-  "llvm-libs"
-  "mesa-glapi"
-  "musl"
+  "so-libLLVM-3-4-1-so"
+  "so-libc-musl-x86_64-so-1"
+  "so-libdrm-so-2"
+  "so-libgcc_s-so-1"
+  "so-libglapi-so-0"
+  "so-libstdc++-so-6"
+  "so-libudev-so-0"
+  "so-libxcb-dri2-so-0"
+  "so-libxcb-so-1"
 ]
 extra-source "mesa-gbm-10.1.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/mesa-gbm-10.1.4-r0.apk"

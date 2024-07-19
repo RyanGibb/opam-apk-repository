@@ -15,7 +15,7 @@ depends: [
   "lua-dev"
   "ncurses-dev"
   "perl-dev"
-  "pkgconf"
+  "pkgconfig"
   "python2-dev"
   "ruby-dev"
 ]

@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "boost-system" {= "1.62.0-r5"}
+]

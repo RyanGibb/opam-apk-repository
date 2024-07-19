@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libgpg-error" {= "1.36-r2"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "libgpg-error-dev-1.36-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/libgpg-error-dev-1.36-r2.apk"

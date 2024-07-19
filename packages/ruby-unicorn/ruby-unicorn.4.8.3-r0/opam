@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del ruby-unicorn"]
 ]
 depends: [
-  "musl"
   "ruby"
   "ruby-kgio"
-  "ruby-libs"
   "ruby-rack"
   "ruby-raindrops"
+  "so-libc-musl-x86_64-so-1"
+  "so-libruby-so-2-1"
 ]
 extra-source "ruby-unicorn-4.8.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/ruby-unicorn-4.8.3-r0.apk"

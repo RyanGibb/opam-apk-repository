@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del kmod-libs"]
 ]
 depends: [
-  "libcrypto3"
-  "musl"
-  "xz-libs"
-  "zlib"
-  "zstd-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-3"
+  "so-liblzma-so-5"
+  "so-libz-so-1"
+  "so-libzstd-so-1"
 ]
 extra-source "kmod-libs-30-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/kmod-libs-30-r3.apk"

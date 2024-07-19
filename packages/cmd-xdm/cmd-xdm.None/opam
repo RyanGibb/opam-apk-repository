@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "xdm" {= "1.1.11-r5"}
+]

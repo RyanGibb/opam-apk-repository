@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libnetfilter_conntrack" {= "1.0.5-r0"}
-  "libnfnetlink-dev"
+  "pc-libnfnetlink"
   "pkgconfig"
 ]
 extra-source "libnetfilter_conntrack-dev-1.0.5-r0.apk" {

@@ -12,7 +12,8 @@ depends: [
   "avahi-glib" {= "0.6.32-r0"}
   "avahi-libs" {= "0.6.32-r0"}
   "gdbm-dev"
-  "glib-dev"
+  "pc-glib-2-0"
+  "pc-gobject-2-0"
   "pkgconfig"
 ]
 extra-source "avahi-dev-0.6.32-r0.apk" {

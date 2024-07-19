@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del userspace-rcu-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
   "userspace-rcu" {= "0.11.1-r0"}
 ]
 extra-source "userspace-rcu-dev-0.11.1-r0.apk" {

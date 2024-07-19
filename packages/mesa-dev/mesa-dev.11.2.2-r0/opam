@@ -8,7 +8,6 @@ remove: [
 depends: [
   "dri2proto"
   "dri3proto"
-  "eudev-dev"
   "glproto"
   "libdrm-dev"
   "libx11-dev"
@@ -26,9 +25,20 @@ depends: [
   "mesa-libwayland-egl" {= "11.2.2-r0"}
   "mesa-osmesa" {= "11.2.2-r0"}
   "mesa-xatracker" {= "11.2.2-r0"}
+  "pc-libdrm" {>= "2.4.60"}
+  "pc-libudev" {>= "151"}
+  "pc-wayland-client"
+  "pc-x11"
+  "pc-x11-xcb"
+  "pc-xcb"
+  "pc-xcb-dri2" {>= "1.8"}
+  "pc-xcb-glx" {>= "1.8.1"}
+  "pc-xdamage"
+  "pc-xext"
+  "pc-xfixes"
+  "pc-xxf86vm"
   "pkgconfig"
   "presentproto"
-  "wayland-dev"
 ]
 extra-source "mesa-dev-11.2.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/mesa-dev-11.2.2-r0.apk"

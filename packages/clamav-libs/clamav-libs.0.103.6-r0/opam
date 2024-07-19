@@ -6,14 +6,14 @@ remove: [
   ["sh" "-c" "sudo apk del clamav-libs"]
 ]
 depends: [
-  "libbz2"
-  "libcrypto1.1"
-  "libcurl"
-  "libltdl"
-  "libssl1.1"
-  "musl"
-  "pcre"
-  "zlib"
+  "so-libbz2-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-1"
+  "so-libcurl-so-4"
+  "so-libltdl-so-7"
+  "so-libpcre-so-1"
+  "so-libssl-so-1-1"
+  "so-libz-so-1"
 ]
 extra-source "clamav-libs-0.103.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/clamav-libs-0.103.6-r0.apk"

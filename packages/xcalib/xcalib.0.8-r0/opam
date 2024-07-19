@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del xcalib"]
 ]
 depends: [
-  "libx11"
-  "libxxf86vm"
-  "musl"
+  "so-libX11-so-6"
+  "so-libXxf86vm-so-1"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "xcalib-0.8-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/xcalib-0.8-r0.apk"

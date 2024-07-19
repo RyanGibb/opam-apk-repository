@@ -6,12 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del wpa_supplicant"]
 ]
 depends: [
-  "dbus-libs"
-  "libcrypto3"
-  "libnl3"
-  "libssl3"
-  "musl"
-  "pcsc-lite-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-3"
+  "so-libdbus-1-so-3"
+  "so-libnl-3-so-200"
+  "so-libnl-genl-3-so-200"
+  "so-libpcsclite-so-1"
+  "so-libssl-so-3"
 ]
 extra-source "wpa_supplicant-2.10-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/wpa_supplicant-2.10-r4.apk"

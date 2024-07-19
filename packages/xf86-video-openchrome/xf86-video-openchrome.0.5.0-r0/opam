@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del xf86-video-openchrome"]
 ]
 depends: [
-  "libdrm"
-  "libx11"
-  "libxext"
-  "libxv"
-  "libxvmc"
-  "musl"
+  "so-libX11-so-6"
+  "so-libXext-so-6"
+  "so-libXv-so-1"
+  "so-libXvMC-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libdrm-so-2"
 ]
 extra-source "xf86-video-openchrome-0.5.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/xf86-video-openchrome-0.5.0-r0.apk"

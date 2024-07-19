@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libpcap" {= "1.9.0-r1"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "libpcap-dev-1.9.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libpcap-dev-1.9.0-r1.apk"

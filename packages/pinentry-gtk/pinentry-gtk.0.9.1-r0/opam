@@ -7,12 +7,14 @@ remove: [
 ]
 depends: [
   "busybox"
-  "glib"
-  "gtk+2.0"
-  "libcap"
-  "musl"
-  "ncurses-widec-libs"
-  "pango"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcap-so-2"
+  "so-libgdk-x11-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libgtk-x11-2-0-so-0"
+  "so-libncursesw-so-5"
+  "so-libpango-1-0-so-0"
 ]
 extra-source "pinentry-gtk-0.9.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/pinentry-gtk-0.9.1-r0.apk"

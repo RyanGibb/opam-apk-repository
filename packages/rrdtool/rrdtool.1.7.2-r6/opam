@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del rrdtool"]
 ]
 depends: [
-  "librrd"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-librrd-so-8"
   "ttf-cantarell"
 ]
 extra-source "rrdtool-1.7.2-r6.apk" {

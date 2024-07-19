@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "gdl" {= "3.18.0-r0"}
-  "gtk+3.0-dev"
-  "libxml2-dev"
+  "pc-gtk+-3-0"
+  "pc-libxml-2-0"
   "pkgconfig"
 ]
 extra-source "gdl-dev-3.18.0-r0.apk" {

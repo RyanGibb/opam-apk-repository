@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del pllua"]
 ]
 depends: [
-  "luajit"
-  "musl"
-  "postgresql-bdr"
+  "postgresql"
+  "so-libc-musl-x86_64-so-1"
+  "so-libluajit-5-1-so-2"
 ]
 extra-source "pllua-1.1.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/pllua-1.1.0-r1.apk"

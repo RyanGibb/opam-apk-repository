@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del apache2-utils"]
 ]
 depends: [
-  "apr"
-  "apr-util"
-  "libcrypto1.0"
-  "libssl1.0"
-  "musl"
+  "so-libapr-1-so-0"
+  "so-libaprutil-1-so-0"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-0-0"
+  "so-libssl-so-1-0-0"
 ]
 extra-source "apache2-utils-2.4.27-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/apache2-utils-2.4.27-r1.apk"

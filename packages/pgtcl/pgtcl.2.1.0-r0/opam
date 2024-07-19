@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del pgtcl"]
 ]
 depends: [
-  "libpq"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpq-so-5"
 ]
 extra-source "pgtcl-2.1.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/pgtcl-2.1.0-r0.apk"

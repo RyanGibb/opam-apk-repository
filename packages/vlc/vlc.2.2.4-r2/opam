@@ -6,11 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del vlc"]
 ]
 depends: [
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libvlc-so-5"
+  "so-libvlc_vdpau-so-0"
+  "so-libvlccore-so-8"
   "ttf-dejavu"
-  "vlc-libs"
   "vlc-plugins"
-  "vlc-xorg"
   "vlc-xorg" {= "2.2.4-r2"}
 ]
 extra-source "vlc-2.2.4-r2.apk" {

@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del nagios-plugins-ping"]
 ]
 depends: [
-  "musl"
   "nagios-plugins"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "nagios-plugins-ping-2.2.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/nagios-plugins-ping-2.2.1-r0.apk"

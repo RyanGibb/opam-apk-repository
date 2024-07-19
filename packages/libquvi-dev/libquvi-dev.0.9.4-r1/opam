@@ -9,7 +9,7 @@ depends: [
   "curl-dev"
   "libquvi" {= "0.9.4-r1"}
   "libquvi-scripts-dev"
-  "lua5.1-dev"
+  "lua5-1-dev"
   "pkgconfig"
 ]
 extra-source "libquvi-dev-0.9.4-r1.apk" {

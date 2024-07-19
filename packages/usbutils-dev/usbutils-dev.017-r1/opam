@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del usbutils-dev"]
 ]
 depends: [
-  "eudev-dev"
-  "libusb-dev"
-  "pkgconf"
+  "pc-libudev" {>= "196"}
+  "pc-libusb-1-0" {>= "1.0.14"}
+  "pkgconfig"
 ]
 extra-source "usbutils-dev-017-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/usbutils-dev-017-r1.apk"

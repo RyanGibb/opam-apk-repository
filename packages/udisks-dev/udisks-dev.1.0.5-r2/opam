@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del udisks-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "udisks-dev-1.0.5-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/udisks-dev-1.0.5-r2.apk"

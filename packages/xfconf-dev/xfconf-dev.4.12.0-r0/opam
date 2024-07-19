@@ -9,6 +9,9 @@ depends: [
   "dbus-dev"
   "dbus-glib-dev"
   "glib-dev"
+  "pc-dbus-1"
+  "pc-dbus-glib-1"
+  "pc-gobject-2-0"
   "pkgconfig"
   "xfconf" {= "4.12.0-r0"}
 ]

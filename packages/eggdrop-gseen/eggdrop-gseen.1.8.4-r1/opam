@@ -6,7 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del eggdrop-gseen"]
 ]
 depends: [
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libtcl8-6-so"
   "tcl"
 ]
 extra-source "eggdrop-gseen-1.8.4-r1.apk" {

@@ -6,7 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del xcb-util-cursor-dev"]
 ]
 depends: [
-  "libxcb-dev"
+  "pc-xcb-image"
+  "pc-xcb-render"
+  "pc-xcb-renderutil"
   "pkgconfig"
   "xcb-util-cursor" {= "0.1.2-r0"}
   "xcb-util-dev"

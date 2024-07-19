@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del libunwind"]
 ]
 depends: [
-  "musl"
-  "xz-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-liblzma-so-5"
 ]
 extra-source "libunwind-1.6.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libunwind-1.6.2-r0.apk"

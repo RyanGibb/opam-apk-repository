@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libinput-dev"
-  "pkgconf"
+  "pkgconfig"
   "xorg-server-dev"
 ]
 extra-source "xf86-input-libinput-dev-0.28.1-r0.apk" {

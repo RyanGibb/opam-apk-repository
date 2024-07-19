@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del varnish-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
   "varnish-libs" {= "7.5.0-r0"}
 ]
 extra-source "varnish-dev-7.5.0-r0.apk" {

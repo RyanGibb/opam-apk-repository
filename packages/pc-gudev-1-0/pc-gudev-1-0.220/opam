@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "eudev-dev" {= "3.1.2-r7"}
+]

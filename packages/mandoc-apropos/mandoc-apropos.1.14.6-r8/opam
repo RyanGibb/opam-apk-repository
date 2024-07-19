@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del mandoc-apropos"]
 ]
 depends: [
+  "-bin-sh"
   "mandoc" {= "1.14.6-r8"}
-  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
 ]
 extra-source "mandoc-apropos-1.14.6-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/mandoc-apropos-1.14.6-r8.apk"

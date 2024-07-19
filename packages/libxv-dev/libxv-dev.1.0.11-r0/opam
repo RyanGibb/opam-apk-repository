@@ -6,12 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del libxv-dev"]
 ]
 depends: [
-  "libx11-dev"
   "libxext-dev"
   "libxv" {= "1.0.11-r0"}
-  "pkgconf"
-  "videoproto"
-  "xproto"
+  "pc-videoproto"
+  "pc-x11"
+  "pc-xext"
+  "pc-xproto"
+  "pkgconfig"
 ]
 extra-source "libxv-dev-1.0.11-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/libxv-dev-1.0.11-r0.apk"

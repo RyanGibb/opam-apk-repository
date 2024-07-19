@@ -6,10 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del qt5-qtbase-tds"]
 ]
 depends: [
-  "freetds"
-  "libstdc++"
-  "musl"
-  "qt5-qtbase"
+  "so-libQt5Core-so-5"
+  "so-libQt5Sql-so-5"
+  "so-libc-musl-x86_64-so-1"
+  "so-libstdc++-so-6"
+  "so-libsybdb-so-5"
 ]
 extra-source "qt5-qtbase-tds-5.6.0-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/qt5-qtbase-tds-5.6.0-r3.apk"

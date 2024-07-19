@@ -7,7 +7,6 @@ remove: [
 ]
 depends: [
   "make"
-  "py-setuptools"
   "py2-alabaster" {< "0.8"}
   "py2-babel"
   "py2-docutils"
@@ -16,6 +15,7 @@ depends: [
   "py2-packaging"
   "py2-pygments"
   "py2-requests"
+  "py2-setuptools"
   "py2-six"
   "py2-snowballstemmer"
   "py2-sphinx_rtd_theme"

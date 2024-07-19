@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del renderproto"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "renderproto-0.11.1-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/renderproto-0.11.1-r3.apk"

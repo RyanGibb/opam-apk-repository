@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "lvm2-dev" {= "2.02.178-r0"}
+]

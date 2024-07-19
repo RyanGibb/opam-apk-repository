@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del uwsgi-transformation_offload"]
 ]
 depends: [
-  "musl"
+  "so-libc-musl-x86_64-so-1"
   "uwsgi"
 ]
 extra-source "uwsgi-transformation_offload-2.0.18-r7.apk" {

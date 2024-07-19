@@ -6,10 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del gvfs-fuse"]
 ]
 depends: [
-  "fuse"
-  "glib"
-  "gvfs"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libfuse-so-2"
+  "so-libgio-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libgvfscommon-so"
 ]
 extra-source "gvfs-fuse-1.26.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/gvfs-fuse-1.26.2-r0.apk"

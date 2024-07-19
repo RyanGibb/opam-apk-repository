@@ -12,7 +12,7 @@ depends: [
   "libidn2-dev"
   "nghttp2-dev"
   "openssl-dev" {> "3"}
-  "pkgconf"
+  "pkgconfig"
   "zlib-dev"
 ]
 extra-source "curl-dev-8.5.0-r0.apk" {

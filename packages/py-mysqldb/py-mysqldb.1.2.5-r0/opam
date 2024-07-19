@@ -6,9 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del py-mysqldb"]
 ]
 depends: [
-  "mariadb-client-libs"
-  "musl"
   "python2"
+  "so-libc-musl-x86_64-so-1"
+  "so-libmysqlclient-so-18"
+  "so-libpython2-7-so-1-0"
 ]
 extra-source "py-mysqldb-1.2.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/py-mysqldb-1.2.5-r0.apk"

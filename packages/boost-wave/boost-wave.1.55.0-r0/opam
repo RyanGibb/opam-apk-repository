@@ -6,13 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del boost-wave"]
 ]
 depends: [
-  "boost"
-  "boost-date_time"
-  "boost-filesystem"
-  "boost-system"
-  "boost-thread"
-  "libgcc"
-  "musl"
+  "so-libboost_chrono-mt-so-1-55-0"
+  "so-libboost_date_time-mt-so-1-55-0"
+  "so-libboost_date_time-so-1-55-0"
+  "so-libboost_filesystem-mt-so-1-55-0"
+  "so-libboost_filesystem-so-1-55-0"
+  "so-libboost_system-mt-so-1-55-0"
+  "so-libboost_system-so-1-55-0"
+  "so-libboost_thread-mt-so-1-55-0"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
 ]
 extra-source "boost-wave-1.55.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/boost-wave-1.55.0-r0.apk"

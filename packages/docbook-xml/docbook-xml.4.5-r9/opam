@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del docbook-xml"]
 ]
 depends: [
+  "-bin-sh"
   "libxml2-utils"
-  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
 ]
 extra-source "docbook-xml-4.5-r9.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/docbook-xml-4.5-r9.apk"

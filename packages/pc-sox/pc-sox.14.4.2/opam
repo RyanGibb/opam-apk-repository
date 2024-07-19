@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "sox-dev" {= "14.4.2-r0"}
+]

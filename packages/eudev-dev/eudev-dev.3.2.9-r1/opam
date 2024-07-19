@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "eudev" {= "3.2.9-r1"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "eudev-dev-3.2.9-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/eudev-dev-3.2.9-r1.apk"

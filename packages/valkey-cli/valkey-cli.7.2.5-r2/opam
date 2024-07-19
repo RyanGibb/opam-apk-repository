@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del valkey-cli"]
 ]
 depends: [
-  "libcrypto3"
-  "libssl3"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-3"
+  "so-libssl-so-3"
 ]
 extra-source "valkey-cli-7.2.5-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/valkey-cli-7.2.5-r2.apk"

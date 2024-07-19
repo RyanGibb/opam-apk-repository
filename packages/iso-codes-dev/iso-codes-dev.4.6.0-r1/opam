@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del iso-codes-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "iso-codes-dev-4.6.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/iso-codes-dev-4.6.0-r1.apk"

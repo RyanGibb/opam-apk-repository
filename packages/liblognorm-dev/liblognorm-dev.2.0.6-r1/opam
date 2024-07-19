@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "libestr-dev"
-  "libfastjson-dev"
   "liblognorm" {= "2.0.6-r1"}
-  "pkgconf"
+  "pc-libfastjson"
+  "pkgconfig"
 ]
 extra-source "liblognorm-dev-2.0.6-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/liblognorm-dev-2.0.6-r1.apk"

@@ -6,11 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del spice-dev"]
 ]
 depends: [
-  "glib-dev"
-  "openssl-dev"
-  "pixman-dev"
-  "pkgconf"
-  "spice-protocol"
+  "pc-gio-2-0" {>= "2.38"}
+  "pc-glib-2-0" {>= "2.38"}
+  "pc-gobject-2-0" {>= "2.38"}
+  "pc-openssl"
+  "pc-pixman-1" {>= "0.17.7"}
+  "pc-spice-protocol" {>= "0.14.0"}
+  "pkgconfig"
   "spice-server" {= "0.14.3-r1"}
 ]
 extra-source "spice-dev-0.14.3-r1.apk" {

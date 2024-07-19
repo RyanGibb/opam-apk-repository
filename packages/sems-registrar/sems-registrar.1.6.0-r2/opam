@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del sems-registrar"]
 ]
 depends: [
-  "libgcc"
-  "libstdc++"
-  "musl"
   "sems"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libstdc++-so-6"
 ]
 extra-source "sems-registrar-1.6.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/sems-registrar-1.6.0-r2.apk"

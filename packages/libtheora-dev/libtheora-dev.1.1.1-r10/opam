@@ -8,6 +8,7 @@ remove: [
 depends: [
   "libogg-dev"
   "libtheora" {= "1.1.1-r10"}
+  "pc-ogg" {>= "1.1"}
   "pkgconfig"
 ]
 extra-source "libtheora-dev-1.1.1-r10.apk" {

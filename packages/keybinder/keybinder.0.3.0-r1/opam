@@ -6,10 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del keybinder"]
 ]
 depends: [
-  "glib"
-  "gtk+2.0"
-  "libx11"
-  "musl"
+  "so-libX11-so-6"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgdk-x11-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libgtk-x11-2-0-so-0"
 ]
 extra-source "keybinder-0.3.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/keybinder-0.3.0-r1.apk"

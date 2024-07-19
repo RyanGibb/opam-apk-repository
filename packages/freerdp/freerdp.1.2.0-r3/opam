@@ -6,8 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del freerdp"]
 ]
 depends: [
-  "freerdp-libs"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libfreerdp-client-so-1-2"
+  "so-libfreerdp-shadow-so-1-2"
+  "so-libwinpr-so-1-1"
+  "so-libxfreerdp-client-so-1-2"
 ]
 extra-source "freerdp-1.2.0-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/freerdp-1.2.0-r3.apk"

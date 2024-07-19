@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "atk" {= "2.14.0-r0"}
+]

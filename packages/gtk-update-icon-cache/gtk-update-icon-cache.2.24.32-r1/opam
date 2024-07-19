@@ -6,12 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del gtk-update-icon-cache"]
 ]
 depends: [
-  "busybox"
-  "gdk-pixbuf"
-  "glib"
+  "-bin-sh"
   "hicolor-icon-theme"
-  "libintl"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgdk_pixbuf-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libintl-so-8"
 ]
 extra-source "gtk-update-icon-cache-2.24.32-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/gtk-update-icon-cache-2.24.32-r1.apk"

@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del nfdump"]
 ]
 depends: [
-  "libbz2"
-  "musl"
+  "so-libbz2-so-1"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "nfdump-1.6.24-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nfdump-1.6.24-r0.apk"

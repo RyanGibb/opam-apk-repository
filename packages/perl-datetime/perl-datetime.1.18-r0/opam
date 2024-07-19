@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del perl-datetime"]
 ]
 depends: [
-  "musl"
   "perl"
   "perl-datetime-locale"
   "perl-datetime-timezone"
   "perl-math-round"
   "perl-test-exception"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "perl-datetime-1.18-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/perl-datetime-1.18-r0.apk"

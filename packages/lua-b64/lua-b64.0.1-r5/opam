@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del lua-b64"]
 ]
 depends: [
-  ("lua5.1" | "lua5.2" | "lua5.3" | "lua5.4" | "luajit")
+  "lua"
 ]
 extra-source "lua-b64-0.1-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lua-b64-0.1-r5.apk"

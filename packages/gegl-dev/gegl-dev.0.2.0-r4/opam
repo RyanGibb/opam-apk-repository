@@ -9,7 +9,11 @@ depends: [
   "babl-dev"
   "gegl" {= "0.2.0-r4"}
   "glib-dev"
-  "pkgconf"
+  "pc-babl"
+  "pc-gio-2-0"
+  "pc-gmodule-2-0"
+  "pc-gobject-2-0"
+  "pkgconfig"
 ]
 extra-source "gegl-dev-0.2.0-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/gegl-dev-0.2.0-r4.apk"

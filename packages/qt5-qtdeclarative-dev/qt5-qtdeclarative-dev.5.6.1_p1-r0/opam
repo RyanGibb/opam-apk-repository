@@ -6,8 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del qt5-qtdeclarative-dev"]
 ]
 depends: [
-  "pkgconf"
-  "qt5-qtbase-dev"
+  "pc-Qt5Core"
+  "pc-Qt5Gui"
+  "pc-Qt5Network"
+  "pc-Qt5Test"
+  "pc-Qt5Widgets"
+  "pkgconfig"
   "qt5-qtdeclarative" {= "5.6.1_p1-r0"}
 ]
 extra-source "qt5-qtdeclarative-dev-5.6.1_p1-r0.apk" {

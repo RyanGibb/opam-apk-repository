@@ -11,7 +11,8 @@ depends: [
   "db-dev"
   "expat-dev"
   "openldap-dev"
-  "pkgconf"
+  "pc-apr-1"
+  "pkgconfig"
   "postgresql-dev"
   "sqlite-dev"
 ]

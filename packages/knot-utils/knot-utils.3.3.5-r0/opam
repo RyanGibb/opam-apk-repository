@@ -6,16 +6,18 @@ remove: [
   ["sh" "-c" "sudo apk del knot-utils"]
 ]
 depends: [
-  "gnutls"
-  "knot-libs"
-  "libedit"
-  "libidn2"
-  "lmdb"
-  "musl"
-  "nghttp2-libs"
-  "ngtcp2"
-  "ngtcp2-gnutls"
-  "userspace-rcu"
+  "so-libc-musl-x86_64-so-1"
+  "so-libdnssec-so-9"
+  "so-libedit-so-0"
+  "so-libgnutls-so-30"
+  "so-libidn2-so-0"
+  "so-libknot-so-14"
+  "so-liblmdb-so-0"
+  "so-libnghttp2-so-14"
+  "so-libngtcp2-so-16"
+  "so-libngtcp2_crypto_gnutls-so-8"
+  "so-liburcu-so-8"
+  "so-libzscanner-so-4"
 ]
 extra-source "knot-utils-3.3.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/knot-utils-3.3.5-r0.apk"

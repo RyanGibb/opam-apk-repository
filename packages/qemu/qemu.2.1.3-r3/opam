@@ -7,17 +7,17 @@ remove: [
 ]
 depends: [
   "busybox"
-  "curl"
-  "glib"
-  "gnutls"
-  "libaio"
-  "libcap"
-  "libcap-ng"
-  "libgcc"
-  "libssh2"
-  "libuuid"
-  "musl"
-  "zlib"
+  "so-libaio-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcap-ng-so-0"
+  "so-libcap-so-2"
+  "so-libcurl-so-4"
+  "so-libgcc_s-so-1"
+  "so-libglib-2-0-so-0"
+  "so-libgnutls-so-28"
+  "so-libssh2-so-1"
+  "so-libuuid-so-1"
+  "so-libz-so-1"
 ]
 extra-source "qemu-2.1.3-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/qemu-2.1.3-r3.apk"

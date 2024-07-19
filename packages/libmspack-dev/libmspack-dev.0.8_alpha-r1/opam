@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libmspack" {= "0.8_alpha-r1"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "libmspack-dev-0.8_alpha-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libmspack-dev-0.8_alpha-r1.apk"

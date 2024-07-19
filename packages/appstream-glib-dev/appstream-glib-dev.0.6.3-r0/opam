@@ -10,10 +10,13 @@ depends: [
   "appstream-glib-builder" {= "0.6.3-r0"}
   "gdk-pixbuf-dev"
   "glib-dev"
-  "libarchive-dev"
-  "libgcab-dev"
-  "pkgconf"
-  "util-linux-dev"
+  "pc-gdk-pixbuf-2-0"
+  "pc-glib-2-0"
+  "pc-gobject-2-0"
+  "pc-libarchive"
+  "pc-libgcab-1-0"
+  "pc-uuid"
+  "pkgconfig"
 ]
 extra-source "appstream-glib-dev-0.6.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/appstream-glib-dev-0.6.3-r0.apk"

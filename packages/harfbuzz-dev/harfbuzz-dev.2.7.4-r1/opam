@@ -6,13 +6,14 @@ remove: [
   ["sh" "-c" "sudo apk del harfbuzz-dev"]
 ]
 depends: [
-  "freetype-dev"
-  "glib-dev"
-  "graphite2-dev"
   "harfbuzz" {= "2.7.4-r1"}
   "harfbuzz-icu" {= "2.7.4-r1"}
-  "icu-dev"
-  "pkgconf"
+  "pc-freetype2"
+  "pc-glib-2-0"
+  "pc-gobject-2-0"
+  "pc-graphite2"
+  "pc-icu-uc"
+  "pkgconfig"
 ]
 extra-source "harfbuzz-dev-2.7.4-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/harfbuzz-dev-2.7.4-r1.apk"

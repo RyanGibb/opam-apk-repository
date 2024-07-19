@@ -6,14 +6,14 @@ remove: [
   ["sh" "-c" "sudo apk del avahi"]
 ]
 depends: [
-  "avahi-libs"
-  "dbus-libs"
-  "libcap2"
-  "libdaemon"
-  "libevent"
-  "libexpat"
-  "musl"
-  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
+  "-bin-sh"
+  "so-libavahi-common-so-3"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcap-so-2"
+  "so-libdaemon-so-0"
+  "so-libdbus-1-so-3"
+  "so-libevent-2-1-so-7"
+  "so-libexpat-so-1"
 ]
 extra-source "avahi-0.8-r16.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/avahi-0.8-r16.apk"

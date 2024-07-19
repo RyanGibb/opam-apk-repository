@@ -6,11 +6,14 @@ remove: [
   ["sh" "-c" "sudo apk del gvfs-afp"]
 ]
 depends: [
-  "glib"
-  "gvfs"
-  "libgcrypt"
-  "libintl"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcrypt-so-20"
+  "so-libgio-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libgvfscommon-so"
+  "so-libgvfsdaemon-so"
+  "so-libintl-so-8"
 ]
 extra-source "gvfs-afp-1.24.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/gvfs-afp-1.24.1-r0.apk"

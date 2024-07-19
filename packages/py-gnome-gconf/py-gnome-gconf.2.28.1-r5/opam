@@ -7,10 +7,12 @@ remove: [
 ]
 depends: [
   "gconf"
-  "glib"
-  "musl"
   "py-gtk"
-  "python2"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgconf-2-so-4"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libpython2-7-so-1-0"
 ]
 extra-source "py-gnome-gconf-2.28.1-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/py-gnome-gconf-2.28.1-r5.apk"

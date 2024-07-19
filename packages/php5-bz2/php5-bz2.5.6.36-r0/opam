@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del php5-bz2"]
 ]
 depends: [
-  "libbz2"
-  "musl"
   "php5"
   "php5-cli"
+  "so-libbz2-so-1"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "php5-bz2-5.6.36-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/php5-bz2-5.6.36-r0.apk"

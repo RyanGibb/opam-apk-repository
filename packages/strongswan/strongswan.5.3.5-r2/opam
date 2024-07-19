@@ -7,14 +7,14 @@ remove: [
 ]
 depends: [
   "busybox"
-  "curl"
-  "gmp"
   "iproute2"
-  "libcap"
-  "libcrypto1.0"
-  "musl"
   "openssl"
-  "sqlite-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcap-so-2"
+  "so-libcrypto-so-1-0-0"
+  "so-libcurl-so-4"
+  "so-libgmp-so-10"
+  "so-libsqlite3-so-0"
 ]
 extra-source "strongswan-5.3.5-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/strongswan-5.3.5-r2.apk"

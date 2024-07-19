@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "ca-certificates"
-  "libcurl"
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcurl-so-4"
+  "so-libz-so-1"
 ]
 extra-source "curl-7.64.0-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/curl-7.64.0-r5.apk"

@@ -8,8 +8,10 @@ remove: [
 depends: [
   "libepoxy" {= "1.5.10-r1"}
   "libx11-dev"
-  "mesa-dev"
-  "pkgconf"
+  "pc-egl"
+  "pc-gl"
+  "pc-x11"
+  "pkgconfig"
 ]
 extra-source "libepoxy-dev-1.5.10-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libepoxy-dev-1.5.10-r1.apk"

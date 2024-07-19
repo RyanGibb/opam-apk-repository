@@ -8,7 +8,7 @@ remove: [
 depends: [
   "libva" {= "1.7.2-r0"}
   "mesa-dev"
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "libva-dev-1.7.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/libva-dev-1.7.2-r0.apk"

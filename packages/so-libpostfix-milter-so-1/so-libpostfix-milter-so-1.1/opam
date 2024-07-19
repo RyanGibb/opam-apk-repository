@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "postfix" {= "2.11.3-r0"}
+]

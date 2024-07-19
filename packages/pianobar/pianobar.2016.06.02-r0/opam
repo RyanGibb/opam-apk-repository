@@ -6,12 +6,15 @@ remove: [
   ["sh" "-c" "sudo apk del pianobar"]
 ]
 depends: [
-  "ffmpeg-libs"
-  "json-c"
-  "libao"
-  "libcurl"
-  "libgcrypt"
-  "musl"
+  "so-libao-so-4"
+  "so-libavcodec-so-57"
+  "so-libavfilter-so-6"
+  "so-libavformat-so-57"
+  "so-libavutil-so-55"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcurl-so-4"
+  "so-libgcrypt-so-20"
+  "so-libjson-c-so-2"
 ]
 extra-source "pianobar-2016.06.02-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/pianobar-2016.06.02-r0.apk"

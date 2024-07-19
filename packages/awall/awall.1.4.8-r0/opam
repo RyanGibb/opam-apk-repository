@@ -11,12 +11,12 @@ depends: [
   "ip6tables"
   "ipset"
   "iptables"
-  "lua5.2"
-  "lua5.2-alt-getopt"
-  "lua5.2-cjson"
-  "lua5.2-pc"
-  "lua5.2-posix"
-  "lua5.2-stringy"
+  "lua5-2"
+  "lua5-2-alt-getopt"
+  "lua5-2-cjson"
+  "lua5-2-pc"
+  "lua5-2-posix"
+  "lua5-2-stringy"
   "xtables-addons"
 ]
 extra-source "awall-1.4.8-r0.apk" {

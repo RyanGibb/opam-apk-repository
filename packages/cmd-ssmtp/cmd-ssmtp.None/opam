@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "ssmtp" {= "2.64-r14"}
+]

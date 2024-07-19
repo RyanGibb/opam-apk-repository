@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del libdwarf"]
 ]
 depends: [
-  "musl"
-  "zlib"
-  "zstd-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libz-so-1"
+  "so-libzstd-so-1"
 ]
 extra-source "libdwarf-0.6.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/libdwarf-0.6.0-r2.apk"

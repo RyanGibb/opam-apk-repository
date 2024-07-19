@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "libpagemaker-dev" {= "0.0.2-r1"}
+]

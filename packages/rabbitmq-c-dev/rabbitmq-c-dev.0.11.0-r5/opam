@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del rabbitmq-c-dev"]
 ]
 depends: [
-  "openssl-dev"
-  "pkgconf"
+  "pc-openssl"
+  "pkgconfig"
   "popt-dev"
   "rabbitmq-c" {= "0.11.0-r5"}
 ]

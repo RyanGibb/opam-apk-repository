@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del vlc-plugins-mux"]
 ]
 depends: [
-  "libdvbpsi"
-  "libogg"
-  "musl"
-  "vlc-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libdvbpsi-so-10"
+  "so-libogg-so-0"
+  "so-libvlccore-so-8"
 ]
 extra-source "vlc-plugins-mux-2.2.4-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/vlc-plugins-mux-2.2.4-r2.apk"

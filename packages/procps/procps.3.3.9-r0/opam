@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del procps"]
 ]
 depends: [
-  "libproc"
-  "musl"
-  "ncurses-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libncurses-so-5"
+  "so-libprocps-so-3"
 ]
 extra-source "procps-3.3.9-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/procps-3.3.9-r0.apk"

@@ -8,8 +8,10 @@ remove: [
 depends: [
   "exo-dev"
   "glib-dev"
-  "gtk+2.0-dev"
-  "pkgconf"
+  "gtk+2-0-dev"
+  "pc-gio-2-0"
+  "pc-gtk+-2-0"
+  "pkgconfig"
   "thunar" {= "1.6.10-r4"}
 ]
 extra-source "thunar-dev-1.6.10-r4.apk" {

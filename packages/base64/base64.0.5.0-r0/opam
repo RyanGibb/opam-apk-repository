@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del base64"]
 ]
 depends: [
-  "libbase64"
-  "musl"
+  "so-libbase64-so-0"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "base64-0.5.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/base64-0.5.0-r0.apk"

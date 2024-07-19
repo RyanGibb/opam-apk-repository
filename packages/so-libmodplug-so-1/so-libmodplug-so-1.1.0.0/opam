@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "libmodplug" {= "0.8.9.0-r0"}
+]

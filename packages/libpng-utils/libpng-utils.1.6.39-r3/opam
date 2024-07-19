@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del libpng-utils"]
 ]
 depends: [
-  "libpng"
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpng16-so-16"
+  "so-libz-so-1"
 ]
 extra-source "libpng-utils-1.6.39-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/libpng-utils-1.6.39-r3.apk"

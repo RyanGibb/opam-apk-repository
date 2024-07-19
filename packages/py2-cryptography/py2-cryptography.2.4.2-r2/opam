@@ -6,16 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del py2-cryptography"]
 ]
 depends: [
-  "libcrypto1.1"
-  "libssl1.1"
-  "musl"
   "py-enum34"
   "py2-asn1crypto"
   "py2-cffi"
   "py2-idna"
   "py2-ipaddress"
   "py2-six"
-  "python2"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-1"
+  "so-libpython2-7-so-1-0"
+  "so-libssl-so-1-1"
 ]
 extra-source "py2-cryptography-2.4.2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/py2-cryptography-2.4.2-r2.apk"

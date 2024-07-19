@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "dillo" {= "3.0.5-r6"}
+]

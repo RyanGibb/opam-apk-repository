@@ -9,12 +9,18 @@ depends: [
   "alsa-lib-dev"
   "cairo-dev"
   "glib-dev"
-  "gst-plugins-base0.10-dev"
-  "gstreamer0.10-dev"
-  "gtk+2.0-dev"
+  "gst-plugins-base0-10-dev"
+  "gstreamer0-10-dev"
+  "gtk+2-0-dev"
   "liboil-dev"
   "libsoup-dev"
   "pango-dev"
+  "pc-cairo"
+  "pc-glib-2-0" {>= "2.16"}
+  "pc-gobject-2-0" {>= "2.16"}
+  "pc-gtk+-2-0" {>= "2.8.0"}
+  "pc-liboil-0-3"
+  "pc-pangocairo"
   "pkgconfig"
   "swfdec" {= "0.8.4-r9"}
 ]

@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del openssh-server"]
 ]
 depends: [
-  "libressl2.5-libcrypto"
-  "musl"
   "openssh-keygen"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-41"
+  "so-libz-so-1"
 ]
 extra-source "openssh-server-7.5_p1-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/openssh-server-7.5_p1-r4.apk"

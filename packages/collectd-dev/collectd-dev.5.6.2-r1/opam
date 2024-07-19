@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "collectd-libs" {= "5.6.2-r1"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "collectd-dev-5.6.2-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/collectd-dev-5.6.2-r1.apk"

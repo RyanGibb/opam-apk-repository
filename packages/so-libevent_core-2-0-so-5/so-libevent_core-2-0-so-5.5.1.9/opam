@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "libevent" {= "2.0.22-r2"}
+]

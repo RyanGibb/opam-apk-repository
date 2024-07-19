@@ -11,7 +11,10 @@ depends: [
   "icu-dev"
   "libical" {= "3.0.8-r5"}
   "libxml2-dev"
-  "pkgconf"
+  "pc-glib-2-0"
+  "pc-gobject-2-0"
+  "pc-icu-i18n"
+  "pkgconfig"
 ]
 extra-source "libical-dev-3.0.8-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/libical-dev-3.0.8-r5.apk"

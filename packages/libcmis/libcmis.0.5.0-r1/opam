@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del libcmis"]
 ]
 depends: [
-  "boost-date_time"
-  "curl"
-  "libgcc"
-  "libstdc++"
-  "libxml2"
-  "musl"
+  "so-libboost_date_time-mt-so-1-58-0"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcurl-so-4"
+  "so-libgcc_s-so-1"
+  "so-libstdc++-so-6"
+  "so-libxml2-so-2"
 ]
 extra-source "libcmis-0.5.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/libcmis-0.5.0-r1.apk"

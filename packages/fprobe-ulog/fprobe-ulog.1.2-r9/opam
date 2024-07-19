@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del fprobe-ulog"]
 ]
 depends: [
-  "libnetfilter_log"
-  "libnfnetlink"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libnetfilter_log-so-1"
+  "so-libnfnetlink-so-0"
 ]
 extra-source "fprobe-ulog-1.2-r9.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/fprobe-ulog-1.2-r9.apk"

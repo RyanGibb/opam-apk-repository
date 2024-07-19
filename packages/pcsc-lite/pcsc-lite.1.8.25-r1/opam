@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del pcsc-lite"]
 ]
 depends: [
-  "busybox"
-  "eudev-libs"
-  "musl"
+  "-bin-sh"
+  "so-libc-musl-x86_64-so-1"
+  "so-libudev-so-1"
 ]
 extra-source "pcsc-lite-1.8.25-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/pcsc-lite-1.8.25-r1.apk"

@@ -12,7 +12,7 @@ depends: [
   "libarchive-dev"
   "libressl-dev"
   "pacman" {= "5.0.2-r1"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "pacman-dev-5.0.2-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/pacman-dev-5.0.2-r1.apk"

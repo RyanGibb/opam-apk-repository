@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del skalibs"]
 ]
 depends: [
-  "musl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "skalibs-2.8.1.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/skalibs-2.8.1.0-r0.apk"

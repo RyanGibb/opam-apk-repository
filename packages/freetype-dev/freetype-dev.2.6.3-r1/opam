@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "freetype" {= "2.6.3-r1"}
-  "libpng-dev"
+  "pc-libpng"
+  "pc-zlib"
   "pkgconfig"
-  "zlib-dev"
 ]
 extra-source "freetype-dev-2.6.3-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/freetype-dev-2.6.3-r1.apk"

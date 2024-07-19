@@ -6,12 +6,20 @@ remove: [
   ["sh" "-c" "sudo apk del subversion"]
 ]
 depends: [
-  "apr"
-  "apr-util"
   "busybox"
-  "libsasl"
-  "musl"
-  "subversion-libs"
+  "so-libapr-1-so-0"
+  "so-libaprutil-1-so-0"
+  "so-libc-musl-x86_64-so-1"
+  "so-libsasl2-so-3"
+  "so-libsvn_client-1-so-0"
+  "so-libsvn_delta-1-so-0"
+  "so-libsvn_diff-1-so-0"
+  "so-libsvn_fs-1-so-0"
+  "so-libsvn_ra-1-so-0"
+  "so-libsvn_ra_svn-1-so-0"
+  "so-libsvn_repos-1-so-0"
+  "so-libsvn_subr-1-so-0"
+  "so-libsvn_wc-1-so-0"
 ]
 extra-source "subversion-1.8.16-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/subversion-1.8.16-r0.apk"

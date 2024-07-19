@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del sxiv"]
 ]
 depends: [
-  "giflib"
-  "imlib2"
-  "libx11"
-  "musl"
+  "so-libImlib2-so-1"
+  "so-libX11-so-6"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgif-so-7"
 ]
 extra-source "sxiv-1.2-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/sxiv-1.2-r1.apk"

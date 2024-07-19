@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del installkernel"]
 ]
 depends: [
-  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
+  "-bin-sh"
 ]
 extra-source "installkernel-4.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/installkernel-4.1-r0.apk"

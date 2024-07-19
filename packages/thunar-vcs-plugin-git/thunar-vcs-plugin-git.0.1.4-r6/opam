@@ -6,11 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del thunar-vcs-plugin-git"]
 ]
 depends: [
-  "cairo"
-  "glib"
-  "gtk+2.0"
-  "libxfce4util"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcairo-so-2"
+  "so-libgdk-x11-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libgtk-x11-2-0-so-0"
+  "so-libxfce4util-so-7"
 ]
 extra-source "thunar-vcs-plugin-git-0.1.4-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/thunar-vcs-plugin-git-0.1.4-r6.apk"

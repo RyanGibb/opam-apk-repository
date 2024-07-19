@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libnfsidmap" {= "2.6.4-r0"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "nfs-utils-dev-2.6.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/nfs-utils-dev-2.6.4-r0.apk"

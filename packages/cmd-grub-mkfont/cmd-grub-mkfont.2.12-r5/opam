@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "grub-mkfont" {= "2.12-r5"}
+]

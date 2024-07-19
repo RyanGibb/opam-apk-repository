@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "boost-dev"
-  "pkgconf"
+  "pkgconfig"
   "source-highlight" {= "3.1.9-r1"}
 ]
 extra-source "source-highlight-dev-3.1.9-r1.apk" {

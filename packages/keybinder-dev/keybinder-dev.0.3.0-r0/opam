@@ -6,9 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del keybinder-dev"]
 ]
 depends: [
-  "gtk+2.0-dev"
+  "gtk+2-0-dev"
   "keybinder" {= "0.3.0-r0"}
   "libxext-dev"
+  "pc-gtk+-2-0"
   "pkgconfig"
 ]
 extra-source "keybinder-dev-0.3.0-r0.apk" {

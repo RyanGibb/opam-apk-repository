@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "dhcp"
-  "libgcc"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
 ]
 conflicts: [
   "dhcp-server-ldap"

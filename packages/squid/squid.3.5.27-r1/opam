@@ -6,16 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del squid"]
 ]
 depends: [
-  "busybox"
-  "db"
-  "libcap"
-  "libgcc"
-  "libltdl"
-  "libressl2.6-libcrypto"
-  "libressl2.6-libssl"
-  "libstdc++"
+  "-bin-sh"
   "logrotate"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcap-so-2"
+  "so-libcrypto-so-42"
+  "so-libdb-5-3-so"
+  "so-libgcc_s-so-1"
+  "so-libltdl-so-7"
+  "so-libssl-so-44"
+  "so-libstdc++-so-6"
 ]
 extra-source "squid-3.5.27-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/squid-3.5.27-r1.apk"

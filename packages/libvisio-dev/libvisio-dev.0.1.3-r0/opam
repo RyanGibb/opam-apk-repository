@@ -13,6 +13,10 @@ depends: [
   "libwpd-dev"
   "libwpg-dev"
   "libxml2-dev"
+  "pc-icu-i18n"
+  "pc-librevenge-0-0"
+  "pc-libxml-2-0"
+  "pc-zlib"
   "pkgconfig"
   "zlib-dev"
 ]

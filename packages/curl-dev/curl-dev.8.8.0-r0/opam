@@ -13,7 +13,7 @@ depends: [
   "libpsl-dev"
   "nghttp2-dev"
   "openssl-dev" {> "3"}
-  "pkgconf"
+  "pkgconfig"
   "zlib-dev"
   "zstd-dev"
 ]

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del libsm"]
 ]
 depends: [
-  "libice"
-  "libuuid"
-  "musl"
+  "so-libICE-so-6"
+  "so-libc-musl-x86_64-so-1"
+  "so-libuuid-so-1"
 ]
 extra-source "libsm-1.2.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/libsm-1.2.2-r0.apk"

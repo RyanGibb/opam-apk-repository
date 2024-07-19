@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  ("gnupg" {= "2.2.19-r0"} | "gnupg1" {= "1.4.23-r0"})
+]

@@ -6,10 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del libxres-dev"]
 ]
 depends: [
-  "libx11-dev"
-  "libxext-dev"
   "libxres" {= "1.2.0-r1"}
-  "pkgconf"
+  "pc-x11"
+  "pc-xext"
+  "pc-xproto"
+  "pkgconfig"
   "xorgproto"
 ]
 extra-source "libxres-dev-1.2.0-r1.apk" {

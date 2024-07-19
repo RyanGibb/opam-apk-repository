@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del libxaw"]
 ]
 depends: [
-  "libx11"
-  "libxext"
-  "libxmu"
-  "libxpm"
-  "libxt"
-  "musl"
+  "so-libX11-so-6"
+  "so-libXext-so-6"
+  "so-libXmu-so-6"
+  "so-libXpm-so-4"
+  "so-libXt-so-6"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "libxaw-1.0.15-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/libxaw-1.0.15-r1.apk"

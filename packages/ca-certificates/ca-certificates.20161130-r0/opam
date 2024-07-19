@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "busybox"
-  "libcrypto1.0" {>= "1.0.2g-r3"}
-  "musl"
+  "libcrypto1-0" {>= "1.0.2g-r3"}
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "ca-certificates-20161130-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/ca-certificates-20161130-r0.apk"

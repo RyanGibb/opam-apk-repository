@@ -6,13 +6,15 @@ remove: [
   ["sh" "-c" "sudo apk del libvisio"]
 ]
 depends: [
-  "icu-libs"
-  "libgcc"
-  "librevenge"
-  "libstdc++"
-  "libxml2"
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libicudata-so-56"
+  "so-libicui18n-so-56"
+  "so-libicuuc-so-56"
+  "so-librevenge-0-0-so-0"
+  "so-libstdc++-so-6"
+  "so-libxml2-so-2"
+  "so-libz-so-1"
 ]
 extra-source "libvisio-0.1.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/libvisio-0.1.3-r0.apk"

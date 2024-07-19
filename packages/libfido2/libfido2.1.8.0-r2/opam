@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del libfido2"]
 ]
 depends: [
-  "eudev-libs"
-  "libcbor"
-  "libcrypto1.1"
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcbor-so-0-8"
+  "so-libcrypto-so-1-1"
+  "so-libudev-so-1"
+  "so-libz-so-1"
 ]
 extra-source "libfido2-1.8.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libfido2-1.8.0-r2.apk"

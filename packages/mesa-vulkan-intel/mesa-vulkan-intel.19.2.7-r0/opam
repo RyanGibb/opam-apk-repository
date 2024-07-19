@@ -6,17 +6,21 @@ remove: [
   ["sh" "-c" "sudo apk del mesa-vulkan-intel"]
 ]
 depends: [
-  "expat"
-  "libdrm"
-  "libgcc"
-  "libstdc++"
-  "libx11"
-  "libxcb"
-  "libxshmfence"
   "mesa"
-  "musl"
-  "wayland-libs-client"
-  "zlib"
+  "so-libX11-xcb-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libdrm-so-2"
+  "so-libexpat-so-1"
+  "so-libgcc_s-so-1"
+  "so-libstdc++-so-6"
+  "so-libwayland-client-so-0"
+  "so-libxcb-dri3-so-0"
+  "so-libxcb-present-so-0"
+  "so-libxcb-randr-so-0"
+  "so-libxcb-so-1"
+  "so-libxcb-sync-so-1"
+  "so-libxshmfence-so-1"
+  "so-libz-so-1"
 ]
 extra-source "mesa-vulkan-intel-19.2.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/mesa-vulkan-intel-19.2.7-r0.apk"

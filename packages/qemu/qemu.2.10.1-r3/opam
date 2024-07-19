@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del qemu"]
 ]
 depends: [
-  "busybox"
-  "glib"
-  "libcap"
-  "libcap-ng"
-  "musl"
+  "-bin-sh"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcap-ng-so-0"
+  "so-libcap-so-2"
+  "so-libglib-2-0-so-0"
 ]
 extra-source "qemu-2.10.1-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/qemu-2.10.1-r3.apk"

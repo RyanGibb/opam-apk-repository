@@ -8,10 +8,10 @@ remove: [
 depends: [
   "bash"
   "elfutils-dev"
-  "elfutils-libelf"
   "gmp-dev"
-  "musl"
   "perl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libelf-so-1"
 ]
 extra-source "linux-vanilla-dev-4.14.167-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/linux-vanilla-dev-4.14.167-r0.apk"

@@ -6,9 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del libnice"]
 ]
 depends: [
-  "glib"
-  "gnutls"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgio-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgnutls-so-30"
+  "so-libgobject-2-0-so-0"
 ]
 extra-source "libnice-0.1.17-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/libnice-0.1.17-r0.apk"

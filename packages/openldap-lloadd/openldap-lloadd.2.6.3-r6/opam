@@ -6,11 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del openldap-lloadd"]
 ]
 depends: [
-  "libevent"
-  "libldap"
-  "libsasl"
-  "musl"
-  ("yash-binsh" | "busybox-binsh" | "dash-binsh")
+  "-bin-sh"
+  "so-libc-musl-x86_64-so-1"
+  "so-libevent-2-1-so-7"
+  "so-liblber-so-2"
+  "so-libldap-so-2"
+  "so-libsasl2-so-3"
 ]
 extra-source "openldap-lloadd-2.6.3-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/openldap-lloadd-2.6.3-r6.apk"

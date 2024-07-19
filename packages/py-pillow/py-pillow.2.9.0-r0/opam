@@ -6,15 +6,17 @@ remove: [
   ["sh" "-c" "sudo apk del py-pillow"]
 ]
 depends: [
-  "freetype"
-  "lcms2"
-  "libjpeg-turbo"
-  "libwebp"
-  "musl"
-  "openjpeg"
   "python"
-  "tiff"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libfreetype-so-6"
+  "so-libjpeg-so-8"
+  "so-liblcms2-so-2"
+  "so-libopenjp2-so-7"
+  "so-libpython2-7-so-1-0"
+  "so-libtiff-so-5"
+  "so-libwebp-so-6"
+  "so-libwebpmux-so-2"
+  "so-libz-so-1"
 ]
 extra-source "py-pillow-2.9.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/py-pillow-2.9.0-r0.apk"

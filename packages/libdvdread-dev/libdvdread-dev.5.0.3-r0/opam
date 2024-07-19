@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libdvdread" {= "5.0.3-r0"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "libdvdread-dev-5.0.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/libdvdread-dev-5.0.3-r0.apk"

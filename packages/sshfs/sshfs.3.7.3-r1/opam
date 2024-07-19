@@ -7,10 +7,10 @@ remove: [
 ]
 depends: [
   "fuse3"
-  "fuse3-libs"
-  "glib"
-  "musl"
-  ("openssh-client-default" | "openssh-client-krb5")
+  "openssh-client"
+  "so-libc-musl-x86_64-so-1"
+  "so-libfuse3-so-3"
+  "so-libglib-2-0-so-0"
 ]
 extra-source "sshfs-3.7.3-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/sshfs-3.7.3-r1.apk"

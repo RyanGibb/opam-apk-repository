@@ -7,11 +7,11 @@ remove: [
 ]
 depends: [
   "busybox"
-  "clamav-lib"
-  "libressl2.4-libcrypto"
   "logrotate"
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libclamav-so-7"
+  "so-libcrypto-so-38"
+  "so-libz-so-1"
 ]
 extra-source "freshclam-0.100.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/freshclam-0.100.1-r0.apk"

@@ -11,8 +11,8 @@ depends: [
   "fortify-headers"
   "g++"
   "gcc"
+  "libc-dev"
   "make"
-  "musl-dev"
   "patch"
 ]
 extra-source "build-base-0.5-r3.apk" {

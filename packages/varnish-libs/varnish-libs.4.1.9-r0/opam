@@ -9,8 +9,8 @@ depends: [
   "gcc"
   "libc-dev"
   "libgcc"
-  "musl"
-  "pcre"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpcre-so-1"
 ]
 extra-source "varnish-libs-4.1.9-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/varnish-libs-4.1.9-r0.apk"

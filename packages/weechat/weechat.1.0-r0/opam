@@ -6,16 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del weechat"]
 ]
 depends: [
-  "aspell"
-  "curl"
-  "gnutls"
-  "libgcrypt"
-  "lua5.1-libs"
-  "musl"
-  "ncurses-widec-libs"
-  "perl"
-  "python"
-  "zlib"
+  "so-libaspell-so-15"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcurl-so-4"
+  "so-libgcrypt-so-20"
+  "so-libgnutls-so-28"
+  "so-liblua-so-5"
+  "so-libncursesw-so-5"
+  "so-libperl-so"
+  "so-libpython2-7-so-1-0"
+  "so-libz-so-1"
 ]
 extra-source "weechat-1.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/weechat-1.0-r0.apk"

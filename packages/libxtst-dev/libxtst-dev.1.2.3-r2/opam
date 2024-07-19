@@ -6,11 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del libxtst-dev"]
 ]
 depends: [
-  "libx11-dev"
-  "libxext-dev"
-  "libxi-dev"
   "libxtst" {= "1.2.3-r2"}
-  "pkgconf"
+  "pc-recordproto"
+  "pc-x11"
+  "pc-xext"
+  "pc-xextproto"
+  "pc-xi"
+  "pkgconfig"
   "xorgproto"
 ]
 extra-source "libxtst-dev-1.2.3-r2.apk" {

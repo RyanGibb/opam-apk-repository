@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del postgrey"]
 ]
 depends: [
-  "busybox"
+  "-bin-sh"
   "perl"
   "perl-db"
   "perl-io-multiplex"

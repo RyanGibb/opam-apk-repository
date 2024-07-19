@@ -6,14 +6,15 @@ remove: [
   ["sh" "-c" "sudo apk del upower"]
 ]
 depends: [
-  "dbus-glib"
-  "dbus-libs"
-  "glib"
-  "libgudev"
-  "libintl"
-  "libusb"
-  "musl"
-  "polkit"
+  "so-libc-musl-x86_64-so-1"
+  "so-libdbus-1-so-3"
+  "so-libdbus-glib-1-so-2"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libgudev-1-0-so-0"
+  "so-libintl-so-8"
+  "so-libpolkit-gobject-1-so-0"
+  "so-libusb-1-0-so-0"
 ]
 extra-source "upower-0.9.23-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/upower-0.9.23-r2.apk"

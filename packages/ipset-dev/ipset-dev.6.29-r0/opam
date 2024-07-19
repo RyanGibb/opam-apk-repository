@@ -8,6 +8,7 @@ remove: [
 depends: [
   "ipset" {= "6.29-r0"}
   "libmnl-dev"
+  "pc-libmnl" {>= "1"}
   "pkgconfig"
 ]
 extra-source "ipset-dev-6.29-r0.apk" {

@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "cppunit" {= "1.13.2-r1"}
+]

@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "busybox"
-  "musl"
-  "popt"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpopt-so-0"
 ]
 extra-source "distcc-3.1-r10.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/distcc-3.1-r10.apk"

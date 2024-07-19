@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del xsetroot"]
 ]
 depends: [
-  "libx11"
-  "libxcursor"
-  "libxmu"
-  "musl"
+  "so-libX11-so-6"
+  "so-libXcursor-so-1"
+  "so-libXmuu-so-1"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "xsetroot-1.1.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/xsetroot-1.1.1-r0.apk"

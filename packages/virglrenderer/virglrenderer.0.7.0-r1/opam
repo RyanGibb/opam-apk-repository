@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del virglrenderer"]
 ]
 depends: [
-  "libepoxy"
-  "libx11"
-  "mesa-gbm"
-  "musl"
+  "so-libX11-so-6"
+  "so-libc-musl-x86_64-so-1"
+  "so-libepoxy-so-0"
+  "so-libgbm-so-1"
 ]
 extra-source "virglrenderer-0.7.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/virglrenderer-0.7.0-r1.apk"

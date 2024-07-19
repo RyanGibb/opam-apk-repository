@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del php5-openssl"]
 ]
 depends: [
-  "libressl2.4-libcrypto"
-  "libressl2.4-libssl"
-  "musl"
   "php5"
   "php5-cli"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-38"
+  "so-libssl-so-39"
 ]
 extra-source "php5-openssl-5.6.38-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/php5-openssl-5.6.38-r0.apk"

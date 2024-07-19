@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del softhsm"]
 ]
 depends: [
-  "botan-libs"
-  "libgcc"
-  "libstdc++"
-  "musl"
+  "so-libbotan-2-so-11"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libsqlite3-so-0"
+  "so-libstdc++-so-6"
   "sqlite"
-  "sqlite-libs"
 ]
 extra-source "softhsm-2.5.0-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/softhsm-2.5.0-r4.apk"

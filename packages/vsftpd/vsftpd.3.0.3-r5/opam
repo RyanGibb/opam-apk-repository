@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del vsftpd"]
 ]
 depends: [
-  "busybox"
-  "libcap"
-  "libressl2.7-libcrypto"
-  "libressl2.7-libssl"
-  "linux-pam"
-  "musl"
+  "-bin-sh"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcap-so-2"
+  "so-libcrypto-so-43"
+  "so-libpam-so-0"
+  "so-libssl-so-45"
 ]
 extra-source "vsftpd-3.0.3-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/vsftpd-3.0.3-r5.apk"

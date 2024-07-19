@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del statserial"]
 ]
 depends: [
-  "libncursesw"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libncursesw-so-6"
 ]
 extra-source "statserial-1.1-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/statserial-1.1-r6.apk"

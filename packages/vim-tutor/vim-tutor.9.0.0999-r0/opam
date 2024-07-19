@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del vim-tutor"]
 ]
 depends: [
-  "gvim"
+  "vim"
 ]
 extra-source "vim-tutor-9.0.0999-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/vim-tutor-9.0.0999-r0.apk"

@@ -6,8 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del qt5-qtmultimedia-dev"]
 ]
 depends: [
+  "pc-Qt5Core"
+  "pc-Qt5Gui"
+  "pc-Qt5Network"
+  "pc-Qt5Widgets"
   "pkgconfig"
-  "qt5-qtbase-dev"
   "qt5-qtmultimedia" {= "5.6.0-r0"}
 ]
 extra-source "qt5-qtmultimedia-dev-5.6.0-r0.apk" {

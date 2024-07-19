@@ -11,19 +11,15 @@ depends: [
   "fontconfig-dev"
   "freetype-dev"
   "glib-dev"
-  "libgcc"
   "libice-dev"
   "libpng-dev"
   "libsm-dev"
-  "libstdc++"
   "libx11-dev"
   "libxext-dev"
   "libxrender-dev"
   "mesa-dev"
-  "musl"
   "openssl-dev"
   "pkgconfig"
-  "qt"
   "qt" {= "4.8.6-r2"}
   "qt-assistant" {= "4.8.6-r2"}
   "qt-config" {= "4.8.6-r2"}
@@ -35,12 +31,25 @@ depends: [
   "qt-private-dev" {= "4.8.6-r2"}
   "qt-sqlite" {= "4.8.6-r2"}
   "qt-tds" {= "4.8.6-r2"}
-  "qt-webkit"
   "qt-webkit" {= "4.8.6-r2"}
-  "qt-x11"
   "qt-x11" {= "4.8.6-r2"}
+  "so-libQt3Support-so-4"
+  "so-libQtCore-so-4"
+  "so-libQtDBus-so-4"
+  "so-libQtDeclarative-so-4"
+  "so-libQtDesigner-so-4"
+  "so-libQtDesignerComponents-so-4"
+  "so-libQtGui-so-4"
+  "so-libQtHelp-so-4"
+  "so-libQtNetwork-so-4"
+  "so-libQtWebKit-so-4"
+  "so-libQtXml-so-4"
+  "so-libQtXmlPatterns-so-4"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libstdc++-so-6"
+  "so-libz-so-1"
   "sqlite-dev"
-  "zlib"
   "zlib-dev"
 ]
 extra-source "qt-dev-4.8.6-r2.apk" {

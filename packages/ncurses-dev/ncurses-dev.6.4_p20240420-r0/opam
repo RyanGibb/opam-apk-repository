@@ -11,7 +11,7 @@ depends: [
   "libncurses++" {= "6.4_p20240420-r0"}
   "libncursesw" {= "6.4_p20240420-r0"}
   "libpanelw" {= "6.4_p20240420-r0"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "ncurses-dev-6.4_p20240420-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/ncurses-dev-6.4_p20240420-r0.apk"

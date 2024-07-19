@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del bubblewrap"]
 ]
 depends: [
-  "libcap2"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcap-so-2"
 ]
 extra-source "bubblewrap-0.7.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/bubblewrap-0.7.0-r0.apk"

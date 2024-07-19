@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del execline"]
 ]
 depends: [
-  "musl"
-  "skalibs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libskarnet-so-2-11"
 ]
 extra-source "execline-2.8.3.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/execline-2.8.3.0-r1.apk"

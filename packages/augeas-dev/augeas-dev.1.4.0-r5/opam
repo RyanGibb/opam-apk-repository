@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "augeas-libs" {= "1.4.0-r5"}
-  "libxml2-dev"
+  "pc-libxml-2-0"
   "pkgconfig"
 ]
 extra-source "augeas-dev-1.4.0-r5.apk" {

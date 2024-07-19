@@ -6,16 +6,18 @@ remove: [
   ["sh" "-c" "sudo apk del cairo"]
 ]
 depends: [
-  "fontconfig"
-  "freetype"
-  "libpng"
-  "libx11"
-  "libxcb"
-  "libxext"
-  "libxrender"
-  "musl"
-  "pixman"
-  "zlib"
+  "so-libX11-so-6"
+  "so-libXext-so-6"
+  "so-libXrender-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libfontconfig-so-1"
+  "so-libfreetype-so-6"
+  "so-libpixman-1-so-0"
+  "so-libpng16-so-16"
+  "so-libxcb-render-so-0"
+  "so-libxcb-shm-so-0"
+  "so-libxcb-so-1"
+  "so-libz-so-1"
 ]
 extra-source "cairo-1.17.6-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/cairo-1.17.6-r3.apk"

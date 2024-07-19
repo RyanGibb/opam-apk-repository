@@ -11,6 +11,10 @@ depends: [
   "libxext-dev"
   "libxfixes-dev"
   "libxi" {= "1.7.5-r1"}
+  "pc-inputproto"
+  "pc-x11"
+  "pc-xext"
+  "pc-xfixes"
   "pkgconfig"
 ]
 extra-source "libxi-dev-1.7.5-r1.apk" {

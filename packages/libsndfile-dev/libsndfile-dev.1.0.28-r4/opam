@@ -10,7 +10,7 @@ depends: [
   "libogg-dev"
   "libsndfile" {= "1.0.28-r4"}
   "libvorbis-dev"
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "libsndfile-dev-1.0.28-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/libsndfile-dev-1.0.28-r4.apk"

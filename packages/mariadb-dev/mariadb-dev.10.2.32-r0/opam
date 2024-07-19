@@ -8,7 +8,7 @@ remove: [
 depends: [
   "libressl-dev"
   "mariadb-connector-c-dev"
-  "pkgconf"
+  "pkgconfig"
   "zlib-dev"
 ]
 extra-source "mariadb-dev-10.2.32-r0.apk" {

@@ -9,9 +9,9 @@ depends: [
   "bash"
   "docbook-xsl"
   "libxslt"
-  "musl"
   "perl-test-pod"
   "perl-yaml-syck"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "xmlto-0.0.28-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/xmlto-0.0.28-r0.apk"

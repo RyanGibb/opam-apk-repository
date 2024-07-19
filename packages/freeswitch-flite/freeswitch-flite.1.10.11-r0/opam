@@ -6,9 +6,14 @@ remove: [
   ["sh" "-c" "sudo apk del freeswitch-flite"]
 ]
 depends: [
-  "flite"
-  "freeswitch"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libflite-so-1"
+  "so-libflite_cmu_us_awb-so-1"
+  "so-libflite_cmu_us_kal-so-1"
+  "so-libflite_cmu_us_kal16-so-1"
+  "so-libflite_cmu_us_rms-so-1"
+  "so-libflite_cmu_us_slt-so-1"
+  "so-libfreeswitch-so-1"
 ]
 extra-source "freeswitch-flite-1.10.11-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/freeswitch-flite-1.10.11-r0.apk"

@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del aria2-daemon"]
 ]
 depends: [
+  "-bin-sh"
   "aria2" {= "1.35.0-r0"}
-  "busybox"
   "openrc"
 ]
 extra-source "aria2-daemon-1.35.0-r0.apk" {

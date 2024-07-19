@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del libxi-dev"]
 ]
 depends: [
-  "inputproto"
-  "libx11-dev"
-  "libxext-dev"
-  "libxfixes-dev"
   "libxi" {= "1.7.9-r1"}
-  "pkgconf"
+  "pc-inputproto"
+  "pc-x11"
+  "pc-xext"
+  "pc-xfixes"
+  "pkgconfig"
 ]
 extra-source "libxi-dev-1.7.9-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/libxi-dev-1.7.9-r1.apk"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libcmph" {= "2.0.2-r5"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "cmph-dev-2.0.2-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/cmph-dev-2.0.2-r5.apk"

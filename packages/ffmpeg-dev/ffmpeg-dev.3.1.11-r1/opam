@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "ffmpeg-libs" {= "3.1.11-r1"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "ffmpeg-dev-3.1.11-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/ffmpeg-dev-3.1.11-r1.apk"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del mesa-libwayland-egl"]
 ]
 depends: [
-  "musl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "mesa-libwayland-egl-10.3.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/mesa-libwayland-egl-10.3.5-r0.apk"

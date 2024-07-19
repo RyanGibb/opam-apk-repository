@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del lxc-test-utils"]
 ]
 depends: [
-  "libcap2"
-  "libgcc"
-  "libseccomp"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcap-so-2"
+  "so-libgcc_s-so-1"
+  "so-libseccomp-so-2"
 ]
 extra-source "lxc-test-utils-5.0.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/lxc-test-utils-5.0.3-r0.apk"

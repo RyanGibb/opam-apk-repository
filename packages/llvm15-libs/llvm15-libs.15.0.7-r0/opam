@@ -6,13 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del llvm15-libs"]
 ]
 depends: [
-  "libffi"
-  "libgcc"
-  "libstdc++"
-  "libxml2"
-  "musl"
-  "zlib"
-  "zstd-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libffi-so-8"
+  "so-libgcc_s-so-1"
+  "so-libstdc++-so-6"
+  "so-libxml2-so-2"
+  "so-libz-so-1"
+  "so-libzstd-so-1"
 ]
 extra-source "llvm15-libs-15.0.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/llvm15-libs-15.0.7-r0.apk"

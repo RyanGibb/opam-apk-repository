@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del cgit"]
 ]
 depends: [
-  "libcrypto1.0"
-  "lua5.2-libs"
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-0-0"
+  "so-liblua-5-2-so-0"
+  "so-libz-so-1"
 ]
 extra-source "cgit-0.10.2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/cgit-0.10.2-r2.apk"

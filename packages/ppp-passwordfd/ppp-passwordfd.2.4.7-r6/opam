@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del ppp-passwordfd"]
 ]
 depends: [
-  "musl"
   "ppp-daemon"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "ppp-passwordfd-2.4.7-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/ppp-passwordfd-2.4.7-r6.apk"

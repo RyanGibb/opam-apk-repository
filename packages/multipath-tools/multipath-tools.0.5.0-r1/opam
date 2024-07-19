@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del multipath-tools"]
 ]
 depends: [
-  "device-mapper"
-  "libaio"
-  "libgcc"
-  "libudev"
-  "musl"
-  "readline"
+  "so-libaio-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libdevmapper-so-1-02"
+  "so-libgcc_s-so-1"
+  "so-libreadline-so-6"
+  "so-libudev-so-0"
   "udev"
 ]
 extra-source "multipath-tools-0.5.0-r1.apk" {

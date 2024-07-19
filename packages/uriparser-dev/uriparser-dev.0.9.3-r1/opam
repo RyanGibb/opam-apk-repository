@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "liburiparser" {= "0.9.3-r1"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "uriparser-dev-0.9.3-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/uriparser-dev-0.9.3-r1.apk"

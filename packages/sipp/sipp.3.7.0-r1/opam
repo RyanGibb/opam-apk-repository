@@ -6,14 +6,14 @@ remove: [
   ["sh" "-c" "sudo apk del sipp"]
 ]
 depends: [
-  "libcrypto3"
-  "libgcc"
-  "liblksctp"
-  "libncursesw"
-  "libpcap"
-  "libssl3"
-  "libstdc++"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-3"
+  "so-libgcc_s-so-1"
+  "so-libncursesw-so-6"
+  "so-libpcap-so-1"
+  "so-libsctp-so-1"
+  "so-libssl-so-3"
+  "so-libstdc++-so-6"
 ]
 extra-source "sipp-3.7.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/sipp-3.7.0-r1.apk"

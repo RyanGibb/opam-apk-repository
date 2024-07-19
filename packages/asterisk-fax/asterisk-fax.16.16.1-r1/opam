@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del asterisk-fax"]
 ]
 depends: [
-  "musl"
-  "spandsp"
+  "so-libc-musl-x86_64-so-1"
+  "so-libspandsp-so-2"
 ]
 extra-source "asterisk-fax-16.16.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/asterisk-fax-16.16.1-r1.apk"

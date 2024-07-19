@@ -6,9 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del py3-lxml"]
 ]
 depends: [
-  "libxml2"
-  "libxslt"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libexslt-so-0"
+  "so-libxml2-so-2"
+  "so-libxslt-so-1"
 ]
 extra-source "py3-lxml-4.8.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/py3-lxml-4.8.0-r0.apk"

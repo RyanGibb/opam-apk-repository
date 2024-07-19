@@ -9,7 +9,10 @@ depends: [
   "libx11-dev"
   "libxext-dev"
   "libxxf86misc" {= "1.0.3-r0"}
-  "pkgconf"
+  "pc-x11"
+  "pc-xext"
+  "pc-xf86miscproto"
+  "pkgconfig"
   "xf86miscproto"
 ]
 extra-source "libxxf86misc-dev-1.0.3-r0.apk" {

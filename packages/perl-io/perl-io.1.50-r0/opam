@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del perl-io"]
 ]
 depends: [
-  "musl"
   "perl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "perl-io-1.50-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-io-1.50-r0.apk"

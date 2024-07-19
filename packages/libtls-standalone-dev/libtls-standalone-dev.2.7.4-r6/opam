@@ -8,7 +8,9 @@ remove: [
 depends: [
   "libtls-standalone" {= "2.7.4-r6"}
   "openssl-dev"
-  "pkgconf"
+  "pc-libcrypto"
+  "pc-libssl"
+  "pkgconfig"
 ]
 extra-source "libtls-standalone-dev-2.7.4-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libtls-standalone-dev-2.7.4-r6.apk"

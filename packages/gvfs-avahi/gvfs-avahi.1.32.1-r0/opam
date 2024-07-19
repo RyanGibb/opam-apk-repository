@@ -6,12 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del gvfs-avahi"]
 ]
 depends: [
-  "avahi-glib"
-  "avahi-libs"
-  "glib"
-  "gvfs"
-  "libintl"
-  "musl"
+  "so-libavahi-client-so-3"
+  "so-libavahi-common-so-3"
+  "so-libavahi-glib-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgio-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libgvfscommon-so"
+  "so-libgvfsdaemon-so"
+  "so-libintl-so-8"
 ]
 extra-source "gvfs-avahi-1.32.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/gvfs-avahi-1.32.1-r0.apk"

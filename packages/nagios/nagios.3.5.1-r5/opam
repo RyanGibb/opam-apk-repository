@@ -6,10 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del nagios"]
 ]
 depends: [
-  "busybox"
-  "libgd"
-  "musl"
+  "-bin-sh"
   "perl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgd-so-3"
+  "so-libperl-so"
 ]
 extra-source "nagios-3.5.1-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/nagios-3.5.1-r5.apk"

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del iputils"]
 ]
 depends: [
-  "libcap"
-  "libressl2.5-libcrypto"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcap-so-2"
+  "so-libcrypto-so-41"
 ]
 extra-source "iputils-20121221-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/iputils-20121221-r6.apk"

@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del c-ares-utils"]
 ]
 depends: [
-  "c-ares"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcares-so-2"
 ]
 extra-source "c-ares-utils-1.19.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/c-ares-utils-1.19.1-r1.apk"

@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del php-gmp"]
 ]
 depends: [
-  "gmp"
-  "musl"
   "php"
   "php-cli"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgmp-so-10"
 ]
 extra-source "php-gmp-5.6.27-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/php-gmp-5.6.27-r0.apk"

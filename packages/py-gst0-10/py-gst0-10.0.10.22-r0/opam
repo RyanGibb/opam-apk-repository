@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py-gst0.10-0.10.22-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py-gst0.10"]
+]
+depends: [
+  "pc-gstreamer-0-10"
+  "pc-pygobject-2-0"
+  "pkgconfig"
+  "py-gobject"
+  "py-gtk"
+  "so-libc-musl-x86_64-so-1"
+  "so-libglib-2-0-so-0"
+  "so-libgmodule-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libgstaudio-0-10-so-0"
+  "so-libgstbase-0-10-so-0"
+  "so-libgstcontroller-0-10-so-0"
+  "so-libgstdataprotocol-0-10-so-0"
+  "so-libgstinterfaces-0-10-so-0"
+  "so-libgstnet-0-10-so-0"
+  "so-libgstpbutils-0-10-so-0"
+  "so-libgstreamer-0-10-so-0"
+  "so-libgsttag-0-10-so-0"
+  "so-libgstvideo-0-10-so-0"
+]
+extra-source "py-gst0.10-0.10.22-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/py-gst0.10-0.10.22-r0.apk"
+}

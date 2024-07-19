@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del subunit-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
   "subunit-libs" {= "1.4.2-r4"}
 ]
 extra-source "subunit-dev-1.4.2-r4.apk" {

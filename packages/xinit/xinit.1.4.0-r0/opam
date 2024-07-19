@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del xinit"]
 ]
 depends: [
-  "libx11"
   "mcookie"
-  "musl"
+  "so-libX11-so-6"
+  "so-libc-musl-x86_64-so-1"
   "xauth"
   "xmodmap"
   "xrdb"

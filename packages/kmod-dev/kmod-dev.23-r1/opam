@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "kmod" {= "23-r1"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "kmod-dev-23-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/kmod-dev-23-r1.apk"

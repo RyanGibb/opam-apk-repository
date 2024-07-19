@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del dzen"]
 ]
 depends: [
-  "libx11"
-  "libxft"
-  "libxinerama"
-  "libxpm"
-  "musl"
+  "so-libX11-so-6"
+  "so-libXft-so-2"
+  "so-libXinerama-so-1"
+  "so-libXpm-so-4"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "dzen-0.9.5-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/dzen-0.9.5-r3.apk"

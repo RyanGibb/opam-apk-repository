@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del ssl_client"]
 ]
 depends: [
-  "libressl2.7-libtls"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libtls-so-17"
 ]
 extra-source "ssl_client-1.28.4-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/ssl_client-1.28.4-r3.apk"

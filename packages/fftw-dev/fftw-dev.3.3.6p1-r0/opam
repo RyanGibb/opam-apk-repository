@@ -9,7 +9,7 @@ depends: [
   "fftw-double-libs" {= "3.3.6p1-r0"}
   "fftw-long-double-libs" {= "3.3.6p1-r0"}
   "fftw-single-libs" {= "3.3.6p1-r0"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "fftw-dev-3.3.6p1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/fftw-dev-3.3.6p1-r0.apk"

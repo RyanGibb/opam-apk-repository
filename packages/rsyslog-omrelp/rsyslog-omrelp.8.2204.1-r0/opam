@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "rsyslog-relp" {= "8.2204.1-r0"}
+]

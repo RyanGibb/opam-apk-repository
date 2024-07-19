@@ -9,7 +9,7 @@ depends: [
   "flex-dev"
   "libzdb" {= "3.1-r2"}
   "mariadb-connector-c-dev"
-  "pkgconf"
+  "pkgconfig"
   "postgresql-dev"
   "sqlite-dev"
 ]

@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del wv-dev"]
 ]
 depends: [
-  "libgsf-dev"
-  "pkgconf"
+  "pc-libgsf-1" {>= "1.13.0"}
+  "pkgconfig"
   "wv" {= "1.2.9-r3"}
 ]
 extra-source "wv-dev-1.2.9-r3.apk" {

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del py3-bluez"]
 ]
 depends: [
-  "bluez-libs"
-  "musl"
-  "python3"
+  "so-libbluetooth-so-3"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpython3-6m-so-1-0"
 ]
 extra-source "py3-bluez-0.22-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/py3-bluez-0.22-r1.apk"

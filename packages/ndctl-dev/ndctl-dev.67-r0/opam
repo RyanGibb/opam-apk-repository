@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "ndctl-libs" {= "67-r0"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "ndctl-dev-67-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/ndctl-dev-67-r0.apk"

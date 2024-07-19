@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del sofia-sip-dev"]
 ]
 depends: [
-  "glib-dev"
-  "pkgconf"
+  "pc-glib-2-0"
+  "pkgconfig"
   "sofia-sip" {= "1.13.17-r0"}
 ]
 extra-source "sofia-sip-dev-1.13.17-r0.apk" {

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del pcre"]
 ]
 depends: [
-  "musl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "pcre-8.42-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/pcre-8.42-r2.apk"

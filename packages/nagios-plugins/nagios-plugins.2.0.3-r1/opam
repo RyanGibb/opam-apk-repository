@@ -8,15 +8,15 @@ remove: [
 depends: [
   "bind-tools"
   "fping"
-  "libcrypto1.0"
-  "libldap"
-  "libssl1.0"
-  "mariadb-client-libs"
-  "musl"
   "net-snmp-tools"
   "nrpe-plugin"
   "perl-net-snmp"
-  ("pgcluster-libpq" | "libpq")
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-0-0"
+  "so-libldap-2-4-so-2"
+  "so-libmysqlclient-so-18"
+  "so-libpq-so-5"
+  "so-libssl-so-1-0-0"
 ]
 extra-source "nagios-plugins-2.0.3-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/nagios-plugins-2.0.3-r1.apk"

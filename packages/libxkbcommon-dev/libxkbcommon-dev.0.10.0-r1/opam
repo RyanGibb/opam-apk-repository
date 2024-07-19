@@ -6,10 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del libxkbcommon-dev"]
 ]
 depends: [
-  "libxcb-dev"
   "libxkbcommon" {= "0.10.0-r1"}
   "libxkbcommon-x11" {= "0.10.0-r1"}
-  "pkgconf"
+  "pc-xcb" {>= "1.10"}
+  "pc-xcb-xkb" {>= "1.10"}
+  "pkgconfig"
 ]
 extra-source "libxkbcommon-dev-0.10.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/libxkbcommon-dev-0.10.0-r1.apk"

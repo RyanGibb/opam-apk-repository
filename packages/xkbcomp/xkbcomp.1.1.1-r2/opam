@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del xkbcomp"]
 ]
 depends: [
-  "libx11"
-  "libxkbfile"
-  "musl"
+  "so-libX11-so-6"
+  "so-libc-musl-x86_64-so-1"
+  "so-libxkbfile-so-1"
 ]
 extra-source "xkbcomp-1.1.1-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/xkbcomp-1.1.1-r2.apk"

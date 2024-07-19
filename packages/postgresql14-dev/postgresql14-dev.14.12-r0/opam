@@ -9,11 +9,11 @@ depends: [
   "clang14"
   "icu-dev"
   "libecpg-dev"
-  "libpq"
   "libpq-dev"
   "llvm14"
-  "musl"
   "openssl-dev" {> "3"}
+  "so-libc-musl-x86_64-so-1"
+  "so-libpq-so-5"
 ]
 extra-source "postgresql14-dev-14.12-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/postgresql14-dev-14.12-r0.apk"

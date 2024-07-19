@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del freshclam"]
 ]
 depends: [
-  "busybox"
-  "clamav-libs"
-  "libcrypto1.1"
-  "musl"
-  "zlib"
+  "-bin-sh"
+  "so-libc-musl-x86_64-so-1"
+  "so-libclamav-so-9"
+  "so-libcrypto-so-1-1"
+  "so-libz-so-1"
 ]
 extra-source "freshclam-0.101.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/freshclam-0.101.5-r0.apk"

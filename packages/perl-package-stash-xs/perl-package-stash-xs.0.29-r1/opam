@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del perl-package-stash-xs"]
 ]
 depends: [
-  "musl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "perl-package-stash-xs-0.29-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/perl-package-stash-xs-0.29-r1.apk"

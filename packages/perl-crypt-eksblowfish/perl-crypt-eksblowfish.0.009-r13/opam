@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del perl-crypt-eksblowfish"]
 ]
 depends: [
-  "musl"
   "perl"
   "perl-class-mix"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "perl-crypt-eksblowfish-0.009-r13.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-crypt-eksblowfish-0.009-r13.apk"

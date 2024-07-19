@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del lua-sql-mysql"]
 ]
 depends: [
-  "lua5.1-sql-mysql"
-  "lua5.2-sql-mysql"
+  "lua5-1-sql-mysql"
+  "lua5-2-sql-mysql"
 ]
 extra-source "lua-sql-mysql-2.3.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/lua-sql-mysql-2.3.0-r0.apk"

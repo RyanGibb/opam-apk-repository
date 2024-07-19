@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del irssi-dev"]
 ]
 depends: [
-  "glib-dev"
-  "pkgconf"
+  "pc-glib-2-0"
+  "pkgconfig"
 ]
 extra-source "irssi-dev-1.4.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/irssi-dev-1.4.4-r0.apk"

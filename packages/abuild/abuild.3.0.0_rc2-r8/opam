@@ -13,15 +13,15 @@ depends: [
   "fakeroot"
   "libc-utils"
   "libressl"
-  "libressl2.5-libcrypto"
   "lzip"
-  "musl"
   "patch"
   "pax-utils"
   "pkgconf"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-41"
+  "so-libz-so-1"
   "sudo"
   "tar"
-  "zlib"
 ]
 extra-source "abuild-3.0.0_rc2-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/abuild-3.0.0_rc2-r8.apk"

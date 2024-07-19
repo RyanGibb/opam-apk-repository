@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del cfdisk"]
 ]
 depends: [
-  "libfdisk"
-  "libmount"
-  "libncursesw"
-  "libsmartcols"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libfdisk-so-1"
+  "so-libmount-so-1"
+  "so-libncursesw-so-6"
+  "so-libsmartcols-so-1"
 ]
 extra-source "cfdisk-2.38.1-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/cfdisk-2.38.1-r8.apk"

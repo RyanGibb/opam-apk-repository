@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del dmenu"]
 ]
 depends: [
-  "fontconfig"
-  "libx11"
-  "libxft"
-  "libxinerama"
-  "musl"
+  "so-libX11-so-6"
+  "so-libXft-so-2"
+  "so-libXinerama-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libfontconfig-so-1"
 ]
 extra-source "dmenu-4.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/dmenu-4.7-r0.apk"

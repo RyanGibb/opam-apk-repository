@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del atkmm-dev"]
 ]
 depends: [
-  "atk-dev"
   "atkmm" {= "2.24.2-r1"}
-  "glibmm-dev"
-  "pkgconf"
+  "pc-atk" {>= "1.18"}
+  "pc-glibmm-2-4" {>= "2.46.2"}
+  "pkgconfig"
 ]
 extra-source "atkmm-dev-2.24.2-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/atkmm-dev-2.24.2-r1.apk"

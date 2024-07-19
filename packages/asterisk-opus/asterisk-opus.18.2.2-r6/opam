@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del asterisk-opus"]
 ]
 depends: [
-  "musl"
-  "opus"
+  "so-libc-musl-x86_64-so-1"
+  "so-libopus-so-0"
 ]
 extra-source "asterisk-opus-18.2.2-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/asterisk-opus-18.2.2-r6.apk"

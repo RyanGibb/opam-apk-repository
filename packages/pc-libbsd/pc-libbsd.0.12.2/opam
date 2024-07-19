@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "libbsd-dev" {= "0.12.2-r0"}
+]

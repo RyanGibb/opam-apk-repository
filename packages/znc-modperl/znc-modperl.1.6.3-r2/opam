@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del znc-modperl"]
 ]
 depends: [
-  "libgcc"
-  "libstdc++"
-  "musl"
-  "perl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libperl-so"
+  "so-libstdc++-so-6"
   "znc"
 ]
 extra-source "znc-modperl-1.6.3-r2.apk" {

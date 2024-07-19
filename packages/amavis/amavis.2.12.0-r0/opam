@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del amavis"]
 ]
 depends: [
-  "busybox"
+  "-bin-sh"
   "file"
   "perl"
   "perl-archive-zip"

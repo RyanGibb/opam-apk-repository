@@ -6,10 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del fftw"]
 ]
 depends: [
-  "fftw-double-libs"
-  "fftw-long-double-libs"
-  "fftw-single-libs"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libfftw3-so-3"
+  "so-libfftw3_threads-so-3"
+  "so-libfftw3f-so-3"
+  "so-libfftw3f_threads-so-3"
+  "so-libfftw3l-so-3"
+  "so-libfftw3l_threads-so-3"
 ]
 extra-source "fftw-3.3.10-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/fftw-3.3.10-r2.apk"

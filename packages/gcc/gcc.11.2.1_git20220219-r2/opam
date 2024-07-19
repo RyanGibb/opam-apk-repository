@@ -7,16 +7,16 @@ remove: [
 ]
 depends: [
   "binutils"
-  "gmp"
-  "isl22"
   "libatomic" {= "11.2.1_git20220219-r2"}
-  "libgcc"
   "libgomp" {= "11.2.1_git20220219-r2"}
-  "libstdc++"
-  "mpc1"
-  "mpfr4"
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libgmp-so-10"
+  "so-libisl-so-22"
+  "so-libmpc-so-3"
+  "so-libmpfr-so-6"
+  "so-libstdc++-so-6"
+  "so-libz-so-1"
 ]
 extra-source "gcc-11.2.1_git20220219-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/gcc-11.2.1_git20220219-r2.apk"

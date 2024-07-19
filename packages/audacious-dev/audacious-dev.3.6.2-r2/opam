@@ -8,7 +8,7 @@ remove: [
 depends: [
   "audacious" {= "3.6.2-r2"}
   "dbus-glib-dev"
-  "gtk+2.0-dev"
+  "gtk+2-0-dev"
   "pkgconfig"
 ]
 extra-source "audacious-dev-3.6.2-r2.apk" {

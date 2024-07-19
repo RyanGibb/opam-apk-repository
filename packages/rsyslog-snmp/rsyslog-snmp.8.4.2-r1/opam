@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del rsyslog-snmp"]
 ]
 depends: [
-  "json-c"
-  "libestr"
-  "musl"
-  "net-snmp-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libestr-so-0"
+  "so-libjson-c-so-2"
+  "so-libnetsnmp-so-30"
 ]
 extra-source "rsyslog-snmp-8.4.2-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/rsyslog-snmp-8.4.2-r1.apk"

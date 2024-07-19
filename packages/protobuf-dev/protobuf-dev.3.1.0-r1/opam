@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del protobuf-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
   "protobuf" {= "3.1.0-r1"}
   "zlib-dev"
 ]

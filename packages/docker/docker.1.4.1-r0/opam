@@ -9,8 +9,8 @@ depends: [
   "busybox"
   "git"
   "iptables"
-  "musl"
-  "sqlite-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libsqlite3-so-0"
   "xz"
 ]
 extra-source "docker-1.4.1-r0.apk" {

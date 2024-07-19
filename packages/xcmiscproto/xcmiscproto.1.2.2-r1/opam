@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del xcmiscproto"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "xcmiscproto-1.2.2-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/xcmiscproto-1.2.2-r1.apk"

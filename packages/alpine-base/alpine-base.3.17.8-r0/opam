@@ -13,9 +13,9 @@ depends: [
   "busybox"
   "busybox-openrc"
   "busybox-suid"
+  "dev-openrc"
   "libc-utils"
   "openrc"
-  ("mdevd-openrc" | "busybox-mdev-openrc" | "udev-init-scripts-openrc")
 ]
 extra-source "alpine-base-3.17.8-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/alpine-base-3.17.8-r0.apk"

@@ -6,10 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del qtkeychain"]
 ]
 depends: [
-  "libgcc"
-  "libstdc++"
-  "musl"
-  "qt"
+  "so-libQtCore-so-4"
+  "so-libQtDBus-so-4"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libstdc++-so-6"
 ]
 extra-source "qtkeychain-0.5.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/qtkeychain-0.5.0-r2.apk"

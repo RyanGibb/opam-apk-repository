@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del uwsgi-stats_pusher_file"]
 ]
 depends: [
-  "musl"
+  "so-libc-musl-x86_64-so-1"
   "uwsgi"
 ]
 extra-source "uwsgi-stats_pusher_file-2.0.19.1-r2.apk" {

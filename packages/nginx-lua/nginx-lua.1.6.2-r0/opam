@@ -7,12 +7,12 @@ remove: [
 ]
 depends: [
   "busybox"
-  "libcrypto1.0"
-  "libssl1.0"
-  "luajit"
-  "musl"
-  "pcre"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-0-0"
+  "so-libluajit-5-1-so-2"
+  "so-libpcre-so-1"
+  "so-libssl-so-1-0-0"
+  "so-libz-so-1"
 ]
 conflicts: [
   "nginx"

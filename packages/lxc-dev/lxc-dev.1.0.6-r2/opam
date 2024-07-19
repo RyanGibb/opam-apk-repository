@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libcap-dev"
-  "lua5.2-lxc" {= "1.0.6-r2"}
+  "lua5-2-lxc" {= "1.0.6-r2"}
   "lxc" {= "1.0.6-r2"}
   "lxc-doc" {= "1.0.6-r2"}
   "lxc-libs" {= "1.0.6-r2"}

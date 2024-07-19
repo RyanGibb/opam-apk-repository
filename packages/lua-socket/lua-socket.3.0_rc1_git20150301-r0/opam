@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del lua-socket"]
 ]
 depends: [
-  "lua5.1-socket"
+  "lua5-1-socket"
 ]
 extra-source "lua-socket-3.0_rc1_git20150301-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/lua-socket-3.0_rc1_git20150301-r0.apk"

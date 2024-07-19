@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del sofia-sip"]
 ]
 depends: [
-  "glib"
-  "libcrypto1.1"
-  "libssl1.1"
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-1"
+  "so-libglib-2-0-so-0"
+  "so-libssl-so-1-1"
+  "so-libz-so-1"
 ]
 extra-source "sofia-sip-1.13.14-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/sofia-sip-1.13.14-r2.apk"

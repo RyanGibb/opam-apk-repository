@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "parted" {= "3.2-r8"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "parted-dev-3.2-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/parted-dev-3.2-r8.apk"

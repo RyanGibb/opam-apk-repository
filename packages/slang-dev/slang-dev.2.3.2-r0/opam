@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del slang-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
   "slang" {= "2.3.2-r0"}
 ]
 extra-source "slang-dev-2.3.2-r0.apk" {

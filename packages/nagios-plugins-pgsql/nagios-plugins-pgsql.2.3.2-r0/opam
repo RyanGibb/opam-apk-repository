@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del nagios-plugins-pgsql"]
 ]
 depends: [
-  "libcrypto1.1"
-  "libpq"
-  "musl"
   "nagios-plugins"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-1"
+  "so-libpq-so-5"
 ]
 extra-source "nagios-plugins-pgsql-2.3.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/nagios-plugins-pgsql-2.3.2-r0.apk"

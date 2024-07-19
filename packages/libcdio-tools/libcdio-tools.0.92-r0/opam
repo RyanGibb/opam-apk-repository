@@ -6,10 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del libcdio-tools"]
 ]
 depends: [
-  "libcddb"
-  "libcdio"
-  "musl"
-  "ncurses-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcddb-so-2"
+  "so-libcdio-so-15"
+  "so-libiso9660-so-9"
+  "so-libncurses-so-5"
+  "so-libudf-so-0"
 ]
 extra-source "libcdio-tools-0.92-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/libcdio-tools-0.92-r0.apk"

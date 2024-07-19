@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del v4l-utils-libs"]
 ]
 depends: [
-  "libintl"
-  "libjpeg-turbo"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libintl-so-8"
+  "so-libjpeg-so-8"
 ]
 extra-source "v4l-utils-libs-1.8.1-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/v4l-utils-libs-1.8.1-r3.apk"

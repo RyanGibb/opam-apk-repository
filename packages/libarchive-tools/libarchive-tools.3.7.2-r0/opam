@@ -6,15 +6,15 @@ remove: [
   ["sh" "-c" "sudo apk del libarchive-tools"]
 ]
 depends: [
-  "expat"
-  "libacl"
-  "libbz2"
-  "libcrypto1.1"
-  "lz4-libs"
-  "musl"
-  "xz-libs"
-  "zlib"
-  "zstd-libs"
+  "so-libacl-so-1"
+  "so-libbz2-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-1"
+  "so-libexpat-so-1"
+  "so-liblz4-so-1"
+  "so-liblzma-so-5"
+  "so-libz-so-1"
+  "so-libzstd-so-1"
 ]
 extra-source "libarchive-tools-3.7.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libarchive-tools-3.7.2-r0.apk"

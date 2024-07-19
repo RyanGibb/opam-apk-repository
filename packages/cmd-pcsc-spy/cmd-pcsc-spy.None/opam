@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "pcsc-lite" {= "1.8.24-r1"}
+]

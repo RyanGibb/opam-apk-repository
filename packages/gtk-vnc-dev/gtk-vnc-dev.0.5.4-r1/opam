@@ -8,7 +8,7 @@ remove: [
 depends: [
   "glib-dev"
   "gnutls-dev"
-  "gtk+3.0-dev"
+  "gtk+3-0-dev"
   "gtk-vnc" {= "0.5.4-r1"}
   "gtk-vnc-doc" {= "0.5.4-r1"}
   "gtk-vnc-lang" {= "0.5.4-r1"}

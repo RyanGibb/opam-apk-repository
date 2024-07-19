@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del gettext-envsubst"]
 ]
 depends: [
-  "libintl"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libintl-so-8"
 ]
 extra-source "gettext-envsubst-0.21.1-r7.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/gettext-envsubst-0.21.1-r7.apk"

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del lm-sensors-sensord"]
 ]
 depends: [
-  "librrd"
-  "lm-sensors-libs"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-librrd-so-8"
+  "so-libsensors-so-5"
   "sysfsutils"
 ]
 extra-source "lm-sensors-sensord-3.6.0-r5.apk" {

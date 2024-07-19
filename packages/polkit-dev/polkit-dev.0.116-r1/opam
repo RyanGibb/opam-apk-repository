@@ -7,8 +7,9 @@ remove: [
 ]
 depends: [
   "dbus-glib-dev"
-  "glib-dev"
-  "pkgconf"
+  "pc-gio-2-0" {>= "2.18"}
+  "pc-glib-2-0" {>= "2.18"}
+  "pkgconfig"
   "polkit" {= "0.116-r1"}
 ]
 extra-source "polkit-dev-0.116-r1.apk" {

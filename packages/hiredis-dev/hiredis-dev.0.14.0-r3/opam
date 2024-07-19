@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "hiredis" {= "0.14.0-r3"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "hiredis-dev-0.14.0-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/hiredis-dev-0.14.0-r3.apk"

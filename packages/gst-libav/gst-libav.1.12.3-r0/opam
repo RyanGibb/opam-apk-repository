@@ -6,11 +6,18 @@ remove: [
   ["sh" "-c" "sudo apk del gst-libav"]
 ]
 depends: [
-  "ffmpeg-libs"
-  "glib"
-  "gst-plugins-base"
-  "gstreamer"
-  "musl"
+  "so-libavcodec-so-57"
+  "so-libavfilter-so-6"
+  "so-libavformat-so-57"
+  "so-libavutil-so-55"
+  "so-libc-musl-x86_64-so-1"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libgstaudio-1-0-so-0"
+  "so-libgstbase-1-0-so-0"
+  "so-libgstpbutils-1-0-so-0"
+  "so-libgstreamer-1-0-so-0"
+  "so-libgstvideo-1-0-so-0"
 ]
 extra-source "gst-libav-1.12.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/gst-libav-1.12.3-r0.apk"

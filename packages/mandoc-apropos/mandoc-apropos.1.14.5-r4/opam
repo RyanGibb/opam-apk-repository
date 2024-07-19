@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del mandoc-apropos"]
 ]
 depends: [
-  "busybox"
+  "-bin-sh"
   "mandoc" {= "1.14.5-r4"}
 ]
 extra-source "mandoc-apropos-1.14.5-r4.apk" {

@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del lua-cqueues"]
 ]
 depends: [
-  "lua5.1-cqueues"
-  "lua5.2-cqueues"
+  "lua5-1-cqueues"
+  "lua5-2-cqueues"
 ]
 extra-source "lua-cqueues-20140729-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/lua-cqueues-20140729-r0.apk"

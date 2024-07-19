@@ -8,10 +8,10 @@ remove: [
 depends: [
   "bzip2"
   "file"
-  "libbz2"
-  "libcap"
-  "musl"
-  "zlib"
+  "so-libbz2-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcap-so-2"
+  "so-libz-so-1"
 ]
 extra-source "cdrkit-1.1.11-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/cdrkit-1.1.11-r2.apk"

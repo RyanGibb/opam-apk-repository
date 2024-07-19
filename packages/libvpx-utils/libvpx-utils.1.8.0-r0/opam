@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del libvpx-utils"]
 ]
 depends: [
-  "libgcc"
-  "libstdc++"
-  "libvpx"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libstdc++-so-6"
+  "so-libvpx-so-6"
 ]
 extra-source "libvpx-utils-1.8.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/libvpx-utils-1.8.0-r0.apk"

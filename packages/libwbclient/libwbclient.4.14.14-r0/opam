@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del libwbclient"]
 ]
 depends: [
-  "musl"
-  "samba-util-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libreplace-samba4-so"
 ]
 extra-source "libwbclient-4.14.14-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/libwbclient-4.14.14-r0.apk"

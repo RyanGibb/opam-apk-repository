@@ -7,7 +7,8 @@ remove: [
 ]
 depends: [
   "libusb-dev"
-  "pkgconf"
+  "pc-libusb-1-0"
+  "pkgconfig"
   "usbredir" {= "0.7-r2"}
 ]
 extra-source "usbredir-dev-0.7-r2.apk" {

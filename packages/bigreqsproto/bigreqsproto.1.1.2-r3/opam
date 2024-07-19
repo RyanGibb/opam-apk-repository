@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del bigreqsproto"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "bigreqsproto-1.1.2-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/bigreqsproto-1.1.2-r3.apk"

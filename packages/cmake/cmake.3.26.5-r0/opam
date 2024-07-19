@@ -6,17 +6,17 @@ remove: [
   ["sh" "-c" "sudo apk del cmake"]
 ]
 depends: [
-  "libarchive"
-  "libcurl"
-  "libexpat"
-  "libformw"
-  "libgcc"
-  "libncursesw"
-  "libstdc++"
-  "libuv"
-  "musl"
-  "rhash-libs"
-  "zlib"
+  "so-libarchive-so-13"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcurl-so-4"
+  "so-libexpat-so-1"
+  "so-libformw-so-6"
+  "so-libgcc_s-so-1"
+  "so-libncursesw-so-6"
+  "so-librhash-so-0"
+  "so-libstdc++-so-6"
+  "so-libuv-so-1"
+  "so-libz-so-1"
 ]
 extra-source "cmake-3.26.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/cmake-3.26.5-r0.apk"

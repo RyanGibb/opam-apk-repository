@@ -6,9 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del bind-dnssec-tools"]
 ]
 depends: [
-  "bind-libs"
-  "musl"
   "py3-bind" {= "9.16.20-r1"}
+  "so-libc-musl-x86_64-so-1"
+  "so-libdns-9-16-20-so"
+  "so-libisc-9-16-20-so"
+  "so-libisccfg-9-16-20-so"
 ]
 extra-source "bind-dnssec-tools-9.16.20-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/bind-dnssec-tools-9.16.20-r1.apk"

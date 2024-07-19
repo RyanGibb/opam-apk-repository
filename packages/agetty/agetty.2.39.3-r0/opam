@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del agetty"]
 ]
 depends: [
-  "libeconf"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libeconf-so-0"
 ]
 extra-source "agetty-2.39.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/agetty-2.39.3-r0.apk"

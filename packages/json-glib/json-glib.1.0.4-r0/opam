@@ -6,9 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del json-glib"]
 ]
 depends: [
-  "glib"
-  "libintl"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgio-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libintl-so-8"
 ]
 extra-source "json-glib-1.0.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/json-glib-1.0.4-r0.apk"

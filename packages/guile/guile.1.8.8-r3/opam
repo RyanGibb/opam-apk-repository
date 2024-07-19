@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del guile"]
 ]
 depends: [
-  "gmp"
-  "libltdl"
-  "musl"
-  "ncurses-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgmp-so-10"
+  "so-libltdl-so-7"
+  "so-libncurses-so-5"
 ]
 extra-source "guile-1.8.8-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/guile-1.8.8-r3.apk"

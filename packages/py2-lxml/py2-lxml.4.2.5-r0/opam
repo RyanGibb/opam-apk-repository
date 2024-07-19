@@ -6,10 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del py2-lxml"]
 ]
 depends: [
-  "libxml2"
-  "libxslt"
-  "musl"
-  "python2"
+  "so-libc-musl-x86_64-so-1"
+  "so-libexslt-so-0"
+  "so-libpython2-7-so-1-0"
+  "so-libxml2-so-2"
+  "so-libxslt-so-1"
 ]
 extra-source "py2-lxml-4.2.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/py2-lxml-4.2.5-r0.apk"

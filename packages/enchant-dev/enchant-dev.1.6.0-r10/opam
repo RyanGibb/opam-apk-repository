@@ -8,6 +8,8 @@ remove: [
 depends: [
   "enchant" {= "1.6.0-r10"}
   "glib-dev"
+  "pc-glib-2-0"
+  "pc-gmodule-no-export-2-0"
   "pkgconfig"
 ]
 extra-source "enchant-dev-1.6.0-r10.apk" {

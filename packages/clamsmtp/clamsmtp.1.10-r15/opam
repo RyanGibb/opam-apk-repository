@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del clamsmtp"]
 ]
 depends: [
-  "busybox"
-  "musl"
+  "-bin-sh"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "clamsmtp-1.10-r15.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/clamsmtp-1.10-r15.apk"

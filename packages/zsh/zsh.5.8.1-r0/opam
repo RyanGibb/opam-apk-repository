@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del zsh"]
 ]
 depends: [
-  "busybox"
-  "musl"
-  "ncurses-libs"
+  "-bin-sh"
+  "so-libc-musl-x86_64-so-1"
+  "so-libncursesw-so-6"
 ]
 extra-source "zsh-5.8.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/zsh-5.8.1-r0.apk"

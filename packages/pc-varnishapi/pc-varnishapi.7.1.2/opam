@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "varnish-dev" {= "7.1.2-r0"}
+]

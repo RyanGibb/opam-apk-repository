@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del tiny-cloud-gcp"]
 ]
 depends: [
+  "-bin-sh"
   "tiny-cloud" {= "3.0.7-r0"}
-  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
 ]
 extra-source "tiny-cloud-gcp-3.0.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/tiny-cloud-gcp-3.0.7-r0.apk"

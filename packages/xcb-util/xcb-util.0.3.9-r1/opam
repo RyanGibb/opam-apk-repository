@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del xcb-util"]
 ]
 depends: [
-  "libxcb"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libxcb-so-1"
 ]
 extra-source "xcb-util-0.3.9-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/xcb-util-0.3.9-r1.apk"

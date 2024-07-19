@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del grub"]
 ]
 depends: [
-  "busybox"
-  "device-mapper-libs"
-  "freetype"
+  "-bin-sh"
   "mkinitfs"
-  "musl"
-  "xz-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libdevmapper-so-1-02"
+  "so-libfreetype-so-6"
+  "so-liblzma-so-5"
 ]
 extra-source "grub-2.02-r20.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/grub-2.02-r20.apk"

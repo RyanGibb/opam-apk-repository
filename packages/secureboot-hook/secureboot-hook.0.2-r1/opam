@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del secureboot-hook"]
 ]
 depends: [
+  "-bin-sh"
   "efi-mkuki"
+  "initramfs-generator"
   "kernel-hooks"
-  "mkinitfs"
   "sbsigntool"
-  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
 ]
 extra-source "secureboot-hook-0.2-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/secureboot-hook-0.2-r1.apk"

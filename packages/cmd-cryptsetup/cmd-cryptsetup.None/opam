@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  ("cryptsetup1" {= "1.7.5-r4"} | "cryptsetup" {= "2.0.6-r0"})
+]

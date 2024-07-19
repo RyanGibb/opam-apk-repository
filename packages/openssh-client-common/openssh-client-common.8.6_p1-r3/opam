@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del openssh-client-common"]
 ]
 depends: [
-  "libcrypto1.1"
-  "libedit"
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-1"
+  "so-libedit-so-0"
+  "so-libz-so-1"
 ]
 extra-source "openssh-client-common-8.6_p1-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/openssh-client-common-8.6_p1-r3.apk"

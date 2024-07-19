@@ -7,10 +7,10 @@ remove: [
 ]
 depends: [
   "collectd"
-  "libcurl"
-  "libxml2"
-  "musl"
-  "yajl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcurl-so-4"
+  "so-libxml2-so-2"
+  "so-libyajl-so-2"
 ]
 extra-source "collectd-curl-5.8.0-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/collectd-curl-5.8.0-r3.apk"

@@ -6,13 +6,15 @@ remove: [
   ["sh" "-c" "sudo apk del rtorrent"]
 ]
 depends: [
-  "curl"
-  "libgcc"
-  "libstdc++"
-  "libtorrent"
-  "musl"
-  "ncurses-widec-libs"
-  "xmlrpc-c"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcurl-so-4"
+  "so-libgcc_s-so-1"
+  "so-libncursesw-so-5"
+  "so-libstdc++-so-6"
+  "so-libtorrent-so-18"
+  "so-libxmlrpc-so-3"
+  "so-libxmlrpc_server-so-3"
+  "so-libxmlrpc_util-so-3"
 ]
 extra-source "rtorrent-0.9.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/rtorrent-0.9.4-r0.apk"

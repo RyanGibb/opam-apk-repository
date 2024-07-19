@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del perl-net-libidn"]
 ]
 depends: [
-  "libidn"
-  "musl"
   "perl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libidn-so-12"
 ]
 extra-source "perl-net-libidn-0.12-r10.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/perl-net-libidn-0.12-r10.apk"

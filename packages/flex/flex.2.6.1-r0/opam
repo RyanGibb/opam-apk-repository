@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "m4"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "flex-2.6.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/flex-2.6.1-r0.apk"

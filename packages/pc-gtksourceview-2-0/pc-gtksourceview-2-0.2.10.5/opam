@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "gtksourceview2-dev" {= "2.10.5-r0"}
+]

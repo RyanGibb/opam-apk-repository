@@ -6,9 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del libxkbcommon-x11"]
 ]
 depends: [
-  "libxcb"
-  "libxkbcommon"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libxcb-so-1"
+  "so-libxcb-xkb-so-1"
+  "so-libxkbcommon-so-0"
   "xkeyboard-config"
 ]
 extra-source "libxkbcommon-x11-1.7.0-r0.apk" {

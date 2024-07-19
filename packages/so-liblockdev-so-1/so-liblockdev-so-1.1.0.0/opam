@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "lockdev" {= "0_git20130107-r1"}
+]

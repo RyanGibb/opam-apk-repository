@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "font-sony-misc"
-  "musl"
-  "python"
-  "rrdtool"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpython2-7-so-1-0"
+  "so-librrd-so-4"
 ]
 extra-source "py-rrd-1.4.8-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/py-rrd-1.4.8-r3.apk"

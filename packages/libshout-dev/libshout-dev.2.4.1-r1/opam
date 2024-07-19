@@ -6,11 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del libshout-dev"]
 ]
 depends: [
-  "libogg-dev"
   "libshout" {= "2.4.1-r1"}
-  "libtheora-dev"
-  "libvorbis-dev"
-  "pkgconf"
+  "pc-ogg"
+  "pc-speex"
+  "pc-theora"
+  "pc-vorbis"
+  "pkgconfig"
   "speex-dev"
 ]
 extra-source "libshout-dev-2.4.1-r1.apk" {

@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "gdnsd" {= "1.11.5-r2"}
+]

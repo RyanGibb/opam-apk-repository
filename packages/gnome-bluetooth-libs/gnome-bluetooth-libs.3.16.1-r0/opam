@@ -6,18 +6,23 @@ remove: [
   ["sh" "-c" "sudo apk del gnome-bluetooth-libs"]
 ]
 depends: [
-  "atk"
   "bluez" {>= "5"}
-  "cairo"
-  "cairo-gobject"
-  "gdk-pixbuf"
-  "glib"
-  "gtk+3.0"
   "hicolor-icon-theme"
-  "libintl"
-  "libudev"
-  "musl"
-  "pango"
+  "so-libatk-1-0-so-0"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcairo-gobject-so-2"
+  "so-libcairo-so-2"
+  "so-libgdk-3-so-0"
+  "so-libgdk_pixbuf-2-0-so-0"
+  "so-libgio-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgmodule-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libgtk-3-so-0"
+  "so-libintl-so-8"
+  "so-libpango-1-0-so-0"
+  "so-libpangocairo-1-0-so-0"
+  "so-libudev-so-0"
 ]
 extra-source "gnome-bluetooth-libs-3.16.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/gnome-bluetooth-libs-3.16.1-r0.apk"

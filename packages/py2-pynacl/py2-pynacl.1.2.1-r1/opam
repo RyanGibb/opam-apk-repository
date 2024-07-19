@@ -6,10 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del py2-pynacl"]
 ]
 depends: [
-  "musl"
   "py2-cffi"
   "py2-six"
   "python2"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpython2-7-so-1-0"
 ]
 extra-source "py2-pynacl-1.2.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/py2-pynacl-1.2.1-r1.apk"

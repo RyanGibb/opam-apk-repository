@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del opusfile"]
 ]
 depends: [
-  "libcrypto1.0"
-  "libogg"
-  "libssl1.0"
-  "musl"
-  "opus"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-0-0"
+  "so-libogg-so-0"
+  "so-libopus-so-0"
+  "so-libssl-so-1-0-0"
 ]
 extra-source "opusfile-0.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/opusfile-0.7-r0.apk"

@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del botan"]
 ]
 depends: [
-  "botan-libs"
-  "libgcc"
-  "libstdc++"
-  "musl"
+  "so-libbotan-2-so-11"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libstdc++-so-6"
 ]
 extra-source "botan-2.11.0-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/botan-2.11.0-r6.apk"

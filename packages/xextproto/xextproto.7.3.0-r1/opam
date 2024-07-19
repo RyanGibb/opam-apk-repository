@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del xextproto"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "xextproto-7.3.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/xextproto-7.3.0-r1.apk"

@@ -6,8 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del py3-simpleparse"]
 ]
 depends: [
-  "musl"
   "python3"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpython3-7m-so-1-0"
 ]
 extra-source "py3-simpleparse-2.2.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/py3-simpleparse-2.2.0-r1.apk"

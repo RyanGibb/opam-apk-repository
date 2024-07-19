@@ -6,13 +6,18 @@ remove: [
   ["sh" "-c" "sudo apk del bind"]
 ]
 depends: [
-  "bind-libs"
   "busybox"
-  "libcap"
-  "libressl2.5-libcrypto"
-  "libxml2"
-  "musl"
-  "zlib"
+  "so-libbind9-so-161"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcap-so-2"
+  "so-libcrypto-so-41"
+  "so-libdns-so-1105"
+  "so-libisc-so-1100"
+  "so-libisccc-so-161"
+  "so-libisccfg-so-163"
+  "so-liblwres-so-161"
+  "so-libxml2-so-2"
+  "so-libz-so-1"
 ]
 extra-source "bind-9.11.6_p1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/bind-9.11.6_p1-r1.apk"

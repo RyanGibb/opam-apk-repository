@@ -6,15 +6,15 @@ remove: [
   ["sh" "-c" "sudo apk del elinks"]
 ]
 depends: [
-  "gpm-libs"
-  "libcrypto3"
-  "libcurl"
-  "libexpat"
-  "libidn2"
-  "libintl"
-  "libssl3"
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-3"
+  "so-libcurl-so-4"
+  "so-libexpat-so-1"
+  "so-libgpm-so-2"
+  "so-libidn2-so-0"
+  "so-libintl-so-8"
+  "so-libssl-so-3"
+  "so-libz-so-1"
 ]
 extra-source "elinks-0.17.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/elinks-0.17.0-r0.apk"

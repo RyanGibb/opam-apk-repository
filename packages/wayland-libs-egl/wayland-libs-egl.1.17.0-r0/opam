@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del wayland-libs-egl"]
 ]
 depends: [
-  "musl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "wayland-libs-egl-1.17.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/wayland-libs-egl-1.17.0-r0.apk"

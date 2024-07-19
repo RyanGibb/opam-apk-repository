@@ -6,17 +6,17 @@ remove: [
   ["sh" "-c" "sudo apk del imagemagick"]
 ]
 depends: [
-  "fontconfig"
-  "freetype"
-  "lcms2"
-  "libgomp"
-  "libjpeg-turbo"
-  "libltdl"
-  "libpng"
-  "libwebp"
-  "musl"
-  "tiff"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libfontconfig-so-1"
+  "so-libfreetype-so-6"
+  "so-libgomp-so-1"
+  "so-libjpeg-so-8"
+  "so-liblcms2-so-2"
+  "so-libltdl-so-7"
+  "so-libpng16-so-16"
+  "so-libtiff-so-5"
+  "so-libwebp-so-5"
+  "so-libz-so-1"
 ]
 extra-source "imagemagick-6.9.6.8-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/imagemagick-6.9.6.8-r0.apk"

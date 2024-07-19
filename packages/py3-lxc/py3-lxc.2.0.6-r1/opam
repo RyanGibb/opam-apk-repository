@@ -6,9 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del py3-lxc"]
 ]
 depends: [
-  "lxc-libs"
-  "musl"
   "python3"
+  "so-libc-musl-x86_64-so-1"
+  "so-liblxc-so-1"
+  "so-libpython3-5m-so-1-0"
 ]
 extra-source "py3-lxc-2.0.6-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/py3-lxc-2.0.6-r1.apk"

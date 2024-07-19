@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del ncurses-widec-libs"]
 ]
 depends: [
-  "musl"
   "ncurses-base"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "ncurses-widec-libs-5.9-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/ncurses-widec-libs-5.9-r2.apk"

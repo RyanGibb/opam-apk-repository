@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del dnsmasq-utils"]
 ]
 depends: [
-  "musl"
-  ("dnsmasq-dnssec" | "dnsmasq-dnssec-dbus" | "dnsmasq-dnssec-nftset")
+  "dnsmasq" {= "2.90-r3"}
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "dnsmasq-utils-2.90-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/dnsmasq-utils-2.90-r3.apk"

@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del sems-diameter_client"]
 ]
 depends: [
-  "libcrypto1.0"
-  "libgcc"
-  "libssl1.0"
-  "libstdc++"
-  "musl"
   "sems"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-0-0"
+  "so-libgcc_s-so-1"
+  "so-libssl-so-1-0-0"
+  "so-libstdc++-so-6"
 ]
 extra-source "sems-diameter_client-1.5.0-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/sems-diameter_client-1.5.0-r3.apk"

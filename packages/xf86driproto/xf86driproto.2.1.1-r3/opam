@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del xf86driproto"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "xf86driproto-2.1.1-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/xf86driproto-2.1.1-r3.apk"

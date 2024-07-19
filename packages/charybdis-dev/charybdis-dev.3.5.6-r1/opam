@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del charybdis-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "charybdis-dev-3.5.6-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/charybdis-dev-3.5.6-r1.apk"

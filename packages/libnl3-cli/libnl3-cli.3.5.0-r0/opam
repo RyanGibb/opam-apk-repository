@@ -6,8 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del libnl3-cli"]
 ]
 depends: [
-  "libnl3"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libnl-3-so-200"
+  "so-libnl-genl-3-so-200"
+  "so-libnl-idiag-3-so-200"
+  "so-libnl-nf-3-so-200"
+  "so-libnl-route-3-so-200"
 ]
 extra-source "libnl3-cli-3.5.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/libnl3-cli-3.5.0-r0.apk"

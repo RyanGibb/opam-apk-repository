@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "mpfr4" {= "4.1.0-r0"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "mpfr-dev-4.1.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mpfr-dev-4.1.0-r0.apk"

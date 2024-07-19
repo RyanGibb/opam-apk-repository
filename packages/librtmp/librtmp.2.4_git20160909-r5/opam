@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del librtmp"]
 ]
 depends: [
-  "libressl2.7-libcrypto"
-  "libressl2.7-libssl"
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-43"
+  "so-libssl-so-45"
+  "so-libz-so-1"
 ]
 extra-source "librtmp-2.4_git20160909-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/librtmp-2.4_git20160909-r5.apk"

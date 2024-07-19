@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del freetype"]
 ]
 depends: [
-  "libbz2"
-  "libpng"
-  "musl"
-  "zlib"
+  "so-libbz2-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpng16-so-16"
+  "so-libz-so-1"
 ]
 extra-source "freetype-2.7.1-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/freetype-2.7.1-r2.apk"

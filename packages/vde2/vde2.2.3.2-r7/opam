@@ -7,11 +7,13 @@ remove: [
 ]
 depends: [
   "busybox"
-  "libpcap"
   "libressl"
-  "libressl2.5-libcrypto"
-  "musl"
-  "vde2-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-41"
+  "so-libpcap-so-1"
+  "so-libvdehist-so-0"
+  "so-libvdemgmt-so-0"
+  "so-libvdeplug-so-3"
 ]
 extra-source "vde2-2.3.2-r7.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/vde2-2.3.2-r7.apk"

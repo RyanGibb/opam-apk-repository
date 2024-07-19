@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del cvs"]
 ]
 depends: [
-  "libbsd"
-  "libintl"
-  "musl"
-  "zlib"
+  "so-libbsd-so-0"
+  "so-libc-musl-x86_64-so-1"
+  "so-libintl-so-8"
+  "so-libz-so-1"
 ]
 extra-source "cvs-1.12.13-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/cvs-1.12.13-r1.apk"

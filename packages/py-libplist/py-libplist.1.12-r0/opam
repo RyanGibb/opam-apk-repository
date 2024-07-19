@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del py-libplist"]
 ]
 depends: [
-  "libplist"
-  "libxml2"
-  "musl"
-  "python"
+  "so-libc-musl-x86_64-so-1"
+  "so-libplist-so-3"
+  "so-libpython2-7-so-1-0"
+  "so-libxml2-so-2"
 ]
 extra-source "py-libplist-1.12-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/py-libplist-1.12-r0.apk"

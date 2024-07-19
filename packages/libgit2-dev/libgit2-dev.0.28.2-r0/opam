@@ -9,9 +9,9 @@ depends: [
   "curl-dev"
   "libgit2" {= "0.28.2-r0"}
   "libssh2-dev"
-  "openssl-dev"
-  "pkgconf"
-  "zlib-dev"
+  "pc-openssl"
+  "pc-zlib"
+  "pkgconfig"
 ]
 extra-source "libgit2-dev-0.28.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/libgit2-dev-0.28.2-r0.apk"

@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del libxcursor-dev"]
 ]
 depends: [
-  "libx11-dev"
   "libxcursor" {= "1.2.1-r2"}
-  "libxfixes-dev"
-  "libxrender-dev"
-  "pkgconf"
-  "xorgproto"
+  "pc-x11"
+  "pc-xfixes"
+  "pc-xproto"
+  "pc-xrender"
+  "pkgconfig"
 ]
 extra-source "libxcursor-dev-1.2.1-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/libxcursor-dev-1.2.1-r2.apk"

@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del apk-tools"]
 ]
 depends: [
-  "libressl2.5-libcrypto"
-  "libressl2.5-libssl"
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-41"
+  "so-libssl-so-43"
+  "so-libz-so-1"
 ]
 extra-source "apk-tools-2.7.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/apk-tools-2.7.6-r0.apk"

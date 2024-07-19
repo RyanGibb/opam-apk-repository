@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "geoip" {= "1.6.12-r3"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "geoip-dev-1.6.12-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/geoip-dev-1.6.12-r3.apk"

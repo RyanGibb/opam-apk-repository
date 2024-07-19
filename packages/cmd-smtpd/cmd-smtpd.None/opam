@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "opensmtpd" {= "6.0.3p1-r3"}
+]

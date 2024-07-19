@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del usb-modeswitch"]
 ]
 depends: [
-  "libusbx"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libusb-1-0-so-0"
   "tcl"
 ]
 extra-source "usb-modeswitch-2.0.1-r0.apk" {

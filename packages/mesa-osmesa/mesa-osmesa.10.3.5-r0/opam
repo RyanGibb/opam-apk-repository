@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del mesa-osmesa"]
 ]
 depends: [
-  "libgcc"
-  "libstdc++"
-  "mesa-glapi"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libglapi-so-0"
+  "so-libstdc++-so-6"
 ]
 extra-source "mesa-osmesa-10.3.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/mesa-osmesa-10.3.5-r0.apk"

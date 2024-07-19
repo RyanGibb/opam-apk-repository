@@ -10,6 +10,9 @@ depends: [
   "openssl-dev"
   "opus-dev"
   "opusfile" {= "0.6-r0"}
+  "pc-ogg" {>= "1.3"}
+  "pc-openssl"
+  "pc-opus" {>= "1.0.1"}
   "pkgconfig"
 ]
 extra-source "opusfile-dev-0.6-r0.apk" {

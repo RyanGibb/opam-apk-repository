@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del perl-compress-raw-zlib"]
 ]
 depends: [
-  "musl"
   "perl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libz-so-1"
 ]
 extra-source "perl-compress-raw-zlib-2.206-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/perl-compress-raw-zlib-2.206-r0.apk"

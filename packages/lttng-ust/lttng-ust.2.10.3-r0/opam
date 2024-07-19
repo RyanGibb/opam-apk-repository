@@ -6,8 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del lttng-ust"]
 ]
 depends: [
-  "musl"
-  "userspace-rcu"
+  "so-libc-musl-x86_64-so-1"
+  "so-liburcu-bp-so-5"
+  "so-liburcu-cds-so-5"
 ]
 extra-source "lttng-ust-2.10.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/lttng-ust-2.10.3-r0.apk"

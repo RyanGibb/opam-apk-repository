@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del eudev"]
 ]
 depends: [
+  "-bin-sh"
   "eudev-libs" {= "3.2.14-r2"}
-  "kmod-libs"
-  "libblkid"
-  "musl"
+  "so-libblkid-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libkmod-so-2"
   "udev-init-scripts"
-  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
 ]
 extra-source "eudev-3.2.14-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/eudev-3.2.14-r2.apk"

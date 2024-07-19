@@ -6,8 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del postgresql-plpython3"]
 ]
 depends: [
-  "musl"
   "python3"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpython3-6m-so-1-0"
 ]
 extra-source "postgresql-plpython3-11.11-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/postgresql-plpython3-11.11-r0.apk"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del libintl"]
 ]
 depends: [
-  "musl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "libintl-0.21.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libintl-0.21.1-r1.apk"

@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "libexif-dev" {= "0.6.22-r0"}
+]

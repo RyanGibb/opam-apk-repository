@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del tiny-cloud-openrc"]
 ]
 depends: [
-  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
+  "-bin-sh"
 ]
 extra-source "tiny-cloud-openrc-3.0.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/tiny-cloud-openrc-3.0.7-r0.apk"

@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del findmnt"]
 ]
 depends: [
-  "libblkid"
-  "libmount"
-  "libsmartcols"
-  "musl"
+  "so-libblkid-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libmount-so-1"
+  "so-libsmartcols-so-1"
 ]
 extra-source "findmnt-2.33-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/findmnt-2.33-r0.apk"

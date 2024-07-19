@@ -6,16 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del vlc-qt"]
 ]
 depends: [
-  "dbus-libs"
-  "libgcc"
-  "libice"
-  "libsm"
-  "libstdc++"
-  "libx11"
-  "musl"
-  "qt"
-  "qt-x11"
-  "vlc-libs"
+  "so-libICE-so-6"
+  "so-libQtCore-so-4"
+  "so-libQtGui-so-4"
+  "so-libSM-so-6"
+  "so-libX11-so-6"
+  "so-libc-musl-x86_64-so-1"
+  "so-libdbus-1-so-3"
+  "so-libgcc_s-so-1"
+  "so-libstdc++-so-6"
+  "so-libvlccore-so-7"
   "vlc-xorg" {= "2.1.6-r1"}
 ]
 extra-source "vlc-qt-2.1.6-r1.apk" {

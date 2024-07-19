@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lua5.1-mqtt-publish-0.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lua5.1-mqtt-publish"]
+]
+depends: [
+  "lua5-1-mosquitto"
+]
+extra-source "lua5.1-mqtt-publish-0.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/lua5.1-mqtt-publish-0.4-r0.apk"
+}

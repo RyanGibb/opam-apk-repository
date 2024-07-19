@@ -6,8 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del py-gtk-dev"]
 ]
 depends: [
-  "gtk+2.0-dev"
-  "pkgconf"
+  "pc-gtk+-2-0"
+  "pc-pygobject-2-0"
+  "pkgconfig"
   "py-gobject-dev"
   "py-gtk"
 ]

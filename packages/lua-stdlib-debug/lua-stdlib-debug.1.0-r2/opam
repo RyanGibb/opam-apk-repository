@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del lua-stdlib-debug"]
 ]
 depends: [
-  ("lua5.1" | "lua5.3" | "luajit" | "lua5.2")
+  "lua"
 ]
 extra-source "lua-stdlib-debug-1.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/lua-stdlib-debug-1.0-r2.apk"

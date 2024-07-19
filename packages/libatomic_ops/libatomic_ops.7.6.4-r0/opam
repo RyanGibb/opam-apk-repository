@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del libatomic_ops"]
 ]
 depends: [
-  "musl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "libatomic_ops-7.6.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libatomic_ops-7.6.4-r0.apk"

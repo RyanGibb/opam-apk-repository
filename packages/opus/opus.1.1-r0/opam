@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del opus"]
 ]
 depends: [
-  "musl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "opus-1.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/opus-1.1-r0.apk"

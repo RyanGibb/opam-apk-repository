@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "openrc" {= "0.52.1-r2"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "openrc-dev-0.52.1-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/openrc-dev-0.52.1-r2.apk"

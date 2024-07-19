@@ -6,9 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del serf-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pc-libcrypto"
+  "pc-libssl"
+  "pkgconfig"
   "serf" {= "1.3.9-r2"}
-  ("openssl-dev" | "libressl-dev")
 ]
 extra-source "serf-dev-1.3.9-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/serf-dev-1.3.9-r2.apk"

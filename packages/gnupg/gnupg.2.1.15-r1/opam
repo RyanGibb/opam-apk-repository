@@ -1,22 +1,4 @@
 opam-version: "2.0"
-build: [
-  ["sh" "-c" "sudo apk add gnupg-2.1.15-r1.apk"]
-]
-remove: [
-  ["sh" "-c" "sudo apk del gnupg"]
-]
 depends: [
-  "libassuan"
-  "libbz2"
-  "libgcrypt"
-  "libgpg-error"
-  "libksba"
-  "libldap"
-  "musl"
-  "npth"
-  "pinentry"
-  "zlib"
+  "gnupg1" {= "1.4.23-r0"}
 ]
-extra-source "gnupg-2.1.15-r1.apk" {
-  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/gnupg-2.1.15-r1.apk"
-}

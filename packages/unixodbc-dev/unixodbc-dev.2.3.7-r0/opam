@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del unixodbc-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
   "unixodbc" {= "2.3.7-r0"}
 ]
 extra-source "unixodbc-dev-2.3.7-r0.apk" {

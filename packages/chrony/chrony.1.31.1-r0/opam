@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "logrotate"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "chrony-1.31.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/chrony-1.31.1-r0.apk"

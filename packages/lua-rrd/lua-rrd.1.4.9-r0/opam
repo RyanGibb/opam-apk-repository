@@ -6,16 +6,18 @@ remove: [
   ["sh" "-c" "sudo apk del lua-rrd"]
 ]
 depends: [
-  "cairo"
   "font-sony-misc"
-  "glib"
-  "libintl"
-  "libpng"
-  "libxml2"
-  "lua5.1-libs"
-  "musl"
-  "pango"
-  "rrdtool"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcairo-so-2"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libintl-so-8"
+  "so-liblua-so-5"
+  "so-libpango-1-0-so-0"
+  "so-libpangocairo-1-0-so-0"
+  "so-libpng16-so-16"
+  "so-librrd-so-4"
+  "so-libxml2-so-2"
 ]
 extra-source "lua-rrd-1.4.9-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/lua-rrd-1.4.9-r0.apk"

@@ -6,9 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del gmime"]
 ]
 depends: [
-  "glib"
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgio-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libz-so-1"
 ]
 extra-source "gmime-2.6.20-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/gmime-2.6.20-r0.apk"

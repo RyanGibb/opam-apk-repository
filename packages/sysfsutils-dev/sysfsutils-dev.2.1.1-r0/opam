@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del sysfsutils-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
   "sysfsutils" {= "2.1.1-r0"}
 ]
 extra-source "sysfsutils-dev-2.1.1-r0.apk" {

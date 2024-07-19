@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del yajl-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
   "yajl" {= "2.1.0-r5"}
 ]
 extra-source "yajl-dev-2.1.0-r5.apk" {

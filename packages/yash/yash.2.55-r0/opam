@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del yash"]
 ]
 depends: [
-  "libncursesw"
-  "musl"
-  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
+  "-bin-sh"
+  "so-libc-musl-x86_64-so-1"
+  "so-libncursesw-so-6"
 ]
 extra-source "yash-2.55-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/yash-2.55-r0.apk"

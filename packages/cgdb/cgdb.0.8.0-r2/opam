@@ -7,11 +7,11 @@ remove: [
 ]
 depends: [
   "gdb"
-  "libgcc"
-  "libncursesw"
-  "libstdc++"
-  "musl"
-  "readline"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libncursesw-so-6"
+  "so-libreadline-so-8"
+  "so-libstdc++-so-6"
 ]
 extra-source "cgdb-0.8.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/cgdb-0.8.0-r2.apk"

@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del ngircd"]
 ]
 depends: [
-  "libcrypto3"
-  "libssl3"
-  "linux-pam"
-  "musl"
-  "zlib"
-  ("yash-binsh" | "busybox-binsh" | "dash-binsh")
+  "-bin-sh"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-3"
+  "so-libpam-so-0"
+  "so-libssl-so-3"
+  "so-libz-so-1"
 ]
 extra-source "ngircd-26.1-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ngircd-26.1-r3.apk"

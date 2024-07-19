@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "xl2tpd" {= "1.3.17-r0"}
+]

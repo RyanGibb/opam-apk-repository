@@ -6,11 +6,22 @@ remove: [
   ["sh" "-c" "sudo apk del kea-dhcp-ddns"]
 ]
 depends: [
-  "kea-common"
   "kea-common" {= "2.4.1-r2"}
-  "libgcc"
-  "libstdc++"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libkea-asiolink-so-56"
+  "so-libkea-cc-so-54"
+  "so-libkea-cfgclient-so-51"
+  "so-libkea-cryptolink-so-38"
+  "so-libkea-dhcp_ddns-so-41"
+  "so-libkea-dns++-so-42"
+  "so-libkea-exceptions-so-23"
+  "so-libkea-hooks-so-78"
+  "so-libkea-log-so-48"
+  "so-libkea-process-so-57"
+  "so-libkea-stats-so-29"
+  "so-libkea-util-so-68"
+  "so-libstdc++-so-6"
 ]
 extra-source "kea-dhcp-ddns-2.4.1-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/kea-dhcp-ddns-2.4.1-r2.apk"

@@ -7,16 +7,18 @@ remove: [
 ]
 depends: [
   "bc"
-  "gdk-pixbuf"
-  "glib"
-  "glu"
-  "libx11"
-  "libxext"
-  "libxft"
-  "libxmu"
-  "libxt"
-  "mesa-gl"
-  "musl"
+  "so-libGL-so-1"
+  "so-libGLU-so-1"
+  "so-libX11-so-6"
+  "so-libXext-so-6"
+  "so-libXft-so-2"
+  "so-libXmu-so-6"
+  "so-libXt-so-6"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgdk_pixbuf-2-0-so-0"
+  "so-libgdk_pixbuf_xlib-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
 ]
 extra-source "xscreensaver-gl-extras-5.38-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/xscreensaver-gl-extras-5.38-r0.apk"

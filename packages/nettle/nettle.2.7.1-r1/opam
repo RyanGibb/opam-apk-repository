@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del nettle"]
 ]
 depends: [
-  "gmp5"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgmp-so-10"
 ]
 extra-source "nettle-2.7.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/nettle-2.7.1-r1.apk"

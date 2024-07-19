@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "at-spi2-core-dev" {= "2.46.0-r0"}
+]

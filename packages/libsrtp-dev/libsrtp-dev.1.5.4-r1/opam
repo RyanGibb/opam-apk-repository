@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del libsrtp-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "libsrtp-dev-1.5.4-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libsrtp-dev-1.5.4-r1.apk"

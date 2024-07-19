@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "gamin" {= "0.1.10-r10"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "gamin-dev-0.1.10-r10.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/gamin-dev-0.1.10-r10.apk"

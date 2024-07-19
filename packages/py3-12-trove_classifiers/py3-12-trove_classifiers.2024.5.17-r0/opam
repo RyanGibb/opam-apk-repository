@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "py3-trove-classifiers" {= "2024.5.17-r0"}
+]

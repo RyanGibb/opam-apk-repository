@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del dpkg"]
 ]
 depends: [
-  "libbz2"
-  "musl"
+  "so-libbz2-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libz-so-1"
   "xz"
-  "zlib"
 ]
 extra-source "dpkg-1.19.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/dpkg-1.19.2-r0.apk"

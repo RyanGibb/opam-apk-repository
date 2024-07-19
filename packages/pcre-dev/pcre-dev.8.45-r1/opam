@@ -10,7 +10,7 @@ depends: [
   "libpcre32" {= "8.45-r1"}
   "libpcrecpp" {= "8.45-r1"}
   "pcre" {= "8.45-r1"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "pcre-dev-8.45-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/pcre-dev-8.45-r1.apk"

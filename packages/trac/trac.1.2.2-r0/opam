@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del trac"]
 ]
 depends: [
-  "busybox"
+  "-bin-sh"
   "py-genshi"
   "py-setuptools"
   "python2"

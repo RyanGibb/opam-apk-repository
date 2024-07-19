@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del mdocml-apropos"]
 ]
 depends: [
-  "busybox"
+  "-bin-sh"
   "mdocml" {= "1.14.3-r0"}
 ]
 extra-source "mdocml-apropos-1.14.3-r0.apk" {

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libidn" {= "1.37-r0"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "libidn-dev-1.37-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/libidn-dev-1.37-r0.apk"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "pciutils-libs" {= "3.6.2-r1"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "pciutils-dev-3.6.2-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/pciutils-dev-3.6.2-r1.apk"

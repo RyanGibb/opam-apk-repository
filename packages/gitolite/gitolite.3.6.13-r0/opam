@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del gitolite"]
 ]
 depends: [
+  "-bin-sh"
   "git"
   "perl"
-  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
 ]
 extra-source "gitolite-3.6.13-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/gitolite-3.6.13-r0.apk"

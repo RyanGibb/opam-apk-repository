@@ -7,12 +7,12 @@ remove: [
 ]
 depends: [
   "gcc"
-  "libgcc"
-  "libstdc++"
-  "llvm17-libs"
-  "musl"
   "musl-dev"
-  "scudo-malloc"
+  "so-libLLVM-17-so"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libscudo-so"
+  "so-libstdc++-so-6"
 ]
 extra-source "rust-1.76.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/rust-1.76.0-r0.apk"

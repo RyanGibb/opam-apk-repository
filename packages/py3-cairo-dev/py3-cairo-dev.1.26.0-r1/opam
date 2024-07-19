@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del py3-cairo-dev"]
 ]
 depends: [
-  "cairo-dev"
-  "pkgconf"
+  "pc-cairo"
+  "pkgconfig"
   "python3" {>= "3.12"}
 ]
 extra-source "py3-cairo-dev-1.26.0-r1.apk" {

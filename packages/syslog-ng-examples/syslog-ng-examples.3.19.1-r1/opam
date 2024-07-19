@@ -6,10 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del syslog-ng-examples"]
 ]
 depends: [
-  "glib"
-  "ivykis"
-  "musl"
-  "syslog-ng"
+  "so-libc-musl-x86_64-so-1"
+  "so-libevtlog-3-19-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libivykis-so-0"
+  "so-libsyslog-ng-3-19-so-0"
 ]
 extra-source "syslog-ng-examples-3.19.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/syslog-ng-examples-3.19.1-r1.apk"

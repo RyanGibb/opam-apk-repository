@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del libxxf86dga-dev"]
 ]
 depends: [
-  "libx11-dev"
-  "libxext-dev"
   "libxxf86dga" {= "1.1.4-r1"}
-  "pkgconf"
-  "xf86dgaproto"
+  "pc-x11"
+  "pc-xext"
+  "pc-xf86dgaproto"
+  "pkgconfig"
 ]
 extra-source "libxxf86dga-dev-1.1.4-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/libxxf86dga-dev-1.1.4-r1.apk"

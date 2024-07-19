@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "busybox"
-  "gnutls"
-  "libcurl"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcurl-so-4"
+  "so-libgnutls-so-30"
 ]
 extra-source "zabbix-agent-3.2.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/zabbix-agent-3.2.6-r0.apk"

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del libformw"]
 ]
 depends: [
-  "libncursesw"
-  "musl"
   "ncurses-terminfo-base" {= "6.4_p20230506-r0"}
+  "so-libc-musl-x86_64-so-1"
+  "so-libncursesw-so-6"
 ]
 extra-source "libformw-6.4_p20230506-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/libformw-6.4_p20230506-r0.apk"

@@ -6,9 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del thunar-vcs-plugin"]
 ]
 depends: [
-  "apr"
-  "musl"
-  "subversion-libs"
+  "so-libapr-1-so-0"
+  "so-libc-musl-x86_64-so-1"
+  "so-libsvn_client-1-so-0"
+  "so-libsvn_fs-1-so-0"
+  "so-libsvn_subr-1-so-0"
+  "so-libsvn_wc-1-so-0"
 ]
 extra-source "thunar-vcs-plugin-0.1.4-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/thunar-vcs-plugin-0.1.4-r6.apk"

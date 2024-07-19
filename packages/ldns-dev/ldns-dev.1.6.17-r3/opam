@@ -8,6 +8,7 @@ remove: [
 depends: [
   "ldns" {= "1.6.17-r3"}
   "openssl-dev"
+  "pc-libcrypto"
   "pkgconfig"
 ]
 extra-source "ldns-dev-1.6.17-r3.apk" {

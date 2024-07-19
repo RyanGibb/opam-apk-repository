@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del ruby-redcarpet"]
 ]
 depends: [
-  "musl"
   "ruby"
-  "ruby-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libruby-so-2-2"
 ]
 extra-source "ruby-redcarpet-3.3.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/ruby-redcarpet-3.3.2-r0.apk"

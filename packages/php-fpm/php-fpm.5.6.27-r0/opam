@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del php-fpm"]
 ]
 depends: [
-  "libcrypto1.0"
-  "libxml2"
-  "musl"
-  "pcre"
   "php-common"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-0-0"
+  "so-libpcre-so-1"
+  "so-libxml2-so-2"
+  "so-libz-so-1"
 ]
 extra-source "php-fpm-5.6.27-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/php-fpm-5.6.27-r0.apk"

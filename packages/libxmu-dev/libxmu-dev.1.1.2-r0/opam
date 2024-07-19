@@ -10,7 +10,11 @@ depends: [
   "libxext-dev"
   "libxmu" {= "1.1.2-r0"}
   "libxt-dev"
-  "pkgconf"
+  "pc-x11"
+  "pc-xext"
+  "pc-xproto"
+  "pc-xt"
+  "pkgconfig"
   "util-linux-dev"
   "xproto"
 ]

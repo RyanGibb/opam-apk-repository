@@ -9,7 +9,7 @@ depends: [
   "lcms2" {= "2.15-r4"}
   "lcms2-plugins" {= "2.15-r4"}
   "libjpeg-turbo-dev"
-  "pkgconf"
+  "pkgconfig"
   "tiff-dev"
   "zlib-dev"
 ]

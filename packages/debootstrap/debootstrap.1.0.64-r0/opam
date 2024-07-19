@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "dpkg"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
   "tar"
 ]
 extra-source "debootstrap-1.0.64-r0.apk" {

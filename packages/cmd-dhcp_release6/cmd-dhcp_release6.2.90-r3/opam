@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "dnsmasq-utils" {= "2.90-r3"}
+]

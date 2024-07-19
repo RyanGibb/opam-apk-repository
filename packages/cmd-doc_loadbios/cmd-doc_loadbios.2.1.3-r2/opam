@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "mtd-utils-misc" {= "2.1.3-r2"}
+]

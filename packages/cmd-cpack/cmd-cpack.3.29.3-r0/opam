@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "cmake" {= "3.29.3-r0"}
+]

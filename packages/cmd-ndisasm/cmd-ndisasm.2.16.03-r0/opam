@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "nasm" {= "2.16.03-r0"}
+]

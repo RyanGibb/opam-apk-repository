@@ -6,12 +6,14 @@ remove: [
   ["sh" "-c" "sudo apk del libmwaw-tools"]
 ]
 depends: [
-  "libgcc"
-  "libmwaw"
-  "librevenge"
-  "libstdc++"
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libmwaw-0-3-so-3"
+  "so-librevenge-0-0-so-0"
+  "so-librevenge-generators-0-0-so-0"
+  "so-librevenge-stream-0-0-so-0"
+  "so-libstdc++-so-6"
+  "so-libz-so-1"
 ]
 extra-source "libmwaw-tools-0.3.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/libmwaw-tools-0.3.6-r0.apk"

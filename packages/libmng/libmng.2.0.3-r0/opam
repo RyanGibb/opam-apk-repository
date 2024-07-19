@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del libmng"]
 ]
 depends: [
-  "libjpeg-turbo"
-  "liblcms"
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libjpeg-so-8"
+  "so-liblcms-so-1"
+  "so-libz-so-1"
 ]
 extra-source "libmng-2.0.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/libmng-2.0.3-r0.apk"

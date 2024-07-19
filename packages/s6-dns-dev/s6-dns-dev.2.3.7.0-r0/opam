@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del s6-dns-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pc-skalibs"
+  "pkgconfig"
   "s6-dns" {= "2.3.7.0-r0"}
-  "skalibs-dev"
 ]
 extra-source "s6-dns-dev-2.3.7.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/s6-dns-dev-2.3.7.0-r0.apk"

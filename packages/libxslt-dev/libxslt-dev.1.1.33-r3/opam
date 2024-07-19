@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del libxslt-dev"]
 ]
 depends: [
-  "libxml2-dev"
   "libxslt" {= "1.1.33-r3"}
-  "pkgconf"
+  "pc-libxml-2-0"
+  "pkgconfig"
 ]
 extra-source "libxslt-dev-1.1.33-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libxslt-dev-1.1.33-r3.apk"

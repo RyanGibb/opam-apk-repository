@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del php-posix"]
 ]
 depends: [
-  "musl"
   "php"
   "php-cli"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "php-posix-5.6.27-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/php-posix-5.6.27-r0.apk"

@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del llvm16-linker-tools"]
 ]
 depends: [
-  "libgcc"
-  "libstdc++"
-  "llvm16-libs"
-  "musl"
+  "so-libLLVM-16-so"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libstdc++-so-6"
 ]
 extra-source "llvm16-linker-tools-16.0.6-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/llvm16-linker-tools-16.0.6-r8.apk"

@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "cdparanoia" {= "10.2-r10"}
+]

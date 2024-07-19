@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "libgnome" {= "2.32.1-r7"}
+]

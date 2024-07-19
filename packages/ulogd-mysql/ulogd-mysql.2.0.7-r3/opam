@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del ulogd-mysql"]
 ]
 depends: [
-  "mariadb-connector-c"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libmariadb-so-3"
   "ulogd"
 ]
 extra-source "ulogd-mysql-2.0.7-r3.apk" {

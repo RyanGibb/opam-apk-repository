@@ -6,10 +6,21 @@ remove: [
   ["sh" "-c" "sudo apk del kea-hook-ha"]
 ]
 depends: [
-  "kea-common"
   "kea-hook-lease-cmds"
-  "libgcc"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libkea-asiolink-so-40"
+  "so-libkea-cc-so-39"
+  "so-libkea-cfgclient-so-36"
+  "so-libkea-dhcp++-so-54"
+  "so-libkea-dhcpsrv-so-69"
+  "so-libkea-exceptions-so-13"
+  "so-libkea-hooks-so-57"
+  "so-libkea-http-so-42"
+  "so-libkea-log-so-35"
+  "so-libkea-process-so-40"
+  "so-libkea-stats-so-18"
+  "so-libkea-util-so-52"
 ]
 extra-source "kea-hook-ha-2.2.0-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/kea-hook-ha-2.2.0-r3.apk"

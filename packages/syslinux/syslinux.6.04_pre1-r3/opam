@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del syslinux"]
 ]
 depends: [
+  "-bin-sh"
   "blkid"
-  "busybox"
-  "libuuid"
   "mkinitfs"
   "mtools"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libuuid-so-1"
 ]
 extra-source "syslinux-6.04_pre1-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/syslinux-6.04_pre1-r3.apk"

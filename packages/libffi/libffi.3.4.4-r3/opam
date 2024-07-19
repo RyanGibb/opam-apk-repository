@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del libffi"]
 ]
 depends: [
-  "musl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "libffi-3.4.4-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/libffi-3.4.4-r3.apk"

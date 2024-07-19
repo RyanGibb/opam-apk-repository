@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del knot-dev"]
 ]
 depends: [
-  "gnutls-dev"
   "knot" {= "3.3.5-r0"}
   "knot-libs" {= "3.3.5-r0"}
   "knot-libs-static" {= "3.3.5-r0"}
   "knot-utils" {= "3.3.5-r0"}
-  "pkgconf"
+  "pc-gnutls" {>= "3.3"}
+  "pkgconfig"
 ]
 extra-source "knot-dev-3.3.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/knot-dev-3.3.5-r0.apk"

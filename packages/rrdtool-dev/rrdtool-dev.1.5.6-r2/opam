@@ -8,7 +8,7 @@ remove: [
 depends: [
   "librrd" {= "1.5.6-r2"}
   "librrd-th" {= "1.5.6-r2"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "rrdtool-dev-1.5.6-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/rrdtool-dev-1.5.6-r2.apk"

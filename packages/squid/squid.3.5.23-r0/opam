@@ -7,15 +7,15 @@ remove: [
 ]
 depends: [
   "busybox"
-  "heimdal-libs"
-  "libcap"
-  "libcrypto1.0"
-  "libgcc"
-  "libltdl"
-  "libssl1.0"
-  "libstdc++"
   "logrotate"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcap-so-2"
+  "so-libcrypto-so-1-0-0"
+  "so-libgcc_s-so-1"
+  "so-libltdl-so-7"
+  "so-libroken-so-18"
+  "so-libssl-so-1-0-0"
+  "so-libstdc++-so-6"
 ]
 extra-source "squid-3.5.23-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/squid-3.5.23-r0.apk"

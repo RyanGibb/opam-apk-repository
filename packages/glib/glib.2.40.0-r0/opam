@@ -7,10 +7,10 @@ remove: [
 ]
 depends: [
   "busybox"
-  "libffi"
-  "libintl"
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libffi-so-6"
+  "so-libintl-so-8"
+  "so-libz-so-1"
 ]
 extra-source "glib-2.40.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/glib-2.40.0-r0.apk"

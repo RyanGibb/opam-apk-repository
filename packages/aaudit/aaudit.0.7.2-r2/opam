@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del aaudit"]
 ]
 depends: [
-  "lua5.2"
-  "lua5.2-cjson"
-  "lua5.2-pc"
-  "lua5.2-posix"
-  "lua5.2-socket"
+  "lua5-2"
+  "lua5-2-cjson"
+  "lua5-2-pc"
+  "lua5-2-posix"
+  "lua5-2-socket"
 ]
 extra-source "aaudit-0.7.2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/aaudit-0.7.2-r2.apk"

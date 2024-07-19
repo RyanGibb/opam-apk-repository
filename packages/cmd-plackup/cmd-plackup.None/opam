@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "perl-plack" {= "1.0033-r0"}
+]

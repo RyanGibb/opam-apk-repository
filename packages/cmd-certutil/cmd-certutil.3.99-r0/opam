@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "nss-tools" {= "3.99-r0"}
+]

@@ -6,8 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del xcb-util-renderutil"]
 ]
 depends: [
-  "libxcb"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libxcb-render-so-0"
+  "so-libxcb-so-1"
 ]
 extra-source "xcb-util-renderutil-0.3.9-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/xcb-util-renderutil-0.3.9-r1.apk"

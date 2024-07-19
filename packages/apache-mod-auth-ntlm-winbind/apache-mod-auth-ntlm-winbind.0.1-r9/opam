@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "apache2"
-  "musl"
   "samba"
   "samba-winbind"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "apache-mod-auth-ntlm-winbind-0.1-r9.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/apache-mod-auth-ntlm-winbind-0.1-r9.apk"

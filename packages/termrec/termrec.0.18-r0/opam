@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del termrec"]
 ]
 depends: [
-  "libbz2"
-  "musl"
-  "xz-libs"
-  "zlib"
+  "so-libbz2-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-liblzma-so-5"
+  "so-libz-so-1"
 ]
 extra-source "termrec-0.18-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/termrec-0.18-r0.apk"

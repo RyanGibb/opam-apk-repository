@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del nginx-debug"]
 ]
 depends: [
-  "libcrypto3"
-  "libssl3"
-  "musl"
   "nginx" {= "1.22.1-r1"}
-  "pcre"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-3"
+  "so-libpcre-so-1"
+  "so-libssl-so-3"
+  "so-libz-so-1"
 ]
 extra-source "nginx-debug-1.22.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nginx-debug-1.22.1-r1.apk"

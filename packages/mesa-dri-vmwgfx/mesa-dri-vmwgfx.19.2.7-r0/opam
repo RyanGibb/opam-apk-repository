@@ -6,16 +6,19 @@ remove: [
   ["sh" "-c" "sudo apk del mesa-dri-vmwgfx"]
 ]
 depends: [
-  "elfutils-libelf"
-  "expat"
-  "libdrm"
-  "libgcc"
-  "libstdc++"
-  "llvm9-libs"
   "mesa"
-  "mesa-glapi"
-  "musl"
-  "zlib"
+  "so-libLLVM-9-so"
+  "so-libc-musl-x86_64-so-1"
+  "so-libdrm-so-2"
+  "so-libdrm_amdgpu-so-1"
+  "so-libdrm_nouveau-so-2"
+  "so-libdrm_radeon-so-1"
+  "so-libelf-so-1"
+  "so-libexpat-so-1"
+  "so-libgcc_s-so-1"
+  "so-libglapi-so-0"
+  "so-libstdc++-so-6"
+  "so-libz-so-1"
 ]
 extra-source "mesa-dri-vmwgfx-19.2.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/mesa-dri-vmwgfx-19.2.7-r0.apk"

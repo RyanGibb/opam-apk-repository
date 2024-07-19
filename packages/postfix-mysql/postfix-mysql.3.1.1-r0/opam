@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del postfix-mysql"]
 ]
 depends: [
-  "libcrypto1.0"
-  "libssl1.0"
-  "mariadb-client-libs"
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-0-0"
+  "so-libmysqlclient-so-18"
+  "so-libssl-so-1-0-0"
+  "so-libz-so-1"
 ]
 extra-source "postfix-mysql-3.1.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/postfix-mysql-3.1.1-r0.apk"

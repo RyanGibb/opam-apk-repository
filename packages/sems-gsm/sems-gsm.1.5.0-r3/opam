@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del sems-gsm"]
 ]
 depends: [
-  "gsm"
-  "musl"
   "sems"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgsm-so-1"
 ]
 extra-source "sems-gsm-1.5.0-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/sems-gsm-1.5.0-r3.apk"

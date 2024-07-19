@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del llvm14-test-utils"]
 ]
 depends: [
-  "libgcc"
-  "libstdc++"
-  "musl"
   "python3"
   "python3" {>= "3.11"}
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libstdc++-so-6"
 ]
 extra-source "llvm14-test-utils-14.0.6-r14.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/llvm14-test-utils-14.0.6-r14.apk"

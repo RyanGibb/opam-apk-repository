@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del apache2-ssl"]
 ]
 depends: [
+  "-bin-sh"
   "apache2"
-  "busybox"
-  "libcrypto1.1"
-  "libssl1.1"
-  "musl"
   "openssl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-1"
+  "so-libssl-so-1-1"
 ]
 extra-source "apache2-ssl-2.4.56-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/apache2-ssl-2.4.56-r0.apk"

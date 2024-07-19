@@ -6,12 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del gexiv2"]
 ]
 depends: [
-  "exiv2"
-  "glib"
-  "libgcc"
-  "libintl"
-  "libstdc++"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libexiv2-so-13"
+  "so-libgcc_s-so-1"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libintl-so-8"
+  "so-libstdc++-so-6"
 ]
 extra-source "gexiv2-0.10.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/gexiv2-0.10.0-r0.apk"

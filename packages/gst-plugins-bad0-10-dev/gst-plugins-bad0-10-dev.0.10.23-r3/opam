@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gst-plugins-bad0.10-dev-0.10.23-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gst-plugins-bad0.10-dev"]
+]
+depends: [
+  "gst-plugins-bad0-10" {= "0.10.23-r3"}
+  "pc-gstreamer-0-10"
+  "pc-gstreamer-base-0-10"
+  "pkgconfig"
+]
+extra-source "gst-plugins-bad0.10-dev-0.10.23-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/gst-plugins-bad0.10-dev-0.10.23-r3.apk"
+}

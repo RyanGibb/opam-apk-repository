@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del openssh-client-krb5"]
 ]
 depends: [
-  "krb5-libs"
-  "libcrypto1.1"
-  "musl"
   "openssh-client-common" {= "8.8_p1-r1"}
   "openssh-keygen" {= "8.8_p1-r1"}
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-1"
+  "so-libgssapi_krb5-so-2"
+  "so-libz-so-1"
 ]
 conflicts: [
   "openssh-client-default"

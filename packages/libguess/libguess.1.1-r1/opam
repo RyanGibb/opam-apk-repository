@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del libguess"]
 ]
 depends: [
-  "libmowgli"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libmowgli-2-so-0"
 ]
 extra-source "libguess-1.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/libguess-1.1-r1.apk"

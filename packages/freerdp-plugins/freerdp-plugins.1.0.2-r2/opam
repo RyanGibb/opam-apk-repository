@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del freerdp-plugins"]
 ]
 depends: [
-  "alsa-lib"
-  "cups-libs"
-  "ffmpeg-libs"
-  "freerdp-libs"
-  "musl"
-  ("ffmpeg-libs" | "ffmpeg1-libs")
+  "so-libasound-so-2"
+  "so-libavcodec-so-55"
+  "so-libavutil-so-52"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcups-so-2"
+  "so-libfreerdp-utils-so-1-0"
 ]
 extra-source "freerdp-plugins-1.0.2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/freerdp-plugins-1.0.2-r2.apk"

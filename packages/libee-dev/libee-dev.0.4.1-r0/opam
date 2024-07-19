@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libee" {= "0.4.1-r0"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "libee-dev-0.4.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libee-dev-0.4.1-r0.apk"

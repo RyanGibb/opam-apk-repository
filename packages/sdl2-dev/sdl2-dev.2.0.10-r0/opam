@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "directfb-dev"
-  "pkgconf"
+  "pkgconfig"
   "sdl2" {= "2.0.10-r0"}
 ]
 extra-source "sdl2-dev-2.0.10-r0.apk" {

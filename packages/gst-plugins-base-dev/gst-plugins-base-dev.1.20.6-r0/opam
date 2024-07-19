@@ -6,15 +6,27 @@ remove: [
   ["sh" "-c" "sudo apk del gst-plugins-base-dev"]
 ]
 depends: [
-  "glib-dev"
   "gst-plugins-base" {= "1.20.6-r0"}
-  "gstreamer-dev"
-  "libx11-dev"
-  "mesa-dev"
-  "orc-dev"
-  "pkgconf"
+  "pc-egl"
+  "pc-gio-2-0"
+  "pc-gl"
+  "pc-glesv2"
+  "pc-glib-2-0" {>= "2.56.0"}
+  "pc-gmodule-no-export-2-0"
+  "pc-gobject-2-0"
+  "pc-gstreamer-1-0" {>= "1.20.4"}
+  "pc-gstreamer-base-1-0" {>= "1.20.4"}
+  "pc-orc-0-4" {>= "0.4.24"}
+  "pc-wayland-client"
+  "pc-wayland-client" {>= "1.11"}
+  "pc-wayland-cursor" {>= "1.0"}
+  "pc-wayland-egl"
+  "pc-wayland-egl" {>= "1.0"}
+  "pc-x11"
+  "pc-x11-xcb"
+  "pc-zlib"
+  "pkgconfig"
   "wayland-dev"
-  "zlib-dev"
 ]
 extra-source "gst-plugins-base-dev-1.20.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gst-plugins-base-dev-1.20.6-r0.apk"

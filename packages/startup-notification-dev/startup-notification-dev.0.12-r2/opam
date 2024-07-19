@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libsm-dev"
-  "pkgconf"
+  "pkgconfig"
   "startup-notification" {= "0.12-r2"}
   "xcb-util-dev"
 ]

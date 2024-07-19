@@ -6,11 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del rest-dev"]
 ]
 depends: [
-  "glib-dev"
   "gobject-introspection-dev"
   "libsoup-dev"
-  "libxml2-dev"
-  "pkgconf"
+  "pc-glib-2-0"
+  "pc-libsoup-2-4"
+  "pc-libxml-2-0"
+  "pkgconfig"
   "rest" {= "0.8.0-r0"}
 ]
 extra-source "rest-dev-0.8.0-r0.apk" {

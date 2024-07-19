@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del php5-fpm"]
 ]
 depends: [
-  "libressl2.4-libcrypto"
-  "libxml2"
-  "musl"
-  "pcre"
   "php5-common"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-38"
+  "so-libpcre-so-1"
+  "so-libxml2-so-2"
+  "so-libz-so-1"
 ]
 extra-source "php5-fpm-5.6.38-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/php5-fpm-5.6.38-r0.apk"

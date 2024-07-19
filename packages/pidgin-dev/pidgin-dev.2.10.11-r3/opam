@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "finch" {= "2.10.11-r3"}
-  "glib-dev"
-  "gtk+2.0-dev"
   "libpurple" {= "2.10.11-r3"}
+  "pc-glib-2-0"
+  "pc-gtk+-2-0"
   "pkgconfig"
 ]
 extra-source "pidgin-dev-2.10.11-r3.apk" {

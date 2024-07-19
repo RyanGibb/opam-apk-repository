@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del elinks"]
 ]
 depends: [
-  "expat"
-  "libbz2"
-  "libressl2.7-libcrypto"
-  "libressl2.7-libssl"
-  "musl"
-  "zlib"
+  "so-libbz2-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-43"
+  "so-libexpat-so-1"
+  "so-libssl-so-45"
+  "so-libz-so-1"
 ]
 extra-source "elinks-0.13-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/elinks-0.13-r5.apk"

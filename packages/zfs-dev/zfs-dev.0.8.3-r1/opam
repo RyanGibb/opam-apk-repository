@@ -11,7 +11,7 @@ depends: [
   "glib-dev"
   "libtirpc-dev"
   "openssl-dev"
-  "pkgconf"
+  "pkgconfig"
   "util-linux-dev"
   "zfs-libs" {= "0.8.3-r1"}
 ]

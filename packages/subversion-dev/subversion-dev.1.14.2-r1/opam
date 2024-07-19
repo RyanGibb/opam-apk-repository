@@ -6,13 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del subversion-dev"]
 ]
 depends: [
-  "apr-dev"
-  "apr-util-dev"
+  "pc-apr-1"
+  "pc-apr-util-1"
+  "pc-serf-1"
+  "pc-sqlite3"
   "perl-subversion" {= "1.14.2-r1"}
-  "pkgconf"
+  "pkgconfig"
   "py3-subversion" {= "1.14.2-r1"}
-  "serf-dev"
-  "sqlite-dev"
   "subversion-libs" {= "1.14.2-r1"}
 ]
 extra-source "subversion-dev-1.14.2-r1.apk" {

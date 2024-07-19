@@ -6,9 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del mpg123"]
 ]
 depends: [
-  "alsa-lib"
-  "mpg123-libs"
-  "musl"
+  "so-libasound-so-2"
+  "so-libc-musl-x86_64-so-1"
+  "so-libmpg123-so-0"
+  "so-libout123-so-0"
+  "so-libsyn123-so-0"
 ]
 extra-source "mpg123-1.31.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mpg123-1.31.1-r0.apk"

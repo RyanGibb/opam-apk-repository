@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "fstrm" {= "0.6.1-r2"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "fstrm-dev-0.6.1-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/fstrm-dev-0.6.1-r2.apk"

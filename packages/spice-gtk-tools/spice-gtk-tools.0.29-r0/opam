@@ -6,14 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del spice-gtk-tools"]
 ]
 depends: [
-  "glib"
-  "gtk+3.0"
-  "libacl"
-  "libintl"
-  "musl"
-  "polkit"
-  "spice-glib"
-  "spice-gtk"
+  "so-libacl-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgio-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libgtk-3-so-0"
+  "so-libintl-so-8"
+  "so-libpolkit-gobject-1-so-0"
+  "so-libspice-client-glib-2-0-so-8"
+  "so-libspice-client-gtk-3-0-so-4"
 ]
 extra-source "spice-gtk-tools-0.29-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/spice-gtk-tools-0.29-r0.apk"

@@ -7,10 +7,10 @@ remove: [
 ]
 depends: [
   "busybox"
-  "libconfig"
-  "mbedtls1"
-  "musl"
-  "protobuf-c"
+  "so-libc-musl-x86_64-so-1"
+  "so-libconfig-so-9"
+  "so-libmbedtls-so-9"
+  "so-libprotobuf-c-so-1"
 ]
 extra-source "umurmur-0.2.16-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/umurmur-0.2.16-r3.apk"

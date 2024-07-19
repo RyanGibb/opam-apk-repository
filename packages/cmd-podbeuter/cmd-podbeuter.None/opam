@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "newsbeuter" {= "2.9-r6"}
+]

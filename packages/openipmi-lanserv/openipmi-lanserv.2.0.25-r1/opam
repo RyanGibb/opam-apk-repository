@@ -6,10 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del openipmi-lanserv"]
 ]
 depends: [
-  "libcrypto1.1"
-  "musl"
-  "openipmi-libs"
-  "popt"
+  "so-libOpenIPMIposix-so-0"
+  "so-libOpenIPMIutils-so-0"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-1"
+  "so-libpopt-so-0"
 ]
 extra-source "openipmi-lanserv-2.0.25-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/openipmi-lanserv-2.0.25-r1.apk"

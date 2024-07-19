@@ -8,10 +8,11 @@ remove: [
 depends: [
   "gnutls" {= "3.6.15-r1"}
   "gnutls-c++" {= "3.6.15-r1"}
-  "libtasn1-dev"
-  "nettle-dev"
-  "p11-kit-dev"
-  "pkgconf"
+  "pc-hogweed"
+  "pc-libtasn1"
+  "pc-nettle"
+  "pc-p11-kit-1"
+  "pkgconfig"
 ]
 extra-source "gnutls-dev-3.6.15-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/gnutls-dev-3.6.15-r1.apk"

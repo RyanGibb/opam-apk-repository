@@ -6,17 +6,17 @@ remove: [
   ["sh" "-c" "sudo apk del aria2"]
 ]
 depends: [
-  "c-ares"
   "ca-certificates"
-  "gmp"
-  "gnutls"
-  "libgcc"
-  "libstdc++"
-  "libxml2"
-  "musl"
-  "nettle"
-  "sqlite-libs"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcares-so-2"
+  "so-libgcc_s-so-1"
+  "so-libgmp-so-10"
+  "so-libgnutls-so-30"
+  "so-libnettle-so-6"
+  "so-libsqlite3-so-0"
+  "so-libstdc++-so-6"
+  "so-libxml2-so-2"
+  "so-libz-so-1"
 ]
 extra-source "aria2-1.19.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/aria2-1.19.3-r0.apk"

@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "expat-dev"
-  "libevent-dev"
-  "pkgconf"
-  "python2-dev"
+  "pc-libevent"
+  "pc-python"
+  "pkgconfig"
   "unbound-libs" {= "1.7.3-r2"}
 ]
 extra-source "unbound-dev-1.7.3-r2.apk" {

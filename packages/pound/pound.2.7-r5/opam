@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del pound"]
 ]
 depends: [
-  "libressl2.7-libcrypto"
-  "libressl2.7-libssl"
-  "musl"
-  "pcre"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-43"
+  "so-libpcreposix-so-0"
+  "so-libssl-so-45"
 ]
 extra-source "pound-2.7-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/pound-2.7-r5.apk"

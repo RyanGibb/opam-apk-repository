@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del libiec61883-utils"]
 ]
 depends: [
-  "libiec61883"
-  "libraw1394"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libiec61883-so-0"
+  "so-libraw1394-so-11"
 ]
 extra-source "libiec61883-utils-1.2.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/libiec61883-utils-1.2.0-r1.apk"

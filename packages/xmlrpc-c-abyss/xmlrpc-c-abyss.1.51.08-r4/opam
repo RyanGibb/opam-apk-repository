@@ -6,10 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del xmlrpc-c-abyss"]
 ]
 depends: [
-  "libcrypto3"
-  "libssl3"
-  "musl"
-  "xmlrpc-c"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-3"
+  "so-libssl-so-3"
+  "so-libxmlrpc-so-3"
+  "so-libxmlrpc_server-so-3"
+  "so-libxmlrpc_util-so-4"
 ]
 extra-source "xmlrpc-c-abyss-1.51.08-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/xmlrpc-c-abyss-1.51.08-r4.apk"

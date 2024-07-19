@@ -6,16 +6,17 @@ remove: [
   ["sh" "-c" "sudo apk del imagemagick-c++"]
 ]
 depends: [
-  "fontconfig"
-  "freetype"
-  "imagemagick"
-  "lcms2"
-  "libgcc"
-  "libgomp"
-  "libltdl"
-  "libstdc++"
-  "musl"
-  "zlib"
+  "so-libMagickCore-6-Q16-so-3"
+  "so-libMagickWand-6-Q16-so-3"
+  "so-libc-musl-x86_64-so-1"
+  "so-libfontconfig-so-1"
+  "so-libfreetype-so-6"
+  "so-libgcc_s-so-1"
+  "so-libgomp-so-1"
+  "so-liblcms2-so-2"
+  "so-libltdl-so-7"
+  "so-libstdc++-so-6"
+  "so-libz-so-1"
 ]
 extra-source "imagemagick-c++-6.9.6.8-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/imagemagick-c++-6.9.6.8-r0.apk"

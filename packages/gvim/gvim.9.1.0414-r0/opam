@@ -6,17 +6,21 @@ remove: [
   ["sh" "-c" "sudo apk del gvim"]
 ]
 depends: [
-  "cairo"
-  "gdk-pixbuf"
-  "glib"
-  "gtk+3.0"
-  "libice"
-  "libncursesw"
-  "libsm"
-  "libx11"
-  "libxt"
-  "musl"
-  "pango"
+  "so-libICE-so-6"
+  "so-libSM-so-6"
+  "so-libX11-so-6"
+  "so-libXt-so-6"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcairo-so-2"
+  "so-libgdk-3-so-0"
+  "so-libgdk_pixbuf-2-0-so-0"
+  "so-libgio-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libgtk-3-so-0"
+  "so-libncursesw-so-6"
+  "so-libpango-1-0-so-0"
+  "so-libpangocairo-1-0-so-0"
   "vim-common" {= "9.1.0414-r0"}
   "xxd" {= "9.1.0414-r0"}
 ]

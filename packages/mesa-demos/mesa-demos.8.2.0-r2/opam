@@ -6,16 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del mesa-demos"]
 ]
 depends: [
-  "freeglut"
-  "glew"
-  "glu"
-  "libx11"
-  "libxext"
-  "mesa-egl"
-  "mesa-gl"
-  "mesa-gles"
-  "mesa-osmesa"
-  "musl"
+  "so-libEGL-so-1"
+  "so-libGL-so-1"
+  "so-libGLESv2-so-2"
+  "so-libGLEW-so-1-12"
+  "so-libGLU-so-1"
+  "so-libOSMesa-so-8"
+  "so-libX11-so-6"
+  "so-libXext-so-6"
+  "so-libc-musl-x86_64-so-1"
+  "so-libglut-so-3"
 ]
 extra-source "mesa-demos-8.2.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/mesa-demos-8.2.0-r2.apk"

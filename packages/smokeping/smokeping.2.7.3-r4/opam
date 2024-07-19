@@ -6,11 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del smokeping"]
 ]
 depends: [
-  "busybox"
+  "-bin-sh"
   "fping"
-  "libcrypto1.1"
-  "libssl1.1"
-  "musl"
   "perl"
   "perl-cgi"
   "perl-cgi-fast"
@@ -34,6 +31,9 @@ depends: [
   "perl-text-soundex"
   "perl-uri"
   "rrdtool"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-1"
+  "so-libssl-so-1-1"
   "ttf-dejavu"
 ]
 extra-source "smokeping-2.7.3-r4.apk" {

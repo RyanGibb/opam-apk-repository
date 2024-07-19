@@ -9,7 +9,9 @@ depends: [
   "kbproto"
   "libx11-dev"
   "libxkbfile" {= "1.0.9-r0"}
-  "pkgconf"
+  "pc-kbproto"
+  "pc-x11"
+  "pkgconfig"
 ]
 extra-source "libxkbfile-dev-1.0.9-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/libxkbfile-dev-1.0.9-r0.apk"

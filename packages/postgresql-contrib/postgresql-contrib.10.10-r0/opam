@@ -6,14 +6,14 @@ remove: [
   ["sh" "-c" "sudo apk del postgresql-contrib"]
 ]
 depends: [
-  "busybox"
-  "libpq"
-  "libressl2.6-libcrypto"
-  "libressl2.6-libssl"
-  "libuuid"
-  "libxml2"
-  "musl"
-  "zlib"
+  "-bin-sh"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-42"
+  "so-libpq-so-5"
+  "so-libssl-so-44"
+  "so-libuuid-so-1"
+  "so-libxml2-so-2"
+  "so-libz-so-1"
 ]
 extra-source "postgresql-contrib-10.10-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/postgresql-contrib-10.10-r0.apk"

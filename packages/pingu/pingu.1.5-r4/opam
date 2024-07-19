@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del pingu"]
 ]
 depends: [
-  "libev"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libev-so-4"
 ]
 extra-source "pingu-1.5-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/pingu-1.5-r4.apk"

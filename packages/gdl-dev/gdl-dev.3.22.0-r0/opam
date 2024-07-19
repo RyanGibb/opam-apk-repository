@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "gdl" {= "3.22.0-r0"}
-  "gtk+3.0-dev"
-  "libxml2-dev"
-  "pkgconf"
+  "pc-gtk+-3-0"
+  "pc-libxml-2-0"
+  "pkgconfig"
 ]
 extra-source "gdl-dev-3.22.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/gdl-dev-3.22.0-r0.apk"

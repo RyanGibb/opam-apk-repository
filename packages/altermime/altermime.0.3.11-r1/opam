@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del altermime"]
 ]
 depends: [
-  "musl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "altermime-0.3.11-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/altermime-0.3.11-r1.apk"

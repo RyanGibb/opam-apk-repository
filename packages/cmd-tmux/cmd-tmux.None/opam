@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "tmux" {= "2.8-r0"}
+]

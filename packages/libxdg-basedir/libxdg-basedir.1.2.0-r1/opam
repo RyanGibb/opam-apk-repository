@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del libxdg-basedir"]
 ]
 depends: [
-  "musl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "libxdg-basedir-1.2.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/libxdg-basedir-1.2.0-r1.apk"

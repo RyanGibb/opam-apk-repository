@@ -6,8 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del py3-libvirt"]
 ]
 depends: [
-  "libvirt-libs"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libvirt-lxc-so-0"
+  "so-libvirt-qemu-so-0"
+  "so-libvirt-so-0"
 ]
 extra-source "py3-libvirt-5.9.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/py3-libvirt-5.9.0-r0.apk"

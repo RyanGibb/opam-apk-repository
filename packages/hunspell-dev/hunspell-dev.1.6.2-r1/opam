@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "hunspell" {= "1.6.2-r1"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "hunspell-dev-1.6.2-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/hunspell-dev-1.6.2-r1.apk"

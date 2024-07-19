@@ -6,10 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del libglade-dev"]
 ]
 depends: [
-  "gtk+2.0-dev"
+  "gtk+2-0-dev"
   "libglade" {= "2.6.4-r15"}
   "libxml2-dev"
-  "pkgconf"
+  "pc-gtk+-2-0"
+  "pc-libxml-2-0"
+  "pkgconfig"
 ]
 extra-source "libglade-dev-2.6.4-r15.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/libglade-dev-2.6.4-r15.apk"

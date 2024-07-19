@@ -7,10 +7,10 @@ remove: [
 ]
 depends: [
   "ghostscript-fonts"
-  "imagemagick"
-  "musl"
   "ruby"
-  "ruby-libs"
+  "so-libMagickCore-6-Q16-so-2"
+  "so-libc-musl-x86_64-so-1"
+  "so-libruby-so-2-0"
 ]
 extra-source "ruby-rmagick-2.13.2-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/ruby-rmagick-2.13.2-r3.apk"

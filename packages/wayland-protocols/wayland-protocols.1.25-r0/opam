@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del wayland-protocols"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "wayland-protocols-1.25-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/wayland-protocols-1.25-r0.apk"

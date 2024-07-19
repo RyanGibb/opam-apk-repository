@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lua5.1-busted-2.2.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lua5.1-busted"]
+]
+depends: [
+  "lua5-1"
+  "lua5-1-cjson"
+  "lua5-1-cliargs"
+  "lua5-1-luassert"
+  "lua5-1-mediator"
+  "lua5-1-penlight"
+  "lua5-1-say"
+  "lua5-1-system"
+  "lua5-1-term"
+]
+extra-source "lua5.1-busted-2.2.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lua5.1-busted-2.2.0-r0.apk"
+}

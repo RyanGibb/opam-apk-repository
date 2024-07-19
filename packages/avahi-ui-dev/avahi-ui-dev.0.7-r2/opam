@@ -6,11 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del avahi-ui-dev"]
 ]
 depends: [
-  "avahi-dev"
   "avahi-ui-gtk3" {= "0.7-r2"}
   "gdbm-dev"
-  "gtk+3.0-dev"
-  "pkgconf"
+  "pc-avahi-client"
+  "pc-avahi-glib"
+  "pc-gtk+-3-0"
+  "pkgconfig"
 ]
 extra-source "avahi-ui-dev-0.7-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/avahi-ui-dev-0.7-r2.apk"

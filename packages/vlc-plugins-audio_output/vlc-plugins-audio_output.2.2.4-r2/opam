@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del vlc-plugins-audio_output"]
 ]
 depends: [
-  "alsa-lib"
-  "musl"
-  "vlc-libs"
+  "so-libasound-so-2"
+  "so-libc-musl-x86_64-so-1"
+  "so-libvlccore-so-8"
 ]
 extra-source "vlc-plugins-audio_output-2.2.4-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/vlc-plugins-audio_output-2.2.4-r2.apk"

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del vim"]
 ]
 depends: [
-  "lua5.2-libs"
-  "musl"
-  "ncurses-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-liblua-5-2-so-0"
+  "so-libncursesw-so-6"
 ]
 extra-source "vim-7.4.943-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/vim-7.4.943-r5.apk"

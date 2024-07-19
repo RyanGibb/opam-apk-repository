@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "libusb-compat" {= "0.1.5-r4"}
-  "libusb-dev"
-  "pkgconf"
+  "pc-libusb-1-0"
+  "pkgconfig"
 ]
 extra-source "libusb-compat-dev-0.1.5-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libusb-compat-dev-0.1.5-r4.apk"

@@ -6,8 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del postgresql-plpython2"]
 ]
 depends: [
-  "musl"
   "python2"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpython2-7-so-1-0"
 ]
 extra-source "postgresql-plpython2-10.12-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/postgresql-plpython2-10.12-r0.apk"

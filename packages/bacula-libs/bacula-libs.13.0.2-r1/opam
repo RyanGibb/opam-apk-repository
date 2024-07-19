@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del bacula-libs"]
 ]
 depends: [
-  "libcrypto3"
-  "libssl3"
-  "libstdc++"
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-3"
+  "so-libssl-so-3"
+  "so-libstdc++-so-6"
+  "so-libz-so-1"
 ]
 extra-source "bacula-libs-13.0.2-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/bacula-libs-13.0.2-r1.apk"

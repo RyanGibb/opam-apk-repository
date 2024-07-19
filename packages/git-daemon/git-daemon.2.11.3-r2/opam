@@ -7,10 +7,10 @@ remove: [
 ]
 depends: [
   "git" {= "2.11.3-r2"}
-  "libressl2.4-libcrypto"
-  "musl"
-  "pcre"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-38"
+  "so-libpcre-so-1"
+  "so-libz-so-1"
 ]
 extra-source "git-daemon-2.11.3-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/git-daemon-2.11.3-r2.apk"

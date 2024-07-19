@@ -7,14 +7,14 @@ remove: [
 ]
 depends: [
   "gcc" {= "11.2.1_git20220219-r2"}
-  "gmp"
-  "isl22"
-  "libgo"
   "libgo" {= "11.2.1_git20220219-r2"}
-  "mpc1"
-  "mpfr4"
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgmp-so-10"
+  "so-libgo-so-19"
+  "so-libisl-so-22"
+  "so-libmpc-so-3"
+  "so-libmpfr-so-6"
+  "so-libz-so-1"
 ]
 conflicts: [
   "go"

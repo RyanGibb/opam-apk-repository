@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "ntfs-3g" {= "2022.10.3-r3"}
+]

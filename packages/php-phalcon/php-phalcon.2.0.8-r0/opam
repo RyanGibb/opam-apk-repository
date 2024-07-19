@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del php-phalcon"]
 ]
 depends: [
-  "musl"
   "php-json"
   "php-pdo"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "php-phalcon-2.0.8-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/php-phalcon-2.0.8-r0.apk"

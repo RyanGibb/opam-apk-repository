@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del openvpn"]
 ]
 depends: [
+  "-bin-sh"
   "iproute2-minimal"
-  "libcrypto3"
-  "libssl3"
-  "lzo"
-  "musl"
-  ("yash-binsh" | "busybox-binsh" | "dash-binsh")
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-3"
+  "so-liblzo2-so-2"
+  "so-libssl-so-3"
 ]
 extra-source "openvpn-2.5.10-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/openvpn-2.5.10-r1.apk"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del kbproto"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "kbproto-1.0.7-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/kbproto-1.0.7-r2.apk"

@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "freerdp-libs" {= "1.2.0-r0"}
-  "openssl-dev"
+  "pc-libssl"
+  "pc-zlib"
   "pkgconfig"
-  "zlib-dev"
 ]
 extra-source "freerdp-dev-1.2.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/freerdp-dev-1.2.0-r0.apk"

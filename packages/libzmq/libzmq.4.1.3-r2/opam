@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del libzmq"]
 ]
 depends: [
-  "libgcc"
-  "libsodium"
-  "libstdc++"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libsodium-so-18"
+  "so-libstdc++-so-6"
 ]
 extra-source "libzmq-4.1.3-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/libzmq-4.1.3-r2.apk"

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del dhcp"]
 ]
 depends: [
-  "busybox"
-  "libgcc"
-  "musl"
+  "-bin-sh"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
 ]
 extra-source "dhcp-4.4.1-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/dhcp-4.4.1-r8.apk"

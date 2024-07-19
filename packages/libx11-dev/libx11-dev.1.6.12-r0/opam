@@ -8,8 +8,11 @@ remove: [
 depends: [
   "libx11" {= "1.6.12-r0"}
   "libxcb-dev"
-  "pkgconf"
-  "xorgproto"
+  "pc-kbproto"
+  "pc-xcb"
+  "pc-xcb" {>= "1.11.1"}
+  "pc-xproto"
+  "pkgconfig"
   "xtrans"
 ]
 extra-source "libx11-dev-1.6.12-r0.apk" {

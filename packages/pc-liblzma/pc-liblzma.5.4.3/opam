@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "xz-dev" {= "5.4.3-r0"}
+]

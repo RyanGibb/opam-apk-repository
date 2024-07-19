@@ -6,7 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del qt5-qtsvg-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pc-Qt5Core"
+  "pc-Qt5Gui"
+  "pc-Qt5Widgets"
+  "pkgconfig"
   "qt5-qtbase-dev"
   "qt5-qtsvg" {= "5.6.1-r0"}
 ]

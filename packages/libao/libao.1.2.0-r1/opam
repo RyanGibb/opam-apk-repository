@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del libao"]
 ]
 depends: [
-  "alsa-lib"
-  "musl"
+  "so-libasound-so-2"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "libao-1.2.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/libao-1.2.0-r1.apk"

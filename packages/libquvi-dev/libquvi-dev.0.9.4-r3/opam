@@ -9,8 +9,8 @@ depends: [
   "curl-dev"
   "libquvi" {= "0.9.4-r3"}
   "libquvi-scripts-dev"
-  "lua5.1-dev"
-  "pkgconf"
+  "lua5-1-dev"
+  "pkgconfig"
 ]
 extra-source "libquvi-dev-0.9.4-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/libquvi-dev-0.9.4-r3.apk"

@@ -6,12 +6,14 @@ remove: [
   ["sh" "-c" "sudo apk del xfconf"]
 ]
 depends: [
-  "dbus-glib"
-  "dbus-libs"
-  "glib"
-  "libintl"
-  "libxfce4util"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libdbus-1-so-3"
+  "so-libdbus-glib-1-so-2"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libgthread-2-0-so-0"
+  "so-libintl-so-8"
+  "so-libxfce4util-so-7"
 ]
 extra-source "xfconf-4.12.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/xfconf-4.12.0-r0.apk"

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del lsyncd"]
 ]
 depends: [
-  "lua5.1-libs"
-  "musl"
   "rsync"
+  "so-libc-musl-x86_64-so-1"
+  "so-liblua-so-5"
 ]
 extra-source "lsyncd-2.1.5-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/lsyncd-2.1.5-r5.apk"

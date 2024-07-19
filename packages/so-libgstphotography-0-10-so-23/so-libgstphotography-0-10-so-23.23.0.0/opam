@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "gst-plugins-bad0-10" {= "0.10.23-r7"}
+]

@@ -7,10 +7,10 @@ remove: [
 ]
 depends: [
   "busybox"
-  "libxml2"
-  "musl"
-  "pcre"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpcre-so-1"
+  "so-libxml2-so-2"
+  "so-libz-so-1"
 ]
 extra-source "kamailio-4.3.5-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/kamailio-4.3.5-r1.apk"

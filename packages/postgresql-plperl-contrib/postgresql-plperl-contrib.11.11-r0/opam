@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del postgresql-plperl-contrib"]
 ]
 depends: [
-  "musl"
-  "perl"
   "postgresql-plperl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libperl-so"
 ]
 extra-source "postgresql-plperl-contrib-11.11-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/postgresql-plperl-contrib-11.11-r0.apk"

@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del libssl3"]
 ]
 depends: [
-  "libcrypto3"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-openssl3-so-libcrypto-so-3"
 ]
 extra-source "libssl3-3.0.11-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/libssl3-3.0.11-r0.apk"

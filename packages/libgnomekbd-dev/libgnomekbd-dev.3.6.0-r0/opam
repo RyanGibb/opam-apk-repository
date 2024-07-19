@@ -7,9 +7,8 @@ remove: [
 ]
 depends: [
   "gconf-dev"
-  "glib-dev"
   "gobject-introspection-dev"
-  "gtk+3.0-dev"
+  "gtk+3-0-dev"
   "libgnomekbd" {= "3.6.0-r0"}
   "libxau-dev"
   "libxcb-dev"
@@ -20,7 +19,10 @@ depends: [
   "libxi-dev"
   "libxklavier-dev"
   "libxml2-dev"
-  "pkgconf"
+  "pc-gdk-3-0" {>= "2.91.7"}
+  "pc-gmodule-export-2-0"
+  "pc-libxklavier" {>= "5.2"}
+  "pkgconfig"
 ]
 extra-source "libgnomekbd-dev-3.6.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/libgnomekbd-dev-3.6.0-r0.apk"

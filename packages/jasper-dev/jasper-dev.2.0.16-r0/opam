@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "jasper-libs" {= "2.0.16-r0"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "jasper-dev-2.0.16-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/jasper-dev-2.0.16-r0.apk"

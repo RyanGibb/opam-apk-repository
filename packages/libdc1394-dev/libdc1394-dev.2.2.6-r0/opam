@@ -9,7 +9,7 @@ depends: [
   "libdc1394" {= "2.2.6-r0"}
   "libraw1394-dev"
   "libusb-dev"
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "libdc1394-dev-2.2.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/libdc1394-dev-2.2.6-r0.apk"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del virglrenderer-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
   "virglrenderer" {= "0.8.1-r0"}
 ]
 extra-source "virglrenderer-dev-0.8.1-r0.apk" {

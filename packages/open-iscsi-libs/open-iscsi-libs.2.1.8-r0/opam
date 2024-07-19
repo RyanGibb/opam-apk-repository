@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del open-iscsi-libs"]
 ]
 depends: [
-  "kmod-libs"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libkmod-so-2"
 ]
 extra-source "open-iscsi-libs-2.1.8-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/open-iscsi-libs-2.1.8-r0.apk"

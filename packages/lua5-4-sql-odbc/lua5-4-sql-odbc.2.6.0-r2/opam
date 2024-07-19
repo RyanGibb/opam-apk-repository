@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lua5.4-sql-odbc-2.6.0-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lua5.4-sql-odbc"]
+]
+depends: [
+  "lua5-4"
+  "so-libc-musl-x86_64-so-1"
+  "so-libodbc-so-2"
+]
+extra-source "lua5.4-sql-odbc-2.6.0-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/lua5.4-sql-odbc-2.6.0-r2.apk"
+}

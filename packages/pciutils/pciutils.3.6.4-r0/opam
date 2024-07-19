@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "hwids-pci"
-  "musl"
-  "pciutils-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpci-so-3"
 ]
 extra-source "pciutils-3.6.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/pciutils-3.6.4-r0.apk"

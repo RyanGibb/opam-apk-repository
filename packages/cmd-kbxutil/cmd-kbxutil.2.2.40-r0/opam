@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "gnupg-utils" {= "2.2.40-r0"}
+]

@@ -6,13 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del rdesktop"]
 ]
 depends: [
-  "libcrypto1.1"
-  "libgssglue"
-  "libsamplerate"
-  "libssl1.1"
-  "libx11"
-  "libxrandr"
-  "musl"
+  "so-libX11-so-6"
+  "so-libXrandr-so-2"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-1"
+  "so-libgssglue-so-1"
+  "so-libsamplerate-so-0"
+  "so-libssl-so-1-1"
 ]
 extra-source "rdesktop-1.8.3-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/rdesktop-1.8.3-r5.apk"

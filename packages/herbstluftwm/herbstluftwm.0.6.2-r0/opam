@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del herbstluftwm"]
 ]
 depends: [
-  "glib"
-  "libx11"
-  "libxext"
-  "libxinerama"
-  "musl"
+  "so-libX11-so-6"
+  "so-libXext-so-6"
+  "so-libXinerama-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libglib-2-0-so-0"
 ]
 extra-source "herbstluftwm-0.6.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/herbstluftwm-0.6.2-r0.apk"

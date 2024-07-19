@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "lua-dbi"
-  "mariadb-client-libs"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libmysqlclient-so-18"
 ]
 extra-source "lua-dbi-mysql-0.5-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/lua-dbi-mysql-0.5-r6.apk"

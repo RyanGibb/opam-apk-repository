@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del mg"]
 ]
 depends: [
-  "libbsd"
-  "musl"
-  "ncurses-libs"
+  "so-libbsd-so-0"
+  "so-libc-musl-x86_64-so-1"
+  "so-libncursesw-so-6"
 ]
 extra-source "mg-20221112-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mg-20221112-r0.apk"

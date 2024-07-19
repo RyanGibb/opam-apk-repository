@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del py-gnome-dev"]
 ]
 depends: [
-  "gtk+2.0-dev"
+  "gtk+2-0-dev"
   "libgnome-dev"
-  "pkgconf"
+  "pkgconfig"
   "py-gobject-dev"
   "py-gtk-dev"
   "python2-dev"

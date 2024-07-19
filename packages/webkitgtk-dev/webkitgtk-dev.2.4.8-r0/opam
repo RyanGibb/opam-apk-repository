@@ -8,8 +8,8 @@ remove: [
 depends: [
   "gst-plugins-base1-dev"
   "gstreamer1-dev"
-  "gtk+2.0-dev"
-  "gtk+3.0-dev"
+  "gtk+2-0-dev"
+  "gtk+3-0-dev"
   "libsoup-dev"
   "pkgconfig"
   "webkitgtk" {= "2.4.8-r0"}

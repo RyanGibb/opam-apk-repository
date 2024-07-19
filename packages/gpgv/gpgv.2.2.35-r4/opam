@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del gpgv"]
 ]
 depends: [
-  "libbz2"
-  "libgcrypt"
-  "libgpg-error"
-  "musl"
-  "zlib"
+  "so-libbz2-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcrypt-so-20"
+  "so-libgpg-error-so-0"
+  "so-libz-so-1"
 ]
 extra-source "gpgv-2.2.35-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/gpgv-2.2.35-r4.apk"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "fish"
-  "python2"
+  "python"
 ]
 extra-source "fish-tools-2.7.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/fish-tools-2.7.1-r0.apk"

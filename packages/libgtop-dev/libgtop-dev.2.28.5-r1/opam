@@ -10,6 +10,7 @@ depends: [
   "libgtop" {= "2.28.5-r1"}
   "libx11-dev"
   "libxau-dev"
+  "pc-glib-2-0"
   "pkgconfig"
 ]
 extra-source "libgtop-dev-2.28.5-r1.apk" {

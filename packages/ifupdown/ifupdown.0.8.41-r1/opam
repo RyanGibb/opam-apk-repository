@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del ifupdown"]
 ]
 depends: [
-  "musl"
   "run-parts"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "ifupdown-0.8.41-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/ifupdown-0.8.41-r1.apk"

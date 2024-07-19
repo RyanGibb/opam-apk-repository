@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del mupdf"]
 ]
 depends: [
-  "musl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "mupdf-1.16.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/mupdf-1.16.1-r1.apk"

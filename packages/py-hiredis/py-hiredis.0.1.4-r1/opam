@@ -6,9 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del py-hiredis"]
 ]
 depends: [
-  "hiredis"
-  "musl"
   "python2"
+  "so-libc-musl-x86_64-so-1"
+  "so-libhiredis-so-0-13"
+  "so-libpython2-7-so-1-0"
 ]
 extra-source "py-hiredis-0.1.4-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/py-hiredis-0.1.4-r1.apk"

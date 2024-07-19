@@ -6,11 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del samba-winbind-krb5-locator"]
 ]
 depends: [
-  "libwbclient"
-  "musl"
-  "samba-libs"
-  "samba-util-libs"
-  "talloc"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgse-samba4-so"
+  "so-libreplace-samba4-so"
+  "so-libsamba-util-so-0"
+  "so-libsmbconf-so-0"
+  "so-libtalloc-so-2"
+  "so-libwbclient-so-0"
 ]
 extra-source "samba-winbind-krb5-locator-4.18.9-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/samba-winbind-krb5-locator-4.18.9-r0.apk"

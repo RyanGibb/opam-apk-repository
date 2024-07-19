@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del pgcluster"]
 ]
 depends: [
-  "libcrypto1.0"
-  "libssl1.0"
-  "musl"
-  "zlib"
-  ("pgcluster-libpq" | "libpq")
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-0-0"
+  "so-libpq-so-5"
+  "so-libssl-so-1-0-0"
+  "so-libz-so-1"
 ]
 extra-source "pgcluster-1.9.0_rc5-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/pgcluster-1.9.0_rc5-r8.apk"

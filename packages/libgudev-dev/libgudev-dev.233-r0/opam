@@ -6,9 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del libgudev-dev"]
 ]
 depends: [
-  "glib-dev"
   "libgudev" {= "233-r0"}
-  "pkgconf"
+  "pc-glib-2-0"
+  "pc-gobject-2-0"
+  "pkgconfig"
 ]
 extra-source "libgudev-dev-233-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/libgudev-dev-233-r0.apk"

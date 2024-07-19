@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libebml" {= "1.3.4-r0"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "libebml-dev-1.3.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/libebml-dev-1.3.4-r0.apk"

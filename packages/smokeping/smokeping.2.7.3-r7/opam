@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del smokeping"]
 ]
 depends: [
-  "busybox"
+  "-bin-sh"
   "fping"
   "perl"
   "perl-cgi"

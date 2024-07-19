@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del py3-cffi"]
 ]
 depends: [
-  "libffi"
-  "musl"
   "py3-cparser"
+  "so-libc-musl-x86_64-so-1"
+  "so-libffi-so-7"
 ]
 extra-source "py3-cffi-1.14.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/py3-cffi-1.14.0-r2.apk"

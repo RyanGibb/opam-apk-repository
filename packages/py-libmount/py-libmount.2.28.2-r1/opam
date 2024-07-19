@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "findmnt"
-  "libmount"
-  "musl"
-  "python2"
+  "so-libc-musl-x86_64-so-1"
+  "so-libmount-so-1"
+  "so-libpython2-7-so-1-0"
 ]
 extra-source "py-libmount-2.28.2-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/py-libmount-2.28.2-r1.apk"

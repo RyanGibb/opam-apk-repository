@@ -7,8 +7,9 @@ remove: [
 ]
 depends: [
   "collectd"
-  "musl"
-  "openipmi-libs"
+  "so-libOpenIPMI-so-0"
+  "so-libOpenIPMIpthread-so-0"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "collectd-ipmi-5.7.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/collectd-ipmi-5.7.2-r0.apk"

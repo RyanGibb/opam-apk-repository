@@ -24,7 +24,7 @@ depends: [
   "pciutils-dev"
   "perl"
   "perl-dev"
-  "pkgconf"
+  "pkgconfig"
   "py3-setuptools"
   "python3-dev"
   "spice-dev"

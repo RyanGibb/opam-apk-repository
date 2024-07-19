@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "pcre2-tools" {= "10.32-r1"}
+]

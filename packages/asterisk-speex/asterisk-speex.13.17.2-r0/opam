@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del asterisk-speex"]
 ]
 depends: [
-  "libogg"
-  "musl"
-  "speex"
-  "speexdsp"
+  "so-libc-musl-x86_64-so-1"
+  "so-libogg-so-0"
+  "so-libspeex-so-1"
+  "so-libspeexdsp-so-1"
 ]
 extra-source "asterisk-speex-13.17.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/asterisk-speex-13.17.2-r0.apk"

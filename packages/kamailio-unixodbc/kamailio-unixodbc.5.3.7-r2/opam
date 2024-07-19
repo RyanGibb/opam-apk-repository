@@ -7,8 +7,9 @@ remove: [
 ]
 depends: [
   "kamailio"
-  "musl"
-  "unixodbc"
+  "so-libc-musl-x86_64-so-1"
+  "so-libodbc-so-2"
+  "so-libsrdb1-so-1"
 ]
 extra-source "kamailio-unixodbc-5.3.7-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/kamailio-unixodbc-5.3.7-r2.apk"

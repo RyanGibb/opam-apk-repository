@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del xinput"]
 ]
 depends: [
-  "libx11"
-  "libxi"
-  "libxinerama"
-  "libxrandr"
-  "musl"
+  "so-libX11-so-6"
+  "so-libXi-so-6"
+  "so-libXinerama-so-1"
+  "so-libXrandr-so-2"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "xinput-1.6.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/xinput-1.6.2-r0.apk"

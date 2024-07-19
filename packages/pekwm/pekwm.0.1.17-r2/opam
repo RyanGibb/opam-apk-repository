@@ -6,14 +6,14 @@ remove: [
   ["sh" "-c" "sudo apk del pekwm"]
 ]
 depends: [
-  "libgcc"
-  "libpng"
-  "libstdc++"
-  "libx11"
-  "libxext"
-  "libxpm"
-  "libxrandr"
-  "musl"
+  "so-libX11-so-6"
+  "so-libXext-so-6"
+  "so-libXpm-so-4"
+  "so-libXrandr-so-2"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libpng16-so-16"
+  "so-libstdc++-so-6"
 ]
 extra-source "pekwm-0.1.17-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/pekwm-0.1.17-r2.apk"

@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del python2-tkinter"]
 ]
 depends: [
-  "musl"
-  "python2"
-  "tcl"
-  "tk"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpython2-7-so-1-0"
+  "so-libtcl8-6-so"
+  "so-libtk8-6-so"
 ]
 extra-source "python2-tkinter-2.7.15-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/python2-tkinter-2.7.15-r0.apk"

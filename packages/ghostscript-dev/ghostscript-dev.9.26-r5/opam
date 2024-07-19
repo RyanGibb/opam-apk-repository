@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "ghostscript" {= "9.26-r5"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "ghostscript-dev-9.26-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/ghostscript-dev-9.26-r5.apk"

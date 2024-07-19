@@ -6,14 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del xfce4-cpufreq-plugin"]
 ]
 depends: [
-  "glib"
-  "gtk+2.0"
-  "libintl"
-  "libxfce4ui"
-  "libxfce4util"
-  "musl"
-  "pango"
-  "xfce4-panel"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgdk-x11-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libgtk-x11-2-0-so-0"
+  "so-libintl-so-8"
+  "so-libpango-1-0-so-0"
+  "so-libxfce4panel-1-0-so-4"
+  "so-libxfce4ui-1-so-0"
+  "so-libxfce4util-so-7"
 ]
 extra-source "xfce4-cpufreq-plugin-1.1.3-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/xfce4-cpufreq-plugin-1.1.3-r2.apk"

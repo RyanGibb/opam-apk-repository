@@ -6,8 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del spamassassin"]
 ]
 depends: [
-  "gnupg1"
-  "musl"
+  "gnupg"
   "perl"
   "perl-db_file"
   "perl-digest-sha1"
@@ -19,7 +18,8 @@ depends: [
   "perl-netaddr-ip"
   "perl-time-hires"
   "perl-uri"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libz-so-1"
 ]
 extra-source "spamassassin-3.4.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/spamassassin-3.4.0-r0.apk"

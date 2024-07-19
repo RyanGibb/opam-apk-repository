@@ -6,6 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del amavis"]
 ]
 depends: [
+  "-bin-sh"
   "file"
   "perl"
   "perl-archive-zip"
@@ -29,7 +30,6 @@ depends: [
   "perl-time-hires"
   "perl-unix-syslog"
   "sed"
-  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
 ]
 extra-source "amavis-2.13.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/amavis-2.13.0-r1.apk"

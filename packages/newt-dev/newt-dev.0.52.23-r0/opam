@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "newt" {= "0.52.23-r0"}
-  "pkgconf"
-  "slang-dev"
+  "pc-slang"
+  "pkgconfig"
 ]
 extra-source "newt-dev-0.52.23-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/newt-dev-0.52.23-r0.apk"

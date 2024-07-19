@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del gtksourceview-dev"]
 ]
 depends: [
-  "gtk+2.0-dev"
+  "gtk+2-0-dev"
   "gtksourceview" {= "2.10.4-r6"}
   "gtksourceview-doc" {= "2.10.4-r6"}
   "gtksourceview-lang" {= "2.10.4-r6"}

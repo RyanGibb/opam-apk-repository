@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del perl-crypt-openssl-rsa"]
 ]
 depends: [
-  "libressl2.6-libcrypto"
-  "musl"
   "perl"
   "perl-crypt-openssl-random"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-42"
 ]
 extra-source "perl-crypt-openssl-rsa-0.28-r9.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/perl-crypt-openssl-rsa-0.28-r9.apk"

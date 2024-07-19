@@ -6,7 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del qjson-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pc-QtCore"
+  "pkgconfig"
   "qjson" {= "0.8.1-r0"}
   "qt-dev"
 ]

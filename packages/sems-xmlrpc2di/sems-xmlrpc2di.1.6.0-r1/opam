@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del sems-xmlrpc2di"]
 ]
 depends: [
-  "libgcc"
-  "libssl1.0"
-  "libstdc++"
-  "musl"
   "sems"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libssl-so-1-0-0"
+  "so-libstdc++-so-6"
 ]
 extra-source "sems-xmlrpc2di-1.6.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/sems-xmlrpc2di-1.6.0-r1.apk"

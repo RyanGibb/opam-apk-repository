@@ -6,15 +6,17 @@ remove: [
   ["sh" "-c" "sudo apk del mesa-xatracker"]
 ]
 depends: [
-  "libdrm"
-  "libexpat"
-  "libgcc"
-  "libstdc++"
-  "llvm15-libs"
   "mesa" {= "22.2.5-r1"}
-  "musl"
-  "zlib"
-  "zstd-libs"
+  "so-libLLVM-15-so"
+  "so-libc-musl-x86_64-so-1"
+  "so-libdrm-so-2"
+  "so-libdrm_intel-so-1"
+  "so-libdrm_nouveau-so-2"
+  "so-libexpat-so-1"
+  "so-libgcc_s-so-1"
+  "so-libstdc++-so-6"
+  "so-libz-so-1"
+  "so-libzstd-so-1"
 ]
 extra-source "mesa-xatracker-22.2.5-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mesa-xatracker-22.2.5-r1.apk"

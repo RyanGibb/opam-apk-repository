@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "gconf-dev"
-  "gtk+2.0-dev"
-  "pkgconf"
+  "gtk+2-0-dev"
+  "pkgconfig"
   "py-gobject-dev"
   "py-gtk-dev"
   "python2-dev"

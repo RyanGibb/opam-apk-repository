@@ -9,7 +9,7 @@ depends: [
   "dbus-dev"
   "expat-dev"
   "libnih" {= "1.0.3-r3"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "libnih-dev-1.0.3-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/libnih-dev-1.0.3-r3.apk"

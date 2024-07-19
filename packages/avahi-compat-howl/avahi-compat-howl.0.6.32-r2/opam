@@ -6,8 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del avahi-compat-howl"]
 ]
 depends: [
-  "avahi-libs"
-  "musl"
+  "so-libavahi-client-so-3"
+  "so-libavahi-common-so-3"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "avahi-compat-howl-0.6.32-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/avahi-compat-howl-0.6.32-r2.apk"

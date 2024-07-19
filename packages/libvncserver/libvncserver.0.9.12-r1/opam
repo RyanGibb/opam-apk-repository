@@ -6,14 +6,14 @@ remove: [
   ["sh" "-c" "sudo apk del libvncserver"]
 ]
 depends: [
-  "libcrypto1.1"
-  "libgcrypt"
-  "libjpeg-turbo"
-  "libpng"
-  "libssl1.1"
-  "lzo"
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-1"
+  "so-libgcrypt-so-20"
+  "so-libjpeg-so-8"
+  "so-liblzo2-so-2"
+  "so-libpng16-so-16"
+  "so-libssl-so-1-1"
+  "so-libz-so-1"
 ]
 extra-source "libvncserver-0.9.12-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/libvncserver-0.9.12-r1.apk"

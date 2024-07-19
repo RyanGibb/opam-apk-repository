@@ -11,10 +11,14 @@ depends: [
   "glib-dev"
   "libtirpc-dev"
   "openssl-dev"
-  "pkgconf"
+  "pc-blkid"
+  "pc-libcrypto"
+  "pc-libtirpc"
+  "pc-uuid"
+  "pc-zlib"
+  "pkgconfig"
   "util-linux-dev"
   "zfs-libs" {= "2.0.1-r0"}
-  "zlib-dev"
 ]
 extra-source "zfs-dev-2.0.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/zfs-dev-2.0.1-r0.apk"

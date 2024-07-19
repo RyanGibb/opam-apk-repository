@@ -9,7 +9,10 @@ depends: [
   "libx11-dev"
   "libxext-dev"
   "libxinerama" {= "1.1.3-r0"}
-  "pkgconf"
+  "pc-x11"
+  "pc-xext"
+  "pc-xineramaproto"
+  "pkgconfig"
   "xineramaproto"
 ]
 extra-source "libxinerama-dev-1.1.3-r0.apk" {

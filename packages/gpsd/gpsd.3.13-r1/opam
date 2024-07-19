@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del gpsd"]
 ]
 depends: [
-  "libgcc"
-  "libstdc++"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libstdc++-so-6"
 ]
 extra-source "gpsd-3.13-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/gpsd-3.13-r1.apk"

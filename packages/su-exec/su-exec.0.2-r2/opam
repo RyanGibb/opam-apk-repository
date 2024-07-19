@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del su-exec"]
 ]
 depends: [
-  "musl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "su-exec-0.2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/su-exec-0.2-r2.apk"

@@ -6,16 +6,17 @@ remove: [
   ["sh" "-c" "sudo apk del qt5-qtbase"]
 ]
 depends: [
-  "dbus-libs"
-  "glib"
-  "icu-libs"
-  "libcrypto1.0"
-  "libgcc"
-  "libpcre16"
-  "libssl1.0"
-  "libstdc++"
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-0-0"
+  "so-libdbus-1-so-3"
+  "so-libgcc_s-so-1"
+  "so-libglib-2-0-so-0"
+  "so-libicui18n-so-56"
+  "so-libicuuc-so-56"
+  "so-libpcre16-so-0"
+  "so-libssl-so-1-0-0"
+  "so-libstdc++-so-6"
+  "so-libz-so-1"
 ]
 extra-source "qt5-qtbase-5.5.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/qt5-qtbase-5.5.1-r0.apk"

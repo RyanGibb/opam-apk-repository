@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libpng" {= "1.6.25-r0"}
-  "pkgconf"
+  "pkgconfig"
   "zlib-dev"
 ]
 extra-source "libpng-dev-1.6.25-r0.apk" {

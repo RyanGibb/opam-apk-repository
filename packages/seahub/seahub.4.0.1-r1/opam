@@ -14,7 +14,7 @@ depends: [
   "py-django-djblets"
   "py-django-registration"
   "py-django-simple-captcha"
-  "py-django1.5"
+  "py-django1-5"
   "py-flup"
   "py-gunicorn"
   "py-libsearpc"

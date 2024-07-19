@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del py3-talloc"]
 ]
 depends: [
-  "musl"
-  "python3"
-  "talloc"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpython3-10-so-1-0"
+  "so-libtalloc-so-2"
 ]
 extra-source "py3-talloc-2.3.3-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/py3-talloc-2.3.3-r1.apk"

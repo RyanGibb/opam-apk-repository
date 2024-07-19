@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del patch"]
 ]
 depends: [
-  "musl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "patch-2.7.6-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/patch-2.7.6-r4.apk"

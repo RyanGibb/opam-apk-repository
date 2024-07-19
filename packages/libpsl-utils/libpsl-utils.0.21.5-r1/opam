@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del libpsl-utils"]
 ]
 depends: [
-  "libpsl"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpsl-so-5"
 ]
 extra-source "libpsl-utils-0.21.5-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libpsl-utils-0.21.5-r1.apk"

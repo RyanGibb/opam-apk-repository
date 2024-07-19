@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del py-simplejson"]
 ]
 depends: [
-  "musl"
-  "python"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpython2-7-so-1-0"
 ]
 extra-source "py-simplejson-3.3.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/py-simplejson-3.3.0-r0.apk"

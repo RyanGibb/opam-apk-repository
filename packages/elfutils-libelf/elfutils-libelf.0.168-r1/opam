@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del elfutils-libelf"]
 ]
 depends: [
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libz-so-1"
 ]
 extra-source "elfutils-libelf-0.168-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/elfutils-libelf-0.168-r1.apk"

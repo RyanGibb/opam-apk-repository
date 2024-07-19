@@ -6,8 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del nettle-utils"]
 ]
 depends: [
-  "musl"
-  "nettle"
+  "so-libc-musl-x86_64-so-1"
+  "so-libhogweed-so-2"
+  "so-libnettle-so-4"
 ]
 extra-source "nettle-utils-2.7.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/nettle-utils-2.7.1-r1.apk"

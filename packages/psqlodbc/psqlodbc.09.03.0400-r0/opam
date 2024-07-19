@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del psqlodbc"]
 ]
 depends: [
-  "libssl1.0"
-  "musl"
-  "unixodbc"
-  ("pgcluster-libpq" | "libpq")
+  "so-libc-musl-x86_64-so-1"
+  "so-libodbcinst-so-2"
+  "so-libpq-so-5"
+  "so-libssl-so-1-0-0"
 ]
 extra-source "psqlodbc-09.03.0400-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/psqlodbc-09.03.0400-r0.apk"

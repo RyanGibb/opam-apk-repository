@@ -7,13 +7,13 @@ remove: [
 ]
 depends: [
   "btrfs-progs"
-  "e2fsprogs-libs"
-  "eudev-libs"
-  "libblkid"
-  "libcom_err"
-  "libuuid"
-  "musl"
-  "zlib"
+  "so-libblkid-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcom_err-so-2"
+  "so-libext2fs-so-2"
+  "so-libudev-so-1"
+  "so-libuuid-so-1"
+  "so-libz-so-1"
 ]
 extra-source "btrfs-progs-extra-6.6.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/btrfs-progs-extra-6.6.2-r0.apk"

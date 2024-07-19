@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del x264-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
   "x264-libs" {= "20161201-r0"}
 ]
 extra-source "x264-dev-20161201-r0.apk" {

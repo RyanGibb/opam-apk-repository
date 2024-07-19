@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "ghostscript-dev" {= "9.26-r5"}
+]

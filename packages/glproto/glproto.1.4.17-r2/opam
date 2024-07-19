@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del glproto"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "glproto-1.4.17-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/glproto-1.4.17-r2.apk"

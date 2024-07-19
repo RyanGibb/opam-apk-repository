@@ -8,7 +8,7 @@ remove: [
 depends: [
   "libcap-dev"
   "lxc-libs" {= "2.1.1-r3"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "lxc-dev-2.1.1-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/lxc-dev-2.1.1-r3.apk"

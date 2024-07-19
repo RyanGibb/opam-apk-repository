@@ -11,6 +11,11 @@ depends: [
   "libtasn1-dev"
   "nettle-dev"
   "p11-kit-dev"
+  "pc-hogweed"
+  "pc-libtasn1"
+  "pc-nettle"
+  "pc-p11-kit-1"
+  "pc-zlib"
   "pkgconfig"
   "zlib-dev"
 ]

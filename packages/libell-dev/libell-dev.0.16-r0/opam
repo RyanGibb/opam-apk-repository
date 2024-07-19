@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libell" {= "0.16-r0"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "libell-dev-0.16-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libell-dev-0.16-r0.apk"

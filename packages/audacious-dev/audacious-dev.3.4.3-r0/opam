@@ -9,7 +9,7 @@ depends: [
   "audacious" {= "3.4.3-r0"}
   "audacious-lang" {= "3.4.3-r0"}
   "dbus-glib-dev"
-  "gtk+3.0-dev"
+  "gtk+3-0-dev"
   "pkgconfig"
 ]
 extra-source "audacious-dev-3.4.3-r0.apk" {

@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "dovecot-sql" {= "2.3.13-r1"}
-  "libpq"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpq-so-5"
 ]
 extra-source "dovecot-pgsql-2.3.13-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/dovecot-pgsql-2.3.13-r1.apk"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del simdjson-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
   "simdjson" {= "3.6.0-r0"}
 ]
 extra-source "simdjson-dev-3.6.0-r0.apk" {

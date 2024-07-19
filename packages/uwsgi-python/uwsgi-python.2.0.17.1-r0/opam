@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del uwsgi-python"]
 ]
 depends: [
-  "musl"
-  "python2"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpython2-7-so-1-0"
   "uwsgi"
 ]
 extra-source "uwsgi-python-2.0.17.1-r0.apk" {

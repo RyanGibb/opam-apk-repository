@@ -8,7 +8,7 @@ remove: [
 depends: [
   "gmp-dev"
   "libucontext-dev"
-  "pkgconf"
+  "pkgconfig"
   "ruby" {= "3.3.3-r0"}
   "ruby-libs" {= "3.3.3-r0"}
   "ruby-rdoc" {= "3.3.3-r0"}

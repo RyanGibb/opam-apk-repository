@@ -6,14 +6,15 @@ remove: [
   ["sh" "-c" "sudo apk del libxklavier"]
 ]
 depends: [
-  "glib"
   "iso-codes"
-  "libintl"
-  "libx11"
-  "libxi"
-  "libxkbfile"
-  "libxml2"
-  "musl"
+  "so-libX11-so-6"
+  "so-libXi-so-6"
+  "so-libc-musl-x86_64-so-1"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libintl-so-8"
+  "so-libxkbfile-so-1"
+  "so-libxml2-so-2"
   "xkeyboard-config"
 ]
 extra-source "libxklavier-5.4-r3.apk" {

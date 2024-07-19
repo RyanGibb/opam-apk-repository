@@ -6,11 +6,32 @@ remove: [
   ["sh" "-c" "sudo apk del libreoffice-base"]
 ]
 depends: [
-  "libgcc"
   "libreoffice-common"
   "libreoffice-common" {= "5.0.5.2-r0"}
-  "libstdc++"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcomphelper-so"
+  "so-libdbalo-so"
+  "so-libdbtoolslo-so"
+  "so-libeditenglo-so"
+  "so-libfwelo-so"
+  "so-libgcc_s-so-1"
+  "so-libi18nlangtag-so"
+  "so-libsfxlo-so"
+  "so-libsotlo-so"
+  "so-libstdc++-so-6"
+  "so-libsvllo-so"
+  "so-libsvtlo-so"
+  "so-libsvxcorelo-so"
+  "so-libsvxlo-so"
+  "so-libtklo-so"
+  "so-libtllo-so"
+  "so-libucbhelper-so"
+  "so-libuno_cppu-so-3"
+  "so-libuno_cppuhelpergcc3-so-3"
+  "so-libuno_sal-so-3"
+  "so-libuno_salhelpergcc3-so-3"
+  "so-libutllo-so"
+  "so-libvcllo-so"
 ]
 extra-source "libreoffice-base-5.0.5.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/libreoffice-base-5.0.5.2-r0.apk"

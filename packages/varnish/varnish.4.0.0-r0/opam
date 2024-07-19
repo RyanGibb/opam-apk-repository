@@ -9,11 +9,11 @@ depends: [
   "busybox"
   "gcc"
   "libc-dev"
-  "libedit"
-  "musl"
-  "ncurses-widec-libs"
-  "pcre"
-  "varnish-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libedit-so-0"
+  "so-libncursesw-so-5"
+  "so-libpcre-so-1"
+  "so-libvarnishapi-so-1"
 ]
 extra-source "varnish-4.0.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/varnish-4.0.0-r0.apk"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del dkimproxy"]
 ]
 depends: [
-  "busybox"
+  "-bin-sh"
   "perl-error"
   "perl-mail-dkim"
   "perl-net-server"

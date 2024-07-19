@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del ruby-augeas"]
 ]
 depends: [
-  "augeas-libs"
-  "libucontext"
-  "libxml2"
-  "musl"
   "ruby"
-  "ruby-libs"
+  "so-libaugeas-so-0"
+  "so-libc-musl-x86_64-so-1"
+  "so-libruby-so-3-1"
+  "so-libucontext-so-1"
+  "so-libxml2-so-2"
 ]
 extra-source "ruby-augeas-0.5.0-r10.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ruby-augeas-0.5.0-r10.apk"

@@ -12,7 +12,7 @@ depends: [
   "libsrtp-dev"
   "openssl-dev" {> "3"}
   "pjproject" {= "2.14-r1"}
-  "pkgconf"
+  "pkgconfig"
   "portaudio-dev"
   "speex-dev"
   "speexdsp-dev"

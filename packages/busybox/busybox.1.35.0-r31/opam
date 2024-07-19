@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del busybox"]
 ]
 depends: [
-  "musl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "busybox-1.35.0-r31.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/busybox-1.35.0-r31.apk"

@@ -6,9 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del dconf"]
 ]
 depends: [
-  "dbus-libs"
-  "glib"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libdbus-1-so-3"
+  "so-libgio-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
 ]
 extra-source "dconf-0.22.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/dconf-0.22.0-r0.apk"

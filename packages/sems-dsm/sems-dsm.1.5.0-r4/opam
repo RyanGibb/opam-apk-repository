@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del sems-dsm"]
 ]
 depends: [
-  "libgcc"
-  "libstdc++"
-  "musl"
   "sems"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libstdc++-so-6"
 ]
 extra-source "sems-dsm-1.5.0-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/sems-dsm-1.5.0-r4.apk"

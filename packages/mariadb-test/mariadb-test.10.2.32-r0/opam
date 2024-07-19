@@ -6,15 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del mariadb-test"]
 ]
 depends: [
-  "libaio"
-  "libressl2.7-libcrypto"
-  "libressl2.7-libssl"
-  "libstdc++"
   "mariadb-common"
-  "musl"
-  "pcre"
-  "xz-libs"
-  "zlib"
+  "so-libaio-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-43"
+  "so-liblzma-so-5"
+  "so-libpcre-so-1"
+  "so-libpcreposix-so-0"
+  "so-libssl-so-45"
+  "so-libstdc++-so-6"
+  "so-libz-so-1"
 ]
 extra-source "mariadb-test-10.2.32-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/mariadb-test-10.2.32-r0.apk"

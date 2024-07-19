@@ -10,7 +10,10 @@ depends: [
   "gdk-pixbuf-dev"
   "glib-dev"
   "libnotify" {= "0.7.7-r2"}
-  "pkgconf"
+  "pc-gdk-pixbuf-2-0"
+  "pc-gio-2-0" {>= "2.26.0"}
+  "pc-glib-2-0" {>= "2.26.0"}
+  "pkgconfig"
 ]
 extra-source "libnotify-dev-0.7.7-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libnotify-dev-0.7.7-r2.apk"

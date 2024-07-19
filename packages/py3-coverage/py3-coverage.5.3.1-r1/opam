@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del py3-coverage"]
 ]
 depends: [
-  "musl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "py3-coverage-5.3.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/py3-coverage-5.3.1-r1.apk"

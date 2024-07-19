@@ -6,14 +6,14 @@ remove: [
   ["sh" "-c" "sudo apk del clang14"]
 ]
 depends: [
-  "clang14-libclang"
-  "clang14-libs"
-  "libgcc"
-  "libstdc++"
   "libstdc++-dev"
-  "libxml2"
-  "llvm14-libs"
-  "musl"
+  "so-libLLVM-14-so"
+  "so-libc-musl-x86_64-so-1"
+  "so-libclang-cpp-so-14"
+  "so-libclang-so-13"
+  "so-libgcc_s-so-1"
+  "so-libstdc++-so-6"
+  "so-libxml2-so-2"
 ]
 extra-source "clang14-14.0.6-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/clang14-14.0.6-r1.apk"

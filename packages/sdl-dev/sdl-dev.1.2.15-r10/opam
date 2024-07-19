@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libx11-dev"
-  "pkgconf"
+  "pkgconfig"
   "sdl" {= "1.2.15-r10"}
 ]
 extra-source "sdl-dev-1.2.15-r10.apk" {

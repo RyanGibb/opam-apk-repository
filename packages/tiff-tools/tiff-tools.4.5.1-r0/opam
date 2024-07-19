@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del tiff-tools"]
 ]
 depends: [
-  "musl"
-  "tiff"
+  "so-libc-musl-x86_64-so-1"
+  "so-libtiff-so-6"
 ]
 extra-source "tiff-tools-4.5.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/tiff-tools-4.5.1-r0.apk"

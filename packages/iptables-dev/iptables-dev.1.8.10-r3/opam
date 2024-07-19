@@ -11,7 +11,7 @@ depends: [
   "libipq" {= "1.8.10-r3"}
   "libxtables" {= "1.8.10-r3"}
   "linux-headers"
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "iptables-dev-1.8.10-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/iptables-dev-1.8.10-r3.apk"

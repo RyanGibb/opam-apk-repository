@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libatomic_ops" {= "7.6.10-r1"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "libatomic_ops-dev-7.6.10-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/libatomic_ops-dev-7.6.10-r1.apk"

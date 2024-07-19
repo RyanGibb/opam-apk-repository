@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del v4l-utils-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
   "v4l-utils-dvbv5" {= "1.10.1-r2"}
   "v4l-utils-libs" {= "1.10.1-r2"}
 ]

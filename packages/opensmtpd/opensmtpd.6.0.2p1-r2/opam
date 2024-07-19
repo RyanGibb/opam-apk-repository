@@ -7,14 +7,14 @@ remove: [
 ]
 depends: [
   "busybox"
-  "db"
-  "fts"
-  "libasr"
-  "libevent"
-  "libressl2.5-libcrypto"
-  "libressl2.5-libssl"
-  "musl"
-  "zlib"
+  "so-libasr-so-0"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-41"
+  "so-libdb-5-3-so"
+  "so-libevent-2-1-so-6"
+  "so-libfts-so-0"
+  "so-libssl-so-43"
+  "so-libz-so-1"
 ]
 extra-source "opensmtpd-6.0.2p1-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/opensmtpd-6.0.2p1-r2.apk"

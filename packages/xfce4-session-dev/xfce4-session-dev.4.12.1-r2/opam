@@ -7,7 +7,9 @@ remove: [
 ]
 depends: [
   "libxfce4ui-dev"
-  "pkgconf"
+  "pc-libxfce4ui-1"
+  "pc-libxfconf-0"
+  "pkgconfig"
   "xfce4-session" {= "4.12.1-r2"}
   "xfconf-dev"
 ]

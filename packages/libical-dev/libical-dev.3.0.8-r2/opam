@@ -7,10 +7,11 @@ remove: [
 ]
 depends: [
   "db-dev"
-  "glib-dev"
-  "icu-dev"
   "libical" {= "3.0.8-r2"}
-  "pkgconf"
+  "pc-glib-2-0"
+  "pc-gobject-2-0"
+  "pc-icu-i18n"
+  "pkgconfig"
 ]
 extra-source "libical-dev-3.0.8-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/libical-dev-3.0.8-r2.apk"

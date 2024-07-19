@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "icu" {= "69.1-r1"}
+]

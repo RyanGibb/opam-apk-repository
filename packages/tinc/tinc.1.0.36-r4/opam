@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del tinc"]
 ]
 depends: [
-  "libcrypto3"
-  "lzo"
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-3"
+  "so-liblzo2-so-2"
+  "so-libz-so-1"
 ]
 extra-source "tinc-1.0.36-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/tinc-1.0.36-r4.apk"

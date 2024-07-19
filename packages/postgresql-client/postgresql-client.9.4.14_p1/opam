@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "postgresql-bdr-client" {= "9.4.14_p1-r9"}
+]

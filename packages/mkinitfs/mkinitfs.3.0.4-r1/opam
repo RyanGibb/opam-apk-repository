@@ -9,11 +9,11 @@ depends: [
   "acct"
   "apk-tools" {>= "2.0"}
   "busybox"
-  "cryptsetup-libs"
-  "kmod"
   "lddtree" {>= "1.25"}
-  "libblkid"
-  "musl"
+  "so-libblkid-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcryptsetup-so-4"
+  "so-libkmod-so-2"
 ]
 extra-source "mkinitfs-3.0.4-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/mkinitfs-3.0.4-r1.apk"

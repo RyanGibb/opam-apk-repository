@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del php-mcrypt"]
 ]
 depends: [
-  "libltdl"
-  "libmcrypt"
-  "musl"
   "php"
   "php-cli"
+  "so-libc-musl-x86_64-so-1"
+  "so-libltdl-so-7"
+  "so-libmcrypt-so-4"
 ]
 extra-source "php-mcrypt-5.6.31-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/php-mcrypt-5.6.31-r0.apk"

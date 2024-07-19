@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del py-ldb"]
 ]
 depends: [
-  "ldb"
-  "musl"
-  "python"
-  "talloc"
+  "so-libc-musl-x86_64-so-1"
+  "so-libldb-so-1"
+  "so-libpython2-7-so-1-0"
+  "so-libtalloc-so-2"
 ]
 extra-source "py-ldb-1.1.24-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/py-ldb-1.1.24-r1.apk"

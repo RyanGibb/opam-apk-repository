@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libacl" {= "2.3.2-r0"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "acl-dev-2.3.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/acl-dev-2.3.2-r0.apk"

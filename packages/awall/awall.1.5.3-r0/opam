@@ -6,17 +6,17 @@ remove: [
   ["sh" "-c" "sudo apk del awall"]
 ]
 depends: [
+  "-bin-sh"
   "bind-tools"
-  "busybox"
   "ip6tables"
   "ipset"
   "iptables"
-  "lua5.2"
-  "lua5.2-alt-getopt"
-  "lua5.2-cjson"
-  "lua5.2-pc"
-  "lua5.2-posix"
-  "lua5.2-stringy"
+  "lua5-2"
+  "lua5-2-alt-getopt"
+  "lua5-2-cjson"
+  "lua5-2-pc"
+  "lua5-2-posix"
+  "lua5-2-stringy"
   "xtables-addons"
 ]
 extra-source "awall-1.5.3-r0.apk" {

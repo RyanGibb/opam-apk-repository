@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del guile-readline"]
 ]
 depends: [
-  "guile-libs"
-  "libunistring"
-  "musl"
-  "readline"
+  "so-libc-musl-x86_64-so-1"
+  "so-libguile-3-0-so-1"
+  "so-libreadline-so-8"
+  "so-libunistring-so-5"
 ]
 extra-source "guile-readline-3.0.9-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/guile-readline-3.0.9-r0.apk"

@@ -6,20 +6,22 @@ remove: [
   ["sh" "-c" "sudo apk del spice-dev"]
 ]
 depends: [
-  "cyrus-sasl-dev"
-  "glib-dev"
-  "gst-plugins-base-dev"
-  "gstreamer-dev"
-  "libjpeg-turbo-dev"
-  "lz4-dev"
-  "openssl-dev"
-  "opus-dev"
-  "orc-dev"
-  "pixman-dev"
-  "pkgconf"
-  "spice-protocol"
+  "pc-glib-2-0" {>= "2.38"}
+  "pc-gstreamer-1-0"
+  "pc-gstreamer-app-1-0"
+  "pc-gstreamer-base-1-0"
+  "pc-gstreamer-video-1-0"
+  "pc-libjpeg"
+  "pc-liblz4" {>= "1.7.3"}
+  "pc-libsasl2"
+  "pc-openssl" {>= "1.0.0"}
+  "pc-opus" {>= "0.9.14"}
+  "pc-orc-0-4"
+  "pc-pixman-1" {>= "0.17.7"}
+  "pc-spice-protocol" {>= "0.14.3"}
+  "pc-zlib"
+  "pkgconfig"
   "spice-server" {= "0.15.1-r0"}
-  "zlib-dev"
 ]
 extra-source "spice-dev-0.15.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/spice-dev-0.15.1-r0.apk"

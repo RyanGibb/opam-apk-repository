@@ -7,13 +7,13 @@ remove: [
 ]
 depends: [
   "gcc" {= "4.9.2-r6"}
-  "gmp"
   "libc-dev"
   "libstdc++" {= "4.9.2-r6"}
-  "mpc1"
-  "mpfr3"
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgmp-so-10"
+  "so-libmpc-so-3"
+  "so-libmpfr-so-4"
+  "so-libz-so-1"
 ]
 extra-source "g++-4.9.2-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/g++-4.9.2-r6.apk"

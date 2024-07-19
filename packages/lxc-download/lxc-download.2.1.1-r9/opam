@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del lxc-download"]
 ]
 depends: [
-  "gnupg1"
+  "gnupg"
   "lxc"
   "tar"
   "wget"

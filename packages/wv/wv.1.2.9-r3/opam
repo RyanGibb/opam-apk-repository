@@ -6,11 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del wv"]
 ]
 depends: [
-  "glib"
-  "libgsf"
-  "libxml2"
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libgsf-1-so-114"
+  "so-libxml2-so-2"
+  "so-libz-so-1"
 ]
 extra-source "wv-1.2.9-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/wv-1.2.9-r3.apk"

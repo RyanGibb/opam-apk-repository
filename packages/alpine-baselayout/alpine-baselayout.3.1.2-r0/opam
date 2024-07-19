@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del alpine-baselayout"]
 ]
 depends: [
-  "busybox"
-  "musl"
+  "-bin-sh"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "alpine-baselayout-3.1.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/alpine-baselayout-3.1.2-r0.apk"

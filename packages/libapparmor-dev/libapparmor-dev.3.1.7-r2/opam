@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libapparmor" {= "3.1.7-r2"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "libapparmor-dev-3.1.7-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libapparmor-dev-3.1.7-r2.apk"

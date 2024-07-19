@@ -10,7 +10,7 @@ depends: [
   "celt051-dev"
   "cyrus-sasl-dev"
   "gst-plugins-base-dev"
-  "gtk+3.0-dev"
+  "gtk+3-0-dev"
   "jpeg-dev"
   "libxrandr-dev"
   "openssl-dev"

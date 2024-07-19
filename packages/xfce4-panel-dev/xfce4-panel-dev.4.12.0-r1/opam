@@ -6,9 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del xfce4-panel-dev"]
 ]
 depends: [
-  "glib-dev"
-  "gtk+2.0-dev"
+  "gtk+2-0-dev"
   "libxfce4util-dev"
+  "pc-glib-2-0"
+  "pc-gmodule-2-0"
+  "pc-gtk+-2-0"
+  "pc-libxfce4util-1-0"
   "pkgconfig"
   "xfce4-panel" {= "4.12.0-r1"}
 ]

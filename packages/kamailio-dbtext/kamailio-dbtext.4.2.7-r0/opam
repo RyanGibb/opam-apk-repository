@@ -8,8 +8,10 @@ remove: [
 depends: [
   "kamailio"
   "kamailio-db"
-  "musl"
   "python"
+  "so-libc-musl-x86_64-so-1"
+  "so-libkcore-so-1"
+  "so-libsrdb1-so-1"
 ]
 extra-source "kamailio-dbtext-4.2.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/kamailio-dbtext-4.2.7-r0.apk"

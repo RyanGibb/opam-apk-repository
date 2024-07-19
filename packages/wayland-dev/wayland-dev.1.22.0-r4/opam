@@ -7,11 +7,12 @@ remove: [
 ]
 depends: [
   "expat-dev"
-  "libexpat"
   "libffi-dev"
-  "libxml2"
-  "musl"
-  "pkgconf"
+  "pc-libffi"
+  "pkgconfig"
+  "so-libc-musl-x86_64-so-1"
+  "so-libexpat-so-1"
+  "so-libxml2-so-2"
   "wayland-libs-client" {= "1.22.0-r4"}
   "wayland-libs-cursor" {= "1.22.0-r4"}
   "wayland-libs-egl" {= "1.22.0-r4"}

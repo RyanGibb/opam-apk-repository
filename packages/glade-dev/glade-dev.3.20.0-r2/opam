@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "glade" {= "3.20.0-r2"}
-  "gtk+3.0-dev"
-  "libxml2-dev"
-  "pkgconf"
+  "pc-gtk+-3-0" {>= "2.91.2"}
+  "pc-libxml-2-0" {>= "2.4.0"}
+  "pkgconfig"
 ]
 extra-source "glade-dev-3.20.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/glade-dev-3.20.0-r2.apk"

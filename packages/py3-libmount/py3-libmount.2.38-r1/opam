@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del py3-libmount"]
 ]
 depends: [
-  "libmount"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libmount-so-1"
 ]
 extra-source "py3-libmount-2.38-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/py3-libmount-2.38-r1.apk"

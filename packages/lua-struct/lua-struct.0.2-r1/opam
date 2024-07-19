@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del lua-struct"]
 ]
 depends: [
-  "lua5.1-struct"
-  "lua5.2-struct"
+  "lua5-1-struct"
+  "lua5-2-struct"
 ]
 extra-source "lua-struct-0.2-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/lua-struct-0.2-r1.apk"

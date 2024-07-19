@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del nagios-plugins-dbi"]
 ]
 depends: [
-  "libdbi"
-  "musl"
   "nagios-plugins"
+  "so-libc-musl-x86_64-so-1"
+  "so-libdbi-so-1"
 ]
 extra-source "nagios-plugins-dbi-2.1.4-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/nagios-plugins-dbi-2.1.4-r2.apk"

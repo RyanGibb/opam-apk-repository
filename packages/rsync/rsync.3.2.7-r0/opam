@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del rsync"]
 ]
 depends: [
-  "libacl"
-  "lz4-libs"
-  "musl"
-  "popt"
-  "zlib"
-  "zstd-libs"
+  "so-libacl-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-liblz4-so-1"
+  "so-libpopt-so-0"
+  "so-libz-so-1"
+  "so-libzstd-so-1"
 ]
 extra-source "rsync-3.2.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/rsync-3.2.7-r0.apk"

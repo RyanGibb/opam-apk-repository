@@ -9,6 +9,10 @@ depends: [
   "glib-dev"
   "gstreamer1" {= "1.6.1-r0"}
   "libxml2-dev"
+  "pc-gio-2-0"
+  "pc-glib-2-0"
+  "pc-gmodule-no-export-2-0"
+  "pc-gobject-2-0"
   "pkgconfig"
 ]
 extra-source "gstreamer1-dev-1.6.1-r0.apk" {

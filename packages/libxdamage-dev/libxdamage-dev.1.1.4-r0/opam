@@ -11,7 +11,11 @@ depends: [
   "libx11-dev"
   "libxdamage" {= "1.1.4-r0"}
   "libxfixes-dev"
-  "pkgconf"
+  "pc-damageproto" {>= "1.1"}
+  "pc-x11"
+  "pc-xfixes"
+  "pc-xproto"
+  "pkgconfig"
   "xproto"
 ]
 extra-source "libxdamage-dev-1.1.4-r0.apk" {

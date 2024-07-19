@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "glade3-dev" {= "3.8.5-r5"}
+]

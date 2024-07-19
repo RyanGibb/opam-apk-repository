@@ -9,7 +9,7 @@ depends: [
   "libcurl" {= "7.61.1-r1"}
   "libressl-dev"
   "libssh2-dev"
-  "pkgconf"
+  "pkgconfig"
   "zlib-dev"
 ]
 extra-source "curl-dev-7.61.1-r1.apk" {

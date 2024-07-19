@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libcbor" {= "0.8.0-r0"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "libcbor-dev-0.8.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libcbor-dev-0.8.0-r0.apk"

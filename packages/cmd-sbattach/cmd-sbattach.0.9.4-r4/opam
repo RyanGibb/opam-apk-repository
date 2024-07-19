@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "sbsigntool" {= "0.9.4-r4"}
+]

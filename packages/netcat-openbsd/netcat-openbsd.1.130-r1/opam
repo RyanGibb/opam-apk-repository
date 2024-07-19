@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del netcat-openbsd"]
 ]
 depends: [
-  "libbsd"
-  "musl"
+  "so-libbsd-so-0"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "netcat-openbsd-1.130-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/netcat-openbsd-1.130-r1.apk"

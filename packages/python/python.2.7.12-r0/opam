@@ -6,17 +6,18 @@ remove: [
   ["sh" "-c" "sudo apk del python"]
 ]
 depends: [
-  "expat"
-  "gdbm"
-  "libbz2"
-  "libcrypto1.0"
-  "libffi"
-  "libssl1.0"
-  "musl"
-  "ncurses-libs"
-  "readline"
-  "sqlite-libs"
-  "zlib"
+  "so-libbz2-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-0-0"
+  "so-libexpat-so-1"
+  "so-libffi-so-6"
+  "so-libgdbm_compat-so-4"
+  "so-libncursesw-so-6"
+  "so-libpanelw-so-6"
+  "so-libreadline-so-6"
+  "so-libsqlite3-so-0"
+  "so-libssl-so-1-0-0"
+  "so-libz-so-1"
 ]
 extra-source "python-2.7.12-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/python-2.7.12-r0.apk"

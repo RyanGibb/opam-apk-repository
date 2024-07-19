@@ -6,9 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del cfdisk"]
 ]
 depends: [
-  "musl"
-  "ncurses-widec-libs"
-  "util-linux"
+  "so-libc-musl-x86_64-so-1"
+  "so-libfdisk-so-1"
+  "so-libncursesw-so-5"
+  "so-libsmartcols-so-1"
 ]
 extra-source "cfdisk-2.26.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/cfdisk-2.26.2-r0.apk"

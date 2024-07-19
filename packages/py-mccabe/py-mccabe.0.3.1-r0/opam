@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del py-mccabe"]
 ]
 depends: [
-  "python2"
+  "python"
 ]
 extra-source "py-mccabe-0.3.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/py-mccabe-0.3.1-r0.apk"

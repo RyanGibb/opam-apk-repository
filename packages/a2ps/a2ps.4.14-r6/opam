@@ -8,8 +8,8 @@ remove: [
 depends: [
   "ghostscript"
   "imagemagick"
-  "musl"
   "perl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "a2ps-4.14-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/a2ps-4.14-r6.apk"

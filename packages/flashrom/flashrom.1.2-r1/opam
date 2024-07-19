@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del flashrom"]
 ]
 depends: [
+  "-bin-sh"
   "dmidecode"
-  "libusb"
-  "musl"
-  "pciutils-libs"
-  ("yash-binsh" | "busybox-binsh" | "dash-binsh")
+  "so-libc-musl-x86_64-so-1"
+  "so-libpci-so-3"
+  "so-libusb-1-0-so-0"
 ]
 extra-source "flashrom-1.2-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/flashrom-1.2-r1.apk"

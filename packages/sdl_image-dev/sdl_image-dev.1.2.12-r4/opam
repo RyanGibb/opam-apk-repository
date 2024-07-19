@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del sdl_image-dev"]
 ]
 depends: [
-  "pkgconf"
-  "sdl-dev"
+  "pc-sdl" {>= "1.2.10"}
+  "pkgconfig"
   "sdl_image" {= "1.2.12-r4"}
 ]
 extra-source "sdl_image-dev-1.2.12-r4.apk" {

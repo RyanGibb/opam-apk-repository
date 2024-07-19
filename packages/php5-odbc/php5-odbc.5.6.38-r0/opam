@@ -6,8 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del php5-odbc"]
 ]
 depends: [
-  "musl"
   "php5"
+  "so-libc-musl-x86_64-so-1"
+  "so-libodbc-so-2"
   "unixodbc"
 ]
 extra-source "php5-odbc-5.6.38-r0.apk" {

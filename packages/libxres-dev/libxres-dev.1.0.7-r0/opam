@@ -9,7 +9,10 @@ depends: [
   "libx11-dev"
   "libxext-dev"
   "libxres" {= "1.0.7-r0"}
-  "pkgconf"
+  "pc-x11"
+  "pc-xext"
+  "pc-xproto"
+  "pkgconfig"
   "resourceproto"
   "xproto"
 ]

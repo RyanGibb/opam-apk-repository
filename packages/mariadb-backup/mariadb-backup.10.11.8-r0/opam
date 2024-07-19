@@ -6,15 +6,15 @@ remove: [
   ["sh" "-c" "sudo apk del mariadb-backup"]
 ]
 depends: [
-  "libaio"
-  "libcrypto3"
-  "libgcc"
-  "libssl3"
-  "libstdc++"
   "mariadb-common"
-  "musl"
-  "pcre2"
-  "zlib"
+  "so-libaio-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-3"
+  "so-libgcc_s-so-1"
+  "so-libpcre2-8-so-0"
+  "so-libssl-so-3"
+  "so-libstdc++-so-6"
+  "so-libz-so-1"
 ]
 extra-source "mariadb-backup-10.11.8-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/mariadb-backup-10.11.8-r0.apk"

@@ -13,7 +13,7 @@ depends: [
   "libtool"
   "neon" {= "0.31.1-r0"}
   "openssl-dev"
-  "pkgconf"
+  "pkgconfig"
   "xmlto"
   "zlib-dev"
 ]

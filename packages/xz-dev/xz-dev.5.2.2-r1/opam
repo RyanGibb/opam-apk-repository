@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del xz-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
   "xz-libs" {= "5.2.2-r1"}
 ]
 extra-source "xz-dev-5.2.2-r1.apk" {

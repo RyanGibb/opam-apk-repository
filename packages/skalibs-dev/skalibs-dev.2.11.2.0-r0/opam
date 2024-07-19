@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del skalibs-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
   "skalibs" {= "2.11.2.0-r0"}
 ]
 extra-source "skalibs-dev-2.11.2.0-r0.apk" {

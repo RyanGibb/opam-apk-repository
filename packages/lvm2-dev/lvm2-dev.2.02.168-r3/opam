@@ -10,7 +10,7 @@ depends: [
   "device-mapper-libs" {= "2.02.168-r3"}
   "linux-headers"
   "lvm2-libs" {= "2.02.168-r3"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "lvm2-dev-2.02.168-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/lvm2-dev-2.02.168-r3.apk"

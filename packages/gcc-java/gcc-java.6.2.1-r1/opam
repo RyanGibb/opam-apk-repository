@@ -7,15 +7,17 @@ remove: [
 ]
 depends: [
   "gcc" {= "6.2.1-r1"}
-  "gmp"
-  "isl"
-  "libgcc"
-  "libgcj"
   "libgcj" {= "6.2.1-r1"}
-  "mpc1"
-  "mpfr3"
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libgcj-so-17"
+  "so-libgcj-tools-so-17"
+  "so-libgcj_bc-so-1"
+  "so-libgmp-so-10"
+  "so-libisl-so-15"
+  "so-libmpc-so-3"
+  "so-libmpfr-so-4"
+  "so-libz-so-1"
   "zlib-dev"
 ]
 extra-source "gcc-java-6.2.1-r1.apk" {

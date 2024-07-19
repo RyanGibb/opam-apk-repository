@@ -9,6 +9,9 @@ depends: [
   "exiv2-dev"
   "gexiv2" {= "0.10.3-r0"}
   "glib-dev"
+  "pc-exiv2"
+  "pc-glib-2-0"
+  "pc-gobject-2-0"
   "pkgconfig"
 ]
 extra-source "gexiv2-dev-0.10.3-r0.apk" {

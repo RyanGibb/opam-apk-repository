@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "gpg-wks-server" {= "2.2.35-r4"}
+]

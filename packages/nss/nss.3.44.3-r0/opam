@@ -6,11 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del nss"]
 ]
 depends: [
-  "libgcc"
-  "libstdc++"
-  "musl"
-  "nspr"
-  "sqlite-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libnspr4-so"
+  "so-libplc4-so"
+  "so-libplds4-so"
+  "so-libsqlite3-so-0"
+  "so-libstdc++-so-6"
 ]
 extra-source "nss-3.44.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/nss-3.44.3-r0.apk"

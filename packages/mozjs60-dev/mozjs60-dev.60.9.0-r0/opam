@@ -10,7 +10,8 @@ depends: [
   "libffi-dev"
   "mozjs60" {= "60.9.0-r0"}
   "nspr-dev"
-  "pkgconf"
+  "pc-nspr" {>= "4.9.2"}
+  "pkgconfig"
   "readline-dev"
 ]
 extra-source "mozjs60-dev-60.9.0-r0.apk" {

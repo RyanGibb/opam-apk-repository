@@ -9,7 +9,8 @@ depends: [
   "libexif-dev"
   "libgphoto2" {= "2.5.14-r0"}
   "libusb-dev"
-  "pkgconf"
+  "pc-libexif" {>= "0.6.13"}
+  "pkgconfig"
 ]
 extra-source "libgphoto2-dev-2.5.14-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/libgphoto2-dev-2.5.14-r0.apk"

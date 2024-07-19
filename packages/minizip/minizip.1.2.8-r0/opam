@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del minizip"]
 ]
 depends: [
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libz-so-1"
 ]
 extra-source "minizip-1.2.8-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/minizip-1.2.8-r0.apk"

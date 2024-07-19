@@ -6,10 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del pangox-compat"]
 ]
 depends: [
-  "glib"
-  "libx11"
-  "musl"
-  "pango"
+  "so-libX11-so-6"
+  "so-libc-musl-x86_64-so-1"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libpango-1-0-so-0"
 ]
 extra-source "pangox-compat-0.0.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/pangox-compat-0.0.2-r0.apk"

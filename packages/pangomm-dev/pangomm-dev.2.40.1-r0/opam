@@ -10,7 +10,10 @@ depends: [
   "glibmm-dev"
   "pango-dev"
   "pangomm" {= "2.40.1-r0"}
-  "pkgconf"
+  "pc-cairomm-1-0" {>= "1.2.2"}
+  "pc-glibmm-2-4" {>= "2.48.0"}
+  "pc-pangocairo" {>= "1.38.0"}
+  "pkgconfig"
 ]
 extra-source "pangomm-dev-2.40.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/pangomm-dev-2.40.1-r0.apk"

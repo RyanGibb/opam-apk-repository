@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del rtpproxy"]
 ]
 depends: [
-  "busybox"
-  "musl"
+  "-bin-sh"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "rtpproxy-2.1.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/rtpproxy-2.1.0-r0.apk"

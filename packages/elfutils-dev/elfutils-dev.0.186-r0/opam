@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "libelf" {= "0.186-r0"}
-  "pkgconf"
-  "xz-dev"
-  "zlib-dev"
+  "pc-liblzma"
+  "pc-zlib"
+  "pkgconfig"
 ]
 extra-source "elfutils-dev-0.186-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/elfutils-dev-0.186-r0.apk"

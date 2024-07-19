@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "v4l-utils" {= "1.12.5-r1"}
+]

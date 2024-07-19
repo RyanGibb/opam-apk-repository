@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del uwsgi-logzmq"]
 ]
 depends: [
-  "libzmq"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libzmq-so-5"
   "uwsgi"
 ]
 extra-source "uwsgi-logzmq-2.0.21-r0.apk" {

@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "goaccess" {= "1.7.2-r1"}
+]

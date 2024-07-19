@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "boost1-80-type_erasure" {= "1.80.0-r3"}
+]

@@ -9,7 +9,10 @@ depends: [
   "fixesproto"
   "libx11-dev"
   "libxfixes" {= "5.0.3-r0"}
-  "pkgconf"
+  "pc-fixesproto" {>= "5.0"}
+  "pc-x11"
+  "pc-xproto"
+  "pkgconfig"
   "xproto"
 ]
 extra-source "libxfixes-dev-5.0.3-r0.apk" {

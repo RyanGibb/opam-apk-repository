@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del bzip2"]
 ]
 depends: [
-  "musl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "bzip2-1.0.6-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/bzip2-1.0.6-r3.apk"

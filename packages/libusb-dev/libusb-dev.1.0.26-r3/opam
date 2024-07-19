@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libusb" {= "1.0.26-r3"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "libusb-dev-1.0.26-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/libusb-dev-1.0.26-r3.apk"

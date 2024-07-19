@@ -6,12 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del bacula"]
 ]
 depends: [
-  "bacula-libs"
-  "busybox"
-  "libstdc++"
-  "lzo"
-  "musl"
-  "zlib"
+  "-bin-sh"
+  "so-libbac-9-4-1-so"
+  "so-libbaccfg-9-4-1-so"
+  "so-libbacfind-9-4-1-so"
+  "so-libbacsd-9-4-1-so"
+  "so-libbacsql-9-4-1-so"
+  "so-libc-musl-x86_64-so-1"
+  "so-liblzo2-so-2"
+  "so-libstdc++-so-6"
+  "so-libz-so-1"
 ]
 extra-source "bacula-9.4.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/bacula-9.4.1-r1.apk"

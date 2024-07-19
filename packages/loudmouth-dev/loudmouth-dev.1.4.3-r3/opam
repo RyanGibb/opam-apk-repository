@@ -13,6 +13,7 @@ depends: [
   "libasyncns-dev"
   "libidn-dev"
   "loudmouth" {= "1.4.3-r3"}
+  "pc-glib-2-0"
   "pkgconfig"
 ]
 extra-source "loudmouth-dev-1.4.3-r3.apk" {

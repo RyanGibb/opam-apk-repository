@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "libxau" {= "1.0.8-r3"}
-  "pkgconf"
-  "xorgproto"
+  "pc-xproto"
+  "pkgconfig"
 ]
 extra-source "libxau-dev-1.0.8-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libxau-dev-1.0.8-r3.apk"

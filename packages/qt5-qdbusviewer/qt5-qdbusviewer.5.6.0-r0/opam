@@ -6,10 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del qt5-qdbusviewer"]
 ]
 depends: [
-  "libstdc++"
-  "musl"
-  "qt5-qtbase"
-  "qt5-qtbase-x11"
+  "so-libQt5Core-so-5"
+  "so-libQt5DBus-so-5"
+  "so-libQt5Gui-so-5"
+  "so-libQt5Widgets-so-5"
+  "so-libQt5Xml-so-5"
+  "so-libc-musl-x86_64-so-1"
+  "so-libstdc++-so-6"
 ]
 extra-source "qt5-qdbusviewer-5.6.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/qt5-qdbusviewer-5.6.0-r0.apk"

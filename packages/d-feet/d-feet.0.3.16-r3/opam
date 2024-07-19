@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del d-feet"]
 ]
 depends: [
-  "gtk+3.0"
+  "gtk+3-0"
   "py3-gobject3"
   "python3"
   "python3" {>= "3.12"}

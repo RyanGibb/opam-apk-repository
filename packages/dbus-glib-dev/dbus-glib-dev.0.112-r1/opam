@@ -6,10 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del dbus-glib-dev"]
 ]
 depends: [
-  "dbus-dev"
   "dbus-glib" {= "0.112-r1"}
-  "glib-dev"
-  "pkgconf"
+  "pc-dbus-1"
+  "pc-glib-2-0"
+  "pc-gobject-2-0"
+  "pkgconfig"
 ]
 extra-source "dbus-glib-dev-0.112-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dbus-glib-dev-0.112-r1.apk"

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del python3-gdbm"]
 ]
 depends: [
-  "gdbm"
   "libssl3" {>= "3.3.0"}
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgdbm-so-6"
 ]
 extra-source "python3-gdbm-3.12.3-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/python3-gdbm-3.12.3-r1.apk"

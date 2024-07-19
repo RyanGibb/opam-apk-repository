@@ -6,11 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del farstream"]
 ]
 depends: [
-  "glib"
-  "gst-plugins-base1"
-  "gstreamer1"
-  "libnice"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgio-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgmodule-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libgstbase-1-0-so-0"
+  "so-libgstnet-1-0-so-0"
+  "so-libgstreamer-1-0-so-0"
+  "so-libgstrtp-1-0-so-0"
+  "so-libnice-so-10"
 ]
 extra-source "farstream-0.2.8-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/farstream-0.2.8-r0.apk"

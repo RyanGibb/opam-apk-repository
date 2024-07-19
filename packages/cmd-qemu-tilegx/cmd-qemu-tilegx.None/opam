@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "qemu-tilegx" {= "3.1.0-r3"}
+]

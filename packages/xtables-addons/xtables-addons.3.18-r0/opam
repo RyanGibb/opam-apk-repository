@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del xtables-addons"]
 ]
 depends: [
-  "iptables"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libxtables-so-12"
 ]
 extra-source "xtables-addons-3.18-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/xtables-addons-3.18-r0.apk"

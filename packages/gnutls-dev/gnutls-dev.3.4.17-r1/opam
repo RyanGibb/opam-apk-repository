@@ -11,7 +11,12 @@ depends: [
   "libtasn1-dev"
   "nettle-dev"
   "p11-kit-dev"
-  "pkgconf"
+  "pc-hogweed"
+  "pc-libtasn1"
+  "pc-nettle"
+  "pc-p11-kit-1"
+  "pc-zlib"
+  "pkgconfig"
   "zlib-dev"
 ]
 extra-source "gnutls-dev-3.4.17-r1.apk" {

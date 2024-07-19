@@ -6,9 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del ipvsadm"]
 ]
 depends: [
-  "libnl3"
-  "musl"
-  "popt"
+  "so-libc-musl-x86_64-so-1"
+  "so-libnl-3-so-200"
+  "so-libnl-genl-3-so-200"
+  "so-libpopt-so-0"
 ]
 extra-source "ipvsadm-1.31-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/ipvsadm-1.31-r0.apk"

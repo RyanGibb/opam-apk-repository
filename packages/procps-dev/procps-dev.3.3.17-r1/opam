@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libproc" {= "3.3.17-r1"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "procps-dev-3.3.17-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/procps-dev-3.3.17-r1.apk"

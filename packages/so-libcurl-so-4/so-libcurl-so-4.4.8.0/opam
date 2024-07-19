@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "libcurl" {= "8.8.0-r0"}
+]

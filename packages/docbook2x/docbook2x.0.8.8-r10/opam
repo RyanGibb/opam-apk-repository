@@ -9,9 +9,9 @@ depends: [
   "docbook-xml"
   "docbook-xsl"
   "libxslt"
-  "musl"
   "openjade"
   "perl-xml-sax"
+  "so-libc-musl-x86_64-so-1"
   "texinfo"
 ]
 extra-source "docbook2x-0.8.8-r10.apk" {

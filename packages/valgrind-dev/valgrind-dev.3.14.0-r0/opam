@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del valgrind-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "valgrind-dev-3.14.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/valgrind-dev-3.14.0-r0.apk"

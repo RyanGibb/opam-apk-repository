@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "imagemagick" {= "7.0.8.68-r0"}
+]

@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del compiler-rt"]
 ]
 depends: [
-  "libexecinfo"
-  "libgcc"
-  "libstdc++"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libexecinfo-so-1"
+  "so-libgcc_s-so-1"
+  "so-libstdc++-so-6"
 ]
 extra-source "compiler-rt-13.0.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/compiler-rt-13.0.1-r0.apk"

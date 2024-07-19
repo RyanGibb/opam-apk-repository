@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del lua-alt-getopt"]
 ]
 depends: [
-  "lua5.1-alt-getopt"
-  "lua5.2-alt-getopt"
+  "lua5-1-alt-getopt"
+  "lua5-2-alt-getopt"
 ]
 extra-source "lua-alt-getopt-0.7.0-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/lua-alt-getopt-0.7.0-r5.apk"

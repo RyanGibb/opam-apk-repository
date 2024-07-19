@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del hexchat-python"]
 ]
 depends: [
-  "libcrypto1.0"
-  "libintl"
-  "libssl1.0"
-  "musl"
-  "python"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-0-0"
+  "so-libintl-so-8"
+  "so-libpython2-7-so-1-0"
+  "so-libssl-so-1-0-0"
 ]
 extra-source "hexchat-python-2.10.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/hexchat-python-2.10.2-r0.apk"

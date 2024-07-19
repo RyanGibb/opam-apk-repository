@@ -12,7 +12,7 @@ depends: [
   "perl-net-dns"
   "perl-net-dns-resolver-mock"
   "perl-net-ip"
-  "perl-yaml-libyaml"
+  "perl-yaml-xs"
 ]
 extra-source "perl-mail-dkim-0.44-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/perl-mail-dkim-0.44-r0.apk"

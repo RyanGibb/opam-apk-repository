@@ -8,11 +8,12 @@ remove: [
 depends: [
   "busybox"
   "iproute2"
-  "libcrypto1.0"
-  "musl"
-  "net-snmp-agent-libs"
-  "net-snmp-libs"
-  "readline"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-0-0"
+  "so-libnetsnmp-so-30"
+  "so-libnetsnmpagent-so-30"
+  "so-libnetsnmpmibs-so-30"
+  "so-libreadline-so-6"
 ]
 extra-source "quagga-0.99.23.1-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/quagga-0.99.23.1-r3.apk"

@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del openssh-server-pam"]
 ]
 depends: [
-  "libcrypto1.1"
-  "linux-pam"
-  "musl"
   "openssh-keygen"
   "openssh-server-common"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-1"
+  "so-libpam-so-0"
+  "so-libz-so-1"
 ]
 extra-source "openssh-server-pam-7.9_p1-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/openssh-server-pam-7.9_p1-r6.apk"

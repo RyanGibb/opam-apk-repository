@@ -6,12 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del libical-dev"]
 ]
 depends: [
-  "glib-dev"
   "gobject-introspection-dev"
-  "icu-dev"
   "libical" {= "3.0.17-r1"}
   "libxml2-dev"
-  "pkgconf"
+  "pc-glib-2-0"
+  "pc-gobject-2-0"
+  "pc-icu-i18n"
+  "pkgconfig"
 ]
 extra-source "libical-dev-3.0.17-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/libical-dev-3.0.17-r1.apk"

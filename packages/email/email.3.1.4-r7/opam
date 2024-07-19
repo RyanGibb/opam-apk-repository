@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del email"]
 ]
 depends: [
-  "musl"
   "openssl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "email-3.1.4-r7.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/email-3.1.4-r7.apk"

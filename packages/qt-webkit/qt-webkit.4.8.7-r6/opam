@@ -7,14 +7,16 @@ remove: [
 ]
 depends: [
   "ca-certificates"
-  "libgcc"
-  "libstdc++"
-  "libx11"
-  "libxrender"
-  "musl"
-  "qt"
-  "qt-x11"
-  "sqlite-libs"
+  "so-libQtCore-so-4"
+  "so-libQtDeclarative-so-4"
+  "so-libQtGui-so-4"
+  "so-libQtNetwork-so-4"
+  "so-libX11-so-6"
+  "so-libXrender-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libsqlite3-so-0"
+  "so-libstdc++-so-6"
 ]
 extra-source "qt-webkit-4.8.7-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/qt-webkit-4.8.7-r6.apk"

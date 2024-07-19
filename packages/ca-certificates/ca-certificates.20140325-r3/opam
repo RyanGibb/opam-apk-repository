@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "busybox"
-  "lua5.2"
-  "lua5.2-posix"
+  "lua5-2"
+  "lua5-2-posix"
   "openssl"
   "run-parts"
 ]

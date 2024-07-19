@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del openpgm"]
 ]
 depends: [
-  "musl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "openpgm-5.2.122-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/openpgm-5.2.122-r0.apk"

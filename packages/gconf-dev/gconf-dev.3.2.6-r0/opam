@@ -8,7 +8,7 @@ remove: [
 depends: [
   "gconf" {= "3.2.6-r0"}
   "gconf-lang" {= "3.2.6-r0"}
-  "gtk+3.0-dev"
+  "gtk+3-0-dev"
   "libxml2-dev"
   "orbit2-dev"
   "pkgconfig"

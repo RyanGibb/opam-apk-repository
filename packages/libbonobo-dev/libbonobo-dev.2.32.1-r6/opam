@@ -6,13 +6,15 @@ remove: [
   ["sh" "-c" "sudo apk del libbonobo-dev"]
 ]
 depends: [
-  "glib-dev"
-  "gtk+2.0-dev"
+  "gtk+2-0-dev"
   "libbonobo" {= "2.32.1-r6"}
   "libidl-dev"
   "libxml2-dev"
   "orbit2-dev"
-  "pkgconf"
+  "pc-ORBit-2-0"
+  "pc-glib-2-0"
+  "pc-gmodule-no-export-2-0"
+  "pkgconfig"
   "popt-dev"
 ]
 extra-source "libbonobo-dev-2.32.1-r6.apk" {

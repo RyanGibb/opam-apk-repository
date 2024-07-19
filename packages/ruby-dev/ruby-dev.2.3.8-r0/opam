@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "gmp-dev"
-  "pkgconf"
+  "pkgconfig"
   "ruby-libs" {= "2.3.8-r0"}
 ]
 extra-source "ruby-dev-2.3.8-r0.apk" {

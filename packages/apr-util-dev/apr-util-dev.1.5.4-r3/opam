@@ -12,7 +12,8 @@ depends: [
   "expat-dev"
   "libressl-dev"
   "openldap-dev"
-  "pkgconf"
+  "pc-apr-1"
+  "pkgconfig"
   "postgresql-dev"
   "sqlite-dev"
 ]

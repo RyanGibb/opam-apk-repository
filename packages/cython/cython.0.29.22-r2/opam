@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del cython"]
 ]
 depends: [
-  "musl"
   "python3"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "cython-0.29.22-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/cython-0.29.22-r2.apk"

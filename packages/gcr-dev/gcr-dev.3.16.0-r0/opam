@@ -10,7 +10,7 @@ depends: [
   "gcr-doc" {= "3.16.0-r0"}
   "gcr-lang" {= "3.16.0-r0"}
   "glib-dev"
-  "gtk+3.0-dev"
+  "gtk+3-0-dev"
   "libgcrypt-dev"
   "p11-kit-dev"
   "pkgconfig"

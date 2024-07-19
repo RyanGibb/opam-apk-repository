@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "eudev-libs" {= "3.2.4-r1"}
-  "kmod"
-  "libblkid"
-  "musl"
+  "so-libblkid-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libkmod-so-2"
   "udev-init-scripts"
 ]
 extra-source "eudev-3.2.4-r1.apk" {

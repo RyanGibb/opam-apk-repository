@@ -10,7 +10,11 @@ depends: [
   "freetype-dev"
   "libfontenc-dev"
   "libxfont" {= "1.5.2-r1"}
-  "pkgconf"
+  "pc-fontenc"
+  "pc-fontsproto"
+  "pc-freetype2"
+  "pc-xproto"
+  "pkgconfig"
   "xproto"
 ]
 extra-source "libxfont-dev-1.5.2-r1.apk" {

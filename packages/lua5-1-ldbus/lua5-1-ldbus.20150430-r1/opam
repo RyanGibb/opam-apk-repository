@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lua5.1-ldbus-20150430-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lua5.1-ldbus"]
+]
+depends: [
+  "so-libc-musl-x86_64-so-1"
+  "so-libdbus-1-so-3"
+]
+extra-source "lua5.1-ldbus-20150430-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/lua5.1-ldbus-20150430-r1.apk"
+}

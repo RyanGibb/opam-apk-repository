@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del spandsp-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
   "spandsp" {= "0.0.6-r0"}
   "tiff-dev"
 ]

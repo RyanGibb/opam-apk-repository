@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del rsyslog-mmfields"]
 ]
 depends: [
-  "musl"
   "rsyslog" {= "8.2204.1-r0"}
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "rsyslog-mmfields-8.2204.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/rsyslog-mmfields-8.2204.1-r0.apk"

@@ -6,10 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del openipmi-libs"]
 ]
 depends: [
-  "glib"
-  "libcrypto1.0"
-  "libintl"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-0-0"
+  "so-libglib-2-0-so-0"
+  "so-libgthread-2-0-so-0"
+  "so-libintl-so-8"
 ]
 extra-source "openipmi-libs-2.0.21-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/openipmi-libs-2.0.21-r3.apk"

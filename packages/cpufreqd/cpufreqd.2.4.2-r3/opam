@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del cpufreqd"]
 ]
 depends: [
-  "cpufrequtils"
-  "musl"
-  "sysfsutils"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcpufreq-so-0"
+  "so-libsysfs-so-2"
 ]
 extra-source "cpufreqd-2.4.2-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/cpufreqd-2.4.2-r3.apk"

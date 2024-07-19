@@ -6,13 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del postfix"]
 ]
 depends: [
-  "icu-libs"
-  "libcrypto3"
-  "libsasl"
-  "libssl3"
-  "lmdb"
-  "musl"
-  ("yash-binsh" | "busybox-binsh" | "dash-binsh")
+  "-bin-sh"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-3"
+  "so-libicuuc-so-72"
+  "so-liblmdb-so-0"
+  "so-libsasl2-so-3"
+  "so-libssl-so-3"
 ]
 extra-source "postfix-3.7.11-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/postfix-3.7.11-r0.apk"

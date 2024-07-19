@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del alpine-baselayout"]
 ]
 depends: [
+  "-bin-sh"
   "alpine-baselayout-data" {= "3.2.0-r23"}
-  "busybox"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "alpine-baselayout-3.2.0-r23.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/alpine-baselayout-3.2.0-r23.apk"

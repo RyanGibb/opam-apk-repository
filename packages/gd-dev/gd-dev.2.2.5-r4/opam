@@ -9,7 +9,7 @@ depends: [
   "gd"
   "libgd" {= "2.2.5-r4"}
   "perl"
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "gd-dev-2.2.5-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/gd-dev-2.2.5-r4.apk"

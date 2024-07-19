@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "apr"
-  "pkgconf"
+  "pkgconfig"
   "util-linux-dev"
 ]
 extra-source "apr-dev-1.7.2-r0.apk" {

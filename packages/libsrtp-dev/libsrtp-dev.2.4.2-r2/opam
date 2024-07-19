@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libsrtp" {= "2.4.2-r2"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "libsrtp-dev-2.4.2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/libsrtp-dev-2.4.2-r2.apk"

@@ -10,7 +10,7 @@ depends: [
   "e2fsprogs-dev"
   "glib-dev"
   "libtirpc-dev"
-  "pkgconf"
+  "pkgconfig"
   "util-linux-dev"
   "zfs-libs" {= "0.7.12-r1"}
 ]

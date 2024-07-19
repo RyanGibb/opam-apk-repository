@@ -13,7 +13,8 @@ depends: [
   "mariadb-dev"
   "openldap-dev"
   "openssl-dev"
-  "pkgconf"
+  "pc-apr-1"
+  "pkgconfig"
   "postgresql-dev"
   "sqlite-dev"
 ]

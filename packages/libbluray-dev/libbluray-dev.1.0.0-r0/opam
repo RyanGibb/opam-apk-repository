@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libbluray" {= "1.0.0-r0"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "libbluray-dev-1.0.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/libbluray-dev-1.0.0-r0.apk"

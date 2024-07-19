@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "freeradius" {= "3.0.12-r2"}
-  "json-c"
-  "libcurl"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcurl-so-4"
+  "so-libjson-c-so-2"
 ]
 extra-source "freeradius-rest-3.0.12-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/freeradius-rest-3.0.12-r2.apk"

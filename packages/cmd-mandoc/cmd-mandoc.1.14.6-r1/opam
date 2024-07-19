@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "mandoc" {= "1.14.6-r1"}
+]

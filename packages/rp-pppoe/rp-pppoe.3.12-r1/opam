@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del rp-pppoe"]
 ]
 depends: [
-  "musl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "rp-pppoe-3.12-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/rp-pppoe-3.12-r1.apk"

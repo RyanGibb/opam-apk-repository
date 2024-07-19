@@ -7,8 +7,10 @@ remove: [
 ]
 depends: [
   "exo" {= "0.10.7-r0"}
-  "gtk+2.0-dev"
+  "gtk+2-0-dev"
   "libxfce4util-dev"
+  "pc-gtk+-2-0"
+  "pc-libxfce4util-1-0"
   "pkgconfig"
 ]
 extra-source "exo-dev-0.10.7-r0.apk" {

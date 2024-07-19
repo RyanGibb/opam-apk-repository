@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del libxshmfence"]
 ]
 depends: [
-  "musl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "libxshmfence-1.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/libxshmfence-1.1-r0.apk"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "diffutils"
-  "gvim"
+  "vim" {= "9.1.0414-r0"}
 ]
 extra-source "vimdiff-9.1.0414-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/vimdiff-9.1.0414-r0.apk"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del duplicity-lang"]
 ]
 depends: [
-  "gnupg1"
+  "gnupg"
   "librsync"
   "ncftp"
   "py-boto"

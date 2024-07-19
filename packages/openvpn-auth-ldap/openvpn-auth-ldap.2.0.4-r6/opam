@@ -6,11 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del openvpn-auth-ldap"]
 ]
 depends: [
-  "libldap"
-  "libobjc"
-  "musl"
+  "-bin-sh"
   "openvpn"
-  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
+  "so-libc-musl-x86_64-so-1"
+  "so-liblber-so-2"
+  "so-libldap-so-2"
+  "so-libobjc-so-4"
 ]
 extra-source "openvpn-auth-ldap-2.0.4-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/openvpn-auth-ldap-2.0.4-r6.apk"

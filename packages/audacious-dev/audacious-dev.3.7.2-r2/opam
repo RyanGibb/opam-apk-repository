@@ -8,8 +8,8 @@ remove: [
 depends: [
   "audacious" {= "3.7.2-r2"}
   "dbus-glib-dev"
-  "gtk+2.0-dev"
-  "pkgconf"
+  "gtk+2-0-dev"
+  "pkgconfig"
 ]
 extra-source "audacious-dev-3.7.2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/audacious-dev-3.7.2-r2.apk"

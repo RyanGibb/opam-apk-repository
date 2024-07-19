@@ -6,11 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del libunique"]
 ]
 depends: [
-  "dbus-glib"
-  "glib"
-  "gtk+2.0"
-  "libx11"
-  "musl"
+  "so-libX11-so-6"
+  "so-libc-musl-x86_64-so-1"
+  "so-libdbus-glib-1-so-2"
+  "so-libgdk-x11-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libgtk-x11-2-0-so-0"
 ]
 extra-source "libunique-1.1.6-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libunique-1.1.6-r6.apk"

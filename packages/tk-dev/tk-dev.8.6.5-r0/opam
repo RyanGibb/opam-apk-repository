@@ -9,6 +9,7 @@ depends: [
   "fontconfig-dev"
   "libx11-dev"
   "libxft-dev"
+  "pc-tcl" {>= "8.6"}
   "pkgconfig"
   "tcl-dev"
 ]

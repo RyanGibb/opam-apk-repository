@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del glslang-libs"]
 ]
 depends: [
-  "libstdc++"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libstdc++-so-6"
 ]
 extra-source "glslang-libs-11.12.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/glslang-libs-11.12.0-r0.apk"

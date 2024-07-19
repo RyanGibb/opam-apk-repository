@@ -11,7 +11,11 @@ depends: [
   "libxcomposite" {= "0.4.4-r0"}
   "libxext-dev"
   "libxfixes-dev"
-  "pkgconf"
+  "pc-compositeproto" {>= "0.4"}
+  "pc-x11"
+  "pc-xfixes"
+  "pc-xproto"
+  "pkgconfig"
   "xproto"
 ]
 extra-source "libxcomposite-dev-0.4.4-r0.apk" {

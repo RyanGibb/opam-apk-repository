@@ -6,15 +6,18 @@ remove: [
   ["sh" "-c" "sudo apk del mesa-dri-classic"]
 ]
 depends: [
-  "expat"
-  "libdrm"
-  "libgcc"
-  "libstdc++"
   "mesa" {= "20.3.3-r0"}
-  "mesa-glapi"
-  "musl"
-  "zlib"
-  "zstd-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libdrm-so-2"
+  "so-libdrm_intel-so-1"
+  "so-libdrm_nouveau-so-2"
+  "so-libdrm_radeon-so-1"
+  "so-libexpat-so-1"
+  "so-libgcc_s-so-1"
+  "so-libglapi-so-0"
+  "so-libstdc++-so-6"
+  "so-libz-so-1"
+  "so-libzstd-so-1"
 ]
 extra-source "mesa-dri-classic-20.3.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/mesa-dri-classic-20.3.3-r0.apk"

@@ -9,6 +9,10 @@ depends: [
   "glib-dev"
   "gst-plugins-base1" {= "1.6.1-r0"}
   "gstreamer1-dev"
+  "pc-gio-2-0"
+  "pc-glib-2-0"
+  "pc-gstreamer-1-0"
+  "pc-gstreamer-base-1-0"
   "pkgconfig"
 ]
 extra-source "gst-plugins-base1-dev-1.6.1-r0.apk" {

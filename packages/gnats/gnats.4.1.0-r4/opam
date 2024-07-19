@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "busybox"
-  "musl"
   "postfix"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "gnats-4.1.0-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/gnats-4.1.0-r4.apk"

@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "busybox"
-  "musl"
-  "ncurses-libs"
-  "readline"
+  "so-libc-musl-x86_64-so-1"
+  "so-libncursesw-so-6"
+  "so-libreadline-so-6"
 ]
 extra-source "bash-4.3.46-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/bash-4.3.46-r5.apk"

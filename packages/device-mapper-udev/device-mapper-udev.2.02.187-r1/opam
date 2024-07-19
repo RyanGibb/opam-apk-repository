@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del device-mapper-udev"]
 ]
 depends: [
-  "busybox"
+  "-bin-sh"
   "lvm2-libs" {= "2.02.187-r1"}
 ]
 extra-source "device-mapper-udev-2.02.187-r1.apk" {

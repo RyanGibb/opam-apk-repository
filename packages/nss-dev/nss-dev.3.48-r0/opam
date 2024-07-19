@@ -6,13 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del nss-dev"]
 ]
 depends: [
-  "libgcc"
-  "libstdc++"
-  "musl"
-  "nspr"
   "nspr-dev"
   "nss"
-  "pkgconf"
+  "pc-nspr" {>= "3.48"}
+  "pkgconfig"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libnspr4-so"
+  "so-libnssutil3-so"
+  "so-libplc4-so"
+  "so-libstdc++-so-6"
 ]
 extra-source "nss-dev-3.48-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/nss-dev-3.48-r0.apk"

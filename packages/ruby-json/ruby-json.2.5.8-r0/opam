@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del ruby-json"]
 ]
 depends: [
-  "musl"
-  "ruby-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libruby-so-2-5"
 ]
 extra-source "ruby-json-2.5.8-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/ruby-json-2.5.8-r0.apk"

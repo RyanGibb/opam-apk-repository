@@ -6,13 +6,17 @@ remove: [
   ["sh" "-c" "sudo apk del pango-tools"]
 ]
 depends: [
-  "cairo"
-  "fontconfig"
-  "glib"
-  "libx11"
-  "libxft"
-  "musl"
-  "pango"
+  "so-libX11-so-6"
+  "so-libXft-so-2"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcairo-so-2"
+  "so-libfontconfig-so-1"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libpango-1-0-so-0"
+  "so-libpangocairo-1-0-so-0"
+  "so-libpangoft2-1-0-so-0"
+  "so-libpangoxft-1-0-so-0"
 ]
 extra-source "pango-tools-1.42.4-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/pango-tools-1.42.4-r2.apk"

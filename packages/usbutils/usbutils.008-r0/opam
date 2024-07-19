@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del usbutils"]
 ]
 depends: [
-  "eudev-libs"
   "hwdata-usb"
-  "libusb"
-  "musl"
-  "pkgconf"
+  "pkgconfig"
+  "so-libc-musl-x86_64-so-1"
+  "so-libudev-so-1"
+  "so-libusb-1-0-so-0"
 ]
 extra-source "usbutils-008-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/usbutils-008-r0.apk"

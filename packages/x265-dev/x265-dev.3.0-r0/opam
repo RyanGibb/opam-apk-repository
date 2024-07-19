@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del x265-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
   "x265-libs" {= "3.0-r0"}
 ]
 extra-source "x265-dev-3.0-r0.apk" {

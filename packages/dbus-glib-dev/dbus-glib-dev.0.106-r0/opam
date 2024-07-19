@@ -6,9 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del dbus-glib-dev"]
 ]
 depends: [
-  "dbus-dev"
   "dbus-glib" {= "0.106-r0"}
-  "glib-dev"
+  "pc-dbus-1"
+  "pc-glib-2-0"
+  "pc-gobject-2-0"
   "pkgconfig"
 ]
 extra-source "dbus-glib-dev-0.106-r0.apk" {

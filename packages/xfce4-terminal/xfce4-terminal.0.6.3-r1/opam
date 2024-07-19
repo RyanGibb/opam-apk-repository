@@ -6,18 +6,21 @@ remove: [
   ["sh" "-c" "sudo apk del xfce4-terminal"]
 ]
 depends: [
-  "atk"
-  "gdk-pixbuf"
-  "glib"
-  "gtk+2.0"
   "hicolor-icon-theme"
-  "libx11"
-  "libxfce4ui"
-  "libxfce4util"
-  "musl"
-  "pango"
+  "so-libX11-so-6"
+  "so-libatk-1-0-so-0"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgdk-x11-2-0-so-0"
+  "so-libgdk_pixbuf-2-0-so-0"
+  "so-libgio-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libgtk-x11-2-0-so-0"
+  "so-libpango-1-0-so-0"
+  "so-libvte-so-9"
+  "so-libxfce4ui-1-so-0"
+  "so-libxfce4util-so-7"
   "startup-notification"
-  "vte"
 ]
 extra-source "xfce4-terminal-0.6.3-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/xfce4-terminal-0.6.3-r1.apk"

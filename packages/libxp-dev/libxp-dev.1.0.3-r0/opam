@@ -10,7 +10,11 @@ depends: [
   "libxau-dev"
   "libxext-dev"
   "libxp" {= "1.0.3-r0"}
-  "pkgconf"
+  "pc-printproto"
+  "pc-x11"
+  "pc-xau"
+  "pc-xext"
+  "pkgconfig"
   "printproto"
 ]
 extra-source "libxp-dev-1.0.3-r0.apk" {

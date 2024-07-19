@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "dbus"
-  "dbus-libs"
-  "glib"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libdbus-1-so-3"
+  "so-libglib-2-0-so-0"
 ]
 extra-source "bluez-cups-5.55-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/bluez-cups-5.55-r1.apk"

@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  ("heimdal-su" {= "7.8.0-r3"} | "util-linux-login" {= "2.38.1-r8"})
+]

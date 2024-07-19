@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "tomahawk" {= "0.8.4-r3"}
+]

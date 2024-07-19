@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "libfastjson" {= "0.99.2-r0"}
+]

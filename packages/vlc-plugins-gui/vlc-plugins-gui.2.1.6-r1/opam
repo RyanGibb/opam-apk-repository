@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del vlc-plugins-gui"]
 ]
 depends: [
-  "dbus-libs"
-  "musl"
-  "ncurses-widec-libs"
-  "vlc-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libdbus-1-so-3"
+  "so-libncursesw-so-5"
+  "so-libvlccore-so-7"
 ]
 extra-source "vlc-plugins-gui-2.1.6-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/vlc-plugins-gui-2.1.6-r1.apk"

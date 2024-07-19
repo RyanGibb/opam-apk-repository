@@ -6,11 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del libsndfile"]
 ]
 depends: [
-  "alsa-lib"
-  "flac"
-  "libogg"
-  "libvorbis"
-  "musl"
+  "so-libFLAC-so-8"
+  "so-libasound-so-2"
+  "so-libc-musl-x86_64-so-1"
+  "so-libogg-so-0"
+  "so-libvorbis-so-0"
+  "so-libvorbisenc-so-2"
 ]
 extra-source "libsndfile-1.0.28-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/libsndfile-1.0.28-r3.apk"

@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del xcb-util-cursor-dev"]
 ]
 depends: [
-  "libxcb-dev"
-  "pkgconf"
+  "pc-xcb-image"
+  "pc-xcb-render"
+  "pc-xcb-renderutil"
+  "pkgconfig"
   "xcb-util-cursor" {= "0.1.3-r1"}
   "xcb-util-dev"
-  "xcb-util-image-dev"
-  "xcb-util-renderutil-dev"
 ]
 extra-source "xcb-util-cursor-dev-0.1.3-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/xcb-util-cursor-dev-0.1.3-r1.apk"

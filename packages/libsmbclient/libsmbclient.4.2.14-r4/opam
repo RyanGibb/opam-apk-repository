@@ -6,9 +6,24 @@ remove: [
   ["sh" "-c" "sudo apk del libsmbclient"]
 ]
 depends: [
-  "musl"
-  "samba-libs"
-  "talloc"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcli-smb-common-samba4-so"
+  "so-libdcerpc-samba-samba4-so"
+  "so-liberrors-samba4-so"
+  "so-libgse-samba4-so"
+  "so-liblibcli-lsa3-samba4-so"
+  "so-liblibsmb-samba4-so"
+  "so-libmsrpc3-samba4-so"
+  "so-libndr-so-0"
+  "so-libndr-standard-so-0"
+  "so-libsamba-debug-samba4-so"
+  "so-libsamba-security-samba4-so"
+  "so-libsamba-util-so-0"
+  "so-libsecrets3-samba4-so"
+  "so-libsmbconf-so-0"
+  "so-libsmbregistry-samba4-so"
+  "so-libtalloc-so-2"
+  "so-libutil-cmdline-samba4-so"
 ]
 extra-source "libsmbclient-4.2.14-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/libsmbclient-4.2.14-r4.apk"

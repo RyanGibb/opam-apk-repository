@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del bwm-ng"]
 ]
 depends: [
-  "musl"
-  "ncurses-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libncursesw-so-6"
 ]
 extra-source "bwm-ng-0.6.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/bwm-ng-0.6.3-r0.apk"

@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "unifont" {= "14.0.02-r0"}
+]

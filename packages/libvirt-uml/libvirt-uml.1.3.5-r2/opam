@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del libvirt-uml"]
 ]
 depends: [
-  "libintl"
-  "libtirpc"
   "libvirt-common-drivers" {= "1.3.5-r2"}
   "libvirt-daemon" {= "1.3.5-r2"}
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libintl-so-8"
+  "so-libtirpc-so-1"
 ]
 extra-source "libvirt-uml-1.3.5-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/libvirt-uml-1.3.5-r2.apk"

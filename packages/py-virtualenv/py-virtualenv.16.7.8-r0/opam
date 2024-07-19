@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "py3-virtualenv" {= "16.7.8-r0"}
+]

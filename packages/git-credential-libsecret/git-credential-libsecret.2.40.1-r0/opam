@@ -7,9 +7,10 @@ remove: [
 ]
 depends: [
   "git" {= "2.40.1-r0"}
-  "glib"
-  "libsecret"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libsecret-1-so-0"
 ]
 extra-source "git-credential-libsecret-2.40.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/git-credential-libsecret-2.40.1-r0.apk"

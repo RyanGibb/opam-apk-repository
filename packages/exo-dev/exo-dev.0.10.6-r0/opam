@@ -9,7 +9,7 @@ depends: [
   "exo" {= "0.10.6-r0"}
   "exo-doc" {= "0.10.6-r0"}
   "exo-lang" {= "0.10.6-r0"}
-  "gtk+2.0-dev"
+  "gtk+2-0-dev"
   "libxfce4util-dev"
   "pkgconfig"
 ]

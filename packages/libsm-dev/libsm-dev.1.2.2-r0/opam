@@ -8,7 +8,9 @@ remove: [
 depends: [
   "libice-dev"
   "libsm" {= "1.2.2-r0"}
-  "pkgconf"
+  "pc-ice"
+  "pc-xproto"
+  "pkgconfig"
   "xproto"
 ]
 extra-source "libsm-dev-1.2.2-r0.apk" {

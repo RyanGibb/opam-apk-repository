@@ -7,12 +7,15 @@ remove: [
 ]
 depends: [
   "gdk-pixbuf" {= "2.42.11-r1"}
-  "glib-dev"
-  "libjpeg-turbo-dev"
-  "libpng-dev"
-  "pkgconf"
-  "shared-mime-info"
-  "tiff-dev"
+  "pc-gio-2-0" {>= "2.56.0"}
+  "pc-glib-2-0" {>= "2.56.0"}
+  "pc-gmodule-no-export-2-0" {>= "2.56.0"}
+  "pc-gobject-2-0" {>= "2.56.0"}
+  "pc-libjpeg"
+  "pc-libpng"
+  "pc-libtiff-4"
+  "pc-shared-mime-info"
+  "pkgconfig"
 ]
 extra-source "gdk-pixbuf-dev-2.42.11-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/gdk-pixbuf-dev-2.42.11-r1.apk"

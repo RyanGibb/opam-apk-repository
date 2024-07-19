@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "procmail" {= "3.22-r4"}
+]

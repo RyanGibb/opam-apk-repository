@@ -12,8 +12,8 @@ depends: [
   "gzip"
   "libtool"
   "neon" {= "0.32.2-r0"}
-  "openssl-dev"
-  "pkgconf"
+  "openssl1-1-compat-dev"
+  "pkgconfig"
   "xmlto"
   "zlib-dev"
 ]

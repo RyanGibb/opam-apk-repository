@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del pspg"]
 ]
 depends: [
-  "musl"
-  "ncurses-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libncursesw-so-6"
 ]
 extra-source "pspg-1.1.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/pspg-1.1.1-r0.apk"

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del gcompat"]
 ]
 depends: [
-  "libucontext"
-  "musl"
-  "musl-obstack"
+  "so-libc-musl-x86_64-so-1"
+  "so-libobstack-so-1"
+  "so-libucontext-so-1"
 ]
 extra-source "gcompat-1.1.0-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/gcompat-1.1.0-r4.apk"

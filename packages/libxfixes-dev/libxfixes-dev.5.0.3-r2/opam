@@ -6,10 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del libxfixes-dev"]
 ]
 depends: [
-  "libx11-dev"
   "libxfixes" {= "5.0.3-r2"}
-  "pkgconf"
-  "xorgproto"
+  "pc-fixesproto" {>= "5.0"}
+  "pc-x11"
+  "pc-xproto"
+  "pkgconfig"
 ]
 extra-source "libxfixes-dev-5.0.3-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libxfixes-dev-5.0.3-r2.apk"

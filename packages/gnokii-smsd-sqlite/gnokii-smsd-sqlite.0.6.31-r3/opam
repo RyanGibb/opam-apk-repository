@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "gnokii-smsd"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "gnokii-smsd-sqlite-0.6.31-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/gnokii-smsd-sqlite-0.6.31-r3.apk"

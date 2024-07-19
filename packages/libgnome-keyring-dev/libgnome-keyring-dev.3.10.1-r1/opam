@@ -8,7 +8,7 @@ remove: [
 depends: [
   "gconf-dev"
   "gnome-doc-utils"
-  "gtk+3.0-dev"
+  "gtk+3-0-dev"
   "libgcrypt-dev"
   "libgnome-dev"
   "libgnome-keyring" {= "3.10.1-r1"}

@@ -11,12 +11,12 @@ depends: [
   "elfutils-dev"
   "flex"
   "gmp-dev"
-  "libcrypto1.1"
-  "libelf"
   "mpc1-dev"
   "mpfr-dev"
-  "musl"
   "perl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-1"
+  "so-libelf-so-1"
 ]
 extra-source "linux-virt-dev-5.10.180-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/linux-virt-dev-5.10.180-r0.apk"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del sparsehash"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "sparsehash-2.0.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/sparsehash-2.0.3-r0.apk"

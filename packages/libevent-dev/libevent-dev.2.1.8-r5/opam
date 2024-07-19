@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libevent" {= "2.1.8-r5"}
-  "pkgconf"
+  "pkgconfig"
   "python2"
 ]
 extra-source "libevent-dev-2.1.8-r5.apk" {

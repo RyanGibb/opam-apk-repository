@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "busybox"
-  "musl"
-  "pcre"
-  "postfix"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpcre-so-1"
+  "so-libpostfix-util-so-1"
 ]
 extra-source "postfix-pcre-2.11.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/postfix-pcre-2.11.1-r1.apk"

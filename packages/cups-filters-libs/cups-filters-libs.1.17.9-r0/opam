@@ -7,13 +7,13 @@ remove: [
 ]
 depends: [
   "bc"
-  "cups-libs"
-  "dbus-libs"
-  "libjpeg-turbo"
-  "libpng"
-  "musl"
   "poppler-utils"
-  "tiff"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcups-so-2"
+  "so-libdbus-1-so-3"
+  "so-libjpeg-so-8"
+  "so-libpng16-so-16"
+  "so-libtiff-so-5"
   "ttf-freefont"
 ]
 extra-source "cups-filters-libs-1.17.9-r0.apk" {

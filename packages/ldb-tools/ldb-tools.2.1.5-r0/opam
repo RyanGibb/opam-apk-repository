@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del ldb-tools"]
 ]
 depends: [
-  "ldb"
-  "musl"
-  "popt"
-  "talloc"
+  "so-libc-musl-x86_64-so-1"
+  "so-libldb-so-2"
+  "so-libpopt-so-0"
+  "so-libtalloc-so-2"
 ]
 extra-source "ldb-tools-2.1.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/ldb-tools-2.1.5-r0.apk"

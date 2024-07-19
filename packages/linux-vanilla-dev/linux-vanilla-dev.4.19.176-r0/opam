@@ -9,12 +9,12 @@ depends: [
   "bash"
   "bison"
   "elfutils-dev"
-  "elfutils-libelf"
   "flex"
   "gmp-dev"
-  "libcrypto1.1"
-  "musl"
   "perl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-1"
+  "so-libelf-so-1"
 ]
 extra-source "linux-vanilla-dev-4.19.176-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/linux-vanilla-dev-4.19.176-r0.apk"

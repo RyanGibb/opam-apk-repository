@@ -6,13 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del ruby-libs"]
 ]
 depends: [
-  "gmp"
-  "libcrypto1.1"
-  "libssl1.1"
-  "musl"
-  "readline"
-  "yaml"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-1"
+  "so-libgmp-so-10"
+  "so-libreadline-so-8"
+  "so-libssl-so-1-1"
+  "so-libyaml-0-so-2"
+  "so-libz-so-1"
 ]
 extra-source "ruby-libs-2.5.9-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/ruby-libs-2.5.9-r0.apk"

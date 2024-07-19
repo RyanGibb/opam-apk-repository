@@ -8,7 +8,7 @@ remove: [
 depends: [
   "icu" {= "62.1-r1"}
   "icu-libs" {= "62.1-r1"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "icu-dev-62.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/icu-dev-62.1-r1.apk"

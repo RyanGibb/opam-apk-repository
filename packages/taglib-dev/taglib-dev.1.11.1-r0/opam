@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del taglib-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
   "taglib" {= "1.11.1-r0"}
 ]
 extra-source "taglib-dev-1.11.1-r0.apk" {

@@ -8,6 +8,8 @@ remove: [
 depends: [
   "jreen" {= "1.2.1-r0"}
   "libgsasl-dev"
+  "pc-QtCore"
+  "pc-QtNetwork"
   "pkgconfig"
   "qt-dev"
   "speex-dev"

@@ -10,18 +10,14 @@ depends: [
   "fontconfig-dev"
   "freetype-dev"
   "glib-dev"
-  "libgcc"
   "libice-dev"
   "libpng-dev"
   "libsm-dev"
-  "libstdc++"
   "libx11-dev"
   "libxext-dev"
   "mesa-dev"
-  "musl"
   "openssl-dev"
   "pkgconfig"
-  "qt5-qtbase"
   "qt5-qtbase" {= "5.4.1-r1"}
   "qt5-qtbase-doc" {= "5.4.1-r1"}
   "qt5-qtbase-mysql" {= "5.4.1-r1"}
@@ -30,8 +26,14 @@ depends: [
   "qt5-qtbase-sqlite" {= "5.4.1-r1"}
   "qt5-qtbase-tds" {= "5.4.1-r1"}
   "qt5-qtbase-x11" {= "5.4.1-r1"}
+  "so-libQt5Core-so-5"
+  "so-libQt5DBus-so-5"
+  "so-libQt5Xml-so-5"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libstdc++-so-6"
+  "so-libz-so-1"
   "sqlite-dev"
-  "zlib"
   "zlib-dev"
 ]
 extra-source "qt5-qtbase-dev-5.4.1-r1.apk" {

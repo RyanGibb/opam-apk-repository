@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "boost-prg_exec_monitor" {= "1.56.0-r0"}
+]

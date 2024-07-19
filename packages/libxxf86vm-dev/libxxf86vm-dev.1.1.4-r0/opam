@@ -9,7 +9,10 @@ depends: [
   "libx11-dev"
   "libxext-dev"
   "libxxf86vm" {= "1.1.4-r0"}
-  "pkgconf"
+  "pc-x11"
+  "pc-xext"
+  "pc-xf86vidmodeproto"
+  "pkgconfig"
   "xf86vidmodeproto"
 ]
 extra-source "libxxf86vm-dev-1.1.4-r0.apk" {

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del lm_sensors"]
 ]
 depends: [
-  "musl"
+  "so-libc-musl-x86_64-so-1"
   "sysfsutils"
 ]
 extra-source "lm_sensors-3.4.0-r0.apk" {

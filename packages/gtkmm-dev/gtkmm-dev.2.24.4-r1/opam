@@ -8,7 +8,7 @@ remove: [
 depends: [
   "atkmm-dev"
   "glibmm-dev"
-  "gtk+2.0-dev"
+  "gtk+2-0-dev"
   "gtkmm" {= "2.24.4-r1"}
   "pangomm-dev"
   "pkgconfig"

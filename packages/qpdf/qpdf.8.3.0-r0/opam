@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del qpdf"]
 ]
 depends: [
-  "libgcc"
-  "libstdc++"
-  "musl"
-  "qpdf-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libqpdf-so-21"
+  "so-libstdc++-so-6"
 ]
 extra-source "qpdf-8.3.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/qpdf-8.3.0-r0.apk"

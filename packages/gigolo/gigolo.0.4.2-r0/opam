@@ -6,11 +6,14 @@ remove: [
   ["sh" "-c" "sudo apk del gigolo"]
 ]
 depends: [
-  "glib"
-  "gtk+2.0"
-  "libintl"
-  "libx11"
-  "musl"
+  "so-libX11-so-6"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgdk-x11-2-0-so-0"
+  "so-libgio-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libgtk-x11-2-0-so-0"
+  "so-libintl-so-8"
 ]
 extra-source "gigolo-0.4.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/gigolo-0.4.2-r0.apk"

@@ -6,8 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del binutils"]
 ]
 depends: [
-  "binutils-libs"
-  "musl"
+  "so-libbfd-2-26-20160125-so"
+  "so-libc-musl-x86_64-so-1"
+  "so-libopcodes-2-26-20160125-so"
 ]
 extra-source "binutils-2.26-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/binutils-2.26-r1.apk"

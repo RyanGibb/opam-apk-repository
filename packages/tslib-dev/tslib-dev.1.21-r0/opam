@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del tslib-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
   "tslib" {= "1.21-r0"}
 ]
 extra-source "tslib-dev-1.21-r0.apk" {

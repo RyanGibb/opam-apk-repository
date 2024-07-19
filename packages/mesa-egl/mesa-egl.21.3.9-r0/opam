@@ -6,19 +6,24 @@ remove: [
   ["sh" "-c" "sudo apk del mesa-egl"]
 ]
 depends: [
-  "expat"
-  "libdrm"
-  "libgcc"
-  "libstdc++"
-  "libx11"
-  "libxcb"
-  "libxshmfence"
   "mesa" {= "21.3.9-r0"}
-  "mesa-gbm"
-  "mesa-glapi"
-  "musl"
-  "wayland-libs-client"
-  "wayland-libs-server"
+  "so-libX11-xcb-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libdrm-so-2"
+  "so-libexpat-so-1"
+  "so-libgbm-so-1"
+  "so-libgcc_s-so-1"
+  "so-libglapi-so-0"
+  "so-libstdc++-so-6"
+  "so-libwayland-client-so-0"
+  "so-libwayland-server-so-0"
+  "so-libxcb-dri2-so-0"
+  "so-libxcb-dri3-so-0"
+  "so-libxcb-present-so-0"
+  "so-libxcb-so-1"
+  "so-libxcb-sync-so-1"
+  "so-libxcb-xfixes-so-0"
+  "so-libxshmfence-so-1"
 ]
 extra-source "mesa-egl-21.3.9-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/mesa-egl-21.3.9-r0.apk"

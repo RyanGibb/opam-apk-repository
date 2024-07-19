@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del libxpm"]
 ]
 depends: [
-  "libx11"
-  "libxext"
-  "libxt"
-  "musl"
+  "so-libX11-so-6"
+  "so-libXext-so-6"
+  "so-libXt-so-6"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "libxpm-3.5.17-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libxpm-3.5.17-r0.apk"

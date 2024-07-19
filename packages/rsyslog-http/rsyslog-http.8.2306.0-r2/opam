@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del rsyslog-http"]
 ]
 depends: [
-  "libcurl"
-  "musl"
   "rsyslog" {= "8.2306.0-r2"}
+  "so-libc-musl-x86_64-so-1"
+  "so-libcurl-so-4"
 ]
 extra-source "rsyslog-http-8.2306.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/rsyslog-http-8.2306.0-r2.apk"

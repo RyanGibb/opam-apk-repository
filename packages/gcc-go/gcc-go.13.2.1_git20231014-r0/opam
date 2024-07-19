@@ -6,16 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del gcc-go"]
 ]
 depends: [
+  "-bin-sh"
   "gcc" {= "13.2.1_git20231014-r0"}
-  "gmp"
-  "libgo"
   "libgo" {= "13.2.1_git20231014-r0"}
-  "mpc1"
-  "mpfr4"
-  "musl"
-  "zlib"
-  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
-  ("isl25" | "isl26")
+  "so-libc-musl-x86_64-so-1"
+  "so-libgmp-so-10"
+  "so-libgo-so-22"
+  "so-libisl-so-23"
+  "so-libmpc-so-3"
+  "so-libmpfr-so-6"
+  "so-libz-so-1"
 ]
 conflicts: [
   "go"

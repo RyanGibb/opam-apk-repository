@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del qemu-i386"]
 ]
 depends: [
-  "glib"
-  "musl"
   "qemu"
+  "so-libc-musl-x86_64-so-1"
+  "so-libglib-2-0-so-0"
 ]
 extra-source "qemu-i386-2.8.1.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/qemu-i386-2.8.1.1-r1.apk"

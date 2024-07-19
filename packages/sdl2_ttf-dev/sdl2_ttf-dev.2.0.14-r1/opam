@@ -7,7 +7,8 @@ remove: [
 ]
 depends: [
   "freetype-dev"
-  "pkgconf"
+  "pc-sdl2" {>= "2.0.0"}
+  "pkgconfig"
   "sdl2-dev"
   "sdl2_ttf" {= "2.0.14-r1"}
 ]

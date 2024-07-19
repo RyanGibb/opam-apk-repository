@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del weechat-python"]
 ]
 depends: [
-  "musl"
+  "so-libc-musl-x86_64-so-1"
   "weechat"
 ]
 extra-source "weechat-python-1.6-r2.apk" {

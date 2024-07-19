@@ -6,9 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del py-libvirt"]
 ]
 depends: [
-  "libvirt-client"
-  "musl"
-  "python"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpython2-7-so-1-0"
+  "so-libvirt-lxc-so-0"
+  "so-libvirt-qemu-so-0"
+  "so-libvirt-so-0"
 ]
 extra-source "py-libvirt-1.2.15-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/py-libvirt-1.2.15-r0.apk"

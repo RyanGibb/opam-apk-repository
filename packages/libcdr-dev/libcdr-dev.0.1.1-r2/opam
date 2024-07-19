@@ -11,6 +11,10 @@ depends: [
   "lcms2-dev"
   "libcdr" {= "0.1.1-r2"}
   "librevenge-dev"
+  "pc-icu-i18n"
+  "pc-lcms2"
+  "pc-librevenge-0-0"
+  "pc-zlib"
   "pkgconfig"
   "zlib-dev"
 ]

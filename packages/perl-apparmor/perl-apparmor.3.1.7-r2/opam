@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del perl-apparmor"]
 ]
 depends: [
-  "libapparmor"
   "libapparmor" {= "3.1.7-r2"}
-  "musl"
   "perl"
+  "so-libapparmor-so-1"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "perl-apparmor-3.1.7-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-apparmor-3.1.7-r2.apk"

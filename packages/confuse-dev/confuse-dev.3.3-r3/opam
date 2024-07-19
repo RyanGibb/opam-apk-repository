@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "confuse" {= "3.3-r3"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "confuse-dev-3.3-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/confuse-dev-3.3-r3.apk"

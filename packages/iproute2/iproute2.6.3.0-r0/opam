@@ -6,13 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del iproute2"]
 ]
 depends: [
+  "-bin-sh"
   "iproute2-minimal"
   "iproute2-ss"
   "iproute2-tc"
-  "libcap2"
-  "libmnl"
-  "musl"
-  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
+  "so-libc-musl-x86_64-so-1"
+  "so-libcap-so-2"
+  "so-libmnl-so-0"
 ]
 extra-source "iproute2-6.3.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/iproute2-6.3.0-r0.apk"

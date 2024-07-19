@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ruby-actionpack4.2-4.2.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ruby-actionpack4.2"]
+]
+depends: [
+  "ruby"
+  "ruby-actionview4-2"
+  "ruby-activesupport4-2"
+  "ruby-rack"
+  "ruby-rack-test"
+  "ruby-rails-dom-testing4-2"
+  "ruby-rails-html-sanitizer"
+]
+extra-source "ruby-actionpack4.2-4.2.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/ruby-actionpack4.2-4.2.3-r0.apk"
+}

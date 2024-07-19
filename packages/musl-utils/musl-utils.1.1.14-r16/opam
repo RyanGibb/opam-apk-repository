@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del musl-utils"]
 ]
 depends: [
-  "musl"
   "musl" {= "1.1.14-r16"}
   "scanelf"
+  "so-libc-musl-x86_64-so-1"
 ]
 conflicts: [
   "uclibc-utils"

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del device-mapper"]
 ]
 depends: [
-  "device-mapper-libs"
   "lvm2-libs" {= "2.02.182-r0"}
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libdevmapper-so-1-02"
 ]
 extra-source "device-mapper-2.02.182-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/device-mapper-2.02.182-r0.apk"

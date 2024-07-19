@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del xrdp-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
   "xrdp" {= "0.9.9-r0"}
 ]
 extra-source "xrdp-dev-0.9.9-r0.apk" {

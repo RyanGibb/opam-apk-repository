@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "live-media-utils" {= "2017.10.28-r0"}
+]

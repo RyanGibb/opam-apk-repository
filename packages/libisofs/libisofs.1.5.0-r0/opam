@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del libisofs"]
 ]
 depends: [
-  "libacl"
-  "musl"
-  "zlib"
+  "so-libacl-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libz-so-1"
 ]
 extra-source "libisofs-1.5.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/libisofs-1.5.0-r0.apk"

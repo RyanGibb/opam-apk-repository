@@ -6,20 +6,20 @@ remove: [
   ["sh" "-c" "sudo apk del freeswitch-freetdm"]
 ]
 depends: [
-  "curl"
-  "freeswitch"
-  "libcrypto1.0"
-  "libedit"
-  "libssl1.0"
-  "libuuid"
-  "musl"
-  "ncurses-libs"
-  "pcre"
-  "speex"
-  "speexdsp"
-  "sqlite-libs"
-  "zlib"
-  ("libpq" | "pgcluster-libpq")
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-0-0"
+  "so-libcurl-so-4"
+  "so-libedit-so-0"
+  "so-libfreeswitch-so-1"
+  "so-libncursesw-so-6"
+  "so-libpcre-so-1"
+  "so-libpq-so-5"
+  "so-libspeex-so-1"
+  "so-libspeexdsp-so-1"
+  "so-libsqlite3-so-0"
+  "so-libssl-so-1-0-0"
+  "so-libuuid-so-1"
+  "so-libz-so-1"
 ]
 extra-source "freeswitch-freetdm-1.6.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/freeswitch-freetdm-1.6.7-r0.apk"

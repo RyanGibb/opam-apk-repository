@@ -8,9 +8,9 @@ remove: [
 depends: [
   "cvs"
   "diffutils"
-  "musl"
-  "oath-toolkit-libpskc"
   "perl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpskc-so-0"
 ]
 extra-source "oath-toolkit-2.6.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/oath-toolkit-2.6.2-r0.apk"

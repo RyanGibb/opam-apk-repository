@@ -10,7 +10,7 @@ depends: [
   "flex"
   "libressl-dev"
   "libtool"
-  "pkgconf"
+  "pkgconfig"
   "zlib-dev"
 ]
 extra-source "charybdis-dev-3.5.3-r1.apk" {

@@ -13,8 +13,9 @@ depends: [
   "mariadb-dev"
   "openldap-dev"
   "openssl-dev"
-  "pkgconf"
-  "postgresql-bdr-dev"
+  "pc-apr-1"
+  "pkgconfig"
+  "postgresql-dev"
   "sqlite-dev"
 ]
 extra-source "apr-util-dev-1.6.1-r6.apk" {

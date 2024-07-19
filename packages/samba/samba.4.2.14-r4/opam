@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del samba"]
 ]
 depends: [
-  "musl"
   "samba-server"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "samba-4.2.14-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/samba-4.2.14-r4.apk"

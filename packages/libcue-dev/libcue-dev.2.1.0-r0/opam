@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libcue" {= "2.1.0-r0"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "libcue-dev-2.1.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/libcue-dev-2.1.0-r0.apk"

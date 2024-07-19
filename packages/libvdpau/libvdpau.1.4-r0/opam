@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del libvdpau"]
 ]
 depends: [
-  "libx11"
-  "libxext"
-  "musl"
+  "so-libX11-so-6"
+  "so-libXext-so-6"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "libvdpau-1.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libvdpau-1.4-r0.apk"

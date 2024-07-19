@@ -6,12 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del vlc-plugins-services_discovery"]
 ]
 depends: [
-  "alsa-lib"
-  "avahi-libs"
-  "eudev-libs"
-  "musl"
-  "vlc-libs"
-  "zlib"
+  "so-libasound-so-2"
+  "so-libavahi-client-so-3"
+  "so-libavahi-common-so-3"
+  "so-libc-musl-x86_64-so-1"
+  "so-libudev-so-1"
+  "so-libvlccore-so-8"
+  "so-libz-so-1"
 ]
 extra-source "vlc-plugins-services_discovery-2.2.4-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/vlc-plugins-services_discovery-2.2.4-r2.apk"

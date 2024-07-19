@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del apcupsd"]
 ]
 depends: [
-  "libgcc"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
   "util-linux"
 ]
 extra-source "apcupsd-3.14.13-r1.apk" {

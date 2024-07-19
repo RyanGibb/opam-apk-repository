@@ -6,17 +6,19 @@ remove: [
   ["sh" "-c" "sudo apk del udisks"]
 ]
 depends: [
-  "dbus-glib"
-  "dbus-libs"
-  "device-mapper"
-  "glib"
-  "libatasmart"
-  "libgudev"
-  "libudev"
-  "musl"
-  "parted"
-  "polkit"
-  "sg3_utils"
+  "so-libatasmart-so-4"
+  "so-libc-musl-x86_64-so-1"
+  "so-libdbus-1-so-3"
+  "so-libdbus-glib-1-so-2"
+  "so-libdevmapper-so-1-02"
+  "so-libgio-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libgudev-1-0-so-0"
+  "so-libparted-so-2"
+  "so-libpolkit-gobject-1-so-0"
+  "so-libsgutils2-so-2"
+  "so-libudev-so-0"
 ]
 extra-source "udisks-1.0.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/udisks-1.0.5-r0.apk"

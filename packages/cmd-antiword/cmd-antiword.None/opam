@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "antiword" {= "0.37-r3"}
+]

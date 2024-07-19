@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del php-zip"]
 ]
 depends: [
-  "musl"
   "php"
   "php-cgi"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libz-so-1"
 ]
 extra-source "php-zip-5.5.35-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/php-zip-5.5.35-r0.apk"

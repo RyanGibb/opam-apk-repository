@@ -9,7 +9,7 @@ depends: [
   "docbook-xsl"
   "gnome-doc-utils"
   "perl"
-  "pkgconf"
+  "pkgconfig"
   "python2"
 ]
 extra-source "gtk-doc-1.25-r0.apk" {

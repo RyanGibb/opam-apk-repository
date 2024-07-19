@@ -7,8 +7,9 @@ remove: [
 ]
 depends: [
   "gst-plugins-bad1" {= "1.8.3-r0"}
-  "gstreamer1-dev"
-  "pkgconf"
+  "pc-gstreamer-1-0"
+  "pc-gstreamer-base-1-0"
+  "pkgconfig"
 ]
 extra-source "gst-plugins-bad1-dev-1.8.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/gst-plugins-bad1-dev-1.8.3-r0.apk"

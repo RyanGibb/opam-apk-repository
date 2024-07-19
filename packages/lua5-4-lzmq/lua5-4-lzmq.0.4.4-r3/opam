@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lua5.4-lzmq-0.4.4-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lua5.4-lzmq"]
+]
+depends: [
+  "so-libc-musl-x86_64-so-1"
+  "so-liblua-so-5"
+  "so-libzmq-so-5"
+]
+extra-source "lua5.4-lzmq-0.4.4-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/lua5.4-lzmq-0.4.4-r3.apk"
+}

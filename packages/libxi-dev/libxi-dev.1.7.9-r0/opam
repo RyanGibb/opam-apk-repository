@@ -11,7 +11,11 @@ depends: [
   "libxext-dev"
   "libxfixes-dev"
   "libxi" {= "1.7.9-r0"}
-  "pkgconf"
+  "pc-inputproto"
+  "pc-x11"
+  "pc-xext"
+  "pc-xfixes"
+  "pkgconfig"
 ]
 extra-source "libxi-dev-1.7.9-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/libxi-dev-1.7.9-r0.apk"

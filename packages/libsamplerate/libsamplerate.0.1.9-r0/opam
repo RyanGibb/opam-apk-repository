@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del libsamplerate"]
 ]
 depends: [
-  "musl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "libsamplerate-0.1.9-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/libsamplerate-0.1.9-r0.apk"

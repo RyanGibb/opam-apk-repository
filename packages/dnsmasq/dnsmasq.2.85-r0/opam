@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del dnsmasq"]
 ]
 depends: [
-  "busybox"
-  "musl"
+  "-bin-sh"
+  "so-libc-musl-x86_64-so-1"
 ]
 conflicts: [
   "dnsmasq-dnssec"

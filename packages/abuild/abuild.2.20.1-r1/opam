@@ -11,10 +11,10 @@ depends: [
   "curl"
   "fakeroot"
   "libc-utils"
-  "libcrypto1.0"
-  "musl"
   "openssl"
   "pax-utils"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-0-0"
   "sudo"
 ]
 extra-source "abuild-2.20.1-r1.apk" {

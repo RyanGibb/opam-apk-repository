@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del s6-linux-utils"]
 ]
 depends: [
-  "musl"
-  "skalibs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libskarnet-so-2-11"
 ]
 extra-source "s6-linux-utils-2.5.1.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/s6-linux-utils-2.5.1.7-r0.apk"

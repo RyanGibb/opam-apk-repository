@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "freerdp-libs" {= "1.1.0_beta2013071101-r0"}
+]

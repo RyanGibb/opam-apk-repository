@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del zsh"]
 ]
 depends: [
-  "libcap2"
-  "libncursesw"
-  "musl"
-  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
+  "-bin-sh"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcap-so-2"
+  "so-libncursesw-so-6"
 ]
 extra-source "zsh-5.9-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/zsh-5.9-r2.apk"

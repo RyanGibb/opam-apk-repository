@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del qemu-sparc"]
 ]
 depends: [
-  "glib"
-  "musl"
   "qemu"
+  "so-libc-musl-x86_64-so-1"
+  "so-libglib-2-0-so-0"
 ]
 extra-source "qemu-sparc-2.4.1-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/qemu-sparc-2.4.1-r4.apk"

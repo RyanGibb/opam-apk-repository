@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del tiny-cloud"]
 ]
 depends: [
+  "-bin-sh"
   "e2fsprogs-extra"
   "openssh-server"
   "partx"
   "sfdisk"
   "yx"
-  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
 ]
 extra-source "tiny-cloud-3.0.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/tiny-cloud-3.0.7-r0.apk"

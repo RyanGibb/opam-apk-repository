@@ -7,10 +7,14 @@ remove: [
 ]
 depends: [
   "krb5-conf"
-  "krb5-libs"
-  "libcom_err"
-  "libldap"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcom_err-so-2"
+  "so-libgssrpc-so-4"
+  "so-libkadm5srv_mit-so-12"
+  "so-libkdb5-so-10"
+  "so-libkrb5-so-3"
+  "so-libkrb5support-so-0"
+  "so-libldap-2-4-so-2"
 ]
 extra-source "krb5-server-ldap-1.18.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/krb5-server-ldap-1.18.5-r0.apk"

@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "gc-dev" {= "7.6.4-r2"}
+]

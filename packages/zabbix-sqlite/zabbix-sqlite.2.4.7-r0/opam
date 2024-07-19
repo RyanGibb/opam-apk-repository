@@ -6,13 +6,14 @@ remove: [
   ["sh" "-c" "sudo apk del zabbix-sqlite"]
 ]
 depends: [
-  "curl"
-  "libxml2"
-  "musl"
-  "net-snmp-libs"
-  "openipmi-libs"
-  "sqlite-libs"
-  "unixodbc"
+  "so-libOpenIPMI-so-0"
+  "so-libOpenIPMIposix-so-0"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcurl-so-4"
+  "so-libnetsnmp-so-30"
+  "so-libodbc-so-2"
+  "so-libsqlite3-so-0"
+  "so-libxml2-so-2"
   "zabbix"
 ]
 conflicts: [

@@ -7,12 +7,12 @@ remove: [
 ]
 depends: [
   "busybox"
-  "curl"
-  "libcrypto1.0"
-  "libevent"
-  "libintl"
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-0-0"
+  "so-libcurl-so-4"
+  "so-libevent-2-0-so-5"
+  "so-libintl-so-8"
+  "so-libz-so-1"
 ]
 extra-source "transmission-daemon-2.84-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/transmission-daemon-2.84-r1.apk"

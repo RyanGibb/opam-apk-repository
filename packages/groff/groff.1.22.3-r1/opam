@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del groff"]
 ]
 depends: [
-  "libgcc"
-  "libstdc++"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libstdc++-so-6"
 ]
 extra-source "groff-1.22.3-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/groff-1.22.3-r1.apk"

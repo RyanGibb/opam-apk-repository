@@ -7,12 +7,14 @@ remove: [
 ]
 depends: [
   "bluez" {>= "5"}
-  "glib"
-  "gnome-bluetooth-libs"
-  "gtk+3.0"
   "hicolor-icon-theme"
-  "libintl"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgio-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgnome-bluetooth-so-13"
+  "so-libgobject-2-0-so-0"
+  "so-libgtk-3-so-0"
+  "so-libintl-so-8"
 ]
 extra-source "gnome-bluetooth-3.16.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/gnome-bluetooth-3.16.1-r0.apk"

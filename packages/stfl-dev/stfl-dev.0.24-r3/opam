@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del stfl-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
   "stfl" {= "0.24-r3"}
 ]
 extra-source "stfl-dev-0.24-r3.apk" {

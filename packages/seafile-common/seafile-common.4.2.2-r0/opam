@@ -7,12 +7,14 @@ remove: [
 ]
 depends: [
   "bash"
-  "glib"
-  "jansson"
-  "libintl"
-  "libsearpc"
-  "musl"
   "seafile-common"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgio-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libintl-so-8"
+  "so-libjansson-so-4"
+  "so-libsearpc-so-1"
 ]
 extra-source "seafile-common-4.2.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/seafile-common-4.2.2-r0.apk"

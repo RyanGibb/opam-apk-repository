@@ -8,7 +8,7 @@ remove: [
 depends: [
   "exo-dev"
   "glib-dev"
-  "gtk+2.0-dev"
+  "gtk+2-0-dev"
   "pkgconfig"
   "thunar" {= "1.6.10-r0"}
   "thunar-doc" {= "1.6.10-r0"}

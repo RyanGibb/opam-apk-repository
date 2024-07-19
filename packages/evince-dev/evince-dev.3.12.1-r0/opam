@@ -11,7 +11,7 @@ depends: [
   "evince-lang" {= "3.12.1-r0"}
   "evince-libs" {= "3.12.1-r0"}
   "gobject-introspection-dev"
-  "gtk+3.0-dev"
+  "gtk+3-0-dev"
   "libevent-dev"
   "libsm-dev"
   "libx11-dev"

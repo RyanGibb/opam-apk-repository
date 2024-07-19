@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "libva" {= "2.7.1-r0"}
+]

@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del libetpan"]
 ]
 depends: [
-  "db"
-  "gnutls"
-  "libsasl"
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libdb-5-3-so"
+  "so-libgnutls-so-30"
+  "so-libsasl2-so-3"
+  "so-libz-so-1"
 ]
 extra-source "libetpan-1.8-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/libetpan-1.8-r1.apk"

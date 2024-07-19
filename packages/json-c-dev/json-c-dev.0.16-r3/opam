@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "json-c" {= "0.16-r3"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "json-c-dev-0.16-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/json-c-dev-0.16-r3.apk"

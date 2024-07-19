@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del lua-file-magic"]
 ]
 depends: [
-  ("lua5.1" | "lua5.3" | "lua5.2" | "luajit")
+  "lua"
 ]
 extra-source "lua-file-magic-0.2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/lua-file-magic-0.2-r2.apk"

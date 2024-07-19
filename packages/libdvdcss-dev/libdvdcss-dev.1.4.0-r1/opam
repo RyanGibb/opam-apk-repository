@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libdvdcss" {= "1.4.0-r1"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "libdvdcss-dev-1.4.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/libdvdcss-dev-1.4.0-r1.apk"

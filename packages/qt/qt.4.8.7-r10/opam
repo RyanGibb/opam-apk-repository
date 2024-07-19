@@ -7,13 +7,13 @@ remove: [
 ]
 depends: [
   "ca-certificates"
-  "glib"
-  "libgcc"
-  "libressl2.7-libcrypto"
-  "libressl2.7-libssl"
-  "libstdc++"
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-43"
+  "so-libgcc_s-so-1"
+  "so-libglib-2-0-so-0"
+  "so-libssl-so-45"
+  "so-libstdc++-so-6"
+  "so-libz-so-1"
 ]
 extra-source "qt-4.8.7-r10.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/qt-4.8.7-r10.apk"

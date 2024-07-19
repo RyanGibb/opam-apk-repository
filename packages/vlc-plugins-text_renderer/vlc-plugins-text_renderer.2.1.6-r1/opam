@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del vlc-plugins-text_renderer"]
 ]
 depends: [
-  "dbus-libs"
-  "fontconfig"
-  "freetype"
-  "fribidi"
-  "musl"
-  "vlc-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libdbus-1-so-3"
+  "so-libfontconfig-so-1"
+  "so-libfreetype-so-6"
+  "so-libfribidi-so-0"
+  "so-libvlccore-so-7"
 ]
 extra-source "vlc-plugins-text_renderer-2.1.6-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/vlc-plugins-text_renderer-2.1.6-r1.apk"

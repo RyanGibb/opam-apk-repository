@@ -6,14 +6,14 @@ remove: [
   ["sh" "-c" "sudo apk del aconf"]
 ]
 depends: [
-  "lua5.2-augeas"
-  "lua5.2-b64"
-  "lua5.2-cjson"
-  "lua5.2-crypto"
-  "lua5.2-file-magic"
-  "lua5.2-openrc"
-  "lua5.2-posix"
-  "lua5.2-stringy"
+  "lua5-2-augeas"
+  "lua5-2-b64"
+  "lua5-2-cjson"
+  "lua5-2-crypto"
+  "lua5-2-file-magic"
+  "lua5-2-openrc"
+  "lua5-2-posix"
+  "lua5-2-stringy"
   "uwsgi"
   "uwsgi-lua"
 ]

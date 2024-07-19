@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del py-twisted"]
 ]
 depends: [
-  "musl"
   "py-constantly"
   "py-crypto"
   "py-incremental"
   "py-zope-interface"
-  "python2"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpython2-7-so-1-0"
 ]
 extra-source "py-twisted-17.1.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/py-twisted-17.1.0-r1.apk"

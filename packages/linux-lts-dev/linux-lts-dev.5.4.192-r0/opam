@@ -11,10 +11,10 @@ depends: [
   "elfutils-dev"
   "flex"
   "gmp-dev"
-  "libcrypto1.1"
-  "libelf"
-  "musl"
   "perl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-1"
+  "so-libelf-so-1"
 ]
 extra-source "linux-lts-dev-5.4.192-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/linux-lts-dev-5.4.192-r0.apk"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "perl"
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "dpkg-dev-1.21.8-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/dpkg-dev-1.21.8-r0.apk"

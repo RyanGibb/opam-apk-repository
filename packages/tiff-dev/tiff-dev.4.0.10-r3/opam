@@ -8,7 +8,7 @@ remove: [
 depends: [
   "libjpeg-turbo-dev"
   "libtiffxx" {= "4.0.10-r3"}
-  "pkgconf"
+  "pkgconfig"
   "tiff" {= "4.0.10-r3"}
   "zlib-dev"
 ]

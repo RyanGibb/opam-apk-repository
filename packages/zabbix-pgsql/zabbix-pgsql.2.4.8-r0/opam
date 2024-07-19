@@ -6,15 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del zabbix-pgsql"]
 ]
 depends: [
-  "curl"
-  "libssh2"
-  "libxml2"
-  "musl"
-  "net-snmp-libs"
-  "openipmi-libs"
-  "unixodbc"
+  "so-libOpenIPMI-so-0"
+  "so-libOpenIPMIposix-so-0"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcurl-so-4"
+  "so-libnetsnmp-so-30"
+  "so-libodbc-so-2"
+  "so-libpq-so-5"
+  "so-libssh2-so-1"
+  "so-libxml2-so-2"
   "zabbix"
-  ("libpq" | "pgcluster-libpq")
 ]
 conflicts: [
   "zabbix-mysql"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del spirv-tools-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
   "spirv-headers"
   "spirv-tools" {= "2020.3-r1"}
 ]

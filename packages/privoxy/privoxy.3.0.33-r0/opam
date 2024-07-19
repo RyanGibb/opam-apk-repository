@@ -6,10 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del privoxy"]
 ]
 depends: [
-  "musl"
-  "pcre"
-  "zlib"
-  ("yash-binsh" | "busybox-binsh" | "dash-binsh")
+  "-bin-sh"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpcre-so-1"
+  "so-libpcreposix-so-0"
+  "so-libz-so-1"
 ]
 extra-source "privoxy-3.0.33-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/privoxy-3.0.33-r0.apk"

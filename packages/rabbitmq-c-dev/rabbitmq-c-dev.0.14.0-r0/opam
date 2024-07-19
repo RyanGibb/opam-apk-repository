@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del rabbitmq-c-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
   "popt-dev"
   "rabbitmq-c" {= "0.14.0-r0"}
 ]

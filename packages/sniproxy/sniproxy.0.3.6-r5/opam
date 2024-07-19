@@ -7,10 +7,10 @@ remove: [
 ]
 depends: [
   "busybox"
-  "libev"
-  "musl"
-  "pcre"
-  "udns"
+  "so-libc-musl-x86_64-so-1"
+  "so-libev-so-4"
+  "so-libpcre-so-1"
+  "so-libudns-so-0"
 ]
 extra-source "sniproxy-0.3.6-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/sniproxy-0.3.6-r5.apk"

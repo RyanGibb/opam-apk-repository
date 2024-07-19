@@ -9,7 +9,7 @@ depends: [
   "e2fsprogs-libs" {= "1.47.0-r5"}
   "gawk"
   "libcom_err" {= "1.47.0-r5"}
-  "pkgconf"
+  "pkgconfig"
   "util-linux-dev"
 ]
 extra-source "e2fsprogs-dev-1.47.0-r5.apk" {

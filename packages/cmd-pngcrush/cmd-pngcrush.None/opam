@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "pngcrush" {= "1.8.13-r0"}
+]

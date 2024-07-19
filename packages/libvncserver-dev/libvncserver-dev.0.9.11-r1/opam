@@ -20,8 +20,8 @@ depends: [
   "libxinerama-dev"
   "libxrandr-dev"
   "libxtst-dev"
-  "pkgconf"
-  "zlib-dev"
+  "pc-zlib"
+  "pkgconfig"
 ]
 extra-source "libvncserver-dev-0.9.11-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/libvncserver-dev-0.9.11-r1.apk"

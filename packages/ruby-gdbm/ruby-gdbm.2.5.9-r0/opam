@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del ruby-gdbm"]
 ]
 depends: [
-  "gdbm"
-  "musl"
-  "ruby-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgdbm-so-4"
+  "so-libruby-so-2-5"
 ]
 extra-source "ruby-gdbm-2.5.9-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/ruby-gdbm-2.5.9-r0.apk"

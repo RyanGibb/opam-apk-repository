@@ -6,12 +6,14 @@ remove: [
   ["sh" "-c" "sudo apk del libwebp-tools"]
 ]
 depends: [
-  "giflib"
-  "libjpeg-turbo"
-  "libpng"
-  "libwebp"
-  "musl"
-  "tiff"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgif-so-7"
+  "so-libjpeg-so-8"
+  "so-libpng16-so-16"
+  "so-libtiff-so-5"
+  "so-libwebp-so-7"
+  "so-libwebpdemux-so-2"
+  "so-libwebpmux-so-3"
 ]
 extra-source "libwebp-tools-1.1.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/libwebp-tools-1.1.0-r0.apk"

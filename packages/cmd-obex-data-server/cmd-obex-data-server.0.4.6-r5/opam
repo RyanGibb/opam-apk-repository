@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "obex-data-server" {= "0.4.6-r5"}
+]

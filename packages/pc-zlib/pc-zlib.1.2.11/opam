@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "zlib-dev" {= "1.2.11-r1"}
+]

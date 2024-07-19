@@ -6,11 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del alpine"]
 ]
 depends: [
-  "libcrypto1.0"
-  "libldap"
-  "libssl1.0"
-  "musl"
-  "ncurses-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-0-0"
+  "so-liblber-2-4-so-2"
+  "so-libldap-2-4-so-2"
+  "so-libncursesw-so-6"
+  "so-libssl-so-1-0-0"
 ]
 extra-source "alpine-2.20-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/alpine-2.20-r6.apk"

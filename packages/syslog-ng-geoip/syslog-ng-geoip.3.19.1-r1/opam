@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del syslog-ng-geoip"]
 ]
 depends: [
-  "geoip"
-  "musl"
-  "syslog-ng"
+  "so-libGeoIP-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libsyslog-ng-3-19-so-0"
 ]
 extra-source "syslog-ng-geoip-3.19.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/syslog-ng-geoip-3.19.1-r1.apk"

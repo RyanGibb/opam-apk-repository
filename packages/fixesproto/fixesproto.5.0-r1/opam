@@ -6,7 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del fixesproto"]
 ]
 depends: [
-  "pkgconf"
+  "pc-xextproto" {>= "7.0.99.1"}
+  "pkgconfig"
   "xextproto"
 ]
 extra-source "fixesproto-5.0-r1.apk" {

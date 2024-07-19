@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del axel"]
 ]
 depends: [
-  "libcrypto1.1"
-  "libssl1.1"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-1"
+  "so-libssl-so-1-1"
 ]
 extra-source "axel-2.17.8-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/axel-2.17.8-r0.apk"

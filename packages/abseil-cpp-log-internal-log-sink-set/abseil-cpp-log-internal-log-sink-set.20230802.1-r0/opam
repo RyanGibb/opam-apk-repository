@@ -6,15 +6,15 @@ remove: [
   ["sh" "-c" "sudo apk del abseil-cpp-log-internal-log-sink-set"]
 ]
 depends: [
-  "abseil-cpp-log-globals"
-  "abseil-cpp-log-internal-globals"
-  "abseil-cpp-log-sink"
-  "abseil-cpp-raw-logging-internal"
-  "abseil-cpp-spinlock-wait"
-  "abseil-cpp-synchronization"
-  "libgcc"
-  "libstdc++"
-  "musl"
+  "so-libabsl_log_globals-so-2308-0-0"
+  "so-libabsl_log_internal_globals-so-2308-0-0"
+  "so-libabsl_log_sink-so-2308-0-0"
+  "so-libabsl_raw_logging_internal-so-2308-0-0"
+  "so-libabsl_spinlock_wait-so-2308-0-0"
+  "so-libabsl_synchronization-so-2308-0-0"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libstdc++-so-6"
 ]
 extra-source "abseil-cpp-log-internal-log-sink-set-20230802.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/abseil-cpp-log-internal-log-sink-set-20230802.1-r0.apk"

@@ -6,16 +6,17 @@ remove: [
   ["sh" "-c" "sudo apk del abiword-plugin-collab"]
 ]
 depends: [
-  "abiword"
-  "dbus-glib"
-  "dbus-libs"
-  "glib"
-  "gtk+3.0"
-  "libgcc"
-  "libgsf"
-  "libstdc++"
-  "libxml2"
-  "musl"
+  "so-libabiword-3-0-so"
+  "so-libc-musl-x86_64-so-1"
+  "so-libdbus-1-so-3"
+  "so-libdbus-glib-1-so-2"
+  "so-libgcc_s-so-1"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libgsf-1-so-114"
+  "so-libgtk-3-so-0"
+  "so-libstdc++-so-6"
+  "so-libxml2-so-2"
 ]
 extra-source "abiword-plugin-collab-3.0.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/abiword-plugin-collab-3.0.1-r1.apk"

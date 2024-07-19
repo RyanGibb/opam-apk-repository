@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del llvm12-dev"]
 ]
 depends: [
-  "libstdc++"
   "llvm12" {= "12.0.1-r0"}
-  "llvm12-libs"
   "llvm12-libs" {= "12.0.1-r0"}
-  "musl"
+  "so-libLLVM-12-so"
+  "so-libc-musl-x86_64-so-1"
+  "so-libstdc++-so-6"
 ]
 extra-source "llvm12-dev-12.0.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/llvm12-dev-12.0.1-r0.apk"

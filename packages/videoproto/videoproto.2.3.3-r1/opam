@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del videoproto"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "videoproto-2.3.3-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/videoproto-2.3.3-r1.apk"

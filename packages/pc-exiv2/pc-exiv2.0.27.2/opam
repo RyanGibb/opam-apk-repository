@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "exiv2-dev" {= "0.27.2-r3"}
+]

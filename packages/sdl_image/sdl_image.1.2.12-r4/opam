@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del sdl_image"]
 ]
 depends: [
-  "musl"
-  "sdl"
+  "so-libSDL-1-2-so-0"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "sdl_image-1.2.12-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/sdl_image-1.2.12-r4.apk"

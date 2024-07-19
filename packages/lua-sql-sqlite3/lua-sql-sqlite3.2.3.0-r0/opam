@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del lua-sql-sqlite3"]
 ]
 depends: [
-  "lua5.1-sql-sqlite3"
-  "lua5.2-sql-sqlite3"
+  "lua5-1-sql-sqlite3"
+  "lua5-2-sql-sqlite3"
 ]
 extra-source "lua-sql-sqlite3-2.3.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/lua-sql-sqlite3-2.3.0-r0.apk"

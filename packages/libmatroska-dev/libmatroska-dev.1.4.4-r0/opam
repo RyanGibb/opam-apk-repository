@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del libmatroska-dev"]
 ]
 depends: [
-  "libebml-dev"
   "libebml-dev" {>= "1.3.3"}
   "libmatroska" {= "1.4.4-r0"}
+  "pc-libebml"
   "pkgconfig"
 ]
 extra-source "libmatroska-dev-1.4.4-r0.apk" {

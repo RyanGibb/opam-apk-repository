@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del gettext-libs"]
 ]
 depends: [
-  "libintl"
-  "libunistring"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libintl-so-8"
+  "so-libunistring-so-2"
 ]
 extra-source "gettext-libs-0.19.8.1-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/gettext-libs-0.19.8.1-r4.apk"

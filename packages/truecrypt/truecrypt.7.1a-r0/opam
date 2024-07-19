@@ -7,12 +7,13 @@ remove: [
 ]
 depends: [
   "device-mapper"
-  "fuse"
-  "libgcc"
-  "libstdc++"
-  "musl"
-  "wxgtk2.8"
-  "wxgtk2.8-base"
+  "so-libc-musl-x86_64-so-1"
+  "so-libfuse-so-2"
+  "so-libgcc_s-so-1"
+  "so-libstdc++-so-6"
+  "so-libwx_baseu-2-8-so-0"
+  "so-libwx_gtk2u_adv-2-8-so-0"
+  "so-libwx_gtk2u_core-2-8-so-0"
 ]
 extra-source "truecrypt-7.1a-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/truecrypt-7.1a-r0.apk"

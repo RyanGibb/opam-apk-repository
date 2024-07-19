@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del lvm2"]
 ]
 depends: [
-  "device-mapper"
-  "lvm2-libs"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libdevmapper-so-1-02"
+  "so-liblvm2cmd-so-2-02"
 ]
 extra-source "lvm2-2.02.138-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/lvm2-2.02.138-r0.apk"

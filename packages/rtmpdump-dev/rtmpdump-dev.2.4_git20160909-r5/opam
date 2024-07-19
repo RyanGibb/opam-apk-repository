@@ -7,9 +7,10 @@ remove: [
 ]
 depends: [
   "librtmp" {= "2.4_git20160909-r5"}
-  "pkgconf"
+  "pc-libcrypto"
+  "pc-libssl"
+  "pkgconfig"
   "zlib-dev"
-  ("libressl-dev" | "openssl-dev")
 ]
 extra-source "rtmpdump-dev-2.4_git20160909-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/rtmpdump-dev-2.4_git20160909-r5.apk"

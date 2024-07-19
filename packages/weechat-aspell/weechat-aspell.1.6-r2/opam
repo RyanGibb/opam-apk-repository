@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del weechat-aspell"]
 ]
 depends: [
-  "aspell-libs"
-  "musl"
+  "so-libaspell-so-15"
+  "so-libc-musl-x86_64-so-1"
   "weechat"
 ]
 extra-source "weechat-aspell-1.6-r2.apk" {

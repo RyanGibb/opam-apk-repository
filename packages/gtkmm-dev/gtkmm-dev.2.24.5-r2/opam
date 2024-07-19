@@ -8,10 +8,14 @@ remove: [
 depends: [
   "atkmm-dev"
   "glibmm-dev"
-  "gtk+2.0-dev"
   "gtkmm" {= "2.24.5-r2"}
   "pangomm-dev"
-  "pkgconf"
+  "pc-atkmm-1-6" {>= "2.22.2"}
+  "pc-giomm-2-4" {>= "2.27.93"}
+  "pc-gtk+-2-0" {>= "2.24.0"}
+  "pc-gtk+-unix-print-2-0"
+  "pc-pangomm-1-4" {>= "2.27.1"}
+  "pkgconfig"
 ]
 extra-source "gtkmm-dev-2.24.5-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/gtkmm-dev-2.24.5-r2.apk"

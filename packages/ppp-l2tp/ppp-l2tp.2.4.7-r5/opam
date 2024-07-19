@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del ppp-l2tp"]
 ]
 depends: [
-  "musl"
   "ppp-daemon"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "ppp-l2tp-2.4.7-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/ppp-l2tp-2.4.7-r5.apk"

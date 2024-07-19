@@ -6,10 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del mupdf-gl"]
 ]
 depends: [
-  "glfw"
-  "mesa-gl"
-  "mupdf"
-  "musl"
+  "so-libGL-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libglfw-so-3"
+  "so-libmupdf-so-0"
+  "so-libmupdfthird-so-0"
 ]
 extra-source "mupdf-gl-1.11-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/mupdf-gl-1.11-r1.apk"

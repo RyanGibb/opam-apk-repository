@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del py-dbus-dev"]
 ]
 depends: [
-  "dbus-dev"
-  "pkgconf"
+  "pc-dbus-1" {>= "1.0"}
+  "pkgconfig"
   "py-dbus"
 ]
 extra-source "py-dbus-dev-1.2.8-r1.apk" {

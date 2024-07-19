@@ -6,18 +6,20 @@ remove: [
   ["sh" "-c" "sudo apk del sox"]
 ]
 depends: [
-  "alsa-lib"
-  "file"
-  "flac"
-  "lame"
-  "libao"
-  "libgomp"
-  "libltdl"
-  "libmad"
-  "libogg"
-  "libsndfile"
-  "libvorbis"
-  "musl"
+  "so-libFLAC-so-8"
+  "so-libao-so-4"
+  "so-libasound-so-2"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgomp-so-1"
+  "so-libltdl-so-7"
+  "so-libmad-so-0"
+  "so-libmagic-so-1"
+  "so-libmp3lame-so-0"
+  "so-libogg-so-0"
+  "so-libsndfile-so-1"
+  "so-libvorbis-so-0"
+  "so-libvorbisenc-so-2"
+  "so-libvorbisfile-so-3"
 ]
 extra-source "sox-14.4.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/sox-14.4.1-r0.apk"

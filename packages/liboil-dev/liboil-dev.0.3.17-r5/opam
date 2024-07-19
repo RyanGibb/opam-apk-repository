@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "liboil" {= "0.3.17-r5"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "liboil-dev-0.3.17-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/liboil-dev-0.3.17-r5.apk"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del icu-data-en"]
 ]
 depends: [
-  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
+  "-bin-sh"
 ]
 extra-source "icu-data-en-73.2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/icu-data-en-73.2-r2.apk"

@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del postgresql14-client"]
 ]
 depends: [
-  "libcrypto3"
-  "libpq"
-  "musl"
   "postgresql-common"
-  "readline"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-3"
+  "so-libpq-so-5"
+  "so-libreadline-so-8"
+  "so-libz-so-1"
 ]
 extra-source "postgresql14-client-14.12-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/postgresql14-client-14.12-r0.apk"

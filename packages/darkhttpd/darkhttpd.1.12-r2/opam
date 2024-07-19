@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del darkhttpd"]
 ]
 depends: [
-  "busybox"
-  "musl"
+  "-bin-sh"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "darkhttpd-1.12-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/darkhttpd-1.12-r2.apk"

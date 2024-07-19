@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del iproute2"]
 ]
 depends: [
-  "busybox"
-  "musl"
+  "-bin-sh"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "iproute2-5.15.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/iproute2-5.15.0-r0.apk"

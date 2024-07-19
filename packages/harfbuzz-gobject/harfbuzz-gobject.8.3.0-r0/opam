@@ -6,9 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del harfbuzz-gobject"]
 ]
 depends: [
-  "glib"
-  "harfbuzz"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libharfbuzz-so-0"
 ]
 extra-source "harfbuzz-gobject-8.3.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/harfbuzz-gobject-8.3.0-r0.apk"

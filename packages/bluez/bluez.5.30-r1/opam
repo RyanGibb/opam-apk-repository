@@ -8,11 +8,11 @@ remove: [
 depends: [
   "consolekit"
   "dbus"
-  "dbus-libs"
-  "glib"
-  "libical"
-  "musl"
-  "readline"
+  "so-libc-musl-x86_64-so-1"
+  "so-libdbus-1-so-3"
+  "so-libglib-2-0-so-0"
+  "so-libicalvcal-so-1"
+  "so-libreadline-so-6"
 ]
 extra-source "bluez-5.30-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/bluez-5.30-r1.apk"

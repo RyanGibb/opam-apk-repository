@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del kmod"]
 ]
 depends: [
-  "musl"
-  "xz-libs"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-liblzma-so-5"
+  "so-libz-so-1"
 ]
 extra-source "kmod-17-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/kmod-17-r1.apk"

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del lutok-dev"]
 ]
 depends: [
-  "lua5.2-dev"
+  "lua5-2-dev"
   "lutok" {= "0.4-r1"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "lutok-dev-0.4-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/lutok-dev-0.4-r1.apk"

@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del chrony"]
 ]
 depends: [
-  "gnutls"
-  "libcap2"
-  "libseccomp"
-  "musl"
-  "nettle"
-  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
+  "-bin-sh"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcap-so-2"
+  "so-libgnutls-so-30"
+  "so-libnettle-so-8"
+  "so-libseccomp-so-2"
 ]
 extra-source "chrony-4.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/chrony-4.5-r0.apk"

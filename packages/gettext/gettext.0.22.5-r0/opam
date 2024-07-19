@@ -7,12 +7,12 @@ remove: [
 ]
 depends: [
   "gettext-envsubst" {= "0.22.5-r0"}
-  "gettext-libs"
-  "libgomp"
-  "libintl"
-  "libunistring"
-  "libxml2"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgomp-so-1"
+  "so-libintl-so-8"
+  "so-libtextstyle-so-0"
+  "so-libunistring-so-5"
+  "so-libxml2-so-2"
 ]
 extra-source "gettext-0.22.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/gettext-0.22.5-r0.apk"

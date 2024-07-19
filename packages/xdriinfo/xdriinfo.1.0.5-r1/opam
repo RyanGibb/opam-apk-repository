@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del xdriinfo"]
 ]
 depends: [
-  "libx11"
-  "mesa-gl"
-  "musl"
+  "so-libGL-so-1"
+  "so-libX11-so-6"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "xdriinfo-1.0.5-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/xdriinfo-1.0.5-r1.apk"

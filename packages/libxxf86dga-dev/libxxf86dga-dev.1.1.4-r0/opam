@@ -9,7 +9,10 @@ depends: [
   "libx11-dev"
   "libxext-dev"
   "libxxf86dga" {= "1.1.4-r0"}
-  "pkgconf"
+  "pc-x11"
+  "pc-xext"
+  "pc-xf86dgaproto"
+  "pkgconfig"
   "xf86dgaproto"
 ]
 extra-source "libxxf86dga-dev-1.1.4-r0.apk" {

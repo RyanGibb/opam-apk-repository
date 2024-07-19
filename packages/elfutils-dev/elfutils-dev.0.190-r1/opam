@@ -9,10 +9,10 @@ depends: [
   "libasm" {= "0.190-r1"}
   "libdw" {= "0.190-r1"}
   "libelf" {= "0.190-r1"}
-  "pkgconf"
-  "xz-dev"
-  "zlib-dev"
-  "zstd-dev"
+  "pc-liblzma"
+  "pc-libzstd"
+  "pc-zlib"
+  "pkgconfig"
 ]
 extra-source "elfutils-dev-0.190-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/elfutils-dev-0.190-r1.apk"

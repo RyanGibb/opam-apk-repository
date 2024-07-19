@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del rdfind"]
 ]
 depends: [
-  "libgcc"
-  "libstdc++"
-  "musl"
-  "nettle"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libnettle-so-8"
+  "so-libstdc++-so-6"
 ]
 extra-source "rdfind-1.6.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/rdfind-1.6.0-r1.apk"

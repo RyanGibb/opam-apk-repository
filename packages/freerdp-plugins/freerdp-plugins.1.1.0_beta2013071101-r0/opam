@@ -6,10 +6,19 @@ remove: [
   ["sh" "-c" "sudo apk del freerdp-plugins"]
 ]
 depends: [
-  "alsa-lib"
-  "cups-libs"
-  "freerdp-libs"
-  "musl"
+  "so-libasound-so-2"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcups-so-2"
+  "so-libfreerdp-common-so-1-1-0"
+  "so-libfreerdp-utils-so-1-1"
+  "so-libwinpr-crt-so-0-1"
+  "so-libwinpr-file-so-0-1"
+  "so-libwinpr-handle-so-0-1"
+  "so-libwinpr-interlocked-so-0-1"
+  "so-libwinpr-synch-so-0-1"
+  "so-libwinpr-sysinfo-so-0-1"
+  "so-libwinpr-thread-so-0-1"
+  "so-libwinpr-utils-so-0-1"
 ]
 extra-source "freerdp-plugins-1.1.0_beta2013071101-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/freerdp-plugins-1.1.0_beta2013071101-r0.apk"

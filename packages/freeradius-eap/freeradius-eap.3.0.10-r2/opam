@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "freeradius" {= "3.0.10-r2"}
-  "freeradius-lib"
-  "libssl1.0"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libfreeradius-eap-so"
+  "so-libssl-so-1-0-0"
 ]
 extra-source "freeradius-eap-3.0.10-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/freeradius-eap-3.0.10-r2.apk"

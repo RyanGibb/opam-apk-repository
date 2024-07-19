@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del haserl"]
 ]
 depends: [
-  "haserl-lua5.1"
-  "haserl-lua5.2"
-  "haserl-lua5.3"
-  "haserl-lua5.4"
-  "haserl-lua5.4" {= "0.9.36-r1"}
+  "haserl-lua5-1"
+  "haserl-lua5-2"
+  "haserl-lua5-3"
+  "haserl-lua5-4"
+  "haserl-lua5-4" {= "0.9.36-r1"}
 ]
 extra-source "haserl-0.9.36-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/haserl-0.9.36-r1.apk"

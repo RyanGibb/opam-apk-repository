@@ -8,12 +8,20 @@ remove: [
 depends: [
   "cairo-dev"
   "glib-dev"
-  "gtk+2.0-dev"
+  "gtk+2-0-dev"
   "libwnck" {= "2.31.0-r5"}
   "libx11-dev"
   "libxres-dev"
   "pango-dev"
-  "pkgconf"
+  "pc-cairo"
+  "pc-glib-2-0"
+  "pc-gobject-2-0"
+  "pc-gtk+-2-0"
+  "pc-libstartup-notification-1-0"
+  "pc-pango"
+  "pc-x11"
+  "pc-xres"
+  "pkgconfig"
   "startup-notification-dev"
 ]
 extra-source "libwnck-dev-2.31.0-r5.apk" {

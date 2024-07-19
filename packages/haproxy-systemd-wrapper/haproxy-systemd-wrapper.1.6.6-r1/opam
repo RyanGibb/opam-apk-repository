@@ -6,12 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del haproxy-systemd-wrapper"]
 ]
 depends: [
-  "libcrypto1.0"
-  "libssl1.0"
-  "lua5.3-libs"
-  "musl"
-  "pcre"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-0-0"
+  "so-liblua-5-3-so-0"
+  "so-libpcre-so-1"
+  "so-libpcreposix-so-0"
+  "so-libssl-so-1-0-0"
+  "so-libz-so-1"
 ]
 extra-source "haproxy-systemd-wrapper-1.6.6-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/haproxy-systemd-wrapper-1.6.6-r1.apk"

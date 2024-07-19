@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del wayland-libs-client"]
 ]
 depends: [
-  "libffi"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libffi-so-8"
 ]
 extra-source "wayland-libs-client-1.22.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/wayland-libs-client-1.22.0-r2.apk"

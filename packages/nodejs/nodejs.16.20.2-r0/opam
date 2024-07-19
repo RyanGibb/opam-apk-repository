@@ -6,19 +6,21 @@ remove: [
   ["sh" "-c" "sudo apk del nodejs"]
 ]
 depends: [
-  "brotli-libs"
-  "busybox"
-  "c-ares"
+  "-bin-sh"
   "ca-certificates"
-  "icu-libs"
-  "libcrypto1.1"
-  "libgcc"
-  "libssl1.1"
-  "libstdc++"
-  "musl"
-  "nghttp2-libs"
   "nghttp2-libs" {>= "1.41"}
-  "zlib"
+  "so-libbrotlidec-so-1"
+  "so-libbrotlienc-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcares-so-2"
+  "so-libcrypto-so-1-1"
+  "so-libgcc_s-so-1"
+  "so-libicui18n-so-71"
+  "so-libicuuc-so-71"
+  "so-libnghttp2-so-14"
+  "so-libssl-so-1-1"
+  "so-libstdc++-so-6"
+  "so-libz-so-1"
 ]
 extra-source "nodejs-16.20.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/nodejs-16.20.2-r0.apk"

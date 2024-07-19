@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del net-snmp-tools"]
 ]
 depends: [
-  "libcrypto1.0"
-  "musl"
-  "net-snmp-agent-libs"
-  "net-snmp-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-0-0"
+  "so-libnetsnmp-so-30"
+  "so-libnetsnmpagent-so-30"
 ]
 extra-source "net-snmp-tools-5.7.2.1-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/net-snmp-tools-5.7.2.1-r4.apk"

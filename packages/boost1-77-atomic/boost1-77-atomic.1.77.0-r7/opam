@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add boost1.77-atomic-1.77.0-r7.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del boost1.77-atomic"]
+]
+depends: [
+  "so-libc-musl-x86_64-so-1"
+]
+extra-source "boost1.77-atomic-1.77.0-r7.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/boost1.77-atomic-1.77.0-r7.apk"
+}

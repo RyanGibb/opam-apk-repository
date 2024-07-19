@@ -6,12 +6,17 @@ remove: [
   ["sh" "-c" "sudo apk del libreoffice-connector-postgres"]
 ]
 depends: [
-  "libgcc"
   "libreoffice-base"
-  "libreoffice-common"
-  "libstdc++"
-  "musl"
-  ("pgcluster-libpq" | "libpq")
+  "so-libc-musl-x86_64-so-1"
+  "so-libcomphelper-so"
+  "so-libdbtoolslo-so"
+  "so-libgcc_s-so-1"
+  "so-libpq-so-5"
+  "so-libstdc++-so-6"
+  "so-libuno_cppu-so-3"
+  "so-libuno_cppuhelpergcc3-so-3"
+  "so-libuno_sal-so-3"
+  "so-libuno_salhelpergcc3-so-3"
 ]
 extra-source "libreoffice-connector-postgres-4.4.3.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/libreoffice-connector-postgres-4.4.3.2-r0.apk"

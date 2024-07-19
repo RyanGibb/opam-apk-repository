@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libxml2-dev"
-  "pkgconf"
+  "pkgconfig"
   "xmlrpc-c" {= "1.51.07-r1"}
   "xmlrpc-c++" {= "1.51.07-r1"}
   "xmlrpc-c-abyss" {= "1.51.07-r1"}

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "gmp-dev"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "linux-vanilla-dev-3.18.22-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/linux-vanilla-dev-3.18.22-r1.apk"

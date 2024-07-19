@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "fribidi" {= "1.0.8-r0"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "fribidi-dev-1.0.8-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/fribidi-dev-1.0.8-r0.apk"

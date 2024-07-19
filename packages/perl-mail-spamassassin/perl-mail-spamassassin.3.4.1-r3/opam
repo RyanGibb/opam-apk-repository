@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del perl-mail-spamassassin"]
 ]
 depends: [
-  "gnupg1"
+  "gnupg"
   "perl"
   "perl-db_file"
   "perl-digest-sha1"

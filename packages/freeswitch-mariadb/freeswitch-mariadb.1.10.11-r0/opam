@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del freeswitch-mariadb"]
 ]
 depends: [
-  "freeswitch"
-  "libgcc"
-  "libstdc++"
-  "mariadb-connector-c"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libfreeswitch-so-1"
+  "so-libgcc_s-so-1"
+  "so-libmariadb-so-3"
+  "so-libstdc++-so-6"
 ]
 extra-source "freeswitch-mariadb-1.10.11-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/freeswitch-mariadb-1.10.11-r0.apk"

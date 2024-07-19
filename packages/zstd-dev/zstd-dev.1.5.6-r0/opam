@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del zstd-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
   "zstd" {= "1.5.6-r0"}
   "zstd-libs" {= "1.5.6-r0"}
 ]

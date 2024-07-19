@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "glib-dev"
-  "gtk+3.0-dev"
+  "gtk+3-0-dev"
   "pango-dev"
   "pkgconfig"
   "vte3" {= "0.40.2-r0"}

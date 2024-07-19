@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "arm-trusted-firmware-tools" {= "2.8.14-r1"}
+]

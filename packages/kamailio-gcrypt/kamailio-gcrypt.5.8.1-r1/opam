@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "kamailio"
-  "libgcrypt"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcrypt-so-20"
 ]
 extra-source "kamailio-gcrypt-5.8.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/kamailio-gcrypt-5.8.1-r1.apk"

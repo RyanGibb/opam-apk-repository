@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del vde2-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
   "vde2-libs" {= "2.3.2-r8"}
 ]
 extra-source "vde2-dev-2.3.2-r8.apk" {

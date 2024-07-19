@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del py-httplib2"]
 ]
 depends: [
-  "python2"
+  "python"
 ]
 extra-source "py-httplib2-0.9.2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/py-httplib2-0.9.2-r2.apk"

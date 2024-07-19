@@ -9,8 +9,8 @@ depends: [
   "boost-dev"
   "botan-libs" {= "2.18.1-r4"}
   "bzip2-dev"
-  "openssl-dev"
-  "pkgconf"
+  "openssl1-1-compat-dev"
+  "pkgconfig"
   "sqlite-dev"
   "xz-dev"
   "zlib-dev"

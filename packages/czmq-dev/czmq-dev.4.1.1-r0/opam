@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "czmq" {= "4.1.1-r0"}
-  "pkgconf"
+  "pkgconfig"
   "util-linux-dev"
   "zeromq-dev"
 ]

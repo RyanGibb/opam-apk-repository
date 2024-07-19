@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del tinyproxy"]
 ]
 depends: [
-  "busybox"
-  "musl"
+  "-bin-sh"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "tinyproxy-1.8.4-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/tinyproxy-1.8.4-r3.apk"

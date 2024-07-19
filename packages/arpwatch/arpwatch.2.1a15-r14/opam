@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "busybox"
-  "libpcap"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpcap-so-1"
 ]
 extra-source "arpwatch-2.1a15-r14.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/arpwatch-2.1a15-r14.apk"

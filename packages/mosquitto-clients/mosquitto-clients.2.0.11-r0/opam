@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del mosquitto-clients"]
 ]
 depends: [
-  "cjson"
-  "mosquitto-libs"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcjson-so-1"
+  "so-libmosquitto-so-1"
 ]
 extra-source "mosquitto-clients-2.0.11-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/mosquitto-clients-2.0.11-r0.apk"

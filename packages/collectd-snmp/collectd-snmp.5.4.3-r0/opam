@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "collectd"
-  "libcrypto1.0"
-  "musl"
-  "net-snmp-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-0-0"
+  "so-libnetsnmp-so-30"
 ]
 extra-source "collectd-snmp-5.4.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/collectd-snmp-5.4.3-r0.apk"

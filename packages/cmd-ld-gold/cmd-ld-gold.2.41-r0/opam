@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "binutils-gold" {= "2.41-r0"}
+]

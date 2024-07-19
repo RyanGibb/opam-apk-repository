@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libraw" {= "0.17.2-r1"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "libraw-dev-0.17.2-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/libraw-dev-0.17.2-r1.apk"

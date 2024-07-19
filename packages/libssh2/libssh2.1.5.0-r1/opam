@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del libssh2"]
 ]
 depends: [
-  "libcrypto1.0"
-  "libssl1.0"
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-0-0"
+  "so-libssl-so-1-0-0"
+  "so-libz-so-1"
 ]
 extra-source "libssh2-1.5.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/libssh2-1.5.0-r1.apk"

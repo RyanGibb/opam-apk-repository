@@ -8,12 +8,12 @@ remove: [
 depends: [
   "bash"
   "busybox"
-  "libpq"
-  "libressl2.5-libcrypto"
-  "libressl2.5-libssl"
-  "musl"
   "postgresql-client"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-41"
+  "so-libpq-so-5"
+  "so-libssl-so-43"
+  "so-libz-so-1"
 ]
 extra-source "postgresql-bdr-9.4.10_p1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/postgresql-bdr-9.4.10_p1-r0.apk"

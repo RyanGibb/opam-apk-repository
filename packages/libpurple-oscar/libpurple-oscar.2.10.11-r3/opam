@@ -6,9 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del libpurple-oscar"]
 ]
 depends: [
-  "glib"
-  "libintl"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libglib-2-0-so-0"
+  "so-libgmodule-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libgthread-2-0-so-0"
+  "so-libintl-so-8"
 ]
 extra-source "libpurple-oscar-2.10.11-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/libpurple-oscar-2.10.11-r3.apk"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "gd" {= "2.2.5-r1"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "gd-dev-2.2.5-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/gd-dev-2.2.5-r1.apk"

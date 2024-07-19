@@ -11,7 +11,9 @@ depends: [
   "atk-dev"
   "dbus-dev"
   "glib-dev"
-  "pkgconf"
+  "pc-atspi-2"
+  "pc-gobject-2-0"
+  "pkgconfig"
 ]
 extra-source "at-spi2-atk-dev-2.26.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/at-spi2-atk-dev-2.26.1-r0.apk"

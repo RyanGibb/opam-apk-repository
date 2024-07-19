@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del nagios-plugins-procs"]
 ]
 depends: [
-  "libcrypto3"
-  "musl"
   "nagios-plugins"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-3"
 ]
 extra-source "nagios-plugins-procs-2.4.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nagios-plugins-procs-2.4.2-r0.apk"

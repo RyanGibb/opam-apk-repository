@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del c-client"]
 ]
 depends: [
-  "libressl2.6-libcrypto"
-  "libressl2.6-libssl"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-42"
+  "so-libssl-so-44"
 ]
 extra-source "c-client-2007f-r7.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/c-client-2007f-r7.apk"

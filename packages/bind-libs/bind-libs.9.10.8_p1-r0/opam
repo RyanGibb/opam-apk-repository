@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del bind-libs"]
 ]
 depends: [
-  "libgcc"
-  "libressl2.4-libcrypto"
-  "libxml2"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-38"
+  "so-libgcc_s-so-1"
+  "so-libxml2-so-2"
 ]
 extra-source "bind-libs-9.10.8_p1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/bind-libs-9.10.8_p1-r0.apk"

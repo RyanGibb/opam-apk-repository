@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "abseil-cpp-per-thread-sem-test-common" {= "20230802.1-r0"}
+]

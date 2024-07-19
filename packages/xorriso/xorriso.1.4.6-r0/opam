@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del xorriso"]
 ]
 depends: [
-  "libisoburn"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libisoburn-so-1"
 ]
 extra-source "xorriso-1.4.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/xorriso-1.4.6-r0.apk"

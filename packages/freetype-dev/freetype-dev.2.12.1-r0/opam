@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del freetype-dev"]
 ]
 depends: [
-  "brotli-dev"
-  "bzip2-dev"
   "freetype" {= "2.12.1-r0"}
-  "libpng-dev"
-  "pkgconf"
-  "zlib-dev"
+  "pc-bzip2"
+  "pc-libbrotlidec"
+  "pc-libpng"
+  "pc-zlib"
+  "pkgconfig"
 ]
 extra-source "freetype-dev-2.12.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/freetype-dev-2.12.1-r0.apk"

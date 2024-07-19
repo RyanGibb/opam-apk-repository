@@ -6,15 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del mupdf-x11"]
 ]
 depends: [
-  "freetype"
-  "harfbuzz"
-  "jbig2dec"
-  "libjpeg-turbo"
-  "libx11"
-  "libxext"
-  "mupdf"
-  "musl"
-  "openjpeg"
+  "so-libX11-so-6"
+  "so-libXext-so-6"
+  "so-libc-musl-x86_64-so-1"
+  "so-libfreetype-so-6"
+  "so-libharfbuzz-so-0"
+  "so-libjbig2dec-so-0"
+  "so-libjpeg-so-8"
+  "so-libmupdf-so-0"
+  "so-libmupdfthird-so-0"
+  "so-libopenjp2-so-7"
 ]
 extra-source "mupdf-x11-1.16.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/mupdf-x11-1.16.1-r1.apk"

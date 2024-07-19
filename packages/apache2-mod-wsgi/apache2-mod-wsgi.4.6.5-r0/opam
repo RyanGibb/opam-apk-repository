@@ -7,8 +7,9 @@ remove: [
 ]
 depends: [
   "apache2"
-  "musl"
   "python2"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpython2-7-so-1-0"
 ]
 extra-source "apache2-mod-wsgi-4.6.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/apache2-mod-wsgi-4.6.5-r0.apk"

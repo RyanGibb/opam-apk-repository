@@ -6,9 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del mcabber-dev"]
 ]
 depends: [
-  "glib-dev"
-  "loudmouth-dev"
-  "pkgconf"
+  "pc-glib-2-0"
+  "pc-gmodule-2-0"
+  "pc-loudmouth-1-0"
+  "pkgconfig"
 ]
 extra-source "mcabber-dev-1.1.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/mcabber-dev-1.1.0-r2.apk"

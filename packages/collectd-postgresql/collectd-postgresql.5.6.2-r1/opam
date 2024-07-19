@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "collectd"
-  "libpq"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpq-so-5"
 ]
 extra-source "collectd-postgresql-5.6.2-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/collectd-postgresql-5.6.2-r1.apk"

@@ -6,12 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del py3-twisted"]
 ]
 depends: [
-  "musl"
   "py3-constantly"
   "py3-crypto"
   "py3-incremental"
   "py3-zope-interface"
   "python3"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpython3-7m-so-1-0"
 ]
 extra-source "py3-twisted-19.2.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/py3-twisted-19.2.1-r0.apk"

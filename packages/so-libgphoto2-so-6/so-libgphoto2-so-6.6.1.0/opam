@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "libgphoto2" {= "2.5.25-r0"}
+]

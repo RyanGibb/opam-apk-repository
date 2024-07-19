@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del llvm14"]
 ]
 depends: [
-  "libgcc"
-  "libstdc++"
-  "llvm14-libs"
-  "musl"
-  "zlib"
+  "so-libLLVM-14-so"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libstdc++-so-6"
+  "so-libz-so-1"
 ]
 extra-source "llvm14-14.0.6-r7.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/llvm14-14.0.6-r7.apk"

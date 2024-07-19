@@ -9,7 +9,10 @@ depends: [
   "libx11-dev"
   "libxext-dev"
   "libxscrnsaver" {= "1.2.2-r1"}
-  "pkgconf"
+  "pc-scrnsaverproto"
+  "pc-x11"
+  "pc-xext"
+  "pkgconfig"
   "scrnsaverproto"
 ]
 extra-source "libxscrnsaver-dev-1.2.2-r1.apk" {

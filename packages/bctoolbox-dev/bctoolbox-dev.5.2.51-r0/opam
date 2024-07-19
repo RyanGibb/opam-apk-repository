@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "bctoolbox" {= "5.2.51-r0"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "bctoolbox-dev-5.2.51-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/bctoolbox-dev-5.2.51-r0.apk"

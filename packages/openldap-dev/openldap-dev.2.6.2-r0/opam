@@ -10,8 +10,8 @@ depends: [
   "libevent-dev"
   "libldap" {= "2.6.2-r0"}
   "libsodium-dev"
-  "openssl-dev"
-  "pkgconf"
+  "openssl1-1-compat-dev"
+  "pkgconfig"
   "util-linux-dev"
 ]
 extra-source "openldap-dev-2.6.2-r0.apk" {

@@ -8,14 +8,16 @@ remove: [
 depends: [
   "busybox"
   "freeradius-eap" {= "3.0.12-r2"}
-  "freeradius-lib"
-  "gdbm"
-  "libpcap"
-  "libressl2.4-libcrypto"
-  "libressl2.4-libssl"
-  "musl"
-  "readline"
-  "talloc"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-38"
+  "so-libfreeradius-dhcp-so"
+  "so-libfreeradius-radius-so"
+  "so-libfreeradius-server-so"
+  "so-libgdbm-so-4"
+  "so-libpcap-so-1"
+  "so-libreadline-so-6"
+  "so-libssl-so-39"
+  "so-libtalloc-so-2"
 ]
 extra-source "freeradius-3.0.12-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/freeradius-3.0.12-r2.apk"

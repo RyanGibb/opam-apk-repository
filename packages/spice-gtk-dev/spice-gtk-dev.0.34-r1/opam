@@ -9,21 +9,22 @@ depends: [
   "acl-dev"
   "celt051-dev"
   "cyrus-sasl-dev"
-  "glib-dev"
   "gst-plugins-base-dev"
-  "gtk+3.0-dev"
+  "gtk+3-0-dev"
   "libjpeg-turbo-dev"
   "libressl-dev"
   "libxrandr-dev"
   "lz4-dev"
-  "pixman-dev"
-  "pkgconf"
+  "pc-glib-2-0"
+  "pc-gtk+-3-0" {>= "3.12"}
+  "pc-openssl"
+  "pc-pixman-1" {>= "0.17.7"}
+  "pc-spice-protocol"
+  "pkgconfig"
   "polkit-dev"
   "spice-glib" {= "0.34-r1"}
   "spice-gtk" {= "0.34-r1"}
-  "spice-protocol"
   "zlib-dev"
-  ("libressl-dev" | "openssl-dev")
 ]
 extra-source "spice-gtk-dev-0.34-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/spice-gtk-dev-0.34-r1.apk"

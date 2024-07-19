@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del llvm17-linker-tools"]
 ]
 depends: [
-  "libgcc"
-  "libstdc++"
-  "llvm17-libs"
-  "musl"
+  "so-libLLVM-17-so"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libstdc++-so-6"
 ]
 extra-source "llvm17-linker-tools-17.0.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/llvm17-linker-tools-17.0.5-r0.apk"

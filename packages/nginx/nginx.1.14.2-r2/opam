@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del nginx"]
 ]
 depends: [
-  "busybox"
-  "libressl2.7-libcrypto"
-  "libressl2.7-libssl"
-  "musl"
-  "pcre"
-  "zlib"
+  "-bin-sh"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-43"
+  "so-libpcre-so-1"
+  "so-libssl-so-45"
+  "so-libz-so-1"
 ]
 extra-source "nginx-1.14.2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/nginx-1.14.2-r2.apk"

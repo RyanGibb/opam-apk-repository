@@ -6,14 +6,17 @@ remove: [
   ["sh" "-c" "sudo apk del putty"]
 ]
 depends: [
-  "cairo"
-  "gdk-pixbuf"
-  "glib"
-  "gtk+3.0"
-  "libx11"
-  "musl"
   "ncurses-terminfo-base"
-  "pango"
+  "so-libX11-so-6"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcairo-so-2"
+  "so-libgdk-3-so-0"
+  "so-libgdk_pixbuf-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libgtk-3-so-0"
+  "so-libpango-1-0-so-0"
+  "so-libpangocairo-1-0-so-0"
 ]
 extra-source "putty-0.81-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/putty-0.81-r0.apk"

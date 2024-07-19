@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del vlc-plugins-access_output"]
 ]
 depends: [
-  "dbus-libs"
-  "libgcrypt"
-  "libgpg-error"
-  "libshout"
-  "musl"
-  "vlc-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libdbus-1-so-3"
+  "so-libgcrypt-so-20"
+  "so-libgpg-error-so-0"
+  "so-libshout-so-3"
+  "so-libvlccore-so-8"
 ]
 extra-source "vlc-plugins-access_output-2.2.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/vlc-plugins-access_output-2.2.4-r0.apk"

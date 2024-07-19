@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del ca-certificates"]
 ]
 depends: [
-  "libcrypto3"
-  "musl"
-  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
+  "-bin-sh"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-3"
 ]
 extra-source "ca-certificates-20240226-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/ca-certificates-20240226-r0.apk"

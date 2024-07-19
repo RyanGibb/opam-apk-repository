@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "clamav-milter" {= "0.100.3-r0"}
+]

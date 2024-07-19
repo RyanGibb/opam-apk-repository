@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lua5.1-curl-0.3.8-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lua5.1-curl"]
+]
+depends: [
+  "lua5-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcurl-so-4"
+]
+extra-source "lua5.1-curl-0.3.8-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/lua5.1-curl-0.3.8-r1.apk"
+}

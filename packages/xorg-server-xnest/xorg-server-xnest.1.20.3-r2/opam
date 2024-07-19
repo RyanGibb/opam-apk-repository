@@ -6,14 +6,14 @@ remove: [
   ["sh" "-c" "sudo apk del xorg-server-xnest"]
 ]
 depends: [
-  "libcrypto1.1"
-  "libx11"
-  "libxau"
-  "libxdmcp"
-  "libxext"
-  "libxfont2"
-  "musl"
-  "pixman"
+  "so-libX11-so-6"
+  "so-libXau-so-6"
+  "so-libXdmcp-so-6"
+  "so-libXext-so-6"
+  "so-libXfont2-so-2"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-1"
+  "so-libpixman-1-so-0"
 ]
 extra-source "xorg-server-xnest-1.20.3-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/xorg-server-xnest-1.20.3-r2.apk"

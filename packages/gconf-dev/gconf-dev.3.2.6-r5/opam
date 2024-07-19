@@ -6,12 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del gconf-dev"]
 ]
 depends: [
-  "dbus-dev"
   "gconf" {= "3.2.6-r5"}
-  "glib-dev"
-  "gtk+3.0-dev"
+  "gtk+3-0-dev"
   "libxml2-dev"
-  "pkgconf"
+  "pc-dbus-1"
+  "pc-gio-2-0"
+  "pc-glib-2-0"
+  "pkgconfig"
   "polkit-dev"
 ]
 extra-source "gconf-dev-3.2.6-r5.apk" {

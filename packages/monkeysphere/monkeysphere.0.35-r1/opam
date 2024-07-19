@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del monkeysphere"]
 ]
 depends: [
-  "gnupg1"
+  "gnupg"
   "openssl"
 ]
 extra-source "monkeysphere-0.35-r1.apk" {

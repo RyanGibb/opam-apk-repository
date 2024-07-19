@@ -8,6 +8,8 @@ remove: [
 depends: [
   "glib-dev"
   "libffi-dev"
+  "pc-gobject-2-0"
+  "pc-libffi"
   "pkgconfig"
   "py-gobject" {= "2.28.6-r4"}
   "python-dev"

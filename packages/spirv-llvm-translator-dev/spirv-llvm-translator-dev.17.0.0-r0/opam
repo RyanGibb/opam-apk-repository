@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "llvm17-dev"
-  "pkgconf"
+  "pkgconfig"
   "spirv-llvm-translator" {= "17.0.0-r0"}
   "spirv-llvm-translator-libs" {= "17.0.0-r0"}
   "spirv-tools-dev"

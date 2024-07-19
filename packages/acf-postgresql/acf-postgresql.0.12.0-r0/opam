@@ -9,7 +9,7 @@ depends: [
   "acf-core"
   "acf-db-lib"
   "lua-sql-postgres"
-  ("postgresql15" | "postgresql16")
+  "postgresql"
 ]
 extra-source "acf-postgresql-0.12.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/acf-postgresql-0.12.0-r0.apk"

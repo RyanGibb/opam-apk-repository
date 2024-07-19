@@ -6,10 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del syslog-ng-redis"]
 ]
 depends: [
-  "glib"
-  "hiredis"
-  "musl"
-  "syslog-ng"
+  "so-libc-musl-x86_64-so-1"
+  "so-libevtlog-3-22-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libhiredis-so-0-14"
+  "so-libsyslog-ng-3-22-so-0"
 ]
 extra-source "syslog-ng-redis-3.22.1-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/syslog-ng-redis-3.22.1-r2.apk"

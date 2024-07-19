@@ -6,18 +6,18 @@ remove: [
   ["sh" "-c" "sudo apk del aports-build"]
 ]
 depends: [
+  "-bin-sh"
   "abuild" {> "2.20.0"}
   "build-base"
   "git"
   "lua-aports" {> "1.0.0"}
-  "lua5.2-cjson"
-  "lua5.2-mqtt-publish"
+  "lua5-2-cjson"
+  "lua5-2-mqtt-publish"
   "mosquitto-clients"
   "mqtt-exec"
+  "openssh-client"
   "pigz"
   "rsync"
-  ("openssh-client-krb5" | "openssh-client-default")
-  ("yash-binsh" | "busybox-binsh" | "dash-binsh")
 ]
 extra-source "aports-build-1.5.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/aports-build-1.5.4-r0.apk"

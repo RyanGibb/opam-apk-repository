@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del uvncrepeater"]
 ]
 depends: [
-  "musl"
+  "-bin-sh"
   "openrc" {>= "0.6"}
-  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "uvncrepeater-014-r10.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/uvncrepeater-014-r10.apk"

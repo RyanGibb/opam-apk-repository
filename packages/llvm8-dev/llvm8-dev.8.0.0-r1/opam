@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del llvm8-dev"]
 ]
 depends: [
-  "libstdc++"
   "llvm8" {= "8.0.0-r1"}
-  "llvm8-libs"
   "llvm8-libs" {= "8.0.0-r1"}
-  "musl"
+  "so-libLLVM-8-so"
+  "so-libc-musl-x86_64-so-1"
+  "so-libstdc++-so-6"
 ]
 extra-source "llvm8-dev-8.0.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/llvm8-dev-8.0.0-r1.apk"

@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del php-zlib"]
 ]
 depends: [
-  "musl"
   "php"
   "php-cli"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libz-so-1"
 ]
 extra-source "php-zlib-5.6.31-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/php-zlib-5.6.31-r0.apk"

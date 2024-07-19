@@ -6,19 +6,22 @@ remove: [
   ["sh" "-c" "sudo apk del harfbuzz-dev"]
 ]
 depends: [
-  "cairo"
-  "freetype"
-  "glib"
-  "glib-dev"
-  "graphite2-dev"
-  "harfbuzz"
   "harfbuzz" {= "1.7.6-r1"}
   "harfbuzz-icu" {= "1.7.6-r1"}
-  "icu-dev"
-  "libgcc"
-  "libstdc++"
-  "musl"
-  "pkgconf"
+  "pc-glib-2-0"
+  "pc-glib-2-0" {>= "2.19.1"}
+  "pc-gobject-2-0"
+  "pc-graphite2"
+  "pc-icu-uc"
+  "pkgconfig"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcairo-so-2"
+  "so-libfreetype-so-6"
+  "so-libgcc_s-so-1"
+  "so-libglib-2-0-so-0"
+  "so-libharfbuzz-so-0"
+  "so-libharfbuzz-subset-so-0"
+  "so-libstdc++-so-6"
 ]
 extra-source "harfbuzz-dev-1.7.6-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/harfbuzz-dev-1.7.6-r1.apk"

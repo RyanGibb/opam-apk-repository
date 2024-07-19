@@ -6,14 +6,14 @@ remove: [
   ["sh" "-c" "sudo apk del mesa-osmesa"]
 ]
 depends: [
-  "libgcc"
-  "libstdc++"
-  "llvm15-libs"
   "mesa" {= "22.2.5-r1"}
-  "mesa-glapi"
-  "musl"
-  "zlib"
-  "zstd-libs"
+  "so-libLLVM-15-so"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libglapi-so-0"
+  "so-libstdc++-so-6"
+  "so-libz-so-1"
+  "so-libzstd-so-1"
 ]
 extra-source "mesa-osmesa-22.2.5-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mesa-osmesa-22.2.5-r1.apk"

@@ -6,13 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del ruby"]
 ]
 depends: [
+  "-bin-sh"
   "ca-certificates"
-  "gmp"
-  "libucontext"
-  "musl"
-  "ruby-libs"
-  "zlib"
-  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
+  "so-libc-musl-x86_64-so-1"
+  "so-libgmp-so-10"
+  "so-libruby-so-3-2"
+  "so-libucontext-so-1"
+  "so-libz-so-1"
 ]
 extra-source "ruby-3.2.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/ruby-3.2.4-r0.apk"

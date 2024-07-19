@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "font-sony-misc"
-  "musl"
-  "rrdtool"
+  "so-libc-musl-x86_64-so-1"
+  "so-librrd-so-4"
 ]
 extra-source "perl-rrd-1.4.9-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/perl-rrd-1.4.9-r0.apk"

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del arpwatch"]
 ]
 depends: [
-  "busybox"
-  "libpcap"
-  "musl"
+  "-bin-sh"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpcap-so-1"
 ]
 extra-source "arpwatch-2.1a15-r17.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/arpwatch-2.1a15-r17.apk"

@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del gvpe"]
 ]
 depends: [
-  "gmp"
-  "libgcc"
-  "libressl2.4-libcrypto"
-  "libstdc++"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-38"
+  "so-libgcc_s-so-1"
+  "so-libgmp-so-10"
+  "so-libstdc++-so-6"
 ]
 extra-source "gvpe-2.25-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/gvpe-2.25-r2.apk"

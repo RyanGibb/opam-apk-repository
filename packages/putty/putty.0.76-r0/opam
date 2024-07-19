@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del putty"]
 ]
 depends: [
-  "musl"
   "ncurses-terminfo-base"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "putty-0.76-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/putty-0.76-r0.apk"

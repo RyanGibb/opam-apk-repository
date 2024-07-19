@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del perl-xml-sax"]
 ]
 depends: [
-  "busybox"
+  "-bin-sh"
   "perl-xml-namespacesupport"
   "perl-xml-sax-base"
 ]

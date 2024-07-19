@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del wayland-dev"]
 ]
 depends: [
-  "expat"
   "expat-dev"
   "libffi-dev"
-  "libxml2"
-  "musl"
-  "pkgconf"
+  "pkgconfig"
+  "so-libc-musl-x86_64-so-1"
+  "so-libexpat-so-1"
+  "so-libxml2-so-2"
   "wayland" {= "1.13.0-r0"}
 ]
 extra-source "wayland-dev-1.13.0-r0.apk" {

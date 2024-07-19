@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "m4"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "bison-3.7.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/bison-3.7.6-r0.apk"

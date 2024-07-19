@@ -6,11 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del mpeg2dec"]
 ]
 depends: [
-  "libmpeg2"
-  "libx11"
-  "libxext"
-  "libxv"
-  "musl"
+  "so-libX11-so-6"
+  "so-libXext-so-6"
+  "so-libXv-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libmpeg2-so-0"
+  "so-libmpeg2convert-so-0"
 ]
 extra-source "mpeg2dec-0.5.1-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/mpeg2dec-0.5.1-r8.apk"

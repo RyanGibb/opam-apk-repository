@@ -6,10 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del cups-libs"]
 ]
 depends: [
-  "avahi-libs"
-  "gnutls"
-  "musl"
-  "zlib"
+  "so-libavahi-client-so-3"
+  "so-libavahi-common-so-3"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgnutls-so-30"
+  "so-libz-so-1"
 ]
 extra-source "cups-libs-2.3.3-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/cups-libs-2.3.3-r3.apk"

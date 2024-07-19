@@ -6,10 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del tiff-dev"]
 ]
 depends: [
-  "libjpeg-turbo-dev"
   "libtiffxx" {= "4.5.1-r0"}
-  "libwebp-dev"
-  "pkgconf"
+  "pc-libjpeg"
+  "pc-libwebp"
+  "pc-libzstd"
+  "pc-zlib"
+  "pkgconfig"
   "tiff" {= "4.5.1-r0"}
   "zlib-dev"
   "zstd-dev"

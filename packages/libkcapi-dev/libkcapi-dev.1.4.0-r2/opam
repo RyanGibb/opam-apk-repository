@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libkcapi" {= "1.4.0-r2"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "libkcapi-dev-1.4.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/libkcapi-dev-1.4.0-r2.apk"

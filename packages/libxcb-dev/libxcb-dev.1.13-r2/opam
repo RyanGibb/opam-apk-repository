@@ -6,11 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del libxcb-dev"]
 ]
 depends: [
-  "libpthread-stubs"
   "libxau-dev"
   "libxcb" {= "1.13-r2"}
-  "libxdmcp-dev"
-  "pkgconf"
+  "pc-pthread-stubs"
+  "pc-xau" {>= "0.99.2"}
+  "pc-xdmcp"
+  "pkgconfig"
   "xcb-proto"
 ]
 extra-source "libxcb-dev-1.13-r2.apk" {

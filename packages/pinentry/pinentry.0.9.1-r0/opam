@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "busybox"
-  "libcap"
-  "musl"
-  "ncurses-widec-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcap-so-2"
+  "so-libncursesw-so-5"
 ]
 extra-source "pinentry-0.9.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/pinentry-0.9.1-r0.apk"

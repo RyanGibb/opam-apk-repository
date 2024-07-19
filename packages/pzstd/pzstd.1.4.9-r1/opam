@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del pzstd"]
 ]
 depends: [
-  "libgcc"
-  "libstdc++"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libstdc++-so-6"
 ]
 extra-source "pzstd-1.4.9-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/pzstd-1.4.9-r1.apk"

@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del ipptool"]
 ]
 depends: [
-  "cups-libs"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcups-so-2"
 ]
 extra-source "ipptool-2.3.3-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/ipptool-2.3.3-r8.apk"

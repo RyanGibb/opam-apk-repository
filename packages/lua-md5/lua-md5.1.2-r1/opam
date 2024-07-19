@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del lua-md5"]
 ]
 depends: [
-  "lua5.1-md5"
+  "lua5-1-md5"
 ]
 extra-source "lua-md5-1.2-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/lua-md5-1.2-r1.apk"

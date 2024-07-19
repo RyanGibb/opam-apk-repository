@@ -6,8 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del apr-util-ldap"]
 ]
 depends: [
-  "libldap"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-liblber-2-4-so-2"
+  "so-libldap-2-4-so-2"
 ]
 extra-source "apr-util-ldap-1.5.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/apr-util-ldap-1.5.4-r0.apk"

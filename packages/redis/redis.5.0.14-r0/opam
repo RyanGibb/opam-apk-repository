@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del redis"]
 ]
 depends: [
-  "busybox"
-  "musl"
+  "-bin-sh"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "redis-5.0.14-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/redis-5.0.14-r0.apk"

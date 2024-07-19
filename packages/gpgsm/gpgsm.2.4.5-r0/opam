@@ -7,12 +7,12 @@ remove: [
 ]
 depends: [
   "gnupg-gpgconf" {= "2.4.5-r0"}
-  "libassuan"
-  "libgcrypt"
-  "libgpg-error"
-  "libksba"
-  "musl"
-  "npth"
+  "so-libassuan-so-0"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcrypt-so-20"
+  "so-libgpg-error-so-0"
+  "so-libksba-so-8"
+  "so-libnpth-so-0"
 ]
 extra-source "gpgsm-2.4.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/gpgsm-2.4.5-r0.apk"

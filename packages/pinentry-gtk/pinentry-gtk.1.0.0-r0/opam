@@ -6,14 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del pinentry-gtk"]
 ]
 depends: [
-  "busybox"
-  "glib"
-  "gtk+2.0"
-  "libassuan"
-  "libcap"
-  "libgpg-error"
-  "musl"
-  "ncurses-libs"
+  "-bin-sh"
+  "so-libassuan-so-0"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcap-so-2"
+  "so-libgdk-x11-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libgpg-error-so-0"
+  "so-libgtk-x11-2-0-so-0"
+  "so-libncursesw-so-6"
 ]
 extra-source "pinentry-gtk-1.0.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/pinentry-gtk-1.0.0-r0.apk"

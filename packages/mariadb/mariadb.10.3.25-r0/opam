@@ -6,19 +6,19 @@ remove: [
   ["sh" "-c" "sudo apk del mariadb"]
 ]
 depends: [
-  "busybox"
-  "libaio"
-  "libcrypto1.1"
-  "libssl1.1"
-  "libstdc++"
-  "libxml2"
-  "linux-pam"
+  "-bin-sh"
   "mariadb-common"
-  "musl"
-  "ncurses-libs"
-  "pcre"
-  "xz-libs"
-  "zlib"
+  "so-libaio-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-1"
+  "so-liblzma-so-5"
+  "so-libncursesw-so-6"
+  "so-libpam-so-0"
+  "so-libpcre-so-1"
+  "so-libssl-so-1-1"
+  "so-libstdc++-so-6"
+  "so-libxml2-so-2"
+  "so-libz-so-1"
 ]
 extra-source "mariadb-10.3.25-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/mariadb-10.3.25-r0.apk"

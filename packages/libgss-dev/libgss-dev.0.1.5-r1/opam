@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libgss" {= "0.1.5-r1"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "libgss-dev-0.1.5-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libgss-dev-0.1.5-r1.apk"

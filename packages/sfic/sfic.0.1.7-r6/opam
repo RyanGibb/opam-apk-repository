@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del sfic"]
 ]
 depends: [
-  "musl"
-  "tdb-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libtdb-so-1"
 ]
 extra-source "sfic-0.1.7-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/sfic-0.1.7-r6.apk"

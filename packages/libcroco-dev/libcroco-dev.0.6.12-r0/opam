@@ -9,7 +9,9 @@ depends: [
   "glib-dev"
   "libcroco" {= "0.6.12-r0"}
   "libxml2-dev"
-  "pkgconf"
+  "pc-glib-2-0"
+  "pc-libxml-2-0"
+  "pkgconfig"
 ]
 extra-source "libcroco-dev-0.6.12-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/libcroco-dev-0.6.12-r0.apk"

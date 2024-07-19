@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del startup-notification"]
 ]
 depends: [
-  "libx11"
-  "libxcb"
-  "musl"
-  "xcb-util"
+  "so-libX11-xcb-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libxcb-so-1"
+  "so-libxcb-util-so-1"
 ]
 extra-source "startup-notification-0.12-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/startup-notification-0.12-r2.apk"

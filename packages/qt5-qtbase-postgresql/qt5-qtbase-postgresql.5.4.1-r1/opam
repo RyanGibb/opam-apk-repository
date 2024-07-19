@@ -6,10 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del qt5-qtbase-postgresql"]
 ]
 depends: [
-  "libstdc++"
-  "musl"
-  "qt5-qtbase"
-  ("pgcluster-libpq" | "libpq")
+  "so-libQt5Core-so-5"
+  "so-libQt5Sql-so-5"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpq-so-5"
+  "so-libstdc++-so-6"
 ]
 extra-source "qt5-qtbase-postgresql-5.4.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/qt5-qtbase-postgresql-5.4.1-r1.apk"

@@ -6,11 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del qt5-qtgraphicaleffects"]
 ]
 depends: [
-  "libstdc++"
-  "musl"
-  "qt5-qtbase"
-  "qt5-qtbase-x11"
-  "qt5-qtdeclarative"
+  "so-libQt5Core-so-5"
+  "so-libQt5Gui-so-5"
+  "so-libQt5Qml-so-5"
+  "so-libQt5Quick-so-5"
+  "so-libc-musl-x86_64-so-1"
+  "so-libstdc++-so-6"
 ]
 extra-source "qt5-qtgraphicaleffects-5.6.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/qt5-qtgraphicaleffects-5.6.1-r0.apk"

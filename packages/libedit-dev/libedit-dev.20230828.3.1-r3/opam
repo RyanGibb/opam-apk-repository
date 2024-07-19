@@ -9,7 +9,7 @@ depends: [
   "bsd-compat-headers"
   "libedit" {= "20230828.3.1-r3"}
   "ncurses-dev"
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "libedit-dev-20230828.3.1-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/libedit-dev-20230828.3.1-r3.apk"

@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "cairo" {= "1.12.16-r2"}
+]

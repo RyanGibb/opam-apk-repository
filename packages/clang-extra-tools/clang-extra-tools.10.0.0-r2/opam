@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del clang-extra-tools"]
 ]
 depends: [
-  "clang-libs"
-  "libgcc"
-  "libstdc++"
-  "llvm10-libs"
-  "musl"
+  "so-libLLVM-10-so"
+  "so-libc-musl-x86_64-so-1"
+  "so-libclang-cpp-so-10"
+  "so-libgcc_s-so-1"
+  "so-libstdc++-so-6"
 ]
 extra-source "clang-extra-tools-10.0.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/clang-extra-tools-10.0.0-r2.apk"

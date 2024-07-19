@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "busybox"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
 ]
 conflicts: [
   "dnsmasq-dnssec"

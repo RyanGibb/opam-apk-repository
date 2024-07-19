@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del unfs3"]
 ]
 depends: [
-  "libtirpc"
-  "musl"
   "rpcbind"
+  "so-libc-musl-x86_64-so-1"
+  "so-libtirpc-so-3"
 ]
 extra-source "unfs3-0.10.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/unfs3-0.10.0-r2.apk"

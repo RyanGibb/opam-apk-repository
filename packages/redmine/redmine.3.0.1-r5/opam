@@ -8,21 +8,21 @@ remove: [
 depends: [
   "busybox"
   "ruby"
-  "ruby-actionpack-action_caching4.2"
-  "ruby-actionpack-xml_parser4.2"
+  "ruby-actionpack-action_caching4-2"
+  "ruby-actionpack-xml_parser4-2"
   "ruby-bigdecimal"
   "ruby-coderay"
   "ruby-fastercsv"
   "ruby-i18n"
-  "ruby-jquery-rails4.2"
+  "ruby-jquery-rails4-2"
   "ruby-json"
   "ruby-mocha"
   "ruby-net-ldap" {< "0.4"}
   "ruby-openid" {< "2.4"}
-  "ruby-protected_attributes4.2"
+  "ruby-protected_attributes4-2"
   "ruby-rack"
   "ruby-rack-openid"
-  "ruby-rails4.2"
+  "ruby-rails4-2"
   "ruby-rbpdf"
   "ruby-rdoc"
   "ruby-redcarpet" {< "3.2"}

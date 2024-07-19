@@ -6,14 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del cairo-tools"]
 ]
 depends: [
-  "cairo"
-  "glib"
-  "libx11"
-  "libxcb"
-  "libxrender"
-  "musl"
-  "pixman"
-  "zlib"
+  "so-libX11-so-6"
+  "so-libXrender-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcairo-script-interpreter-so-2"
+  "so-libcairo-so-2"
+  "so-libglib-2-0-so-0"
+  "so-libpixman-1-so-0"
+  "so-libxcb-render-so-0"
+  "so-libxcb-so-1"
+  "so-libz-so-1"
 ]
 extra-source "cairo-tools-1.14.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/cairo-tools-1.14.0-r0.apk"

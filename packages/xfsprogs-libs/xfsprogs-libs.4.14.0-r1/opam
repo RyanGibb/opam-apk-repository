@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del xfsprogs-libs"]
 ]
 depends: [
-  "musl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "xfsprogs-libs-4.14.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/xfsprogs-libs-4.14.0-r1.apk"

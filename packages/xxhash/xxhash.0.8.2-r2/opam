@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del xxhash"]
 ]
 depends: [
-  "musl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "xxhash-0.8.2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/xxhash-0.8.2-r2.apk"

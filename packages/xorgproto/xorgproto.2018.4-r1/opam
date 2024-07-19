@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del xorgproto"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "xorgproto-2018.4-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/xorgproto-2018.4-r1.apk"

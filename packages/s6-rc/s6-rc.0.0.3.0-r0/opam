@@ -7,9 +7,12 @@ remove: [
 ]
 depends: [
   "execline"
-  "musl"
   "s6"
   "skalibs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libexecline-so-2-1"
+  "so-libs6-so-2-3"
+  "so-libskarnet-so-2-3"
 ]
 extra-source "s6-rc-0.0.3.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/s6-rc-0.0.3.0-r0.apk"

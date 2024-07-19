@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "kodi" {= "14.2-r3"}
+]

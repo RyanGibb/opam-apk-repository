@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del pianobar"]
 ]
 depends: [
-  "faad2"
-  "libao"
-  "libmad"
-  "musl"
+  "so-libao-so-4"
+  "so-libc-musl-x86_64-so-1"
+  "so-libfaad-so-2"
+  "so-libmad-so-0"
 ]
 extra-source "pianobar-2011.07.09-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/pianobar-2011.07.09-r0.apk"

@@ -7,9 +7,13 @@ remove: [
 ]
 depends: [
   "gdk-pixbuf" {= "2.40.0-r4"}
-  "glib-dev"
-  "libx11-dev"
-  "pkgconf"
+  "pc-gio-2-0" {>= "2.38.0"}
+  "pc-glib-2-0" {>= "2.38.0"}
+  "pc-gmodule-no-export-2-0" {>= "2.38.0"}
+  "pc-gobject-2-0" {>= "2.38.0"}
+  "pc-shared-mime-info"
+  "pc-x11"
+  "pkgconfig"
   "shared-mime-info"
 ]
 extra-source "gdk-pixbuf-dev-2.40.0-r4.apk" {

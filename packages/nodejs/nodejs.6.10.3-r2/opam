@@ -7,14 +7,14 @@ remove: [
 ]
 depends: [
   "ca-certificates"
-  "http-parser"
-  "libcrypto1.0"
-  "libgcc"
-  "libssl1.0"
-  "libstdc++"
-  "libuv"
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-0-0"
+  "so-libgcc_s-so-1"
+  "so-libhttp_parser-so-2-7-1"
+  "so-libssl-so-1-0-0"
+  "so-libstdc++-so-6"
+  "so-libuv-so-1"
+  "so-libz-so-1"
 ]
 extra-source "nodejs-6.10.3-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/nodejs-6.10.3-r2.apk"

@@ -8,6 +8,7 @@ remove: [
 depends: [
   "librevenge-dev"
   "libwps" {= "0.4.2-r0"}
+  "pc-librevenge-0-0"
   "pkgconfig"
 ]
 extra-source "libwps-dev-0.4.2-r0.apk" {

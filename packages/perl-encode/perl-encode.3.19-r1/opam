@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del perl-encode"]
 ]
 depends: [
-  "musl"
   "perl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "perl-encode-3.19-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-encode-3.19-r1.apk"

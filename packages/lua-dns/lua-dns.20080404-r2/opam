@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del lua-dns"]
 ]
 depends: [
+  "lua"
   "lua-socket"
-  ("luajit" | "lua5.2" | "lua5.1" | "lua5.3")
 ]
 extra-source "lua-dns-20080404-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/lua-dns-20080404-r2.apk"

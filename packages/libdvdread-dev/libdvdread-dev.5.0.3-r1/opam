@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del libdvdread-dev"]
 ]
 depends: [
-  "libdvdcss-dev"
   "libdvdread" {= "5.0.3-r1"}
-  "pkgconf"
+  "pc-libdvdcss" {>= "1.2"}
+  "pkgconfig"
 ]
 extra-source "libdvdread-dev-5.0.3-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/libdvdread-dev-5.0.3-r1.apk"

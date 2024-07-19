@@ -7,11 +7,15 @@ remove: [
 ]
 depends: [
   "busybox"
-  "ffmpeg-libs"
-  "libcrypto1.0"
-  "libssl1.0"
-  "musl"
-  "zlib"
+  "so-libavcodec-so-56"
+  "so-libavformat-so-56"
+  "so-libavresample-so-2"
+  "so-libavutil-so-54"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-0-0"
+  "so-libssl-so-1-0-0"
+  "so-libswscale-so-3"
+  "so-libz-so-1"
 ]
 extra-source "tvheadend-4.0.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/tvheadend-4.0.7-r0.apk"

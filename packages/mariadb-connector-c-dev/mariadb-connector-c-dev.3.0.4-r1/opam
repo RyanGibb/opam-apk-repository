@@ -8,7 +8,7 @@ remove: [
 depends: [
   "libressl-dev"
   "mariadb-connector-c" {= "3.0.4-r1"}
-  "musl"
+  "so-libc-musl-x86_64-so-1"
   "zlib-dev"
 ]
 extra-source "mariadb-connector-c-dev-3.0.4-r1.apk" {

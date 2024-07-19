@@ -6,11 +6,15 @@ remove: [
   ["sh" "-c" "sudo apk del swfdec-mozilla"]
 ]
 depends: [
-  "cairo"
-  "glib"
-  "gtk+2.0"
-  "musl"
-  "swfdec"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcairo-so-2"
+  "so-libgdk-x11-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgmodule-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libgtk-x11-2-0-so-0"
+  "so-libswfdec-0-9-so-2"
+  "so-libswfdec-gtk-0-9-so-2"
 ]
 extra-source "swfdec-mozilla-0.9.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/swfdec-mozilla-0.9.2-r0.apk"

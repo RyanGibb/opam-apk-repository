@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del openrc-dbg"]
 ]
 depends: [
-  ("busybox-ifupdown" | "ifupdown-ng")
+  "ifupdown-any"
 ]
 extra-source "openrc-dbg-0.52.1-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/openrc-dbg-0.52.1-r2.apk"

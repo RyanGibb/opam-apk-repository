@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del protoc"]
 ]
 depends: [
-  "libgcc"
-  "libprotoc"
-  "libstdc++"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libprotoc-so-29"
+  "so-libstdc++-so-6"
 ]
 extra-source "protoc-3.18.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/protoc-3.18.1-r1.apk"

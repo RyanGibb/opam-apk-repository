@@ -6,13 +6,15 @@ remove: [
   ["sh" "-c" "sudo apk del duplicity"]
 ]
 depends: [
-  "gnupg1"
+  "gnupg"
   "librsync"
-  "musl"
   "ncftp"
   "py-boto"
   "py-lockfile"
   "python"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpython2-7-so-1-0"
+  "so-librsync-so-1"
 ]
 extra-source "duplicity-0.6.24-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/duplicity-0.6.24-r0.apk"

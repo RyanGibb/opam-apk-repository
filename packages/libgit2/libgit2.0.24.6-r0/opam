@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del libgit2"]
 ]
 depends: [
-  "libcurl"
-  "libressl2.4-libcrypto"
-  "libressl2.4-libssl"
-  "libssh2"
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-38"
+  "so-libcurl-so-4"
+  "so-libssh2-so-1"
+  "so-libssl-so-39"
+  "so-libz-so-1"
 ]
 extra-source "libgit2-0.24.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/libgit2-0.24.6-r0.apk"

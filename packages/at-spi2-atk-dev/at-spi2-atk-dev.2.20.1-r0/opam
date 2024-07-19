@@ -11,6 +11,8 @@ depends: [
   "atk-dev"
   "dbus-dev"
   "glib-dev"
+  "pc-atspi-2"
+  "pc-gobject-2-0"
   "pkgconfig"
 ]
 extra-source "at-spi2-atk-dev-2.20.1-r0.apk" {

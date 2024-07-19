@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "cmake"
-  "pkgconf"
+  "pkgconfig"
   "soxr" {= "0.1.2-r0"}
 ]
 extra-source "soxr-dev-0.1.2-r0.apk" {

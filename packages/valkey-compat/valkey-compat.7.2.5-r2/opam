@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del valkey-compat"]
 ]
 depends: [
+  "-bin-sh"
   "valkey" {= "7.2.5-r2"}
   "valkey-cli" {= "7.2.5-r2"}
-  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
 ]
 conflicts: [
   "redict-compat"

@@ -6,13 +6,14 @@ remove: [
   ["sh" "-c" "sudo apk del gnumeric-dev"]
 ]
 depends: [
-  "glib-dev"
   "gnumeric" {= "1.12.34-r0"}
-  "goffice-dev"
-  "gtk+3.0-dev"
-  "libgsf-dev"
-  "libxml2-dev"
-  "pkgconf"
+  "pc-glib-2-0"
+  "pc-gobject-2-0"
+  "pc-gtk+-3-0"
+  "pc-libgoffice-0-10"
+  "pc-libgsf-1"
+  "pc-libxml-2-0"
+  "pkgconfig"
 ]
 extra-source "gnumeric-dev-1.12.34-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/gnumeric-dev-1.12.34-r0.apk"

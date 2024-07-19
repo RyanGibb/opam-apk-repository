@@ -6,11 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del tshark"]
 ]
 depends: [
-  "glib"
-  "libpcap"
-  "musl"
-  "wireshark-common"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libglib-2-0-so-0"
+  "so-libpcap-so-1"
+  "so-libwireshark-so-7"
+  "so-libwiretap-so-5"
+  "so-libwsutil-so-6"
+  "so-libz-so-1"
 ]
 extra-source "tshark-2.0.16-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/tshark-2.0.16-r1.apk"

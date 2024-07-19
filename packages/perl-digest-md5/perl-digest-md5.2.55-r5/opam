@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del perl-digest-md5"]
 ]
 depends: [
-  "musl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "perl-digest-md5-2.55-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-digest-md5-2.55-r5.apk"

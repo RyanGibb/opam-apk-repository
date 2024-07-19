@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del openssh-keysign"]
 ]
 depends: [
-  "libcrypto1.0"
-  "musl"
   "openssh-client"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-0-0"
+  "so-libz-so-1"
 ]
 extra-source "openssh-keysign-6.7_p1-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/openssh-keysign-6.7_p1-r6.apk"

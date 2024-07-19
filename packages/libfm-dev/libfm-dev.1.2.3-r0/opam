@@ -6,9 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del libfm-dev"]
 ]
 depends: [
-  "glib-dev"
-  "gtk+2.0-dev"
   "libfm" {= "1.2.3-r0"}
+  "pc-gio-unix-2-0"
+  "pc-glib-2-0" {>= "2.22.0"}
+  "pc-gthread-2-0"
+  "pc-gtk+-2-0" {>= "2.18.0"}
   "pkgconfig"
 ]
 extra-source "libfm-dev-1.2.3-r0.apk" {

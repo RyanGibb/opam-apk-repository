@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del less"]
 ]
 depends: [
-  "musl"
-  "ncurses-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libncursesw-so-6"
 ]
 extra-source "less-551-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/less-551-r0.apk"

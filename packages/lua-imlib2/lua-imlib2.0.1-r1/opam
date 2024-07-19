@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del lua-imlib2"]
 ]
 depends: [
-  "imlib2"
-  "musl"
+  "so-libImlib2-so-1"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "lua-imlib2-0.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/lua-imlib2-0.1-r1.apk"

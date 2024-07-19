@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "atk" {= "2.18.0-r0"}
-  "glib-dev"
+  "pc-gobject-2-0"
   "pkgconfig"
 ]
 extra-source "atk-dev-2.18.0-r0.apk" {

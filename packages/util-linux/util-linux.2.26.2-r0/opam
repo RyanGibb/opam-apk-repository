@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del util-linux"]
 ]
 depends: [
-  "libblkid"
-  "libmount"
-  "libuuid"
-  "musl"
-  "ncurses-widec-libs"
-  "zlib"
+  "so-libblkid-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libmount-so-1"
+  "so-libncursesw-so-5"
+  "so-libuuid-so-1"
+  "so-libz-so-1"
 ]
 extra-source "util-linux-2.26.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/util-linux-2.26.2-r0.apk"

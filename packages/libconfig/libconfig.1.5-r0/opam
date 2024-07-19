@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del libconfig"]
 ]
 depends: [
-  "musl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "libconfig-1.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/libconfig-1.5-r0.apk"

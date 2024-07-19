@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del irrlicht"]
 ]
 depends: [
-  "libstdc++"
-  "libxxf86vm"
-  "mesa-gl"
-  "musl"
+  "so-libGL-so-1"
+  "so-libXxf86vm-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libstdc++-so-6"
 ]
 extra-source "irrlicht-1.8.1-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/irrlicht-1.8.1-r2.apk"

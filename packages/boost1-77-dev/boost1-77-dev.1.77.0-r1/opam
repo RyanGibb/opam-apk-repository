@@ -1,0 +1,50 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add boost1.77-dev-1.77.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del boost1.77-dev"]
+]
+depends: [
+  "boost1-77"
+  "boost1-77-atomic" {= "1.77.0-r1"}
+  "boost1-77-chrono" {= "1.77.0-r1"}
+  "boost1-77-container" {= "1.77.0-r1"}
+  "boost1-77-context" {= "1.77.0-r1"}
+  "boost1-77-contract" {= "1.77.0-r1"}
+  "boost1-77-coroutine" {= "1.77.0-r1"}
+  "boost1-77-date_time" {= "1.77.0-r1"}
+  "boost1-77-fiber" {= "1.77.0-r1"}
+  "boost1-77-filesystem" {= "1.77.0-r1"}
+  "boost1-77-graph" {= "1.77.0-r1"}
+  "boost1-77-iostreams" {= "1.77.0-r1"}
+  "boost1-77-json" {= "1.77.0-r1"}
+  "boost1-77-locale" {= "1.77.0-r1"}
+  "boost1-77-log" {= "1.77.0-r1"}
+  "boost1-77-log_setup" {= "1.77.0-r1"}
+  "boost1-77-math" {= "1.77.0-r1"}
+  "boost1-77-nowide" {= "1.77.0-r1"}
+  "boost1-77-prg_exec_monitor" {= "1.77.0-r1"}
+  "boost1-77-program_options" {= "1.77.0-r1"}
+  "boost1-77-python3" {= "1.77.0-r1"}
+  "boost1-77-random" {= "1.77.0-r1"}
+  "boost1-77-regex" {= "1.77.0-r1"}
+  "boost1-77-serialization" {= "1.77.0-r1"}
+  "boost1-77-stacktrace_basic" {= "1.77.0-r1"}
+  "boost1-77-stacktrace_noop" {= "1.77.0-r1"}
+  "boost1-77-system" {= "1.77.0-r1"}
+  "boost1-77-thread" {= "1.77.0-r1"}
+  "boost1-77-timer" {= "1.77.0-r1"}
+  "boost1-77-type_erasure" {= "1.77.0-r1"}
+  "boost1-77-unit_test_framework" {= "1.77.0-r1"}
+  "boost1-77-wave" {= "1.77.0-r1"}
+  "boost1-77-wserialization" {= "1.77.0-r1"}
+  "bzip2-dev"
+  "icu-dev"
+  "linux-headers"
+  "xz-dev"
+  "zlib-dev"
+]
+extra-source "boost1.77-dev-1.77.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/boost1.77-dev-1.77.0-r1.apk"
+}

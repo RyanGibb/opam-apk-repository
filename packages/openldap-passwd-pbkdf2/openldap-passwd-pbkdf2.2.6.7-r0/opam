@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del openldap-passwd-pbkdf2"]
 ]
 depends: [
-  "libcrypto3"
-  "musl"
   "openldap"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-3"
 ]
 extra-source "openldap-passwd-pbkdf2-2.6.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/openldap-passwd-pbkdf2-2.6.7-r0.apk"

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del oidentd"]
 ]
 depends: [
-  "busybox"
-  "libnetfilter_conntrack"
-  "musl"
+  "-bin-sh"
+  "so-libc-musl-x86_64-so-1"
+  "so-libnetfilter_conntrack-so-3"
 ]
 extra-source "oidentd-2.5.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/oidentd-2.5.0-r0.apk"

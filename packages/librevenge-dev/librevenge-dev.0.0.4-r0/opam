@@ -9,7 +9,7 @@ depends: [
   "boost-dev"
   "cppunit-dev"
   "librevenge" {= "0.0.4-r0"}
-  "pkgconf"
+  "pkgconfig"
   "zlib-dev"
 ]
 extra-source "librevenge-dev-0.0.4-r0.apk" {

@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del fetchmail"]
 ]
 depends: [
-  "busybox"
-  "libcrypto1.1"
-  "libssl1.1"
-  "musl"
+  "-bin-sh"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-1"
+  "so-libssl-so-1-1"
 ]
 extra-source "fetchmail-6.4.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/fetchmail-6.4.5-r0.apk"

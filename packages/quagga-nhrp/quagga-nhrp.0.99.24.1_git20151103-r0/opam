@@ -7,14 +7,15 @@ remove: [
 ]
 depends: [
   "busybox"
-  "c-ares"
   "iproute2"
-  "libcap"
-  "libcrypto1.0"
-  "musl"
-  "net-snmp-agent-libs"
-  "net-snmp-libs"
-  "readline"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcap-so-2"
+  "so-libcares-so-2"
+  "so-libcrypto-so-1-0-0"
+  "so-libnetsnmp-so-30"
+  "so-libnetsnmpagent-so-30"
+  "so-libnetsnmpmibs-so-30"
+  "so-libreadline-so-6"
 ]
 extra-source "quagga-nhrp-0.99.24.1_git20151103-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/quagga-nhrp-0.99.24.1_git20151103-r0.apk"

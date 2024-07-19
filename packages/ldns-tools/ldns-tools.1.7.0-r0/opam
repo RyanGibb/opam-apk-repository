@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del ldns-tools"]
 ]
 depends: [
-  "ldns"
-  "libpcap"
-  "libressl2.7-libcrypto"
-  "libressl2.7-libssl"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-43"
+  "so-libldns-so-2"
+  "so-libpcap-so-1"
+  "so-libssl-so-45"
 ]
 extra-source "ldns-tools-1.7.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/ldns-tools-1.7.0-r0.apk"

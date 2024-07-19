@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del xf86-video-sunleo"]
 ]
 depends: [
-  "musl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "xf86-video-sunleo-1.2.1-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/xf86-video-sunleo-1.2.1-r4.apk"

@@ -6,10 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del kamailio-json"]
 ]
 depends: [
-  "json-c"
   "kamailio"
-  "libevent"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libevent-2-1-so-6"
+  "so-libjson-c-so-4"
+  "so-libsrutils-so-1"
 ]
 extra-source "kamailio-json-5.1.8-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/kamailio-json-5.1.8-r2.apk"

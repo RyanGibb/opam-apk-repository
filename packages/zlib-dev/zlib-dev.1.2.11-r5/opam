@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del zlib-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
   "zlib" {= "1.2.11-r5"}
 ]
 extra-source "zlib-dev-1.2.11-r5.apk" {

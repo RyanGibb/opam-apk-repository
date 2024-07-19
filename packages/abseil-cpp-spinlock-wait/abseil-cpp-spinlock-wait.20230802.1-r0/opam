@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del abseil-cpp-spinlock-wait"]
 ]
 depends: [
-  "libgcc"
-  "libstdc++"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libstdc++-so-6"
 ]
 extra-source "abseil-cpp-spinlock-wait-20230802.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/abseil-cpp-spinlock-wait-20230802.1-r0.apk"

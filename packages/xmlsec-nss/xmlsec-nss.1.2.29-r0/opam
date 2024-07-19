@@ -6,11 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del xmlsec-nss"]
 ]
 depends: [
-  "libxml2"
-  "musl"
-  "nspr"
-  "nss"
-  "xmlsec"
+  "so-libc-musl-x86_64-so-1"
+  "so-libnspr4-so"
+  "so-libnss3-so"
+  "so-libsmime3-so"
+  "so-libxml2-so-2"
+  "so-libxmlsec1-so-1"
 ]
 extra-source "xmlsec-nss-1.2.29-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/xmlsec-nss-1.2.29-r0.apk"

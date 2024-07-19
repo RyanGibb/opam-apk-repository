@@ -7,13 +7,15 @@ remove: [
 ]
 depends: [
   "desktop-file-utils"
-  "gdk-pixbuf"
-  "glib"
-  "gtk+2.0"
   "hicolor-icon-theme"
-  "libintl"
-  "musl"
-  "pango"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgdk-x11-2-0-so-0"
+  "so-libgdk_pixbuf-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libgtk-x11-2-0-so-0"
+  "so-libintl-so-8"
+  "so-libpango-1-0-so-0"
   "tar"
 ]
 extra-source "xarchiver-0.5.3-r1.apk" {

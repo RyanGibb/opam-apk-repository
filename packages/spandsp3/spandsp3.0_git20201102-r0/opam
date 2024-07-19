@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del spandsp3"]
 ]
 depends: [
-  "libjpeg-turbo"
-  "musl"
-  "tiff"
+  "so-libc-musl-x86_64-so-1"
+  "so-libjpeg-so-8"
+  "so-libtiff-so-5"
 ]
 extra-source "spandsp3-0_git20201102-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/spandsp3-0_git20201102-r0.apk"

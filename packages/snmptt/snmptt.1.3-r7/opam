@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del snmptt"]
 ]
 depends: [
-  "busybox"
+  "-bin-sh"
   "perl"
   "perl-config-inifiles"
   "perl-list-moreutils"

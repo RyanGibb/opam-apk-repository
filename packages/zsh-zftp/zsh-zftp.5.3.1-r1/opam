@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del zsh-zftp"]
 ]
 depends: [
-  "musl"
+  "so-libc-musl-x86_64-so-1"
   "zsh"
 ]
 extra-source "zsh-zftp-5.3.1-r1.apk" {

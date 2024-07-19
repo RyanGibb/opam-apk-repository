@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del gyp"]
 ]
 depends: [
+  "ninja"
   "py3-six"
   "python3"
   "python3" {>= "3.12"}
-  "samurai"
 ]
 extra-source "gyp-20230301-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/gyp-20230301-r3.apk"

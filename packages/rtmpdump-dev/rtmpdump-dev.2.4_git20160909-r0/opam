@@ -8,6 +8,8 @@ remove: [
 depends: [
   "librtmp" {= "2.4_git20160909-r0"}
   "openssl-dev"
+  "pc-libcrypto"
+  "pc-libssl"
   "pkgconfig"
   "zlib-dev"
 ]

@@ -6,10 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del libva-glx"]
 ]
 depends: [
-  "libva"
-  "libx11"
-  "mesa-gl"
-  "musl"
+  "so-libGL-so-1"
+  "so-libX11-so-6"
+  "so-libc-musl-x86_64-so-1"
+  "so-libva-so-2"
+  "so-libva-x11-so-2"
 ]
 extra-source "libva-glx-2.7.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/libva-glx-2.7.1-r0.apk"

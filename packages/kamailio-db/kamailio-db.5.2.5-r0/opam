@@ -6,9 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del kamailio-db"]
 ]
 depends: [
-  "db"
   "kamailio"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libdb-5-3-so"
+  "so-libsrdb1-so-1"
+  "so-libsrdb2-so-1"
+  "so-libsrutils-so-1"
+  "so-libtrie-so-1"
 ]
 extra-source "kamailio-db-5.2.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/kamailio-db-5.2.5-r0.apk"

@@ -7,13 +7,10 @@ remove: [
 ]
 depends: [
   "libdrm-dev"
-  "libx11-dev"
   "libxcb-dev"
   "libxdamage-dev"
   "libxext-dev"
-  "libxfixes-dev"
   "libxshmfence-dev"
-  "libxxf86vm-dev"
   "mesa-egl" {= "21.2.6-r0"}
   "mesa-gbm" {= "21.2.6-r0"}
   "mesa-gl" {= "21.2.6-r0"}
@@ -21,7 +18,17 @@ depends: [
   "mesa-gles" {= "21.2.6-r0"}
   "mesa-osmesa" {= "21.2.6-r0"}
   "mesa-xatracker" {= "21.2.6-r0"}
-  "pkgconf"
+  "pc-libdrm" {>= "2.4.107"}
+  "pc-libdrm" {>= "2.4.75"}
+  "pc-x11"
+  "pc-x11-xcb"
+  "pc-xcb"
+  "pc-xcb-dri2" {>= "1.8"}
+  "pc-xcb-glx" {>= "1.8.1"}
+  "pc-xext"
+  "pc-xfixes"
+  "pc-xxf86vm"
+  "pkgconfig"
 ]
 extra-source "mesa-dev-21.2.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/mesa-dev-21.2.6-r0.apk"

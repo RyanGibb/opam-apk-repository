@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libmikmod" {= "3.3.11.1-r1"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "libmikmod-dev-3.3.11.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/libmikmod-dev-3.3.11.1-r1.apk"

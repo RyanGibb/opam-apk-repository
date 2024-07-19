@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "enca" {= "1.19-r0"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "enca-dev-1.19-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/enca-dev-1.19-r0.apk"

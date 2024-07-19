@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del php-mailparse"]
 ]
 depends: [
-  "musl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "php-mailparse-2.1.6-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/php-mailparse-2.1.6-r2.apk"

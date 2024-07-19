@@ -6,11 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del poppler-qt4"]
 ]
 depends: [
-  "libstdc++"
-  "musl"
-  "poppler"
-  "qt"
-  "qt-x11"
+  "so-libQtCore-so-4"
+  "so-libQtGui-so-4"
+  "so-libQtXml-so-4"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpoppler-so-67"
+  "so-libstdc++-so-6"
 ]
 extra-source "poppler-qt4-0.56.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/poppler-qt4-0.56.0-r0.apk"

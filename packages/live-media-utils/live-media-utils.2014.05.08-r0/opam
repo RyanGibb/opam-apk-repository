@@ -6,10 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del live-media-utils"]
 ]
 depends: [
-  "libgcc"
-  "libstdc++"
-  "live-media"
-  "musl"
+  "so-libBasicUsageEnvironment-so-0"
+  "so-libUsageEnvironment-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libgroupsock-so-1"
+  "so-libliveMedia-so-31"
+  "so-libstdc++-so-6"
 ]
 extra-source "live-media-utils-2014.05.08-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/live-media-utils-2014.05.08-r0.apk"

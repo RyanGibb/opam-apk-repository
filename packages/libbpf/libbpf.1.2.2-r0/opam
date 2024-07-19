@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del libbpf"]
 ]
 depends: [
-  "libelf"
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libelf-so-1"
+  "so-libz-so-1"
 ]
 extra-source "libbpf-1.2.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/libbpf-1.2.2-r0.apk"

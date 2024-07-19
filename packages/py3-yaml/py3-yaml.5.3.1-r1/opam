@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del py3-yaml"]
 ]
 depends: [
-  "musl"
-  "yaml"
+  "so-libc-musl-x86_64-so-1"
+  "so-libyaml-0-so-2"
 ]
 extra-source "py3-yaml-5.3.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/py3-yaml-5.3.1-r1.apk"

@@ -7,9 +7,10 @@ remove: [
 ]
 depends: [
   "libpq" {= "16.3-r0"}
-  "musl"
-  "openssl-dev"
-  "pkgconf"
+  "pc-libcrypto"
+  "pc-libssl"
+  "pkgconfig"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "libpq-dev-16.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libpq-dev-16.3-r0.apk"

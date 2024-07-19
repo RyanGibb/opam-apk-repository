@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del lua-stringy"]
 ]
 depends: [
-  "lua5.1-stringy"
-  "lua5.2-stringy"
+  "lua5-1-stringy"
+  "lua5-2-stringy"
 ]
 extra-source "lua-stringy-0.4-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/lua-stringy-0.4-r3.apk"

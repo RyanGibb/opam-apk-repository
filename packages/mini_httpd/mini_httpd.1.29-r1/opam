@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del mini_httpd"]
 ]
 depends: [
-  "busybox"
-  "libressl2.7-libcrypto"
-  "libressl2.7-libssl"
-  "musl"
+  "-bin-sh"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-43"
+  "so-libssl-so-45"
 ]
 extra-source "mini_httpd-1.29-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/mini_httpd-1.29-r1.apk"

@@ -6,7 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del wayland-libs-cursor"]
 ]
 depends: [
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libwayland-client-so-0"
   "wayland-libs-client"
   "wayland-libs-cursor"
   "wayland-libs-server"

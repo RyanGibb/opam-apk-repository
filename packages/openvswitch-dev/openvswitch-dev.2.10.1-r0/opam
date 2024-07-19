@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "openssl-dev"
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "openvswitch-dev-2.10.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/openvswitch-dev-2.10.1-r0.apk"

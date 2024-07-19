@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del postgresql-bdr-extension"]
 ]
 depends: [
-  "libressl2.7-libcrypto"
-  "libressl2.7-libssl"
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-43"
+  "so-libssl-so-45"
+  "so-libz-so-1"
 ]
 extra-source "postgresql-bdr-extension-1.0.2-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/postgresql-bdr-extension-1.0.2-r3.apk"

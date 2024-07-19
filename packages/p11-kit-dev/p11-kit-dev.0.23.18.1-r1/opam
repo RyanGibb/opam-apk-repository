@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "p11-kit" {= "0.23.18.1-r1"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "p11-kit-dev-0.23.18.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/p11-kit-dev-0.23.18.1-r1.apk"

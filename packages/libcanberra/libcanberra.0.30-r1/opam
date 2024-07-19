@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del libcanberra"]
 ]
 depends: [
-  "alsa-lib"
-  "libltdl"
-  "libvorbis"
-  "musl"
+  "so-libasound-so-2"
+  "so-libc-musl-x86_64-so-1"
+  "so-libltdl-so-7"
+  "so-libvorbisfile-so-3"
 ]
 extra-source "libcanberra-0.30-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/libcanberra-0.30-r1.apk"

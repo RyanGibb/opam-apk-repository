@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del portaudio"]
 ]
 depends: [
-  "alsa-lib"
-  "jack"
-  "musl"
+  "so-libasound-so-2"
+  "so-libc-musl-x86_64-so-1"
+  "so-libjack-so-0"
 ]
 extra-source "portaudio-190600.20161030-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/portaudio-190600.20161030-r1.apk"

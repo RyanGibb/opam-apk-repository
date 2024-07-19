@@ -6,14 +6,14 @@ remove: [
   ["sh" "-c" "sudo apk del libvirt-qemu"]
 ]
 depends: [
-  "gnutls"
-  "libgcc"
-  "libintl"
-  "libvirt-client"
   "libvirt-common-drivers" {= "5.5.0-r0"}
   "libvirt-daemon" {= "5.5.0-r0"}
-  "libxml2"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libgnutls-so-30"
+  "so-libintl-so-8"
+  "so-libvirt-so-0"
+  "so-libxml2-so-2"
 ]
 extra-source "libvirt-qemu-5.5.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/libvirt-qemu-5.5.0-r0.apk"

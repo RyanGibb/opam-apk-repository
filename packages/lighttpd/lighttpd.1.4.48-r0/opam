@@ -6,17 +6,17 @@ remove: [
   ["sh" "-c" "sudo apk del lighttpd"]
 ]
 depends: [
-  "busybox"
-  "gamin"
-  "libbz2"
-  "libev"
-  "libldap"
-  "libressl2.6-libcrypto"
-  "libressl2.6-libssl"
-  "lua5.3-libs"
-  "musl"
-  "pcre"
-  "zlib"
+  "-bin-sh"
+  "so-libbz2-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-42"
+  "so-libev-so-4"
+  "so-libfam-so-0"
+  "so-libldap-2-4-so-2"
+  "so-liblua-5-3-so-0"
+  "so-libpcre-so-1"
+  "so-libssl-so-44"
+  "so-libz-so-1"
 ]
 extra-source "lighttpd-1.4.48-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/lighttpd-1.4.48-r0.apk"

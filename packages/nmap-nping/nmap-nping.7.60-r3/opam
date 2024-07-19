@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del nmap-nping"]
 ]
 depends: [
-  "libgcc"
-  "libpcap"
-  "libressl2.6-libcrypto"
-  "libressl2.6-libssl"
-  "libstdc++"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-42"
+  "so-libgcc_s-so-1"
+  "so-libpcap-so-1"
+  "so-libssl-so-44"
+  "so-libstdc++-so-6"
 ]
 extra-source "nmap-nping-7.60-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/nmap-nping-7.60-r3.apk"

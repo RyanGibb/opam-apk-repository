@@ -6,15 +6,15 @@ remove: [
   ["sh" "-c" "sudo apk del mutt"]
 ]
 depends: [
-  "gdbm"
-  "gpgme"
-  "libcrypto1.0"
-  "libidn"
-  "libintl"
-  "libsasl"
-  "libssl1.0"
-  "musl"
-  "ncurses-widec-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-1-0-0"
+  "so-libgdbm-so-4"
+  "so-libgpgme-so-11"
+  "so-libidn-so-11"
+  "so-libintl-so-8"
+  "so-libncursesw-so-5"
+  "so-libsasl2-so-3"
+  "so-libssl-so-1-0-0"
 ]
 extra-source "mutt-1.5.23-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/mutt-1.5.23-r0.apk"

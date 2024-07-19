@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "gmp-dev"
-  "pkgconf"
+  "pkgconfig"
   "ruby" {= "2.6.8-r0"}
   "ruby-libs" {= "2.6.8-r0"}
 ]

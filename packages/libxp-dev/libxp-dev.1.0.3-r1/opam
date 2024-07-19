@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del libxp-dev"]
 ]
 depends: [
-  "libx11-dev"
-  "libxau-dev"
-  "libxext-dev"
   "libxp" {= "1.0.3-r1"}
-  "pkgconf"
-  "printproto"
+  "pc-printproto"
+  "pc-x11"
+  "pc-xau"
+  "pc-xext"
+  "pkgconfig"
 ]
 extra-source "libxp-dev-1.0.3-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/libxp-dev-1.0.3-r1.apk"

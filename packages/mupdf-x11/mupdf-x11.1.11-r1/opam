@@ -6,10 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del mupdf-x11"]
 ]
 depends: [
-  "libx11"
-  "libxext"
-  "mupdf"
-  "musl"
+  "so-libX11-so-6"
+  "so-libXext-so-6"
+  "so-libc-musl-x86_64-so-1"
+  "so-libmupdf-so-0"
+  "so-libmupdfthird-so-0"
 ]
 extra-source "mupdf-x11-1.11-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/mupdf-x11-1.11-r1.apk"

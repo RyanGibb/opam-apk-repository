@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del xcb-util-image-dev"]
 ]
 depends: [
-  "libxcb-dev"
-  "pkgconf"
+  "pc-xcb-shm"
+  "pkgconfig"
   "xcb-util-dev"
   "xcb-util-image" {= "0.4.0-r0"}
 ]

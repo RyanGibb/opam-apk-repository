@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del perl-compress-raw-bzip2"]
 ]
 depends: [
-  "musl"
   "perl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "perl-compress-raw-bzip2-2.103-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/perl-compress-raw-bzip2-2.103-r0.apk"

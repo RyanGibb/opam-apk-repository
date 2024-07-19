@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "texinfo" {= "7.0.3-r1"}
+]

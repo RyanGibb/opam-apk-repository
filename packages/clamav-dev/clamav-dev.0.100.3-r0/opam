@@ -8,7 +8,7 @@ remove: [
 depends: [
   "clamav-libs" {= "0.100.3-r0"}
   "openssl-dev"
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "clamav-dev-0.100.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/clamav-dev-0.100.3-r0.apk"

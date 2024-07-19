@@ -7,12 +7,15 @@ remove: [
 ]
 depends: [
   "cairo-dev"
-  "gdk-pixbuf-dev"
   "glib-dev"
-  "gtk+2.0-dev"
+  "gtk+2-0-dev"
   "libcroco-dev"
   "libgsf-dev"
   "librsvg" {= "2.40.12-r0"}
+  "pc-cairo"
+  "pc-gdk-pixbuf-2-0"
+  "pc-gio-2-0"
+  "pc-glib-2-0"
   "pkgconfig"
 ]
 extra-source "librsvg-dev-2.40.12-r0.apk" {

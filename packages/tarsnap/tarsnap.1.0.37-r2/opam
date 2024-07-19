@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del tarsnap"]
 ]
 depends: [
-  "libressl2.5-libcrypto"
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-41"
+  "so-libz-so-1"
 ]
 extra-source "tarsnap-1.0.37-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/tarsnap-1.0.37-r2.apk"

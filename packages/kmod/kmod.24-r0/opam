@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del kmod"]
 ]
 depends: [
-  "busybox"
-  "musl"
-  "xz-libs"
-  "zlib"
+  "-bin-sh"
+  "so-libc-musl-x86_64-so-1"
+  "so-liblzma-so-5"
+  "so-libz-so-1"
 ]
 extra-source "kmod-24-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/kmod-24-r0.apk"

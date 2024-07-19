@@ -9,8 +9,9 @@ depends: [
   "libx11-dev"
   "libxau-dev"
   "libxext" {= "1.3.3-r1"}
-  "pkgconf"
-  "xextproto"
+  "pc-x11"
+  "pc-xextproto"
+  "pkgconfig"
 ]
 extra-source "libxext-dev-1.3.3-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/libxext-dev-1.3.3-r1.apk"

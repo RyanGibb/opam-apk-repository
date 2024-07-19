@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del libcom_err"]
 ]
 depends: [
-  "musl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "libcom_err-1.47.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/libcom_err-1.47.0-r2.apk"

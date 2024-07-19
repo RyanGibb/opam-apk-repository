@@ -7,14 +7,16 @@ remove: [
 ]
 depends: [
   "beep"
-  "enchant"
-  "glib"
-  "gpgme"
-  "libidn"
-  "libotr3"
-  "loudmouth"
-  "musl"
-  "ncurses-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libenchant-so-1"
+  "so-libglib-2-0-so-0"
+  "so-libgmodule-2-0-so-0"
+  "so-libgpgme-so-11"
+  "so-libidn-so-11"
+  "so-libloudmouth-1-so-0"
+  "so-libncursesw-so-6"
+  "so-libotr-so-2"
+  "so-libpanelw-so-6"
 ]
 extra-source "mcabber-1.0.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/mcabber-1.0.3-r0.apk"

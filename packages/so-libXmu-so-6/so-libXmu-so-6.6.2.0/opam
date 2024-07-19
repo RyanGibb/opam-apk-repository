@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "libxmu" {= "1.1.2-r1"}
+]

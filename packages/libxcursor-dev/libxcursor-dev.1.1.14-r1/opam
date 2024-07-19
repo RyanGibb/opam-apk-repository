@@ -10,6 +10,10 @@ depends: [
   "libxcursor" {= "1.1.14-r1"}
   "libxfixes-dev"
   "libxrender-dev"
+  "pc-x11"
+  "pc-xfixes"
+  "pc-xproto"
+  "pc-xrender"
   "pkgconfig"
   "xproto"
 ]

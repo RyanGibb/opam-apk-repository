@@ -6,13 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del btrfs-progs"]
 ]
 depends: [
-  "e2fsprogs"
-  "libblkid"
-  "libcom_err"
-  "libuuid"
-  "lzo"
-  "musl"
-  "zlib"
+  "so-libblkid-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcom_err-so-2"
+  "so-libext2fs-so-2"
+  "so-liblzo2-so-2"
+  "so-libuuid-so-1"
+  "so-libz-so-1"
 ]
 extra-source "btrfs-progs-3.14.2-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/btrfs-progs-3.14.2-r1.apk"

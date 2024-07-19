@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "ipfw" {= "3.0_git20130607-r1"}
+]

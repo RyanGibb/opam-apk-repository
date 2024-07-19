@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del libnetfilter_queue"]
 ]
 depends: [
-  "libmnl"
-  "libnfnetlink"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libmnl-so-0"
+  "so-libnfnetlink-so-0"
 ]
 extra-source "libnetfilter_queue-1.0.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libnetfilter_queue-1.0.3-r0.apk"

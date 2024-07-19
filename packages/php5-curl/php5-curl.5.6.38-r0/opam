@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del php5-curl"]
 ]
 depends: [
-  "libcurl"
-  "musl"
   "php5"
   "php5-cli"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcurl-so-4"
 ]
 extra-source "php5-curl-5.6.38-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/php5-curl-5.6.38-r0.apk"

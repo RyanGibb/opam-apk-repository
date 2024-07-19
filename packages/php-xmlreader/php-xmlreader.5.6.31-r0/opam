@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del php-xmlreader"]
 ]
 depends: [
-  "libxml2"
-  "musl"
   "php"
   "php-dom"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libxml2-so-2"
+  "so-libz-so-1"
 ]
 extra-source "php-xmlreader-5.6.31-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/php-xmlreader-5.6.31-r0.apk"

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del rpcbind"]
 ]
 depends: [
-  "libtirpc"
-  "musl"
-  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
+  "-bin-sh"
+  "so-libc-musl-x86_64-so-1"
+  "so-libtirpc-so-3"
 ]
 extra-source "rpcbind-1.2.6-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/rpcbind-1.2.6-r2.apk"

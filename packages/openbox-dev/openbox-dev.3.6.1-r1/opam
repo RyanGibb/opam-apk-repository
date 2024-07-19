@@ -6,17 +6,17 @@ remove: [
   ["sh" "-c" "sudo apk del openbox-dev"]
 ]
 depends: [
-  "glib-dev"
-  "imlib2-dev"
-  "librsvg-dev"
   "libxcursor-dev"
-  "libxft-dev"
   "libxinerama-dev"
-  "libxml2-dev"
   "libxrandr-dev"
   "openbox-libs" {= "3.6.1-r1"}
-  "pango-dev"
-  "pkgconf"
+  "pc-glib-2-0"
+  "pc-imlib2"
+  "pc-librsvg-2-0"
+  "pc-libxml-2-0"
+  "pc-pangoxft"
+  "pc-xft"
+  "pkgconfig"
   "startup-notification-dev"
 ]
 extra-source "openbox-dev-3.6.1-r1.apk" {

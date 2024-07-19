@@ -6,12 +6,17 @@ remove: [
   ["sh" "-c" "sudo apk del thunar-vcs-plugin-svn"]
 ]
 depends: [
-  "apr"
-  "glib"
-  "gtk+2.0"
-  "libxfce4util"
-  "musl"
-  "subversion-libs"
+  "so-libapr-1-so-0"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgdk-x11-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libgtk-x11-2-0-so-0"
+  "so-libsvn_client-1-so-0"
+  "so-libsvn_fs-1-so-0"
+  "so-libsvn_subr-1-so-0"
+  "so-libsvn_wc-1-so-0"
+  "so-libxfce4util-so-6"
 ]
 extra-source "thunar-vcs-plugin-svn-0.1.4-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/thunar-vcs-plugin-svn-0.1.4-r4.apk"

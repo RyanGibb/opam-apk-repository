@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del xbanish"]
 ]
 depends: [
-  "libx11"
-  "libxfixes"
-  "libxi"
-  "musl"
+  "so-libX11-so-6"
+  "so-libXfixes-so-3"
+  "so-libXi-so-6"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "xbanish-1.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/xbanish-1.6-r0.apk"

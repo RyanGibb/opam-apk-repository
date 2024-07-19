@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del tinyxml2-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
   "tinyxml2" {= "9.0.0-r0"}
 ]
 extra-source "tinyxml2-dev-9.0.0-r0.apk" {

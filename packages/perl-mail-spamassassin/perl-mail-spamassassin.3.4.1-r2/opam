@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del perl-mail-spamassassin"]
 ]
 depends: [
-  "musl"
   "perl-digest-sha1"
   "perl-html-parser"
   "perl-mail-dkim"
   "perl-net-dns"
   "perl-netaddr-ip"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "perl-mail-spamassassin-3.4.1-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/perl-mail-spamassassin-3.4.1-r2.apk"

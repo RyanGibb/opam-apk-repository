@@ -6,9 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del py-curl"]
 ]
 depends: [
-  "libcurl"
-  "musl"
   "python"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcurl-so-4"
+  "so-libpython2-7-so-1-0"
 ]
 extra-source "py-curl-7.19.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/py-curl-7.19.0-r0.apk"

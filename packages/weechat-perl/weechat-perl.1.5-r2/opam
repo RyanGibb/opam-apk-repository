@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del weechat-perl"]
 ]
 depends: [
-  "musl"
-  "perl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libperl-so"
   "weechat"
 ]
 extra-source "weechat-perl-1.5-r2.apk" {

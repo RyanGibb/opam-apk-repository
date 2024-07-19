@@ -11,7 +11,7 @@ depends: [
   "expat-dev"
   "libarchive" {= "3.2.2-r2"}
   "libressl-dev"
-  "pkgconf"
+  "pkgconfig"
   "xz-dev"
   "zlib-dev"
 ]

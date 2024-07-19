@@ -6,10 +6,15 @@ remove: [
   ["sh" "-c" "sudo apk del heimdal-ftp"]
 ]
 depends: [
-  "heimdal-libs"
   "krb5-conf"
-  "musl"
-  "readline"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgssapi-so-3"
+  "so-libhcrypto-so-4"
+  "so-libkafs-so-0"
+  "so-libkrb5-so-26"
+  "so-libotp-so-0"
+  "so-libreadline-so-6"
+  "so-libroken-so-18"
 ]
 extra-source "heimdal-ftp-1.6_rc2-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/heimdal-ftp-1.6_rc2-r6.apk"

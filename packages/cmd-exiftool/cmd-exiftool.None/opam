@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "exiftool" {= "11.23-r0"}
+]

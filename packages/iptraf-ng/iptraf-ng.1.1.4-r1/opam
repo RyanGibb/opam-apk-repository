@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del iptraf-ng"]
 ]
 depends: [
-  "musl"
-  "ncurses-libs"
-  "ncurses-widec-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libncursesw-so-5"
+  "so-libpanel-so-5"
 ]
 extra-source "iptraf-ng-1.1.4-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/iptraf-ng-1.1.4-r1.apk"

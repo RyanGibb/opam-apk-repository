@@ -6,10 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del phodav"]
 ]
 depends: [
-  "glib"
-  "libsoup"
-  "libxml2"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgio-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libsoup-2-4-so-1"
+  "so-libxml2-so-2"
 ]
 extra-source "phodav-2.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/phodav-2.0-r0.apk"

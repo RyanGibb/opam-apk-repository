@@ -6,9 +6,15 @@ remove: [
   ["sh" "-c" "sudo apk del kea-hook-run-script"]
 ]
 depends: [
-  "kea-common"
-  "libgcc"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libkea-asiolink-so-56"
+  "so-libkea-dhcp++-so-74"
+  "so-libkea-dhcpsrv-so-90"
+  "so-libkea-exceptions-so-23"
+  "so-libkea-hooks-so-78"
+  "so-libkea-log-so-48"
+  "so-libkea-process-so-57"
 ]
 extra-source "kea-hook-run-script-2.4.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/kea-hook-run-script-2.4.1-r0.apk"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del uriparser-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
   "uriparser" {= "0.8.4-r0"}
 ]
 extra-source "uriparser-dev-0.8.4-r0.apk" {

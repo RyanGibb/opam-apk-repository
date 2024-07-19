@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del rsyslog-elasticsearch"]
 ]
 depends: [
-  "libcurl"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcurl-so-4"
 ]
 extra-source "rsyslog-elasticsearch-8.34.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/rsyslog-elasticsearch-8.34.0-r1.apk"

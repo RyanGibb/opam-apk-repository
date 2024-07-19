@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "glamor-egl" {= "0.6.0-r4"}
+]

@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del libecpg"]
 ]
 depends: [
-  "libpq"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpq-so-5"
 ]
 extra-source "libecpg-16.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libecpg-16.3-r0.apk"

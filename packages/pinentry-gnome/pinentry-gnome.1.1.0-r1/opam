@@ -6,15 +6,17 @@ remove: [
   ["sh" "-c" "sudo apk del pinentry-gnome"]
 ]
 depends: [
-  "busybox"
-  "gcr-base"
-  "glib"
-  "libassuan"
-  "libcap"
-  "libgpg-error"
-  "libsecret"
-  "musl"
-  "ncurses-libs"
+  "-bin-sh"
+  "so-libassuan-so-0"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcap-so-2"
+  "so-libgcr-base-3-so-1"
+  "so-libgio-2-0-so-0"
+  "so-libglib-2-0-so-0"
+  "so-libgobject-2-0-so-0"
+  "so-libgpg-error-so-0"
+  "so-libncursesw-so-6"
+  "so-libsecret-1-so-0"
 ]
 extra-source "pinentry-gnome-1.1.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/pinentry-gnome-1.1.0-r1.apk"

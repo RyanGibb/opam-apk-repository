@@ -11,14 +11,22 @@ depends: [
   "cairo-tools"
   "fontconfig-dev"
   "freetype-dev"
-  "glib-dev"
-  "libpng-dev"
-  "libx11-dev"
-  "libxcb-dev"
   "libxext-dev"
   "libxrender-dev"
+  "pc-fontconfig" {>= "2.2.95"}
+  "pc-freetype2" {>= "9.7.3"}
+  "pc-glib-2-0" {>= "2.14"}
+  "pc-gobject-2-0"
+  "pc-libpng"
+  "pc-pixman-1" {>= "0.36.0"}
+  "pc-x11"
+  "pc-xcb" {>= "1.6"}
+  "pc-xcb-render" {>= "1.6"}
+  "pc-xcb-shm"
+  "pc-xext"
+  "pc-xrender" {>= "0.6"}
   "pixman-dev"
-  "pkgconf"
+  "pkgconfig"
   "xcb-util-dev"
 ]
 extra-source "cairo-dev-1.17.4-r2.apk" {

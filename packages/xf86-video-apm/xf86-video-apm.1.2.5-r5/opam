@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del xf86-video-apm"]
 ]
 depends: [
-  "musl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "xf86-video-apm-1.2.5-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/xf86-video-apm-1.2.5-r5.apk"

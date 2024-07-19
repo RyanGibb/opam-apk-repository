@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del tar"]
 ]
 depends: [
-  "libacl"
-  "musl"
+  "so-libacl-so-1"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "tar-1.35-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/tar-1.35-r2.apk"

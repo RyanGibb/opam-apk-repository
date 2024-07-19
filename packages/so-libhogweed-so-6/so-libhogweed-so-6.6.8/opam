@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "nettle" {= "3.9.1-r0"}
+]

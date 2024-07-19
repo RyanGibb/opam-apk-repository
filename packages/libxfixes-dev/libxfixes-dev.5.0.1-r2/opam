@@ -9,6 +9,9 @@ depends: [
   "fixesproto"
   "libx11-dev"
   "libxfixes" {= "5.0.1-r2"}
+  "pc-fixesproto" {>= "5.0"}
+  "pc-x11"
+  "pc-xproto"
   "pkgconfig"
   "xproto"
 ]

@@ -6,11 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del irssi"]
 ]
 depends: [
-  "glib"
-  "libcrypto3"
-  "libssl3"
-  "musl"
-  "ncurses-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcrypto-so-3"
+  "so-libglib-2-0-so-0"
+  "so-libgmodule-2-0-so-0"
+  "so-libncursesw-so-6"
+  "so-libssl-so-3"
 ]
 extra-source "irssi-1.4.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/irssi-1.4.4-r0.apk"

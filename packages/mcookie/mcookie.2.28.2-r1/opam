@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "findmnt"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "mcookie-2.28.2-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/mcookie-2.28.2-r1.apk"

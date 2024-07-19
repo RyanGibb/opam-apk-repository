@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del aports-build"]
 ]
 depends: [
+  "-bin-sh"
   "abuild" {> "2.20.0"}
   "alpine-sdk"
-  "busybox"
   "lua-aports"
-  "lua5.2-cjson"
-  "lua5.2-mqtt-publish"
+  "lua5-2-cjson"
+  "lua5-2-mqtt-publish"
   "mosquitto-clients"
   "mqtt-exec"
   "rsync"

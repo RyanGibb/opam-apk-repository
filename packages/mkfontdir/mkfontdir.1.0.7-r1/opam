@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del mkfontdir"]
 ]
 depends: [
-  "busybox"
+  "-bin-sh"
   "mkfontscale"
 ]
 extra-source "mkfontdir-1.0.7-r1.apk" {

@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del dropbear"]
 ]
 depends: [
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libz-so-1"
 ]
 extra-source "dropbear-2018.76-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/dropbear-2018.76-r3.apk"

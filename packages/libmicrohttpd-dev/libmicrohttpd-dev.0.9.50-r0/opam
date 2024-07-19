@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del libmicrohttpd-dev"]
 ]
 depends: [
-  "gnutls-dev"
   "libmicrohttpd" {= "0.9.50-r0"}
-  "pkgconf"
+  "pc-gnutls"
+  "pkgconfig"
 ]
 extra-source "libmicrohttpd-dev-0.9.50-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/libmicrohttpd-dev-0.9.50-r0.apk"

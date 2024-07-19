@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "boost1-77-stacktrace_basic" {= "1.77.0-r1"}
+]

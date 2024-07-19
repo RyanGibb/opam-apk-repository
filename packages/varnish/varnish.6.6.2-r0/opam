@@ -6,16 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del varnish"]
 ]
 depends: [
-  "busybox"
+  "-bin-sh"
   "gcc"
   "libc-dev"
-  "libedit"
   "libgcc"
-  "libunwind"
-  "musl"
-  "ncurses-libs"
-  "pcre"
-  "varnish-libs"
+  "so-libc-musl-x86_64-so-1"
+  "so-libedit-so-0"
+  "so-libncursesw-so-6"
+  "so-libpcre-so-1"
+  "so-libunwind-so-8"
+  "so-libvarnishapi-so-2"
 ]
 extra-source "varnish-6.6.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/varnish-6.6.2-r0.apk"

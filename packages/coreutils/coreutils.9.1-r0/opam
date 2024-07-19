@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del coreutils"]
 ]
 depends: [
-  "libacl"
-  "libattr"
-  "musl"
-  "utmps-libs"
-  ("yash-binsh" | "busybox-binsh" | "dash-binsh")
+  "-bin-sh"
+  "so-libacl-so-1"
+  "so-libattr-so-1"
+  "so-libc-musl-x86_64-so-1"
+  "so-libutmps-so-0-1"
 ]
 extra-source "coreutils-9.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/coreutils-9.1-r0.apk"

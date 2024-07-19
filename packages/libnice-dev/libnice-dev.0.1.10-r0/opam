@@ -11,7 +11,7 @@ depends: [
   "libnice-dbg" {= "0.1.10-r0"}
   "libnice-doc" {= "0.1.10-r0"}
   "libnice-gstreamer" {= "0.1.10-r0"}
-  "libnice-gstreamer0.10" {= "0.1.10-r0"}
+  "libnice-gstreamer0-10" {= "0.1.10-r0"}
   "pkgconfig"
 ]
 extra-source "libnice-dev-0.1.10-r0.apk" {

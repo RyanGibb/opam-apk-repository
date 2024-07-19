@@ -7,6 +7,9 @@ remove: [
 ]
 depends: [
   "glib-dev"
+  "pc-QtCore"
+  "pc-QtDBus"
+  "pc-QtGui"
   "phonon" {= "4.8.1-r0"}
   "pkgconfig"
   "qt-dev"

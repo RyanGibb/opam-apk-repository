@@ -6,10 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del keybinder-dev"]
 ]
 depends: [
-  "gtk+2.0-dev"
+  "gtk+2-0-dev"
   "keybinder" {= "0.3.0-r1"}
   "libxext-dev"
-  "pkgconf"
+  "pc-gtk+-2-0"
+  "pkgconfig"
 ]
 extra-source "keybinder-dev-0.3.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/keybinder-dev-0.3.0-r1.apk"

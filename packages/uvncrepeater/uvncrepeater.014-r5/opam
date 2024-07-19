@@ -7,10 +7,10 @@ remove: [
 ]
 depends: [
   "busybox"
-  "libgcc"
-  "libstdc++"
-  "musl"
   "openrc" {>= "0.6"}
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libstdc++-so-6"
 ]
 extra-source "uvncrepeater-014-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/uvncrepeater-014-r5.apk"

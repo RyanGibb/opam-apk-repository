@@ -8,7 +8,8 @@ remove: [
 depends: [
   "nspr-dev"
   "nss"
-  "pkgconf"
+  "pc-nspr" {>= "3.28.4"}
+  "pkgconfig"
 ]
 extra-source "nss-dev-3.28.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/nss-dev-3.28.4-r0.apk"

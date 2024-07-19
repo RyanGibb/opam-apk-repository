@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del rtnppd"]
 ]
 depends: [
-  "busybox"
-  "musl"
+  "-bin-sh"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "rtnppd-1.7b-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/rtnppd-1.7b-r8.apk"

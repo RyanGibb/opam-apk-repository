@@ -9,10 +9,13 @@ depends: [
   "bridge-utils"
   "dmidecode"
   "iptables"
-  "libintl"
-  "libtirpc"
   "libvirt-client"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libintl-so-8"
+  "so-libtirpc-so-1"
+  "so-libvirt-lxc-so-0"
+  "so-libvirt-qemu-so-0"
+  "so-libvirt-so-0"
 ]
 extra-source "libvirt-daemon-1.2.5-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/libvirt-daemon-1.2.5-r1.apk"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "lcms2" {= "2.9-r1"}
   "libjpeg-turbo-dev"
-  "pkgconf"
+  "pkgconfig"
   "tiff-dev"
   "zlib-dev"
 ]

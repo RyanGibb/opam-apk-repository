@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del tcl-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pc-zlib" {>= "1.2.3"}
+  "pkgconfig"
   "tcl"
-  "zlib-dev"
 ]
 extra-source "tcl-dev-8.6.9-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/tcl-dev-8.6.9-r0.apk"

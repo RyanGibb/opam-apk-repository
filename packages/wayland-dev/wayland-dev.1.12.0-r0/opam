@@ -8,7 +8,7 @@ remove: [
 depends: [
   "expat-dev"
   "libffi-dev"
-  "pkgconf"
+  "pkgconfig"
   "wayland" {= "1.12.0-r0"}
 ]
 extra-source "wayland-dev-1.12.0-r0.apk" {

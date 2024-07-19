@@ -9,6 +9,10 @@ depends: [
   "libx11-dev"
   "libxext-dev"
   "libxv" {= "1.0.10-r2"}
+  "pc-videoproto"
+  "pc-x11"
+  "pc-xext"
+  "pc-xproto"
   "pkgconfig"
   "videoproto"
   "xproto"

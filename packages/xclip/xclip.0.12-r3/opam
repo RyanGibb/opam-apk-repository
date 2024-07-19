@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del xclip"]
 ]
 depends: [
-  "libx11"
-  "libxmu"
-  "musl"
+  "so-libX11-so-6"
+  "so-libXmu-so-6"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "xclip-0.12-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/xclip-0.12-r3.apk"

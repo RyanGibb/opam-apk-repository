@@ -6,14 +6,17 @@ remove: [
   ["sh" "-c" "sudo apk del i3lock"]
 ]
 depends: [
-  "cairo"
-  "libev"
-  "libxcb"
-  "libxkbcommon"
-  "linux-pam"
-  "musl"
-  "xcb-util"
-  "xcb-util-image"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcairo-so-2"
+  "so-libev-so-4"
+  "so-libpam-so-0"
+  "so-libxcb-image-so-0"
+  "so-libxcb-so-1"
+  "so-libxcb-util-so-1"
+  "so-libxcb-xinerama-so-0"
+  "so-libxcb-xkb-so-1"
+  "so-libxkbcommon-so-0"
+  "so-libxkbcommon-x11-so-0"
   "xkeyboard-config"
 ]
 extra-source "i3lock-2.8-r0.apk" {

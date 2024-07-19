@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del xcb-util-wm-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
   "xcb-util-dev"
   "xcb-util-wm" {= "0.4.1-r1"}
 ]

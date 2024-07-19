@@ -7,13 +7,15 @@ remove: [
 ]
 depends: [
   "inputproto"
-  "kbproto"
   "libx11" {= "1.6.3-r3"}
   "libxcb-dev"
+  "pc-kbproto"
+  "pc-xcb"
+  "pc-xcb" {>= "1.1.92"}
+  "pc-xproto"
   "pkgconfig"
   "xextproto"
   "xf86bigfontproto-dev"
-  "xproto"
   "xtrans"
 ]
 extra-source "libx11-dev-1.6.3-r3.apk" {

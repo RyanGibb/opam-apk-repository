@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del sox-dev"]
 ]
 depends: [
-  "pkgconf"
+  "pkgconfig"
   "sox" {= "14.4.2-r0"}
 ]
 extra-source "sox-dev-14.4.2-r0.apk" {

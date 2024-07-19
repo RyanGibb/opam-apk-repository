@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "collectd"
-  "libcurl"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libcurl-so-4"
 ]
 extra-source "collectd-nginx-5.6.2-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/collectd-nginx-5.6.2-r1.apk"

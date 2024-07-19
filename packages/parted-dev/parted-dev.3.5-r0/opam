@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "parted" {= "3.5-r0"}
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "parted-dev-3.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/parted-dev-3.5-r0.apk"

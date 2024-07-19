@@ -15,27 +15,30 @@ def parse_provides_entry(entry):
         version = None
         return name.strip(), version
 
+def sanitize_package_name(name):
+    return name.replace("/", "-").replace(":", "-").replace(".", "-")
+
 def convert_dep_to_opam(dep):
     if '>=' in dep:
         pkg, ver = dep.split('>=')
-        return f'"{pkg.strip()}" {{>= "{ver.strip()}"}}'
+        return f'"{sanitize_package_name(pkg).strip()}" {{>= "{ver.strip()}"}}'
     elif '<=' in dep:
         pkg, ver = dep.split('<=')
-        return f'"{pkg.strip()}" {{<= "{ver.strip()}"}}'
+        return f'"{sanitize_package_name(pkg).strip()}" {{<= "{ver.strip()}"}}'
     elif '>' in dep:
         pkg, ver = dep.split('>')
-        return f'"{pkg.strip()}" {{> "{ver.strip()}"}}'
+        return f'"{sanitize_package_name(pkg).strip()}" {{> "{ver.strip()}"}}'
     elif '<' in dep:
         pkg, ver = dep.split('<')
-        return f'"{pkg.strip()}" {{< "{ver.strip()}"}}'
+        return f'"{sanitize_package_name(pkg).strip()}" {{< "{ver.strip()}"}}'
     elif '=' in dep:
         pkg, ver = dep.split('=')
-        return f'"{pkg.strip()}" {{= "{ver.strip()}"}}'
+        return f'"{sanitize_package_name(pkg).strip()}" {{= "{ver.strip()}"}}'
     elif '~' in dep:
         pkg, ver = dep.split('~')
-        return f'"{pkg.strip()}" {{>= "{ver.strip()}"}}'
+        return f'"{sanitize_package_name(pkg).strip()}" {{>= "{ver.strip()}"}}'
     else:
-        return f'"{dep.strip()}"'
+        return f'"{sanitize_package_name(dep).strip()}"'
 
 def handle_conflicts(dep):
     return f'"{dep[1:].strip()}"'
@@ -49,22 +52,10 @@ def generate_opam_files(alpine_version):
 
     os.makedirs(base_dir, exist_ok=True)
 
-    opam_template = """opam-version: "2.0"
-build: [
-  ["sh" "-c" "sudo apk add {apk_name}.apk"]
-]
-remove: [
-  ["sh" "-c" "sudo apk del {pkg_name}"]
-]{depends}{conflicts}
-extra-source "{apk_name}.apk" {{
-  src: "{apk_url}"
-}}
-"""
-
-
     package_dependencies = {}
     package_versions = {}
-    package_provides = {}
+    virtual_packages = {}
+    current_package_version = None
     current_package = None
 
     for line in index_content.splitlines():
@@ -77,17 +68,19 @@ extra-source "{apk_name}.apk" {{
         elif line.startswith('D:') and current_package:
             dependencies = line[2:].strip().split()
             package_dependencies[current_package] = dependencies
-        elif line.startswith('p:') and current_package:
+        elif line.startswith('p:') and current_package and current_package_version:
             provides = line[2:].strip().split()
             for provide in provides:
                 provide_name, provide_version = parse_provides_entry(provide)
-                # TODO do we need to take provide_version into account?
-                if provide_name not in package_provides:
-                    package_provides[provide_name] = []
-                package_provides[provide_name].append(current_package)
+                if provide_name in virtual_packages:
+                    virtual_packages[provide_name].append((current_package, current_package_version))
+                else:
+                    virtual_packages[provide_name] = [(current_package, current_package_version)]
+                package_versions[provide_name] = provide_version
 
     for pkg_name in package_dependencies.keys():
         version = package_versions[pkg_name]
+
         apk_name = f"{pkg_name}-{version}"
         apk_url = os.path.join(repo_url, f"{apk_name}.apk")
         depends = package_dependencies.get(pkg_name, [])
@@ -100,14 +93,9 @@ extra-source "{apk_name}.apk" {{
                 package_conflicts.append(handle_conflicts(dep_version))
             else:
                 dep = dep_version.split('=')[0].split('>=')[0].split('<=')[0].split('<')[0].split('>')[0].split('~')[0]
-                if dep in package_provides:
-                    # TODO what if we have a so version?
-                    providers = package_provides[dep]
-                    if len(providers) == 1:
-                        package_depends.append(convert_dep_to_opam(providers[0]))
-                    else:
-                        package_depends.append(f"({' | '.join(convert_dep_to_opam(p) for p in providers)})")
-                elif dep in package_dependencies:
+                if dep in package_dependencies:
+                    package_depends.append(convert_dep_to_opam(dep_version))
+                elif dep in virtual_packages:
                     package_depends.append(convert_dep_to_opam(dep_version))
                 else:
                     print(f"Couldn't find dep {dep} for package {apk_name}")
@@ -120,6 +108,17 @@ extra-source "{apk_name}.apk" {{
         opam_depends = f'\ndepends: [\n  {formatted_depends}\n]' if formatted_depends else ''
         opam_conflicts = f'\nconflicts: [\n  {formatted_conflicts}\n]' if formatted_conflicts else ''
 
+        opam_template = """opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add {apk_name}.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del {pkg_name}"]
+]{depends}{conflicts}
+extra-source "{apk_name}.apk" {{
+  src: "{apk_url}"
+}}
+"""
         opam_content = opam_template.format(
             apk_name=apk_name,
             pkg_name=pkg_name,
@@ -128,6 +127,38 @@ extra-source "{apk_name}.apk" {{
             conflicts=opam_conflicts
         )
 
+        pkg_name = sanitize_package_name(pkg_name)
+        opam_dir = os.path.join(base_dir, pkg_name, f"{pkg_name}.{version}")
+        os.makedirs(opam_dir, exist_ok=True)
+
+        opam_file_path = os.path.join(opam_dir, 'opam')
+        with open(opam_file_path, 'w') as opam_file:
+            opam_file.write(opam_content)
+
+    for pkg_name in virtual_packages.keys():
+        version = package_versions[pkg_name]
+        depends = virtual_packages.get(pkg_name, [])
+
+        package_depends = []
+        if len(depends) == 1:
+            dep, ver = depends[0]
+            package_depends.append(f'"{sanitize_package_name(dep)}" {{= "{ver}"}}')
+        else:
+            joined = ' | '.join(f'"{sanitize_package_name(dep)}" {{= "{ver}"}}' for dep, ver in depends)
+            package_depends.append(f"({joined})")
+
+        package_depends = sorted(set(package_depends))
+        formatted_depends = '\n  '.join(package_depends) if package_depends else ''
+        opam_depends = f'depends: [\n  {formatted_depends}\n]' if formatted_depends else ''
+
+        opam_template = """opam-version: "2.0"
+{depends}
+"""
+        opam_content = opam_template.format(
+            depends=opam_depends,
+        )
+
+        pkg_name = sanitize_package_name(pkg_name)
         opam_dir = os.path.join(base_dir, pkg_name, f"{pkg_name}.{version}")
         os.makedirs(opam_dir, exist_ok=True)
 

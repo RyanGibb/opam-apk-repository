@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "lsblk"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "mdadm-4.2-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/mdadm-4.2-r3.apk"

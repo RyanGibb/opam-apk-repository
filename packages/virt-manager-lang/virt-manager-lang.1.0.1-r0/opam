@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del virt-manager-lang"]
 ]
 depends: [
-  "gtk+3.0"
+  "gtk+3-0"
   "gtk-vnc" {>= "0.5.2-r2"}
   "libvirt-glib"
   "py-gobject3"

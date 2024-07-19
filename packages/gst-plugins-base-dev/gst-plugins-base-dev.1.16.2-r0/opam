@@ -6,11 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del gst-plugins-base-dev"]
 ]
 depends: [
-  "glib-dev"
   "gst-plugins-base" {= "1.16.2-r0"}
-  "gstreamer-dev"
-  "orc-dev"
-  "pkgconf"
+  "pc-gio-2-0"
+  "pc-glib-2-0"
+  "pc-gstreamer-1-0"
+  "pc-gstreamer-base-1-0"
+  "pc-orc-0-4"
+  "pkgconfig"
 ]
 extra-source "gst-plugins-base-dev-1.16.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/gst-plugins-base-dev-1.16.2-r0.apk"

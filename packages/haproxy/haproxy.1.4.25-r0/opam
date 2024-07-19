@@ -7,8 +7,9 @@ remove: [
 ]
 depends: [
   "busybox"
-  "musl"
-  "pcre"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpcre-so-1"
+  "so-libpcreposix-so-0"
 ]
 extra-source "haproxy-1.4.25-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/haproxy-1.4.25-r0.apk"

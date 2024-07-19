@@ -7,12 +7,12 @@ remove: [
 ]
 depends: [
   "libffi-dev"
-  "libgcc"
-  "libstdc++"
   "llvm15" {= "15.0.7-r12"}
   "llvm15-libs" {= "15.0.7-r12"}
   "llvm15-test-utils" {= "15.0.7-r12"}
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgcc_s-so-1"
+  "so-libstdc++-so-6"
   "zlib-dev"
   "zstd-dev"
 ]

@@ -7,8 +7,9 @@ remove: [
 ]
 depends: [
   "kbd-misc"
-  "linux-pam"
-  "musl"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpam-so-0"
+  "so-libpam_misc-so-0"
 ]
 extra-source "kbd-2.0.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/kbd-2.0.2-r0.apk"

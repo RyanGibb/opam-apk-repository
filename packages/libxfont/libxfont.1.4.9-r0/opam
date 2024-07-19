@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del libxfont"]
 ]
 depends: [
-  "freetype"
-  "libfontenc"
-  "musl"
-  "zlib"
+  "so-libc-musl-x86_64-so-1"
+  "so-libfontenc-so-1"
+  "so-libfreetype-so-6"
+  "so-libz-so-1"
 ]
 extra-source "libxfont-1.4.9-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/libxfont-1.4.9-r0.apk"

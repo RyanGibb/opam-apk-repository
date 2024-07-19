@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del scrot"]
 ]
 depends: [
-  "giblib"
-  "imlib2"
-  "libx11"
-  "musl"
+  "so-libImlib2-so-1"
+  "so-libX11-so-6"
+  "so-libc-musl-x86_64-so-1"
+  "so-libgiblib-so-1"
 ]
 extra-source "scrot-0.8.18-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/scrot-0.8.18-r0.apk"

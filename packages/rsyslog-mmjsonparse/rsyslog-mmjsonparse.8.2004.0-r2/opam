@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del rsyslog-mmjsonparse"]
 ]
 depends: [
-  "libfastjson"
-  "musl"
   "rsyslog" {= "8.2004.0-r2"}
+  "so-libc-musl-x86_64-so-1"
+  "so-libfastjson-so-4"
 ]
 extra-source "rsyslog-mmjsonparse-8.2004.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/rsyslog-mmjsonparse-8.2004.0-r2.apk"

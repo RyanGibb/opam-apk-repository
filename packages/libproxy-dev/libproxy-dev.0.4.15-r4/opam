@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libproxy" {= "0.4.15-r4"}
-  "pkgconf"
+  "pkgconfig"
   "zlib-dev"
 ]
 extra-source "libproxy-dev-0.4.15-r4.apk" {

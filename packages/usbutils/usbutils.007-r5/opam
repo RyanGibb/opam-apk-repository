@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "hwdata-usb"
-  "libusb"
-  "musl"
   "pkgconfig"
+  "so-libc-musl-x86_64-so-1"
+  "so-libusb-1-0-so-0"
 ]
 extra-source "usbutils-007-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/usbutils-007-r5.apk"

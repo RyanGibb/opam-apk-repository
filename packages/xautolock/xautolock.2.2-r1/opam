@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del xautolock"]
 ]
 depends: [
-  "libx11"
-  "libxext"
-  "libxscrnsaver"
-  "musl"
+  "so-libX11-so-6"
+  "so-libXext-so-6"
+  "so-libXss-so-1"
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "xautolock-2.2-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/xautolock-2.2-r1.apk"

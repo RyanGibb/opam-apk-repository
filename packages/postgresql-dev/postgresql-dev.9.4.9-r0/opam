@@ -9,7 +9,7 @@ depends: [
   "libpq" {= "9.4.9-r0"}
   "openssl-dev"
   "pkgconfig"
-  "postgresql-bdr"
+  "postgresql" {= "9.4.9-r0"}
   "postgresql-client" {= "9.4.9-r0"}
   "postgresql-contrib" {= "9.4.9-r0"}
   "postgresql-doc" {= "9.4.9-r0"}

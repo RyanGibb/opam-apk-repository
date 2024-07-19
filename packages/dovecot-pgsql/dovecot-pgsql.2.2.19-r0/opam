@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del dovecot-pgsql"]
 ]
 depends: [
-  "musl"
   "openssl"
-  ("pgcluster-libpq" | "libpq")
+  "so-libc-musl-x86_64-so-1"
+  "so-libpq-so-5"
 ]
 extra-source "dovecot-pgsql-2.2.19-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/dovecot-pgsql-2.2.19-r0.apk"

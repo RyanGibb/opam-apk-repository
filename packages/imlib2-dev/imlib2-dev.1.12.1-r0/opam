@@ -10,7 +10,7 @@ depends: [
   "imlib2" {= "1.12.1-r0"}
   "libsm-dev"
   "libxext-dev"
-  "pkgconf"
+  "pkgconfig"
 ]
 extra-source "imlib2-dev-1.12.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/imlib2-dev-1.12.1-r0.apk"

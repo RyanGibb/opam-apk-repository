@@ -1,0 +1,4 @@
+opam-version: "2.0"
+depends: [
+  "mpg123" {= "1.22.1-r0"}
+]

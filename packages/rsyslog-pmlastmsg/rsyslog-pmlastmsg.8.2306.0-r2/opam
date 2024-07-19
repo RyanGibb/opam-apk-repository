@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del rsyslog-pmlastmsg"]
 ]
 depends: [
-  "musl"
   "rsyslog" {= "8.2306.0-r2"}
+  "so-libc-musl-x86_64-so-1"
 ]
 extra-source "rsyslog-pmlastmsg-8.2306.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/rsyslog-pmlastmsg-8.2306.0-r2.apk"

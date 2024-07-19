@@ -8,15 +8,18 @@ remove: [
 depends: [
   "alsa-lib-dev"
   "gtk+-dev"
-  "gtk+2.0-dev"
-  "gtk+3.0-dev"
+  "gtk+3-0-dev"
   "libcanberra" {= "0.30-r1"}
   "libcanberra-gtk2" {= "0.30-r1"}
   "libcanberra-gtk3" {= "0.30-r1"}
   "libogg-dev"
   "libtool"
   "libvorbis-dev"
-  "pkgconf"
+  "pc-gdk-2-0"
+  "pc-gdk-3-0"
+  "pc-gtk+-2-0"
+  "pc-gtk+-3-0"
+  "pkgconfig"
 ]
 extra-source "libcanberra-dev-0.30-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/libcanberra-dev-0.30-r1.apk"

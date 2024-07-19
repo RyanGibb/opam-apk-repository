@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del vanessa_socket"]
 ]
 depends: [
-  "musl"
-  "popt"
-  "vanessa_logger"
+  "so-libc-musl-x86_64-so-1"
+  "so-libpopt-so-0"
+  "so-libvanessa_logger-so-0"
 ]
 extra-source "vanessa_socket-0.0.12-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/vanessa_socket-0.0.12-r1.apk"
