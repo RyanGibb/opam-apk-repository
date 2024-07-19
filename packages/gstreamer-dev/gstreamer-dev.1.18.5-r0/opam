@@ -8,7 +8,7 @@ remove: [
 depends: [
   "glib-dev" {= "2.70.5-r0"}
   "gstreamer" {= "1.18.5-r0"}
-  "libxml2-dev"
+  "libxml2-dev" {= "2.9.14-r2"}
   "pkgconf" {= "1.8.1-r0"}
 ]
 extra-source "gstreamer-dev-1.18.5-r0.apk" {

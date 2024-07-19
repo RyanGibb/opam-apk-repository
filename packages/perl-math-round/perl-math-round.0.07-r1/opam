@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del perl-math-round"]
 ]
 depends: [
-  "perl"
+  "perl" {= "5.30.3-r0"}
 ]
 extra-source "perl-math-round-0.07-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-math-round-0.07-r1.apk"

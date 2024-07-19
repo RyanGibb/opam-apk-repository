@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del py3-setuptools"]
 ]
 depends: [
-  "py3-packaging"
-  "python3"
+  "py3-packaging" {= "24.0-r1"}
+  "python3" {= "3.12.3-r1"}
   "python3" {>= "3.12"}
 ]
 extra-source "py3-setuptools-69.5.1-r0.apk" {

@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del dns-root-hints"]
 ]
 depends: [
-  "curl"
-  "gpg"
+  "curl" {= "8.5.0-r0"}
+  "gpg" {= "2.2.35-r4"}
 ]
 extra-source "dns-root-hints-2019073000-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/dns-root-hints-2019073000-r3.apk"

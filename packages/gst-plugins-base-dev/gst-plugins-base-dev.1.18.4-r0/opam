@@ -13,7 +13,6 @@ depends: [
   "mesa-dev" {= "21.1.8-r0"}
   "orc-dev" {= "0.4.32-r0"}
   "pkgconf" {= "1.7.4-r1"}
-  "wayland-dev"
   "wayland-dev" {= "1.19.0-r0"}
 ]
 extra-source "gst-plugins-base-dev-1.18.4-r0.apk" {

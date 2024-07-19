@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del linux-pam-dev"]
 ]
 depends: [
-  "gettext-dev"
+  "gettext-dev" {= "0.21-r2"}
   "linux-pam" {= "1.5.2-r0"}
 ]
 extra-source "linux-pam-dev-1.5.2-r0.apk" {

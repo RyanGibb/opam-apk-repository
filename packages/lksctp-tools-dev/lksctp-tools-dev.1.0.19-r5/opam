@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "liblksctp" {= "1.0.19-r5"}
-  "linux-headers"
+  "linux-headers" {= "6.6-r0"}
   "pkgconf" {= "2.2.0-r0"}
 ]
 extra-source "lksctp-tools-dev-1.0.19-r5.apk" {

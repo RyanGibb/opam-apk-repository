@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del acf-freeswitch"]
 ]
 depends: [
-  "acf-core"
-  "freeswitch"
-  "lua-luaxml"
+  "acf-core" {= "0.24.0-r0"}
+  "freeswitch" {= "1.10.11-r0"}
+  "lua-luaxml" {= "2.0.0-r1"}
 ]
 extra-source "acf-freeswitch-0.8.0-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/acf-freeswitch-0.8.0-r5.apk"

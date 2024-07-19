@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del kamailio-dbtext"]
 ]
 depends: [
-  "kamailio"
   "kamailio" {= "5.5.4-r0"}
-  "kamailio-db"
+  "kamailio-db" {= "5.5.4-r0"}
   "musl" {= "1.2.3-r3"}
 ]
 extra-source "kamailio-dbtext-5.5.4-r0.apk" {

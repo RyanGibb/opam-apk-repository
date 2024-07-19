@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del apk-tools-static"]
 ]
 depends: [
-  "ca-certificates-bundle"
+  "ca-certificates-bundle" {= "20240226-r0"}
   "musl" {>= "1.2"}
 ]
 extra-source "apk-tools-static-2.12.9-r3.apk" {

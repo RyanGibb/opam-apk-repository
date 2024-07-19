@@ -6,38 +6,38 @@ remove: [
   ["sh" "-c" "sudo apk del boost1.76-libs"]
 ]
 depends: [
-  "boost1-76-atomic"
-  "boost1-76-chrono"
-  "boost1-76-container"
-  "boost1-76-context"
-  "boost1-76-contract"
-  "boost1-76-coroutine"
-  "boost1-76-date_time"
-  "boost1-76-fiber"
-  "boost1-76-filesystem"
-  "boost1-76-graph"
-  "boost1-76-iostreams"
-  "boost1-76-json"
-  "boost1-76-locale"
-  "boost1-76-log"
-  "boost1-76-log_setup"
-  "boost1-76-math"
-  "boost1-76-nowide"
-  "boost1-76-prg_exec_monitor"
-  "boost1-76-program_options"
-  "boost1-76-python3"
-  "boost1-76-random"
-  "boost1-76-regex"
-  "boost1-76-serialization"
-  "boost1-76-stacktrace_basic"
-  "boost1-76-stacktrace_noop"
-  "boost1-76-system"
-  "boost1-76-thread"
-  "boost1-76-timer"
-  "boost1-76-type_erasure"
-  "boost1-76-unit_test_framework"
-  "boost1-76-wave"
-  "boost1-76-wserialization"
+  "boost1-76-atomic" {= "1.76.0-r0"}
+  "boost1-76-chrono" {= "1.76.0-r0"}
+  "boost1-76-container" {= "1.76.0-r0"}
+  "boost1-76-context" {= "1.76.0-r0"}
+  "boost1-76-contract" {= "1.76.0-r0"}
+  "boost1-76-coroutine" {= "1.76.0-r0"}
+  "boost1-76-date_time" {= "1.76.0-r0"}
+  "boost1-76-fiber" {= "1.76.0-r0"}
+  "boost1-76-filesystem" {= "1.76.0-r0"}
+  "boost1-76-graph" {= "1.76.0-r0"}
+  "boost1-76-iostreams" {= "1.76.0-r0"}
+  "boost1-76-json" {= "1.76.0-r0"}
+  "boost1-76-locale" {= "1.76.0-r0"}
+  "boost1-76-log" {= "1.76.0-r0"}
+  "boost1-76-log_setup" {= "1.76.0-r0"}
+  "boost1-76-math" {= "1.76.0-r0"}
+  "boost1-76-nowide" {= "1.76.0-r0"}
+  "boost1-76-prg_exec_monitor" {= "1.76.0-r0"}
+  "boost1-76-program_options" {= "1.76.0-r0"}
+  "boost1-76-python3" {= "1.76.0-r0"}
+  "boost1-76-random" {= "1.76.0-r0"}
+  "boost1-76-regex" {= "1.76.0-r0"}
+  "boost1-76-serialization" {= "1.76.0-r0"}
+  "boost1-76-stacktrace_basic" {= "1.76.0-r0"}
+  "boost1-76-stacktrace_noop" {= "1.76.0-r0"}
+  "boost1-76-system" {= "1.76.0-r0"}
+  "boost1-76-thread" {= "1.76.0-r0"}
+  "boost1-76-timer" {= "1.76.0-r0"}
+  "boost1-76-type_erasure" {= "1.76.0-r0"}
+  "boost1-76-unit_test_framework" {= "1.76.0-r0"}
+  "boost1-76-wave" {= "1.76.0-r0"}
+  "boost1-76-wserialization" {= "1.76.0-r0"}
 ]
 extra-source "boost1.76-libs-1.76.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/boost1.76-libs-1.76.0-r0.apk"

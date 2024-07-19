@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "busybox" {= "1.31.1-r22"}
-  "gnupg"
+  "gnupg" {= "2.2.23-r1"}
   "libassuan" {= "2.5.3-r0"}
   "libgcrypt" {= "1.8.8-r1"}
   "libgpg-error" {= "1.37-r0"}

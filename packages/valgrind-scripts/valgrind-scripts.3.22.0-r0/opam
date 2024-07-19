@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del valgrind-scripts"]
 ]
 depends: [
-  "perl"
-  "python3"
+  "perl" {= "5.38.2-r0"}
+  "python3" {= "3.11.9-r0"}
   "valgrind" {= "3.22.0-r0"}
 ]
 extra-source "valgrind-scripts-3.22.0-r0.apk" {

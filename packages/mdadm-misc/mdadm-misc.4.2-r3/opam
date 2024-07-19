@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del mdadm-misc"]
 ]
 depends: [
-  "bash"
-  "mdadm"
+  "bash" {= "5.2.15-r5"}
+  "mdadm" {= "4.2-r3"}
 ]
 extra-source "mdadm-misc-4.2-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/mdadm-misc-4.2-r3.apk"

@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del nagios-plugins-dns"]
 ]
 depends: [
-  "bind-tools"
+  "bind-tools" {= "9.18.27-r0"}
   "libcrypto3" {= "3.3.1-r3"}
   "musl" {= "1.2.5-r0"}
-  "nagios-plugins"
+  "nagios-plugins" {= "2.4.5-r1"}
 ]
 extra-source "nagios-plugins-dns-2.4.5-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/nagios-plugins-dns-2.4.5-r1.apk"

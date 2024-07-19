@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del apache2-brotli"]
 ]
 depends: [
-  "apache2"
+  "apache2" {= "2.4.56-r0"}
   "brotli-libs" {= "1.0.9-r5"}
   "musl" {= "1.2.2-r5"}
 ]

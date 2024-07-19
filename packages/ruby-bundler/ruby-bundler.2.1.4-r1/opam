@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del ruby-bundler"]
 ]
 depends: [
-  "ruby"
-  "ruby-etc"
-  "ruby-io-console"
+  "ruby" {= "2.7.6-r0"}
+  "ruby-etc" {= "2.7.6-r0"}
+  "ruby-io-console" {= "2.7.6-r0"}
 ]
 extra-source "ruby-bundler-2.1.4-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/ruby-bundler-2.1.4-r1.apk"

@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del perl-list-allutils"]
 ]
 depends: [
-  "perl"
-  "perl-list-someutils"
-  "perl-list-utilsby"
-  "perl-scalar-list-utils"
+  "perl" {= "5.30.3-r0"}
+  "perl-list-someutils" {= "0.58-r0"}
+  "perl-list-utilsby" {= "0.11-r1"}
+  "perl-scalar-list-utils" {= "1.55-r0"}
 ]
 extra-source "perl-list-allutils-0.16-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-list-allutils-0.16-r0.apk"

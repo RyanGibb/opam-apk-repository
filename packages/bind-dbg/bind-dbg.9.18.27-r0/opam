@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del bind-dbg"]
 ]
 depends: [
-  "bind-tools"
-  "dns-root-hints"
+  "bind-tools" {= "9.18.27-r0"}
+  "dns-root-hints" {= "2024021501-r0"}
 ]
 extra-source "bind-dbg-9.18.27-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/bind-dbg-9.18.27-r0.apk"

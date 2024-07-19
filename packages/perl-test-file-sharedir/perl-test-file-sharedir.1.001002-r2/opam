@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del perl-test-file-sharedir"]
 ]
 depends: [
-  "perl"
-  "perl-class-tiny"
-  "perl-file-copy-recursive"
-  "perl-file-sharedir"
-  "perl-path-tiny"
-  "perl-scope-guard"
+  "perl" {= "5.36.2-r0"}
+  "perl-class-tiny" {= "1.008-r1"}
+  "perl-file-copy-recursive" {= "0.45-r2"}
+  "perl-file-sharedir" {= "1.118-r0"}
+  "perl-path-tiny" {= "0.142-r0"}
+  "perl-scope-guard" {= "0.21-r2"}
 ]
 extra-source "perl-test-file-sharedir-1.001002-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-test-file-sharedir-1.001002-r2.apk"

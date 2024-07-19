@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del ifupdown-ng-wireguard-quick"]
 ]
 depends: [
-  "wireguard-tools-wg-quick"
+  "wireguard-tools-wg-quick" {= "1.0.20210914-r1"}
 ]
 extra-source "ifupdown-ng-wireguard-quick-0.12.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ifupdown-ng-wireguard-quick-0.12.1-r1.apk"

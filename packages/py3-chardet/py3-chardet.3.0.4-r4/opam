@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del py3-chardet"]
 ]
 depends: [
-  "py3-setuptools"
-  "python3"
+  "py3-setuptools" {= "47.0.0-r0"}
+  "python3" {= "3.8.10-r0"}
 ]
 extra-source "py3-chardet-3.0.4-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/py3-chardet-3.0.4-r4.apk"

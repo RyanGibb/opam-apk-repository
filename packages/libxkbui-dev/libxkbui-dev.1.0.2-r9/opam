@@ -10,7 +10,6 @@ depends: [
   "libxkbui" {= "1.0.2-r9"}
   "libxt-dev" {= "1.2.0-r0"}
   "pkgconf" {= "1.7.2-r0"}
-  "xorgproto"
   "xorgproto" {= "2020.1-r0"}
 ]
 extra-source "libxkbui-dev-1.0.2-r9.apk" {

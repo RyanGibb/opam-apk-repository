@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "librtlsdr" {= "0.6.0-r3"}
-  "libusb-dev"
+  "libusb-dev" {= "1.0.26-r0"}
   "pkgconf" {= "1.9.4-r0"}
 ]
 extra-source "librtlsdr-dev-0.6.0-r3.apk" {

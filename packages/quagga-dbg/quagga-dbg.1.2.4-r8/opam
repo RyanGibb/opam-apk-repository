@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del quagga-dbg"]
 ]
 depends: [
-  "iproute2"
+  "iproute2" {= "6.3.0-r0"}
 ]
 extra-source "quagga-dbg-1.2.4-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/quagga-dbg-1.2.4-r8.apk"

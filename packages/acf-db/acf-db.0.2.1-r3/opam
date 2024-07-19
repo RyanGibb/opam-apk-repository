@@ -6,8 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del acf-db"]
 ]
 depends: [
-  "acf-core"
-  "acf-db-lib"
+  "acf-core" {= "0.22.0-r1"}
   "acf-db-lib" {= "0.2.1-r3"}
 ]
 extra-source "acf-db-0.2.1-r3.apk" {

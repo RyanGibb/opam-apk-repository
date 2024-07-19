@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "musl" {= "1.2.3-r3"}
-  "perl"
-  "perl-dbi"
+  "perl" {= "5.34.2-r0"}
+  "perl-dbi" {= "1.643-r3"}
   "unixodbc" {= "2.3.11-r0"}
 ]
 extra-source "perl-dbd-odbc-1.61-r2.apk" {

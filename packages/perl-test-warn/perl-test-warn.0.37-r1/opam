@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del perl-test-warn"]
 ]
 depends: [
-  "perl"
-  "perl-sub-uplevel"
+  "perl" {= "5.36.2-r0"}
+  "perl-sub-uplevel" {= "0.2800-r3"}
 ]
 extra-source "perl-test-warn-0.37-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-test-warn-0.37-r1.apk"

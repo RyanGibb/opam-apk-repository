@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del kamailio-snmpstats"]
 ]
 depends: [
-  "kamailio"
+  "kamailio" {= "5.6.3-r1"}
   "musl" {= "1.2.3-r5"}
   "net-snmp-agent-libs" {= "5.9.3-r2"}
   "net-snmp-libs" {= "5.9.3-r2"}

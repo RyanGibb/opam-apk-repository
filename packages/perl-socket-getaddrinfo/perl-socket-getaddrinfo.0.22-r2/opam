@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del perl-socket-getaddrinfo"]
 ]
 depends: [
-  "perl-extutils-cchecker"
+  "perl-extutils-cchecker" {= "0.10-r3"}
 ]
 extra-source "perl-socket-getaddrinfo-0.22-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/perl-socket-getaddrinfo-0.22-r2.apk"

@@ -6,15 +6,15 @@ remove: [
   ["sh" "-c" "sudo apk del alpine-base"]
 ]
 depends: [
-  "alpine-baselayout"
-  "alpine-conf"
-  "alpine-keys"
-  "apk-tools"
-  "busybox"
-  "busybox-initscripts"
-  "busybox-suid"
-  "libc-utils"
-  "openrc"
+  "alpine-baselayout" {= "3.2.0-r16"}
+  "alpine-conf" {= "3.12.0-r0"}
+  "alpine-keys" {= "2.4-r0"}
+  "apk-tools" {= "2.12.7-r0"}
+  "busybox" {= "1.33.1-r8"}
+  "busybox-initscripts" {= "3.3-r1"}
+  "busybox-suid" {= "1.33.1-r8"}
+  "libc-utils" {= "0.7.2-r3"}
+  "openrc" {= "0.43.3-r3"}
 ]
 extra-source "alpine-base-3.14.10-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/alpine-base-3.14.10-r0.apk"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libcap2" {= "2.69-r0"}
-  "linux-headers"
+  "linux-headers" {= "6.3-r0"}
   "pkgconf" {= "1.9.5-r0"}
 ]
 extra-source "libcap-dev-2.69-r0.apk" {

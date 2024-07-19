@@ -9,7 +9,7 @@ depends: [
   "libxcb" {= "1.14-r2"}
   "libxkbcommon" {= "1.2.1-r0"}
   "musl" {= "1.2.2-r5"}
-  "xkeyboard-config"
+  "xkeyboard-config" {= "2.33-r0"}
 ]
 extra-source "libxkbcommon-x11-1.2.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/libxkbcommon-x11-1.2.1-r0.apk"

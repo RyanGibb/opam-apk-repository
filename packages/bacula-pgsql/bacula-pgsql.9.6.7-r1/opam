@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del bacula-pgsql"]
 ]
 depends: [
-  "bacula"
+  "bacula" {= "9.6.7-r1"}
   "libpq" {= "13.12-r0"}
   "musl" {= "1.2.2-r5"}
 ]

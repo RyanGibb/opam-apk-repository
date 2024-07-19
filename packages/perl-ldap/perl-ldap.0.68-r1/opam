@@ -6,15 +6,15 @@ remove: [
   ["sh" "-c" "sudo apk del perl-ldap"]
 ]
 depends: [
-  "perl"
-  "perl-convert-asn1"
-  "perl-http-message"
-  "perl-http-negotiate"
-  "perl-io-socket-ssl"
-  "perl-json"
-  "perl-libwww"
-  "perl-lwp-mediatypes"
-  "perl-uri"
+  "perl" {= "5.36.2-r0"}
+  "perl-convert-asn1" {= "0.33-r0"}
+  "perl-http-message" {= "6.44-r0"}
+  "perl-http-negotiate" {= "6.01-r3"}
+  "perl-io-socket-ssl" {= "2.081-r0"}
+  "perl-json" {= "4.10-r0"}
+  "perl-libwww" {= "6.68-r1"}
+  "perl-lwp-mediatypes" {= "6.04-r2"}
+  "perl-uri" {= "5.19-r0"}
 ]
 extra-source "perl-ldap-0.68-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-ldap-0.68-r1.apk"

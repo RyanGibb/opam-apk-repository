@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del linux-virt"]
 ]
 depends: [
-  "mkinitfs"
+  "mkinitfs" {= "3.4.5-r3"}
 ]
 extra-source "linux-virt-5.4.192-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/linux-virt-5.4.192-r0.apk"

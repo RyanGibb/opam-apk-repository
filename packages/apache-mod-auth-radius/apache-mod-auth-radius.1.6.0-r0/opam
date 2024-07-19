@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del apache-mod-auth-radius"]
 ]
 depends: [
-  "apache2"
+  "apache2" {= "2.4.59-r0"}
   "musl" {= "1.2.3-r3"}
 ]
 extra-source "apache-mod-auth-radius-1.6.0-r0.apk" {

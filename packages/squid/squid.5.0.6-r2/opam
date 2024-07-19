@@ -13,7 +13,7 @@ depends: [
   "libltdl" {= "2.4.6-r7"}
   "libssl1-1" {= "1.1.1t-r2"}
   "libstdc++" {= "10.3.1_git20210424-r2"}
-  "logrotate"
+  "logrotate" {= "3.18.1-r4"}
   "musl" {= "1.2.2-r5"}
   "squid-lang-es" {= "5.0.6-r2"}
 ]

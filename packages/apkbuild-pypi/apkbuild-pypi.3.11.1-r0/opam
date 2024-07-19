@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del apkbuild-pypi"]
 ]
 depends: [
-  "perl"
-  "perl-ipc-system-simple"
-  "perl-json"
-  "perl-libwww"
-  "perl-lwp-protocol-https"
-  "perl-module-build-tiny"
+  "perl" {= "5.36.2-r0"}
+  "perl-ipc-system-simple" {= "1.30-r2"}
+  "perl-json" {= "4.10-r0"}
+  "perl-libwww" {= "6.68-r1"}
+  "perl-lwp-protocol-https" {= "6.10-r4"}
+  "perl-module-build-tiny" {= "0.045-r0"}
 ]
 extra-source "apkbuild-pypi-3.11.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/apkbuild-pypi-3.11.1-r0.apk"

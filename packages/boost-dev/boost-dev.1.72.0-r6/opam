@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del boost-dev"]
 ]
 depends: [
-  "boost"
+  "boost" {= "1.72.0-r6"}
   "boost-atomic" {= "1.72.0-r6"}
   "boost-chrono" {= "1.72.0-r6"}
   "boost-container" {= "1.72.0-r6"}
@@ -37,7 +37,7 @@ depends: [
   "boost-unit_test_framework" {= "1.72.0-r6"}
   "boost-wave" {= "1.72.0-r6"}
   "boost-wserialization" {= "1.72.0-r6"}
-  "linux-headers"
+  "linux-headers" {= "5.7.8-r0"}
 ]
 extra-source "boost-dev-1.72.0-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/boost-dev-1.72.0-r6.apk"

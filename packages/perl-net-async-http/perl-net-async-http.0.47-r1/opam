@@ -6,13 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del perl-net-async-http"]
 ]
 depends: [
-  "perl"
-  "perl-future"
-  "perl-http-message"
-  "perl-io-async"
-  "perl-metrics-any"
-  "perl-struct-dumb"
-  "perl-uri"
+  "perl" {= "5.32.0-r0"}
+  "perl-future" {= "0.46-r0"}
+  "perl-http-message" {= "6.27-r0"}
+  "perl-io-async" {= "0.77-r1"}
+  "perl-metrics-any" {= "0.06-r1"}
+  "perl-struct-dumb" {= "0.12-r1"}
+  "perl-uri" {= "5.05-r0"}
 ]
 extra-source "perl-net-async-http-0.47-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/perl-net-async-http-0.47-r1.apk"

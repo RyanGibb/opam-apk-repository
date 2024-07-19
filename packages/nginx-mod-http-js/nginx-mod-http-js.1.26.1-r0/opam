@@ -8,7 +8,7 @@ remove: [
 depends: [
   "libxml2" {= "2.12.7-r0"}
   "musl" {= "1.2.5-r0"}
-  "nginx"
+  "nginx" {= "1.26.1-r0"}
 ]
 extra-source "nginx-mod-http-js-1.26.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/nginx-mod-http-js-1.26.1-r0.apk"

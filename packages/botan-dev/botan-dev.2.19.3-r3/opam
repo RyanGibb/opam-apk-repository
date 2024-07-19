@@ -6,13 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del botan-dev"]
 ]
 depends: [
-  "boost-dev"
+  "boost-dev" {= "1.82.0-r1"}
   "botan-libs" {= "2.19.3-r3"}
-  "bzip2-dev"
+  "bzip2-dev" {= "1.0.8-r5"}
   "pkgconf" {= "1.9.5-r0"}
-  "sqlite-dev"
-  "xz-dev"
-  "zlib-dev"
+  "sqlite-dev" {= "3.41.2-r3"}
+  "xz-dev" {= "5.4.3-r0"}
+  "zlib-dev" {= "1.2.13-r1"}
 ]
 extra-source "botan-dev-2.19.3-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/botan-dev-2.19.3-r3.apk"

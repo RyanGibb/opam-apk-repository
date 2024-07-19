@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del postgresql-dev"]
 ]
 depends: [
-  "clang"
-  "icu-dev"
+  "clang" {= "11.1.0-r1"}
+  "icu-dev" {= "67.1-r2"}
   "libpq" {= "13.12-r0"}
   "llvm11" {= "11.1.0-r2"}
   "musl" {= "1.2.2-r5"}
-  "openssl-dev"
+  "openssl-dev" {= "1.1.1t-r2"}
   "pkgconf" {= "1.7.4-r1"}
   "postgresql-libs" {= "13.12-r0"}
 ]

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del gnokii-smsd-sqlite"]
 ]
 depends: [
-  "gnokii-smsd"
+  "gnokii-smsd" {= "0.6.31-r13"}
   "musl" {= "1.2.3-r5"}
 ]
 extra-source "gnokii-smsd-sqlite-0.6.31-r13.apk" {

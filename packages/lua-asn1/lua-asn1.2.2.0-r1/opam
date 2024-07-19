@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del lua-asn1"]
 ]
 depends: [
-  "lua-stringy"
+  "lua-stringy" {= "0.5.1-r3"}
 ]
 extra-source "lua-asn1-2.2.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lua-asn1-2.2.0-r1.apk"

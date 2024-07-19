@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del uwsgi-dummy"]
 ]
 depends: [
-  "uwsgi"
+  "uwsgi" {= "2.0.21-r3"}
 ]
 extra-source "uwsgi-dummy-2.0.21-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/uwsgi-dummy-2.0.21-r3.apk"

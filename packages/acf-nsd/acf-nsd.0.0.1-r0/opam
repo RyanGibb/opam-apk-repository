@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del acf-nsd"]
 ]
 depends: [
-  "acf-core"
-  "nsd"
+  "acf-core" {= "0.22.0-r0"}
+  "nsd" {= "4.3.4-r0"}
 ]
 extra-source "acf-nsd-0.0.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/acf-nsd-0.0.1-r0.apk"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "c-ares" {= "1.28.1-r0"}
-  "iproute2"
+  "iproute2" {= "6.9.0-r0"}
   "musl" {= "1.2.5-r0"}
   "net-snmp-agent-libs" {= "5.9.4-r0"}
   "net-snmp-libs" {= "5.9.4-r0"}

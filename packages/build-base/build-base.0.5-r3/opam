@@ -6,14 +6,14 @@ remove: [
   ["sh" "-c" "sudo apk del build-base"]
 ]
 depends: [
-  "binutils"
-  "file"
-  "fortify-headers"
-  "g++"
-  "gcc"
-  "make"
+  "binutils" {= "2.42-r0"}
+  "file" {= "5.45-r1"}
+  "fortify-headers" {= "1.1-r3"}
+  "g++" {= "13.2.1_git20240309-r0"}
+  "gcc" {= "13.2.1_git20240309-r0"}
+  "make" {= "4.4.1-r2"}
   "musl-dev" {= "1.2.5-r0"}
-  "patch"
+  "patch" {= "2.7.6-r10"}
 ]
 extra-source "build-base-0.5-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/build-base-0.5-r3.apk"

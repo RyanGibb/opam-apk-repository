@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del lua5.1-dev"]
 ]
 depends: [
-  "lua5-1"
+  "lua5-1" {= "5.1.5-r12"}
   "lua5-1-libs" {= "5.1.5-r12"}
   "pkgconf" {= "1.9.5-r0"}
 ]

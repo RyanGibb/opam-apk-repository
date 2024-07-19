@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del python3-pyc"]
 ]
 depends: [
-  "pyc"
+  "pyc" {= "3.12.3-r1"}
   "python3-pycache-pyc0" {= "3.12.3-r1"}
 ]
 extra-source "python3-pyc-3.12.3-r1.apk" {

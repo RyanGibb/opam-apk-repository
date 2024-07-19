@@ -8,7 +8,7 @@ remove: [
 depends: [
   "eudev-libs" {= "3.2.9-r3"}
   "libdrm" {= "2.4.102-r0"}
-  "mesa-dri-ati"
+  "mesa-dri-ati" {= "20.0.7-r0"}
   "mesa-gbm" {= "20.0.7-r0"}
   "musl" {= "1.1.24-r10"}
 ]

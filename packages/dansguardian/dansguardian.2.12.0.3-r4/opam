@@ -9,7 +9,7 @@ depends: [
   "busybox" {= "1.35.0-r18"}
   "libgcc" {= "11.2.1_git20220219-r2"}
   "libstdc++" {= "11.2.1_git20220219-r2"}
-  "logrotate"
+  "logrotate" {= "3.19.0-r3"}
   "musl" {= "1.2.3-r3"}
   "pcre" {= "8.45-r2"}
   "zlib" {= "1.2.12-r3"}

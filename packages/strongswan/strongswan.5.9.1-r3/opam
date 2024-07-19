@@ -8,7 +8,7 @@ remove: [
 depends: [
   "busybox" {= "1.33.1-r8"}
   "gmp" {= "6.2.1-r1"}
-  "iproute2"
+  "iproute2" {= "5.12.0-r0"}
   "libcap" {= "2.50-r0"}
   "libcrypto1-1" {= "1.1.1t-r2"}
   "libcurl" {= "8.0.1-r0"}

@@ -7,7 +7,6 @@ remove: [
 ]
 depends: [
   "musl" {= "1.2.4_git20230717-r4"}
-  "sanlock"
   "sanlock" {= "3.8.5-r4"}
 ]
 extra-source "lvm2-lockd-2.03.23-r0.apk" {

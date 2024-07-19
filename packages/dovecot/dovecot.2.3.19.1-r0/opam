@@ -14,7 +14,7 @@ depends: [
   "libsodium" {= "1.0.18-r0"}
   "libssl1-1" {= "1.1.1w-r1"}
   "musl" {= "1.2.3-r3"}
-  "openssl"
+  "openssl" {= "1.1.1w-r1"}
   "xz-libs" {= "5.2.5-r1"}
   "zlib" {= "1.2.12-r3"}
 ]

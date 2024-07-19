@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del knock"]
 ]
 depends: [
-  "iptables"
+  "iptables" {= "1.8.10-r3"}
   "libpcap" {= "1.10.4-r1"}
   "musl" {= "1.2.5-r0"}
 ]

@@ -10,7 +10,7 @@ depends: [
   "gettext-asprintf" {= "0.22.5-r0"}
   "gettext-libs" {= "0.22.5-r0"}
   "libintl" {= "0.22.5-r0"}
-  "xz"
+  "xz" {= "5.6.1-r3"}
 ]
 conflicts: [
   "musl-libintl"

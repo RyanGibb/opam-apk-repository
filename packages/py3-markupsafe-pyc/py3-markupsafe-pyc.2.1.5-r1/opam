@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del py3-markupsafe-pyc"]
 ]
 depends: [
-  "python3"
+  "python3" {= "3.12.3-r1"}
   "python3" {>= "3.12"}
 ]
 extra-source "py3-markupsafe-pyc-2.1.5-r1.apk" {

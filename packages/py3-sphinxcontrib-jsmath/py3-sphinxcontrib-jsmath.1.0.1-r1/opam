@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del py3-sphinxcontrib-jsmath"]
 ]
 depends: [
-  "python3"
+  "python3" {= "3.9.18-r0"}
 ]
 extra-source "py3-sphinxcontrib-jsmath-1.0.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/py3-sphinxcontrib-jsmath-1.0.1-r1.apk"

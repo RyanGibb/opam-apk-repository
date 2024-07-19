@@ -8,7 +8,7 @@ remove: [
 depends: [
   "busybox" {= "1.35.0-r18"}
   "musl" {= "1.2.3-r3"}
-  "s6-ipcserver"
+  "s6-ipcserver" {= "2.11.1.0-r0"}
   "skalibs" {= "2.11.2.0-r0"}
 ]
 extra-source "utmps-0.1.2.0-r0.apk" {

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "geoip" {= "1.6.12-r2"}
   "musl" {= "1.2.2-r5"}
-  "nginx"
+  "nginx" {= "1.20.2-r1"}
 ]
 extra-source "nginx-mod-http-geoip-1.20.2-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/nginx-mod-http-geoip-1.20.2-r1.apk"

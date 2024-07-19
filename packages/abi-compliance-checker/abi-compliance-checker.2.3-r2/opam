@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del abi-compliance-checker"]
 ]
 depends: [
-  "build-base"
-  "perl"
+  "build-base" {= "0.5-r3"}
+  "perl" {= "5.36.2-r0"}
 ]
 extra-source "abi-compliance-checker-2.3-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/abi-compliance-checker-2.3-r2.apk"

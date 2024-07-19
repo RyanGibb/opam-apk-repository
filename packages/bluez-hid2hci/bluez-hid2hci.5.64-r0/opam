@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del bluez-hid2hci"]
 ]
 depends: [
-  "dbus"
+  "dbus" {= "1.12.26-r0"}
   "eudev-libs" {= "3.2.11_pre1-r0"}
   "musl" {= "1.2.2-r9"}
 ]

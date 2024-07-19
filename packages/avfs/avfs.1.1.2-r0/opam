@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del avfs"]
 ]
 depends: [
-  "bash"
+  "bash" {= "5.0.17-r0"}
   "fuse" {= "2.9.9-r1"}
   "libbz2" {= "1.0.8-r1"}
   "musl" {= "1.1.24-r10"}

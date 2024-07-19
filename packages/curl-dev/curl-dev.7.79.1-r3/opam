@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del curl-dev"]
 ]
 depends: [
-  "brotli-dev"
+  "brotli-dev" {= "1.0.9-r3"}
   "libcurl" {= "7.79.1-r3"}
-  "nghttp2-dev"
-  "openssl-dev"
+  "nghttp2-dev" {= "1.42.0-r1"}
+  "openssl-dev" {= "1.1.1s-r0"}
   "pkgconf" {= "1.7.3-r0"}
-  "zlib-dev"
+  "zlib-dev" {= "1.2.12-r3"}
 ]
 extra-source "curl-dev-7.79.1-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/curl-dev-7.79.1-r3.apk"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del dhcp-server-vanilla"]
 ]
 depends: [
-  "dhcp"
+  "dhcp" {= "4.4.3_p1-r0"}
   "libgcc" {= "11.2.1_git20220219-r2"}
   "musl" {= "1.2.3-r3"}
 ]

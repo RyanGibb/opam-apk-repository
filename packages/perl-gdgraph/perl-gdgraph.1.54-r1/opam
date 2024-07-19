@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del perl-gdgraph"]
 ]
 depends: [
-  "perl-gd"
-  "perl-gdtextutil"
+  "perl-gd" {= "2.71-r1"}
+  "perl-gdtextutil" {= "0.86-r1"}
 ]
 extra-source "perl-gdgraph-1.54-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-gdgraph-1.54-r1.apk"

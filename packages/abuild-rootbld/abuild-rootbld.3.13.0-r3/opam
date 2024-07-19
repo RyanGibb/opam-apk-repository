@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del abuild-rootbld"]
 ]
 depends: [
-  "abuild"
-  "bubblewrap"
+  "abuild" {= "3.13.0-r3"}
+  "bubblewrap" {= "0.9.0-r0"}
   "gettext-envsubst" {= "0.22.5-r0"}
-  "git"
+  "git" {= "2.45.2-r0"}
 ]
 extra-source "abuild-rootbld-3.13.0-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/abuild-rootbld-3.13.0-r3.apk"

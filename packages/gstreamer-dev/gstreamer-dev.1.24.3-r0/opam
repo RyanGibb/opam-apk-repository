@@ -9,7 +9,7 @@ depends: [
   "glib" {= "2.80.2-r0"}
   "glib-dev" {= "2.80.2-r0"}
   "gstreamer" {= "1.24.3-r0"}
-  "libxml2-dev"
+  "libxml2-dev" {= "2.12.7-r0"}
   "musl" {= "1.2.5-r0"}
   "pkgconf" {= "2.2.0-r0"}
 ]

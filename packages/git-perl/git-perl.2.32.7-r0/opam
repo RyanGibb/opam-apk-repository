@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "git" {= "2.32.7-r0"}
-  "perl"
+  "perl" {= "5.32.1-r0"}
   "perl-git" {= "2.32.7-r0"}
 ]
 extra-source "git-perl-2.32.7-r0.apk" {

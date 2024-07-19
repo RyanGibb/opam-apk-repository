@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del syslinux"]
 ]
 depends: [
-  "blkid"
+  "blkid" {= "2.38-r1"}
   "busybox" {= "1.35.0-r18"}
   "libuuid" {= "2.38-r1"}
-  "mkinitfs"
-  "mtools"
+  "mkinitfs" {= "3.6.2-r0"}
+  "mtools" {= "4.0.39-r0"}
   "musl" {= "1.2.3-r3"}
 ]
 extra-source "syslinux-6.04_pre1-r10.apk" {

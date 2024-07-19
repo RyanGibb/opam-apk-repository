@@ -11,7 +11,7 @@ depends: [
   "libjpeg-turbo" {= "2.1.5.1-r3"}
   "libpng" {= "1.6.39-r3"}
   "musl" {= "1.2.4-r2"}
-  "shared-mime-info"
+  "shared-mime-info" {= "2.2-r5"}
   "tiff" {= "4.5.1-r0"}
   ("busybox-binsh" {= "1.36.1-r7"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.54-r3"})
 ]

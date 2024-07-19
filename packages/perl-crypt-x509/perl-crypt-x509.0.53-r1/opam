@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del perl-crypt-x509"]
 ]
 depends: [
-  "perl-convert-asn1"
+  "perl-convert-asn1" {= "0.29-r0"}
 ]
 extra-source "perl-crypt-x509-0.53-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/perl-crypt-x509-0.53-r1.apk"

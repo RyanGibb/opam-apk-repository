@@ -9,7 +9,7 @@ depends: [
   "libgcc" {= "12.2.1_git20220924-r4"}
   "libusb-compat" {= "0.1.7-r1"}
   "musl" {= "1.2.3-r5"}
-  "util-linux"
+  "util-linux" {= "2.38.1-r1"}
 ]
 extra-source "apcupsd-3.14.14-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/apcupsd-3.14.14-r3.apk"

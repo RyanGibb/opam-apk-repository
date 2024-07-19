@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del perl-test-script"]
 ]
 depends: [
-  "perl"
-  "perl-capture-tiny"
-  "perl-probe-perl"
+  "perl" {= "5.36.2-r0"}
+  "perl-capture-tiny" {= "0.48-r3"}
+  "perl-probe-perl" {= "0.03-r3"}
 ]
 extra-source "perl-test-script-1.29-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-test-script-1.29-r1.apk"

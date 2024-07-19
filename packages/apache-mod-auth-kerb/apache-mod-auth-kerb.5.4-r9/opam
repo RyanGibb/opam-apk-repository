@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del apache-mod-auth-kerb"]
 ]
 depends: [
-  "apache2"
+  "apache2" {= "2.4.61-r0"}
   "krb5-libs" {= "1.21.3-r0"}
   "libcom_err" {= "1.47.0-r5"}
   "musl" {= "1.2.5-r0"}

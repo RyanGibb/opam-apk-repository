@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del ttf-linux-libertine"]
 ]
 depends: [
-  "encodings"
-  "fontconfig"
-  "mkfontscale"
+  "encodings" {= "1.0.5-r0"}
+  "fontconfig" {= "2.14.0-r0"}
   "mkfontscale" {= "1.2.2-r0"}
 ]
 extra-source "ttf-linux-libertine-5.3.0-r0.apk" {

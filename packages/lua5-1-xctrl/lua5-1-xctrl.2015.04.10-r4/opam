@@ -8,7 +8,7 @@ remove: [
 depends: [
   "libx11" {= "1.8.9-r1"}
   "libxmu" {= "1.1.4-r2"}
-  "lua5-1"
+  "lua5-1" {= "5.1.5-r13"}
   "musl" {= "1.2.5-r0"}
 ]
 extra-source "lua5.1-xctrl-2015.04.10-r4.apk" {

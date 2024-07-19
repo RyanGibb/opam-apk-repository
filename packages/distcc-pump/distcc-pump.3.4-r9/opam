@@ -8,8 +8,8 @@ remove: [
 depends: [
   "distcc" {= "3.4-r9"}
   "musl" {= "1.2.5-r0"}
-  "py3-setuptools"
-  "python3"
+  "py3-setuptools" {= "69.5.1-r0"}
+  "python3" {= "3.12.3-r1"}
   "python3" {>= "3.12"}
 ]
 extra-source "distcc-pump-3.4-r9.apk" {

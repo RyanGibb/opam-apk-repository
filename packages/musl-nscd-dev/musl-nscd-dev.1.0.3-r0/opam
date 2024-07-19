@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del musl-nscd-dev"]
 ]
 depends: [
-  "bison"
-  "flex"
+  "bison" {= "3.6.2-r0"}
+  "flex" {= "2.6.4-r2"}
 ]
 extra-source "musl-nscd-dev-1.0.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/musl-nscd-dev-1.0.3-r0.apk"

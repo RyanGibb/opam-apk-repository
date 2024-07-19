@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del py3-boto-doc"]
 ]
 depends: [
-  "python3"
+  "python3" {= "3.8.10-r0"}
 ]
 extra-source "py3-boto-doc-2.49.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/py3-boto-doc-2.49.0-r2.apk"

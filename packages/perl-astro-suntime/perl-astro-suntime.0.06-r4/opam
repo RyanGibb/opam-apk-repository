@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del perl-astro-suntime"]
 ]
 depends: [
-  "perl"
-  "perl-time-parsedate"
+  "perl" {= "5.38.2-r0"}
+  "perl-time-parsedate" {= "2015.103-r6"}
 ]
 extra-source "perl-astro-suntime-0.06-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-astro-suntime-0.06-r4.apk"

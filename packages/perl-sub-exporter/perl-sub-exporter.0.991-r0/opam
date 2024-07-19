@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del perl-sub-exporter"]
 ]
 depends: [
-  "perl"
-  "perl-data-optlist"
-  "perl-params-util"
-  "perl-sub-install"
+  "perl" {= "5.38.2-r0"}
+  "perl-data-optlist" {= "0.114-r1"}
+  "perl-params-util" {= "1.102-r4"}
+  "perl-sub-install" {= "0.929-r2"}
 ]
 extra-source "perl-sub-exporter-0.991-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-sub-exporter-0.991-r0.apk"

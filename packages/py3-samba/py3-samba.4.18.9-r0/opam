@@ -11,7 +11,7 @@ depends: [
   "musl" {= "1.2.4_git20230717-r4"}
   "py3-ldb" {= "2.7.2-r1"}
   "py3-talloc" {= "2.4.2-r0"}
-  "py3-tdb"
+  "py3-tdb" {= "1.4.9-r0"}
   "python3" {= "3.11.9-r0"}
   "python3" {>= "3.11"}
   "samba-client-libs" {= "4.18.9-r0"}

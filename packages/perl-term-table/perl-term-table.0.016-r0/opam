@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del perl-term-table"]
 ]
 depends: [
-  "perl"
-  "perl-importer"
+  "perl" {= "5.36.2-r0"}
+  "perl-importer" {= "0.026-r1"}
 ]
 extra-source "perl-term-table-0.016-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-term-table-0.016-r0.apk"

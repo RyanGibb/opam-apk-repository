@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del meson-vim"]
 ]
 depends: [
-  "python3"
-  "samurai"
+  "python3" {= "3.9.17-r0"}
+  "samurai" {= "1.2-r1"}
 ]
 extra-source "meson-vim-0.58.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/meson-vim-0.58.1-r0.apk"

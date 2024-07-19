@@ -11,7 +11,7 @@ depends: [
   "avahi-compat-libdns_sd" {= "0.8-r5"}
   "avahi-glib" {= "0.8-r5"}
   "avahi-libs" {= "0.8-r5"}
-  "gdbm-dev"
+  "gdbm-dev" {= "1.22-r0"}
   "glib-dev" {= "2.70.5-r0"}
   "pkgconf" {= "1.8.1-r0"}
 ]

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del perl-xml-sax"]
 ]
 depends: [
-  "perl"
-  "perl-xml-namespacesupport"
-  "perl-xml-sax-base"
+  "perl" {= "5.38.2-r0"}
+  "perl-xml-namespacesupport" {= "1.12-r5"}
+  "perl-xml-sax-base" {= "1.09-r5"}
   ("busybox-binsh" {= "1.36.1-r29"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.56.1-r1"})
 ]
 extra-source "perl-xml-sax-1.02-r3.apk" {

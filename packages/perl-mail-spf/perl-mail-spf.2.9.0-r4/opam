@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del perl-mail-spf"]
 ]
 depends: [
-  "perl"
-  "perl-error"
-  "perl-net-dns"
-  "perl-net-dns-resolver-programmable"
-  "perl-netaddr-ip"
-  "perl-uri"
+  "perl" {= "5.36.2-r0"}
+  "perl-error" {= "0.17029-r1"}
+  "perl-net-dns" {= "1.35-r0"}
+  "perl-net-dns-resolver-programmable" {= "0.009-r2"}
+  "perl-netaddr-ip" {= "4.079-r7"}
+  "perl-uri" {= "5.17-r0"}
 ]
 extra-source "perl-mail-spf-2.9.0-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-mail-spf-2.9.0-r4.apk"

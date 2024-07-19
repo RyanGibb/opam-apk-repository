@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libffi" {= "3.4.4-r3"}
-  "linux-headers"
+  "linux-headers" {= "6.5-r0"}
   "pkgconf" {= "2.1.0-r0"}
 ]
 extra-source "libffi-dev-3.4.4-r3.apk" {

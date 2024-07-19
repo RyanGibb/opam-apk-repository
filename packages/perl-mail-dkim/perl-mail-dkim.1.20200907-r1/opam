@@ -6,14 +6,14 @@ remove: [
   ["sh" "-c" "sudo apk del perl-mail-dkim"]
 ]
 depends: [
-  "perl"
-  "perl-crypt-openssl-rsa"
-  "perl-mail-authenticationresults"
-  "perl-mailtools"
-  "perl-net-dns"
-  "perl-net-dns-resolver-mock"
-  "perl-net-ip"
-  "perl-yaml-libyaml"
+  "perl" {= "5.34.2-r0"}
+  "perl-crypt-openssl-rsa" {= "0.32-r2"}
+  "perl-mail-authenticationresults" {= "2.20210112-r0"}
+  "perl-mailtools" {= "2.21-r2"}
+  "perl-net-dns" {= "1.33-r0"}
+  "perl-net-dns-resolver-mock" {= "1.20200215-r1"}
+  "perl-net-ip" {= "1.26-r3"}
+  "perl-yaml-libyaml" {= "0.83-r0"}
 ]
 extra-source "perl-mail-dkim-1.20200907-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/perl-mail-dkim-1.20200907-r1.apk"

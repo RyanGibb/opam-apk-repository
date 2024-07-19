@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del drbd-utils"]
 ]
 depends: [
-  "bash"
+  "bash" {= "5.2.21-r0"}
   "keyutils-libs" {= "1.6.3-r3"}
   "libgcc" {= "13.2.1_git20231014-r0"}
   "libstdc++" {= "13.2.1_git20231014-r0"}

@@ -6,7 +6,6 @@ remove: [
   ["sh" "-c" "sudo apk del kamailio-presence"]
 ]
 depends: [
-  "kamailio"
   "kamailio" {= "5.5.4-r0"}
   "libcurl" {= "8.5.0-r0"}
   "libxml2" {= "2.9.14-r2"}

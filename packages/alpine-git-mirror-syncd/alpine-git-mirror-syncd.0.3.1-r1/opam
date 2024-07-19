@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del alpine-git-mirror-syncd"]
 ]
 depends: [
-  "ca-certificates"
-  "git"
-  "lua5-1"
-  "lua5-1-cjson"
-  "lua5-1-mosquitto"
+  "ca-certificates" {= "20240226-r0"}
+  "git" {= "2.40.1-r0"}
+  "lua5-1" {= "5.1.5-r12"}
+  "lua5-1-cjson" {= "2.1.0-r11"}
+  "lua5-1-mosquitto" {= "0.4.1-r3"}
 ]
 extra-source "alpine-git-mirror-syncd-0.3.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/alpine-git-mirror-syncd-0.3.1-r1.apk"

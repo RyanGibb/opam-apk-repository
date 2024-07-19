@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del cups-dbg"]
 ]
 depends: [
-  "cups-client"
-  "dbus"
-  "openssl"
-  "poppler-utils"
+  "cups-client" {= "2.4.2-r2"}
+  "dbus" {= "1.14.8-r0"}
+  "openssl" {= "1.1.1w-r1"}
+  "poppler-utils" {= "22.05.0-r0"}
 ]
 extra-source "cups-dbg-2.4.2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/cups-dbg-2.4.2-r2.apk"

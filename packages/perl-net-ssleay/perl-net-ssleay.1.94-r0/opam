@@ -9,7 +9,7 @@ depends: [
   "libcrypto3" {= "3.3.1-r3"}
   "libssl3" {= "3.3.1-r3"}
   "musl" {= "1.2.5-r0"}
-  "perl"
+  "perl" {= "5.38.2-r0"}
 ]
 extra-source "perl-net-ssleay-1.94-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-net-ssleay-1.94-r0.apk"

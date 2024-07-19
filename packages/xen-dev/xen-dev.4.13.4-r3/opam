@@ -6,33 +6,33 @@ remove: [
   ["sh" "-c" "sudo apk del xen-dev"]
 ]
 depends: [
-  "argp-standalone"
-  "bison"
-  "curl-dev"
-  "dev86"
-  "e2fsprogs-dev"
-  "flex"
-  "gettext"
-  "glib-dev"
-  "gnutls-dev"
-  "libaio-dev"
-  "libnl3-dev"
-  "linux-headers"
-  "lzo-dev"
-  "ncurses-dev"
-  "openssl-dev"
-  "pciutils-dev"
-  "perl"
-  "perl-dev"
+  "argp-standalone" {= "1.3-r4"}
+  "bison" {= "3.6.2-r0"}
+  "curl-dev" {= "7.79.1-r1"}
+  "dev86" {= "0.16.21-r1"}
+  "e2fsprogs-dev" {= "1.45.6-r0"}
+  "flex" {= "2.6.4-r2"}
+  "gettext" {= "0.20.2-r0"}
+  "glib-dev" {= "2.64.6-r0"}
+  "gnutls-dev" {= "3.6.15-r1"}
+  "libaio-dev" {= "0.3.112-r1"}
+  "libnl3-dev" {= "3.5.0-r0"}
+  "linux-headers" {= "5.4.5-r1"}
+  "lzo-dev" {= "2.10-r2"}
+  "ncurses-dev" {= "6.2_p20200523-r1"}
+  "openssl-dev" {= "1.1.1o-r0"}
+  "pciutils-dev" {= "3.6.4-r0"}
+  "perl" {= "5.30.3-r0"}
+  "perl-dev" {= "5.30.3-r0"}
   "pkgconf" {= "1.7.2-r0"}
-  "python3-dev"
-  "spice-dev"
-  "texinfo"
-  "util-linux-dev"
+  "python3-dev" {= "3.8.10-r0"}
+  "spice-dev" {= "0.14.3-r1"}
+  "texinfo" {= "6.7-r0"}
+  "util-linux-dev" {= "2.37.4-r0"}
   "xen-libs" {= "4.13.4-r3"}
-  "xz-dev"
-  "yajl-dev"
-  "zlib-dev"
+  "xz-dev" {= "5.2.5-r1"}
+  "yajl-dev" {= "2.1.0-r1"}
+  "zlib-dev" {= "1.2.12-r3"}
 ]
 extra-source "xen-dev-4.13.4-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/xen-dev-4.13.4-r3.apk"

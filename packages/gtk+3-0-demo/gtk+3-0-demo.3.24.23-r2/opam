@@ -11,13 +11,13 @@ depends: [
   "gdk-pixbuf" {= "2.42.4-r1"}
   "glib" {= "2.66.8-r0"}
   "gtk+3-0" {= "3.24.23-r2"}
-  "gtk-update-icon-cache"
+  "gtk-update-icon-cache" {= "2.24.33-r0"}
   "harfbuzz" {= "2.7.4-r1"}
   "libepoxy" {= "1.5.5-r0"}
   "libintl" {= "0.20.2-r2"}
   "musl" {= "1.2.2-r2"}
   "pango" {= "1.48.2-r0"}
-  "shared-mime-info"
+  "shared-mime-info" {= "2.0-r0"}
 ]
 extra-source "gtk+3.0-demo-3.24.23-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/gtk+3.0-demo-3.24.23-r2.apk"

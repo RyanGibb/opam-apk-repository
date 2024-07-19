@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del lxc-lvm"]
 ]
 depends: [
-  "lvm2"
+  "lvm2" {= "2.03.23-r0"}
   "lxc" {= "5.0.3-r2"}
-  "util-linux"
+  "util-linux" {= "2.39.3-r0"}
 ]
 extra-source "lxc-lvm-5.0.3-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/lxc-lvm-5.0.3-r2.apk"

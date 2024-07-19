@@ -12,7 +12,7 @@ depends: [
   "libltdl" {= "2.4.7-r1"}
   "libssl3" {= "3.0.14-r0"}
   "libstdc++" {= "12.2.1_git20220924-r4"}
-  "logrotate"
+  "logrotate" {= "3.20.1-r3"}
   "musl" {= "1.2.3-r5"}
   ("yash-binsh" {= "2.53-r2"} | "busybox-binsh" {= "1.35.0-r31"} | "dash-binsh" {= "0.5.11.5-r2"})
 ]

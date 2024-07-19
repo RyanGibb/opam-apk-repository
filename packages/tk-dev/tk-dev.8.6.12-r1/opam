@@ -6,11 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del tk-dev"]
 ]
 depends: [
-  "fontconfig-dev"
-  "libx11-dev"
-  "libxft-dev"
+  "fontconfig-dev" {= "2.14.1-r0"}
+  "libx11-dev" {= "1.8.7-r0"}
+  "libxft-dev" {= "2.3.7-r0"}
   "pkgconf" {= "1.9.4-r0"}
-  "tcl-dev"
   "tcl-dev" {= "8.6.12-r1"}
   "tk" {= "8.6.12-r1"}
 ]

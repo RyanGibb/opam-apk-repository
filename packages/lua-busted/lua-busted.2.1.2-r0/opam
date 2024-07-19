@@ -6,15 +6,15 @@ remove: [
   ["sh" "-c" "sudo apk del lua-busted"]
 ]
 depends: [
-  "lua-cjson"
-  "lua-cliargs"
-  "lua-filesystem"
-  "lua-luassert"
-  "lua-mediator"
-  "lua-penlight"
-  "lua-say"
-  "lua-system"
-  "lua-term"
+  "lua-cjson" {= "2.1.0-r11"}
+  "lua-cliargs" {= "3.0_p2-r2"}
+  "lua-filesystem" {= "1.8.0-r4"}
+  "lua-luassert" {= "1.9.0-r0"}
+  "lua-mediator" {= "1.1.2-r2"}
+  "lua-penlight" {= "1.13.1-r0"}
+  "lua-say" {= "1.4.1-r0"}
+  "lua-system" {= "0.2.1-r2"}
+  "lua-term" {= "0.07-r2"}
 ]
 extra-source "lua-busted-2.1.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/lua-busted-2.1.2-r0.apk"

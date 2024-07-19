@@ -11,7 +11,7 @@ depends: [
   "kmod-libs" {= "29-r2"}
   "libblkid" {= "2.37.4-r0"}
   "musl" {= "1.2.2-r9"}
-  "udev-init-scripts"
+  "udev-init-scripts" {= "35-r0"}
 ]
 extra-source "eudev-3.2.11_pre1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/eudev-3.2.11_pre1-r0.apk"

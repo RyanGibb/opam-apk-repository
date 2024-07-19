@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del iproute2"]
 ]
 depends: [
-  "iproute2-minimal"
-  "iproute2-ss"
-  "iproute2-tc"
+  "iproute2-minimal" {= "6.9.0-r0"}
+  "iproute2-ss" {= "6.9.0-r0"}
+  "iproute2-tc" {= "6.9.0-r0"}
   "libcap2" {= "2.70-r0"}
   "libmnl" {= "1.0.5-r2"}
   "musl" {= "1.2.5-r0"}

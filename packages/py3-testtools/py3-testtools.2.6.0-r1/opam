@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del py3-testtools"]
 ]
 depends: [
-  "py3-fixtures"
-  "py3-pbr"
-  "python3"
+  "py3-fixtures" {= "4.0.1-r3"}
+  "py3-pbr" {= "5.11.1-r2"}
+  "python3" {= "3.11.8-r0"}
   "python3" {>= "3.11"}
 ]
 extra-source "py3-testtools-2.6.0-r1.apk" {

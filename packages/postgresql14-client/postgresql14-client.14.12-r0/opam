@@ -9,7 +9,7 @@ depends: [
   "libcrypto3" {= "3.1.6-r0"}
   "libpq" {= "15.7-r0"}
   "musl" {= "1.2.4-r2"}
-  "postgresql-common"
+  "postgresql-common" {= "1.2-r1"}
   "readline" {= "8.2.1-r1"}
   "zlib" {= "1.2.13-r1"}
 ]

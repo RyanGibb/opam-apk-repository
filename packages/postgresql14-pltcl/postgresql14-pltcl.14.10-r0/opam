@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "musl" {= "1.2.2-r9"}
-  "pgtcl"
+  "pgtcl" {= "2.1.0-r1"}
   "postgresql14" {= "14.10-r0"}
   "tcl" {= "8.6.11-r1"}
 ]

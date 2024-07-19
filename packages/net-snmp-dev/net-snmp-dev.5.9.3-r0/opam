@@ -8,7 +8,7 @@ remove: [
 depends: [
   "net-snmp-agent-libs" {= "5.9.3-r0"}
   "net-snmp-libs" {= "5.9.3-r0"}
-  "openssl-dev"
+  "openssl-dev" {= "1.1.1s-r0"}
   "pkgconf" {= "1.7.3-r0"}
 ]
 extra-source "net-snmp-dev-5.9.3-r0.apk" {

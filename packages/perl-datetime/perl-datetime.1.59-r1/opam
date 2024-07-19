@@ -7,14 +7,14 @@ remove: [
 ]
 depends: [
   "musl" {= "1.2.4-r2"}
-  "perl"
-  "perl-datetime-locale"
-  "perl-datetime-timezone"
-  "perl-dist-checkconflicts"
-  "perl-namespace-autoclean"
-  "perl-params-validationcompiler"
-  "perl-specio"
-  "perl-try-tiny"
+  "perl" {= "5.36.2-r0"}
+  "perl-datetime-locale" {= "1.39-r0"}
+  "perl-datetime-timezone" {= "2.60-r0"}
+  "perl-dist-checkconflicts" {= "0.11-r3"}
+  "perl-namespace-autoclean" {= "0.29-r2"}
+  "perl-params-validationcompiler" {= "0.31-r0"}
+  "perl-specio" {= "0.48-r0"}
+  "perl-try-tiny" {= "0.31-r1"}
 ]
 extra-source "perl-datetime-1.59-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-datetime-1.59-r1.apk"

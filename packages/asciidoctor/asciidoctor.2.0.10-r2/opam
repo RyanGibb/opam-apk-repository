@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del asciidoctor"]
 ]
 depends: [
-  "ruby"
+  "ruby" {= "2.7.6-r0"}
 ]
 extra-source "asciidoctor-2.0.10-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/asciidoctor-2.0.10-r2.apk"

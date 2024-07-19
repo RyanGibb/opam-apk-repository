@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del ruby-full"]
 ]
 depends: [
-  "ruby"
-  "ruby-bundler"
-  "ruby-rdoc"
+  "ruby" {= "3.0.6-r0"}
+  "ruby-bundler" {= "2.2.33-r0"}
+  "ruby-rdoc" {= "3.0.6-r0"}
 ]
 extra-source "ruby-full-3.0.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/ruby-full-3.0.6-r0.apk"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del gnu-efi-dev"]
 ]
 depends: [
-  "gnu-efi"
+  "gnu-efi" {= "3.0.12-r0"}
 ]
 extra-source "gnu-efi-dev-3.0.12-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/gnu-efi-dev-3.0.12-r0.apk"

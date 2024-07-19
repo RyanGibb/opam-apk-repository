@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del ruby-net-imap-doc"]
 ]
 depends: [
-  "ruby"
+  "ruby" {= "3.1.5-r0"}
 ]
 extra-source "ruby-net-imap-doc-0.2.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ruby-net-imap-doc-0.2.4-r0.apk"

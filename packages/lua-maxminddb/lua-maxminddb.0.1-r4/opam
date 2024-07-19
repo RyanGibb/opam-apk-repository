@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del lua-maxminddb"]
 ]
 depends: [
-  "lua5-1-maxminddb"
-  "lua5-2-maxminddb"
-  "lua5-3-maxminddb"
-  "lua5-4-maxminddb"
+  "lua5-1-maxminddb" {= "0.1-r4"}
+  "lua5-2-maxminddb" {= "0.1-r4"}
+  "lua5-3-maxminddb" {= "0.1-r4"}
+  "lua5-4-maxminddb" {= "0.1-r4"}
 ]
 extra-source "lua-maxminddb-0.1-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lua-maxminddb-0.1-r4.apk"

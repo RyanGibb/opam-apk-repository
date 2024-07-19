@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del acf-heimdal"]
 ]
 depends: [
-  "acf-core"
-  "heimdal"
+  "acf-core" {= "0.22.0-r1"}
+  "heimdal" {= "7.7.0-r4"}
 ]
 extra-source "acf-heimdal-0.6.0-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/acf-heimdal-0.6.0-r3.apk"

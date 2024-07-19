@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del boost1.82-iostreams"]
 ]
 depends: [
-  "boost1-82-libs"
+  "boost1-82-libs" {= "1.82.0-r5"}
   "libbz2" {= "1.0.8-r6"}
   "libgcc" {= "13.2.1_git20240309-r0"}
   "libstdc++" {= "13.2.1_git20240309-r0"}

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "musl" {= "1.2.2-r5"}
   "ncurses-libs" {= "6.2_p20210612-r1"}
-  "perl"
+  "perl" {= "5.32.1-r0"}
 ]
 extra-source "texinfo-6.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/texinfo-6.7-r0.apk"

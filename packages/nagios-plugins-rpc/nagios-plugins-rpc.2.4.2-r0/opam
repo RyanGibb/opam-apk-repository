@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del nagios-plugins-rpc"]
 ]
 depends: [
-  "nagios-plugins"
-  "perl"
+  "nagios-plugins" {= "2.4.2-r0"}
+  "perl" {= "5.36.2-r0"}
 ]
 extra-source "nagios-plugins-rpc-2.4.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nagios-plugins-rpc-2.4.2-r0.apk"

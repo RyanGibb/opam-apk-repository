@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del xorg-server-dev"]
 ]
 depends: [
-  "libepoxy-dev"
-  "libpciaccess-dev"
-  "libxfont2-dev"
-  "mesa-dev"
+  "libepoxy-dev" {= "1.5.4-r0"}
+  "libpciaccess-dev" {= "0.16-r0"}
+  "libxfont2-dev" {= "2.0.4-r0"}
+  "mesa-dev" {= "20.0.7-r0"}
   "pixman-dev" {= "0.40.0-r2"}
   "pkgconf" {= "1.7.2-r0"}
 ]

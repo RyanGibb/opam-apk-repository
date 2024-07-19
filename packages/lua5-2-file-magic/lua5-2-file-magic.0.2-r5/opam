@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libmagic" {= "5.45-r1"}
-  "lua5-2"
+  "lua5-2" {= "5.2.4-r13"}
   "musl" {= "1.2.5-r0"}
 ]
 extra-source "lua5.2-file-magic-0.2-r5.apk" {

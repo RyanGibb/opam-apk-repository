@@ -7,11 +7,11 @@ remove: [
 ]
 depends: [
   "libx11" {= "1.6.12-r1"}
-  "mcookie"
+  "mcookie" {= "2.37.4-r0"}
   "musl" {= "1.1.24-r10"}
-  "xauth"
-  "xmodmap"
-  "xrdb"
+  "xauth" {= "1.1-r0"}
+  "xmodmap" {= "1.0.10-r0"}
+  "xrdb" {= "1.2.0-r1"}
 ]
 extra-source "xinit-1.4.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/xinit-1.4.1-r0.apk"

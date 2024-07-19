@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "musl" {= "1.2.4_git20230717-r4"}
-  "perl"
+  "perl" {= "5.38.2-r0"}
   "zlib" {= "1.3.1-r0"}
 ]
 extra-source "perl-compress-raw-zlib-2.206-r0.apk" {

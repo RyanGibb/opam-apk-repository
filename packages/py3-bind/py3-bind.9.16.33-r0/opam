@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del py3-bind"]
 ]
 depends: [
-  "py3-ply"
-  "python3"
+  "py3-ply" {= "3.11-r2"}
+  "python3" {= "3.8.15-r0"}
 ]
 extra-source "py3-bind-9.16.33-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/py3-bind-9.16.33-r0.apk"

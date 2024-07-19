@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del mariadb-embedded-dev"]
 ]
 depends: [
-  "mariadb-common"
+  "mariadb-common" {= "10.6.16-r0"}
   "mariadb-embedded" {= "10.6.16-r0"}
 ]
 extra-source "mariadb-embedded-dev-10.6.16-r0.apk" {

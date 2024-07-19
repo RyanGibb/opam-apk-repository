@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del py3-virtualenv"]
 ]
 depends: [
-  "py3-distlib"
-  "py3-filelock"
-  "py3-setuptools"
-  "python3"
+  "py3-distlib" {= "0.3.1-r1"}
+  "py3-filelock" {= "3.0.12-r2"}
+  "py3-setuptools" {= "51.3.3-r0"}
+  "python3" {= "3.8.15-r0"}
 ]
 extra-source "py3-virtualenv-20.2.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/py3-virtualenv-20.2.2-r0.apk"

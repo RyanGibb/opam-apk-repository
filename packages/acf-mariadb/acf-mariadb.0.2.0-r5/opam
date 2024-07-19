@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del acf-mariadb"]
 ]
 depends: [
-  "acf-core"
-  "acf-db-lib"
-  "lua-sql-mysql"
-  "mariadb"
-  "mariadb-client"
+  "acf-core" {= "0.24.0-r0"}
+  "acf-db-lib" {= "0.2.1-r4"}
+  "lua-sql-mysql" {= "2.6.0-r4"}
+  "mariadb" {= "10.11.8-r0"}
+  "mariadb-client" {= "10.11.8-r0"}
 ]
 extra-source "acf-mariadb-0.2.0-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/acf-mariadb-0.2.0-r5.apk"

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "lm-sensors-libs" {= "3.6.0-r5"}
   "musl" {= "1.2.5-r0"}
-  "sysfsutils"
+  "sysfsutils" {= "2.1.1-r3"}
   ("busybox-binsh" {= "1.36.1-r29"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.56.1-r1"})
 ]
 extra-source "lm-sensors-3.6.0-r5.apk" {

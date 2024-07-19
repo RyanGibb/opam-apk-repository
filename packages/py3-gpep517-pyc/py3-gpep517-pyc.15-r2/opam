@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del py3-gpep517-pyc"]
 ]
 depends: [
-  "py3-installer"
-  "python3"
+  "py3-installer" {= "0.7.0-r2"}
+  "python3" {= "3.12.3-r1"}
   "python3" {>= "3.12"}
 ]
 extra-source "py3-gpep517-pyc-15-r2.apk" {

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del libical-dev"]
 ]
 depends: [
-  "db-dev"
+  "db-dev" {= "5.3.28-r1"}
   "glib-dev" {= "2.64.6-r0"}
   "icu-dev" {= "67.1-r0"}
   "libical" {= "3.0.8-r2"}

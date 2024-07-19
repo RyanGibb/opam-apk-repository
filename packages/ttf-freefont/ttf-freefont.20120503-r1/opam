@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del ttf-freefont"]
 ]
 depends: [
-  "encodings"
-  "fontconfig"
-  "mkfontscale"
+  "encodings" {= "1.0.5-r0"}
+  "fontconfig" {= "2.13.1-r4"}
   "mkfontscale" {= "1.2.1-r1"}
 ]
 extra-source "ttf-freefont-20120503-r1.apk" {

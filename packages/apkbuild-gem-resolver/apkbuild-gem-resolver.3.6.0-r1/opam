@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del apkbuild-gem-resolver"]
 ]
 depends: [
-  "ruby"
-  "ruby-augeas"
+  "ruby" {= "2.7.6-r0"}
+  "ruby-augeas" {= "0.5.0-r8"}
 ]
 extra-source "apkbuild-gem-resolver-3.6.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/apkbuild-gem-resolver-3.6.0-r1.apk"

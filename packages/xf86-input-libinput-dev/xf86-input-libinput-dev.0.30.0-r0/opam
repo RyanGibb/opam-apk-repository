@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del xf86-input-libinput-dev"]
 ]
 depends: [
-  "libinput-dev"
+  "libinput-dev" {= "1.15.5-r1"}
   "pkgconf" {= "1.7.2-r0"}
-  "xorg-server-dev"
+  "xorg-server-dev" {= "1.20.11-r0"}
 ]
 extra-source "xf86-input-libinput-dev-0.30.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/xf86-input-libinput-dev-0.30.0-r0.apk"

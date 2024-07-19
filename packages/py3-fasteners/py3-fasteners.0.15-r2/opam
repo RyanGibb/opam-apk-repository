@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del py3-fasteners"]
 ]
 depends: [
-  "py3-monotonic"
-  "py3-six"
-  "python3"
+  "py3-monotonic" {= "1.5-r2"}
+  "py3-six" {= "1.15.0-r0"}
+  "python3" {= "3.8.10-r0"}
 ]
 extra-source "py3-fasteners-0.15-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/py3-fasteners-0.15-r2.apk"

@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del mariadb-mytop"]
 ]
 depends: [
-  "perl"
-  "perl-dbd-mysql"
-  "perl-dbi"
-  "perl-getopt-long"
-  "perl-socket"
-  "perl-term-readkey"
+  "perl" {= "5.36.2-r0"}
+  "perl-dbd-mysql" {= "4.050-r5"}
+  "perl-dbi" {= "1.643-r4"}
+  "perl-getopt-long" {= "2.54-r0"}
+  "perl-socket" {= "2.036-r0"}
+  "perl-term-readkey" {= "2.38-r7"}
 ]
 extra-source "mariadb-mytop-10.6.16-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mariadb-mytop-10.6.16-r0.apk"

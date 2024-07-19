@@ -7,7 +7,6 @@ remove: [
 ]
 depends: [
   "db" {= "5.3.28-r1"}
-  "kamailio"
   "kamailio" {= "5.3.7-r2"}
   "musl" {= "1.1.24-r10"}
 ]

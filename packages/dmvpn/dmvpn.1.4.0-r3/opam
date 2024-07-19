@@ -6,18 +6,18 @@ remove: [
   ["sh" "-c" "sudo apk del dmvpn"]
 ]
 depends: [
-  "augeas"
-  "bind-tools"
-  "lua-dmvpn"
-  "lua5-2"
-  "lua5-2-cqueues"
-  "lua5-2-lyaml"
-  "lua5-2-ossl"
-  "lua5-2-posix"
-  "lua5-2-struct"
-  "quagga"
-  "strongswan"
-  "tunnel"
+  "augeas" {= "1.12.0-r6"}
+  "bind-tools" {= "9.18.27-r0"}
+  "lua-dmvpn" {= "1.4.0-r3"}
+  "lua5-2" {= "5.2.4-r13"}
+  "lua5-2-cqueues" {= "20200726-r5"}
+  "lua5-2-lyaml" {= "6.2.8-r1"}
+  "lua5-2-ossl" {= "20220711-r2"}
+  "lua5-2-posix" {= "36.2.1-r0"}
+  "lua5-2-struct" {= "0.2-r4"}
+  "quagga" {= "1.2.4-r9"}
+  "strongswan" {= "5.9.13-r1"}
+  "tunnel" {= "1.1-r0"}
 ]
 extra-source "dmvpn-1.4.0-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/dmvpn-1.4.0-r3.apk"

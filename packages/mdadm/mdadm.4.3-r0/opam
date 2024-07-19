@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del mdadm"]
 ]
 depends: [
-  "lsblk"
+  "lsblk" {= "2.40.1-r1"}
   "musl" {= "1.2.5-r0"}
 ]
 extra-source "mdadm-4.3-r0.apk" {

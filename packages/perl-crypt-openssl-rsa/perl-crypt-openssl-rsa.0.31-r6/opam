@@ -8,9 +8,9 @@ remove: [
 depends: [
   "libcrypto1-1" {= "1.1.1t-r2"}
   "musl" {= "1.2.2-r5"}
-  "perl"
-  "perl-crypt-openssl-guess"
-  "perl-crypt-openssl-random"
+  "perl" {= "5.32.1-r0"}
+  "perl-crypt-openssl-guess" {= "0.12-r0"}
+  "perl-crypt-openssl-random" {= "0.15-r6"}
 ]
 extra-source "perl-crypt-openssl-rsa-0.31-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/perl-crypt-openssl-rsa-0.31-r6.apk"

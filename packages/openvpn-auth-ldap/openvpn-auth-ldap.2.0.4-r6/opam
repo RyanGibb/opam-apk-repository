@@ -9,7 +9,7 @@ depends: [
   "libldap" {= "2.6.7-r0"}
   "libobjc" {= "13.2.1_git20240309-r0"}
   "musl" {= "1.2.5-r0"}
-  "openvpn"
+  "openvpn" {= "2.6.11-r0"}
   ("busybox-binsh" {= "1.36.1-r29"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.56.1-r1"})
 ]
 extra-source "openvpn-auth-ldap-2.0.4-r6.apk" {

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del kamailio-mqtt"]
 ]
 depends: [
-  "kamailio"
+  "kamailio" {= "5.7.2-r2"}
   "libev" {= "4.33-r1"}
   "mosquitto-libs" {= "2.0.18-r0"}
   "musl" {= "1.2.4_git20230717-r4"}

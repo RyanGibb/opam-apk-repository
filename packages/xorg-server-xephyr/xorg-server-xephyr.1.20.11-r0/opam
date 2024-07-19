@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "eudev-libs" {= "3.2.9-r3"}
-  "font-cursor-misc"
-  "font-misc-misc"
+  "font-cursor-misc" {= "1.0.3-r1"}
+  "font-misc-misc" {= "1.1.2-r1"}
   "libepoxy" {= "1.5.4-r0"}
   "libx11" {= "1.6.12-r1"}
   "libxau" {= "1.0.9-r0"}
@@ -25,9 +25,9 @@ depends: [
   "xcb-util-keysyms" {= "0.4.0-r1"}
   "xcb-util-renderutil" {= "0.3.9-r1"}
   "xcb-util-wm" {= "0.4.1-r1"}
-  "xinit"
-  "xkbcomp"
-  "xkeyboard-config"
+  "xinit" {= "1.4.1-r0"}
+  "xkbcomp" {= "1.4.3-r0"}
+  "xkeyboard-config" {= "2.29-r0"}
 ]
 extra-source "xorg-server-xephyr-1.20.11-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/xorg-server-xephyr-1.20.11-r0.apk"

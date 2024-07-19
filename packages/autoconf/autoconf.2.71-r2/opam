@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del autoconf"]
 ]
 depends: [
-  "m4"
-  "perl"
+  "m4" {= "1.4.19-r3"}
+  "perl" {= "5.38.2-r0"}
 ]
 extra-source "autoconf-2.71-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/autoconf-2.71-r2.apk"

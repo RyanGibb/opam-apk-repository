@@ -6,29 +6,29 @@ remove: [
   ["sh" "-c" "sudo apk del amavis"]
 ]
 depends: [
-  "file"
-  "perl"
-  "perl-archive-zip"
-  "perl-carp"
-  "perl-compress-raw-zlib"
-  "perl-convert-tnef"
-  "perl-convert-uulib"
-  "perl-digest-md5"
-  "perl-exporter"
-  "perl-io"
-  "perl-io-socket-inet6"
-  "perl-io-socket-ssl"
-  "perl-io-stringy"
-  "perl-mail-dkim"
-  "perl-mail-spamassassin"
-  "perl-mailtools"
-  "perl-mime-tools"
-  "perl-net-libidn"
-  "perl-net-server"
-  "perl-socket"
-  "perl-time-hires"
-  "perl-unix-syslog"
-  "sed"
+  "file" {= "5.45-r0"}
+  "perl" {= "5.36.2-r0"}
+  "perl-archive-zip" {= "1.68-r2"}
+  "perl-carp" {= "1.50-r1"}
+  "perl-compress-raw-zlib" {= "2.204-r1"}
+  "perl-convert-tnef" {= "0.18-r5"}
+  "perl-convert-uulib" {= "1.8-r1"}
+  "perl-digest-md5" {= "2.58-r4"}
+  "perl-exporter" {= "5.77-r0"}
+  "perl-io" {= "1.51-r1"}
+  "perl-io-socket-inet6" {= "2.73-r1"}
+  "perl-io-socket-ssl" {= "2.081-r0"}
+  "perl-io-stringy" {= "2.113-r1"}
+  "perl-mail-dkim" {= "1.20230212-r0"}
+  "perl-mail-spamassassin" {= "3.4.6-r5"}
+  "perl-mailtools" {= "2.21-r3"}
+  "perl-mime-tools" {= "5.510-r0"}
+  "perl-net-libidn" {= "0.12-r13"}
+  "perl-net-server" {= "2.014-r1"}
+  "perl-socket" {= "2.036-r2"}
+  "perl-time-hires" {= "1.9764-r5"}
+  "perl-unix-syslog" {= "1.1-r20"}
+  "sed" {= "4.9-r2"}
   ("busybox-binsh" {= "1.36.1-r7"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.54-r3"})
 ]
 extra-source "amavis-2.13.0-r0.apk" {

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del py3-tappy"]
 ]
 depends: [
-  "python3"
+  "python3" {= "3.11.8-r0"}
   "python3" {>= "3.11"}
 ]
 extra-source "py3-tappy-3.1-r2.apk" {

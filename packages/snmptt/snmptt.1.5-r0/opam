@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del snmptt"]
 ]
 depends: [
-  "perl"
-  "perl-config-inifiles"
-  "perl-list-moreutils"
+  "perl" {= "5.38.2-r0"}
+  "perl-config-inifiles" {= "3.000003-r3"}
+  "perl-list-moreutils" {= "0.430-r1"}
   ("busybox-binsh" {= "1.36.1-r29"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.56.1-r1"})
 ]
 extra-source "snmptt-1.5-r0.apk" {

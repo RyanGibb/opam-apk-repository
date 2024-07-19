@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del kea-dev"]
 ]
 depends: [
-  "boost-dev"
+  "boost-dev" {= "1.84.0-r1"}
   "kea-common" {= "2.4.1-r2"}
   "kea-dhcp-ddns" {= "2.4.1-r2"}
   "libgcc" {= "13.2.1_git20240309-r0"}
   "libstdc++" {= "13.2.1_git20240309-r0"}
-  "log4cplus-dev"
+  "log4cplus-dev" {= "2.1.1-r0"}
   "musl" {= "1.2.5-r0"}
 ]
 extra-source "kea-dev-2.4.1-r2.apk" {

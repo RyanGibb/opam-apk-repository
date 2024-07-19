@@ -6,7 +6,6 @@ remove: [
   ["sh" "-c" "sudo apk del libtheora-dev"]
 ]
 depends: [
-  "libogg-dev"
   "libogg-dev" {= "1.3.5-r5"}
   "libtheora" {= "1.1.1-r18"}
   "pkgconf" {= "2.2.0-r0"}

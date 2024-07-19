@@ -8,7 +8,7 @@ remove: [
 depends: [
   "libcrypto3" {= "3.3.1-r3"}
   "libssl3" {= "3.3.1-r3"}
-  "lua5-2"
+  "lua5-2" {= "5.2.4-r13"}
   "musl" {= "1.2.5-r0"}
 ]
 extra-source "lua5.2-ossl-20220711-r2.apk" {

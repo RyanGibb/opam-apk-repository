@@ -6,13 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del apparmor-utils"]
 ]
 depends: [
-  "bash"
+  "bash" {= "5.2.26-r0"}
   "libapparmor" {= "3.1.7-r2"}
   "libintl" {= "0.22.5-r0"}
   "musl" {= "1.2.5-r0"}
-  "perl"
-  "py3-apparmor"
-  "python3"
+  "perl" {= "5.38.2-r0"}
+  "py3-apparmor" {= "3.1.7-r2"}
+  "python3" {= "3.12.3-r1"}
   "python3" {>= "3.12"}
 ]
 extra-source "apparmor-utils-3.1.7-r2.apk" {

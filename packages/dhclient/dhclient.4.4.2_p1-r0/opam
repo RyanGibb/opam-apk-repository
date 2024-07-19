@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del dhclient"]
 ]
 depends: [
-  "coreutils"
-  "iproute2"
+  "coreutils" {= "8.32-r0"}
+  "iproute2" {= "5.6.0-r0"}
   "libgcc" {= "9.3.0-r2"}
   "musl" {= "1.1.24-r10"}
-  "run-parts"
+  "run-parts" {= "4.9.1-r1"}
 ]
 extra-source "dhclient-4.4.2_p1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/dhclient-4.4.2_p1-r0.apk"

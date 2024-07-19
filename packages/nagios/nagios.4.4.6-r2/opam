@@ -9,7 +9,7 @@ depends: [
   "busybox" {= "1.33.1-r8"}
   "libgd" {= "2.3.2-r1"}
   "musl" {= "1.2.2-r5"}
-  "perl"
+  "perl" {= "5.32.1-r0"}
 ]
 extra-source "nagios-4.4.6-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/nagios-4.4.6-r2.apk"

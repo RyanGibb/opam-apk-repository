@@ -8,7 +8,7 @@ remove: [
 depends: [
   "libgd" {= "2.3.3-r8"}
   "musl" {= "1.2.4_git20230717-r4"}
-  "nginx"
+  "nginx" {= "1.24.0-r16"}
 ]
 extra-source "nginx-mod-http-image-filter-1.24.0-r16.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/nginx-mod-http-image-filter-1.24.0-r16.apk"

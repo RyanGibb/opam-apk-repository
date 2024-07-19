@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del sshguard"]
 ]
 depends: [
-  "iptables"
+  "iptables" {= "1.8.8-r2"}
   "musl" {= "1.2.3-r5"}
 ]
 extra-source "sshguard-2.4.2-r1.apk" {

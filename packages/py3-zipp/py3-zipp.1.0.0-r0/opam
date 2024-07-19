@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del py3-zipp"]
 ]
 depends: [
-  "py3-more-itertools"
-  "py3-six"
+  "py3-more-itertools" {= "8.7.0-r0"}
+  "py3-six" {= "1.15.0-r0"}
 ]
 extra-source "py3-zipp-1.0.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/py3-zipp-1.0.0-r0.apk"

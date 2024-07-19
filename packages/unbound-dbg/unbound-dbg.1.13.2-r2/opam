@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del unbound-dbg"]
 ]
 depends: [
-  "dnssec-root"
+  "dnssec-root" {= "20190225-r1"}
 ]
 extra-source "unbound-dbg-1.13.2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/unbound-dbg-1.13.2-r2.apk"

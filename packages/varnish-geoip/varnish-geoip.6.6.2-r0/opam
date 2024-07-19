@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del varnish-geoip"]
 ]
 depends: [
-  "libmaxminddb-dev"
+  "libmaxminddb-dev" {= "1.5.2-r0"}
 ]
 extra-source "varnish-geoip-6.6.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/varnish-geoip-6.6.2-r0.apk"

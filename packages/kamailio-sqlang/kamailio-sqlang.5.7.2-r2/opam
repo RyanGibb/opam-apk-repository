@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del kamailio-sqlang"]
 ]
 depends: [
-  "kamailio"
+  "kamailio" {= "5.7.2-r2"}
   "libstdc++" {= "13.2.1_git20231014-r0"}
   "musl" {= "1.2.4_git20230717-r4"}
 ]

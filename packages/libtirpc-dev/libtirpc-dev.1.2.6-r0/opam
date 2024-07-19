@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del libtirpc-dev"]
 ]
 depends: [
-  "bsd-compat-headers"
-  "krb5-dev"
+  "bsd-compat-headers" {= "0.7.2-r3"}
+  "krb5-dev" {= "1.18.5-r0"}
   "libtirpc" {= "1.2.6-r0"}
   "libtirpc-nokrb" {= "1.2.6-r0"}
   "pkgconf" {= "1.7.2-r0"}

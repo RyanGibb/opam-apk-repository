@@ -10,7 +10,7 @@ depends: [
   "libldap" {= "2.6.2-r0"}
   "libssl1-1" {= "1.1.1w-r1"}
   "musl" {= "1.2.2-r9"}
-  "nagios-plugins"
+  "nagios-plugins" {= "2.3.3-r1"}
 ]
 extra-source "nagios-plugins-ldap-2.3.3-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/nagios-plugins-ldap-2.3.3-r1.apk"

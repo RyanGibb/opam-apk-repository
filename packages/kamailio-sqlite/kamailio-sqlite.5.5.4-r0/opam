@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del kamailio-sqlite"]
 ]
 depends: [
-  "kamailio"
   "kamailio" {= "5.5.4-r0"}
-  "kamailio-db"
+  "kamailio-db" {= "5.5.4-r0"}
   "musl" {= "1.2.3-r3"}
   "sqlite-libs" {= "3.40.1-r1"}
 ]

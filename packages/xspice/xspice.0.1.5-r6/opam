@@ -8,7 +8,7 @@ remove: [
 depends: [
   "libxfont2" {= "2.0.4-r0"}
   "musl" {= "1.1.24-r10"}
-  "python3"
+  "python3" {= "3.8.10-r0"}
   "spice-server" {= "0.14.3-r1"}
 ]
 extra-source "xspice-0.1.5-r6.apk" {

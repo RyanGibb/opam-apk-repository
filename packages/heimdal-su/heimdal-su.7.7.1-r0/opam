@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "heimdal-libs" {= "7.7.1-r0"}
-  "krb5-conf"
+  "krb5-conf" {= "1.0-r2"}
   "musl" {= "1.2.3-r3"}
 ]
 extra-source "heimdal-su-7.7.1-r0.apk" {

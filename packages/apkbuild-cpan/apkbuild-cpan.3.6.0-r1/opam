@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del apkbuild-cpan"]
 ]
 depends: [
-  "perl"
-  "perl-json"
-  "perl-libwww"
-  "perl-module-build-tiny"
+  "perl" {= "5.30.3-r0"}
+  "perl-json" {= "4.02-r0"}
+  "perl-libwww" {= "6.44-r0"}
+  "perl-module-build-tiny" {= "0.039-r1"}
 ]
 extra-source "apkbuild-cpan-3.6.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/apkbuild-cpan-3.6.0-r1.apk"

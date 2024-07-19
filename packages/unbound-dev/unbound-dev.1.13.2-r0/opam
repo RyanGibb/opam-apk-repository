@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del unbound-dev"]
 ]
 depends: [
-  "expat-dev"
+  "expat-dev" {= "2.5.0-r0"}
   "libevent-dev" {= "2.1.12-r2"}
   "openssl-dev" {= "1.1.1t-r2"}
   "pkgconf" {= "1.7.4-r1"}

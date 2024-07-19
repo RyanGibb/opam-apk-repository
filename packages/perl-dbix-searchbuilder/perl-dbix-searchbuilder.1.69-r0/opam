@@ -6,14 +6,14 @@ remove: [
   ["sh" "-c" "sudo apk del perl-dbix-searchbuilder"]
 ]
 depends: [
-  "perl"
-  "perl-cache-simple-timedexpiry"
-  "perl-class-accessor"
-  "perl-class-returnvalue"
-  "perl-clone"
-  "perl-dbi"
-  "perl-dbix-dbschema"
-  "perl-want"
+  "perl" {= "5.34.2-r0"}
+  "perl-cache-simple-timedexpiry" {= "0.27-r3"}
+  "perl-class-accessor" {= "0.51-r2"}
+  "perl-class-returnvalue" {= "0.55-r3"}
+  "perl-clone" {= "0.45-r1"}
+  "perl-dbi" {= "1.643-r3"}
+  "perl-dbix-dbschema" {= "0.45-r2"}
+  "perl-want" {= "0.29-r6"}
 ]
 extra-source "perl-dbix-searchbuilder-1.69-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/perl-dbix-searchbuilder-1.69-r0.apk"

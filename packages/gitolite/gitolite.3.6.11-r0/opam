@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "busybox" {= "1.31.1-r22"}
-  "git"
-  "perl"
+  "git" {= "2.26.3-r1"}
+  "perl" {= "5.30.3-r0"}
 ]
 extra-source "gitolite-3.6.11-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/gitolite-3.6.11-r0.apk"

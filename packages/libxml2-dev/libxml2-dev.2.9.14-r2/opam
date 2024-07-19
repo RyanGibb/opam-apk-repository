@@ -8,8 +8,8 @@ remove: [
 depends: [
   "libxml2" {= "2.9.14-r2"}
   "pkgconf" {= "1.8.1-r0"}
-  "xz-dev"
-  "zlib-dev"
+  "xz-dev" {= "5.2.5-r1"}
+  "zlib-dev" {= "1.2.12-r3"}
 ]
 extra-source "libxml2-dev-2.9.14-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/libxml2-dev-2.9.14-r2.apk"

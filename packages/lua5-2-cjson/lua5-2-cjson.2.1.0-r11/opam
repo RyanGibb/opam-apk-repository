@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del lua5.2-cjson"]
 ]
 depends: [
-  "lua5-2"
+  "lua5-2" {= "5.2.4-r13"}
   "musl" {= "1.2.5-r0"}
 ]
 extra-source "lua5.2-cjson-2.1.0-r11.apk" {

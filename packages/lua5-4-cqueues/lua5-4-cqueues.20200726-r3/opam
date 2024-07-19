@@ -8,7 +8,7 @@ remove: [
 depends: [
   "libcrypto1-1" {= "1.1.1w-r1"}
   "libssl1-1" {= "1.1.1w-r1"}
-  "lua5-4"
+  "lua5-4" {= "5.4.4-r5"}
   "musl" {= "1.2.3-r3"}
 ]
 extra-source "lua5.4-cqueues-20200726-r3.apk" {

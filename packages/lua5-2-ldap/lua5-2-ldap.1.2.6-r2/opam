@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libldap" {= "2.6.3-r3"}
-  "lua5-2"
+  "lua5-2" {= "5.2.4-r9"}
   "musl" {= "1.2.3-r3"}
 ]
 extra-source "lua5.2-ldap-1.2.6-r2.apk" {

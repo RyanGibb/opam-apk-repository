@@ -10,7 +10,7 @@ depends: [
   "libip6tc" {= "1.8.10-r3"}
   "libipq" {= "1.8.10-r3"}
   "libxtables" {= "1.8.10-r3"}
-  "linux-headers"
+  "linux-headers" {= "6.6-r0"}
   "pkgconf" {= "2.2.0-r0"}
 ]
 extra-source "iptables-dev-1.8.10-r3.apk" {

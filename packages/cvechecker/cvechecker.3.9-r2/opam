@@ -7,13 +7,13 @@ remove: [
 ]
 depends: [
   "busybox" {= "1.31.1-r22"}
-  "gawk"
+  "gawk" {= "5.1.0-r0"}
   "libconfig" {= "1.7.2-r0"}
-  "libxslt"
+  "libxslt" {= "1.1.35-r0"}
   "mariadb-connector-c" {= "3.1.8-r1"}
   "musl" {= "1.1.24-r10"}
   "sqlite-libs" {= "3.32.1-r1"}
-  "wget"
+  "wget" {= "1.20.3-r1"}
 ]
 extra-source "cvechecker-3.9-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/cvechecker-3.9-r2.apk"

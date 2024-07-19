@@ -6,7 +6,6 @@ remove: [
   ["sh" "-c" "sudo apk del dropbear-ssh"]
 ]
 depends: [
-  "dropbear-dbclient"
   "dropbear-dbclient" {= "2019.78-r1"}
 ]
 conflicts: [

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "libevent" {= "2.1.12-r2"}
   "pkgconf" {= "1.7.4-r1"}
-  "python3"
+  "python3" {= "3.9.17-r0"}
 ]
 extra-source "libevent-dev-2.1.12-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/libevent-dev-2.1.12-r2.apk"

@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del rust"]
 ]
 depends: [
-  "gcc"
+  "gcc" {= "13.2.1_git20231014-r0"}
   "libgcc" {= "13.2.1_git20231014-r0"}
   "libstdc++" {= "13.2.1_git20231014-r0"}
   "llvm17-libs" {= "17.0.5-r0"}
   "musl" {= "1.2.4_git20230717-r4"}
-  "musl-dev"
+  "musl-dev" {= "1.2.4_git20230717-r4"}
   "scudo-malloc" {= "17.0.5-r0"}
 ]
 extra-source "rust-1.76.0-r0.apk" {

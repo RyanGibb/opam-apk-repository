@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del socat-scripts"]
 ]
 depends: [
-  "bash"
+  "bash" {= "5.2.26-r0"}
   "socat" {= "1.8.0.0-r0"}
 ]
 extra-source "socat-scripts-1.8.0.0-r0.apk" {

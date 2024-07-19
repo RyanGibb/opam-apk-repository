@@ -6,14 +6,14 @@ remove: [
   ["sh" "-c" "sudo apk del dmvpn-ca"]
 ]
 depends: [
-  "lua-asn1"
-  "lua-dmvpn"
-  "lua5-2"
-  "lua5-2-lyaml"
-  "lua5-2-ossl"
-  "lua5-2-posix"
-  "lua5-2-sql-sqlite3"
-  "lua5-2-stringy"
+  "lua-asn1" {= "2.2.0-r1"}
+  "lua-dmvpn" {= "1.4.0-r1"}
+  "lua5-2" {= "5.2.4-r12"}
+  "lua5-2-lyaml" {= "6.2.8-r1"}
+  "lua5-2-ossl" {= "20220711-r1"}
+  "lua5-2-posix" {= "36.1-r1"}
+  "lua5-2-sql-sqlite3" {= "2.6.0-r4"}
+  "lua5-2-stringy" {= "0.5.1-r3"}
 ]
 extra-source "dmvpn-ca-1.4.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/dmvpn-ca-1.4.0-r1.apk"

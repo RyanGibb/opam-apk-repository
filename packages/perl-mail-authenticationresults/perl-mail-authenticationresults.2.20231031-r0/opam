@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del perl-mail-authenticationresults"]
 ]
 depends: [
-  "perl"
-  "perl-clone"
-  "perl-json"
+  "perl" {= "5.38.2-r0"}
+  "perl-clone" {= "0.46-r2"}
+  "perl-json" {= "4.10-r1"}
 ]
 extra-source "perl-mail-authenticationresults-2.20231031-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-mail-authenticationresults-2.20231031-r0.apk"

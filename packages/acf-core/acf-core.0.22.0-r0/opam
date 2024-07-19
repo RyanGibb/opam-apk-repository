@@ -6,16 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del acf-core"]
 ]
 depends: [
-  "acf-jquery"
-  "acf-lib"
-  "acf-skins"
+  "acf-jquery" {= "0.4.3-r0"}
+  "acf-lib" {= "0.11.0-r0"}
+  "acf-skins" {= "0.6.0-r1"}
   "busybox" {= "1.31.1-r22"}
-  "haserl-lua5-2"
-  "lua-json4"
-  "lua5-2"
-  "lua5-2-md5"
-  "lua5-2-posix"
-  "lua5-2-subprocess"
+  "haserl-lua5-2" {= "0.9.36-r0"}
+  "lua-json4" {= "1.0.0-r3"}
+  "lua5-2" {= "5.2.4-r7"}
+  "lua5-2-md5" {= "1.2-r3"}
+  "lua5-2-posix" {= "33.4.0-r1"}
+  "lua5-2-subprocess" {= "0.0.20141229-r2"}
 ]
 extra-source "acf-core-0.22.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/acf-core-0.22.0-r0.apk"

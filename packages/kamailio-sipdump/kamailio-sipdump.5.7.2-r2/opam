@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del kamailio-sipdump"]
 ]
 depends: [
-  "kamailio"
+  "kamailio" {= "5.7.2-r2"}
   "musl" {= "1.2.4_git20230717-r4"}
 ]
 extra-source "kamailio-sipdump-5.7.2-r2.apk" {

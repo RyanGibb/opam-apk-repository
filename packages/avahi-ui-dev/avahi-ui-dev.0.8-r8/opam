@@ -8,7 +8,7 @@ remove: [
 depends: [
   "avahi-dev" {= "0.8-r17"}
   "avahi-ui-gtk3" {= "0.8-r8"}
-  "gdbm-dev"
+  "gdbm-dev" {= "1.23-r1"}
   "gtk+3-0-dev" {= "3.24.42-r0"}
   "pkgconf" {= "2.2.0-r0"}
 ]

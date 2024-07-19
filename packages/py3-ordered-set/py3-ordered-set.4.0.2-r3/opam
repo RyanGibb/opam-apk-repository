@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del py3-ordered-set"]
 ]
 depends: [
-  "python3"
+  "python3" {= "3.10.14-r1"}
 ]
 extra-source "py3-ordered-set-4.0.2-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/py3-ordered-set-4.0.2-r3.apk"

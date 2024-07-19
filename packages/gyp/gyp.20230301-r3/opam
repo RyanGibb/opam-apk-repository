@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del gyp"]
 ]
 depends: [
-  "py3-six"
-  "python3"
+  "py3-six" {= "1.16.0-r9"}
+  "python3" {= "3.12.3-r1"}
   "python3" {>= "3.12"}
   "samurai" {= "1.2-r5"}
 ]

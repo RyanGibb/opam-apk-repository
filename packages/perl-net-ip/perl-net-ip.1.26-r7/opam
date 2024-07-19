@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del perl-net-ip"]
 ]
 depends: [
-  "perl"
+  "perl" {= "5.38.2-r0"}
 ]
 extra-source "perl-net-ip-1.26-r7.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-net-ip-1.26-r7.apk"

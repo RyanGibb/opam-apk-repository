@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del libedit-dev"]
 ]
 depends: [
-  "bsd-compat-headers"
+  "bsd-compat-headers" {= "0.7.2-r5"}
   "libedit" {= "20230828.3.1-r3"}
-  "ncurses-dev"
+  "ncurses-dev" {= "6.4_p20231125-r0"}
   "pkgconf" {= "2.1.0-r0"}
 ]
 extra-source "libedit-dev-20230828.3.1-r3.apk" {

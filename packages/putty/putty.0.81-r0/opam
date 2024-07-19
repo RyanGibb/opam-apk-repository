@@ -12,7 +12,7 @@ depends: [
   "gtk+3-0" {= "3.24.41-r0"}
   "libx11" {= "1.8.7-r0"}
   "musl" {= "1.2.4_git20230717-r4"}
-  "ncurses-terminfo-base"
+  "ncurses-terminfo-base" {= "6.4_p20231125-r0"}
   "pango" {= "1.51.0-r0"}
 ]
 extra-source "putty-0.81-r0.apk" {

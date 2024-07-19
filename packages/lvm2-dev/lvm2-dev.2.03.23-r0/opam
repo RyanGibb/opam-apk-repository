@@ -8,7 +8,7 @@ remove: [
 depends: [
   "device-mapper-event-libs" {= "2.03.23-r0"}
   "device-mapper-libs" {= "2.03.23-r0"}
-  "linux-headers"
+  "linux-headers" {= "6.5-r0"}
   "lvm2-libs" {= "2.03.23-r0"}
   "pkgconf" {= "2.1.0-r0"}
 ]

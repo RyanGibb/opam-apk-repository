@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "clang16" {= "16.0.6-r1"}
-  "perl"
+  "perl" {= "5.36.2-r0"}
   "py3-clang16" {= "16.0.6-r1"}
-  "python3"
+  "python3" {= "3.11.8-r0"}
 ]
 extra-source "clang16-analyzer-16.0.6-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/clang16-analyzer-16.0.6-r1.apk"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del btrfs-progs-extra"]
 ]
 depends: [
-  "btrfs-progs"
+  "btrfs-progs" {= "5.15.1-r0"}
   "e2fsprogs-libs" {= "1.46.6-r0"}
   "eudev-libs" {= "3.2.11_pre1-r0"}
   "libblkid" {= "2.37.4-r0"}

@@ -7,31 +7,31 @@ remove: [
 ]
 depends: [
   "busybox" {= "1.33.1-r8"}
-  "fping"
-  "perl"
-  "perl-cgi"
-  "perl-cgi-fast"
-  "perl-cgi-session"
-  "perl-config-grammar"
-  "perl-data-hexdump"
-  "perl-digest-hmac"
-  "perl-fcgi"
-  "perl-io-socket-ssl"
-  "perl-io-tty"
-  "perl-ldap"
-  "perl-libwww"
-  "perl-mozilla-ca"
-  "perl-net-dns"
-  "perl-net-ip"
-  "perl-net-openssh"
-  "perl-net-snmp"
-  "perl-net-telnet"
-  "perl-rrd"
-  "perl-snmp-session"
-  "perl-text-soundex"
-  "perl-uri"
-  "rrdtool"
-  "ttf-dejavu"
+  "fping" {= "5.0-r0"}
+  "perl" {= "5.32.1-r0"}
+  "perl-cgi" {= "4.51-r0"}
+  "perl-cgi-fast" {= "2.15-r1"}
+  "perl-cgi-session" {= "4.48-r3"}
+  "perl-config-grammar" {= "1.13-r2"}
+  "perl-data-hexdump" {= "0.04-r0"}
+  "perl-digest-hmac" {= "1.04-r1"}
+  "perl-fcgi" {= "0.79-r1"}
+  "perl-io-socket-ssl" {= "2.071-r0"}
+  "perl-io-tty" {= "1.16-r0"}
+  "perl-ldap" {= "0.68-r0"}
+  "perl-libwww" {= "6.54-r0"}
+  "perl-mozilla-ca" {= "20211001-r0"}
+  "perl-net-dns" {= "1.31-r0"}
+  "perl-net-ip" {= "1.26-r3"}
+  "perl-net-openssh" {= "0.80-r0"}
+  "perl-net-snmp" {= "6.0.1-r5"}
+  "perl-net-telnet" {= "3.04-r2"}
+  "perl-rrd" {= "1.7.2-r4"}
+  "perl-snmp-session" {= "1.13-r3"}
+  "perl-text-soundex" {= "3.05-r4"}
+  "perl-uri" {= "5.09-r0"}
+  "rrdtool" {= "1.7.2-r4"}
+  "ttf-dejavu" {= "2.37-r1"}
 ]
 extra-source "smokeping-2.7.3-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/smokeping-2.7.3-r5.apk"

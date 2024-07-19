@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del nagios-plugins-disk_smb"]
 ]
 depends: [
-  "nagios-plugins"
-  "perl"
-  "samba-client"
+  "nagios-plugins" {= "2.4.5-r2"}
+  "perl" {= "5.36.2-r0"}
+  "samba-client" {= "4.18.9-r0"}
 ]
 extra-source "nagios-plugins-disk_smb-2.4.5-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/nagios-plugins-disk_smb-2.4.5-r2.apk"

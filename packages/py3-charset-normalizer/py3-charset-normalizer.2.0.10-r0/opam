@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del py3-charset-normalizer"]
 ]
 depends: [
-  "python3"
+  "python3" {= "3.10.14-r1"}
 ]
 extra-source "py3-charset-normalizer-2.0.10-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/py3-charset-normalizer-2.0.10-r0.apk"

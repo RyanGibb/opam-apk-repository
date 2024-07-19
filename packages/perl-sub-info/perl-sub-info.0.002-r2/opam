@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del perl-sub-info"]
 ]
 depends: [
-  "perl"
-  "perl-importer"
-  "perl-test-simple"
+  "perl" {= "5.36.2-r0"}
+  "perl-importer" {= "0.026-r1"}
+  "perl-test-simple" {= "1.302191-r0"}
 ]
 extra-source "perl-sub-info-0.002-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-sub-info-0.002-r2.apk"

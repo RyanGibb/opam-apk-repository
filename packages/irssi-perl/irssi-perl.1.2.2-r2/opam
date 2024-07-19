@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del irssi-perl"]
 ]
 depends: [
-  "irssi"
+  "irssi" {= "1.2.2-r2"}
   "musl" {= "1.1.24-r10"}
-  "perl"
   "perl" {= "5.30.3-r0"}
 ]
 extra-source "irssi-perl-1.2.2-r2.apk" {

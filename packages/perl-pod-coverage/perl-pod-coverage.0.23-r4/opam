@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del perl-pod-coverage"]
 ]
 depends: [
-  "perl"
-  "perl-devel-symdump"
-  "perl-pod-parser"
-  "perl-test-pod"
+  "perl" {= "5.36.2-r0"}
+  "perl-devel-symdump" {= "2.18-r3"}
+  "perl-pod-parser" {= "1.66-r0"}
+  "perl-test-pod" {= "1.52-r3"}
 ]
 extra-source "perl-pod-coverage-0.23-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-pod-coverage-0.23-r4.apk"

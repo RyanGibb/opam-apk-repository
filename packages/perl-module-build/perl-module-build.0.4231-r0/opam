@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del perl-module-build"]
 ]
 depends: [
-  "perl"
+  "perl" {= "5.30.3-r0"}
 ]
 extra-source "perl-module-build-0.4231-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-module-build-0.4231-r0.apk"

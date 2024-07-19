@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del perl-module-install"]
 ]
 depends: [
-  "perl"
-  "perl-file-remove"
-  "perl-module-build"
-  "perl-module-scandeps"
-  "perl-yaml-tiny"
+  "perl" {= "5.36.2-r0"}
+  "perl-file-remove" {= "1.61-r0"}
+  "perl-module-build" {= "0.4234-r0"}
+  "perl-module-scandeps" {= "1.31-r1"}
+  "perl-yaml-tiny" {= "1.74-r0"}
 ]
 extra-source "perl-module-install-1.21-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-module-install-1.21-r0.apk"

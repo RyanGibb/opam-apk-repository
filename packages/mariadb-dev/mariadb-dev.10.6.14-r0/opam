@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del mariadb-dev"]
 ]
 depends: [
-  "mariadb-connector-c-dev"
+  "mariadb-connector-c-dev" {= "3.1.13-r2"}
   "mariadb-embedded" {= "10.6.14-r0"}
-  "openssl-dev"
+  "openssl-dev" {= "1.1.1w-r1"}
   "pkgconf" {= "1.8.1-r0"}
-  "zlib-dev"
+  "zlib-dev" {= "1.2.12-r3"}
 ]
 extra-source "mariadb-dev-10.6.14-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/mariadb-dev-10.6.14-r0.apk"

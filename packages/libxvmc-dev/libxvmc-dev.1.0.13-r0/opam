@@ -7,7 +7,6 @@ remove: [
 ]
 depends: [
   "libx11-dev" {= "1.8.7-r0"}
-  "libxext-dev"
   "libxext-dev" {= "1.3.5-r0"}
   "libxv-dev" {= "1.0.11-r3"}
   "libxvmc" {= "1.0.13-r0"}

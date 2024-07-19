@@ -14,9 +14,9 @@ depends: [
   "libssl1-1" {= "1.1.1w-r1"}
   "libxml2" {= "2.9.14-r2"}
   "musl" {= "1.2.2-r9"}
-  "postgresql-common"
-  "postgresql13-client"
-  "tzdata"
+  "postgresql-common" {= "1.1-r1"}
+  "postgresql13-client" {= "13.13-r0"}
+  "tzdata" {= "2023c-r0"}
 ]
 extra-source "postgresql13-13.13-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/postgresql13-13.13-r0.apk"

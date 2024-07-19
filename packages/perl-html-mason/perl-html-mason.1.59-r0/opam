@@ -6,13 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del perl-html-mason"]
 ]
 depends: [
-  "perl-cache-cache"
-  "perl-cgi"
-  "perl-class-container"
-  "perl-exception-class"
-  "perl-html-parser"
-  "perl-log-any"
-  "perl-params-validate"
+  "perl-cache-cache" {= "1.08-r1"}
+  "perl-cgi" {= "4.47-r0"}
+  "perl-class-container" {= "0.13-r1"}
+  "perl-exception-class" {= "1.44-r1"}
+  "perl-html-parser" {= "3.72-r5"}
+  "perl-log-any" {= "1.708-r0"}
+  "perl-params-validate" {= "1.29-r3"}
 ]
 extra-source "perl-html-mason-1.59-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-html-mason-1.59-r0.apk"

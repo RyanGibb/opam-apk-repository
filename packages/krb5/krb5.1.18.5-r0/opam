@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "e2fsprogs-libs" {= "1.46.2-r1"}
-  "krb5-conf"
+  "krb5-conf" {= "1.0-r2"}
   "krb5-libs" {= "1.18.5-r0"}
   "libcom_err" {= "1.46.2-r1"}
   "musl" {= "1.2.2-r5"}

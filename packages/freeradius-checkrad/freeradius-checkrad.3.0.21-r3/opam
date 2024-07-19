@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del freeradius-checkrad"]
 ]
 depends: [
-  "net-snmp-tools"
-  "perl"
-  "perl-net-telnet"
-  "perl-snmp-session"
+  "net-snmp-tools" {= "5.8-r3"}
+  "perl" {= "5.30.3-r0"}
+  "perl-net-telnet" {= "3.04-r1"}
+  "perl-snmp-session" {= "1.13-r2"}
 ]
 extra-source "freeradius-checkrad-3.0.21-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/freeradius-checkrad-3.0.21-r3.apk"

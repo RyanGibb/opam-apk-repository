@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del perl-uri"]
 ]
 depends: [
-  "perl"
+  "perl" {= "5.30.3-r0"}
 ]
 extra-source "perl-uri-1.76-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-uri-1.76-r0.apk"

@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del ruby-test-unit-doc"]
 ]
 depends: [
-  "ruby"
-  "ruby-power_assert"
+  "ruby" {= "3.3.3-r0"}
+  "ruby-power_assert" {= "2.0.3-r1"}
 ]
 extra-source "ruby-test-unit-doc-3.6.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/ruby-test-unit-doc-3.6.2-r0.apk"

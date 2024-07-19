@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del rsnapshot"]
 ]
 depends: [
-  "perl"
-  "rsync"
+  "perl" {= "5.32.1-r0"}
+  "rsync" {= "3.2.5-r0"}
   ("openssh-client-krb5" {= "8.6_p1-r3"} | "openssh-client-default" {= "8.6_p1-r3"})
 ]
 extra-source "rsnapshot-1.4.3-r1.apk" {

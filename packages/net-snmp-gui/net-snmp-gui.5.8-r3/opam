@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del net-snmp-gui"]
 ]
 depends: [
-  "perl-net-snmp"
+  "perl-net-snmp" {= "6.0.1-r3"}
 ]
 extra-source "net-snmp-gui-5.8-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/net-snmp-gui-5.8-r3.apk"

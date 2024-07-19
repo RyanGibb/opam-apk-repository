@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del boost1.77"]
 ]
 depends: [
-  "boost1-77-libs"
+  "boost1-77-libs" {= "1.77.0-r7"}
   "libgcc" {= "11.2.1_git20220219-r2"}
   "libstdc++" {= "11.2.1_git20220219-r2"}
   "musl" {= "1.2.3-r3"}

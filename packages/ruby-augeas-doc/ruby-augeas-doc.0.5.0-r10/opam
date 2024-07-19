@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del ruby-augeas-doc"]
 ]
 depends: [
-  "ruby"
+  "ruby" {= "3.1.5-r0"}
 ]
 extra-source "ruby-augeas-doc-0.5.0-r10.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ruby-augeas-doc-0.5.0-r10.apk"

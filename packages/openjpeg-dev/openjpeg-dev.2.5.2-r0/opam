@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "openjpeg" {= "2.5.2-r0"}
-  "openjpeg-tools"
+  "openjpeg-tools" {= "2.5.2-r0"}
   "pkgconf" {= "2.2.0-r0"}
 ]
 extra-source "openjpeg-dev-2.5.2-r0.apk" {

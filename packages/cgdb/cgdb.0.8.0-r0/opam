@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del cgdb"]
 ]
 depends: [
-  "gdb"
+  "gdb" {= "12.1-r2"}
   "libgcc" {= "12.2.1_git20220924-r4"}
   "libstdc++" {= "12.2.1_git20220924-r4"}
   "musl" {= "1.2.3-r5"}

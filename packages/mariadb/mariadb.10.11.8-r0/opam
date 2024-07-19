@@ -15,7 +15,7 @@ depends: [
   "libstdc++" {= "13.2.1_git20240309-r0"}
   "libxml2" {= "2.12.7-r0"}
   "linux-pam" {= "1.6.0-r0"}
-  "mariadb-common"
+  "mariadb-common" {= "10.11.8-r0"}
   "musl" {= "1.2.5-r0"}
   "pcre2" {= "10.43-r0"}
   "xz-libs" {= "5.6.1-r3"}

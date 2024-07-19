@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del sdl-dev"]
 ]
 depends: [
-  "libx11-dev"
+  "libx11-dev" {= "1.6.12-r1"}
   "pkgconf" {= "1.7.2-r0"}
   "sdl" {= "1.2.15-r12"}
 ]

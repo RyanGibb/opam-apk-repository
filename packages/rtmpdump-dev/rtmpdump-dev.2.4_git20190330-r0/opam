@@ -10,7 +10,7 @@ depends: [
   "librtmp" {= "2.4_git20190330-r0"}
   "nettle-dev" {= "3.5.1-r2"}
   "pkgconf" {= "1.7.2-r0"}
-  "zlib-dev"
+  "zlib-dev" {= "1.2.12-r3"}
 ]
 extra-source "rtmpdump-dev-2.4_git20190330-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/rtmpdump-dev-2.4_git20190330-r0.apk"

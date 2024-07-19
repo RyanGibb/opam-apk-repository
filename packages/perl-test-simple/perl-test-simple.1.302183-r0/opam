@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del perl-test-simple"]
 ]
 depends: [
-  "perl"
+  "perl" {= "5.32.0-r0"}
 ]
 extra-source "perl-test-simple-1.302183-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/perl-test-simple-1.302183-r0.apk"

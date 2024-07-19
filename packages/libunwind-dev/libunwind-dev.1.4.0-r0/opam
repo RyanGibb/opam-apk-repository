@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del libunwind-dev"]
 ]
 depends: [
-  "libucontext-dev"
+  "libucontext-dev" {= "0.11-r0"}
   "libunwind" {= "1.4.0-r0"}
   "pkgconf" {= "1.7.2-r0"}
 ]

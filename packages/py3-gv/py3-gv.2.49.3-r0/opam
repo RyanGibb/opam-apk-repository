@@ -10,7 +10,7 @@ depends: [
   "libgcc" {= "10.3.1_git20211027-r0"}
   "libstdc++" {= "10.3.1_git20211027-r0"}
   "musl" {= "1.2.2-r9"}
-  "python3"
+  "python3" {= "3.9.18-r0"}
 ]
 extra-source "py3-gv-2.49.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/py3-gv-2.49.3-r0.apk"

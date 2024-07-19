@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del lua5.1-sql-mysql"]
 ]
 depends: [
-  "lua5-1"
+  "lua5-1" {= "5.1.5-r11"}
   "mariadb-connector-c" {= "3.3.3-r0"}
   "musl" {= "1.2.3-r5"}
 ]

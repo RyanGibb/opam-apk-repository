@@ -6,7 +6,6 @@ remove: [
   ["sh" "-c" "sudo apk del gpm-dev"]
 ]
 depends: [
-  "gpm-libs"
   "gpm-libs" {= "1.20.7-r4"}
 ]
 extra-source "gpm-dev-1.20.7-r4.apk" {

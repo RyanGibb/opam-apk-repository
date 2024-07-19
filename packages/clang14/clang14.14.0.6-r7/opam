@@ -8,9 +8,9 @@ remove: [
 depends: [
   "clang14-libclang" {= "14.0.6-r7"}
   "clang14-libs" {= "14.0.6-r7"}
-  "gcc"
+  "gcc" {= "13.2.1_git20231014-r0"}
   "libstdc++" {= "13.2.1_git20231014-r0"}
-  "libstdc++-dev"
+  "libstdc++-dev" {= "13.2.1_git20231014-r0"}
   "llvm14-libs" {= "14.0.6-r17"}
   "musl" {= "1.2.4_git20230717-r4"}
 ]

@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del acf-openssh"]
 ]
 depends: [
-  "acf-core"
-  "openssh"
+  "acf-core" {= "0.22.0-r0"}
+  "openssh" {= "8.3_p1-r3"}
 ]
 extra-source "acf-openssh-0.11.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/acf-openssh-0.11.2-r0.apk"

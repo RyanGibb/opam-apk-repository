@@ -10,8 +10,8 @@ depends: [
   "ldb" {= "2.4.4-r0"}
   "musl" {= "1.2.3-r3"}
   "popt" {= "1.18-r0"}
-  "py3-dnspython"
-  "py3-markdown"
+  "py3-dnspython" {= "2.2.1-r0"}
+  "py3-markdown" {= "3.3.4-r2"}
   "py3-samba" {= "4.15.13-r0"}
   "samba-client-libs" {= "4.15.13-r0"}
   "samba-common" {= "4.15.13-r0"}
@@ -22,7 +22,7 @@ depends: [
   "samba-util-libs" {= "4.15.13-r0"}
   "samba-winbind" {= "4.15.13-r0"}
   "talloc" {= "2.3.3-r1"}
-  "tdb"
+  "tdb" {= "1.4.6-r0"}
   "tdb-libs" {= "1.4.6-r0"}
   "tevent" {= "0.11.0-r1"}
 ]

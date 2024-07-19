@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "jansson" {= "2.13.1-r0"}
-  "kamailio"
+  "kamailio" {= "5.4.5-r1"}
   "libevent" {= "2.1.12-r2"}
   "musl" {= "1.2.2-r5"}
 ]

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "musl" {= "1.2.2-r2"}
-  "uwsgi"
+  "uwsgi" {= "2.0.19.1-r1"}
 ]
 extra-source "uwsgi-transformation_tofile-2.0.19.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/uwsgi-transformation_tofile-2.0.19.1-r1.apk"

@@ -6,16 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del gobject-introspection-dev"]
 ]
 depends: [
-  "cairo-dev"
+  "cairo-dev" {= "1.18.0-r0"}
   "glib" {= "2.80.2-r0"}
   "glib-dev" {= "2.80.2-r0"}
   "gobject-introspection" {= "1.80.1-r2"}
   "libffi" {= "3.4.6-r0"}
-  "libtool"
+  "libtool" {= "2.4.7-r3"}
   "musl" {= "1.2.5-r0"}
   "pkgconf" {= "2.2.0-r0"}
-  "py3-setuptools"
-  "python3"
+  "py3-setuptools" {= "69.5.1-r0"}
+  "python3" {= "3.12.3-r1"}
 ]
 extra-source "gobject-introspection-dev-1.80.1-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/gobject-introspection-dev-1.80.1-r2.apk"

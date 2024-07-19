@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del perl-module-refresh"]
 ]
 depends: [
-  "perl"
+  "perl" {= "5.36.2-r0"}
 ]
 extra-source "perl-module-refresh-0.18-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-module-refresh-0.18-r1.apk"

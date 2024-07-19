@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del kamailio-http_async"]
 ]
 depends: [
-  "kamailio"
+  "kamailio" {= "5.6.3-r1"}
   "libcurl" {= "8.5.0-r0"}
   "libevent" {= "2.1.12-r5"}
   "musl" {= "1.2.3-r5"}

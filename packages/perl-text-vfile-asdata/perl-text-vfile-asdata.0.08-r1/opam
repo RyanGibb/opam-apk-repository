@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del perl-text-vfile-asdata"]
 ]
 depends: [
-  "perl-class-accessor-chained"
+  "perl-class-accessor-chained" {= "0.01-r1"}
 ]
 extra-source "perl-text-vfile-asdata-0.08-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-text-vfile-asdata-0.08-r1.apk"

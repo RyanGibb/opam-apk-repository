@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del perl-ipc-run"]
 ]
 depends: [
-  "perl"
-  "perl-io-tty"
+  "perl" {= "5.36.2-r0"}
+  "perl-io-tty" {= "1.17-r1"}
 ]
 extra-source "perl-ipc-run-20220807.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-ipc-run-20220807.0-r1.apk"

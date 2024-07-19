@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del docs"]
 ]
 depends: [
-  "man-pages"
+  "man-pages" {= "6.8-r0"}
   "mandoc" {= "1.14.6-r13"}
 ]
 extra-source "docs-0.2-r6.apk" {

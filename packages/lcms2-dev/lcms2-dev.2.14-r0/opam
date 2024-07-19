@@ -7,10 +7,10 @@ remove: [
 ]
 depends: [
   "lcms2" {= "2.14-r0"}
-  "libjpeg-turbo-dev"
+  "libjpeg-turbo-dev" {= "2.1.4-r0"}
   "pkgconf" {= "1.9.4-r0"}
-  "tiff-dev"
-  "zlib-dev"
+  "tiff-dev" {= "4.4.0-r4"}
+  "zlib-dev" {= "1.2.13-r0"}
 ]
 extra-source "lcms2-dev-2.14-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lcms2-dev-2.14-r0.apk"

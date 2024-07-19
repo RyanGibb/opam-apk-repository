@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del mtd-utils"]
 ]
 depends: [
-  "mtd-utils-flash"
-  "mtd-utils-jffs"
-  "mtd-utils-misc"
-  "mtd-utils-nand"
-  "mtd-utils-nor"
-  "mtd-utils-ubi"
+  "mtd-utils-flash" {= "2.1.1-r0"}
+  "mtd-utils-jffs" {= "2.1.1-r0"}
+  "mtd-utils-misc" {= "2.1.1-r0"}
+  "mtd-utils-nand" {= "2.1.1-r0"}
+  "mtd-utils-nor" {= "2.1.1-r0"}
+  "mtd-utils-ubi" {= "2.1.1-r0"}
 ]
 extra-source "mtd-utils-2.1.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/mtd-utils-2.1.1-r0.apk"

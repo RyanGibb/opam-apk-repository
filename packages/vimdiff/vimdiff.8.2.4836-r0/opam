@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del vimdiff"]
 ]
 depends: [
-  "diffutils"
-  "vim"
+  "diffutils" {= "3.7-r0"}
+  "vim" {= "8.2.4836-r0"}
 ]
 extra-source "vimdiff-8.2.4836-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/vimdiff-8.2.4836-r0.apk"

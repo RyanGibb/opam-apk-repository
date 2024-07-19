@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "expat" {= "2.5.0-r0"}
-  "gdb"
+  "gdb" {= "11.1-r0"}
   "gmp" {= "6.2.1-r1"}
   "libgcc" {= "10.3.1_git20211027-r0"}
   "libstdc++" {= "10.3.1_git20211027-r0"}

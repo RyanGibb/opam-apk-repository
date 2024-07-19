@@ -8,7 +8,7 @@ remove: [
 depends: [
   "libpcap" {= "1.10.4-r1"}
   "musl" {= "1.2.5-r0"}
-  "python3"
+  "python3" {= "3.12.3-r1"}
   ("busybox-binsh" {= "1.36.1-r29"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.56.1-r1"})
 ]
 extra-source "arpwatch-3.6-r0.apk" {

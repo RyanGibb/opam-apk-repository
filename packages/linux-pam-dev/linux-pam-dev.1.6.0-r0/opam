@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del linux-pam-dev"]
 ]
 depends: [
-  "gettext-dev"
+  "gettext-dev" {= "0.22.5-r0"}
   "linux-pam" {= "1.6.0-r0"}
   "pkgconf" {= "2.2.0-r0"}
 ]

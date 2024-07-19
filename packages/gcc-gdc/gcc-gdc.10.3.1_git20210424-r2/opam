@@ -10,11 +10,11 @@ depends: [
   "gmp" {= "6.2.1-r1"}
   "isl22" {= "0.22-r0"}
   "libgphobos" {= "10.3.1_git20210424-r2"}
-  "libucontext-dev"
+  "libucontext-dev" {= "1.1-r0"}
   "mpc1" {= "1.2.1-r0"}
   "mpfr4" {= "4.1.0-r0"}
   "musl" {= "1.2.2-r5"}
-  "musl-dev"
+  "musl-dev" {= "1.2.2-r5"}
   "zlib" {= "1.2.12-r3"}
 ]
 extra-source "gcc-gdc-10.3.1_git20210424-r2.apk" {

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del apache2-ctl"]
 ]
 depends: [
-  "lynx"
+  "lynx" {= "2.8.9_p1-r1"}
 ]
 extra-source "apache2-ctl-2.4.54-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/apache2-ctl-2.4.54-r0.apk"

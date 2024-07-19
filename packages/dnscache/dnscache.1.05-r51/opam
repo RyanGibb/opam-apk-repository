@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del dnscache"]
 ]
 depends: [
-  "djbdns-common"
+  "djbdns-common" {= "1.05-r51"}
   "musl" {= "1.2.4-r2"}
   ("busybox-binsh" {= "1.36.1-r7"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.54-r3"})
 ]

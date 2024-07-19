@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del fail2ban"]
 ]
 depends: [
-  "ip6tables"
-  "iptables"
-  "logrotate"
-  "python3"
+  "ip6tables" {= "1.8.7-r1"}
+  "iptables" {= "1.8.7-r1"}
+  "logrotate" {= "3.18.1-r4"}
+  "python3" {= "3.9.17-r0"}
 ]
 extra-source "fail2ban-0.11.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/fail2ban-0.11.2-r0.apk"

@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del fail2ban-pyc"]
 ]
 depends: [
-  "ip6tables"
-  "iptables"
-  "logrotate"
-  "python3"
+  "ip6tables" {= "1.8.9-r2"}
+  "iptables" {= "1.8.9-r2"}
+  "logrotate" {= "3.21.0-r1"}
+  "python3" {= "3.11.8-r0"}
   "python3" {>= "3.11"}
 ]
 extra-source "fail2ban-pyc-1.0.2-r2.apk" {

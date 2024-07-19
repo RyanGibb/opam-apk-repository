@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del icon-naming-utils"]
 ]
 depends: [
-  "perl-xml-simple"
+  "perl-xml-simple" {= "2.25-r2"}
   "pkgconf" {= "1.9.4-r0"}
 ]
 extra-source "icon-naming-utils-0.8.90-r3.apk" {

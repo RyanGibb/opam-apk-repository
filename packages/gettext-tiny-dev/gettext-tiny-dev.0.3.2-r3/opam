@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "gettext-tiny" {= "0.3.2-r3"}
-  "musl-libintl"
+  "musl-libintl" {= "1.2.3-r5"}
 ]
 extra-source "gettext-tiny-dev-0.3.2-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gettext-tiny-dev-0.3.2-r3.apk"

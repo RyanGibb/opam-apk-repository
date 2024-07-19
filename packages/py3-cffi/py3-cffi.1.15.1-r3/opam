@@ -8,7 +8,7 @@ remove: [
 depends: [
   "libffi" {= "3.4.4-r2"}
   "musl" {= "1.2.4-r2"}
-  "py3-cparser"
+  "py3-cparser" {= "2.21-r2"}
   "python3" {>= "3.11"}
 ]
 extra-source "py3-cffi-1.15.1-r3.apk" {

@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del py3-hatchling"]
 ]
 depends: [
-  "py3-editables"
-  "py3-packaging"
-  "py3-pathspec"
-  "py3-pluggy"
-  "py3-trove-classifiers"
-  "python3"
+  "py3-editables" {= "0.5-r2"}
+  "py3-packaging" {= "24.0-r1"}
+  "py3-pathspec" {= "0.12.1-r2"}
+  "py3-pluggy" {= "1.5.0-r0"}
+  "py3-trove-classifiers" {= "2024.5.17-r0"}
+  "python3" {= "3.12.3-r1"}
   "python3" {>= "3.12"}
 ]
 extra-source "py3-hatchling-1.24.2-r0.apk" {

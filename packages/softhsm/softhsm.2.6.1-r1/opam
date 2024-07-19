@@ -10,7 +10,7 @@ depends: [
   "libgcc" {= "10.3.1_git20210424-r2"}
   "libstdc++" {= "10.3.1_git20210424-r2"}
   "musl" {= "1.2.2-r5"}
-  "sqlite"
+  "sqlite" {= "3.35.5-r0"}
   "sqlite-libs" {= "3.35.5-r0"}
 ]
 extra-source "softhsm-2.6.1-r1.apk" {

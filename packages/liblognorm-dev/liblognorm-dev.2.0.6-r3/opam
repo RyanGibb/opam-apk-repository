@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del liblognorm-dev"]
 ]
 depends: [
-  "libestr-dev"
+  "libestr-dev" {= "0.1.11-r2"}
   "libfastjson-dev" {= "1.2304.0-r0"}
   "liblognorm" {= "2.0.6-r3"}
   "pkgconf" {= "1.9.4-r0"}

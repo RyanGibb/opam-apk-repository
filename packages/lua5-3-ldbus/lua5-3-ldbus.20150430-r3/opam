@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "dbus-libs" {= "1.14.8-r0"}
-  "lua5-3"
+  "lua5-3" {= "5.3.6-r4"}
   "musl" {= "1.2.3-r5"}
 ]
 extra-source "lua5.3-ldbus-20150430-r3.apk" {

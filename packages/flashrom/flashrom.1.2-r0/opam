@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "busybox" {= "1.35.0-r18"}
-  "dmidecode"
+  "dmidecode" {= "3.3-r1"}
   "libusb" {= "1.0.26-r0"}
   "musl" {= "1.2.3-r3"}
   "pciutils-libs" {= "3.8.0-r0"}

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del gdb-multiarch"]
 ]
 depends: [
-  "gdb"
+  "gdb" {= "12.1-r2"}
   "gmp" {= "6.2.1-r2"}
   "libexpat" {= "2.6.2-r0"}
   "libgcc" {= "12.2.1_git20220924-r4"}

@@ -10,8 +10,8 @@ depends: [
   "ldb" {= "2.5.3-r0"}
   "musl" {= "1.2.3-r5"}
   "popt" {= "1.19-r0"}
-  "py3-dnspython"
-  "py3-markdown"
+  "py3-dnspython" {= "2.2.1-r0"}
+  "py3-markdown" {= "3.4.1-r0"}
   "py3-samba" {= "4.16.11-r0"}
   "samba-client-libs" {= "4.16.11-r0"}
   "samba-common" {= "4.16.11-r0"}

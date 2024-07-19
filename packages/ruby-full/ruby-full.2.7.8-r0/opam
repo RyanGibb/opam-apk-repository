@@ -6,25 +6,25 @@ remove: [
   ["sh" "-c" "sudo apk del ruby-full"]
 ]
 depends: [
-  "ruby"
-  "ruby-bigdecimal"
-  "ruby-bundler"
-  "ruby-dbg"
-  "ruby-etc"
-  "ruby-fiddle"
-  "ruby-gdbm"
-  "ruby-io-console"
-  "ruby-irb"
-  "ruby-json"
-  "ruby-minitest"
-  "ruby-net-telnet"
-  "ruby-power_assert"
-  "ruby-rake"
-  "ruby-rdoc"
-  "ruby-sdbm"
-  "ruby-test-unit"
-  "ruby-webrick"
-  "ruby-xmlrpc"
+  "ruby" {= "2.7.8-r0"}
+  "ruby-bigdecimal" {= "2.7.8-r0"}
+  "ruby-bundler" {= "2.2.20-r0"}
+  "ruby-dbg" {= "2.7.8-r0"}
+  "ruby-etc" {= "2.7.8-r0"}
+  "ruby-fiddle" {= "2.7.8-r0"}
+  "ruby-gdbm" {= "2.7.8-r0"}
+  "ruby-io-console" {= "2.7.8-r0"}
+  "ruby-irb" {= "2.7.8-r0"}
+  "ruby-json" {= "2.7.8-r0"}
+  "ruby-minitest" {= "2.7.8-r0"}
+  "ruby-net-telnet" {= "2.7.8-r0"}
+  "ruby-power_assert" {= "2.7.8-r0"}
+  "ruby-rake" {= "2.7.8-r0"}
+  "ruby-rdoc" {= "2.7.8-r0"}
+  "ruby-sdbm" {= "2.7.8-r0"}
+  "ruby-test-unit" {= "2.7.8-r0"}
+  "ruby-webrick" {= "2.7.8-r0"}
+  "ruby-xmlrpc" {= "2.7.8-r0"}
 ]
 extra-source "ruby-full-2.7.8-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/ruby-full-2.7.8-r0.apk"

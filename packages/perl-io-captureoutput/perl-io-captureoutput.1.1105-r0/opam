@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del perl-io-captureoutput"]
 ]
 depends: [
-  "perl"
+  "perl" {= "5.30.3-r0"}
 ]
 extra-source "perl-io-captureoutput-1.1105-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-io-captureoutput-1.1105-r0.apk"

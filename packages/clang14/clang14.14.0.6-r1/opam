@@ -10,7 +10,7 @@ depends: [
   "clang14-libs" {= "14.0.6-r1"}
   "libgcc" {= "12.2.1_git20220924-r4"}
   "libstdc++" {= "12.2.1_git20220924-r4"}
-  "libstdc++-dev"
+  "libstdc++-dev" {= "12.2.1_git20220924-r4"}
   "libxml2" {= "2.10.4-r0"}
   "llvm14-libs" {= "14.0.6-r7"}
   "musl" {= "1.2.3-r5"}

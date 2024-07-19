@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del varnish-dbg"]
 ]
 depends: [
-  "gcc"
-  "libgcc"
+  "gcc" {= "13.2.1_git20240309-r0"}
+  "libgcc" {= "13.2.1_git20240309-r0"}
   "musl-dev" {= "1.2.5-r0"}
 ]
 extra-source "varnish-dbg-7.5.0-r0.apk" {

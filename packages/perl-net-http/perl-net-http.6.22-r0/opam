@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del perl-net-http"]
 ]
 depends: [
-  "perl"
-  "perl-uri"
+  "perl" {= "5.36.2-r0"}
+  "perl-uri" {= "5.19-r0"}
 ]
 extra-source "perl-net-http-6.22-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-net-http-6.22-r0.apk"

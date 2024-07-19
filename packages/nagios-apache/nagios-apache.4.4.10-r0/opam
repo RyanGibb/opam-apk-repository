@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del nagios-apache"]
 ]
 depends: [
-  "apache2"
-  "apache2-utils"
+  "apache2" {= "2.4.61-r0"}
+  "apache2-utils" {= "2.4.61-r0"}
 ]
 extra-source "nagios-apache-4.4.10-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nagios-apache-4.4.10-r0.apk"

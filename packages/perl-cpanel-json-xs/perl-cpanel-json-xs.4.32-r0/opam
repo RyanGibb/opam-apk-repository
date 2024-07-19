@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "musl" {= "1.2.3-r5"}
-  "perl"
+  "perl" {= "5.36.2-r0"}
 ]
 extra-source "perl-cpanel-json-xs-4.32-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-cpanel-json-xs-4.32-r0.apk"

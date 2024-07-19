@@ -6,13 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del docbook2x"]
 ]
 depends: [
-  "docbook-xml"
-  "docbook-xsl"
-  "libxslt"
+  "docbook-xml" {= "4.5-r8"}
+  "docbook-xsl" {= "1.79.2-r8"}
+  "libxslt" {= "1.1.37-r1"}
   "musl" {= "1.2.3-r5"}
-  "openjade"
-  "perl-xml-sax"
-  "texinfo"
+  "openjade" {= "1.3.2-r7"}
+  "perl-xml-sax" {= "1.02-r1"}
+  "texinfo" {= "7.0.1-r0"}
 ]
 extra-source "docbook2x-0.8.8-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/docbook2x-0.8.8-r8.apk"

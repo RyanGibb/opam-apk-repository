@@ -8,7 +8,7 @@ remove: [
 depends: [
   "clamav-libs" {= "0.103.6-r0"}
   "clamav-libunrar" {= "0.103.6-r0"}
-  "openssl-dev"
+  "openssl-dev" {= "1.1.1s-r0"}
   "pkgconf" {= "1.7.3-r0"}
 ]
 extra-source "clamav-dev-0.103.6-r0.apk" {

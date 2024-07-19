@@ -6,38 +6,38 @@ remove: [
   ["sh" "-c" "sudo apk del boost1.75-libs"]
 ]
 depends: [
-  "boost1-75-atomic"
-  "boost1-75-chrono"
-  "boost1-75-container"
-  "boost1-75-context"
-  "boost1-75-contract"
-  "boost1-75-coroutine"
-  "boost1-75-date_time"
-  "boost1-75-fiber"
-  "boost1-75-filesystem"
-  "boost1-75-graph"
-  "boost1-75-iostreams"
-  "boost1-75-json"
-  "boost1-75-locale"
-  "boost1-75-log"
-  "boost1-75-log_setup"
-  "boost1-75-math"
-  "boost1-75-nowide"
-  "boost1-75-prg_exec_monitor"
-  "boost1-75-program_options"
-  "boost1-75-python3"
-  "boost1-75-random"
-  "boost1-75-regex"
-  "boost1-75-serialization"
-  "boost1-75-stacktrace_basic"
-  "boost1-75-stacktrace_noop"
-  "boost1-75-system"
-  "boost1-75-thread"
-  "boost1-75-timer"
-  "boost1-75-type_erasure"
-  "boost1-75-unit_test_framework"
-  "boost1-75-wave"
-  "boost1-75-wserialization"
+  "boost1-75-atomic" {= "1.75.0-r8"}
+  "boost1-75-chrono" {= "1.75.0-r8"}
+  "boost1-75-container" {= "1.75.0-r8"}
+  "boost1-75-context" {= "1.75.0-r8"}
+  "boost1-75-contract" {= "1.75.0-r8"}
+  "boost1-75-coroutine" {= "1.75.0-r8"}
+  "boost1-75-date_time" {= "1.75.0-r8"}
+  "boost1-75-fiber" {= "1.75.0-r8"}
+  "boost1-75-filesystem" {= "1.75.0-r8"}
+  "boost1-75-graph" {= "1.75.0-r8"}
+  "boost1-75-iostreams" {= "1.75.0-r8"}
+  "boost1-75-json" {= "1.75.0-r8"}
+  "boost1-75-locale" {= "1.75.0-r8"}
+  "boost1-75-log" {= "1.75.0-r8"}
+  "boost1-75-log_setup" {= "1.75.0-r8"}
+  "boost1-75-math" {= "1.75.0-r8"}
+  "boost1-75-nowide" {= "1.75.0-r8"}
+  "boost1-75-prg_exec_monitor" {= "1.75.0-r8"}
+  "boost1-75-program_options" {= "1.75.0-r8"}
+  "boost1-75-python3" {= "1.75.0-r8"}
+  "boost1-75-random" {= "1.75.0-r8"}
+  "boost1-75-regex" {= "1.75.0-r8"}
+  "boost1-75-serialization" {= "1.75.0-r8"}
+  "boost1-75-stacktrace_basic" {= "1.75.0-r8"}
+  "boost1-75-stacktrace_noop" {= "1.75.0-r8"}
+  "boost1-75-system" {= "1.75.0-r8"}
+  "boost1-75-thread" {= "1.75.0-r8"}
+  "boost1-75-timer" {= "1.75.0-r8"}
+  "boost1-75-type_erasure" {= "1.75.0-r8"}
+  "boost1-75-unit_test_framework" {= "1.75.0-r8"}
+  "boost1-75-wave" {= "1.75.0-r8"}
+  "boost1-75-wserialization" {= "1.75.0-r8"}
 ]
 extra-source "boost1.75-libs-1.75.0-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/boost1.75-libs-1.75.0-r8.apk"

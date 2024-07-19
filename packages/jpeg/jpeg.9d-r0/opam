@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del jpeg"]
 ]
 depends: [
-  "libjpeg-turbo-utils"
+  "libjpeg-turbo-utils" {= "2.1.0-r0"}
 ]
 extra-source "jpeg-9d-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/jpeg-9d-r0.apk"

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del multipath-tools"]
 ]
 depends: [
-  "device-mapper"
+  "device-mapper" {= "2.02.187-r2"}
   "device-mapper-libs" {= "2.02.187-r2"}
-  "eudev"
+  "eudev" {= "3.2.11_pre1-r0"}
   "eudev-libs" {= "3.2.11_pre1-r0"}
   "json-c" {= "0.15-r1"}
   "libaio" {= "0.3.112-r1"}

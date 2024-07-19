@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "busybox" {= "1.35.0-r18"}
-  "perl"
-  "perl-config-inifiles"
-  "perl-list-moreutils"
+  "perl" {= "5.34.2-r0"}
+  "perl-config-inifiles" {= "3.000003-r1"}
+  "perl-list-moreutils" {= "0.430-r0"}
 ]
 extra-source "snmptt-1.4.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/snmptt-1.4.2-r0.apk"

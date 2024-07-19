@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del acf-dnsmasq"]
 ]
 depends: [
-  "acf-core"
-  "dnsmasq"
+  "acf-core" {= "0.22.0-r0"}
+  "dnsmasq" {= "2.85-r0"}
 ]
 extra-source "acf-dnsmasq-0.7.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/acf-dnsmasq-0.7.1-r0.apk"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "musl" {= "1.1.24-r10"}
-  "pgtcl"
+  "pgtcl" {= "2.1.0-r0"}
   "tcl" {= "8.6.10-r0"}
 ]
 extra-source "postgresql-pltcl-12.10-r0.apk" {

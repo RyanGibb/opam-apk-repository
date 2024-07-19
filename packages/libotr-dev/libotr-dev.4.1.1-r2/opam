@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del libotr-dev"]
 ]
 depends: [
-  "libgcrypt-dev"
+  "libgcrypt-dev" {= "1.10.1-r0"}
   "libotr" {= "4.1.1-r2"}
   "pkgconf" {= "1.8.1-r0"}
 ]

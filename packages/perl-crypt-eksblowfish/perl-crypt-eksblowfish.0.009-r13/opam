@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "musl" {= "1.2.5-r0"}
-  "perl"
-  "perl-class-mix"
+  "perl" {= "5.38.2-r0"}
+  "perl-class-mix" {= "0.006-r4"}
 ]
 extra-source "perl-crypt-eksblowfish-0.009-r13.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-crypt-eksblowfish-0.009-r13.apk"

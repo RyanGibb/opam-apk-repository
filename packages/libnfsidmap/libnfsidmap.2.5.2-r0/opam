@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "musl" {= "1.2.2-r2"}
-  "rpcbind"
+  "rpcbind" {= "1.2.5-r0"}
 ]
 extra-source "libnfsidmap-2.5.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/libnfsidmap-2.5.2-r0.apk"

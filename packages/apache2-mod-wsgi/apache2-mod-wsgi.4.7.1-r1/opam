@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del apache2-mod-wsgi"]
 ]
 depends: [
-  "apache2"
+  "apache2" {= "2.4.58-r0"}
   "musl" {= "1.2.2-r9"}
   "python3" {= "3.9.18-r0"}
 ]

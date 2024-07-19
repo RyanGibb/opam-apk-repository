@@ -8,7 +8,7 @@ remove: [
 depends: [
   "at-spi2-atk" {= "2.38.0-r0"}
   "at-spi2-core-dev" {= "2.44.1-r0"}
-  "atk-dev"
+  "atk-dev" {= "2.38.0-r0"}
   "dbus-dev" {= "1.14.8-r0"}
   "glib-dev" {= "2.72.4-r0"}
   "pkgconf" {= "1.8.1-r0"}

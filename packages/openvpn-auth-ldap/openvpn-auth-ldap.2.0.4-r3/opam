@@ -10,7 +10,7 @@ depends: [
   "libldap" {= "2.4.58-r0"}
   "libobjc" {= "10.3.1_git20210424-r2"}
   "musl" {= "1.2.2-r5"}
-  "openvpn"
+  "openvpn" {= "2.5.6-r0"}
 ]
 extra-source "openvpn-auth-ldap-2.0.4-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/openvpn-auth-ldap-2.0.4-r3.apk"

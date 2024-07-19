@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del kamailio-mysql"]
 ]
 depends: [
-  "kamailio"
   "kamailio" {= "5.8.1-r1"}
-  "kamailio-db"
+  "kamailio-db" {= "5.8.1-r1"}
   "mariadb-connector-c" {= "3.3.10-r0"}
   "musl" {= "1.2.5-r0"}
 ]

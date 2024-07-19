@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del etckeeper"]
 ]
 depends: [
-  "findutils"
-  "git"
+  "findutils" {= "4.9.0-r5"}
+  "git" {= "2.43.4-r0"}
   ("busybox-binsh" {= "1.36.1-r19"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.55-r0"})
 ]
 extra-source "etckeeper-1.18.21-r0.apk" {

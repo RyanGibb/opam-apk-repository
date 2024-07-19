@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del perl-inc-latest"]
 ]
 depends: [
-  "perl"
+  "perl" {= "5.32.0-r0"}
 ]
 extra-source "perl-inc-latest-0.500-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/perl-inc-latest-0.500-r0.apk"

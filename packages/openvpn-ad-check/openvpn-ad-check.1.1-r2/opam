@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del openvpn-ad-check"]
 ]
 depends: [
-  "lua-ldap"
-  "openvpn"
+  "lua-ldap" {= "1.2.6-r2"}
+  "openvpn" {= "2.5.6-r1"}
 ]
 extra-source "openvpn-ad-check-1.1-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/openvpn-ad-check-1.1-r2.apk"

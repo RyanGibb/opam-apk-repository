@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "musl" {= "1.2.3-r3"}
-  "unzip"
+  "unzip" {= "6.0-r9"}
 ]
 extra-source "zip-3.0-r9.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/zip-3.0-r9.apk"

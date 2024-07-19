@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del acf-db-lib"]
 ]
 depends: [
-  "acf-core"
-  "acf-lib"
+  "acf-core" {= "0.24.0-r0"}
+  "acf-lib" {= "0.11.1-r0"}
   ("lua5-1" {= "5.1.5-r13"} | "lua5-2" {= "5.2.4-r13"} | "lua5-3" {= "5.3.6-r6"} | "lua5-4" {= "5.4.6-r1"} | "luajit" {= "2.1_p20240314-r0"})
 ]
 extra-source "acf-db-lib-0.2.1-r4.apk" {

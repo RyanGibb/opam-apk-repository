@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del bind-dnssec-root"]
 ]
 depends: [
-  "dnssec-root"
+  "dnssec-root" {= "20190225-r0"}
 ]
 extra-source "bind-dnssec-root-9.16.27-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/bind-dnssec-root-9.16.27-r1.apk"

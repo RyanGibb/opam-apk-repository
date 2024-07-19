@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del lua-resty-core"]
 ]
 depends: [
-  "lua-resty-lrucache"
-  "luajit"
+  "lua-resty-lrucache" {= "0.13-r0"}
+  "luajit" {= "2.1_p20210510-r3"}
 ]
 extra-source "lua-resty-core-0.1.24-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lua-resty-core-0.1.24-r0.apk"

@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del tiny-cloud-network"]
 ]
 depends: [
-  "ifupdown-ng"
-  "iproute2-minimal"
+  "ifupdown-ng" {= "0.12.1-r0"}
+  "iproute2-minimal" {= "5.17.0-r0"}
   "tiny-cloud" {= "2.0.0-r0"}
 ]
 extra-source "tiny-cloud-network-2.0.0-r0.apk" {

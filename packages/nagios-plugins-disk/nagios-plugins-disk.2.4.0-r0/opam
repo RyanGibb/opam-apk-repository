@@ -8,7 +8,7 @@ remove: [
 depends: [
   "libcrypto1-1" {= "1.1.1w-r1"}
   "musl" {= "1.2.3-r3"}
-  "nagios-plugins"
+  "nagios-plugins" {= "2.4.0-r0"}
 ]
 extra-source "nagios-plugins-disk-2.4.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/nagios-plugins-disk-2.4.0-r0.apk"

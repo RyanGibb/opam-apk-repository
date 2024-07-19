@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del perl-pod-parser"]
 ]
 depends: [
-  "perl"
+  "perl" {= "5.38.2-r0"}
 ]
 extra-source "perl-pod-parser-1.66-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/perl-pod-parser-1.66-r2.apk"

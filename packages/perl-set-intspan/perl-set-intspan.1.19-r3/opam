@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del perl-set-intspan"]
 ]
 depends: [
-  "perl"
+  "perl" {= "5.36.2-r0"}
 ]
 extra-source "perl-set-intspan-1.19-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-set-intspan-1.19-r3.apk"

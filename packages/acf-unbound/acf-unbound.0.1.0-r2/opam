@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del acf-unbound"]
 ]
 depends: [
-  "acf-core"
-  "unbound"
+  "acf-core" {= "0.22.0-r0"}
+  "unbound" {= "1.10.1-r0"}
 ]
 extra-source "acf-unbound-0.1.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/acf-unbound-0.1.0-r2.apk"

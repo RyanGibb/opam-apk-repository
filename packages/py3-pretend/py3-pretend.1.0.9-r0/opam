@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del py3-pretend"]
 ]
 depends: [
-  "python3"
+  "python3" {= "3.8.15-r0"}
 ]
 extra-source "py3-pretend-1.0.9-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/py3-pretend-1.0.9-r0.apk"

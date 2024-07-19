@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del aconf-mod-dnsmasq"]
 ]
 depends: [
-  "aconf"
-  "dnsmasq"
+  "aconf" {= "0.8.1-r0"}
+  "dnsmasq" {= "2.85-r0"}
 ]
 extra-source "aconf-mod-dnsmasq-0.8.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/aconf-mod-dnsmasq-0.8.1-r0.apk"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del uwsgi-router_hash"]
 ]
 depends: [
-  "uwsgi"
+  "uwsgi" {= "2.0.18-r8"}
 ]
 extra-source "uwsgi-router_hash-2.0.18-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/uwsgi-router_hash-2.0.18-r8.apk"

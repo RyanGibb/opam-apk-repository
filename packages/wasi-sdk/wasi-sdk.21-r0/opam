@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del wasi-sdk"]
 ]
 depends: [
-  "wasi-compiler-rt"
-  "wasi-libc"
-  "wasi-libcxx"
+  "wasi-compiler-rt" {= "17.0.6-r1"}
+  "wasi-libc" {= "0.20231215-r0"}
+  "wasi-libcxx" {= "17.0.6-r1"}
 ]
 extra-source "wasi-sdk-21-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/wasi-sdk-21-r0.apk"

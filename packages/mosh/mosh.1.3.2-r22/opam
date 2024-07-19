@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del mosh"]
 ]
 depends: [
-  "mosh-client"
-  "mosh-server"
+  "mosh-client" {= "1.3.2-r22"}
+  "mosh-server" {= "1.3.2-r22"}
 ]
 extra-source "mosh-1.3.2-r22.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/mosh-1.3.2-r22.apk"

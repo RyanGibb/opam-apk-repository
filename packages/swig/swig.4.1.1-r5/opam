@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del swig"]
 ]
 depends: [
-  "guile"
+  "guile" {= "3.0.9-r0"}
   "libgcc" {= "13.2.1_git20231014-r0"}
   "libstdc++" {= "13.2.1_git20231014-r0"}
   "musl" {= "1.2.4_git20230717-r4"}

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del ifupdown-ng-wifi"]
 ]
 depends: [
-  "wpa_supplicant"
+  "wpa_supplicant" {= "2.10-r10"}
 ]
 extra-source "ifupdown-ng-wifi-0.12.1-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/ifupdown-ng-wifi-0.12.1-r4.apk"

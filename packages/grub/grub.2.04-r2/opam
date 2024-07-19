@@ -8,7 +8,7 @@ remove: [
 depends: [
   "busybox" {= "1.32.1-r9"}
   "device-mapper-libs" {= "2.02.187-r1"}
-  "mkinitfs"
+  "mkinitfs" {= "3.5.0-r0"}
   "musl" {= "1.2.2-r2"}
   "xz-libs" {= "5.2.5-r1"}
 ]

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del perl-css-squish"]
 ]
 depends: [
-  "perl"
-  "perl-test-longstring"
-  "perl-uri"
+  "perl" {= "5.36.2-r0"}
+  "perl-test-longstring" {= "0.17-r2"}
+  "perl-uri" {= "5.19-r0"}
 ]
 extra-source "perl-css-squish-0.10-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-css-squish-0.10-r3.apk"

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del dkimproxy"]
 ]
 depends: [
-  "perl-error"
-  "perl-mail-dkim"
-  "perl-net-server"
+  "perl-error" {= "0.17029-r1"}
+  "perl-mail-dkim" {= "1.20220520-r0"}
+  "perl-net-server" {= "2.010-r1"}
   ("yash-binsh" {= "2.53-r2"} | "busybox-binsh" {= "1.35.0-r31"} | "dash-binsh" {= "0.5.11.5-r2"})
 ]
 extra-source "dkimproxy-1.4.1-r7.apk" {

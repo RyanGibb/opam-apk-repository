@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "expat" {= "2.5.0-r0"}
-  "expat-dev"
-  "libffi-dev"
+  "expat-dev" {= "2.5.0-r0"}
+  "libffi-dev" {= "3.4.2-r1"}
   "libxml2" {= "2.9.14-r2"}
   "musl" {= "1.2.2-r9"}
   "pkgconf" {= "1.8.1-r0"}

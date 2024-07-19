@@ -6,39 +6,39 @@ remove: [
   ["sh" "-c" "sudo apk del boost1.82-libs"]
 ]
 depends: [
-  "boost1-82-atomic"
-  "boost1-82-chrono"
-  "boost1-82-container"
-  "boost1-82-context"
-  "boost1-82-contract"
-  "boost1-82-coroutine"
-  "boost1-82-date_time"
-  "boost1-82-fiber"
-  "boost1-82-filesystem"
-  "boost1-82-graph"
-  "boost1-82-iostreams"
-  "boost1-82-json"
-  "boost1-82-locale"
-  "boost1-82-log"
-  "boost1-82-log_setup"
-  "boost1-82-math"
-  "boost1-82-nowide"
-  "boost1-82-prg_exec_monitor"
-  "boost1-82-program_options"
-  "boost1-82-python3"
-  "boost1-82-random"
-  "boost1-82-regex"
-  "boost1-82-serialization"
-  "boost1-82-stacktrace_basic"
-  "boost1-82-stacktrace_noop"
-  "boost1-82-system"
-  "boost1-82-thread"
-  "boost1-82-timer"
-  "boost1-82-type_erasure"
-  "boost1-82-unit_test_framework"
-  "boost1-82-url"
-  "boost1-82-wave"
-  "boost1-82-wserialization"
+  "boost1-82-atomic" {= "1.82.0-r5"}
+  "boost1-82-chrono" {= "1.82.0-r5"}
+  "boost1-82-container" {= "1.82.0-r5"}
+  "boost1-82-context" {= "1.82.0-r5"}
+  "boost1-82-contract" {= "1.82.0-r5"}
+  "boost1-82-coroutine" {= "1.82.0-r5"}
+  "boost1-82-date_time" {= "1.82.0-r5"}
+  "boost1-82-fiber" {= "1.82.0-r5"}
+  "boost1-82-filesystem" {= "1.82.0-r5"}
+  "boost1-82-graph" {= "1.82.0-r5"}
+  "boost1-82-iostreams" {= "1.82.0-r5"}
+  "boost1-82-json" {= "1.82.0-r5"}
+  "boost1-82-locale" {= "1.82.0-r5"}
+  "boost1-82-log" {= "1.82.0-r5"}
+  "boost1-82-log_setup" {= "1.82.0-r5"}
+  "boost1-82-math" {= "1.82.0-r5"}
+  "boost1-82-nowide" {= "1.82.0-r5"}
+  "boost1-82-prg_exec_monitor" {= "1.82.0-r5"}
+  "boost1-82-program_options" {= "1.82.0-r5"}
+  "boost1-82-python3" {= "1.82.0-r5"}
+  "boost1-82-random" {= "1.82.0-r5"}
+  "boost1-82-regex" {= "1.82.0-r5"}
+  "boost1-82-serialization" {= "1.82.0-r5"}
+  "boost1-82-stacktrace_basic" {= "1.82.0-r5"}
+  "boost1-82-stacktrace_noop" {= "1.82.0-r5"}
+  "boost1-82-system" {= "1.82.0-r5"}
+  "boost1-82-thread" {= "1.82.0-r5"}
+  "boost1-82-timer" {= "1.82.0-r5"}
+  "boost1-82-type_erasure" {= "1.82.0-r5"}
+  "boost1-82-unit_test_framework" {= "1.82.0-r5"}
+  "boost1-82-url" {= "1.82.0-r5"}
+  "boost1-82-wave" {= "1.82.0-r5"}
+  "boost1-82-wserialization" {= "1.82.0-r5"}
   "libgcc" {= "13.2.1_git20240309-r0"}
   "libstdc++" {= "13.2.1_git20240309-r0"}
   "musl" {= "1.2.5-r0"}

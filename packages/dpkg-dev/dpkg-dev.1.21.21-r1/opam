@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del dpkg-dev"]
 ]
 depends: [
-  "perl"
+  "perl" {= "5.36.2-r0"}
   "pkgconf" {= "1.9.5-r0"}
 ]
 extra-source "dpkg-dev-1.21.21-r1.apk" {

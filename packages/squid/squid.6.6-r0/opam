@@ -11,7 +11,7 @@ depends: [
   "libgcc" {= "13.2.1_git20231014-r0"}
   "libssl3" {= "3.1.6-r2"}
   "libstdc++" {= "13.2.1_git20231014-r0"}
-  "logrotate"
+  "logrotate" {= "3.21.0-r1"}
   "musl" {= "1.2.4_git20230717-r4"}
   ("busybox-binsh" {= "1.36.1-r19"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.55-r0"})
 ]

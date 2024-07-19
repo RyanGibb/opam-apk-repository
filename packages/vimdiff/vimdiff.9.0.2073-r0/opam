@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del vimdiff"]
 ]
 depends: [
-  "diffutils"
+  "diffutils" {= "3.9-r2"}
   "vim" {= "9.0.2073-r0"}
 ]
 extra-source "vimdiff-9.0.2073-r0.apk" {

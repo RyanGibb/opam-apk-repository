@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del perl-datetime-format-mail"]
 ]
 depends: [
-  "perl"
-  "perl-datetime"
-  "perl-params-validate"
+  "perl" {= "5.30.3-r0"}
+  "perl-datetime" {= "1.52-r0"}
+  "perl-params-validate" {= "1.29-r3"}
 ]
 extra-source "perl-datetime-format-mail-0.403-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-datetime-format-mail-0.403-r1.apk"

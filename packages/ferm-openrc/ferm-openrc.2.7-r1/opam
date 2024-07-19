@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del ferm-openrc"]
 ]
 depends: [
-  "iptables"
-  "perl"
+  "iptables" {= "1.8.10-r3"}
+  "perl" {= "5.38.2-r0"}
 ]
 extra-source "ferm-openrc-2.7-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/ferm-openrc-2.7-r1.apk"

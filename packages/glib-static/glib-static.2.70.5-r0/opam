@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del glib-static"]
 ]
 depends: [
-  "gettext-static"
+  "gettext-static" {= "0.21-r0"}
 ]
 extra-source "glib-static-2.70.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/glib-static-2.70.5-r0.apk"

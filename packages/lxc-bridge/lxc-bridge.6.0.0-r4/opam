@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del lxc-bridge"]
 ]
 depends: [
-  "dnsmasq"
+  "dnsmasq" {= "2.90-r3"}
 ]
 extra-source "lxc-bridge-6.0.0-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lxc-bridge-6.0.0-r4.apk"

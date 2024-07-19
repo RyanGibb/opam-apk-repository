@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del py3-charset-normalizer-pyc"]
 ]
 depends: [
-  "python3"
+  "python3" {= "3.12.3-r1"}
   "python3" {>= "3.12"}
 ]
 extra-source "py3-charset-normalizer-pyc-3.3.2-r1.apk" {

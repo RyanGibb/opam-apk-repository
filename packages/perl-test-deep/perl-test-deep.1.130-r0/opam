@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del perl-test-deep"]
 ]
 depends: [
-  "perl"
-  "perl-test-nowarnings"
+  "perl" {= "5.30.3-r0"}
+  "perl-test-nowarnings" {= "1.04-r2"}
   "perl-test-simple" {= "1.302175-r0"}
 ]
 extra-source "perl-test-deep-1.130-r0.apk" {

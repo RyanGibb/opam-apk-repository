@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del lm-sensors"]
 ]
 depends: [
-  "bash"
+  "bash" {= "5.1.16-r2"}
   "musl" {= "1.2.3-r3"}
-  "sysfsutils"
+  "sysfsutils" {= "2.1.1-r0"}
 ]
 extra-source "lm-sensors-3.6.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/lm-sensors-3.6.0-r1.apk"

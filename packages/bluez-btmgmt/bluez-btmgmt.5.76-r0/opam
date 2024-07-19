@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del bluez-btmgmt"]
 ]
 depends: [
-  "dbus"
+  "dbus" {= "1.14.10-r1"}
   "musl" {= "1.2.5-r0"}
   "readline" {= "8.2.10-r0"}
 ]

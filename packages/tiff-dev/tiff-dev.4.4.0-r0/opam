@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del tiff-dev"]
 ]
 depends: [
-  "libjpeg-turbo-dev"
+  "libjpeg-turbo-dev" {= "2.1.0-r0"}
   "libtiffxx" {= "4.4.0-r0"}
   "pkgconf" {= "1.7.3-r0"}
   "tiff" {= "4.4.0-r0"}
-  "zlib-dev"
+  "zlib-dev" {= "1.2.12-r3"}
 ]
 extra-source "tiff-dev-4.4.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/tiff-dev-4.4.0-r0.apk"

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del perl-convert-color"]
 ]
 depends: [
-  "perl"
-  "perl-list-utilsby"
-  "perl-module-pluggable"
+  "perl" {= "5.36.2-r0"}
+  "perl-list-utilsby" {= "0.12-r0"}
+  "perl-module-pluggable" {= "5.2-r2"}
 ]
 extra-source "perl-convert-color-0.13-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-convert-color-0.13-r0.apk"

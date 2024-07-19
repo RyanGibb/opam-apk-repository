@@ -12,7 +12,7 @@ depends: [
   "libxrender-dev" {= "0.9.11-r3"}
   "pkgconf" {= "1.9.5-r0"}
   "xorgproto" {= "2022.2-r0"}
-  "zlib-dev"
+  "zlib-dev" {= "1.2.13-r1"}
 ]
 extra-source "libxft-dev-2.3.8-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/libxft-dev-2.3.8-r1.apk"

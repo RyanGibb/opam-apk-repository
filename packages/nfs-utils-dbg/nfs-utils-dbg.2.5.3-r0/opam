@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del nfs-utils-dbg"]
 ]
 depends: [
-  "rpcbind"
+  "rpcbind" {= "1.2.6-r0"}
 ]
 extra-source "nfs-utils-dbg-2.5.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/nfs-utils-dbg-2.5.3-r0.apk"

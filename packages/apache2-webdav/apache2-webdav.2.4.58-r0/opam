@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del apache2-webdav"]
 ]
 depends: [
-  "apache2"
+  "apache2" {= "2.4.58-r0"}
   "musl" {= "1.2.2-r9"}
 ]
 extra-source "apache2-webdav-2.4.58-r0.apk" {

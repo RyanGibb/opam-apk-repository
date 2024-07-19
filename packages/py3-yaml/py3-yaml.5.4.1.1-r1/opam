@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "musl" {= "1.2.2-r9"}
-  "python3"
+  "python3" {= "3.9.18-r0"}
   "yaml" {= "0.2.5-r0"}
 ]
 extra-source "py3-yaml-5.4.1.1-r1.apk" {

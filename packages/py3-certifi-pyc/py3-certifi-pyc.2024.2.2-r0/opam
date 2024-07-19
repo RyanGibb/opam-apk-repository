@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del py3-certifi-pyc"]
 ]
 depends: [
-  "ca-certificates-bundle"
+  "ca-certificates-bundle" {= "20240226-r0"}
   "python3" {>= "3.11"}
 ]
 extra-source "py3-certifi-pyc-2024.2.2-r0.apk" {

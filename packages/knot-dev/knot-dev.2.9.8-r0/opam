@@ -7,10 +7,10 @@ remove: [
 ]
 depends: [
   "gnutls-dev" {= "3.6.15-r1"}
-  "knot"
+  "knot" {= "2.9.8-r0"}
   "knot-libs" {= "2.9.8-r0"}
-  "knot-libs-static"
-  "knot-utils"
+  "knot-libs-static" {= "2.9.8-r0"}
+  "knot-utils" {= "2.9.8-r0"}
   "pkgconf" {= "1.7.2-r0"}
 ]
 extra-source "knot-dev-2.9.8-r0.apk" {

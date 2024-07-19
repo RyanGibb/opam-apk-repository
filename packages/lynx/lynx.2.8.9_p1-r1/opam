@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del lynx"]
 ]
 depends: [
-  "gzip"
+  "gzip" {= "1.12-r0"}
   "libcrypto1-1" {= "1.1.1s-r0"}
   "libssl1-1" {= "1.1.1s-r0"}
   "musl" {= "1.2.2-r2"}

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del opensmtpd-dbg"]
 ]
 depends: [
-  "ca-certificates"
+  "ca-certificates" {= "20240226-r0"}
 ]
 conflicts: [
   "postfix"

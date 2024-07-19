@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del libnetfilter_cttimeout-dev"]
 ]
 depends: [
-  "libmnl-dev"
+  "libmnl-dev" {= "1.0.4-r2"}
   "libnetfilter_cttimeout" {= "1.0.0-r2"}
   "pkgconf" {= "1.8.1-r0"}
 ]

@@ -7,10 +7,10 @@ remove: [
 ]
 depends: [
   "busybox" {= "1.35.0-r18"}
-  "gcc"
-  "libc-dev"
+  "gcc" {= "11.2.1_git20220219-r2"}
+  "libc-dev" {= "0.7.2-r3"}
   "libedit" {= "20210910.3.1-r0"}
-  "libgcc"
+  "libgcc" {= "11.2.1_git20220219-r2"}
   "libunwind" {= "1.6.2-r0"}
   "musl" {= "1.2.3-r3"}
   "ncurses-libs" {= "6.3_p20220521-r1"}

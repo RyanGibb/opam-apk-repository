@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del perl-path-tiny"]
 ]
 depends: [
-  "perl"
+  "perl" {= "5.32.1-r0"}
 ]
 extra-source "perl-path-tiny-0.118-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/perl-path-tiny-0.118-r0.apk"

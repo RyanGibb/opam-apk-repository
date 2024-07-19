@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del perl-test2-suite"]
 ]
 depends: [
-  "perl-importer"
-  "perl-module-pluggable"
-  "perl-scope-guard"
-  "perl-sub-info"
-  "perl-term-table"
-  "perl-test-simple"
+  "perl-importer" {= "0.025-r0"}
+  "perl-module-pluggable" {= "5.2-r1"}
+  "perl-scope-guard" {= "0.21-r1"}
+  "perl-sub-info" {= "0.002-r1"}
+  "perl-term-table" {= "0.015-r0"}
+  "perl-test-simple" {= "1.302175-r0"}
 ]
 extra-source "perl-test2-suite-0.000129-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-test2-suite-0.000129-r0.apk"

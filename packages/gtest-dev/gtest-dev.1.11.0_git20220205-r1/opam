@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del gtest-dev"]
 ]
 depends: [
-  "cmake"
+  "cmake" {= "3.23.5-r0"}
   "gmock" {= "1.11.0_git20220205-r1"}
   "gtest" {= "1.11.0_git20220205-r1"}
   "pkgconf" {= "1.8.1-r0"}

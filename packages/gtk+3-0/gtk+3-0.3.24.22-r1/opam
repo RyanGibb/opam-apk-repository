@@ -17,7 +17,7 @@ depends: [
   "fribidi" {= "1.0.9-r0"}
   "gdk-pixbuf" {= "2.40.0-r4"}
   "glib" {= "2.64.6-r0"}
-  "gtk-update-icon-cache"
+  "gtk-update-icon-cache" {= "2.24.32-r1"}
   "harfbuzz" {= "2.6.6-r0"}
   "libepoxy" {= "1.5.4-r0"}
   "libintl" {= "0.20.2-r0"}
@@ -33,7 +33,7 @@ depends: [
   "libxrandr" {= "1.5.2-r0"}
   "musl" {= "1.1.24-r10"}
   "pango" {= "1.44.7-r2"}
-  "shared-mime-info"
+  "shared-mime-info" {= "1.15-r0"}
   "wayland-libs-client" {= "1.18.0-r4"}
   "wayland-libs-cursor" {= "1.18.0-r4"}
   "wayland-libs-egl" {= "1.18.0-r4"}

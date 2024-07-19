@@ -9,7 +9,7 @@ depends: [
   "libgcc" {= "12.2.1_git20220924-r10"}
   "libstdc++" {= "12.2.1_git20220924-r10"}
   "musl" {= "1.2.4-r2"}
-  "python3"
+  "python3" {= "3.11.8-r0"}
   "python3" {>= "3.11"}
 ]
 extra-source "llvm14-test-utils-14.0.6-r14.apk" {

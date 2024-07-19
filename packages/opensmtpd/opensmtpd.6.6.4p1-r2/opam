@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "busybox" {= "1.31.1-r22"}
-  "ca-certificates"
+  "ca-certificates" {= "20220614-r0"}
   "db" {= "5.3.28-r1"}
   "fts" {= "1.2.7-r1"}
   "libasr" {= "1.0.4-r0"}

@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del acf-provisioning"]
 ]
 depends: [
-  "acf-core"
-  "lua-luaxml"
-  "lua-posixtz"
-  "lua-sql-postgres"
+  "acf-core" {= "0.24.0-r0"}
+  "lua-luaxml" {= "2.0.0-r1"}
+  "lua-posixtz" {= "0.5-r4"}
+  "lua-sql-postgres" {= "2.6.0-r4"}
   ("postgresql15-client" {= "15.7-r0"} | "postgresql16-client" {= "16.3-r0"})
 ]
 extra-source "acf-provisioning-0.10.1-r3.apk" {

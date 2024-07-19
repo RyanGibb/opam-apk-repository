@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del nagios-plugins-log"]
 ]
 depends: [
-  "grep"
-  "nagios-plugins"
+  "grep" {= "3.11-r0"}
+  "nagios-plugins" {= "2.4.5-r1"}
 ]
 extra-source "nagios-plugins-log-2.4.5-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/nagios-plugins-log-2.4.5-r1.apk"

@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del openssh-dbg"]
 ]
 depends: [
-  "openssh-server"
-  "openssh-sftp-server"
+  "openssh-server" {= "9.3_p2-r2"}
+  "openssh-sftp-server" {= "9.3_p2-r2"}
   ("openssh-client-default" {= "9.3_p2-r2"} | "openssh-client-krb5" {= "9.3_p2-r2"})
 ]
 extra-source "openssh-dbg-9.3_p2-r2.apk" {

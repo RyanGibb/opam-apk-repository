@@ -9,7 +9,7 @@ depends: [
   "apk-tools" {>= "2.9.1"}
   "busybox" {>= "1.28.2-r1"}
   "cryptsetup-libs" {= "2.4.3-r0"}
-  "kmod"
+  "kmod" {= "29-r2"}
   "kmod-libs" {= "29-r2"}
   "lddtree" {>= "1.25"}
   "libblkid" {= "2.38-r1"}

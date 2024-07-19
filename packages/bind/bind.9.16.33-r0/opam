@@ -8,9 +8,9 @@ remove: [
 depends: [
   "bind-dnssec-root" {= "9.16.33-r0"}
   "bind-libs" {= "9.16.33-r0"}
-  "bind-tools"
+  "bind-tools" {= "9.16.33-r0"}
   "busybox" {= "1.32.1-r9"}
-  "dns-root-hints"
+  "dns-root-hints" {= "2019073000-r2"}
   "fstrm" {= "0.6.0-r1"}
   "json-c" {= "0.15-r1"}
   "libcap" {= "2.46-r0"}

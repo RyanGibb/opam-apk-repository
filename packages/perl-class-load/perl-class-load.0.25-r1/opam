@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del perl-class-load"]
 ]
 depends: [
-  "perl-data-optlist"
-  "perl-module-implementation"
-  "perl-module-runtime"
-  "perl-namespace-clean"
-  "perl-package-stash"
-  "perl-try-tiny"
+  "perl-data-optlist" {= "0.110-r1"}
+  "perl-module-implementation" {= "0.09-r2"}
+  "perl-module-runtime" {= "0.016-r3"}
+  "perl-namespace-clean" {= "0.27-r1"}
+  "perl-package-stash" {= "0.38-r2"}
+  "perl-try-tiny" {= "0.30-r1"}
 ]
 extra-source "perl-class-load-0.25-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-class-load-0.25-r1.apk"

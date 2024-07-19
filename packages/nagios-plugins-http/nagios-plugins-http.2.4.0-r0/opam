@@ -9,7 +9,7 @@ depends: [
   "libcrypto1-1" {= "1.1.1w-r1"}
   "libssl1-1" {= "1.1.1w-r1"}
   "musl" {= "1.2.3-r3"}
-  "nagios-plugins"
+  "nagios-plugins" {= "2.4.0-r0"}
 ]
 extra-source "nagios-plugins-http-2.4.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/nagios-plugins-http-2.4.0-r0.apk"

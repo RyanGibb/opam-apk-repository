@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del postgresql-bdr-contrib"]
 ]
 depends: [
-  "bash"
+  "bash" {= "5.1.16-r0"}
   "libcrypto1-1" {= "1.1.1t-r2"}
-  "libpq"
   "libpq" {= "13.12-r0"}
   "libssl1-1" {= "1.1.1t-r2"}
   "musl" {= "1.2.2-r5"}

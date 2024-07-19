@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del git-yash-completion"]
 ]
 depends: [
-  "yash-completion"
+  "yash-completion" {= "2.54-r3"}
 ]
 extra-source "git-yash-completion-2.54-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/git-yash-completion-2.54-r3.apk"

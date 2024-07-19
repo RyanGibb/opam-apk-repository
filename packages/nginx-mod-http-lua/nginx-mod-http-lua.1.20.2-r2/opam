@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del nginx-mod-http-lua"]
 ]
 depends: [
-  "lua-resty-core"
+  "lua-resty-core" {= "0.1.22-r0"}
   "luajit" {= "2.1_p20210510-r0"}
   "musl" {= "1.2.2-r9"}
-  "nginx"
-  "nginx-mod-devel-kit"
+  "nginx" {= "1.20.2-r2"}
+  "nginx-mod-devel-kit" {= "1.20.2-r2"}
 ]
 extra-source "nginx-mod-http-lua-1.20.2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/nginx-mod-http-lua-1.20.2-r2.apk"

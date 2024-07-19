@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libseccomp" {= "2.5.5-r0"}
-  "linux-headers"
+  "linux-headers" {= "6.5-r0"}
   "pkgconf" {= "2.1.0-r0"}
 ]
 extra-source "libseccomp-dev-2.5.5-r0.apk" {

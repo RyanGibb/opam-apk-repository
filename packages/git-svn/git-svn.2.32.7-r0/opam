@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del git-svn"]
 ]
 depends: [
-  "perl"
+  "perl" {= "5.32.1-r0"}
   "perl-git-svn" {= "2.32.7-r0"}
-  "perl-subversion"
-  "perl-term-readkey"
+  "perl-subversion" {= "1.14.2-r0"}
+  "perl-term-readkey" {= "2.38-r5"}
 ]
 extra-source "git-svn-2.32.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/git-svn-2.32.7-r0.apk"

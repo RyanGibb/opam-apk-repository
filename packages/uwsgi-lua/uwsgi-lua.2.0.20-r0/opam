@@ -8,7 +8,7 @@ remove: [
 depends: [
   "lua5-3-libs" {= "5.3.6-r3"}
   "musl" {= "1.2.3-r3"}
-  "uwsgi"
+  "uwsgi" {= "2.0.20-r0"}
 ]
 extra-source "uwsgi-lua-2.0.20-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/uwsgi-lua-2.0.20-r0.apk"

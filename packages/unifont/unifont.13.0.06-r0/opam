@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del unifont"]
 ]
 depends: [
-  "bdftopcf"
+  "bdftopcf" {= "1.1-r0"}
   "musl" {= "1.2.2-r9"}
-  "perl-gd"
+  "perl-gd" {= "2.73-r1"}
 ]
 extra-source "unifont-13.0.06-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/unifont-13.0.06-r0.apk"

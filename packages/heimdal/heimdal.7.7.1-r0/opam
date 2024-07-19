@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "heimdal-libs" {= "7.7.1-r0"}
-  "krb5-conf"
+  "krb5-conf" {= "1.0-r2"}
   "libcom_err" {= "1.46.6-r0"}
   "musl" {= "1.2.3-r3"}
   "readline" {= "8.1.2-r0"}

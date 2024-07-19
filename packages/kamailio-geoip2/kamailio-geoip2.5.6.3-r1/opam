@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del kamailio-geoip2"]
 ]
 depends: [
-  "kamailio"
+  "kamailio" {= "5.6.3-r1"}
   "libmaxminddb-libs" {= "1.7.1-r0"}
   "musl" {= "1.2.3-r5"}
 ]

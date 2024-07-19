@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del perl-module-build-tiny"]
 ]
 depends: [
-  "perl-extutils-config"
-  "perl-extutils-helpers"
-  "perl-extutils-installpaths"
-  "perl-test-harness"
+  "perl-extutils-config" {= "0.008-r2"}
+  "perl-extutils-helpers" {= "0.026-r2"}
+  "perl-extutils-installpaths" {= "0.012-r2"}
+  "perl-test-harness" {= "3.44-r0"}
 ]
 extra-source "perl-module-build-tiny-0.039-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-module-build-tiny-0.039-r2.apk"

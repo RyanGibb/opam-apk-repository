@@ -6,15 +6,15 @@ remove: [
   ["sh" "-c" "sudo apk del llvm15-dev"]
 ]
 depends: [
-  "libffi-dev"
+  "libffi-dev" {= "3.4.4-r2"}
   "libgcc" {= "12.2.1_git20220924-r10"}
   "libstdc++" {= "12.2.1_git20220924-r10"}
   "llvm15" {= "15.0.7-r6"}
   "llvm15-libs" {= "15.0.7-r6"}
   "llvm15-test-utils" {= "15.0.7-r6"}
   "musl" {= "1.2.4-r2"}
-  "zlib-dev"
-  "zstd-dev"
+  "zlib-dev" {= "1.2.13-r1"}
+  "zstd-dev" {= "1.5.5-r4"}
 ]
 extra-source "llvm15-dev-15.0.7-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/llvm15-dev-15.0.7-r6.apk"

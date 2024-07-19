@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del byobu"]
 ]
 depends: [
-  "python3"
-  "tmux"
+  "python3" {= "3.11.9-r0"}
+  "tmux" {= "3.3a_git20230428-r0"}
 ]
 extra-source "byobu-5.133-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/byobu-5.133-r3.apk"

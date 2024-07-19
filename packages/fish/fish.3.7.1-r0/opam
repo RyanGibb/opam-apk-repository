@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del fish"]
 ]
 depends: [
-  "bc"
+  "bc" {= "1.07.1-r4"}
   "libintl" {= "0.22.5-r0"}
   "libncursesw" {= "6.4_p20240420-r0"}
   "libpcre2-32" {= "10.43-r0"}

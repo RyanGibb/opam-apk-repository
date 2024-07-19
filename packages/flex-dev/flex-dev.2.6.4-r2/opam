@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del flex-dev"]
 ]
 depends: [
-  "flex"
+  "flex" {= "2.6.4-r2"}
   "flex-libs" {= "2.6.4-r2"}
 ]
 extra-source "flex-dev-2.6.4-r2.apk" {

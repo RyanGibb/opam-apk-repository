@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del hylafaxplus"]
 ]
 depends: [
-  "bash"
-  "findutils"
-  "ghostscript"
+  "bash" {= "5.1.16-r2"}
+  "findutils" {= "4.9.0-r0"}
+  "ghostscript" {= "9.56.1-r2"}
   "lcms2" {= "2.13.1-r0"}
   "libgcc" {= "11.2.1_git20220219-r2"}
   "libldap" {= "2.6.3-r3"}
@@ -16,7 +16,7 @@ depends: [
   "libstdc++" {= "11.2.1_git20220219-r2"}
   "musl" {= "1.2.3-r3"}
   "tiff" {= "4.4.0-r4"}
-  "tiff-tools"
+  "tiff-tools" {= "4.4.0-r4"}
   "zlib" {= "1.2.12-r3"}
 ]
 conflicts: [

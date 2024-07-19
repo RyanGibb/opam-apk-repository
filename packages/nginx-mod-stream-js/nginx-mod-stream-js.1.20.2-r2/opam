@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "musl" {= "1.2.2-r9"}
-  "nginx"
-  "nginx-mod-stream"
+  "nginx" {= "1.20.2-r2"}
+  "nginx-mod-stream" {= "1.20.2-r2"}
 ]
 extra-source "nginx-mod-stream-js-1.20.2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/nginx-mod-stream-js-1.20.2-r2.apk"

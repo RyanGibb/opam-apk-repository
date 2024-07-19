@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del xen-qemu"]
 ]
 depends: [
-  "bash"
+  "bash" {= "5.2.26-r0"}
   "glib" {= "2.80.2-r0"}
   "gnutls" {= "3.8.5-r0"}
-  "iproute2"
+  "iproute2" {= "6.9.0-r0"}
   "libaio" {= "0.3.113-r2"}
   "libbz2" {= "1.0.8-r6"}
   "libcap-ng" {= "0.8.5-r0"}
@@ -18,12 +18,12 @@ depends: [
   "libjpeg-turbo" {= "3.0.3-r0"}
   "libncursesw" {= "6.4_p20240420-r0"}
   "libsasl" {= "2.1.28-r6"}
-  "logrotate"
+  "logrotate" {= "3.21.0-r1"}
   "lzo" {= "2.10-r5"}
   "musl" {= "1.2.5-r0"}
   "pciutils-libs" {= "3.12.0-r1"}
   "pixman" {= "0.43.2-r0"}
-  "seabios-bin"
+  "seabios-bin" {= "1.16.2-r0"}
   "spice" {= "0.15.2-r1"}
   "xen-libs" {= "4.18.2-r1"}
   "zlib" {= "1.3.1-r1"}

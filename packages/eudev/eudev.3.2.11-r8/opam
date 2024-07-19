@@ -10,7 +10,7 @@ depends: [
   "kmod-libs" {= "30-r3"}
   "libblkid" {= "2.38.1-r8"}
   "musl" {= "1.2.4-r2"}
-  "udev-init-scripts"
+  "udev-init-scripts" {= "35-r1"}
   ("busybox-binsh" {= "1.36.1-r7"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.54-r3"})
 ]
 extra-source "eudev-3.2.11-r8.apk" {

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libepoxy" {= "1.5.5-r0"}
-  "libx11-dev"
+  "libx11-dev" {= "1.7.1-r0"}
   "mesa-dev" {= "20.3.3-r0"}
   "pkgconf" {= "1.7.3-r0"}
 ]

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del rust-gdb"]
 ]
 depends: [
-  "gdb"
+  "gdb" {= "14.1-r0"}
   "rust" {= "1.76.0-r0"}
 ]
 extra-source "rust-gdb-1.76.0-r0.apk" {

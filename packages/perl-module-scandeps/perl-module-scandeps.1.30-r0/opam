@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del perl-module-scandeps"]
 ]
 depends: [
-  "perl"
+  "perl" {= "5.32.1-r0"}
 ]
 extra-source "perl-module-scandeps-1.30-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/perl-module-scandeps-1.30-r0.apk"

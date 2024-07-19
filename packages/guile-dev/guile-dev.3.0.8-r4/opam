@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del guile-dev"]
 ]
 depends: [
-  "gc-dev"
-  "guile"
+  "gc-dev" {= "8.2.2-r2"}
+  "guile" {= "3.0.8-r4"}
   "guile-libs" {= "3.0.8-r4"}
   "pkgconf" {= "1.9.5-r0"}
 ]

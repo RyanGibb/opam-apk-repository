@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del ruby-dbg"]
 ]
 depends: [
-  "ca-certificates"
+  "ca-certificates" {= "20220614-r0"}
 ]
 extra-source "ruby-dbg-2.7.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/ruby-dbg-2.7.6-r0.apk"

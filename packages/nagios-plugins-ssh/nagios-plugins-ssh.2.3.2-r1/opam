@@ -8,7 +8,7 @@ remove: [
 depends: [
   "libcrypto1-1" {= "1.1.1s-r0"}
   "musl" {= "1.2.2-r2"}
-  "nagios-plugins"
+  "nagios-plugins" {= "2.3.2-r1"}
 ]
 extra-source "nagios-plugins-ssh-2.3.2-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/nagios-plugins-ssh-2.3.2-r1.apk"

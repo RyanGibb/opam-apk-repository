@@ -7,15 +7,15 @@ remove: [
 ]
 depends: [
   "abuild" {> "2.20.0"}
-  "build-base"
-  "git"
+  "build-base" {= "0.5-r3"}
+  "git" {= "2.43.4-r0"}
   "lua-aports" {> "1.0.0"}
-  "lua5-2-cjson"
-  "lua5-2-mqtt-publish"
-  "mosquitto-clients"
-  "mqtt-exec"
-  "pigz"
-  "rsync"
+  "lua5-2-cjson" {= "2.1.0-r11"}
+  "lua5-2-mqtt-publish" {= "0.5-r0"}
+  "mosquitto-clients" {= "2.0.18-r0"}
+  "mqtt-exec" {= "0.5-r1"}
+  "pigz" {= "2.8-r0"}
+  "rsync" {= "3.2.7-r4"}
   ("busybox-binsh" {= "1.36.1-r19"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.55-r0"})
   ("openssh-client-default" {= "9.6_p1-r1"} | "openssh-client-krb5" {= "9.6_p1-r1"})
 ]

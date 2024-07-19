@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del parallel"]
 ]
 depends: [
-  "perl"
+  "perl" {= "5.34.2-r0"}
 ]
 extra-source "parallel-20220422-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/parallel-20220422-r0.apk"

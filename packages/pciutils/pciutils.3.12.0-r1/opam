@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del pciutils"]
 ]
 depends: [
-  "hwdata-pci"
+  "hwdata-pci" {= "0.382-r0"}
   "musl" {= "1.2.5-r0"}
   "pciutils-libs" {= "3.12.0-r1"}
 ]

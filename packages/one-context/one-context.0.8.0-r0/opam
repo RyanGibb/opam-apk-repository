@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del one-context"]
 ]
 depends: [
-  "blkid"
+  "blkid" {= "2.38.1-r8"}
 ]
 extra-source "one-context-0.8.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/one-context-0.8.0-r0.apk"

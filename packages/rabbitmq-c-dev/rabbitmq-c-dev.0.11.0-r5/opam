@@ -8,7 +8,7 @@ remove: [
 depends: [
   "openssl-dev" {= "3.0.14-r0"}
   "pkgconf" {= "1.9.4-r0"}
-  "popt-dev"
+  "popt-dev" {= "1.19-r0"}
   "rabbitmq-c" {= "0.11.0-r5"}
 ]
 extra-source "rabbitmq-c-dev-0.11.0-r5.apk" {

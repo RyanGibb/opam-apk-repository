@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "eudev-libs" {= "3.2.10-r0"}
-  "hwids-usb"
+  "hwids-usb" {= "20210613-r0"}
   "libusb" {= "1.0.24-r2"}
   "musl" {= "1.2.2-r5"}
 ]

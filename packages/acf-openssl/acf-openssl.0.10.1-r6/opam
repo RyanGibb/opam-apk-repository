@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del acf-openssl"]
 ]
 depends: [
-  "acf-core"
-  "openssl"
+  "acf-core" {= "0.22.0-r2"}
+  "openssl" {= "1.1.1w-r1"}
 ]
 extra-source "acf-openssl-0.10.1-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/acf-openssl-0.10.1-r6.apk"

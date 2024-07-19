@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del perl-gdtextutil"]
 ]
 depends: [
-  "perl-gd"
+  "perl-gd" {= "2.71-r1"}
 ]
 extra-source "perl-gdtextutil-0.86-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-gdtextutil-0.86-r1.apk"

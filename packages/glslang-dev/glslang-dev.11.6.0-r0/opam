@@ -6,7 +6,6 @@ remove: [
   ["sh" "-c" "sudo apk del glslang-dev"]
 ]
 depends: [
-  "glslang"
   "glslang" {= "11.6.0-r0"}
 ]
 extra-source "glslang-dev-11.6.0-r0.apk" {

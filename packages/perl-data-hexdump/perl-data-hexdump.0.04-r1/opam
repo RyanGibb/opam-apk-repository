@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del perl-data-hexdump"]
 ]
 depends: [
-  "perl"
+  "perl" {= "5.38.2-r0"}
 ]
 extra-source "perl-data-hexdump-0.04-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-data-hexdump-0.04-r1.apk"

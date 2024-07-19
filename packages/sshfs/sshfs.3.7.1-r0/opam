@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del sshfs"]
 ]
 depends: [
-  "fuse3"
+  "fuse3" {= "3.10.2-r0"}
   "fuse3-libs" {= "3.10.2-r0"}
   "glib" {= "2.66.8-r0"}
   "musl" {= "1.2.2-r2"}
-  "openssh-client"
+  "openssh-client" {= "8.4_p1-r4"}
 ]
 extra-source "sshfs-3.7.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/sshfs-3.7.1-r0.apk"

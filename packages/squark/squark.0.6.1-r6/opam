@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del squark"]
 ]
 depends: [
-  "haserl"
+  "haserl" {= "0.9.36-r4"}
   "libcmph" {= "2.0.2-r5"}
   "lua5-1-libs" {= "5.1.5-r13"}
   "musl" {= "1.2.5-r0"}

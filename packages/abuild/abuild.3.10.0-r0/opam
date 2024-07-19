@@ -7,18 +7,18 @@ remove: [
 ]
 depends: [
   "apk-tools" {>= "2.0.7-r1"}
-  "attr"
-  "curl"
-  "fakeroot"
-  "libc-utils"
+  "attr" {= "2.5.1-r2"}
+  "curl" {= "8.5.0-r0"}
+  "fakeroot" {= "1.29-r0"}
+  "libc-utils" {= "0.7.2-r3"}
   "libcrypto3" {= "3.0.14-r0"}
-  "lzip"
+  "lzip" {= "1.23-r0"}
   "musl" {= "1.2.3-r5"}
   "openssl" {> "3"}
-  "patch"
-  "pkgconf"
-  "scanelf"
-  "tar"
+  "patch" {= "2.7.6-r9"}
+  "pkgconf" {= "1.9.4-r0"}
+  "scanelf" {= "1.3.5-r1"}
+  "tar" {= "1.34-r2"}
   "zlib" {= "1.2.13-r0"}
   ("yash-binsh" {= "2.53-r2"} | "busybox-binsh" {= "1.35.0-r31"} | "dash-binsh" {= "0.5.11.5-r2"})
 ]

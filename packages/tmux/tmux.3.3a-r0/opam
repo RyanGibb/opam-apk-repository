@@ -9,7 +9,7 @@ depends: [
   "libevent" {= "2.1.12-r5"}
   "musl" {= "1.2.3-r5"}
   "ncurses-libs" {= "6.3_p20221119-r1"}
-  "ncurses-terminfo-base"
+  "ncurses-terminfo-base" {= "6.3_p20221119-r1"}
 ]
 extra-source "tmux-3.3a-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/tmux-3.3a-r0.apk"

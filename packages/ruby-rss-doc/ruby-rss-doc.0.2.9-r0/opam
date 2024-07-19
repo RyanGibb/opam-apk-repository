@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del ruby-rss-doc"]
 ]
 depends: [
-  "ruby"
-  "ruby-rexml"
+  "ruby" {= "3.0.6-r0"}
+  "ruby-rexml" {= "3.2.5-r1"}
 ]
 extra-source "ruby-rss-doc-0.2.9-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/ruby-rss-doc-0.2.9-r0.apk"

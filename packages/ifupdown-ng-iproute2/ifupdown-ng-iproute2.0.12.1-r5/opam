@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del ifupdown-ng-iproute2"]
 ]
 depends: [
-  "iproute2-minimal"
+  "iproute2-minimal" {= "6.9.0-r0"}
 ]
 extra-source "ifupdown-ng-iproute2-0.12.1-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/ifupdown-ng-iproute2-0.12.1-r5.apk"

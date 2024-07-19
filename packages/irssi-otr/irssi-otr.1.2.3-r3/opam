@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del irssi-otr"]
 ]
 depends: [
-  "irssi"
+  "irssi" {= "1.2.3-r3"}
   "libgcrypt" {= "1.10.1-r0"}
   "libotr" {= "4.1.1-r2"}
   "musl" {= "1.2.3-r3"}

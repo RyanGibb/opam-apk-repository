@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del asciidoc"]
 ]
 depends: [
-  "docbook-xsl"
-  "libxml2-utils"
-  "python3"
+  "docbook-xsl" {= "1.79.2-r2"}
+  "libxml2-utils" {= "2.9.14-r2"}
+  "python3" {= "3.8.15-r0"}
 ]
 extra-source "asciidoc-9.0.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/asciidoc-9.0.4-r0.apk"

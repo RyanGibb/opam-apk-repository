@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del heimdal-libs"]
 ]
 depends: [
-  "krb5-conf"
+  "krb5-conf" {= "1.0-r2"}
   "libcom_err" {= "1.45.7-r0"}
   "musl" {= "1.2.2-r2"}
   "readline" {= "8.1.0-r0"}

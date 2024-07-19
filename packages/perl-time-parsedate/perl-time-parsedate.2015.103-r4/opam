@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del perl-time-parsedate"]
 ]
 depends: [
-  "perl"
+  "perl" {= "5.36.2-r0"}
 ]
 extra-source "perl-time-parsedate-2015.103-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-time-parsedate-2015.103-r4.apk"

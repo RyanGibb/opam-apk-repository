@@ -9,7 +9,7 @@ depends: [
   "libxml2" {= "2.9.14-r0"}
   "libxslt" {= "1.1.35-r0"}
   "musl" {= "1.1.24-r10"}
-  "uwsgi"
+  "uwsgi" {= "2.0.18-r8"}
 ]
 extra-source "uwsgi-xslt-2.0.18-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/uwsgi-xslt-2.0.18-r8.apk"

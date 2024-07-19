@@ -6,9 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del poppler-dev"]
 ]
 depends: [
-  "cairo-dev"
   "cairo-dev" {= "1.16.0-r5"}
-  "glib-dev"
   "glib-dev" {= "2.64.6-r0"}
   "pkgconf" {= "1.7.2-r0"}
   "poppler" {= "0.88.0-r0"}

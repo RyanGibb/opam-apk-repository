@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del unbound"]
 ]
 depends: [
-  "dnssec-root"
+  "dnssec-root" {= "20190225-r2"}
   "libcrypto3" {= "3.3.1-r3"}
   "libevent" {= "2.1.12-r7"}
   "libexpat" {= "2.6.2-r0"}

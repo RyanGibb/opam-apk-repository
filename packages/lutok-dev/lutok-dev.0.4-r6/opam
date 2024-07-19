@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del lutok-dev"]
 ]
 depends: [
-  "lua5-4-dev"
+  "lua5-4-dev" {= "5.4.6-r1"}
   "lutok" {= "0.4-r6"}
   "pkgconf" {= "2.2.0-r0"}
 ]

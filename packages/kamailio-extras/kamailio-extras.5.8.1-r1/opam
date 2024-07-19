@@ -7,7 +7,6 @@ remove: [
 ]
 depends: [
   "hiredis" {= "1.2.0-r0"}
-  "kamailio"
   "kamailio" {= "5.8.1-r1"}
   "libevent" {= "2.1.12-r7"}
   "musl" {= "1.2.5-r0"}

@@ -10,7 +10,7 @@ depends: [
   "libgcrypt" {= "1.9.4-r0"}
   "libgpg-error" {= "1.42-r1"}
   "musl" {= "1.2.2-r9"}
-  "pinentry"
+  "pinentry" {= "1.2.0-r0"}
 ]
 extra-source "gnupg-gpgconf-2.2.31-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/gnupg-gpgconf-2.2.31-r2.apk"

@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "busybox" {= "1.31.1-r22"}
-  "dns-root-hints"
-  "dnssec-root"
+  "dns-root-hints" {= "2019073000-r2"}
+  "dnssec-root" {= "20190225-r0"}
   "expat" {= "2.2.10-r4"}
   "libcrypto1-1" {= "1.1.1o-r0"}
   "libevent" {= "2.1.11-r1"}

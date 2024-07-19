@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del perl-io-stringy"]
 ]
 depends: [
-  "perl"
+  "perl" {= "5.38.2-r0"}
 ]
 extra-source "perl-io-stringy-2.113-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-io-stringy-2.113-r3.apk"

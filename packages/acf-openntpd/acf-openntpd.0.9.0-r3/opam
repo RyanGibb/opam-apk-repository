@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del acf-openntpd"]
 ]
 depends: [
-  "acf-core"
-  "openntpd"
+  "acf-core" {= "0.22.0-r1"}
+  "openntpd" {= "6.8_p1-r0"}
 ]
 extra-source "acf-openntpd-0.9.0-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/acf-openntpd-0.9.0-r3.apk"

@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del pm-utils"]
 ]
 depends: [
-  "bash"
-  "kbd"
+  "bash" {= "5.2.26-r0"}
+  "kbd" {= "2.6.4-r0"}
   "musl" {= "1.2.5-r0"}
 ]
 extra-source "pm-utils-1.4.1-r5.apk" {

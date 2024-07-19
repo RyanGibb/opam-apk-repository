@@ -9,7 +9,6 @@ depends: [
   "libcrypto1-1" {= "1.1.1t-r2"}
   "libssl1-1" {= "1.1.1t-r2"}
   "musl" {= "1.2.2-r5"}
-  "tcl"
   "tcl" {= "8.6.10-r1"}
   "zlib" {= "1.2.12-r3"}
 ]

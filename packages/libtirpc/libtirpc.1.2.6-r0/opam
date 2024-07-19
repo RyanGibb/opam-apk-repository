@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "krb5-libs" {= "1.18.5-r0"}
-  "libtirpc-conf"
+  "libtirpc-conf" {= "1.2.6-r0"}
   "musl" {= "1.1.24-r10"}
 ]
 extra-source "libtirpc-1.2.6-r0.apk" {

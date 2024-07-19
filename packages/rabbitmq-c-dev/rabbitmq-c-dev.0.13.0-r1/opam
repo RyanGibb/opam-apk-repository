@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "pkgconf" {= "1.9.5-r0"}
-  "popt-dev"
+  "popt-dev" {= "1.19-r2"}
   "rabbitmq-c" {= "0.13.0-r1"}
 ]
 extra-source "rabbitmq-c-dev-0.13.0-r1.apk" {

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del tig"]
 ]
 depends: [
-  "git"
+  "git" {= "2.36.6-r0"}
   "musl" {= "1.2.3-r3"}
   "ncurses-libs" {= "6.3_p20220521-r1"}
 ]

@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del py3-html5lib-pyc"]
 ]
 depends: [
-  "py3-six"
-  "py3-webencodings"
+  "py3-six" {= "1.16.0-r9"}
+  "py3-webencodings" {= "0.5.1-r8"}
   "python3" {>= "3.12"}
 ]
 extra-source "py3-html5lib-pyc-1.1-r5.apk" {

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del flashrom"]
 ]
 depends: [
-  "dmidecode"
+  "dmidecode" {= "3.5-r1"}
   "libusb" {= "1.0.26-r2"}
   "musl" {= "1.2.4-r2"}
   "pciutils-libs" {= "3.10.0-r0"}

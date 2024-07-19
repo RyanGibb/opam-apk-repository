@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del itstool"]
 ]
 depends: [
-  "py3-libxml2"
-  "python3"
+  "py3-libxml2" {= "2.9.14-r2"}
+  "python3" {= "3.9.17-r0"}
 ]
 extra-source "itstool-2.0.6-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/itstool-2.0.6-r1.apk"

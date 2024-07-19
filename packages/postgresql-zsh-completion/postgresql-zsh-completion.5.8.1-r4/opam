@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del postgresql-zsh-completion"]
 ]
 depends: [
-  "zsh"
+  "zsh" {= "5.8.1-r4"}
 ]
 extra-source "postgresql-zsh-completion-5.8.1-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/postgresql-zsh-completion-5.8.1-r4.apk"

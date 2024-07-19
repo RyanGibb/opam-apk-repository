@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del acf-postfix"]
 ]
 depends: [
-  "acf-core"
-  "postfix"
+  "acf-core" {= "0.22.0-r0"}
+  "postfix" {= "3.5.16-r0"}
 ]
 extra-source "acf-postfix-0.10.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/acf-postfix-0.10.0-r2.apk"

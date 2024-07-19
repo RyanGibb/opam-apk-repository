@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del xcb-util-dev"]
 ]
 depends: [
-  "libxcb-dev"
+  "libxcb-dev" {= "1.16.1-r0"}
   "pkgconf" {= "2.2.0-r0"}
-  "util-macros"
+  "util-macros" {= "1.20.0-r0"}
   "xcb-util" {= "0.4.1-r3"}
 ]
 extra-source "xcb-util-dev-0.4.1-r3.apk" {

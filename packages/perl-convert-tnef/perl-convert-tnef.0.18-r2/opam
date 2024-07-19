@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del perl-convert-tnef"]
 ]
 depends: [
-  "perl"
+  "perl" {= "5.30.3-r0"}
 ]
 extra-source "perl-convert-tnef-0.18-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-convert-tnef-0.18-r2.apk"

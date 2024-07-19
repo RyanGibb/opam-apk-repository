@@ -7,11 +7,10 @@ remove: [
 ]
 depends: [
   "libx11" {= "1.6.12-r1"}
-  "libxcb-dev"
   "libxcb-dev" {= "1.14-r1"}
   "pkgconf" {= "1.7.2-r0"}
   "xorgproto" {= "2020.1-r0"}
-  "xtrans"
+  "xtrans" {= "1.4.0-r1"}
 ]
 extra-source "libx11-dev-1.6.12-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/libx11-dev-1.6.12-r1.apk"

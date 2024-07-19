@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del font-util-dev"]
 ]
 depends: [
-  "font-util"
+  "font-util" {= "1.4.0-r1"}
   "pkgconf" {= "1.9.5-r0"}
 ]
 extra-source "font-util-dev-1.4.0-r1.apk" {

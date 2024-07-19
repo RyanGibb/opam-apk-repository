@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del perl-class-mix"]
 ]
 depends: [
-  "perl-params-classify"
+  "perl-params-classify" {= "0.015-r3"}
 ]
 extra-source "perl-class-mix-0.006-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-class-mix-0.006-r1.apk"

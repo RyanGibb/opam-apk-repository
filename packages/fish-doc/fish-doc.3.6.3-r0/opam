@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del fish-doc"]
 ]
 depends: [
-  "util-linux-misc"
+  "util-linux-misc" {= "2.39.3-r0"}
 ]
 extra-source "fish-doc-3.6.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/fish-doc-3.6.3-r0.apk"

@@ -15,7 +15,7 @@ depends: [
   "libldap" {= "2.4.58-r0"}
   "musl" {= "1.2.2-r5"}
   "npth" {= "1.6-r0"}
-  "pinentry"
+  "pinentry" {= "1.1.1-r0"}
   "sqlite-libs" {= "3.35.5-r0"}
   "zlib" {= "1.2.12-r3"}
 ]

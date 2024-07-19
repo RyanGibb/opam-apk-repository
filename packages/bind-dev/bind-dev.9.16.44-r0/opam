@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del bind-dev"]
 ]
 depends: [
-  "bind"
+  "bind" {= "9.16.44-r0"}
   "bind-libs" {= "9.16.44-r0"}
-  "bind-plugins"
-  "bind-tools"
+  "bind-plugins" {= "9.16.44-r0"}
+  "bind-tools" {= "9.16.44-r0"}
 ]
 extra-source "bind-dev-9.16.44-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/bind-dev-9.16.44-r0.apk"

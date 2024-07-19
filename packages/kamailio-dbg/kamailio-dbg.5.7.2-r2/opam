@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del kamailio-dbg"]
 ]
 depends: [
-  "gawk"
+  "gawk" {= "5.3.0-r1"}
 ]
 extra-source "kamailio-dbg-5.7.2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/kamailio-dbg-5.7.2-r2.apk"

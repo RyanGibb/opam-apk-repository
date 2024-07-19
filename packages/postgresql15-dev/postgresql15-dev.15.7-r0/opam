@@ -6,16 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del postgresql15-dev"]
 ]
 depends: [
-  "clang16"
-  "icu-dev"
-  "libecpg-dev"
+  "clang16" {= "16.0.6-r5"}
+  "icu-dev" {= "74.2-r0"}
+  "libecpg-dev" {= "16.3-r0"}
   "libpq" {= "16.3-r0"}
-  "libpq-dev"
-  "llvm16"
-  "lz4-dev"
+  "libpq-dev" {= "16.3-r0"}
+  "llvm16" {= "16.0.6-r8"}
+  "lz4-dev" {= "1.9.4-r5"}
   "musl" {= "1.2.5-r0"}
-  "openssl-dev"
-  "zstd-dev"
+  "openssl-dev" {= "3.3.1-r3"}
+  "zstd-dev" {= "1.5.6-r0"}
 ]
 extra-source "postgresql15-dev-15.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/postgresql15-dev-15.7-r0.apk"

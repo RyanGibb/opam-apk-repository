@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del kea-shell-pyc"]
 ]
 depends: [
-  "kea-dhcp4"
-  "kea-dhcp6"
+  "kea-dhcp4" {= "2.4.1-r0"}
+  "kea-dhcp6" {= "2.4.1-r0"}
   "python3" {>= "3.11"}
 ]
 extra-source "kea-shell-pyc-2.4.1-r0.apk" {

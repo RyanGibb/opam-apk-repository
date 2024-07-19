@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del clucene-dev"]
 ]
 depends: [
-  "boost-dev"
+  "boost-dev" {= "1.76.0-r0"}
   "clucene" {= "2.3.3.4-r9"}
   "clucene-contribs" {= "2.3.3.4-r9"}
   "pkgconf" {= "1.7.4-r1"}
-  "zlib-dev"
+  "zlib-dev" {= "1.2.12-r3"}
 ]
 extra-source "clucene-dev-2.3.3.4-r9.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/clucene-dev-2.3.3.4-r9.apk"

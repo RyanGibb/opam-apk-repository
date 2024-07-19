@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del squid-lang-spq"]
 ]
 depends: [
-  "logrotate"
+  "logrotate" {= "3.20.1-r3"}
   "squid-lang-es" {= "5.7-r0"}
 ]
 extra-source "squid-lang-spq-5.7-r0.apk" {

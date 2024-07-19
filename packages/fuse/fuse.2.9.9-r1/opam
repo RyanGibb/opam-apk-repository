@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del fuse"]
 ]
 depends: [
-  "fuse-common"
+  "fuse-common" {= "3.11.0-r0"}
   "musl" {= "1.2.3-r3"}
 ]
 extra-source "fuse-2.9.9-r1.apk" {

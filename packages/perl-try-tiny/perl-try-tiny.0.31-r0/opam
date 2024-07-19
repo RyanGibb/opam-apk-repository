@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del perl-try-tiny"]
 ]
 depends: [
-  "perl"
-  "perl-capture-tiny"
-  "perl-pod-coverage"
+  "perl" {= "5.36.2-r0"}
+  "perl-capture-tiny" {= "0.48-r2"}
+  "perl-pod-coverage" {= "0.23-r3"}
 ]
 extra-source "perl-try-tiny-0.31-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-try-tiny-0.31-r0.apk"

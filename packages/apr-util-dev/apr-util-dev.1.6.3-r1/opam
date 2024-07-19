@@ -8,14 +8,14 @@ remove: [
 depends: [
   "apr-dev" {= "1.7.4-r0"}
   "apr-util" {= "1.6.3-r1"}
-  "expat-dev"
-  "gdbm-dev"
-  "libpq-dev"
-  "mariadb-dev"
-  "openldap-dev"
+  "expat-dev" {= "2.6.2-r0"}
+  "gdbm-dev" {= "1.23-r1"}
+  "libpq-dev" {= "16.3-r0"}
+  "mariadb-dev" {= "10.11.8-r0"}
+  "openldap-dev" {= "2.6.7-r0"}
   "openssl-dev" {> "3"}
   "pkgconf" {= "2.2.0-r0"}
-  "sqlite-dev"
+  "sqlite-dev" {= "3.45.3-r1"}
 ]
 extra-source "apr-util-dev-1.6.3-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/apr-util-dev-1.6.3-r1.apk"

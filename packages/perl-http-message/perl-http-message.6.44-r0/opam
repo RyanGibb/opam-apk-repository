@@ -6,13 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del perl-http-message"]
 ]
 depends: [
-  "perl"
+  "perl" {= "5.36.2-r0"}
   "perl-clone" {>= "0.46"}
-  "perl-encode-locale"
-  "perl-http-date"
-  "perl-io-html"
-  "perl-lwp-mediatypes"
-  "perl-uri"
+  "perl-encode-locale" {= "1.05-r4"}
+  "perl-http-date" {= "6.05-r1"}
+  "perl-io-html" {= "1.004-r0"}
+  "perl-lwp-mediatypes" {= "6.04-r2"}
+  "perl-uri" {= "5.19-r0"}
 ]
 extra-source "perl-http-message-6.44-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-http-message-6.44-r0.apk"

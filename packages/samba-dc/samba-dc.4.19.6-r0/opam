@@ -11,8 +11,8 @@ depends: [
   "libauth-samba" {= "4.19.6-r0"}
   "musl" {= "1.2.5-r0"}
   "popt" {= "1.19-r3"}
-  "py3-dnspython"
-  "py3-markdown"
+  "py3-dnspython" {= "2.6.1-r1"}
+  "py3-markdown" {= "3.6-r0"}
   "py3-samba" {= "4.19.6-r0"}
   "samba-client-libs" {= "4.19.6-r0"}
   "samba-common" {= "4.19.6-r0"}
@@ -23,7 +23,7 @@ depends: [
   "samba-util-libs" {= "4.19.6-r0"}
   "samba-winbind" {= "4.19.6-r0"}
   "talloc" {= "2.4.2-r1"}
-  "tdb"
+  "tdb" {= "1.4.9-r1"}
   "tdb-libs" {= "1.4.9-r1"}
   "tevent" {= "0.16.1-r0"}
 ]

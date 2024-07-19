@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del gzip"]
 ]
 depends: [
-  "less"
+  "less" {= "608-r1"}
   "musl" {= "1.2.3-r5"}
 ]
 extra-source "gzip-1.12-r0.apk" {

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del py3-xmlschema"]
 ]
 depends: [
-  "py3-elementpath"
+  "py3-elementpath" {= "3.0.2-r0"}
 ]
 extra-source "py3-xmlschema-2.1.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/py3-xmlschema-2.1.1-r0.apk"

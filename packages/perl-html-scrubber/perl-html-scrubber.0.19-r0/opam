@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del perl-html-scrubber"]
 ]
 depends: [
-  "perl-html-parser"
+  "perl-html-parser" {= "3.72-r5"}
 ]
 extra-source "perl-html-scrubber-0.19-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-html-scrubber-0.19-r0.apk"

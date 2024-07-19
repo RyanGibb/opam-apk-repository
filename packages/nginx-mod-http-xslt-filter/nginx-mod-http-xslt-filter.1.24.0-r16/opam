@@ -9,7 +9,7 @@ depends: [
   "libxml2" {= "2.11.8-r0"}
   "libxslt" {= "1.1.39-r0"}
   "musl" {= "1.2.4_git20230717-r4"}
-  "nginx"
+  "nginx" {= "1.24.0-r16"}
 ]
 extra-source "nginx-mod-http-xslt-filter-1.24.0-r16.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/nginx-mod-http-xslt-filter-1.24.0-r16.apk"

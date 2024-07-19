@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del perl-test-deep"]
 ]
 depends: [
-  "perl"
-  "perl-test-nowarnings"
-  "perl-test-simple"
+  "perl" {= "5.36.2-r0"}
+  "perl-test-nowarnings" {= "1.06-r0"}
+  "perl-test-simple" {= "1.302191-r0"}
 ]
 extra-source "perl-test-deep-1.130-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-test-deep-1.130-r3.apk"

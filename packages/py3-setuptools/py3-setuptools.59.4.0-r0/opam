@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del py3-setuptools"]
 ]
 depends: [
-  "py3-appdirs"
-  "py3-more-itertools"
-  "py3-ordered-set"
-  "py3-packaging"
-  "py3-parsing"
-  "python3"
+  "py3-appdirs" {= "1.4.4-r3"}
+  "py3-more-itertools" {= "8.13.0-r0"}
+  "py3-ordered-set" {= "4.0.2-r3"}
+  "py3-packaging" {= "21.3-r0"}
+  "py3-parsing" {= "2.4.7-r3"}
+  "python3" {= "3.10.14-r1"}
 ]
 extra-source "py3-setuptools-59.4.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/py3-setuptools-59.4.0-r0.apk"

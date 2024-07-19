@@ -9,10 +9,10 @@ depends: [
   "clang15-headers" {= "15.0.7-r19"}
   "clang15-libclang" {= "15.0.7-r19"}
   "clang15-libs" {= "15.0.7-r19"}
-  "gcc"
+  "gcc" {= "13.2.1_git20240309-r0"}
   "libgcc" {= "13.2.1_git20240309-r0"}
   "libstdc++" {= "13.2.1_git20240309-r0"}
-  "libstdc++-dev"
+  "libstdc++-dev" {= "13.2.1_git20240309-r0"}
   "libxml2" {= "2.12.7-r0"}
   "llvm15-libs" {= "15.0.7-r13"}
   "musl" {= "1.2.5-r0"}

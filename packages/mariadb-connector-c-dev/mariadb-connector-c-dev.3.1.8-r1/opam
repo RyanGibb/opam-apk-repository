@@ -8,9 +8,9 @@ remove: [
 depends: [
   "mariadb-connector-c" {= "3.1.8-r1"}
   "musl" {= "1.1.24-r10"}
-  "openssl-dev"
+  "openssl-dev" {= "1.1.1o-r0"}
   "pkgconf" {= "1.7.2-r0"}
-  "zlib-dev"
+  "zlib-dev" {= "1.2.12-r3"}
 ]
 extra-source "mariadb-connector-c-dev-3.1.8-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/mariadb-connector-c-dev-3.1.8-r1.apk"

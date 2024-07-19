@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del py3-packaging-pyc"]
 ]
 depends: [
-  "py3-parsing"
-  "python3"
+  "py3-parsing" {= "3.0.9-r2"}
+  "python3" {= "3.11.8-r0"}
   "python3" {>= "3.11"}
 ]
 extra-source "py3-packaging-pyc-23.1-r1.apk" {

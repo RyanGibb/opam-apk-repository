@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del busybox-initscripts"]
 ]
 depends: [
-  "busybox"
+  "busybox" {= "1.35.0-r18"}
   "mdev-conf" {= "4.2-r0"}
   "openrc" {>= "0.24.1-r6"}
 ]

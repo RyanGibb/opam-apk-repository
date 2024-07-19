@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del ndisc6-dnssort"]
 ]
 depends: [
-  "perl"
+  "perl" {= "5.36.2-r0"}
 ]
 extra-source "ndisc6-dnssort-1.0.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ndisc6-dnssort-1.0.6-r0.apk"

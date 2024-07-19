@@ -7,7 +7,6 @@ remove: [
 ]
 depends: [
   "libapparmor" {= "3.1.7-r2"}
-  "linux-pam"
   "linux-pam" {= "1.6.0-r0"}
   "musl" {= "1.2.5-r0"}
 ]

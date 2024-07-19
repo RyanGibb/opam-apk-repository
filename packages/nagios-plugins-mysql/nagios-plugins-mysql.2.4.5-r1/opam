@@ -9,7 +9,7 @@ depends: [
   "libcrypto3" {= "3.3.1-r3"}
   "mariadb-connector-c" {= "3.3.10-r0"}
   "musl" {= "1.2.5-r0"}
-  "nagios-plugins"
+  "nagios-plugins" {= "2.4.5-r1"}
 ]
 extra-source "nagios-plugins-mysql-2.4.5-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/nagios-plugins-mysql-2.4.5-r1.apk"

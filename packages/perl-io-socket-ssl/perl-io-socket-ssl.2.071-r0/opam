@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del perl-io-socket-ssl"]
 ]
 depends: [
-  "ca-certificates"
-  "perl"
-  "perl-mozilla-ca"
-  "perl-net-ssleay"
+  "ca-certificates" {= "20230506-r0"}
+  "perl" {= "5.32.1-r0"}
+  "perl-mozilla-ca" {= "20211001-r0"}
+  "perl-net-ssleay" {= "1.90-r0"}
 ]
 extra-source "perl-io-socket-ssl-2.071-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/perl-io-socket-ssl-2.071-r0.apk"

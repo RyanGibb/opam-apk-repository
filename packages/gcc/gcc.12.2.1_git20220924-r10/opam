@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del gcc"]
 ]
 depends: [
-  "binutils"
+  "binutils" {= "2.40-r7"}
   "gmp" {= "6.2.1-r3"}
   "libatomic" {= "12.2.1_git20220924-r10"}
   "libgcc" {= "12.2.1_git20220924-r10"}

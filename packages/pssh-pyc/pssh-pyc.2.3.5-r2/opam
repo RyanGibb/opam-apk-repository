@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del pssh-pyc"]
 ]
 depends: [
-  "python3"
+  "python3" {= "3.12.3-r1"}
   "python3" {>= "3.12"}
   ("openssh-client-default" {= "9.7_p1-r4"} | "openssh-client-krb5" {= "9.7_p1-r4"})
 ]

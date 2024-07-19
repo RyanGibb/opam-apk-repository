@@ -10,7 +10,7 @@ depends: [
   "libcrypto1-1" {= "1.1.1t-r2"}
   "libpcap" {= "1.10.0-r0"}
   "musl" {= "1.2.2-r5"}
-  "openssl"
+  "openssl" {= "1.1.1t-r2"}
   "vde2-libs" {= "2.3.2-r13"}
 ]
 extra-source "vde2-2.3.2-r13.apk" {

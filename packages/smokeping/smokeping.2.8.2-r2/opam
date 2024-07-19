@@ -6,31 +6,31 @@ remove: [
   ["sh" "-c" "sudo apk del smokeping"]
 ]
 depends: [
-  "font-dejavu"
-  "fping"
-  "perl"
-  "perl-cgi"
-  "perl-cgi-fast"
-  "perl-cgi-session"
-  "perl-config-grammar"
-  "perl-data-hexdump"
-  "perl-digest-hmac"
-  "perl-fcgi"
-  "perl-io-socket-ssl"
-  "perl-io-tty"
-  "perl-ldap"
-  "perl-libwww"
-  "perl-mozilla-ca"
-  "perl-net-dns"
-  "perl-net-ip"
-  "perl-net-openssh"
-  "perl-net-snmp"
-  "perl-net-telnet"
-  "perl-rrd"
-  "perl-snmp-session"
-  "perl-text-soundex"
-  "perl-uri"
-  "rrdtool"
+  "font-dejavu" {= "2.37-r5"}
+  "fping" {= "5.1-r5"}
+  "perl" {= "5.36.2-r0"}
+  "perl-cgi" {= "4.57-r0"}
+  "perl-cgi-fast" {= "2.16-r0"}
+  "perl-cgi-session" {= "4.48-r3"}
+  "perl-config-grammar" {= "1.13-r3"}
+  "perl-data-hexdump" {= "0.04-r0"}
+  "perl-digest-hmac" {= "1.04-r1"}
+  "perl-fcgi" {= "0.82-r2"}
+  "perl-io-socket-ssl" {= "2.081-r0"}
+  "perl-io-tty" {= "1.17-r1"}
+  "perl-ldap" {= "0.68-r1"}
+  "perl-libwww" {= "6.68-r1"}
+  "perl-mozilla-ca" {= "20240313-r0"}
+  "perl-net-dns" {= "1.37-r0"}
+  "perl-net-ip" {= "1.26-r5"}
+  "perl-net-openssh" {= "0.83-r0"}
+  "perl-net-snmp" {= "6.0.1-r7"}
+  "perl-net-telnet" {= "3.05-r0"}
+  "perl-rrd" {= "1.8.0-r3"}
+  "perl-snmp-session" {= "1.15-r0"}
+  "perl-text-soundex" {= "3.05-r8"}
+  "perl-uri" {= "5.19-r0"}
+  "rrdtool" {= "1.8.0-r3"}
   ("busybox-binsh" {= "1.36.1-r7"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.54-r3"})
 ]
 extra-source "smokeping-2.8.2-r2.apk" {

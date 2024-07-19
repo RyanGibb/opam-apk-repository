@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del kbd"]
 ]
 depends: [
-  "kbd-misc"
+  "kbd-misc" {= "2.2.0-r2"}
   "musl" {= "1.1.24-r10"}
 ]
 extra-source "kbd-2.2.0-r2.apk" {

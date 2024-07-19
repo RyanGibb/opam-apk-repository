@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "iptables" {= "1.8.8-r2"}
-  "linux-headers"
+  "linux-headers" {= "5.19.5-r0"}
   "pkgconf" {= "1.9.4-r0"}
 ]
 extra-source "iptables-dev-1.8.8-r2.apk" {

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del nspr-dev"]
 ]
 depends: [
-  "linux-headers"
+  "linux-headers" {= "6.6-r0"}
   "nspr" {= "4.35-r4"}
   "pkgconf" {= "2.2.0-r0"}
 ]

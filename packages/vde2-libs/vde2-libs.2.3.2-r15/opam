@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "musl" {= "1.2.2-r9"}
-  "openssl"
+  "openssl" {= "1.1.1w-r1"}
 ]
 extra-source "vde2-libs-2.3.2-r15.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/vde2-libs-2.3.2-r15.apk"

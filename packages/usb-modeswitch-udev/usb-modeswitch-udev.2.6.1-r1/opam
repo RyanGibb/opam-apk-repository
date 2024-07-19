@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del usb-modeswitch-udev"]
 ]
 depends: [
-  "eudev"
-  "tcl"
+  "eudev" {= "3.2.11-r4"}
+  "tcl" {= "8.6.12-r1"}
   "usb-modeswitch" {= "2.6.1-r1"}
 ]
 extra-source "usb-modeswitch-udev-2.6.1-r1.apk" {

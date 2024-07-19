@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del apk-tools"]
 ]
 depends: [
-  "ca-certificates-bundle"
+  "ca-certificates-bundle" {= "20230506-r0"}
   "libcrypto1-1" {= "1.1.1w-r1"}
   "libssl1-1" {= "1.1.1w-r1"}
   "musl" {= "1.2.2-r9"}

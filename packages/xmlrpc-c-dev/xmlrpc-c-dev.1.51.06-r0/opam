@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del xmlrpc-c-dev"]
 ]
 depends: [
-  "libxml2-dev"
+  "libxml2-dev" {= "2.9.14-r2"}
   "pkgconf" {= "1.7.3-r0"}
   "xmlrpc-c" {= "1.51.06-r0"}
   "xmlrpc-c++" {= "1.51.06-r0"}

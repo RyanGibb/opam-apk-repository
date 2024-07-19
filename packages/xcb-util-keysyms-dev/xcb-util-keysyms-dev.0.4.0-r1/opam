@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "pkgconf" {= "1.7.2-r0"}
-  "xcb-util-dev"
+  "xcb-util-dev" {= "0.4.0-r3"}
   "xcb-util-keysyms" {= "0.4.0-r1"}
 ]
 extra-source "xcb-util-keysyms-dev-0.4.0-r1.apk" {

@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del perl-cps"]
 ]
 depends: [
-  "perl-future"
-  "perl-sub-name"
+  "perl-future" {= "0.49-r0"}
+  "perl-sub-name" {= "0.26-r4"}
 ]
 extra-source "perl-cps-0.19-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-cps-0.19-r3.apk"

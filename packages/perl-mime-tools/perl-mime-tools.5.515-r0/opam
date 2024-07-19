@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del perl-mime-tools"]
 ]
 depends: [
-  "perl"
-  "perl-convert-binhex"
-  "perl-mailtools"
+  "perl" {= "5.38.2-r0"}
+  "perl-convert-binhex" {= "1.125-r7"}
+  "perl-mailtools" {= "2.21-r4"}
 ]
 extra-source "perl-mime-tools-5.515-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-mime-tools-5.515-r0.apk"

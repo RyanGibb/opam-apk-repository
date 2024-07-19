@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "git" {= "2.32.7-r0"}
-  "perl"
+  "perl" {= "5.32.1-r0"}
 ]
 extra-source "git-diff-highlight-2.32.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/git-diff-highlight-2.32.7-r0.apk"

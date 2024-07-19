@@ -17,8 +17,8 @@ depends: [
   "libxml2" {= "2.9.14-r2"}
   "llvm11-libs" {= "11.1.0-r2"}
   "musl" {= "1.2.2-r5"}
-  "postgresql-client"
-  "tzdata"
+  "postgresql-client" {= "13.12-r0"}
+  "tzdata" {= "2023c-r0"}
 ]
 extra-source "postgresql-13.12-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/postgresql-13.12-r0.apk"

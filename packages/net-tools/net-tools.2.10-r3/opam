@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del net-tools"]
 ]
 depends: [
-  "mii-tool"
+  "mii-tool" {= "2.10-r3"}
   "musl" {= "1.2.5-r0"}
 ]
 extra-source "net-tools-2.10-r3.apk" {

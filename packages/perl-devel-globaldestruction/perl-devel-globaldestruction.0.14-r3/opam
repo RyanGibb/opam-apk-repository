@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del perl-devel-globaldestruction"]
 ]
 depends: [
-  "perl"
-  "perl-sub-exporter-progressive"
+  "perl" {= "5.36.2-r0"}
+  "perl-sub-exporter-progressive" {= "0.001013-r3"}
 ]
 extra-source "perl-devel-globaldestruction-0.14-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-devel-globaldestruction-0.14-r3.apk"

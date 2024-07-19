@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del openvpn"]
 ]
 depends: [
-  "iproute2-minimal"
+  "iproute2-minimal" {= "6.0.0-r1"}
   "libcrypto3" {= "3.0.14-r0"}
   "libssl3" {= "3.0.14-r0"}
   "lzo" {= "2.10-r3"}

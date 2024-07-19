@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del vim-help"]
 ]
 depends: [
-  "vim"
+  "vim" {= "8.2.4836-r0"}
 ]
 extra-source "vim-help-8.2.4836-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/vim-help-8.2.4836-r0.apk"

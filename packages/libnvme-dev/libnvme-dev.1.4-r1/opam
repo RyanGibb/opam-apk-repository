@@ -6,12 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del libnvme-dev"]
 ]
 depends: [
-  "json-c-dev"
   "json-c-dev" {= "0.16-r3"}
   "libnvme" {= "1.4-r1"}
   "libnvmemi" {= "1.4-r1"}
-  "linux-headers"
-  "openssl-dev"
+  "linux-headers" {= "6.3-r0"}
   "openssl-dev" {= "3.1.6-r0"}
   "pkgconf" {= "1.9.5-r0"}
 ]

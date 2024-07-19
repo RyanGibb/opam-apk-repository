@@ -7,7 +7,6 @@ remove: [
 ]
 depends: [
   "ipset" {= "7.15-r0"}
-  "libmnl-dev"
   "libmnl-dev" {= "1.0.5-r0"}
   "pkgconf" {= "1.8.1-r0"}
 ]

@@ -6,13 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del zfs-dev"]
 ]
 depends: [
-  "attr-dev"
-  "e2fsprogs-dev"
-  "glib-dev"
-  "libtirpc-dev"
-  "openssl-dev"
+  "attr-dev" {= "2.4.48-r0"}
+  "e2fsprogs-dev" {= "1.45.6-r0"}
+  "glib-dev" {= "2.64.6-r0"}
+  "libtirpc-dev" {= "1.2.6-r0"}
+  "openssl-dev" {= "1.1.1o-r0"}
   "pkgconf" {= "1.7.2-r0"}
-  "util-linux-dev"
+  "util-linux-dev" {= "2.37.4-r0"}
   "zfs-libs" {= "0.8.4-r0"}
 ]
 extra-source "zfs-dev-0.8.4-r0.apk" {

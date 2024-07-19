@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del py3-pytest-timeout"]
 ]
 depends: [
-  "py3-pytest"
+  "py3-pytest" {= "7.2.0-r1"}
 ]
 extra-source "py3-pytest-timeout-2.1.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/py3-pytest-timeout-2.1.0-r0.apk"

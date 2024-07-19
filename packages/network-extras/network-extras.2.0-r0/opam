@@ -6,22 +6,22 @@ remove: [
   ["sh" "-c" "sudo apk del network-extras"]
 ]
 depends: [
-  "bonding"
-  "bridge"
-  "iw"
-  "ppp-atm"
-  "ppp-chat"
-  "ppp-daemon"
-  "ppp-l2tp"
-  "ppp-minconn"
-  "ppp-passprompt"
-  "ppp-passwordfd"
-  "ppp-pppoe"
-  "ppp-radius"
-  "ppp-winbind"
-  "usb-modeswitch"
-  "vlan"
-  "wpa_supplicant"
+  "bonding" {= "2.6-r5"}
+  "bridge" {= "1.5-r5"}
+  "iw" {= "6.9-r0"}
+  "ppp-atm" {= "2.5.0-r5"}
+  "ppp-chat" {= "2.5.0-r5"}
+  "ppp-daemon" {= "2.5.0-r5"}
+  "ppp-l2tp" {= "2.5.0-r5"}
+  "ppp-minconn" {= "2.5.0-r5"}
+  "ppp-passprompt" {= "2.5.0-r5"}
+  "ppp-passwordfd" {= "2.5.0-r5"}
+  "ppp-pppoe" {= "2.5.0-r5"}
+  "ppp-radius" {= "2.5.0-r5"}
+  "ppp-winbind" {= "2.5.0-r5"}
+  "usb-modeswitch" {= "2.6.1-r3"}
+  "vlan" {= "2.3-r1"}
+  "wpa_supplicant" {= "2.10-r11"}
 ]
 extra-source "network-extras-2.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/network-extras-2.0-r0.apk"

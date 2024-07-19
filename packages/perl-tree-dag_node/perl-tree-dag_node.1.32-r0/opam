@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del perl-tree-dag_node"]
 ]
 depends: [
-  "perl"
-  "perl-file-slurp-tiny"
+  "perl" {= "5.36.2-r0"}
+  "perl-file-slurp-tiny" {= "0.004-r3"}
 ]
 extra-source "perl-tree-dag_node-1.32-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-tree-dag_node-1.32-r0.apk"

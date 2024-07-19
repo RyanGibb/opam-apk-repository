@@ -9,7 +9,7 @@ depends: [
   "busybox" {= "1.34.1-r7"}
   "libpcap" {= "1.10.1-r0"}
   "musl" {= "1.2.2-r9"}
-  "python3"
+  "python3" {= "3.9.18-r0"}
 ]
 extra-source "arpwatch-3.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/arpwatch-3.1-r1.apk"

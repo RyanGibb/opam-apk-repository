@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del isl-dev"]
 ]
 depends: [
-  "gmp-dev"
+  "gmp-dev" {= "6.2.1-r2"}
   "isl25" {= "0.25-r1"}
   "pkgconf" {= "1.9.4-r0"}
 ]

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libedit" {= "20210216.3.1-r0"}
-  "ncurses-dev"
+  "ncurses-dev" {= "6.2_p20210612-r1"}
   "pkgconf" {= "1.7.4-r1"}
 ]
 extra-source "libedit-dev-20210216.3.1-r0.apk" {

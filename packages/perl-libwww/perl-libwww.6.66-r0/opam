@@ -6,20 +6,20 @@ remove: [
   ["sh" "-c" "sudo apk del perl-libwww"]
 ]
 depends: [
-  "perl"
-  "perl-encode-locale"
-  "perl-file-listing"
-  "perl-html-parser"
-  "perl-http-cookies"
-  "perl-http-daemon"
-  "perl-http-date"
-  "perl-http-message"
-  "perl-http-negotiate"
-  "perl-lwp-mediatypes"
-  "perl-net-http"
-  "perl-try-tiny"
-  "perl-uri"
-  "perl-www-robotrules"
+  "perl" {= "5.34.2-r0"}
+  "perl-encode-locale" {= "1.05-r3"}
+  "perl-file-listing" {= "6.14-r0"}
+  "perl-html-parser" {= "3.78-r0"}
+  "perl-http-cookies" {= "6.10-r0"}
+  "perl-http-daemon" {= "6.14-r0"}
+  "perl-http-date" {= "6.05-r1"}
+  "perl-http-message" {= "6.36-r0"}
+  "perl-http-negotiate" {= "6.01-r3"}
+  "perl-lwp-mediatypes" {= "6.04-r1"}
+  "perl-net-http" {= "6.22-r0"}
+  "perl-try-tiny" {= "0.31-r0"}
+  "perl-uri" {= "5.10-r0"}
+  "perl-www-robotrules" {= "6.02-r3"}
 ]
 extra-source "perl-libwww-6.66-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/perl-libwww-6.66-r0.apk"

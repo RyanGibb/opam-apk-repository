@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del perl-test-fatal"]
 ]
 depends: [
-  "perl-try-tiny"
+  "perl-try-tiny" {= "0.30-r2"}
 ]
 extra-source "perl-test-fatal-0.016-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/perl-test-fatal-0.016-r1.apk"

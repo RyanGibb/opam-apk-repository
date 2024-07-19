@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del py3-fixtures-pyc"]
 ]
 depends: [
-  "py3-pbr"
-  "python3"
+  "py3-pbr" {= "5.11.1-r5"}
+  "python3" {= "3.12.3-r1"}
   "python3" {>= "3.12"}
 ]
 extra-source "py3-fixtures-pyc-4.1.0-r2.apk" {

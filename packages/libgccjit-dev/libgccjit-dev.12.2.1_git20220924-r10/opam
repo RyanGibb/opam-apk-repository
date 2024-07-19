@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del libgccjit-dev"]
 ]
 depends: [
-  "libgccjit"
+  "libgccjit" {= "12.2.1_git20220924-r10"}
 ]
 extra-source "libgccjit-dev-12.2.1_git20220924-r10.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/libgccjit-dev-12.2.1_git20220924-r10.apk"

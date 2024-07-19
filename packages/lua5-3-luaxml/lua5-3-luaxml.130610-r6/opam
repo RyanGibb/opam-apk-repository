@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del lua5.3-luaxml"]
 ]
 depends: [
-  "lua5-3"
+  "lua5-3" {= "5.3.6-r0"}
   "lua5-3-libs" {= "5.3.6-r0"}
   "musl" {= "1.2.2-r5"}
 ]

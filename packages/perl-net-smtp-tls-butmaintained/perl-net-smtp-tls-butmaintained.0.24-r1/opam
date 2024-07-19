@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del perl-net-smtp-tls-butmaintained"]
 ]
 depends: [
-  "perl-digest-hmac"
-  "perl-io-socket-ssl"
-  "perl-net-ssleay"
+  "perl-digest-hmac" {= "1.03-r1"}
+  "perl-io-socket-ssl" {= "2.068-r0"}
+  "perl-net-ssleay" {= "1.88-r0"}
 ]
 extra-source "perl-net-smtp-tls-butmaintained-0.24-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-net-smtp-tls-butmaintained-0.24-r1.apk"

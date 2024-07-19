@@ -6,7 +6,6 @@ remove: [
   ["sh" "-c" "sudo apk del kamailio-unixodbc"]
 ]
 depends: [
-  "kamailio"
   "kamailio" {= "5.7.2-r2"}
   "musl" {= "1.2.4_git20230717-r4"}
   "unixodbc" {= "2.3.12-r0"}

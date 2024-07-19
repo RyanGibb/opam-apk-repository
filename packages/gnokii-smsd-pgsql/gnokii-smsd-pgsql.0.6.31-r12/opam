@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del gnokii-smsd-pgsql"]
 ]
 depends: [
-  "gnokii-smsd"
+  "gnokii-smsd" {= "0.6.31-r12"}
   "libpq" {= "14.12-r0"}
   "musl" {= "1.2.3-r3"}
 ]

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "audit-libs" {= "4.0.1-r0"}
   "libcap-ng-dev" {= "0.8.5-r0"}
-  "linux-headers"
+  "linux-headers" {= "6.6-r0"}
   "pkgconf" {= "2.2.0-r0"}
 ]
 extra-source "audit-dev-4.0.1-r0.apk" {

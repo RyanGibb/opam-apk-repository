@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del sharutils"]
 ]
 depends: [
-  "bzip2"
+  "bzip2" {= "1.0.8-r6"}
   "libintl" {= "0.22.3-r0"}
   "musl" {= "1.2.4_git20230717-r4"}
-  "xz"
+  "xz" {= "5.4.5-r0"}
 ]
 extra-source "sharutils-4.15.2-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/sharutils-4.15.2-r5.apk"

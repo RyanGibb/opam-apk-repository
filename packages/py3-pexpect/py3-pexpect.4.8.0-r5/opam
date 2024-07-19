@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del py3-pexpect"]
 ]
 depends: [
-  "py3-ptyprocess"
-  "python3"
+  "py3-ptyprocess" {= "0.7.0-r5"}
+  "python3" {= "3.11.8-r0"}
   "python3" {>= "3.11"}
 ]
 extra-source "py3-pexpect-4.8.0-r5.apk" {

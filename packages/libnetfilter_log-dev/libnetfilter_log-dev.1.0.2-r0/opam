@@ -9,7 +9,7 @@ depends: [
   "libmnl-dev" {= "1.0.5-r0"}
   "libnetfilter_log" {= "1.0.2-r0"}
   "libnfnetlink-dev" {= "1.0.2-r0"}
-  "linux-headers"
+  "linux-headers" {= "5.19.5-r0"}
   "pkgconf" {= "1.9.4-r0"}
 ]
 extra-source "libnetfilter_log-dev-1.0.2-r0.apk" {

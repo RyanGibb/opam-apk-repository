@@ -6,7 +6,6 @@ remove: [
   ["sh" "-c" "sudo apk del libnftnl-dev"]
 ]
 depends: [
-  "libmnl-dev"
   "libmnl-dev" {= "1.0.4-r0"}
   "libnftnl-libs" {= "1.1.6-r0"}
   "pkgconf" {= "1.7.2-r0"}

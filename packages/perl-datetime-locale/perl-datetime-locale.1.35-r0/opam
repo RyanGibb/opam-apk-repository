@@ -6,19 +6,19 @@ remove: [
   ["sh" "-c" "sudo apk del perl-datetime-locale"]
 ]
 depends: [
-  "perl"
-  "perl-cpan-meta-check"
-  "perl-dist-checkconflicts"
-  "perl-file-sharedir"
-  "perl-file-sharedir-install"
-  "perl-list-moreutils"
-  "perl-namespace-autoclean"
-  "perl-params-validate"
-  "perl-params-validationcompiler"
-  "perl-scalar-list-utils"
-  "perl-test-fatal"
-  "perl-test-requires"
-  "perl-test-warnings"
+  "perl" {= "5.34.2-r0"}
+  "perl-cpan-meta-check" {= "0.014-r2"}
+  "perl-dist-checkconflicts" {= "0.11-r2"}
+  "perl-file-sharedir" {= "1.118-r0"}
+  "perl-file-sharedir-install" {= "0.13-r2"}
+  "perl-list-moreutils" {= "0.430-r0"}
+  "perl-namespace-autoclean" {= "0.29-r2"}
+  "perl-params-validate" {= "1.30-r1"}
+  "perl-params-validationcompiler" {= "0.30-r1"}
+  "perl-scalar-list-utils" {= "1.62-r0"}
+  "perl-test-fatal" {= "0.016-r3"}
+  "perl-test-requires" {= "0.11-r1"}
+  "perl-test-warnings" {= "0.031-r0"}
 ]
 extra-source "perl-datetime-locale-1.35-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/perl-datetime-locale-1.35-r0.apk"

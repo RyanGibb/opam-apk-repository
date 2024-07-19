@@ -6,7 +6,6 @@ remove: [
   ["sh" "-c" "sudo apk del kamailio-ims"]
 ]
 depends: [
-  "kamailio"
   "kamailio" {= "5.5.4-r0"}
   "libmnl" {= "1.0.5-r0"}
   "libxml2" {= "2.9.14-r2"}

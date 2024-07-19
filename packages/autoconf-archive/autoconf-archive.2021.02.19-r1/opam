@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del autoconf-archive"]
 ]
 depends: [
-  "autoconf"
+  "autoconf" {= "2.71-r0"}
 ]
 extra-source "autoconf-archive-2021.02.19-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/autoconf-archive-2021.02.19-r1.apk"

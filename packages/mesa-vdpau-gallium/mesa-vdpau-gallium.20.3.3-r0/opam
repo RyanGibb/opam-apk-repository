@@ -11,7 +11,7 @@ depends: [
   "libelf" {= "0.182-r0"}
   "libgcc" {= "10.2.1_pre1-r3"}
   "libstdc++" {= "10.2.1_pre1-r3"}
-  "libvdpau"
+  "libvdpau" {= "1.4-r0"}
   "libx11" {= "1.7.1-r0"}
   "libxcb" {= "1.14-r1"}
   "libxshmfence" {= "1.3-r1"}

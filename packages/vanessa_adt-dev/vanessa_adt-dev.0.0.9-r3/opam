@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "vanessa_adt" {= "0.0.9-r3"}
-  "vanessa_logger-dev"
+  "vanessa_logger-dev" {= "0.0.10-r3"}
 ]
 extra-source "vanessa_adt-dev-0.0.9-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/vanessa_adt-dev-0.0.9-r3.apk"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del fish-lang"]
 ]
 depends: [
-  "bc"
+  "bc" {= "1.07.1-r2"}
 ]
 extra-source "fish-lang-3.5.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/fish-lang-3.5.1-r1.apk"

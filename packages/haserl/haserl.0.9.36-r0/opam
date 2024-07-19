@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del haserl"]
 ]
 depends: [
-  "haserl-lua5-1"
-  "haserl-lua5-2"
-  "haserl-lua5-3"
+  "haserl-lua5-1" {= "0.9.36-r0"}
+  "haserl-lua5-2" {= "0.9.36-r0"}
   "haserl-lua5-3" {= "0.9.36-r0"}
 ]
 extra-source "haserl-0.9.36-r0.apk" {

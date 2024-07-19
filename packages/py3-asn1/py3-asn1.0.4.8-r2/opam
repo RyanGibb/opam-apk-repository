@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del py3-asn1"]
 ]
 depends: [
-  "python3"
+  "python3" {= "3.10.14-r1"}
 ]
 extra-source "py3-asn1-0.4.8-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/py3-asn1-0.4.8-r2.apk"

@@ -6,32 +6,32 @@ remove: [
   ["sh" "-c" "sudo apk del openldap-overlay-all"]
 ]
 depends: [
-  "openldap-overlay-accesslog"
-  "openldap-overlay-auditlog"
-  "openldap-overlay-autoca"
-  "openldap-overlay-collect"
-  "openldap-overlay-constraint"
-  "openldap-overlay-dds"
-  "openldap-overlay-deref"
-  "openldap-overlay-dyngroup"
-  "openldap-overlay-dynlist"
-  "openldap-overlay-homedir"
-  "openldap-overlay-lastbind"
-  "openldap-overlay-memberof"
-  "openldap-overlay-mqtt"
-  "openldap-overlay-otp"
-  "openldap-overlay-ppolicy"
-  "openldap-overlay-proxycache"
-  "openldap-overlay-refint"
-  "openldap-overlay-remoteauth"
-  "openldap-overlay-retcode"
-  "openldap-overlay-rwm"
-  "openldap-overlay-seqmod"
-  "openldap-overlay-sssvlv"
-  "openldap-overlay-syncprov"
-  "openldap-overlay-translucent"
-  "openldap-overlay-unique"
-  "openldap-overlay-valsort"
+  "openldap-overlay-accesslog" {= "2.6.7-r0"}
+  "openldap-overlay-auditlog" {= "2.6.7-r0"}
+  "openldap-overlay-autoca" {= "2.6.7-r0"}
+  "openldap-overlay-collect" {= "2.6.7-r0"}
+  "openldap-overlay-constraint" {= "2.6.7-r0"}
+  "openldap-overlay-dds" {= "2.6.7-r0"}
+  "openldap-overlay-deref" {= "2.6.7-r0"}
+  "openldap-overlay-dyngroup" {= "2.6.7-r0"}
+  "openldap-overlay-dynlist" {= "2.6.7-r0"}
+  "openldap-overlay-homedir" {= "2.6.7-r0"}
+  "openldap-overlay-lastbind" {= "2.6.7-r0"}
+  "openldap-overlay-memberof" {= "2.6.7-r0"}
+  "openldap-overlay-mqtt" {= "2.6.7-r0"}
+  "openldap-overlay-otp" {= "2.6.7-r0"}
+  "openldap-overlay-ppolicy" {= "2.6.7-r0"}
+  "openldap-overlay-proxycache" {= "2.6.7-r0"}
+  "openldap-overlay-refint" {= "2.6.7-r0"}
+  "openldap-overlay-remoteauth" {= "2.6.7-r0"}
+  "openldap-overlay-retcode" {= "2.6.7-r0"}
+  "openldap-overlay-rwm" {= "2.6.7-r0"}
+  "openldap-overlay-seqmod" {= "2.6.7-r0"}
+  "openldap-overlay-sssvlv" {= "2.6.7-r0"}
+  "openldap-overlay-syncprov" {= "2.6.7-r0"}
+  "openldap-overlay-translucent" {= "2.6.7-r0"}
+  "openldap-overlay-unique" {= "2.6.7-r0"}
+  "openldap-overlay-valsort" {= "2.6.7-r0"}
 ]
 extra-source "openldap-overlay-all-2.6.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/openldap-overlay-all-2.6.7-r0.apk"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "pkgconf" {= "1.8.1-r0"}
-  "spirv-headers"
+  "spirv-headers" {= "1.5.3-r1"}
   "spirv-tools" {= "2020.3-r1"}
 ]
 extra-source "spirv-tools-dev-2020.3-r1.apk" {

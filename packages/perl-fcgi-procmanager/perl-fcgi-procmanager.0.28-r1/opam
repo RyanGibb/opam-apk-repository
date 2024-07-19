@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del perl-fcgi-procmanager"]
 ]
 depends: [
-  "perl"
+  "perl" {= "5.30.3-r0"}
 ]
 extra-source "perl-fcgi-procmanager-0.28-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-fcgi-procmanager-0.28-r1.apk"

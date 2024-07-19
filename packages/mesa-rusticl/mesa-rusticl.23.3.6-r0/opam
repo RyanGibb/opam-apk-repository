@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del mesa-rusticl"]
 ]
 depends: [
-  "clang17-headers"
+  "clang17-headers" {= "17.0.5-r0"}
   "clang17-libs" {= "17.0.5-r0"}
   "libclc" {>= "17"}
   "libdrm" {= "2.4.118-r0"}

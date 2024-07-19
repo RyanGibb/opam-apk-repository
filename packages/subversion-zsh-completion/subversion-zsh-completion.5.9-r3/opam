@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del subversion-zsh-completion"]
 ]
 depends: [
-  "zsh"
+  "zsh" {= "5.9-r3"}
 ]
 extra-source "subversion-zsh-completion-5.9-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/subversion-zsh-completion-5.9-r3.apk"

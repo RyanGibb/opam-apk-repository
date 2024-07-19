@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del shorewall6"]
 ]
 depends: [
-  "ip6tables"
-  "iproute2"
-  "perl"
-  "perl-socket6"
-  "shorewall-core"
+  "ip6tables" {= "1.8.9-r2"}
+  "iproute2" {= "6.3.0-r0"}
+  "perl" {= "5.36.2-r0"}
+  "perl-socket6" {= "0.29-r8"}
+  "shorewall-core" {= "5.2.8-r1"}
 ]
 extra-source "shorewall6-5.2.8-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/shorewall6-5.2.8-r0.apk"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del ruby-debug-doc"]
 ]
 depends: [
-  "ruby"
+  "ruby" {= "3.2.4-r0"}
 ]
 extra-source "ruby-debug-doc-1.7.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/ruby-debug-doc-1.7.2-r0.apk"

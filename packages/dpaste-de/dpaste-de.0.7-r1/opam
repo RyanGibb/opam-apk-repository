@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del dpaste-de"]
 ]
 depends: [
-  "curl"
+  "curl" {= "8.5.0-r0"}
 ]
 extra-source "dpaste-de-0.7-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/dpaste-de-0.7-r1.apk"

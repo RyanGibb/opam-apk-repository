@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del perl-data-guid"]
 ]
 depends: [
-  "perl"
-  "perl-data-uuid"
-  "perl-sub-exporter"
-  "perl-sub-install"
+  "perl" {= "5.36.2-r0"}
+  "perl-data-uuid" {= "1.226-r4"}
+  "perl-sub-exporter" {= "0.989-r0"}
+  "perl-sub-install" {= "0.929-r1"}
 ]
 extra-source "perl-data-guid-0.051-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-data-guid-0.051-r0.apk"

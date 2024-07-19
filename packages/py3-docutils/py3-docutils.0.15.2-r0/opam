@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del py3-docutils"]
 ]
 depends: [
-  "py3-pillow"
-  "python3"
+  "py3-pillow" {= "7.1.2-r2"}
+  "python3" {= "3.8.10-r0"}
 ]
 extra-source "py3-docutils-0.15.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/py3-docutils-0.15.2-r0.apk"

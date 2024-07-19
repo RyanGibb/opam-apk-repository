@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del kamailio-postgres"]
 ]
 depends: [
-  "kamailio"
   "kamailio" {= "5.6.3-r1"}
-  "kamailio-db"
+  "kamailio-db" {= "5.6.3-r1"}
   "libpq" {= "15.7-r0"}
   "musl" {= "1.2.3-r5"}
 ]

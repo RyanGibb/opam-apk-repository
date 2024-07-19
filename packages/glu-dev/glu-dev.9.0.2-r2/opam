@@ -7,7 +7,6 @@ remove: [
 ]
 depends: [
   "glu" {= "9.0.2-r2"}
-  "mesa-dev"
   "mesa-dev" {= "22.2.5-r1"}
   "pkgconf" {= "1.9.4-r0"}
 ]

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del py3-pbr-pyc"]
 ]
 depends: [
-  "py3-setuptools"
+  "py3-setuptools" {= "69.5.1-r0"}
   "python3" {>= "3.12"}
 ]
 extra-source "py3-pbr-pyc-5.11.1-r5.apk" {

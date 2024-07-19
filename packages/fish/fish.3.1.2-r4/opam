@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del fish"]
 ]
 depends: [
-  "bc"
+  "bc" {= "1.07.1-r1"}
   "busybox" {= "1.32.1-r9"}
   "libpcre2-32" {= "10.36-r1"}
   "libstdc++" {= "10.2.1_pre1-r3"}

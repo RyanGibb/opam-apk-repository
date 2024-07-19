@@ -14,7 +14,7 @@ depends: [
   "libxcb" {= "1.14-r1"}
   "musl" {= "1.1.24-r10"}
   "openjpeg" {= "2.4.0-r1"}
-  "py3-olefile"
+  "py3-olefile" {= "0.46-r4"}
   "tiff" {= "4.1.0-r0"}
   "zlib" {= "1.2.12-r3"}
 ]

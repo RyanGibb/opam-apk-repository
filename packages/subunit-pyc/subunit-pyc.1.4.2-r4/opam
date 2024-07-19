@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del subunit-pyc"]
 ]
 depends: [
-  "py3-extras"
-  "py3-testtools"
-  "python3"
+  "py3-extras" {= "1.0.0-r8"}
+  "py3-testtools" {= "2.6.0-r1"}
+  "python3" {= "3.11.8-r0"}
   "python3" {>= "3.11"}
 ]
 extra-source "subunit-pyc-1.4.2-r4.apk" {

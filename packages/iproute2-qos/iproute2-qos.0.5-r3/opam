@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del iproute2-qos"]
 ]
 depends: [
-  "iproute2"
+  "iproute2" {= "6.0.0-r1"}
 ]
 extra-source "iproute2-qos-0.5-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/iproute2-qos-0.5-r3.apk"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "git" {= "2.26.3-r1"}
-  "perl"
+  "perl" {= "5.30.3-r0"}
 ]
 extra-source "git-gitweb-2.26.3-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/git-gitweb-2.26.3-r1.apk"

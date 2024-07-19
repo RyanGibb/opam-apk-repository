@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del ruby-net-pop-doc"]
 ]
 depends: [
-  "ruby"
+  "ruby" {= "3.1.5-r0"}
 ]
 extra-source "ruby-net-pop-doc-0.1.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ruby-net-pop-doc-0.1.1-r0.apk"

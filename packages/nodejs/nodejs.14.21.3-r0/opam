@@ -9,7 +9,7 @@ depends: [
   "brotli-libs" {= "1.0.9-r5"}
   "busybox" {= "1.33.1-r8"}
   "c-ares" {= "1.17.2-r0"}
-  "ca-certificates"
+  "ca-certificates" {= "20230506-r0"}
   "libcrypto1-1" {= "1.1.1t-r2"}
   "libgcc" {= "10.3.1_git20210424-r2"}
   "libssl1-1" {= "1.1.1t-r2"}

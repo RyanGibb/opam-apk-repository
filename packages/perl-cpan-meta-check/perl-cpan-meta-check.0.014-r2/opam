@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del perl-cpan-meta-check"]
 ]
 depends: [
-  "perl"
+  "perl" {= "5.36.2-r0"}
   "perl-module-metadata" {>= "1.000023"}
 ]
 extra-source "perl-cpan-meta-check-0.014-r2.apk" {

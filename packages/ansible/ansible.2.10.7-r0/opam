@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del ansible"]
 ]
 depends: [
-  "ansible-base"
-  "python3"
+  "ansible-base" {= "2.10.5-r1"}
+  "python3" {= "3.9.17-r0"}
 ]
 extra-source "ansible-2.10.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/ansible-2.10.7-r0.apk"

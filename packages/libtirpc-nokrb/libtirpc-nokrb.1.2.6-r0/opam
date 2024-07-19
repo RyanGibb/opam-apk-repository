@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del libtirpc-nokrb"]
 ]
 depends: [
-  "libtirpc-conf"
+  "libtirpc-conf" {= "1.2.6-r0"}
   "musl" {= "1.1.24-r10"}
 ]
 extra-source "libtirpc-nokrb-1.2.6-r0.apk" {

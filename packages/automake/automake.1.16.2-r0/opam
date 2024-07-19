@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del automake"]
 ]
 depends: [
-  "perl"
+  "perl" {= "5.30.3-r0"}
 ]
 extra-source "automake-1.16.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/automake-1.16.2-r0.apk"

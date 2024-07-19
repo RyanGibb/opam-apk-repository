@@ -9,7 +9,7 @@ depends: [
   "librrd" {= "1.8.0-r6"}
   "lm-sensors-libs" {= "3.6.0-r5"}
   "musl" {= "1.2.5-r0"}
-  "sysfsutils"
+  "sysfsutils" {= "2.1.1-r3"}
 ]
 extra-source "lm-sensors-sensord-3.6.0-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lm-sensors-sensord-3.6.0-r5.apk"

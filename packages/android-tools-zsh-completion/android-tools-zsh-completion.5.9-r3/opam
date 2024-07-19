@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del android-tools-zsh-completion"]
 ]
 depends: [
-  "zsh"
+  "zsh" {= "5.9-r3"}
 ]
 extra-source "android-tools-zsh-completion-5.9-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/android-tools-zsh-completion-5.9-r3.apk"

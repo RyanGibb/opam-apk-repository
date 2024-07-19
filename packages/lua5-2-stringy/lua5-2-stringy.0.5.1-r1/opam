@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del lua5.2-stringy"]
 ]
 depends: [
-  "lua5-2"
+  "lua5-2" {= "5.2.4-r7"}
   "musl" {= "1.2.2-r2"}
 ]
 extra-source "lua5.2-stringy-0.5.1-r1.apk" {

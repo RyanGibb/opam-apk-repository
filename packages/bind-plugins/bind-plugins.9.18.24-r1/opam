@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del bind-plugins"]
 ]
 depends: [
-  "bind"
+  "bind" {= "9.18.24-r1"}
   "musl" {= "1.2.4_git20230717-r4"}
 ]
 extra-source "bind-plugins-9.18.24-r1.apk" {

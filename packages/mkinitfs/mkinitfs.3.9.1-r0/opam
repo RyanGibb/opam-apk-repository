@@ -8,13 +8,13 @@ remove: [
 depends: [
   "apk-tools" {>= "2.9.1"}
   "busybox" {>= "1.28.2-r1"}
-  "busybox-binsh"
+  "busybox-binsh" {= "1.36.1-r19"}
   "cryptsetup-libs" {= "2.6.1-r8"}
-  "kmod"
+  "kmod" {= "31-r2"}
   "kmod-libs" {= "31-r2"}
   "lddtree" {>= "1.25"}
   "libblkid" {= "2.39.3-r0"}
-  "mdev-conf"
+  "mdev-conf" {= "4.6-r0"}
   "musl" {= "1.2.4_git20230717-r4"}
 ]
 extra-source "mkinitfs-3.9.1-r0.apk" {

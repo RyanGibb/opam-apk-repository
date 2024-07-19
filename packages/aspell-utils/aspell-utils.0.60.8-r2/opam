@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del aspell-utils"]
 ]
 depends: [
-  "aspell"
+  "aspell" {= "0.60.8-r2"}
   "musl" {= "1.2.3-r5"}
-  "perl"
+  "perl" {= "5.36.2-r0"}
 ]
 extra-source "aspell-utils-0.60.8-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/aspell-utils-0.60.8-r2.apk"

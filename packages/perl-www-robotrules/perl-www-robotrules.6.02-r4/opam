@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del perl-www-robotrules"]
 ]
 depends: [
-  "perl"
-  "perl-uri"
+  "perl" {= "5.38.2-r0"}
+  "perl-uri" {= "5.21-r0"}
 ]
 extra-source "perl-www-robotrules-6.02-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/perl-www-robotrules-6.02-r4.apk"

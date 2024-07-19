@@ -7,15 +7,15 @@ remove: [
 ]
 depends: [
   "lua-cliargs" {= "3.0_p2-r2"}
-  "lua5-3"
-  "lua5-3-cjson"
-  "lua5-3-filesystem"
-  "lua5-3-luassert"
-  "lua5-3-mediator"
-  "lua5-3-penlight"
-  "lua5-3-say"
-  "lua5-3-system"
-  "lua5-3-term"
+  "lua5-3" {= "5.3.6-r6"}
+  "lua5-3-cjson" {= "2.1.0-r11"}
+  "lua5-3-filesystem" {= "1.8.0-r4"}
+  "lua5-3-luassert" {= "1.9.0-r0"}
+  "lua5-3-mediator" {= "1.1.2-r2"}
+  "lua5-3-penlight" {= "1.13.1-r0"}
+  "lua5-3-say" {= "1.4.1-r0"}
+  "lua5-3-system" {= "0.2.1-r2"}
+  "lua5-3-term" {= "0.07-r2"}
 ]
 extra-source "lua5.3-busted-2.1.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/lua5.3-busted-2.1.2-r0.apk"

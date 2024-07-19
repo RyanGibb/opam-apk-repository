@@ -6,14 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del zfs-dev"]
 ]
 depends: [
-  "attr-dev"
-  "e2fsprogs-dev"
-  "glib-dev"
-  "libtirpc-dev"
+  "attr-dev" {= "2.5.1-r1"}
+  "e2fsprogs-dev" {= "1.46.6-r0"}
+  "glib-dev" {= "2.72.4-r0"}
   "libtirpc-dev" {= "1.3.2-r1"}
   "openssl-dev" {= "1.1.1w-r1"}
   "pkgconf" {= "1.8.1-r0"}
-  "util-linux-dev"
   "util-linux-dev" {= "2.38-r1"}
   "zfs-libs" {= "2.1.5-r0"}
   "zlib-dev" {= "1.2.12-r3"}

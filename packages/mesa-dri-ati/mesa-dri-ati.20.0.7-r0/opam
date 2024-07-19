@@ -8,8 +8,8 @@ remove: [
 depends: [
   "mesa-dri-classic" {= "20.0.7-r0"}
   "mesa-dri-gallium" {= "20.0.7-r0"}
-  "mesa-va-gallium"
-  "mesa-vdpau-gallium"
+  "mesa-va-gallium" {= "20.0.7-r0"}
+  "mesa-vdpau-gallium" {= "20.0.7-r0"}
 ]
 extra-source "mesa-dri-ati-20.0.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/mesa-dri-ati-20.0.7-r0.apk"

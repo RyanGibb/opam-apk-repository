@@ -6,13 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del openldap-dev"]
 ]
 depends: [
-  "cyrus-sasl-dev"
-  "libevent-dev"
+  "cyrus-sasl-dev" {= "2.1.28-r1"}
+  "libevent-dev" {= "2.1.12-r4"}
   "libldap" {= "2.6.3-r3"}
-  "libsodium-dev"
+  "libsodium-dev" {= "1.0.18-r0"}
   "openssl-dev" {= "1.1.1w-r1"}
   "pkgconf" {= "1.8.1-r0"}
-  "util-linux-dev"
+  "util-linux-dev" {= "2.38-r1"}
 ]
 extra-source "openldap-dev-2.6.3-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/openldap-dev-2.6.3-r3.apk"

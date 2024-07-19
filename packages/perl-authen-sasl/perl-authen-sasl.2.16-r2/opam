@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del perl-authen-sasl"]
 ]
 depends: [
-  "perl"
-  "perl-digest-hmac"
+  "perl" {= "5.30.3-r0"}
+  "perl-digest-hmac" {= "1.03-r1"}
 ]
 extra-source "perl-authen-sasl-2.16-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-authen-sasl-2.16-r2.apk"

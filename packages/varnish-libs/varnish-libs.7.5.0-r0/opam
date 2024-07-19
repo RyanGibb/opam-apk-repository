@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del varnish-libs"]
 ]
 depends: [
-  "gcc"
-  "libgcc"
+  "gcc" {= "13.2.1_git20240309-r0"}
+  "libgcc" {= "13.2.1_git20240309-r0"}
   "musl" {= "1.2.5-r0"}
   "musl-dev" {= "1.2.5-r0"}
   "pcre2" {= "10.43-r0"}

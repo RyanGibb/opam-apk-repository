@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del libretls"]
 ]
 depends: [
-  "ca-certificates-bundle"
+  "ca-certificates-bundle" {= "20240226-r0"}
   "libcrypto3" {= "3.1.6-r0"}
   "libssl3" {= "3.1.6-r0"}
   "musl" {= "1.2.4-r2"}

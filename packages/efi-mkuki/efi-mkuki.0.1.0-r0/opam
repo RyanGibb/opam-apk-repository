@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "binutils" {= "2.41-r0"}
-  "gummiboot-efistub"
+  "gummiboot-efistub" {= "48.1-r6"}
 ]
 extra-source "efi-mkuki-0.1.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/efi-mkuki-0.1.0-r0.apk"

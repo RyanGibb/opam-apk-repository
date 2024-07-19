@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "lua-lub" {= "1.1.0-r2"}
-  "lua5-3"
+  "lua5-3" {= "5.3.6-r0"}
   "musl" {= "1.2.2-r2"}
 ]
 extra-source "lua5.3-yaml-1.1.2-r2.apk" {

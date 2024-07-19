@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del acf-awall"]
 ]
 depends: [
-  "acf-core"
-  "awall"
+  "acf-core" {= "0.22.0-r0"}
+  "awall" {= "1.7.3-r0"}
 ]
 extra-source "acf-awall-0.4.1-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/acf-awall-0.4.1-r2.apk"

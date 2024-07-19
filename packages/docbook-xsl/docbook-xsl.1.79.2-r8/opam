@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del docbook-xsl"]
 ]
 depends: [
-  "docbook-xml"
-  "libxml2-utils"
-  "libxslt"
+  "docbook-xml" {= "4.5-r8"}
+  "libxml2-utils" {= "2.11.8-r0"}
+  "libxslt" {= "1.1.39-r0"}
   ("busybox-binsh" {= "1.36.1-r19"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.55-r0"})
 ]
 extra-source "docbook-xsl-1.79.2-r8.apk" {

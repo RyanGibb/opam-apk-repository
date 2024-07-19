@@ -6,16 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del mesa-dev"]
 ]
 depends: [
-  "libdrm-dev"
   "libdrm-dev" {= "2.4.120-r0"}
   "libx11-dev" {= "1.8.9-r1"}
-  "libxcb-dev"
   "libxcb-dev" {= "1.16.1-r0"}
-  "libxdamage-dev"
-  "libxext-dev"
+  "libxdamage-dev" {= "1.1.6-r5"}
   "libxext-dev" {= "1.3.6-r2"}
   "libxfixes-dev" {= "6.0.1-r4"}
-  "libxshmfence-dev"
+  "libxshmfence-dev" {= "1.3.2-r6"}
   "libxxf86vm-dev" {= "1.1.5-r6"}
   "mesa-egl" {= "24.0.9-r1"}
   "mesa-gbm" {= "24.0.9-r1"}

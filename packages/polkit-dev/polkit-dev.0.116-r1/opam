@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del polkit-dev"]
 ]
 depends: [
-  "dbus-glib-dev"
+  "dbus-glib-dev" {= "0.110-r0"}
   "glib-dev" {= "2.64.6-r0"}
   "pkgconf" {= "1.7.2-r0"}
   "polkit" {= "0.116-r1"}

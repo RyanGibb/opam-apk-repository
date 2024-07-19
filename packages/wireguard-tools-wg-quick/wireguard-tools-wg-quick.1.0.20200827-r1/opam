@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del wireguard-tools-wg-quick"]
 ]
 depends: [
-  "bash"
-  "ip6tables"
-  "iproute2"
-  "openresolv"
+  "bash" {= "5.1.16-r0"}
+  "ip6tables" {= "1.8.6-r0"}
+  "iproute2" {= "5.10.0-r1"}
+  "openresolv" {= "3.12.0-r0"}
   "wireguard-tools-wg" {= "1.0.20200827-r1"}
 ]
 extra-source "wireguard-tools-wg-quick-1.0.20200827-r1.apk" {

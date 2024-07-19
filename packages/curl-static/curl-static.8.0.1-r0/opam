@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del curl-static"]
 ]
 depends: [
-  "ca-certificates"
+  "ca-certificates" {= "20230506-r0"}
 ]
 extra-source "curl-static-8.0.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/curl-static-8.0.1-r0.apk"

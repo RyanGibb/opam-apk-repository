@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del bash-completion"]
 ]
 depends: [
-  "bash"
+  "bash" {= "5.1.16-r0"}
   "pkgconf" {= "1.7.3-r0"}
 ]
 extra-source "bash-completion-2.11-r2.apk" {

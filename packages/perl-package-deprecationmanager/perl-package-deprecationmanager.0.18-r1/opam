@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del perl-package-deprecationmanager"]
 ]
 depends: [
-  "perl"
-  "perl-package-stash"
-  "perl-params-util"
-  "perl-sub-install"
+  "perl" {= "5.38.2-r0"}
+  "perl-package-stash" {= "0.40-r1"}
+  "perl-params-util" {= "1.102-r4"}
+  "perl-sub-install" {= "0.929-r2"}
 ]
 extra-source "perl-package-deprecationmanager-0.18-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-package-deprecationmanager-0.18-r1.apk"

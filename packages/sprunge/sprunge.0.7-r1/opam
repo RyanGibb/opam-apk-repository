@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del sprunge"]
 ]
 depends: [
-  "curl"
+  "curl" {= "8.5.0-r0"}
 ]
 extra-source "sprunge-0.7-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/sprunge-0.7-r1.apk"

@@ -6,15 +6,15 @@ remove: [
   ["sh" "-c" "sudo apk del perl-specio"]
 ]
 depends: [
-  "perl"
-  "perl-devel-stacktrace"
-  "perl-eval-closure"
-  "perl-module-runtime"
-  "perl-mro-compat"
-  "perl-role-tiny"
-  "perl-sub-quote"
-  "perl-test-fatal"
-  "perl-try-tiny"
+  "perl" {= "5.36.2-r0"}
+  "perl-devel-stacktrace" {= "2.04-r4"}
+  "perl-eval-closure" {= "0.14-r3"}
+  "perl-module-runtime" {= "0.016-r5"}
+  "perl-mro-compat" {= "0.15-r1"}
+  "perl-role-tiny" {= "2.002004-r1"}
+  "perl-sub-quote" {= "2.006008-r0"}
+  "perl-test-fatal" {= "0.017-r0"}
+  "perl-try-tiny" {= "0.31-r1"}
 ]
 extra-source "perl-specio-0.48-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-specio-0.48-r0.apk"

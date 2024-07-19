@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del acf-kamailio"]
 ]
 depends: [
-  "acf-core"
-  "acf-db-lib"
-  "kamailio"
+  "acf-core" {= "0.22.0-r0"}
+  "acf-db-lib" {= "0.2.1-r2"}
+  "kamailio" {= "5.3.7-r2"}
 ]
 extra-source "acf-kamailio-0.10.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/acf-kamailio-0.10.0-r2.apk"

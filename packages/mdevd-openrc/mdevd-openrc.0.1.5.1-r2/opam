@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del mdevd-openrc"]
 ]
 depends: [
-  "mdev-conf"
-  "mdevd"
+  "mdev-conf" {= "4.2-r0"}
+  "mdevd" {= "0.1.5.1-r2"}
 ]
 extra-source "mdevd-openrc-0.1.5.1-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/mdevd-openrc-0.1.5.1-r2.apk"

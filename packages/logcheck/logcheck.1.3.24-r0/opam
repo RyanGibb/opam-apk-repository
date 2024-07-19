@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del logcheck"]
 ]
 depends: [
-  "lockfile-progs"
+  "lockfile-progs" {= "0.1.19-r1"}
   ("yash-binsh" {= "2.53-r2"} | "busybox-binsh" {= "1.35.0-r31"} | "dash-binsh" {= "0.5.11.5-r2"})
 ]
 extra-source "logcheck-1.3.24-r0.apk" {

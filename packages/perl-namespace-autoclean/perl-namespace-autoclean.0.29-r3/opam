@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del perl-namespace-autoclean"]
 ]
 depends: [
-  "perl"
-  "perl-b-hooks-endofscope"
-  "perl-namespace-clean"
-  "perl-sub-identify"
+  "perl" {= "5.38.2-r0"}
+  "perl-b-hooks-endofscope" {= "0.28-r0"}
+  "perl-namespace-clean" {= "0.27-r4"}
+  "perl-sub-identify" {= "0.14-r10"}
 ]
 extra-source "perl-namespace-autoclean-0.29-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-namespace-autoclean-0.29-r3.apk"

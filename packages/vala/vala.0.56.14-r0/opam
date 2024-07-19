@@ -7,7 +7,6 @@ remove: [
 ]
 depends: [
   "glib" {= "2.78.6-r0"}
-  "glib-dev"
   "glib-dev" {= "2.78.6-r0"}
   "graphviz-dev" {= "9.0.0-r0"}
   "graphviz-libs" {= "9.0.0-r0"}

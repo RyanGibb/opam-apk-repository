@@ -6,19 +6,19 @@ remove: [
   ["sh" "-c" "sudo apk del linux-lts-dev"]
 ]
 depends: [
-  "bash"
-  "bison"
-  "elfutils-dev"
-  "flex"
-  "gmp-dev"
+  "bash" {= "5.1.16-r0"}
+  "bison" {= "3.7.6-r0"}
+  "elfutils-dev" {= "0.185-r0"}
+  "flex" {= "2.6.4-r2"}
+  "gmp-dev" {= "6.2.1-r1"}
   "libcrypto1-1" {= "1.1.1w-r1"}
   "libelf" {= "0.185-r0"}
   "libstdc++" {= "10.3.1_git20211027-r0"}
-  "mpc1-dev"
-  "mpfr-dev"
+  "mpc1-dev" {= "1.2.1-r0"}
+  "mpfr-dev" {= "4.1.0-r0"}
   "musl" {= "1.2.2-r9"}
-  "perl"
-  "zstd"
+  "perl" {= "5.34.2-r0"}
+  "zstd" {= "1.5.0-r0"}
 ]
 extra-source "linux-lts-dev-5.15.140-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/linux-lts-dev-5.15.140-r0.apk"

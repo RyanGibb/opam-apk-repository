@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del py3-pathspec-pyc"]
 ]
 depends: [
-  "python3"
+  "python3" {= "3.12.3-r1"}
   "python3" {>= "3.12"}
 ]
 extra-source "py3-pathspec-pyc-0.12.1-r2.apk" {

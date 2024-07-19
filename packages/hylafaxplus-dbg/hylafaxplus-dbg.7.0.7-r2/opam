@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del hylafaxplus-dbg"]
 ]
 depends: [
-  "bash"
-  "findutils"
-  "ghostscript"
-  "tiff-tools"
+  "bash" {= "5.2.15-r5"}
+  "findutils" {= "4.9.0-r5"}
+  "ghostscript" {= "10.02.0-r0"}
+  "tiff-tools" {= "4.5.1-r0"}
 ]
 conflicts: [
   "hylafax"

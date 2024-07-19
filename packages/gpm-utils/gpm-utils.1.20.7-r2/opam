@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del gpm-utils"]
 ]
 depends: [
-  "gpm"
+  "gpm" {= "1.20.7-r2"}
   "gpm-libs" {= "1.20.7-r2"}
   "musl" {= "1.2.3-r5"}
 ]

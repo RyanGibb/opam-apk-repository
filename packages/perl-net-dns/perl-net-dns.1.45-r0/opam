@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del perl-net-dns"]
 ]
 depends: [
-  "perl"
-  "perl-digest-hmac"
+  "perl" {= "5.38.2-r0"}
+  "perl-digest-hmac" {= "1.04-r2"}
 ]
 extra-source "perl-net-dns-1.45-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-net-dns-1.45-r0.apk"

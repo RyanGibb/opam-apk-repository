@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del perl-file-slurper"]
 ]
 depends: [
-  "perl"
+  "perl" {= "5.36.2-r0"}
 ]
 extra-source "perl-file-slurper-0.013-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-file-slurper-0.013-r0.apk"

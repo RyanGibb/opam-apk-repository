@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del busybox-mdev-openrc"]
 ]
 depends: [
-  "mdev-conf"
+  "mdev-conf" {= "4.3-r0"}
   "openrc" {>= "0.24.1-r6"}
 ]
 extra-source "busybox-mdev-openrc-1.35.0-r31.apk" {

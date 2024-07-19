@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del bacula-sqlite"]
 ]
 depends: [
-  "bacula"
+  "bacula" {= "9.6.7-r2"}
   "musl" {= "1.2.2-r9"}
   "sqlite-libs" {= "3.36.0-r0"}
 ]

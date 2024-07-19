@@ -7,7 +7,6 @@ remove: [
 ]
 depends: [
   "json-c" {= "0.16-r2"}
-  "kamailio"
   "kamailio" {= "5.6.3-r1"}
   "libevent" {= "2.1.12-r5"}
   "libuuid" {= "2.38.1-r1"}

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "libgcc" {= "12.2.1_git20220924-r4"}
   "libstdc++" {= "12.2.1_git20220924-r4"}
-  "logrotate"
+  "logrotate" {= "3.20.1-r3"}
   "musl" {= "1.2.3-r5"}
   "pcre" {= "8.45-r2"}
   "zlib" {= "1.2.13-r0"}

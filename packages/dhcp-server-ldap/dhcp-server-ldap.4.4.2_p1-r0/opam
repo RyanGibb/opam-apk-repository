@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del dhcp-server-ldap"]
 ]
 depends: [
-  "dhcp"
+  "dhcp" {= "4.4.2_p1-r0"}
   "krb5-libs" {= "1.18.5-r0"}
   "libgcc" {= "9.3.0-r2"}
   "libldap" {= "2.4.58-r0"}

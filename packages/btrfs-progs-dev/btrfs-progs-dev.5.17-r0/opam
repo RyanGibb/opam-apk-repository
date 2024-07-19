@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "btrfs-progs-libs" {= "5.17-r0"}
-  "linux-headers"
+  "linux-headers" {= "5.16.7-r1"}
   "pkgconf" {= "1.8.1-r0"}
 ]
 extra-source "btrfs-progs-dev-5.17-r0.apk" {

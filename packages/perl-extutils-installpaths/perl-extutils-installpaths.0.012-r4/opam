@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del perl-extutils-installpaths"]
 ]
 depends: [
-  "perl"
-  "perl-extutils-config"
+  "perl" {= "5.38.2-r0"}
+  "perl-extutils-config" {= "0.008-r4"}
 ]
 extra-source "perl-extutils-installpaths-0.012-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/perl-extutils-installpaths-0.012-r4.apk"

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del acf-opennhrp"]
 ]
 depends: [
-  "acf-core"
-  "lua-posix"
-  "opennhrp"
+  "acf-core" {= "0.24.0-r0"}
+  "lua-posix" {= "36.2.1-r0"}
+  "opennhrp" {= "0.14.1-r12"}
 ]
 extra-source "acf-opennhrp-0.10.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/acf-opennhrp-0.10.1-r0.apk"

@@ -11,7 +11,7 @@ depends: [
   "libxkbcommon-x11" {= "1.5.0-r2"}
   "musl" {= "1.2.4-r2"}
   "wayland-libs-client" {= "1.22.0-r2"}
-  "xkeyboard-config"
+  "xkeyboard-config" {= "2.38-r0"}
 ]
 extra-source "xkbcli-1.5.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/xkbcli-1.5.0-r2.apk"

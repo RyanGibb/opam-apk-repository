@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del git-cvs"]
 ]
 depends: [
-  "perl"
-  "perl-dbd-sqlite"
+  "perl" {= "5.36.2-r0"}
+  "perl-dbd-sqlite" {= "1.72-r1"}
   "perl-git" {= "2.40.1-r0"}
 ]
 extra-source "git-cvs-2.40.1-r0.apk" {

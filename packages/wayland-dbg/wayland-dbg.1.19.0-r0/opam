@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del wayland-dbg"]
 ]
 depends: [
-  "wayland-libs-client"
-  "wayland-libs-cursor"
-  "wayland-libs-egl"
-  "wayland-libs-server"
+  "wayland-libs-client" {= "1.19.0-r0"}
+  "wayland-libs-cursor" {= "1.19.0-r0"}
+  "wayland-libs-egl" {= "1.19.0-r0"}
+  "wayland-libs-server" {= "1.19.0-r0"}
 ]
 extra-source "wayland-dbg-1.19.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/wayland-dbg-1.19.0-r0.apk"

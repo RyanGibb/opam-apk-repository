@@ -11,7 +11,7 @@ depends: [
   "libstdc++" {= "10.3.1_git20210424-r2"}
   "libxcb" {= "1.14-r2"}
   "musl" {= "1.2.2-r5"}
-  "python3"
+  "python3" {= "3.9.17-r0"}
   "wayland-libs-client" {= "1.19.0-r0"}
 ]
 extra-source "mesa-vulkan-layers-21.1.8-r0.apk" {

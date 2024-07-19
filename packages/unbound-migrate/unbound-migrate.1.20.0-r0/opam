@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del unbound-migrate"]
 ]
 depends: [
-  "apk-tools"
-  "openrc"
+  "apk-tools" {= "2.14.4-r0"}
+  "openrc" {= "0.54-r1"}
   ("busybox-binsh" {= "1.36.1-r29"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.56.1-r1"})
 ]
 extra-source "unbound-migrate-1.20.0-r0.apk" {

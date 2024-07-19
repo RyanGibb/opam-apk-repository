@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "clamav-libs" {= "0.103.6-r0"}
-  "freshclam"
+  "freshclam" {= "0.103.6-r0"}
   "libcrypto1-1" {= "1.1.1s-r0"}
   "musl" {= "1.2.2-r2"}
   "zlib" {= "1.2.12-r3"}

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del perl-list-someutils"]
 ]
 depends: [
-  "perl"
-  "perl-list-someutils-xs"
-  "perl-module-implementation"
+  "perl" {= "5.36.2-r0"}
+  "perl-list-someutils-xs" {= "0.58-r4"}
+  "perl-module-implementation" {= "0.09-r3"}
 ]
 extra-source "perl-list-someutils-0.58-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-list-someutils-0.58-r1.apk"

@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "musl" {= "1.2.4_git20230717-r4"}
-  "nginx"
-  "nginx-mod-devel-kit"
+  "nginx" {= "1.24.0-r16"}
+  "nginx-mod-devel-kit" {= "1.24.0-r16"}
 ]
 extra-source "nginx-mod-http-array-var-1.24.0-r16.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/nginx-mod-http-array-var-1.24.0-r16.apk"

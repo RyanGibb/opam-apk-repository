@@ -9,14 +9,14 @@ depends: [
   "clang18-headers" {= "18.1.6-r0"}
   "clang18-libs" {= "18.1.6-r0"}
   "fortify-headers" {>= "1.1-r2"}
-  "gcc"
+  "gcc" {= "13.2.1_git20240309-r0"}
   "libgcc" {= "13.2.1_git20240309-r0"}
   "libstdc++" {= "13.2.1_git20240309-r0"}
-  "libstdc++-dev"
+  "libstdc++-dev" {= "13.2.1_git20240309-r0"}
   "llvm18-libs" {= "18.1.6-r0"}
-  "llvm18-linker-tools"
+  "llvm18-linker-tools" {= "18.1.6-r0"}
   "musl" {= "1.2.5-r0"}
-  "musl-dev"
+  "musl-dev" {= "1.2.5-r0"}
 ]
 extra-source "clang18-18.1.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/clang18-18.1.6-r0.apk"

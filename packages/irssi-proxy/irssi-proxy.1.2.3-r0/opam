@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del irssi-proxy"]
 ]
 depends: [
-  "irssi"
+  "irssi" {= "1.2.3-r0"}
   "musl" {= "1.2.2-r5"}
 ]
 extra-source "irssi-proxy-1.2.3-r0.apk" {

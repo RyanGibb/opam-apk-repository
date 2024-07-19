@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del fuse3"]
 ]
 depends: [
-  "fuse-common"
+  "fuse-common" {= "3.10.2-r0"}
   "fuse3-libs" {= "3.10.2-r0"}
   "musl" {= "1.2.2-r2"}
 ]

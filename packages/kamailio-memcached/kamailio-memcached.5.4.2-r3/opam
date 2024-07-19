@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del kamailio-memcached"]
 ]
 depends: [
-  "kamailio"
+  "kamailio" {= "5.4.2-r3"}
   "libmemcached-libs" {= "1.0.18-r4"}
   "musl" {= "1.2.2-r2"}
 ]

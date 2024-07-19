@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libcurl" {= "8.8.0-r0"}
-  "lua5-3"
+  "lua5-3" {= "5.3.6-r6"}
   "musl" {= "1.2.5-r0"}
 ]
 extra-source "lua5.3-curl-0.3.13-r1.apk" {

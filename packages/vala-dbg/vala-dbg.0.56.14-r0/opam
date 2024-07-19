@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del vala-dbg"]
 ]
 depends: [
-  "glib-dev"
+  "glib-dev" {= "2.78.6-r0"}
 ]
 extra-source "vala-dbg-0.56.14-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/vala-dbg-0.56.14-r0.apk"

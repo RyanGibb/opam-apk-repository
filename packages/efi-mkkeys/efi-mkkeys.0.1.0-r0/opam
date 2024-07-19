@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del efi-mkkeys"]
 ]
 depends: [
-  "efitools"
+  "efitools" {= "1.9.2-r9"}
   "openssl" {= "3.3.1-r3"}
   "uuidgen" {= "2.40.1-r1"}
 ]

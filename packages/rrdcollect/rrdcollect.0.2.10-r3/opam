@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "musl" {= "1.2.3-r5"}
-  "rrdtool"
+  "rrdtool" {= "1.7.2-r7"}
 ]
 extra-source "rrdcollect-0.2.10-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/rrdcollect-0.2.10-r3.apk"

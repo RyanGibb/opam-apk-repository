@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del libtxc_dxtn-dev"]
 ]
 depends: [
-  "mesa-dev"
+  "mesa-dev" {= "21.3.9-r0"}
 ]
 extra-source "libtxc_dxtn-dev-1.0.1-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/libtxc_dxtn-dev-1.0.1-r5.apk"

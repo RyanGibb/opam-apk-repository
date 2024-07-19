@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del font-dejavu"]
 ]
 depends: [
-  "encodings"
-  "fontconfig"
-  "mkfontscale"
+  "encodings" {= "1.0.7-r1"}
+  "fontconfig" {= "2.15.0-r1"}
+  "mkfontscale" {= "1.2.2-r6"}
 ]
 extra-source "font-dejavu-2.37-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/font-dejavu-2.37-r5.apk"

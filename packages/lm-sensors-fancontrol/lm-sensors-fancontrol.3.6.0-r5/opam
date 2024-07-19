@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del lm-sensors-fancontrol"]
 ]
 depends: [
-  "bash"
+  "bash" {= "5.2.26-r0"}
 ]
 extra-source "lm-sensors-fancontrol-3.6.0-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lm-sensors-fancontrol-3.6.0-r5.apk"

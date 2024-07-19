@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del lua5.1-mqtt-publish"]
 ]
 depends: [
-  "lua5-1-mosquitto"
+  "lua5-1-mosquitto" {= "0.3-r1"}
 ]
 extra-source "lua5.1-mqtt-publish-0.3-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/lua5.1-mqtt-publish-0.3-r1.apk"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del kamailio-rabbitmq"]
 ]
 depends: [
-  "kamailio"
+  "kamailio" {= "5.5.4-r0"}
   "libuuid" {= "2.38-r1"}
   "musl" {= "1.2.3-r3"}
   "rabbitmq-c" {= "0.11.0-r3"}

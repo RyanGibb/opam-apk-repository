@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del font-droid-nonlatin"]
 ]
 depends: [
-  "fontconfig"
+  "fontconfig" {= "2.15.0-r1"}
 ]
 extra-source "font-droid-nonlatin-20200215-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/font-droid-nonlatin-20200215-r2.apk"

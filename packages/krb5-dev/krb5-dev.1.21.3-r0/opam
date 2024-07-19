@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del krb5-dev"]
 ]
 depends: [
-  "e2fsprogs-dev"
+  "e2fsprogs-dev" {= "1.47.0-r5"}
   "krb5-libs" {= "1.21.3-r0"}
   "krb5-server-ldap" {= "1.21.3-r0"}
-  "libverto-dev"
+  "libverto-dev" {= "0.3.2-r2"}
   "pkgconf" {= "2.2.0-r0"}
 ]
 extra-source "krb5-dev-1.21.3-r0.apk" {

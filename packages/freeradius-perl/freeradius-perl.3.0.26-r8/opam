@@ -8,7 +8,6 @@ remove: [
 depends: [
   "freeradius" {= "3.0.26-r8"}
   "musl" {= "1.2.5-r0"}
-  "perl"
   "perl" {= "5.38.2-r0"}
 ]
 extra-source "freeradius-perl-3.0.26-r8.apk" {

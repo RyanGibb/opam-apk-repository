@@ -6,8 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del amavisd-milter"]
 ]
 depends: [
-  "amavis"
-  "libmilter"
+  "amavis" {= "2.12.2-r1"}
   "libmilter" {= "1.0.2-r6"}
   "musl" {= "1.2.2-r2"}
 ]

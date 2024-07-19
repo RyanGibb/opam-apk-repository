@@ -9,7 +9,7 @@ depends: [
   "libcrypto3" {= "3.0.14-r0"}
   "libxml2" {= "2.10.4-r0"}
   "musl" {= "1.2.3-r5"}
-  "nginx"
+  "nginx" {= "1.22.1-r1"}
   "zlib" {= "1.2.13-r0"}
 ]
 extra-source "nginx-mod-http-vod-1.22.1-r1.apk" {

@@ -6,16 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del py3-pytest"]
 ]
 depends: [
-  "py3-atomicwrites"
-  "py3-attrs"
-  "py3-iniconfig"
-  "py3-more-itertools"
-  "py3-packaging"
-  "py3-pluggy"
-  "py3-py"
-  "py3-six"
-  "py3-toml"
-  "py3-wcwidth"
+  "py3-atomicwrites" {= "1.4.0-r1"}
+  "py3-attrs" {= "21.2.0-r0"}
+  "py3-iniconfig" {= "1.1.1-r1"}
+  "py3-more-itertools" {= "8.11.2-r0"}
+  "py3-packaging" {= "20.9-r1"}
+  "py3-pluggy" {= "0.13.1-r4"}
+  "py3-py" {= "1.10.0-r1"}
+  "py3-six" {= "1.16.0-r0"}
+  "py3-toml" {= "0.10.2-r2"}
+  "py3-wcwidth" {= "0.2.5-r1"}
 ]
 extra-source "py3-pytest-6.2.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/py3-pytest-6.2.5-r0.apk"

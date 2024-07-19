@@ -12,7 +12,7 @@ depends: [
   "libx11" {= "1.6.12-r1"}
   "libxcb" {= "1.14-r1"}
   "libxvmc" {= "1.0.12-r0"}
-  "mesa-dri-intel"
+  "mesa-dri-intel" {= "20.0.7-r0"}
   "musl" {= "1.1.24-r10"}
   "pixman" {= "0.40.0-r2"}
   "xcb-util" {= "0.4.0-r3"}

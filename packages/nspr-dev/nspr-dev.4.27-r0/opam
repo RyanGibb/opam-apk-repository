@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del nspr-dev"]
 ]
 depends: [
-  "linux-headers"
-  "nspr"
+  "linux-headers" {= "5.4.5-r1"}
+  "nspr" {= "4.27-r0"}
   "pkgconf" {= "1.7.2-r0"}
 ]
 extra-source "nspr-dev-4.27-r0.apk" {

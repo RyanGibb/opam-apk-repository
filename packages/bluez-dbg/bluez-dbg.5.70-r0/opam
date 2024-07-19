@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del bluez-dbg"]
 ]
 depends: [
-  "dbus"
+  "dbus" {= "1.14.10-r0"}
 ]
 extra-source "bluez-dbg-5.70-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/bluez-dbg-5.70-r0.apk"

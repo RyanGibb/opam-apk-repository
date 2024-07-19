@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del wayland"]
 ]
 depends: [
-  "wayland-libs-client"
-  "wayland-libs-cursor"
-  "wayland-libs-egl"
-  "wayland-libs-server"
+  "wayland-libs-client" {= "1.21.0-r1"}
+  "wayland-libs-cursor" {= "1.21.0-r1"}
+  "wayland-libs-egl" {= "1.21.0-r1"}
+  "wayland-libs-server" {= "1.21.0-r1"}
 ]
 extra-source "wayland-1.21.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/wayland-1.21.0-r1.apk"

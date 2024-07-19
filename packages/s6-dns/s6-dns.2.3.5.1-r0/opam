@@ -7,7 +7,6 @@ remove: [
 ]
 depends: [
   "musl" {= "1.2.2-r5"}
-  "skalibs"
   "skalibs" {= "2.10.0.3-r0"}
 ]
 extra-source "s6-dns-2.3.5.1-r0.apk" {

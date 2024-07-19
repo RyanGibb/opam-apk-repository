@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del sshfs"]
 ]
 depends: [
-  "fuse3"
+  "fuse3" {= "3.16.2-r0"}
   "fuse3-libs" {= "3.16.2-r0"}
   "glib" {= "2.80.2-r0"}
   "musl" {= "1.2.5-r0"}

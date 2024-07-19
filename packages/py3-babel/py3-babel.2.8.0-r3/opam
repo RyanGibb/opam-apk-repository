@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del py3-babel"]
 ]
 depends: [
-  "py3-tz"
-  "python3"
+  "py3-tz" {= "2023.3-r0"}
+  "python3" {= "3.9.17-r0"}
 ]
 extra-source "py3-babel-2.8.0-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/py3-babel-2.8.0-r3.apk"

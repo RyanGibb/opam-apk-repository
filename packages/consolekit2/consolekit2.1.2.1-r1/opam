@@ -7,13 +7,12 @@ remove: [
 ]
 depends: [
   "dbus-libs" {= "1.12.18-r0"}
-  "eudev"
+  "eudev" {= "3.2.9-r3"}
   "eudev-libs" {= "3.2.9-r3"}
   "glib" {= "2.64.6-r0"}
   "libintl" {= "0.20.2-r0"}
   "libx11" {= "1.6.12-r1"}
   "musl" {= "1.1.24-r10"}
-  "polkit"
   "polkit" {= "0.116-r1"}
   "zlib" {= "1.2.12-r3"}
 ]

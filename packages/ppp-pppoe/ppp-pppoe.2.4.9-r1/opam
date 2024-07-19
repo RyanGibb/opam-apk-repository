@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "musl" {= "1.2.2-r5"}
-  "ppp-daemon"
+  "ppp-daemon" {= "2.4.9-r1"}
 ]
 extra-source "ppp-pppoe-2.4.9-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/ppp-pppoe-2.4.9-r1.apk"

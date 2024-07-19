@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del perl-exception-class"]
 ]
 depends: [
-  "perl-class-data-inheritable"
-  "perl-devel-stacktrace"
+  "perl-class-data-inheritable" {= "0.08-r2"}
+  "perl-devel-stacktrace" {= "2.04-r3"}
 ]
 extra-source "perl-exception-class-1.44-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/perl-exception-class-1.44-r2.apk"

@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del intltool"]
 ]
 depends: [
-  "file"
-  "gettext"
-  "perl"
-  "perl-xml-parser"
+  "file" {= "5.43-r0"}
+  "gettext" {= "0.21.1-r1"}
+  "perl" {= "5.36.2-r0"}
+  "perl-xml-parser" {= "2.46-r3"}
 ]
 extra-source "intltool-0.51.0-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/intltool-0.51.0-r5.apk"

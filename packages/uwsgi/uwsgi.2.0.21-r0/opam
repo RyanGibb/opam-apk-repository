@@ -11,7 +11,7 @@ depends: [
   "libcrypto3" {= "3.0.14-r0"}
   "libssl3" {= "3.0.14-r0"}
   "libxml2" {= "2.10.4-r0"}
-  "mailcap"
+  "mailcap" {= "2.1.54-r0"}
   "musl" {= "1.2.3-r5"}
   "pcre" {= "8.45-r2"}
   "zlib" {= "1.2.13-r0"}

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "libcrypto1-1" {= "1.1.1o-r0"}
   "musl" {= "1.1.24-r10"}
-  "openssh-client"
+  "openssh-client" {= "8.3_p1-r3"}
   "zlib" {= "1.2.12-r3"}
 ]
 extra-source "openssh-keysign-8.3_p1-r3.apk" {

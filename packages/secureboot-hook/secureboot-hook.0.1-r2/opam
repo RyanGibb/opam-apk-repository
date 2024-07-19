@@ -7,10 +7,10 @@ remove: [
 ]
 depends: [
   "busybox" {= "1.35.0-r18"}
-  "efi-mkuki"
-  "kernel-hooks"
-  "mkinitfs"
-  "sbsigntool"
+  "efi-mkuki" {= "0.1.0-r0"}
+  "kernel-hooks" {= "0.2-r0"}
+  "mkinitfs" {= "3.6.2-r0"}
+  "sbsigntool" {= "0.9.4-r3"}
 ]
 extra-source "secureboot-hook-0.1-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/secureboot-hook-0.1-r2.apk"

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del perl-cgi"]
 ]
 depends: [
-  "perl"
-  "perl-html-parser"
-  "perl-uri"
+  "perl" {= "5.38.2-r0"}
+  "perl-html-parser" {= "3.82-r0"}
+  "perl-uri" {= "5.28-r0"}
 ]
 extra-source "perl-cgi-4.64-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-cgi-4.64-r0.apk"

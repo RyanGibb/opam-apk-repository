@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del perl-encode-dev"]
 ]
 depends: [
-  "perl-encode-utils"
+  "perl-encode-utils" {= "3.06-r0"}
 ]
 extra-source "perl-encode-dev-3.06-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-encode-dev-3.06-r0.apk"

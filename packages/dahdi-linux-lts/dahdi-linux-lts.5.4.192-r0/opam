@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del dahdi-linux-lts"]
 ]
 depends: [
-  "dahdi-linux"
+  "dahdi-linux" {= "3.1.0-r0"}
   "linux-lts" {= "5.4.192-r0"}
 ]
 extra-source "dahdi-linux-lts-5.4.192-r0.apk" {

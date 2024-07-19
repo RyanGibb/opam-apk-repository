@@ -8,8 +8,8 @@ remove: [
 depends: [
   "libcrypto1-1" {= "1.1.1w-r1"}
   "musl" {= "1.2.3-r3"}
-  "openssh-server"
-  "openssh-sftp-server"
+  "openssh-server" {= "9.0_p1-r5"}
+  "openssh-sftp-server" {= "9.0_p1-r5"}
   ("openssh-client-krb5" {= "9.0_p1-r5"} | "openssh-client-default" {= "9.0_p1-r5"})
 ]
 extra-source "openssh-9.0_p1-r5.apk" {

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del apache2-http2"]
 ]
 depends: [
-  "apache2"
+  "apache2" {= "2.4.61-r0"}
   "libcrypto3" {= "3.3.1-r3"}
   "musl" {= "1.2.5-r0"}
   "nghttp2-libs" {= "1.62.1-r0"}

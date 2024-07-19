@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del perl-cgi-emulate-psgi"]
 ]
 depends: [
-  "perl-cgi"
-  "perl-http-message"
+  "perl-cgi" {= "4.47-r0"}
+  "perl-http-message" {= "6.24-r0"}
 ]
 extra-source "perl-cgi-emulate-psgi-0.23-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-cgi-emulate-psgi-0.23-r1.apk"

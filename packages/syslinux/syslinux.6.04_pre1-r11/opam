@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del syslinux"]
 ]
 depends: [
-  "blkid"
+  "blkid" {= "2.38.1-r1"}
   "libuuid" {= "2.38.1-r1"}
   "mkinitfs" {= "3.7.0-r1"}
-  "mtools"
+  "mtools" {= "4.0.42-r0"}
   "musl" {= "1.2.3-r5"}
   ("yash-binsh" {= "2.53-r2"} | "busybox-binsh" {= "1.35.0-r31"} | "dash-binsh" {= "0.5.11.5-r2"})
 ]

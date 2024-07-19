@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del nss-dev"]
 ]
 depends: [
-  "nspr-dev"
   "nspr-dev" {= "4.27-r0"}
-  "nss"
+  "nss" {= "3.68.3-r0"}
   "pkgconf" {= "1.7.2-r0"}
 ]
 extra-source "nss-dev-3.68.3-r0.apk" {

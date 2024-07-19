@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del apache-mod-auth-ntlm-winbind"]
 ]
 depends: [
-  "apache2"
+  "apache2" {= "2.4.59-r0"}
   "musl" {= "1.2.3-r3"}
-  "samba"
-  "samba-winbind"
+  "samba" {= "4.15.13-r0"}
+  "samba-winbind" {= "4.15.13-r0"}
 ]
 extra-source "apache-mod-auth-ntlm-winbind-0.1-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/apache-mod-auth-ntlm-winbind-0.1-r6.apk"

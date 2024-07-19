@@ -8,8 +8,8 @@ remove: [
 depends: [
   "libcrypto1-1" {= "1.1.1w-r1"}
   "musl" {= "1.2.3-r3"}
-  "nagios-plugins"
-  "net-snmp-tools"
+  "nagios-plugins" {= "2.4.0-r0"}
+  "net-snmp-tools" {= "5.9.3-r1"}
 ]
 extra-source "nagios-plugins-snmp-2.4.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/nagios-plugins-snmp-2.4.0-r0.apk"

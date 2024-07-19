@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del perl-json-maybexs"]
 ]
 depends: [
-  "perl"
+  "perl" {= "5.36.2-r0"}
 ]
 extra-source "perl-json-maybexs-1.004004-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-json-maybexs-1.004004-r0.apk"

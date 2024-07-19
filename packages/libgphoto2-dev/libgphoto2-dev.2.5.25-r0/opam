@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del libgphoto2-dev"]
 ]
 depends: [
-  "libexif-dev"
   "libexif-dev" {= "0.6.22-r0"}
   "libgphoto2" {= "2.5.25-r0"}
-  "libusb-dev"
+  "libusb-dev" {= "1.0.23-r0"}
   "pkgconf" {= "1.7.2-r0"}
 ]
 extra-source "libgphoto2-dev-2.5.25-r0.apk" {

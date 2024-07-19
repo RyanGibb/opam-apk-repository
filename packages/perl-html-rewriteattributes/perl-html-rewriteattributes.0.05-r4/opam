@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del perl-html-rewriteattributes"]
 ]
 depends: [
-  "perl"
-  "perl-html-parser"
-  "perl-html-tagset"
-  "perl-uri"
+  "perl" {= "5.36.2-r0"}
+  "perl-html-parser" {= "3.81-r1"}
+  "perl-html-tagset" {= "3.20-r4"}
+  "perl-uri" {= "5.19-r0"}
 ]
 extra-source "perl-html-rewriteattributes-0.05-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-html-rewriteattributes-0.05-r4.apk"

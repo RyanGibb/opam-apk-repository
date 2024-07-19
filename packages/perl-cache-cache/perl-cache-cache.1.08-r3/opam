@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del perl-cache-cache"]
 ]
 depends: [
-  "perl"
-  "perl-digest-sha1"
-  "perl-error"
+  "perl" {= "5.36.2-r0"}
+  "perl-digest-sha1" {= "2.13-r15"}
+  "perl-error" {= "0.17029-r1"}
 ]
 extra-source "perl-cache-cache-1.08-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-cache-cache-1.08-r3.apk"

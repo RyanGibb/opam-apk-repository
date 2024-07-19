@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "busybox" {= "1.35.0-r18"}
-  "haserl"
+  "haserl" {= "0.9.36-r1"}
   "libcmph" {= "2.0.2-r0"}
   "lua5-1-libs" {= "5.1.5-r11"}
   "musl" {= "1.2.3-r3"}

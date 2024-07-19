@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del libusb-compat"]
 ]
 depends: [
-  "libusb"
+  "libusb" {= "1.0.27-r0"}
   "musl" {= "1.2.5-r0"}
 ]
 extra-source "libusb-compat-0.1.8-r2.apk" {

@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del nagios-plugins-ssl_validity"]
 ]
 depends: [
-  "nagios-plugins"
-  "perl"
+  "nagios-plugins" {= "2.4.5-r2"}
+  "perl" {= "5.36.2-r0"}
 ]
 extra-source "nagios-plugins-ssl_validity-2.4.5-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/nagios-plugins-ssl_validity-2.4.5-r2.apk"

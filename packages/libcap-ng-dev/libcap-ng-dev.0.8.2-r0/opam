@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libcap-ng" {= "0.8.2-r0"}
-  "linux-headers"
+  "linux-headers" {= "5.10.41-r0"}
   "pkgconf" {= "1.7.4-r1"}
 ]
 extra-source "libcap-ng-dev-0.8.2-r0.apk" {

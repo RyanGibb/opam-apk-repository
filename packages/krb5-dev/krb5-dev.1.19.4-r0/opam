@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del krb5-dev"]
 ]
 depends: [
-  "e2fsprogs-dev"
+  "e2fsprogs-dev" {= "1.46.6-r0"}
   "krb5-libs" {= "1.19.4-r0"}
   "krb5-server-ldap" {= "1.19.4-r0"}
   "pkgconf" {= "1.8.1-r0"}

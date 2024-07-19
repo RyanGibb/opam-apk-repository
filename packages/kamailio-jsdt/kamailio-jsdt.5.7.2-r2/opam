@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del kamailio-jsdt"]
 ]
 depends: [
-  "kamailio"
+  "kamailio" {= "5.7.2-r2"}
   "musl" {= "1.2.4_git20230717-r4"}
 ]
 extra-source "kamailio-jsdt-5.7.2-r2.apk" {

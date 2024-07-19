@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "musl" {= "1.2.3-r5"}
-  "tzdata"
+  "tzdata" {= "2024a-r0"}
   "zlib" {= "1.2.13-r0"}
 ]
 extra-source "tcl-8.6.12-r1.apk" {

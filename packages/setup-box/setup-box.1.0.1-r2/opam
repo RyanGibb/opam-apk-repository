@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del setup-box"]
 ]
 depends: [
-  "jq"
+  "jq" {= "1.7.1-r0"}
 ]
 extra-source "setup-box-1.0.1-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/setup-box-1.0.1-r2.apk"

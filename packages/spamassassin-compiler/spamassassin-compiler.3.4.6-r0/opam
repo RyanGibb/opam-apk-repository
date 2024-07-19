@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del spamassassin-compiler"]
 ]
 depends: [
-  "gcc"
-  "libc-dev"
-  "make"
-  "perl-dev"
-  "perl-mail-spamassassin"
-  "re2c"
+  "gcc" {= "10.3.1_git20210424-r2"}
+  "libc-dev" {= "0.7.2-r3"}
+  "make" {= "4.3-r0"}
+  "perl-dev" {= "5.32.1-r0"}
+  "perl-mail-spamassassin" {= "3.4.6-r0"}
+  "re2c" {= "2.1.1-r0"}
 ]
 extra-source "spamassassin-compiler-3.4.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/spamassassin-compiler-3.4.6-r0.apk"

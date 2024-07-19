@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del mdadm-udev"]
 ]
 depends: [
-  "lsblk"
+  "lsblk" {= "2.38.1-r1"}
 ]
 extra-source "mdadm-udev-4.2-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mdadm-udev-4.2-r1.apk"

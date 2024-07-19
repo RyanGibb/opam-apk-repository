@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del dhcpcd-dbus"]
 ]
 depends: [
-  "dbus"
+  "dbus" {= "1.12.24-r0"}
   "dbus-libs" {= "1.12.24-r0"}
   "musl" {= "1.2.2-r2"}
 ]

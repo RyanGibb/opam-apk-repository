@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "tiny-cloud" {= "2.2.2-r0"}
-  "yx"
+  "yx" {= "1.0.0-r0"}
   ("yash-binsh" {= "2.53-r2"} | "busybox-binsh" {= "1.35.0-r31"} | "dash-binsh" {= "0.5.11.5-r2"})
 ]
 extra-source "tiny-cloud-nocloud-2.2.2-r0.apk" {

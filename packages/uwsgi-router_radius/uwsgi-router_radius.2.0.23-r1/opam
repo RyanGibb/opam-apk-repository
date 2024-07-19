@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "musl" {= "1.2.4_git20230717-r4"}
-  "uwsgi"
+  "uwsgi" {= "2.0.23-r1"}
 ]
 extra-source "uwsgi-router_radius-2.0.23-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/uwsgi-router_radius-2.0.23-r1.apk"

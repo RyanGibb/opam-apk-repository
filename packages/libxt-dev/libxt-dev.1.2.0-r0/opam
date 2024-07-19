@@ -7,7 +7,6 @@ remove: [
 ]
 depends: [
   "libice-dev" {= "1.0.10-r0"}
-  "libsm-dev"
   "libsm-dev" {= "1.2.3-r0"}
   "libx11-dev" {= "1.6.12-r1"}
   "libxt" {= "1.2.0-r0"}

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "busybox" {= "1.32.1-r9"}
-  "ca-certificates"
+  "ca-certificates" {= "20220614-r0"}
   "musl" {= "1.2.2-r2"}
   "ruby-libs" {= "2.7.6-r0"}
 ]

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del ghi"]
 ]
 depends: [
-  "less"
-  "ncurses"
-  "ruby"
+  "less" {= "633-r0"}
+  "ncurses" {= "6.4_p20230506-r0"}
+  "ruby" {= "3.2.4-r0"}
 ]
 extra-source "ghi-1.2.0-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/ghi-1.2.0-r6.apk"

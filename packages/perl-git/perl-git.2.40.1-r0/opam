@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "git" {= "2.40.1-r0"}
-  "perl-error"
+  "perl-error" {= "0.17029-r1"}
 ]
 extra-source "perl-git-2.40.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-git-2.40.1-r0.apk"

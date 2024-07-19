@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del ack"]
 ]
 depends: [
-  "perl"
-  "perl-file-next"
+  "perl" {= "5.32.0-r0"}
+  "perl-file-next" {= "1.18-r1"}
 ]
 extra-source "ack-3.4.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/ack-3.4.0-r0.apk"

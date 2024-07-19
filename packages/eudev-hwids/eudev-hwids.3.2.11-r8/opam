@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del eudev-hwids"]
 ]
 depends: [
-  "udev-init-scripts"
+  "udev-init-scripts" {= "35-r1"}
   ("busybox-binsh" {= "1.36.1-r7"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.54-r3"})
 ]
 extra-source "eudev-hwids-3.2.11-r8.apk" {

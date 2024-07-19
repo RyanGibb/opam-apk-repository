@@ -8,7 +8,7 @@ remove: [
 depends: [
   "dbus-libs" {= "1.14.10-r0"}
   "pkgconf" {= "2.1.0-r0"}
-  "util-linux-dev"
+  "util-linux-dev" {= "2.39.3-r0"}
 ]
 extra-source "dbus-dev-1.14.10-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/dbus-dev-1.14.10-r0.apk"

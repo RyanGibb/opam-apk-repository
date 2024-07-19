@@ -8,7 +8,7 @@ remove: [
 depends: [
   "libcurl" {= "7.79.1-r1"}
   "musl" {= "1.1.24-r10"}
-  "pinentry"
+  "pinentry" {= "1.1.0-r2"}
   "zlib" {= "1.2.12-r3"}
 ]
 extra-source "gnupg1-1.4.23-r0.apk" {

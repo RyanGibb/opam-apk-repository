@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del py3-sphinxcontrib-websupport-pyc"]
 ]
 depends: [
-  "py3-docutils"
-  "py3-jinja2"
-  "py3-sphinx"
-  "python3"
+  "py3-docutils" {= "0.20.1-r2"}
+  "py3-jinja2" {= "3.1.4-r0"}
+  "py3-sphinx" {= "7.2.6-r1"}
+  "python3" {= "3.12.3-r1"}
   "python3" {>= "3.12"}
 ]
 extra-source "py3-sphinxcontrib-websupport-pyc-1.2.4-r8.apk" {

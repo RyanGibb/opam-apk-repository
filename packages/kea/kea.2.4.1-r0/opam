@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del kea"]
 ]
 depends: [
-  "kea-dhcp4"
-  "kea-dhcp6"
+  "kea-dhcp4" {= "2.4.1-r0"}
+  "kea-dhcp6" {= "2.4.1-r0"}
 ]
 extra-source "kea-2.4.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/kea-2.4.1-r0.apk"

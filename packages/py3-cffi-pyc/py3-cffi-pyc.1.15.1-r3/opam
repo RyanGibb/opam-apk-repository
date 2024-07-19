@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del py3-cffi-pyc"]
 ]
 depends: [
-  "py3-cparser"
+  "py3-cparser" {= "2.21-r2"}
   "python3" {>= "3.11"}
 ]
 extra-source "py3-cffi-pyc-1.15.1-r3.apk" {

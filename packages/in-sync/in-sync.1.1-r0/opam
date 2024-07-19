@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del in-sync"]
 ]
 depends: [
-  "inotify-tools"
-  "rsync"
+  "inotify-tools" {= "4.23.9.0-r0"}
+  "rsync" {= "3.3.0-r0"}
   ("busybox-binsh" {= "1.36.1-r29"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.56.1-r1"})
 ]
 extra-source "in-sync-1.1-r0.apk" {

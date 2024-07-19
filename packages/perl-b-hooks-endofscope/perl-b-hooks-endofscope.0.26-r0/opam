@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del perl-b-hooks-endofscope"]
 ]
 depends: [
-  "perl"
-  "perl-module-implementation"
-  "perl-module-runtime"
-  "perl-sub-exporter-progressive"
-  "perl-variable-magic"
+  "perl" {= "5.36.2-r0"}
+  "perl-module-implementation" {= "0.09-r3"}
+  "perl-module-runtime" {= "0.016-r4"}
+  "perl-sub-exporter-progressive" {= "0.001013-r2"}
+  "perl-variable-magic" {= "0.63-r0"}
 ]
 extra-source "perl-b-hooks-endofscope-0.26-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-b-hooks-endofscope-0.26-r0.apk"

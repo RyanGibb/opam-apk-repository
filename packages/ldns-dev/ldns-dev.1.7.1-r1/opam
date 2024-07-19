@@ -7,7 +7,6 @@ remove: [
 ]
 depends: [
   "ldns" {= "1.7.1-r1"}
-  "openssl-dev"
   "openssl-dev" {= "1.1.1t-r2"}
   "pkgconf" {= "1.7.4-r1"}
 ]

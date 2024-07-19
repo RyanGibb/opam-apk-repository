@@ -9,7 +9,7 @@ depends: [
   "clang15-libs" {= "15.0.7-r0"}
   "libgcc" {= "12.2.1_git20220924-r4"}
   "libstdc++" {= "12.2.1_git20220924-r4"}
-  "libstdc++-dev"
+  "libstdc++-dev" {= "12.2.1_git20220924-r4"}
   "llvm15-libs" {= "15.0.7-r0"}
   "musl" {= "1.2.3-r5"}
 ]

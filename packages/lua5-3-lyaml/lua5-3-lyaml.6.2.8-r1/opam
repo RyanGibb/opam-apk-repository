@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "lua-stdlib-normalize" {= "2.0.3-r1"}
-  "lua5-3"
+  "lua5-3" {= "5.3.6-r6"}
   "musl" {= "1.2.5-r0"}
   "yaml" {= "0.2.5-r2"}
 ]

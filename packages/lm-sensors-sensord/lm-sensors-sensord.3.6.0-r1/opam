@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del lm-sensors-sensord"]
 ]
 depends: [
-  "bash"
+  "bash" {= "5.1.16-r2"}
   "librrd" {= "1.7.2-r6"}
   "lm-sensors" {= "3.6.0-r1"}
   "musl" {= "1.2.3-r3"}
-  "sysfsutils"
+  "sysfsutils" {= "2.1.1-r0"}
 ]
 extra-source "lm-sensors-sensord-3.6.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/lm-sensors-sensord-3.6.0-r1.apk"

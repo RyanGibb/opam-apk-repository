@@ -17,7 +17,7 @@ depends: [
   "libnfsidmap" {= "2.4.3-r1"}
   "libtirpc" {= "1.2.6-r0"}
   "musl" {= "1.1.24-r10"}
-  "rpcbind"
+  "rpcbind" {= "1.2.5-r0"}
   "sqlite-libs" {= "3.32.1-r1"}
 ]
 extra-source "nfs-utils-2.4.3-r1.apk" {

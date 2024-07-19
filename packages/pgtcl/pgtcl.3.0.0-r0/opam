@@ -8,7 +8,7 @@ remove: [
 depends: [
   "libpq" {= "15.7-r0"}
   "musl" {= "1.2.3-r5"}
-  "tcl"
+  "tcl" {= "8.6.12-r1"}
 ]
 extra-source "pgtcl-3.0.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/pgtcl-3.0.0-r0.apk"

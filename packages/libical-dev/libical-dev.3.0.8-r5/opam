@@ -6,13 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del libical-dev"]
 ]
 depends: [
-  "glib-dev"
   "glib-dev" {= "2.66.8-r0"}
-  "gobject-introspection-dev"
-  "icu-dev"
+  "gobject-introspection-dev" {= "1.66.1-r0"}
   "icu-dev" {= "67.1-r2"}
   "libical" {= "3.0.8-r5"}
-  "libxml2-dev"
+  "libxml2-dev" {= "2.9.14-r2"}
   "pkgconf" {= "1.7.3-r0"}
 ]
 extra-source "libical-dev-3.0.8-r5.apk" {

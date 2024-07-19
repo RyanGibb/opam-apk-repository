@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del perl-carp-clan"]
 ]
 depends: [
-  "perl"
-  "perl-test-exception"
+  "perl" {= "5.36.2-r0"}
+  "perl-test-exception" {= "0.43-r3"}
 ]
 extra-source "perl-carp-clan-6.08-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-carp-clan-6.08-r1.apk"

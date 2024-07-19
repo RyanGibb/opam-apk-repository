@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del ruby-rbs-doc"]
 ]
 depends: [
-  "ruby"
-  "ruby-bundler"
+  "ruby" {= "3.1.5-r0"}
+  "ruby-bundler" {= "2.3.26-r0"}
 ]
 extra-source "ruby-rbs-doc-2.7.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ruby-rbs-doc-2.7.0-r0.apk"

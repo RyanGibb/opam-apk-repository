@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del libtool"]
 ]
 depends: [
-  "libltdl"
+  "libltdl" {= "2.4.7-r3"}
 ]
 extra-source "libtool-2.4.7-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libtool-2.4.7-r3.apk"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del perl-extutils-cchecker"]
 ]
 depends: [
-  "perl-test-exception"
+  "perl-test-exception" {= "0.43-r2"}
 ]
 extra-source "perl-extutils-cchecker-0.10-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/perl-extutils-cchecker-0.10-r4.apk"

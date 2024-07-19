@@ -8,7 +8,7 @@ remove: [
 depends: [
   "brotli-libs" {= "1.0.9-r14"}
   "c-ares" {= "1.19.1-r1"}
-  "ca-certificates"
+  "ca-certificates" {= "20240226-r0"}
   "icu-libs" {= "73.2-r2"}
   "libcrypto3" {= "3.1.6-r0"}
   "libgcc" {= "12.2.1_git20220924-r10"}

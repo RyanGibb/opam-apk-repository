@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del py3-gpep517"]
 ]
 depends: [
-  "py3-installer"
-  "py3-tomli"
-  "python3"
+  "py3-installer" {= "0.5.1-r1"}
+  "py3-tomli" {= "2.0.1-r1"}
+  "python3" {= "3.10.14-r1"}
 ]
 extra-source "py3-gpep517-11-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/py3-gpep517-11-r0.apk"

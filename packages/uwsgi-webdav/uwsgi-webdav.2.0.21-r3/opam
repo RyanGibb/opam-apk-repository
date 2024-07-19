@@ -8,7 +8,7 @@ remove: [
 depends: [
   "libxml2" {= "2.11.8-r0"}
   "musl" {= "1.2.4-r2"}
-  "uwsgi"
+  "uwsgi" {= "2.0.21-r3"}
 ]
 extra-source "uwsgi-webdav-2.0.21-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/uwsgi-webdav-2.0.21-r3.apk"

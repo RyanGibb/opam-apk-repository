@@ -6,20 +6,20 @@ remove: [
   ["sh" "-c" "sudo apk del graphviz-dev"]
 ]
 depends: [
-  "cairo-dev"
-  "expat-dev"
-  "fontconfig-dev"
-  "freetype-dev"
-  "gmp-dev"
+  "cairo-dev" {= "1.16.0-r4"}
+  "expat-dev" {= "2.2.10-r8"}
+  "fontconfig-dev" {= "2.13.1-r3"}
+  "freetype-dev" {= "2.10.4-r3"}
+  "gmp-dev" {= "6.2.1-r1"}
   "graphviz" {= "2.44.0-r2"}
-  "libjpeg-turbo-dev"
-  "libpng-dev"
-  "libsm-dev"
-  "libxext-dev"
-  "pango-dev"
+  "libjpeg-turbo-dev" {= "2.1.0-r0"}
+  "libpng-dev" {= "1.6.37-r1"}
+  "libsm-dev" {= "1.2.3-r0"}
+  "libxext-dev" {= "1.3.4-r0"}
+  "pango-dev" {= "1.48.2-r0"}
   "pkgconf" {= "1.7.3-r0"}
-  "python3-dev"
-  "zlib-dev"
+  "python3-dev" {= "3.8.15-r0"}
+  "zlib-dev" {= "1.2.12-r3"}
 ]
 extra-source "graphviz-dev-2.44.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/graphviz-dev-2.44.0-r2.apk"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del awall-masquerade"]
 ]
 depends: [
-  "awall"
+  "awall" {= "1.9.2-r0"}
 ]
 extra-source "awall-masquerade-1.9.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/awall-masquerade-1.9.2-r0.apk"

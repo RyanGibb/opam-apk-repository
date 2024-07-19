@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "musl" {= "1.2.5-r0"}
-  "nginx"
+  "nginx" {= "1.26.1-r0"}
   "perl" {= "5.38.2-r0"}
 ]
 extra-source "nginx-mod-http-perl-1.26.1-r0.apk" {

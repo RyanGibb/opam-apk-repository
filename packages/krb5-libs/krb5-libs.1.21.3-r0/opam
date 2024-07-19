@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "keyutils-libs" {= "1.6.3-r3"}
-  "krb5-conf"
+  "krb5-conf" {= "1.0-r2"}
   "libcom_err" {= "1.47.0-r5"}
   "libcrypto3" {= "3.3.1-r3"}
   "libssl3" {= "3.3.1-r3"}

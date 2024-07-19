@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del nmap-scripts"]
 ]
 depends: [
-  "nmap-nselibs"
+  "nmap-nselibs" {= "7.93-r1"}
 ]
 extra-source "nmap-scripts-7.93-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/nmap-scripts-7.93-r1.apk"

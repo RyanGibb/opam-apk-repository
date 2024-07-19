@@ -12,7 +12,7 @@ depends: [
   "libssl1-1" {= "1.1.1t-r2"}
   "libstdc++" {= "10.3.1_git20210424-r2"}
   "linux-pam" {= "1.5.1-r1"}
-  "mariadb-common"
+  "mariadb-common" {= "10.5.19-r0"}
   "musl" {= "1.2.2-r5"}
   "pcre2" {= "10.36-r1"}
   "xz-libs" {= "5.2.5-r1"}

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del libpciaccess"]
 ]
 depends: [
-  "hwdata-pci"
+  "hwdata-pci" {= "0.377.2-r0"}
   "musl" {= "1.2.4_git20230717-r4"}
 ]
 extra-source "libpciaccess-0.17-r2.apk" {

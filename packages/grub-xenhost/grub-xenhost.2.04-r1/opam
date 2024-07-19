@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del grub-xenhost"]
 ]
 depends: [
-  "mkinitfs"
+  "mkinitfs" {= "3.4.5-r3"}
 ]
 extra-source "grub-xenhost-2.04-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/grub-xenhost-2.04-r1.apk"

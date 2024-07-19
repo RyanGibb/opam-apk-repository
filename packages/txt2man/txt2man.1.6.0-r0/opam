@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del txt2man"]
 ]
 depends: [
-  "gawk"
+  "gawk" {= "5.1.0-r0"}
 ]
 extra-source "txt2man-1.6.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/txt2man-1.6.0-r0.apk"

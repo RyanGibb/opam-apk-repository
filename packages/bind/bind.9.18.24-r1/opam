@@ -8,8 +8,8 @@ remove: [
 depends: [
   "bind-dnssec-root" {= "9.18.24-r1"}
   "bind-libs" {= "9.18.24-r1"}
-  "bind-tools"
-  "dns-root-hints"
+  "bind-tools" {= "9.18.24-r1"}
+  "dns-root-hints" {= "2022062901-r0"}
   "fstrm" {= "0.6.1-r4"}
   "json-c" {= "0.17-r0"}
   "libcap2" {= "2.69-r1"}

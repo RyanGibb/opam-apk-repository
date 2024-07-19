@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del kamailio-lua"]
 ]
 depends: [
-  "kamailio"
+  "kamailio" {= "5.6.3-r6"}
   "lua5-1-libs" {= "5.1.5-r12"}
   "musl" {= "1.2.4-r2"}
 ]

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del scons-pyc"]
 ]
 depends: [
-  "python3"
+  "python3" {= "3.12.3-r1"}
   "python3" {>= "3.12"}
 ]
 extra-source "scons-pyc-4.7.0-r1.apk" {

@@ -8,9 +8,9 @@ remove: [
 depends: [
   "libuuid" {= "2.39.3-r0"}
   "musl" {= "1.2.4_git20230717-r4"}
-  "python3"
+  "python3" {= "3.11.9-r0"}
   "userspace-rcu" {= "0.14.0-r2"}
-  "xfsprogs"
+  "xfsprogs" {= "6.5.0-r0"}
 ]
 extra-source "xfsprogs-extra-6.5.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/xfsprogs-extra-6.5.0-r0.apk"

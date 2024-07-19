@@ -12,7 +12,7 @@ depends: [
   "libstdc++" {= "12.2.1_git20220924-r4"}
   "musl" {= "1.2.3-r5"}
   "ncurses-libs" {= "6.3_p20221119-r1"}
-  "perl-io-tty"
+  "perl-io-tty" {= "1.17-r0"}
   "zlib" {= "1.2.13-r0"}
   ("openssh-client-krb5" {= "9.1_p1-r6"} | "openssh-client-default" {= "9.1_p1-r6"})
 ]

@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del font-misc-cyrillic"]
 ]
 depends: [
-  "encodings"
-  "font-alias"
-  "fontconfig"
-  "mkfontscale"
+  "encodings" {= "1.0.5-r0"}
+  "font-alias" {= "1.0.4-r0"}
+  "fontconfig" {= "2.14.0-r0"}
   "mkfontscale" {= "1.2.2-r0"}
 ]
 extra-source "font-misc-cyrillic-1.0.3-r0.apk" {

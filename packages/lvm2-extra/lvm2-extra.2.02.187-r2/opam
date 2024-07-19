@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del lvm2-extra"]
 ]
 depends: [
-  "bash"
-  "coreutils"
+  "bash" {= "5.1.16-r2"}
+  "coreutils" {= "9.1-r0"}
 ]
 extra-source "lvm2-extra-2.02.187-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/lvm2-extra-2.02.187-r2.apk"

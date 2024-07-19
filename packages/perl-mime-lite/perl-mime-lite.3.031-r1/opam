@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del perl-mime-lite"]
 ]
 depends: [
-  "perl"
-  "perl-email-date-format"
-  "perl-mailtools"
-  "perl-mime-types"
-  "perl-test-pod-coverage"
+  "perl" {= "5.30.3-r0"}
+  "perl-email-date-format" {= "1.005-r1"}
+  "perl-mailtools" {= "2.21-r1"}
+  "perl-mime-types" {= "2.17-r1"}
+  "perl-test-pod-coverage" {= "1.10-r1"}
 ]
 extra-source "perl-mime-lite-3.031-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-mime-lite-3.031-r1.apk"

@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del perl-test2-plugin-nowarnings"]
 ]
 depends: [
-  "perl"
-  "perl-ipc-run3"
-  "perl-test-simple"
-  "perl-test2-suite"
+  "perl" {= "5.36.2-r0"}
+  "perl-ipc-run3" {= "0.048-r3"}
+  "perl-test-simple" {= "1.302195-r0"}
+  "perl-test2-suite" {= "0.000155-r0"}
 ]
 extra-source "perl-test2-plugin-nowarnings-0.09-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-test2-plugin-nowarnings-0.09-r1.apk"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "audit-libs" {= "2.8.5-r0"}
-  "linux-headers"
+  "linux-headers" {= "5.4.5-r1"}
   "pkgconf" {= "1.7.2-r0"}
 ]
 extra-source "audit-dev-2.8.5-r0.apk" {

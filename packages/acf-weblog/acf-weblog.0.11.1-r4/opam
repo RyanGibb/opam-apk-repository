@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del acf-weblog"]
 ]
 depends: [
-  "acf-core"
-  "lua-sql-postgres"
-  "lua-subprocess"
-  "wget"
+  "acf-core" {= "0.24.0-r0"}
+  "lua-sql-postgres" {= "2.6.0-r4"}
+  "lua-subprocess" {= "0_git20230625-r0"}
+  "wget" {= "1.24.5-r0"}
   ("busybox-binsh" {= "1.36.1-r29"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.56.1-r1"})
   ("postgresql15-client" {= "15.7-r0"} | "postgresql16-client" {= "16.3-r0"})
 ]

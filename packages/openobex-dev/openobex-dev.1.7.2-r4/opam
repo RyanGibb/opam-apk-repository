@@ -6,7 +6,6 @@ remove: [
   ["sh" "-c" "sudo apk del openobex-dev"]
 ]
 depends: [
-  "libusb-dev"
   "libusb-dev" {= "1.0.26-r0"}
   "openobex" {= "1.7.2-r4"}
   "pkgconf" {= "1.9.4-r0"}

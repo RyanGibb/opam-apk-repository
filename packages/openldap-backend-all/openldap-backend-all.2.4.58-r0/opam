@@ -6,19 +6,19 @@ remove: [
   ["sh" "-c" "sudo apk del openldap-backend-all"]
 ]
 depends: [
-  "openldap-back-bdb"
-  "openldap-back-dnssrv"
-  "openldap-back-hdb"
-  "openldap-back-ldap"
-  "openldap-back-mdb"
-  "openldap-back-meta"
-  "openldap-back-monitor"
-  "openldap-back-null"
-  "openldap-back-passwd"
-  "openldap-back-relay"
-  "openldap-back-shell"
-  "openldap-back-sock"
-  "openldap-back-sql"
+  "openldap-back-bdb" {= "2.4.58-r0"}
+  "openldap-back-dnssrv" {= "2.4.58-r0"}
+  "openldap-back-hdb" {= "2.4.58-r0"}
+  "openldap-back-ldap" {= "2.4.58-r0"}
+  "openldap-back-mdb" {= "2.4.58-r0"}
+  "openldap-back-meta" {= "2.4.58-r0"}
+  "openldap-back-monitor" {= "2.4.58-r0"}
+  "openldap-back-null" {= "2.4.58-r0"}
+  "openldap-back-passwd" {= "2.4.58-r0"}
+  "openldap-back-relay" {= "2.4.58-r0"}
+  "openldap-back-shell" {= "2.4.58-r0"}
+  "openldap-back-sock" {= "2.4.58-r0"}
+  "openldap-back-sql" {= "2.4.58-r0"}
 ]
 extra-source "openldap-backend-all-2.4.58-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/openldap-backend-all-2.4.58-r0.apk"

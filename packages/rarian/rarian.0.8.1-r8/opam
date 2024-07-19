@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del rarian"]
 ]
 depends: [
-  "bash"
+  "bash" {= "5.2.15-r0"}
   "libgcc" {= "12.2.1_git20220924-r4"}
   "libstdc++" {= "12.2.1_git20220924-r4"}
   "musl" {= "1.2.3-r5"}

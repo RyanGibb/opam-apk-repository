@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del font-freefont"]
 ]
 depends: [
-  "encodings"
-  "fontconfig"
-  "mkfontscale"
+  "encodings" {= "1.0.7-r1"}
+  "fontconfig" {= "2.15.0-r1"}
+  "mkfontscale" {= "1.2.2-r6"}
 ]
 extra-source "font-freefont-20120503-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/font-freefont-20120503-r4.apk"

@@ -6,13 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del xen"]
 ]
 depends: [
-  "bash"
+  "bash" {= "5.2.26-r0"}
   "glib" {= "2.80.2-r0"}
-  "iproute2"
+  "iproute2" {= "6.9.0-r0"}
   "libcap-ng" {= "0.8.5-r0"}
   "libcurl" {= "8.8.0-r0"}
   "libncursesw" {= "6.4_p20240420-r0"}
-  "logrotate"
+  "logrotate" {= "3.21.0-r1"}
   "musl" {= "1.2.5-r0"}
   "python3" {>= "3.12"}
   "xen-libs" {= "4.18.2-r1"}

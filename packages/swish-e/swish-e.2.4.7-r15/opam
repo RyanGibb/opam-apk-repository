@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "musl" {= "1.2.4-r2"}
-  "perl-html-parser"
-  "perl-html-tagset"
-  "perl-libwww"
+  "perl-html-parser" {= "3.81-r1"}
+  "perl-html-tagset" {= "3.20-r4"}
+  "perl-libwww" {= "6.68-r1"}
 ]
 extra-source "swish-e-2.4.7-r15.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/swish-e-2.4.7-r15.apk"

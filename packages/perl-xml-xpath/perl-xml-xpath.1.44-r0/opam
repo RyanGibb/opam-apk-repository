@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del perl-xml-xpath"]
 ]
 depends: [
-  "perl-xml-parser"
+  "perl-xml-parser" {= "2.46-r0"}
 ]
 extra-source "perl-xml-xpath-1.44-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-xml-xpath-1.44-r0.apk"

@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "bind-libs" {= "9.18.24-r1"}
-  "bind-tools"
-  "dns-root-hints"
+  "bind-tools" {= "9.18.24-r1"}
+  "dns-root-hints" {= "2022062901-r0"}
   "musl" {= "1.2.4_git20230717-r4"}
 ]
 extra-source "bind-dnssec-tools-9.18.24-r1.apk" {

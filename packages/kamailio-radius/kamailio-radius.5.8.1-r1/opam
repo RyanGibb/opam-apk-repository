@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "freeradius-client" {= "1.1.7-r7"}
-  "kamailio"
+  "kamailio" {= "5.8.1-r1"}
   "musl" {= "1.2.5-r0"}
 ]
 extra-source "kamailio-radius-5.8.1-r1.apk" {

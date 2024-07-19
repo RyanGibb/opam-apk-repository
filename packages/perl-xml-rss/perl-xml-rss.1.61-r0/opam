@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del perl-xml-rss"]
 ]
 depends: [
-  "perl-datetime"
-  "perl-datetime-format-mail"
-  "perl-datetime-format-w3cdtf"
-  "perl-html-parser"
-  "perl-xml-parser"
+  "perl-datetime" {= "1.52-r0"}
+  "perl-datetime-format-mail" {= "0.403-r1"}
+  "perl-datetime-format-w3cdtf" {= "0.07-r1"}
+  "perl-html-parser" {= "3.72-r5"}
+  "perl-xml-parser" {= "2.46-r0"}
 ]
 extra-source "perl-xml-rss-1.61-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-xml-rss-1.61-r0.apk"

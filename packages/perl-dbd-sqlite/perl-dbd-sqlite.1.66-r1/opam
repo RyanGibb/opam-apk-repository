@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "musl" {= "1.2.2-r5"}
-  "perl-dbi"
+  "perl-dbi" {= "1.643-r1"}
 ]
 extra-source "perl-dbd-sqlite-1.66-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/perl-dbd-sqlite-1.66-r1.apk"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del kamailio-perl"]
 ]
 depends: [
-  "kamailio"
+  "kamailio" {= "5.8.1-r1"}
   "musl" {= "1.2.5-r0"}
   "perl" {= "5.38.2-r0"}
 ]

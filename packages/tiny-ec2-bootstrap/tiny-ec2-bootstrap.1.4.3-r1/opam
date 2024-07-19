@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del tiny-ec2-bootstrap"]
 ]
 depends: [
-  "e2fsprogs-extra"
-  "openrc"
-  "partx"
-  "sfdisk"
+  "e2fsprogs-extra" {= "1.46.6-r0"}
+  "openrc" {= "0.44.7-r5"}
+  "partx" {= "2.37.4-r0"}
+  "sfdisk" {= "2.37.4-r0"}
 ]
 extra-source "tiny-ec2-bootstrap-1.4.3-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/tiny-ec2-bootstrap-1.4.3-r1.apk"

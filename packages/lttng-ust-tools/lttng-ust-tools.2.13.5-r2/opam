@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "lttng-ust" {= "2.13.5-r2"}
-  "python3"
+  "python3" {= "3.11.8-r0"}
 ]
 extra-source "lttng-ust-tools-2.13.5-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/lttng-ust-tools-2.13.5-r2.apk"

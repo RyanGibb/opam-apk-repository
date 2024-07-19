@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del net-tools-dbg"]
 ]
 depends: [
-  "mii-tool"
+  "mii-tool" {= "2.10-r3"}
 ]
 extra-source "net-tools-dbg-2.10-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/net-tools-dbg-2.10-r3.apk"

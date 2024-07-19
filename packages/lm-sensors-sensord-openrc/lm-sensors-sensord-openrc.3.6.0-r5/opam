@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del lm-sensors-sensord-openrc"]
 ]
 depends: [
-  "sysfsutils"
+  "sysfsutils" {= "2.1.1-r3"}
 ]
 extra-source "lm-sensors-sensord-openrc-3.6.0-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lm-sensors-sensord-openrc-3.6.0-r5.apk"

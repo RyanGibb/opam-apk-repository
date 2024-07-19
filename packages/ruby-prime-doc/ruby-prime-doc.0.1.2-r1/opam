@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del ruby-prime-doc"]
 ]
 depends: [
-  "ruby"
+  "ruby" {= "3.2.4-r0"}
 ]
 extra-source "ruby-prime-doc-0.1.2-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/ruby-prime-doc-0.1.2-r1.apk"

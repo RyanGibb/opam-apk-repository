@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del mariadb-bench"]
 ]
 depends: [
-  "mariadb-common"
+  "mariadb-common" {= "10.4.25-r0"}
 ]
 extra-source "mariadb-bench-10.4.25-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/mariadb-bench-10.4.25-r0.apk"

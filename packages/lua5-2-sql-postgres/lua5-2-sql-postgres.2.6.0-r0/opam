@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libpq" {= "13.12-r0"}
-  "lua5-2"
+  "lua5-2" {= "5.2.4-r7"}
   "musl" {= "1.2.2-r2"}
 ]
 extra-source "lua5.2-sql-postgres-2.6.0-r0.apk" {

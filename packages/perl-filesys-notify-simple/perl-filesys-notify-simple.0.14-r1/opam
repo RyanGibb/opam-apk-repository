@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del perl-filesys-notify-simple"]
 ]
 depends: [
-  "perl"
+  "perl" {= "5.36.2-r0"}
 ]
 extra-source "perl-filesys-notify-simple-0.14-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-filesys-notify-simple-0.14-r1.apk"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "musl" {= "1.2.4-r2"}
-  "perl"
+  "perl" {= "5.36.2-r0"}
 ]
 extra-source "perl-data-uuid-1.226-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-data-uuid-1.226-r4.apk"

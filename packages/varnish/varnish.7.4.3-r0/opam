@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del varnish"]
 ]
 depends: [
-  "gcc"
-  "libc-dev"
+  "gcc" {= "13.2.1_git20231014-r0"}
+  "libc-dev" {= "0.7.2-r5"}
   "libedit" {= "20230828.3.1-r3"}
-  "libgcc"
+  "libgcc" {= "13.2.1_git20231014-r0"}
   "libncursesw" {= "6.4_p20231125-r0"}
   "libunwind" {= "1.7.2-r1"}
   "musl" {= "1.2.4_git20230717-r4"}

@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del ruby-full"]
 ]
 depends: [
-  "ruby"
-  "ruby-bundler"
+  "ruby" {= "3.3.3-r0"}
+  "ruby-bundler" {= "2.5.9-r0"}
   "ruby-debug" {>= "1.9.1"}
   "ruby-matrix" {>= "0.4.2"}
   "ruby-minitest" {>= "5.20.0"}
@@ -20,7 +20,7 @@ depends: [
   "ruby-racc" {>= "1.7.3"}
   "ruby-rake" {>= "13.1.0"}
   "ruby-rbs" {>= "3.4.0"}
-  "ruby-rdoc"
+  "ruby-rdoc" {= "3.3.3-r0"}
   "ruby-rexml" {>= "3.2.8"}
   "ruby-rss" {>= "0.3.0"}
   "ruby-test-unit" {>= "3.6.1"}

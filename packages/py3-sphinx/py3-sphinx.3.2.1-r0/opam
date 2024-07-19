@@ -6,21 +6,21 @@ remove: [
   ["sh" "-c" "sudo apk del py3-sphinx"]
 ]
 depends: [
-  "py3-alabaster"
-  "py3-babel"
-  "py3-docutils"
-  "py3-imagesize"
-  "py3-jinja2"
-  "py3-pygments"
-  "py3-requests"
-  "py3-setuptools"
-  "py3-snowballstemmer"
-  "py3-sphinxcontrib-applehelp"
-  "py3-sphinxcontrib-devhelp"
-  "py3-sphinxcontrib-htmlhelp"
-  "py3-sphinxcontrib-jsmath"
-  "py3-sphinxcontrib-qthelp"
-  "py3-sphinxcontrib-serializinghtml"
+  "py3-alabaster" {= "0.7.12-r3"}
+  "py3-babel" {= "2.8.0-r1"}
+  "py3-docutils" {= "0.16-r1"}
+  "py3-imagesize" {= "1.2.0-r0"}
+  "py3-jinja2" {= "2.11.2-r0"}
+  "py3-pygments" {= "2.7.4-r0"}
+  "py3-requests" {= "2.25.1-r1"}
+  "py3-setuptools" {= "51.3.3-r0"}
+  "py3-snowballstemmer" {= "2.0.0-r1"}
+  "py3-sphinxcontrib-applehelp" {= "1.0.2-r0"}
+  "py3-sphinxcontrib-devhelp" {= "1.0.2-r0"}
+  "py3-sphinxcontrib-htmlhelp" {= "1.0.3-r0"}
+  "py3-sphinxcontrib-jsmath" {= "1.0.1-r0"}
+  "py3-sphinxcontrib-qthelp" {= "1.0.3-r0"}
+  "py3-sphinxcontrib-serializinghtml" {= "1.1.4-r0"}
 ]
 extra-source "py3-sphinx-3.2.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/py3-sphinx-3.2.1-r0.apk"

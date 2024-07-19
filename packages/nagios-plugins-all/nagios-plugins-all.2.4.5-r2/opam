@@ -6,56 +6,56 @@ remove: [
   ["sh" "-c" "sudo apk del nagios-plugins-all"]
 ]
 depends: [
-  "nagios-plugins-breeze"
-  "nagios-plugins-by_ssh"
-  "nagios-plugins-cluster"
-  "nagios-plugins-dbi"
-  "nagios-plugins-dhcp"
-  "nagios-plugins-dig"
-  "nagios-plugins-disk"
-  "nagios-plugins-disk_smb"
-  "nagios-plugins-dns"
-  "nagios-plugins-dummy"
-  "nagios-plugins-file_age"
-  "nagios-plugins-fping"
-  "nagios-plugins-hpjd"
-  "nagios-plugins-http"
-  "nagios-plugins-icmp"
-  "nagios-plugins-ide_smart"
-  "nagios-plugins-ifoperstatus"
-  "nagios-plugins-ifstatus"
-  "nagios-plugins-ircd"
-  "nagios-plugins-ldap"
-  "nagios-plugins-load"
-  "nagios-plugins-log"
-  "nagios-plugins-mailq"
-  "nagios-plugins-mrtg"
-  "nagios-plugins-mrtgtraf"
-  "nagios-plugins-mysql"
-  "nagios-plugins-nagios"
-  "nagios-plugins-nt"
-  "nagios-plugins-ntp"
-  "nagios-plugins-nwstat"
-  "nagios-plugins-openrc"
-  "nagios-plugins-overcr"
-  "nagios-plugins-pgsql"
-  "nagios-plugins-ping"
-  "nagios-plugins-procs"
-  "nagios-plugins-radius"
-  "nagios-plugins-real"
-  "nagios-plugins-rpc"
-  "nagios-plugins-sensors"
-  "nagios-plugins-smtp"
-  "nagios-plugins-snmp"
-  "nagios-plugins-ssh"
-  "nagios-plugins-ssl_validity"
-  "nagios-plugins-swap"
-  "nagios-plugins-tcp"
-  "nagios-plugins-time"
-  "nagios-plugins-ups"
-  "nagios-plugins-uptime"
-  "nagios-plugins-users"
-  "nagios-plugins-wave"
+  "nagios-plugins-breeze" {= "2.4.5-r2"}
+  "nagios-plugins-by_ssh" {= "2.4.5-r2"}
+  "nagios-plugins-cluster" {= "2.4.5-r2"}
+  "nagios-plugins-dbi" {= "2.4.5-r2"}
+  "nagios-plugins-dhcp" {= "2.4.5-r2"}
+  "nagios-plugins-dig" {= "2.4.5-r2"}
+  "nagios-plugins-disk" {= "2.4.5-r2"}
+  "nagios-plugins-disk_smb" {= "2.4.5-r2"}
+  "nagios-plugins-dns" {= "2.4.5-r2"}
+  "nagios-plugins-dummy" {= "2.4.5-r2"}
+  "nagios-plugins-file_age" {= "2.4.5-r2"}
+  "nagios-plugins-fping" {= "2.4.5-r2"}
+  "nagios-plugins-hpjd" {= "2.4.5-r2"}
+  "nagios-plugins-http" {= "2.4.5-r2"}
+  "nagios-plugins-icmp" {= "2.4.5-r2"}
+  "nagios-plugins-ide_smart" {= "2.4.5-r2"}
+  "nagios-plugins-ifoperstatus" {= "2.4.5-r2"}
+  "nagios-plugins-ifstatus" {= "2.4.5-r2"}
+  "nagios-plugins-ircd" {= "2.4.5-r2"}
+  "nagios-plugins-ldap" {= "2.4.5-r2"}
+  "nagios-plugins-load" {= "2.4.5-r2"}
+  "nagios-plugins-log" {= "2.4.5-r2"}
+  "nagios-plugins-mailq" {= "2.4.5-r2"}
+  "nagios-plugins-mrtg" {= "2.4.5-r2"}
+  "nagios-plugins-mrtgtraf" {= "2.4.5-r2"}
+  "nagios-plugins-mysql" {= "2.4.5-r2"}
+  "nagios-plugins-nagios" {= "2.4.5-r2"}
+  "nagios-plugins-nt" {= "2.4.5-r2"}
+  "nagios-plugins-ntp" {= "2.4.5-r2"}
+  "nagios-plugins-nwstat" {= "2.4.5-r2"}
+  "nagios-plugins-openrc" {= "2.4.5-r2"}
+  "nagios-plugins-overcr" {= "2.4.5-r2"}
+  "nagios-plugins-pgsql" {= "2.4.5-r2"}
+  "nagios-plugins-ping" {= "2.4.5-r2"}
+  "nagios-plugins-procs" {= "2.4.5-r2"}
+  "nagios-plugins-radius" {= "2.4.5-r2"}
+  "nagios-plugins-real" {= "2.4.5-r2"}
+  "nagios-plugins-rpc" {= "2.4.5-r2"}
+  "nagios-plugins-sensors" {= "2.4.5-r2"}
+  "nagios-plugins-smtp" {= "2.4.5-r2"}
+  "nagios-plugins-snmp" {= "2.4.5-r2"}
+  "nagios-plugins-ssh" {= "2.4.5-r2"}
+  "nagios-plugins-ssl_validity" {= "2.4.5-r2"}
+  "nagios-plugins-swap" {= "2.4.5-r2"}
+  "nagios-plugins-tcp" {= "2.4.5-r2"}
+  "nagios-plugins-time" {= "2.4.5-r2"}
+  "nagios-plugins-ups" {= "2.4.5-r2"}
+  "nagios-plugins-uptime" {= "2.4.5-r2"}
+  "nagios-plugins-users" {= "2.4.5-r2"}
+  "nagios-plugins-wave" {= "2.4.5-r2"}
 ]
 extra-source "nagios-plugins-all-2.4.5-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/nagios-plugins-all-2.4.5-r2.apk"

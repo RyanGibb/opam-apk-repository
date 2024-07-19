@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del gcc-gdb"]
 ]
 depends: [
-  "binutils"
+  "binutils" {= "2.42-r0"}
   "libgomp" {= "13.2.1_git20240309-r0"}
 ]
 extra-source "gcc-gdb-13.2.1_git20240309-r0.apk" {

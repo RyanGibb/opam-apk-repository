@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del acf-postgresql"]
 ]
 depends: [
-  "acf-core"
-  "acf-db-lib"
-  "lua-sql-postgres"
-  "postgresql"
+  "acf-core" {= "0.22.0-r1"}
+  "acf-db-lib" {= "0.2.1-r3"}
+  "lua-sql-postgres" {= "2.6.0-r0"}
+  "postgresql" {= "13.12-r0"}
 ]
 extra-source "acf-postgresql-0.11.0-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/acf-postgresql-0.11.0-r3.apk"

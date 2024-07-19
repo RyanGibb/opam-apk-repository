@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del awstats"]
 ]
 depends: [
-  "perl"
-  "perl-uri"
+  "perl" {= "5.38.2-r0"}
+  "perl-uri" {= "5.28-r0"}
 ]
 extra-source "awstats-7.9-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/awstats-7.9-r0.apk"

@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del unbound-migrate"]
 ]
 depends: [
-  "apk-tools"
+  "apk-tools" {= "2.10.8-r1"}
   "busybox" {= "1.31.1-r22"}
-  "dns-root-hints"
-  "openrc"
+  "dns-root-hints" {= "2019073000-r2"}
+  "openrc" {= "0.42.1-r14"}
 ]
 extra-source "unbound-migrate-1.10.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/unbound-migrate-1.10.1-r0.apk"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del lua-resty-lrucache"]
 ]
 depends: [
-  "luajit"
+  "luajit" {= "2.1_p20240314-r0"}
 ]
 extra-source "lua-resty-lrucache-0.13-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lua-resty-lrucache-0.13-r1.apk"

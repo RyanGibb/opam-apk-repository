@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del clamav-db"]
 ]
 depends: [
-  "freshclam"
+  "freshclam" {= "0.103.6-r0"}
 ]
 extra-source "clamav-db-0.103.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/clamav-db-0.103.6-r0.apk"

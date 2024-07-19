@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del dahdi-linux-lts-dev"]
 ]
 depends: [
-  "dahdi-linux-dev"
+  "dahdi-linux-dev" {= "3.1.0-r0"}
 ]
 extra-source "dahdi-linux-lts-dev-5.15.159-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/dahdi-linux-lts-dev-5.15.159-r0.apk"

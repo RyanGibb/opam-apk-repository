@@ -104,7 +104,7 @@ depends: [
   "abseil-cpp-time" {= "20230802.1-r0"}
   "abseil-cpp-time-internal-test-util" {= "20230802.1-r0"}
   "abseil-cpp-time-zone" {= "20230802.1-r0"}
-  "linux-headers"
+  "linux-headers" {= "6.6-r0"}
   "pkgconf" {= "2.2.0-r0"}
 ]
 extra-source "abseil-cpp-dev-20230802.1-r0.apk" {

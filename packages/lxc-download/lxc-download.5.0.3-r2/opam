@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del lxc-download"]
 ]
 depends: [
-  "gnupg-dirmngr"
-  "gpg"
-  "lxc"
-  "tar"
-  "wget"
-  "xz"
+  "gnupg-dirmngr" {= "2.4.4-r0"}
+  "gpg" {= "2.4.4-r0"}
+  "lxc" {= "5.0.3-r2"}
+  "tar" {= "1.35-r2"}
+  "wget" {= "1.21.4-r0"}
+  "xz" {= "5.4.5-r0"}
 ]
 extra-source "lxc-download-5.0.3-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/lxc-download-5.0.3-r2.apk"

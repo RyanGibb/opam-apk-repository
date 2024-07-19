@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del perl-html-tree"]
 ]
 depends: [
-  "perl"
-  "perl-html-parser"
-  "perl-html-tagset"
+  "perl" {= "5.34.2-r0"}
+  "perl-html-parser" {= "3.78-r0"}
+  "perl-html-tagset" {= "3.20-r3"}
 ]
 extra-source "perl-html-tree-5.07-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/perl-html-tree-5.07-r2.apk"

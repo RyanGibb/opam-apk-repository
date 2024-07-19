@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del kamailio-tls"]
 ]
 depends: [
-  "kamailio"
+  "kamailio" {= "5.6.3-r1"}
   "libcrypto3" {= "3.0.14-r0"}
   "libcurl" {= "8.5.0-r0"}
   "libssl3" {= "3.0.14-r0"}

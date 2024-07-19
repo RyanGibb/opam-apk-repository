@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del libtirpc-dbg"]
 ]
 depends: [
-  "libtirpc-conf"
+  "libtirpc-conf" {= "1.2.6-r0"}
 ]
 extra-source "libtirpc-dbg-1.2.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/libtirpc-dbg-1.2.6-r0.apk"

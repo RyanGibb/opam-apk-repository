@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "musl" {= "1.2.3-r5"}
-  "openssh"
+  "openssh" {= "9.1_p1-r6"}
   ("yash-binsh" {= "2.53-r2"} | "busybox-binsh" {= "1.35.0-r31"} | "dash-binsh" {= "0.5.11.5-r2"})
 ]
 extra-source "rssh-2.3.4-r3.apk" {

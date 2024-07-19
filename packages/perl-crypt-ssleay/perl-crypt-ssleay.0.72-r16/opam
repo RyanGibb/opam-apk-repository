@@ -9,8 +9,8 @@ depends: [
   "libcrypto1-1" {= "1.1.1w-r1"}
   "libssl1-1" {= "1.1.1w-r1"}
   "musl" {= "1.2.3-r3"}
-  "perl-path-class"
-  "perl-try-tiny"
+  "perl-path-class" {= "0.37-r2"}
+  "perl-try-tiny" {= "0.31-r0"}
 ]
 extra-source "perl-crypt-ssleay-0.72-r16.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/perl-crypt-ssleay-0.72-r16.apk"

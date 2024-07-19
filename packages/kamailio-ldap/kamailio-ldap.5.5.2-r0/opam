@@ -6,7 +6,6 @@ remove: [
   ["sh" "-c" "sudo apk del kamailio-ldap"]
 ]
 depends: [
-  "kamailio"
   "kamailio" {= "5.5.2-r0"}
   "libldap" {= "2.6.2-r0"}
   "musl" {= "1.2.2-r9"}

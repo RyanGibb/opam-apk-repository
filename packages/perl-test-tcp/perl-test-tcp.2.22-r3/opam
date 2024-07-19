@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del perl-test-tcp"]
 ]
 depends: [
-  "perl"
-  "perl-test-sharedfork"
+  "perl" {= "5.38.2-r0"}
+  "perl-test-sharedfork" {= "0.35-r3"}
 ]
 extra-source "perl-test-tcp-2.22-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-test-tcp-2.22-r3.apk"

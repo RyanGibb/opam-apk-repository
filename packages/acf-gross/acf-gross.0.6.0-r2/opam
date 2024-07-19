@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del acf-gross"]
 ]
 depends: [
-  "acf-core"
-  "gross"
+  "acf-core" {= "0.22.0-r0"}
+  "gross" {= "1.0.2-r11"}
 ]
 extra-source "acf-gross-0.6.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/acf-gross-0.6.0-r2.apk"

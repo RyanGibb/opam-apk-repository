@@ -8,8 +8,8 @@ remove: [
 depends: [
   "mariadb-connector-c" {= "3.3.3-r0"}
   "musl" {= "1.2.3-r5"}
-  "perl"
-  "perl-dbi"
+  "perl" {= "5.36.2-r0"}
+  "perl-dbi" {= "1.643-r4"}
 ]
 extra-source "perl-dbd-mysql-4.050-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-dbd-mysql-4.050-r5.apk"

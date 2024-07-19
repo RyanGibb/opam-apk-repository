@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del libvirt-dev"]
 ]
 depends: [
-  "libtirpc-dev"
+  "libtirpc-dev" {= "1.2.6-r0"}
   "libvirt-libs" {= "6.6.0-r4"}
   "pkgconf" {= "1.7.2-r0"}
 ]

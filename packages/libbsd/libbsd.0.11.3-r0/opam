@@ -7,7 +7,6 @@ remove: [
 ]
 depends: [
   "libmd" {= "1.0.3-r0"}
-  "musl"
   "musl" {= "1.2.2-r5"}
 ]
 extra-source "libbsd-0.11.3-r0.apk" {

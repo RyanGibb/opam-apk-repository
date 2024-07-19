@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "git" {= "2.43.4-r0"}
-  "tcl"
-  "tk"
+  "tcl" {= "8.6.13-r1"}
+  "tk" {= "8.6.13-r2"}
 ]
 extra-source "git-gitk-2.43.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/git-gitk-2.43.4-r0.apk"

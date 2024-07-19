@@ -6,21 +6,18 @@ remove: [
   ["sh" "-c" "sudo apk del gtk+2.0-dev"]
 ]
 depends: [
-  "atk-dev"
   "atk-dev" {= "2.36.0-r0"}
   "cairo" {= "1.16.0-r5"}
-  "cairo-dev"
   "cairo-dev" {= "1.16.0-r5"}
   "gdk-pixbuf" {= "2.40.0-r4"}
   "gdk-pixbuf-dev" {= "2.40.0-r4"}
   "glib" {= "2.64.6-r0"}
   "glib-dev" {= "2.64.6-r0"}
   "gtk+2-0" {= "2.24.32-r1"}
-  "intltool"
-  "libxdamage-dev"
+  "intltool" {= "0.51.0-r4"}
+  "libxdamage-dev" {= "1.1.5-r0"}
   "musl" {= "1.1.24-r10"}
   "pango" {= "1.44.7-r2"}
-  "pango-dev"
   "pango-dev" {= "1.44.7-r2"}
   "pkgconf" {= "1.7.2-r0"}
 ]

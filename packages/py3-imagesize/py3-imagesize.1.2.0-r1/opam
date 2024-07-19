@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del py3-imagesize"]
 ]
 depends: [
-  "python3"
+  "python3" {= "3.9.18-r0"}
 ]
 extra-source "py3-imagesize-1.2.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/py3-imagesize-1.2.0-r1.apk"

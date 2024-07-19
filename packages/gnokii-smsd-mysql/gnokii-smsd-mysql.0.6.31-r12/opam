@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del gnokii-smsd-mysql"]
 ]
 depends: [
-  "gnokii-smsd"
+  "gnokii-smsd" {= "0.6.31-r12"}
   "mariadb-connector-c" {= "3.1.13-r4"}
   "musl" {= "1.2.3-r3"}
 ]

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "busybox" {= "1.35.0-r18"}
   "musl" {= "1.2.3-r3"}
-  "openssh"
+  "openssh" {= "9.0_p1-r5"}
 ]
 extra-source "rssh-2.3.4-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/rssh-2.3.4-r2.apk"

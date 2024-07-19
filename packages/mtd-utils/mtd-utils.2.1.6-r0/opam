@@ -6,13 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del mtd-utils"]
 ]
 depends: [
-  "mtd-utils-dev"
-  "mtd-utils-flash"
-  "mtd-utils-jffs"
-  "mtd-utils-misc"
-  "mtd-utils-nand"
-  "mtd-utils-nor"
-  "mtd-utils-ubi"
+  "mtd-utils-dev" {= "2.1.6-r0"}
+  "mtd-utils-flash" {= "2.1.6-r0"}
+  "mtd-utils-jffs" {= "2.1.6-r0"}
+  "mtd-utils-misc" {= "2.1.6-r0"}
+  "mtd-utils-nand" {= "2.1.6-r0"}
+  "mtd-utils-nor" {= "2.1.6-r0"}
+  "mtd-utils-ubi" {= "2.1.6-r0"}
   "musl" {= "1.2.4_git20230717-r4"}
 ]
 extra-source "mtd-utils-2.1.6-r0.apk" {

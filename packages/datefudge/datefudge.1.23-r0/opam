@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del datefudge"]
 ]
 depends: [
-  "coreutils"
+  "coreutils" {= "8.32-r0"}
   "musl" {= "1.1.24-r10"}
 ]
 extra-source "datefudge-1.23-r0.apk" {

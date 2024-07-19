@@ -11,36 +11,29 @@ depends: [
   "fontconfig-dev" {= "2.14.2-r4"}
   "fribidi-dev" {= "1.0.13-r0"}
   "gdk-pixbuf" {= "2.42.10-r6"}
-  "gdk-pixbuf-dev"
   "gdk-pixbuf-dev" {= "2.42.10-r6"}
   "glib" {= "2.78.6-r0"}
-  "glib-dev"
   "glib-dev" {= "2.78.6-r0"}
   "gtk+3-0" {= "3.24.41-r0"}
-  "libepoxy-dev"
   "libepoxy-dev" {= "1.5.10-r1"}
   "libintl" {= "0.22.3-r0"}
   "libx11-dev" {= "1.8.7-r0"}
   "libxcomposite-dev" {= "0.4.6-r4"}
   "libxcursor-dev" {= "1.2.1-r3"}
   "libxdamage-dev" {= "1.1.6-r4"}
-  "libxext-dev"
   "libxext-dev" {= "1.3.5-r3"}
   "libxfixes-dev" {= "6.0.1-r3"}
-  "libxi-dev"
   "libxi-dev" {= "1.8.1-r2"}
-  "libxinerama-dev"
   "libxinerama-dev" {= "1.1.5-r3"}
-  "libxkbcommon-dev"
   "libxkbcommon-dev" {= "1.6.0-r0"}
   "libxrandr-dev" {= "1.5.4-r0"}
   "musl" {= "1.2.4_git20230717-r4"}
   "pango-dev" {= "1.51.0-r0"}
   "pkgconf" {= "2.1.0-r0"}
   "wayland-dev" {= "1.22.0-r4"}
-  "wayland-libs-client"
-  "wayland-libs-cursor"
-  "wayland-protocols"
+  "wayland-libs-client" {= "1.22.0-r4"}
+  "wayland-libs-cursor" {= "1.22.0-r4"}
+  "wayland-protocols" {= "1.32-r2"}
 ]
 extra-source "gtk+3.0-dev-3.24.41-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/gtk+3.0-dev-3.24.41-r0.apk"

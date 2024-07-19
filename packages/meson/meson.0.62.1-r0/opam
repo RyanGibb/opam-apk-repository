@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del meson"]
 ]
 depends: [
-  "python3"
-  "samurai"
+  "python3" {= "3.10.14-r1"}
+  "samurai" {= "1.2-r1"}
 ]
 extra-source "meson-0.62.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/meson-0.62.1-r0.apk"

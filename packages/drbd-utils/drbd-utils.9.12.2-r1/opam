@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del drbd-utils"]
 ]
 depends: [
-  "bash"
+  "bash" {= "5.0.17-r0"}
   "musl" {= "1.1.24-r10"}
 ]
 extra-source "drbd-utils-9.12.2-r1.apk" {

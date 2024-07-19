@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del xorg-server-xwayland"]
 ]
 depends: [
-  "font-cursor-misc"
-  "font-misc-misc"
+  "font-cursor-misc" {= "1.0.3-r1"}
+  "font-misc-misc" {= "1.1.2-r1"}
   "libdrm" {= "2.4.102-r0"}
   "libepoxy" {= "1.5.4-r0"}
   "libxau" {= "1.0.9-r0"}
@@ -20,9 +20,9 @@ depends: [
   "nettle" {= "3.5.1-r2"}
   "pixman" {= "0.40.0-r2"}
   "wayland-libs-client" {= "1.18.0-r4"}
-  "xinit"
-  "xkbcomp"
-  "xkeyboard-config"
+  "xinit" {= "1.4.1-r0"}
+  "xkbcomp" {= "1.4.3-r0"}
+  "xkeyboard-config" {= "2.29-r0"}
 ]
 extra-source "xorg-server-xwayland-1.20.11-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/xorg-server-xwayland-1.20.11-r0.apk"

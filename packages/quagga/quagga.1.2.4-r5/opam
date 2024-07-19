@@ -8,7 +8,7 @@ remove: [
 depends: [
   "busybox" {= "1.35.0-r18"}
   "c-ares" {= "1.19.1-r1"}
-  "iproute2"
+  "iproute2" {= "5.17.0-r0"}
   "musl" {= "1.2.3-r3"}
   "net-snmp-agent-libs" {= "5.9.3-r1"}
   "net-snmp-libs" {= "5.9.3-r1"}

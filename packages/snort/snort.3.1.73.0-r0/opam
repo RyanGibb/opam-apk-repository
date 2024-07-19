@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del snort"]
 ]
 depends: [
-  "bash"
+  "bash" {= "5.2.21-r0"}
   "daq" {= "3.0.12-r1"}
   "hwloc" {= "2.10.0-r0"}
   "libcrypto3" {= "3.1.6-r2"}

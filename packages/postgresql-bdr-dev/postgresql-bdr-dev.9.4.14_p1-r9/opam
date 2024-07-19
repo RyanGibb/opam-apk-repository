@@ -7,13 +7,13 @@ remove: [
 ]
 depends: [
   "libpq" {= "13.12-r0"}
-  "libxml2-dev"
+  "libxml2-dev" {= "2.9.14-r2"}
   "musl" {= "1.2.2-r5"}
-  "openssl-dev"
+  "openssl-dev" {= "1.1.1t-r2"}
   "pkgconf" {= "1.7.4-r1"}
   "postgresql-bdr-libs" {= "9.4.14_p1-r9"}
-  "readline-dev"
-  "zlib-dev"
+  "readline-dev" {= "8.1.0-r0"}
+  "zlib-dev" {= "1.2.12-r3"}
 ]
 extra-source "postgresql-bdr-dev-9.4.14_p1-r9.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/postgresql-bdr-dev-9.4.14_p1-r9.apk"

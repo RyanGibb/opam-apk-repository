@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del perl-lwp-protocol-https"]
 ]
 depends: [
-  "perl"
-  "perl-io-socket-ssl"
-  "perl-libwww"
-  "perl-mozilla-ca"
-  "perl-net-http"
+  "perl" {= "5.38.2-r0"}
+  "perl-io-socket-ssl" {= "2.084-r0"}
+  "perl-libwww" {= "6.72-r0"}
+  "perl-mozilla-ca" {= "20240313-r0"}
+  "perl-net-http" {= "6.23-r1"}
 ]
 extra-source "perl-lwp-protocol-https-6.11-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/perl-lwp-protocol-https-6.11-r0.apk"

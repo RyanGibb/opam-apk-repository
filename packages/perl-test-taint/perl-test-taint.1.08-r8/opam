@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "musl" {= "1.2.5-r0"}
-  "perl"
+  "perl" {= "5.38.2-r0"}
 ]
 extra-source "perl-test-taint-1.08-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-test-taint-1.08-r8.apk"

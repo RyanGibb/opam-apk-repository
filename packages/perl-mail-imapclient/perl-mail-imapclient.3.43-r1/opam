@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del perl-mail-imapclient"]
 ]
 depends: [
-  "perl"
-  "perl-parse-recdescent"
+  "perl" {= "5.38.2-r0"}
+  "perl-parse-recdescent" {= "1.967015-r5"}
 ]
 extra-source "perl-mail-imapclient-3.43-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/perl-mail-imapclient-3.43-r1.apk"

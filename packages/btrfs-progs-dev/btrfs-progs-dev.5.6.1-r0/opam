@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "btrfs-progs-libs" {= "5.6.1-r0"}
-  "linux-headers"
+  "linux-headers" {= "5.4.5-r1"}
 ]
 extra-source "btrfs-progs-dev-5.6.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/btrfs-progs-dev-5.6.1-r0.apk"

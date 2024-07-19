@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del perl-lwp-useragent-determined"]
 ]
 depends: [
-  "perl"
-  "perl-libwww"
+  "perl" {= "5.30.3-r0"}
+  "perl-libwww" {= "6.44-r0"}
 ]
 extra-source "perl-lwp-useragent-determined-1.07-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-lwp-useragent-determined-1.07-r1.apk"

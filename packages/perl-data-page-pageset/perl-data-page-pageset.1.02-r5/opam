@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del perl-data-page-pageset"]
 ]
 depends: [
-  "perl"
-  "perl-class-accessor"
-  "perl-data-page"
+  "perl" {= "5.38.2-r0"}
+  "perl-class-accessor" {= "0.51-r4"}
+  "perl-data-page" {= "2.03-r4"}
 ]
 extra-source "perl-data-page-pageset-1.02-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-data-page-pageset-1.02-r5.apk"

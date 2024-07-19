@@ -6,16 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del neon-dev"]
 ]
 depends: [
-  "autoconf"
-  "automake"
-  "expat-dev"
-  "gzip"
-  "libtool"
+  "autoconf" {= "2.71-r0"}
+  "automake" {= "1.16.5-r0"}
+  "expat-dev" {= "2.6.2-r0"}
+  "gzip" {= "1.12-r0"}
+  "libtool" {= "2.4.7-r0"}
   "neon" {= "0.32.2-r0"}
   "openssl-dev" {= "1.1.1w-r1"}
   "pkgconf" {= "1.8.1-r0"}
-  "xmlto"
-  "zlib-dev"
+  "xmlto" {= "0.0.28-r2"}
+  "zlib-dev" {= "1.2.12-r3"}
 ]
 extra-source "neon-dev-0.32.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/neon-dev-0.32.2-r0.apk"

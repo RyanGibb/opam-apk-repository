@@ -8,11 +8,10 @@ remove: [
 depends: [
   "avahi-dev" {= "0.8-r6"}
   "cups-libs" {= "2.4.2-r2"}
-  "gnutls-dev"
   "gnutls-dev" {= "3.7.7-r1"}
-  "libgcrypt-dev"
+  "libgcrypt-dev" {= "1.10.1-r0"}
   "pkgconf" {= "1.8.1-r0"}
-  "zlib-dev"
+  "zlib-dev" {= "1.2.12-r3"}
 ]
 extra-source "cups-dev-2.4.2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/cups-dev-2.4.2-r2.apk"

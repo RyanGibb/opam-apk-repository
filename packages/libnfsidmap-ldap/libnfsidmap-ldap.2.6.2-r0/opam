@@ -9,8 +9,8 @@ depends: [
   "krb5-libs" {= "1.20.2-r0"}
   "libldap" {= "2.6.3-r6"}
   "musl" {= "1.2.3-r5"}
-  "python3"
-  "rpcbind"
+  "python3" {= "3.10.14-r1"}
+  "rpcbind" {= "1.2.6-r1"}
 ]
 extra-source "libnfsidmap-ldap-2.6.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libnfsidmap-ldap-2.6.2-r0.apk"

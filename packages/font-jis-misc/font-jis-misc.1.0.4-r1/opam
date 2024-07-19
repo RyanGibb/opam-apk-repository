@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del font-jis-misc"]
 ]
 depends: [
-  "encodings"
-  "font-alias"
-  "fontconfig"
-  "mkfontscale"
+  "encodings" {= "1.0.7-r1"}
+  "font-alias" {= "1.0.5-r0"}
+  "fontconfig" {= "2.15.0-r1"}
+  "mkfontscale" {= "1.2.2-r6"}
 ]
 extra-source "font-jis-misc-1.0.4-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/font-jis-misc-1.0.4-r1.apk"

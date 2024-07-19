@@ -13,7 +13,7 @@ depends: [
   "libpng" {= "1.6.37-r1"}
   "libx11" {= "1.6.12-r1"}
   "musl" {= "1.1.24-r10"}
-  "shared-mime-info"
+  "shared-mime-info" {= "1.15-r0"}
   "tiff" {= "4.1.0-r0"}
 ]
 extra-source "gdk-pixbuf-2.40.0-r4.apk" {

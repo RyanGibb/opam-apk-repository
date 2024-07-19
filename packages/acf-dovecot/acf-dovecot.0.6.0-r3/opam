@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del acf-dovecot"]
 ]
 depends: [
-  "acf-core"
-  "dovecot"
+  "acf-core" {= "0.22.0-r1"}
+  "dovecot" {= "2.3.15-r0"}
 ]
 extra-source "acf-dovecot-0.6.0-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/acf-dovecot-0.6.0-r3.apk"

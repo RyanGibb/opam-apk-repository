@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del uwsgi-notfound"]
 ]
 depends: [
-  "uwsgi"
+  "uwsgi" {= "2.0.19.1-r1"}
 ]
 extra-source "uwsgi-notfound-2.0.19.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/uwsgi-notfound-2.0.19.1-r1.apk"

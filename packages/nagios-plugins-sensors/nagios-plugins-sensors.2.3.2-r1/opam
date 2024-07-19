@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del nagios-plugins-sensors"]
 ]
 depends: [
-  "grep"
-  "lm-sensors"
-  "nagios-plugins"
+  "grep" {= "3.7-r0"}
+  "lm-sensors" {= "3.6.0-r1"}
+  "nagios-plugins" {= "2.3.2-r1"}
 ]
 extra-source "nagios-plugins-sensors-2.3.2-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/nagios-plugins-sensors-2.3.2-r1.apk"

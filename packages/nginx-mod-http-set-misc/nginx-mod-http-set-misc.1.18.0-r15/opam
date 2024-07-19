@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "musl" {= "1.2.2-r2"}
-  "nginx"
-  "nginx-mod-devel-kit"
+  "nginx" {= "1.18.0-r15"}
+  "nginx-mod-devel-kit" {= "1.18.0-r15"}
 ]
 extra-source "nginx-mod-http-set-misc-1.18.0-r15.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/nginx-mod-http-set-misc-1.18.0-r15.apk"

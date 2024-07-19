@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del perl-email-address-list"]
 ]
 depends: [
-  "perl"
-  "perl-email-address"
+  "perl" {= "5.36.2-r0"}
+  "perl-email-address" {= "1.913-r0"}
 ]
 extra-source "perl-email-address-list-0.06-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-email-address-list-0.06-r2.apk"

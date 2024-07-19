@@ -9,7 +9,7 @@ depends: [
   "busybox" {= "1.33.1-r8"}
   "execline" {= "2.8.0.1-r0"}
   "musl" {= "1.2.2-r5"}
-  "s6-ipcserver"
+  "s6-ipcserver" {= "2.10.0.3-r0"}
   "skalibs" {= "2.10.0.3-r0"}
 ]
 extra-source "s6-2.10.0.3-r0.apk" {

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del rust-wasm"]
 ]
 depends: [
-  "lld"
+  "lld" {= "17.0.6-r0"}
   "rust" {= "1.78.0-r0"}
-  "wasi-libc"
+  "wasi-libc" {= "0.20231215-r0"}
 ]
 extra-source "rust-wasm-1.78.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/rust-wasm-1.78.0-r0.apk"

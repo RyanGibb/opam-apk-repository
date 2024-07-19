@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del font-bh-ttf"]
 ]
 depends: [
-  "encodings"
-  "font-alias"
-  "fontconfig"
-  "mkfontscale"
+  "encodings" {= "1.0.6-r0"}
+  "font-alias" {= "1.0.4-r0"}
+  "fontconfig" {= "2.14.1-r0"}
+  "mkfontscale" {= "1.2.2-r1"}
 ]
 extra-source "font-bh-ttf-1.0.3-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/font-bh-ttf-1.0.3-r3.apk"

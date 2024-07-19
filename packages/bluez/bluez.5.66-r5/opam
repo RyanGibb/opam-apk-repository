@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del bluez"]
 ]
 depends: [
-  "dbus"
+  "dbus" {= "1.14.8-r0"}
   "dbus-libs" {= "1.14.8-r0"}
   "eudev-libs" {= "3.2.11-r8"}
   "glib" {= "2.76.6-r0"}

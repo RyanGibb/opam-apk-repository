@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del lua5.1-sql-sqlite3"]
 ]
 depends: [
-  "lua5-1"
+  "lua5-1" {= "5.1.5-r13"}
   "musl" {= "1.2.5-r0"}
   "sqlite-libs" {= "3.45.3-r1"}
 ]

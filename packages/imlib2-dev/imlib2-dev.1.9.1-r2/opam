@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del imlib2-dev"]
 ]
 depends: [
-  "freetype-dev"
+  "freetype-dev" {= "2.12.1-r0"}
   "imlib2" {= "1.9.1-r2"}
-  "libsm-dev"
-  "libxext-dev"
+  "libsm-dev" {= "1.2.3-r1"}
+  "libxext-dev" {= "1.3.5-r0"}
   "pkgconf" {= "1.9.4-r0"}
 ]
 extra-source "imlib2-dev-1.9.1-r2.apk" {

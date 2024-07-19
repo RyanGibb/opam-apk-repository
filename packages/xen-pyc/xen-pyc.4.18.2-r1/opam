@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del xen-pyc"]
 ]
 depends: [
-  "bash"
-  "iproute2"
-  "logrotate"
+  "bash" {= "5.2.26-r0"}
+  "iproute2" {= "6.9.0-r0"}
+  "logrotate" {= "3.21.0-r1"}
   "python3" {>= "3.12"}
 ]
 extra-source "xen-pyc-4.18.2-r1.apk" {

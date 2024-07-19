@@ -11,7 +11,7 @@ depends: [
   "libprotoc" {= "3.18.1-r3"}
   "pkgconf" {= "1.8.1-r0"}
   "protoc" {= "3.18.1-r3"}
-  "zlib-dev"
+  "zlib-dev" {= "1.2.12-r3"}
 ]
 extra-source "protobuf-dev-3.18.1-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/protobuf-dev-3.18.1-r3.apk"

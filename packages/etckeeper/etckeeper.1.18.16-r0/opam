@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "busybox" {= "1.33.1-r8"}
-  "findutils"
-  "git"
+  "findutils" {= "4.8.0-r1"}
+  "git" {= "2.32.7-r0"}
 ]
 extra-source "etckeeper-1.18.16-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/etckeeper-1.18.16-r0.apk"

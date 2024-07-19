@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del font-misc-ethiopic"]
 ]
 depends: [
-  "encodings"
-  "font-alias"
-  "fontconfig"
-  "mkfontscale"
+  "encodings" {= "1.0.5-r0"}
+  "font-alias" {= "1.0.3-r1"}
+  "fontconfig" {= "2.13.1-r2"}
   "mkfontscale" {= "1.2.1-r1"}
 ]
 extra-source "font-misc-ethiopic-1.0.3-r0.apk" {

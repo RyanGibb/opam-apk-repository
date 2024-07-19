@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del acf-ppp"]
 ]
 depends: [
-  "acf-core"
-  "ppp"
+  "acf-core" {= "0.22.0-r0"}
+  "ppp" {= "2.4.8-r2"}
 ]
 extra-source "acf-ppp-0.5.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/acf-ppp-0.5.0-r2.apk"

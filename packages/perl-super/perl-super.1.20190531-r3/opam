@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del perl-super"]
 ]
 depends: [
-  "perl"
-  "perl-sub-identify"
+  "perl" {= "5.38.2-r0"}
+  "perl-sub-identify" {= "0.14-r10"}
 ]
 extra-source "perl-super-1.20190531-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-super-1.20190531-r3.apk"

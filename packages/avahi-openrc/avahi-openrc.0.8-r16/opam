@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del avahi-openrc"]
 ]
 depends: [
-  "dbus"
+  "dbus" {= "1.14.10-r0"}
 ]
 extra-source "avahi-openrc-0.8-r16.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/avahi-openrc-0.8-r16.apk"

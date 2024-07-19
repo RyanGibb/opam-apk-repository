@@ -7,10 +7,10 @@ remove: [
 ]
 depends: [
   "glib-dev" {= "2.70.5-r0"}
-  "gobject-introspection-dev"
+  "gobject-introspection-dev" {= "1.70.0-r1"}
   "icu-dev" {= "69.1-r1"}
   "libical" {= "3.0.11-r2"}
-  "libxml2-dev"
+  "libxml2-dev" {= "2.9.14-r2"}
   "pkgconf" {= "1.8.1-r0"}
 ]
 extra-source "libical-dev-3.0.11-r2.apk" {

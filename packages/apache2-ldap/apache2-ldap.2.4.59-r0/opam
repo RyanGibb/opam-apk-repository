@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del apache2-ldap"]
 ]
 depends: [
-  "apache2"
-  "apr-util-ldap"
+  "apache2" {= "2.4.59-r0"}
+  "apr-util-ldap" {= "1.6.3-r0"}
   "libldap" {= "2.6.3-r3"}
   "musl" {= "1.2.3-r3"}
 ]

@@ -8,7 +8,7 @@ remove: [
 depends: [
   "libldap" {= "2.6.3-r3"}
   "musl" {= "1.2.3-r3"}
-  "openldap"
+  "openldap" {= "2.6.3-r3"}
 ]
 extra-source "openldap-passwd-sha2-2.6.3-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/openldap-passwd-sha2-2.6.3-r3.apk"

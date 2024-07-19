@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del bison"]
 ]
 depends: [
-  "m4"
+  "m4" {= "1.4.19-r1"}
   "musl" {= "1.2.3-r5"}
 ]
 extra-source "bison-3.8.2-r0.apk" {

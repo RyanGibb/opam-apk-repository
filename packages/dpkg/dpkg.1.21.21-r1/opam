@@ -9,8 +9,8 @@ depends: [
   "libbz2" {= "1.0.8-r5"}
   "libmd" {= "1.0.4-r2"}
   "musl" {= "1.2.4-r2"}
-  "tar"
-  "xz"
+  "tar" {= "1.34-r3"}
+  "xz" {= "5.4.3-r0"}
   "zlib" {= "1.2.13-r1"}
 ]
 extra-source "dpkg-1.21.21-r1.apk" {

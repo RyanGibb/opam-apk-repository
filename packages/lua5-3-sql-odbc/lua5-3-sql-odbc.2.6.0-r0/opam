@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del lua5.3-sql-odbc"]
 ]
 depends: [
-  "lua5-3"
+  "lua5-3" {= "5.3.6-r0"}
   "musl" {= "1.2.2-r2"}
   "unixodbc" {= "2.3.9-r1"}
 ]

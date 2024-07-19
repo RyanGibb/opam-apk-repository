@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del bats"]
 ]
 depends: [
-  "bash"
+  "bash" {= "5.2.15-r5"}
 ]
 extra-source "bats-1.9.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/bats-1.9.0-r0.apk"

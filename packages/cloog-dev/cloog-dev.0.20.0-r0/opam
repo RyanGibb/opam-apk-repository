@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "cloog" {= "0.20.0-r0"}
-  "gmp-dev"
-  "isl-dev"
+  "gmp-dev" {= "6.2.1-r1"}
+  "isl-dev" {= "0.18-r0"}
   "pkgconf" {= "1.7.2-r0"}
 ]
 extra-source "cloog-dev-0.20.0-r0.apk" {

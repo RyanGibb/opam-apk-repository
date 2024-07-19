@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del strongswan-dbg"]
 ]
 depends: [
-  "iproute2"
+  "iproute2" {= "6.6.0-r0"}
 ]
 extra-source "strongswan-dbg-5.9.12-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/strongswan-dbg-5.9.12-r0.apk"

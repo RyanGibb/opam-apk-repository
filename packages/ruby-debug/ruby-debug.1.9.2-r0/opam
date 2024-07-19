@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "musl" {= "1.2.5-r0"}
-  "ruby"
+  "ruby" {= "3.3.3-r0"}
   "ruby-libs" {= "3.3.3-r0"}
 ]
 extra-source "ruby-debug-1.9.2-r0.apk" {

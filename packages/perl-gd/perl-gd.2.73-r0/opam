@@ -8,7 +8,7 @@ remove: [
 depends: [
   "libgd" {= "2.3.2-r1"}
   "musl" {= "1.2.2-r5"}
-  "perl"
+  "perl" {= "5.32.1-r0"}
 ]
 extra-source "perl-gd-2.73-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/perl-gd-2.73-r0.apk"

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "expat" {= "2.5.0-r0"}
-  "kamailio"
+  "kamailio" {= "5.4.5-r1"}
   "musl" {= "1.2.2-r5"}
 ]
 extra-source "kamailio-xmpp-5.4.5-r1.apk" {

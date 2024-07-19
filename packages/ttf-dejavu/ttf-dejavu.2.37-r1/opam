@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del ttf-dejavu"]
 ]
 depends: [
-  "encodings"
-  "fontconfig"
-  "mkfontscale"
+  "encodings" {= "1.0.5-r0"}
+  "fontconfig" {= "2.14.0-r0"}
   "mkfontscale" {= "1.2.2-r0"}
 ]
 extra-source "ttf-dejavu-2.37-r1.apk" {

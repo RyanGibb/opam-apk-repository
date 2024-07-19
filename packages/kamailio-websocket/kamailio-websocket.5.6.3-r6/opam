@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del kamailio-websocket"]
 ]
 depends: [
-  "kamailio"
+  "kamailio" {= "5.6.3-r6"}
   "libcrypto3" {= "3.1.6-r0"}
   "libunistring" {= "1.1-r1"}
   "musl" {= "1.2.4-r2"}

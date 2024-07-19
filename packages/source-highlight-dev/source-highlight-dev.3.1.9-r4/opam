@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del source-highlight-dev"]
 ]
 depends: [
-  "boost-dev"
+  "boost-dev" {= "1.78.0-r1"}
   "pkgconf" {= "1.8.1-r0"}
   "source-highlight" {= "3.1.9-r4"}
 ]

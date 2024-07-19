@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del lua-aports"]
 ]
 depends: [
-  "lua5-2"
-  "lua5-2-cjson"
-  "lua5-2-filesystem"
-  "lua5-2-optarg"
+  "lua5-2" {= "5.2.4-r7"}
+  "lua5-2-cjson" {= "2.1.0-r9"}
+  "lua5-2-filesystem" {= "1.8.0-r0"}
+  "lua5-2-optarg" {= "0.2-r1"}
 ]
 extra-source "lua-aports-1.0.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/lua-aports-1.0.1-r0.apk"

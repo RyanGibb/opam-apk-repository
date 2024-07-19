@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del acf-quagga"]
 ]
 depends: [
-  "acf-core"
-  "lua-socket"
-  "quagga"
+  "acf-core" {= "0.22.0-r0"}
+  "lua-socket" {= "3.0_rc1_git20160306-r2"}
+  "quagga" {= "1.2.4-r3"}
 ]
 extra-source "acf-quagga-0.10.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/acf-quagga-0.10.1-r1.apk"

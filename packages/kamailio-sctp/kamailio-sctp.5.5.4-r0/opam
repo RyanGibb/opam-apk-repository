@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del kamailio-sctp"]
 ]
 depends: [
-  "kamailio"
+  "kamailio" {= "5.5.4-r0"}
   "liblksctp" {= "1.0.19-r0"}
   "musl" {= "1.2.3-r3"}
 ]

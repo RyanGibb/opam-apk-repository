@@ -7,7 +7,6 @@ remove: [
 ]
 depends: [
   "musl" {= "1.1.24-r10"}
-  "tcl"
   "tcl" {= "8.6.10-r0"}
 ]
 extra-source "eggdrop-logs2html-1.8.4-r0.apk" {

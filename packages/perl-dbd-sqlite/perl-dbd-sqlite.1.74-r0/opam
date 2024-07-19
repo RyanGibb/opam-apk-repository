@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "musl" {= "1.2.5-r0"}
-  "perl"
-  "perl-dbi"
+  "perl" {= "5.38.2-r0"}
+  "perl-dbi" {= "1.643-r6"}
   "sqlite-libs" {= "3.45.3-r1"}
 ]
 extra-source "perl-dbd-sqlite-1.74-r0.apk" {

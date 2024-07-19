@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del perl-html-mason-psgihandler"]
 ]
 depends: [
-  "perl-cgi-psgi"
-  "perl-html-mason"
+  "perl-cgi-psgi" {= "0.15-r2"}
+  "perl-html-mason" {= "1.59-r0"}
 ]
 extra-source "perl-html-mason-psgihandler-0.53-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-html-mason-psgihandler-0.53-r1.apk"

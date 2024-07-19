@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del busybox-suid"]
 ]
 depends: [
-  "busybox"
+  "busybox" {= "1.36.1-r19"}
   "musl" {= "1.2.4_git20230717-r4"}
 ]
 extra-source "busybox-suid-1.36.1-r19.apk" {

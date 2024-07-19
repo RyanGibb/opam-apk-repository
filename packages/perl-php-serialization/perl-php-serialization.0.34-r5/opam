@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del perl-php-serialization"]
 ]
 depends: [
-  "perl"
+  "perl" {= "5.36.2-r0"}
 ]
 extra-source "perl-php-serialization-0.34-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-php-serialization-0.34-r5.apk"

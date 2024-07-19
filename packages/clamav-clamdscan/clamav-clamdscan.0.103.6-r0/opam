@@ -8,7 +8,7 @@ remove: [
 depends: [
   "clamav-libs" {= "0.103.6-r0"}
   "musl" {= "1.2.2-r2"}
-  "openssl"
+  "openssl" {= "1.1.1s-r0"}
 ]
 extra-source "clamav-clamdscan-0.103.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/clamav-clamdscan-0.103.6-r0.apk"

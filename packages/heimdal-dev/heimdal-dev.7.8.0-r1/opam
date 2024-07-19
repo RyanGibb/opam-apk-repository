@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del heimdal-dev"]
 ]
 depends: [
-  "e2fsprogs-dev"
+  "e2fsprogs-dev" {= "1.46.6-r0"}
   "heimdal-libs" {= "7.8.0-r1"}
   "openssl-dev" {> "3"}
   "pkgconf" {= "1.9.4-r0"}

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "python3" {>= "3.12"}
-  "samurai"
+  "samurai" {= "1.2-r5"}
 ]
 extra-source "meson-pyc-1.4.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/meson-pyc-1.4.0-r2.apk"

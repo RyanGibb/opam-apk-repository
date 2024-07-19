@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del perl-business-hours"]
 ]
 depends: [
-  "perl"
-  "perl-set-intspan"
+  "perl" {= "5.36.2-r0"}
+  "perl-set-intspan" {= "1.19-r3"}
 ]
 extra-source "perl-business-hours-0.13-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-business-hours-0.13-r2.apk"

@@ -12,7 +12,7 @@ depends: [
   "gobject-introspection" {= "1.74.0-r1"}
   "libffi" {= "3.4.4-r0"}
   "musl" {= "1.2.3-r5"}
-  "python3"
+  "python3" {= "3.10.14-r1"}
 ]
 extra-source "py3-gobject3-3.42.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/py3-gobject3-3.42.2-r0.apk"

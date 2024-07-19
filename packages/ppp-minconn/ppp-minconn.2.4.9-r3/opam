@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del ppp-minconn"]
 ]
 depends: [
-  "ppp-daemon"
+  "ppp-daemon" {= "2.4.9-r3"}
 ]
 extra-source "ppp-minconn-2.4.9-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/ppp-minconn-2.4.9-r3.apk"

@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del rrsync"]
 ]
 depends: [
-  "python3"
-  "rsync"
+  "python3" {= "3.11.9-r0"}
+  "rsync" {= "3.2.7-r4"}
 ]
 extra-source "rrsync-3.2.7-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/rrsync-3.2.7-r4.apk"

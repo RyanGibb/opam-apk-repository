@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del asterisk-dev"]
 ]
 depends: [
-  "asterisk"
+  "asterisk" {= "18.2.2-r6"}
 ]
 extra-source "asterisk-dev-18.2.2-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/asterisk-dev-18.2.2-r6.apk"

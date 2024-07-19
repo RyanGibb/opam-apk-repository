@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del boost1.82-wserialization"]
 ]
 depends: [
-  "boost1-82-libs"
+  "boost1-82-libs" {= "1.82.0-r5"}
   "boost1-82-serialization" {= "1.82.0-r5"}
   "libgcc" {= "13.2.1_git20240309-r0"}
   "libstdc++" {= "13.2.1_git20240309-r0"}

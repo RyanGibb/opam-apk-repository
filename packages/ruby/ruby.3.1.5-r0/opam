@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del ruby"]
 ]
 depends: [
-  "ca-certificates"
+  "ca-certificates" {= "20240226-r0"}
   "gmp" {= "6.2.1-r2"}
   "libucontext" {= "1.2-r0"}
   "musl" {= "1.2.3-r5"}

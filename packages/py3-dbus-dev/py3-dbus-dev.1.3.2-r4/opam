@@ -8,7 +8,7 @@ remove: [
 depends: [
   "dbus-dev" {= "1.14.10-r0"}
   "pkgconf" {= "2.1.0-r0"}
-  "py3-dbus"
+  "py3-dbus" {= "1.3.2-r4"}
 ]
 extra-source "py3-dbus-dev-1.3.2-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/py3-dbus-dev-1.3.2-r4.apk"

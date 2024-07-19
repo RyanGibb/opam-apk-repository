@@ -8,8 +8,8 @@ remove: [
 depends: [
   "libcrypto1-1" {= "1.1.1o-r0"}
   "musl" {= "1.1.24-r10"}
-  "openssh-keygen"
-  "openssh-server-common"
+  "openssh-keygen" {= "8.3_p1-r3"}
+  "openssh-server-common" {= "8.3_p1-r3"}
   "zlib" {= "1.2.12-r3"}
 ]
 extra-source "openssh-server-8.3_p1-r3.apk" {

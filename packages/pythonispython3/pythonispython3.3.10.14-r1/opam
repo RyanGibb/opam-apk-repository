@@ -6,7 +6,6 @@ remove: [
   ["sh" "-c" "sudo apk del pythonispython3"]
 ]
 depends: [
-  "python3"
   "python3" {= "3.10.14-r1"}
 ]
 extra-source "pythonispython3-3.10.14-r1.apk" {

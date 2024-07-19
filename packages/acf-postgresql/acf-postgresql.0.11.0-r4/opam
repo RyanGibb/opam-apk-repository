@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del acf-postgresql"]
 ]
 depends: [
-  "acf-core"
-  "acf-db-lib"
-  "lua-sql-postgres"
+  "acf-core" {= "0.22.0-r3"}
+  "acf-db-lib" {= "0.2.1-r4"}
+  "lua-sql-postgres" {= "2.6.0-r4"}
   ("postgresql14" {= "14.12-r0"} | "postgresql15" {= "15.7-r0"})
 ]
 extra-source "acf-postgresql-0.11.0-r4.apk" {

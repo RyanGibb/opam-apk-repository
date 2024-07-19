@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del rrdtool"]
 ]
 depends: [
-  "font-cantarell"
+  "font-cantarell" {= "0.303.1-r2"}
   "librrd" {= "1.8.0-r6"}
   "musl" {= "1.2.5-r0"}
 ]

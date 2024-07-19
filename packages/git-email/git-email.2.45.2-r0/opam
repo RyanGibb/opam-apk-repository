@@ -11,10 +11,10 @@ depends: [
   "libssl3" {= "3.3.1-r3"}
   "musl" {= "1.2.5-r0"}
   "pcre2" {= "10.43-r0"}
-  "perl"
-  "perl-authen-sasl"
+  "perl" {= "5.38.2-r0"}
+  "perl-authen-sasl" {= "2.1700-r0"}
   "perl-git" {= "2.45.2-r0"}
-  "perl-net-smtp-ssl"
+  "perl-net-smtp-ssl" {= "1.04-r4"}
   "zlib" {= "1.3.1-r1"}
 ]
 extra-source "git-email-2.45.2-r0.apk" {

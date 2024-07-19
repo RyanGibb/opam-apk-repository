@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del grub-bios"]
 ]
 depends: [
-  "grub"
+  "grub" {= "2.06-r17"}
 ]
 extra-source "grub-bios-2.06-r17.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/grub-bios-2.06-r17.apk"

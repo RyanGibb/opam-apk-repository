@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del py3-chardet"]
 ]
 depends: [
-  "python3"
+  "python3" {= "3.9.18-r0"}
 ]
 extra-source "py3-chardet-4.0.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/py3-chardet-4.0.0-r2.apk"

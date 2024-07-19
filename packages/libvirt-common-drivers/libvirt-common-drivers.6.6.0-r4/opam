@@ -16,7 +16,7 @@ depends: [
   "libpciaccess" {= "0.16-r0"}
   "libvirt-libs" {= "6.6.0-r4"}
   "libxml2" {= "2.9.14-r0"}
-  "lvm2"
+  "lvm2" {= "2.02.186-r1"}
   "musl" {= "1.1.24-r10"}
   "netcf-libs" {= "0.2.8-r6"}
 ]

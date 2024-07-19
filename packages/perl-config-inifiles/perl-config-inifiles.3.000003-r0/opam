@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del perl-config-inifiles"]
 ]
 depends: [
-  "perl"
-  "perl-io-stringy"
-  "perl-list-moreutils"
+  "perl" {= "5.30.3-r0"}
+  "perl-io-stringy" {= "2.113-r0"}
+  "perl-list-moreutils" {= "0.428-r0"}
 ]
 extra-source "perl-config-inifiles-3.000003-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-config-inifiles-3.000003-r0.apk"

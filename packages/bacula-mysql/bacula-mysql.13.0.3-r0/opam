@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del bacula-mysql"]
 ]
 depends: [
-  "bacula"
+  "bacula" {= "13.0.3-r0"}
   "mariadb-connector-c" {= "3.3.10-r0"}
   "musl" {= "1.2.5-r0"}
 ]

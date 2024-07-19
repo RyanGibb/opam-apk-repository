@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del perl-digest-hmac"]
 ]
 depends: [
-  "perl"
-  "perl-digest-sha1"
+  "perl" {= "5.30.3-r0"}
+  "perl-digest-sha1" {= "2.13-r12"}
 ]
 extra-source "perl-digest-hmac-1.03-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-digest-hmac-1.03-r1.apk"

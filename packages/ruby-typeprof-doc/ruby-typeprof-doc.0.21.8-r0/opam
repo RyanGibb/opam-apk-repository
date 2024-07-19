@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del ruby-typeprof-doc"]
 ]
 depends: [
-  "ruby"
-  "ruby-rbs"
+  "ruby" {= "3.2.4-r0"}
+  "ruby-rbs" {= "2.8.2-r0"}
 ]
 extra-source "ruby-typeprof-doc-0.21.8-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/ruby-typeprof-doc-0.21.8-r0.apk"

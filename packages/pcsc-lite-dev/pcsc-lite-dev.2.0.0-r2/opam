@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del pcsc-lite-dev"]
 ]
 depends: [
-  "eudev-dev"
+  "eudev-dev" {= "3.2.14-r1"}
   "pcsc-lite-libs" {= "2.0.0-r2"}
   "pcsc-lite-spy-libs" {= "2.0.0-r2"}
   "pkgconf" {= "2.1.0-r0"}

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del fish-tools"]
 ]
 depends: [
-  "fish"
+  "fish" {= "3.6.3-r0"}
   "mandoc" {= "1.14.6-r12"}
-  "python3"
+  "python3" {= "3.11.9-r0"}
 ]
 extra-source "fish-tools-3.6.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/fish-tools-3.6.3-r0.apk"

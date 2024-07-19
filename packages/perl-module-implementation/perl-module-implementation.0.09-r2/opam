@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del perl-module-implementation"]
 ]
 depends: [
-  "perl-module-runtime"
-  "perl-test-taint"
-  "perl-try-tiny"
+  "perl-module-runtime" {= "0.016-r3"}
+  "perl-test-taint" {= "1.08-r2"}
+  "perl-try-tiny" {= "0.30-r1"}
 ]
 extra-source "perl-module-implementation-0.09-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-module-implementation-0.09-r2.apk"

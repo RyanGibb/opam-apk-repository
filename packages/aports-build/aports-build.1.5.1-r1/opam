@@ -7,17 +7,17 @@ remove: [
 ]
 depends: [
   "abuild" {> "2.20.0"}
-  "build-base"
+  "build-base" {= "0.5-r2"}
   "busybox" {= "1.31.1-r22"}
-  "git"
+  "git" {= "2.26.3-r1"}
   "lua-aports" {> "1.0.0"}
-  "lua5-2-cjson"
-  "lua5-2-mqtt-publish"
-  "mosquitto-clients"
-  "mqtt-exec"
-  "openssh-client"
-  "pigz"
-  "rsync"
+  "lua5-2-cjson" {= "2.1.0-r9"}
+  "lua5-2-mqtt-publish" {= "0.3-r1"}
+  "mosquitto-clients" {= "1.6.9-r1"}
+  "mqtt-exec" {= "0.4-r6"}
+  "openssh-client" {= "8.3_p1-r3"}
+  "pigz" {= "2.4-r1"}
+  "rsync" {= "3.1.3-r3"}
 ]
 extra-source "aports-build-1.5.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/aports-build-1.5.1-r1.apk"

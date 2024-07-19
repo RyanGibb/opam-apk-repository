@@ -10,7 +10,6 @@ depends: [
   "glib-dev" {= "2.64.6-r0"}
   "libx11-dev" {= "1.6.12-r1"}
   "pkgconf" {= "1.7.2-r0"}
-  "shared-mime-info"
   "shared-mime-info" {= "1.15-r0"}
 ]
 extra-source "gdk-pixbuf-dev-2.40.0-r4.apk" {

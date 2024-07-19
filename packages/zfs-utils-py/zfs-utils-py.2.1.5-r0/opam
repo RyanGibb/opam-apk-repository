@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del zfs-utils-py"]
 ]
 depends: [
-  "python3"
+  "python3" {= "3.10.14-r1"}
 ]
 extra-source "zfs-utils-py-2.1.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/zfs-utils-py-2.1.5-r0.apk"

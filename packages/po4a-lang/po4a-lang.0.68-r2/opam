@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del po4a-lang"]
 ]
 depends: [
-  "gettext"
-  "perl"
-  "perl-pod-parser"
+  "gettext" {= "0.21.1-r1"}
+  "perl" {= "5.36.2-r0"}
+  "perl-pod-parser" {= "1.65-r0"}
 ]
 extra-source "po4a-lang-0.68-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/po4a-lang-0.68-r2.apk"

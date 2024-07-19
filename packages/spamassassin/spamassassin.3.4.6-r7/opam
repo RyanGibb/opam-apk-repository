@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del spamassassin"]
 ]
 depends: [
-  "curl"
-  "perl-mail-spamassassin"
+  "curl" {= "8.8.0-r0"}
+  "perl-mail-spamassassin" {= "3.4.6-r7"}
 ]
 extra-source "spamassassin-3.4.6-r7.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/spamassassin-3.4.6-r7.apk"

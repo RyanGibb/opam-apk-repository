@@ -9,7 +9,7 @@ depends: [
   "dbus-libs" {= "1.12.24-r0"}
   "glib" {= "2.66.8-r0"}
   "musl" {= "1.2.2-r2"}
-  "python3"
+  "python3" {= "3.8.15-r0"}
 ]
 extra-source "py3-dbus-1.2.16-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/py3-dbus-1.2.16-r2.apk"

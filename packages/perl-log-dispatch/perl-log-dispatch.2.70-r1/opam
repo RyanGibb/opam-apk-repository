@@ -6,14 +6,14 @@ remove: [
   ["sh" "-c" "sudo apk del perl-log-dispatch"]
 ]
 depends: [
-  "perl"
-  "perl-devel-globaldestruction"
-  "perl-dist-checkconflicts"
-  "perl-module-runtime"
-  "perl-namespace-autoclean"
-  "perl-params-validationcompiler"
-  "perl-specio"
-  "perl-try-tiny"
+  "perl" {= "5.36.2-r0"}
+  "perl-devel-globaldestruction" {= "0.14-r2"}
+  "perl-dist-checkconflicts" {= "0.11-r2"}
+  "perl-module-runtime" {= "0.016-r4"}
+  "perl-namespace-autoclean" {= "0.29-r2"}
+  "perl-params-validationcompiler" {= "0.30-r1"}
+  "perl-specio" {= "0.48-r0"}
+  "perl-try-tiny" {= "0.31-r0"}
 ]
 extra-source "perl-log-dispatch-2.70-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-log-dispatch-2.70-r1.apk"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del krb5-server-ldap"]
 ]
 depends: [
-  "krb5-conf"
+  "krb5-conf" {= "1.0-r2"}
   "krb5-libs" {= "1.20.2-r0"}
   "libcom_err" {= "1.47.0-r2"}
   "libldap" {= "2.6.5-r0"}

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del perl-html-formattext-withlinks-andtables"]
 ]
 depends: [
-  "perl-html-formattext-withlinks"
+  "perl-html-formattext-withlinks" {= "0.15-r3"}
 ]
 extra-source "perl-html-formattext-withlinks-andtables-0.07-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-html-formattext-withlinks-andtables-0.07-r1.apk"

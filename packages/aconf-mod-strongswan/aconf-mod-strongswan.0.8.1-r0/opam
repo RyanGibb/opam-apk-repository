@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del aconf-mod-strongswan"]
 ]
 depends: [
-  "aconf"
-  "strongswan"
+  "aconf" {= "0.8.1-r0"}
+  "strongswan" {= "5.8.4-r3"}
 ]
 extra-source "aconf-mod-strongswan-0.8.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/aconf-mod-strongswan-0.8.1-r0.apk"

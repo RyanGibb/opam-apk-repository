@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del hwids-udev"]
 ]
 depends: [
-  "hwids-net"
-  "hwids-pci"
-  "hwids-usb"
+  "hwids-net" {= "20201207-r0"}
+  "hwids-pci" {= "20201207-r0"}
+  "hwids-usb" {= "20201207-r0"}
 ]
 extra-source "hwids-udev-20201207-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/hwids-udev-20201207-r0.apk"

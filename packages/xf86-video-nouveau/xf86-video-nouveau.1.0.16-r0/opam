@@ -8,7 +8,7 @@ remove: [
 depends: [
   "eudev-libs" {= "3.2.9-r3"}
   "libdrm" {= "2.4.102-r0"}
-  "mesa-dri-nouveau"
+  "mesa-dri-nouveau" {= "20.0.7-r0"}
   "musl" {= "1.1.24-r10"}
 ]
 extra-source "xf86-video-nouveau-1.0.16-r0.apk" {

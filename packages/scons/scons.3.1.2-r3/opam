@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del scons"]
 ]
 depends: [
-  "python3"
+  "python3" {= "3.9.17-r0"}
 ]
 extra-source "scons-3.1.2-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/scons-3.1.2-r3.apk"

@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "musl" {= "1.2.4-r2"}
-  "perl"
-  "perl-common-sense"
+  "perl" {= "5.36.2-r0"}
+  "perl-common-sense" {= "3.75-r3"}
 ]
 extra-source "perl-convert-uulib-1.8-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-convert-uulib-1.8-r1.apk"

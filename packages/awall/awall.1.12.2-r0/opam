@@ -6,19 +6,19 @@ remove: [
   ["sh" "-c" "sudo apk del awall"]
 ]
 depends: [
-  "drill"
-  "ip6tables"
-  "ipset"
-  "iptables"
-  "lua-schema"
-  "lua5-4"
-  "lua5-4-alt-getopt"
-  "lua5-4-cjson"
-  "lua5-4-lyaml"
-  "lua5-4-pc"
-  "lua5-4-posix"
-  "lua5-4-stringy"
-  "xtables-addons"
+  "drill" {= "1.8.3-r2"}
+  "ip6tables" {= "1.8.9-r2"}
+  "ipset" {= "7.17-r1"}
+  "iptables" {= "1.8.9-r2"}
+  "lua-schema" {= "0_git20170304-r2"}
+  "lua5-4" {= "5.4.6-r0"}
+  "lua5-4-alt-getopt" {= "0.8.0-r0"}
+  "lua5-4-cjson" {= "2.1.0-r11"}
+  "lua5-4-lyaml" {= "6.2.8-r1"}
+  "lua5-4-pc" {= "1.0.0-r12"}
+  "lua5-4-posix" {= "36.1-r1"}
+  "lua5-4-stringy" {= "0.5.1-r3"}
+  "xtables-addons" {= "3.24-r0"}
   ("busybox-binsh" {= "1.36.1-r7"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.54-r3"})
 ]
 extra-source "awall-1.12.2-r0.apk" {

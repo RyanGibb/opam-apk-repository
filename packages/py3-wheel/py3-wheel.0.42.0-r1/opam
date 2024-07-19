@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del py3-wheel"]
 ]
 depends: [
-  "py3-packaging"
-  "python3"
+  "py3-packaging" {= "24.0-r1"}
+  "python3" {= "3.12.3-r1"}
   "python3" {>= "3.12"}
 ]
 extra-source "py3-wheel-0.42.0-r1.apk" {

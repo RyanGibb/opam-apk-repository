@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del libmemcached-dev"]
 ]
 depends: [
-  "cyrus-sasl-dev"
+  "cyrus-sasl-dev" {= "2.1.28-r3"}
   "libmemcached-libs" {= "1.0.18-r5"}
   "pkgconf" {= "1.9.4-r0"}
 ]

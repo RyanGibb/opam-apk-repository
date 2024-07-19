@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del bluez-obexd"]
 ]
 depends: [
-  "dbus"
+  "dbus" {= "1.14.10-r0"}
   "dbus-libs" {= "1.14.10-r0"}
   "glib" {= "2.78.6-r0"}
   "libical" {= "3.0.17-r1"}

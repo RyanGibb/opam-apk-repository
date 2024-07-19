@@ -9,8 +9,8 @@ depends: [
   "libgcc" {= "10.2.1_pre1-r3"}
   "libstdc++" {= "10.2.1_pre1-r3"}
   "musl" {= "1.2.2-r2"}
-  "py3-setuptools"
-  "python3"
+  "py3-setuptools" {= "51.3.3-r0"}
+  "python3" {= "3.8.15-r0"}
 ]
 extra-source "llvm10-test-utils-10.0.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/llvm10-test-utils-10.0.1-r1.apk"

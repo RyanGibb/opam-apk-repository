@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del libbsd-dev"]
 ]
 depends: [
-  "bsd-compat-headers"
+  "bsd-compat-headers" {= "0.7.2-r3"}
   "libbsd" {= "0.11.7-r0"}
-  "libmd-dev"
-  "linux-headers"
+  "libmd-dev" {= "1.0.4-r0"}
+  "linux-headers" {= "5.19.5-r0"}
   "pkgconf" {= "1.9.4-r0"}
 ]
 extra-source "libbsd-dev-0.11.7-r0.apk" {

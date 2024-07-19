@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del perl-mro-compat"]
 ]
 depends: [
-  "perl"
+  "perl" {= "5.38.2-r0"}
 ]
 extra-source "perl-mro-compat-0.15-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-mro-compat-0.15-r2.apk"

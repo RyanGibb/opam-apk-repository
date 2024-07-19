@@ -6,12 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del sendpage"]
 ]
 depends: [
-  "perl-dbi"
-  "perl-device-serialport"
-  "perl-mailtools"
-  "perl-net-snpp"
-  "perl-sys-hostname-long"
-  "perl-test-mockobject"
+  "perl-dbi" {= "1.643-r3"}
+  "perl-device-serialport" {= "1.04-r15"}
+  "perl-mailtools" {= "2.21-r2"}
+  "perl-net-snpp" {= "1.17-r4"}
+  "perl-sys-hostname-long" {= "1.5-r4"}
+  "perl-test-mockobject" {= "1.20200122-r1"}
 ]
 extra-source "sendpage-1.0.3-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/sendpage-1.0.3-r5.apk"

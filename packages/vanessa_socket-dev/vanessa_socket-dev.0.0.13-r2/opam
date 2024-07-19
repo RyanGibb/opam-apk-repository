@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "pkgconf" {= "2.2.0-r0"}
-  "popt-dev"
-  "vanessa_logger-dev"
+  "popt-dev" {= "1.19-r3"}
+  "vanessa_logger-dev" {= "0.0.10-r3"}
   "vanessa_socket" {= "0.0.13-r2"}
 ]
 extra-source "vanessa_socket-dev-0.0.13-r2.apk" {

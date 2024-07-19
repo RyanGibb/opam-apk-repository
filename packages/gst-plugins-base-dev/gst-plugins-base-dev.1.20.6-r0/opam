@@ -13,7 +13,6 @@ depends: [
   "mesa-dev" {= "22.2.5-r1"}
   "orc-dev" {= "0.4.33-r0"}
   "pkgconf" {= "1.9.4-r0"}
-  "wayland-dev"
   "wayland-dev" {= "1.21.0-r1"}
   "zlib-dev" {= "1.2.13-r0"}
 ]

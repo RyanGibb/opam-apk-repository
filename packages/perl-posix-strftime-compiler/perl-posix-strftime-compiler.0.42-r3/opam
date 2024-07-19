@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del perl-posix-strftime-compiler"]
 ]
 depends: [
-  "tzdata"
+  "tzdata" {= "2022f-r1"}
 ]
 extra-source "perl-posix-strftime-compiler-0.42-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/perl-posix-strftime-compiler-0.42-r3.apk"

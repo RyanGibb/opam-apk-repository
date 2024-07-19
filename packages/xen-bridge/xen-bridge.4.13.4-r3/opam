@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del xen-bridge"]
 ]
 depends: [
-  "dnsmasq"
+  "dnsmasq" {= "2.85-r0"}
 ]
 extra-source "xen-bridge-4.13.4-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/xen-bridge-4.13.4-r3.apk"

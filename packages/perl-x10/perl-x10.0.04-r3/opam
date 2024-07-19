@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del perl-x10"]
 ]
 depends: [
-  "perl"
-  "perl-astro-suntime"
-  "perl-device-serialport"
-  "perl-time-parsedate"
+  "perl" {= "5.30.3-r0"}
+  "perl-astro-suntime" {= "0.06-r2"}
+  "perl-device-serialport" {= "1.04-r13"}
+  "perl-time-parsedate" {= "2015.103-r3"}
 ]
 extra-source "perl-x10-0.04-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-x10-0.04-r3.apk"

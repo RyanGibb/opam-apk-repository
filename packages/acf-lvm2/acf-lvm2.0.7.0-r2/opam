@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del acf-lvm2"]
 ]
 depends: [
-  "acf-core"
-  "lvm2"
+  "acf-core" {= "0.22.0-r0"}
+  "lvm2" {= "2.02.186-r1"}
 ]
 extra-source "acf-lvm2-0.7.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/acf-lvm2-0.7.0-r2.apk"

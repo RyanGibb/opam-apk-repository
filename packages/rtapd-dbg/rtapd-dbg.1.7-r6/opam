@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del rtapd-dbg"]
 ]
 depends: [
-  "rtnppd"
+  "rtnppd" {= "1.7b-r8"}
 ]
 extra-source "rtapd-dbg-1.7-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/rtapd-dbg-1.7-r6.apk"

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del perl-parse-syslog"]
 ]
 depends: [
-  "perl"
+  "perl" {= "5.36.2-r0"}
 ]
 extra-source "perl-parse-syslog-1.10-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-parse-syslog-1.10-r6.apk"

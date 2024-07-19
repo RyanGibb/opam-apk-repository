@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del curl"]
 ]
 depends: [
-  "ca-certificates"
+  "ca-certificates" {= "20230506-r0"}
   "libcurl" {= "8.0.1-r0"}
   "musl" {= "1.2.2-r5"}
   "zlib" {= "1.2.12-r3"}

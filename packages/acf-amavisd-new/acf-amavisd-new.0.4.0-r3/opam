@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del acf-amavisd-new"]
 ]
 depends: [
-  "acf-core"
-  "amavis"
+  "acf-core" {= "0.22.0-r0"}
+  "amavis" {= "2.12.0-r0"}
 ]
 extra-source "acf-amavisd-new-0.4.0-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/acf-amavisd-new-0.4.0-r3.apk"

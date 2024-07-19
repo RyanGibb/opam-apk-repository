@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del utmps-static"]
 ]
 depends: [
-  "skalibs-static"
+  "skalibs-static" {= "2.14.1.1-r0"}
 ]
 extra-source "utmps-static-0.1.2.2-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/utmps-static-0.1.2.2-r1.apk"

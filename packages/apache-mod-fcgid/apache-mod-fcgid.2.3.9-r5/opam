@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del apache-mod-fcgid"]
 ]
 depends: [
-  "apache2"
+  "apache2" {= "2.4.61-r0"}
   "musl" {= "1.2.5-r0"}
 ]
 extra-source "apache-mod-fcgid-2.3.9-r5.apk" {

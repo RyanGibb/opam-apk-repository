@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del boost1.82-dev"]
 ]
 depends: [
-  "boost1-82"
+  "boost1-82" {= "1.82.0-r5"}
   "boost1-82-atomic" {= "1.82.0-r5"}
   "boost1-82-chrono" {= "1.82.0-r5"}
   "boost1-82-container" {= "1.82.0-r5"}
@@ -41,12 +41,12 @@ depends: [
   "boost1-82-url" {= "1.82.0-r5"}
   "boost1-82-wave" {= "1.82.0-r5"}
   "boost1-82-wserialization" {= "1.82.0-r5"}
-  "bzip2-dev"
-  "icu-dev"
-  "linux-headers"
-  "xz-dev"
-  "zlib-dev"
-  "zstd-dev"
+  "bzip2-dev" {= "1.0.8-r6"}
+  "icu-dev" {= "74.2-r0"}
+  "linux-headers" {= "6.6-r0"}
+  "xz-dev" {= "5.6.1-r3"}
+  "zlib-dev" {= "1.3.1-r1"}
+  "zstd-dev" {= "1.5.6-r0"}
 ]
 extra-source "boost1.82-dev-1.82.0-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/boost1.82-dev-1.82.0-r5.apk"

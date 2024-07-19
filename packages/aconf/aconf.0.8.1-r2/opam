@@ -6,16 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del aconf"]
 ]
 depends: [
-  "lua5-3-augeas"
-  "lua5-3-b64"
-  "lua5-3-cjson"
-  "lua5-3-file-magic"
-  "lua5-3-openrc"
-  "lua5-3-ossl"
-  "lua5-3-posix"
-  "lua5-3-stringy"
-  "uwsgi"
-  "uwsgi-lua"
+  "lua5-3-augeas" {= "0.1.2-r7"}
+  "lua5-3-b64" {= "0.1-r5"}
+  "lua5-3-cjson" {= "2.1.0-r11"}
+  "lua5-3-file-magic" {= "0.2-r5"}
+  "lua5-3-openrc" {= "0.2-r6"}
+  "lua5-3-ossl" {= "20220711-r2"}
+  "lua5-3-posix" {= "36.2.1-r0"}
+  "lua5-3-stringy" {= "0.5.1-r3"}
+  "uwsgi" {= "2.0.25.1-r1"}
+  "uwsgi-lua" {= "2.0.25.1-r1"}
 ]
 extra-source "aconf-0.8.1-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/aconf-0.8.1-r2.apk"

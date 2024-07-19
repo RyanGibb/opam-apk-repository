@@ -6,10 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del thin-provisioning-tools"]
 ]
 depends: [
-  "boost"
-  "expat"
+  "boost" {= "1.72.0-r6"}
   "expat" {= "2.2.10-r8"}
-  "libaio"
   "libaio" {= "0.3.112-r1"}
   "libgcc" {= "10.2.1_pre1-r3"}
   "libstdc++" {= "10.2.1_pre1-r3"}

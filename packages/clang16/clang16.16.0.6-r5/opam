@@ -9,14 +9,14 @@ depends: [
   "clang16-headers" {= "16.0.6-r5"}
   "clang16-libs" {= "16.0.6-r5"}
   "fortify-headers" {>= "1.1-r2"}
-  "gcc"
+  "gcc" {= "13.2.1_git20240309-r0"}
   "libgcc" {= "13.2.1_git20240309-r0"}
   "libstdc++" {= "13.2.1_git20240309-r0"}
-  "libstdc++-dev"
+  "libstdc++-dev" {= "13.2.1_git20240309-r0"}
   "llvm16-libs" {= "16.0.6-r8"}
-  "llvm16-linker-tools"
+  "llvm16-linker-tools" {= "16.0.6-r8"}
   "musl" {= "1.2.5-r0"}
-  "musl-dev"
+  "musl-dev" {= "1.2.5-r0"}
   ("busybox-binsh" {= "1.36.1-r29"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.56.1-r1"})
 ]
 extra-source "clang16-16.0.6-r5.apk" {

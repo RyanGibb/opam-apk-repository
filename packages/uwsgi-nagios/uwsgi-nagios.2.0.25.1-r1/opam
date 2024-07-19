@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "musl" {= "1.2.5-r0"}
-  "uwsgi"
+  "uwsgi" {= "2.0.25.1-r1"}
 ]
 extra-source "uwsgi-nagios-2.0.25.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/uwsgi-nagios-2.0.25.1-r1.apk"

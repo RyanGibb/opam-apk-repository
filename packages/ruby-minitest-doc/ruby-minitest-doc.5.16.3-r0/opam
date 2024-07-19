@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del ruby-minitest-doc"]
 ]
 depends: [
-  "ruby"
+  "ruby" {= "3.2.4-r0"}
 ]
 extra-source "ruby-minitest-doc-5.16.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/ruby-minitest-doc-5.16.3-r0.apk"

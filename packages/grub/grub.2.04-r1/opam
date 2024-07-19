@@ -9,7 +9,7 @@ depends: [
   "busybox" {= "1.31.1-r22"}
   "device-mapper-libs" {= "2.02.186-r1"}
   "freetype" {= "2.10.4-r2"}
-  "mkinitfs"
+  "mkinitfs" {= "3.4.5-r3"}
   "musl" {= "1.1.24-r10"}
   "xz-libs" {= "5.2.5-r1"}
 ]

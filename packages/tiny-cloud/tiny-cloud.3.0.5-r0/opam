@@ -6,11 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del tiny-cloud"]
 ]
 depends: [
-  "e2fsprogs-extra"
-  "openssh-server"
-  "partx"
-  "sfdisk"
-  "yx"
+  "e2fsprogs-extra" {= "1.47.0-r2"}
+  "openssh-server" {= "9.3_p2-r2"}
+  "partx" {= "2.38.1-r8"}
+  "sfdisk" {= "2.38.1-r8"}
+  "yx" {= "1.0.0-r1"}
   ("busybox-binsh" {= "1.36.1-r7"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.54-r3"})
 ]
 extra-source "tiny-cloud-3.0.5-r0.apk" {

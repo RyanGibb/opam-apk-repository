@@ -7,8 +7,8 @@ remove: [
 ]
 depends: [
   "musl" {= "1.2.4-r2"}
-  "perl"
-  "perl-module-implementation"
+  "perl" {= "5.36.2-r0"}
+  "perl-module-implementation" {= "0.09-r4"}
 ]
 extra-source "perl-params-validate-1.31-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-params-validate-1.31-r1.apk"

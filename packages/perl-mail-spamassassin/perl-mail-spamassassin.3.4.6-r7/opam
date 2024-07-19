@@ -6,16 +6,16 @@ remove: [
   ["sh" "-c" "sudo apk del perl-mail-spamassassin"]
 ]
 depends: [
-  "gpg"
-  "perl"
-  "perl-digest-sha1"
-  "perl-html-parser"
-  "perl-libwww"
-  "perl-mail-dkim"
-  "perl-mime-base64"
-  "perl-net-dns"
-  "perl-netaddr-ip"
-  "perl-time-hires"
+  "gpg" {= "2.4.5-r0"}
+  "perl" {= "5.38.2-r0"}
+  "perl-digest-sha1" {= "2.13-r18"}
+  "perl-html-parser" {= "3.82-r0"}
+  "perl-libwww" {= "6.77-r0"}
+  "perl-mail-dkim" {= "1.20240124-r0"}
+  "perl-mime-base64" {= "3.16-r5"}
+  "perl-net-dns" {= "1.45-r0"}
+  "perl-netaddr-ip" {= "4.079-r12"}
+  "perl-time-hires" {= "1.9764-r7"}
 ]
 extra-source "perl-mail-spamassassin-3.4.6-r7.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-mail-spamassassin-3.4.6-r7.apk"

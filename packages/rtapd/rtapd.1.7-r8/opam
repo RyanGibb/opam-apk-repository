@@ -8,7 +8,7 @@ remove: [
 depends: [
   "libpq" {= "15.7-r0"}
   "musl" {= "1.2.4-r2"}
-  "rtnppd"
+  "rtnppd" {= "1.7b-r10"}
 ]
 extra-source "rtapd-1.7-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/rtapd-1.7-r8.apk"

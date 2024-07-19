@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del py3-hatch-vcs-pyc"]
 ]
 depends: [
-  "py3-hatchling"
-  "py3-setuptools_scm"
-  "python3"
+  "py3-hatchling" {= "1.24.2-r0"}
+  "py3-setuptools_scm" {= "8.0.4-r2"}
+  "python3" {= "3.12.3-r1"}
   "python3" {>= "3.12"}
 ]
 extra-source "py3-hatch-vcs-pyc-0.4.0-r2.apk" {

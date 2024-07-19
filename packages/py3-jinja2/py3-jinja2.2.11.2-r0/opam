@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del py3-jinja2"]
 ]
 depends: [
-  "py3-markupsafe"
+  "py3-markupsafe" {= "1.1.1-r3"}
 ]
 extra-source "py3-jinja2-2.11.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/py3-jinja2-2.11.2-r0.apk"

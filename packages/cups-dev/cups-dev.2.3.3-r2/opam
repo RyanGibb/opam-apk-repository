@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "cups-libs" {= "2.3.3-r2"}
-  "gnutls-dev"
-  "libgcrypt-dev"
-  "zlib-dev"
+  "gnutls-dev" {= "3.7.1-r1"}
+  "libgcrypt-dev" {= "1.8.8-r1"}
+  "zlib-dev" {= "1.2.12-r3"}
 ]
 extra-source "cups-dev-2.3.3-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/cups-dev-2.3.3-r2.apk"

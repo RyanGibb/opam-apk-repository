@@ -6,21 +6,21 @@ remove: [
   ["sh" "-c" "sudo apk del py3-sphinx-pyc"]
 ]
 depends: [
-  "py3-alabaster"
-  "py3-babel"
-  "py3-docutils"
-  "py3-imagesize"
-  "py3-jinja2"
-  "py3-packaging"
-  "py3-pygments"
-  "py3-requests"
-  "py3-snowballstemmer"
-  "py3-sphinxcontrib-applehelp"
-  "py3-sphinxcontrib-devhelp"
-  "py3-sphinxcontrib-htmlhelp"
-  "py3-sphinxcontrib-jsmath"
-  "py3-sphinxcontrib-qthelp"
-  "py3-sphinxcontrib-serializinghtml"
+  "py3-alabaster" {= "0.7.16-r1"}
+  "py3-babel" {= "2.14.0-r2"}
+  "py3-docutils" {= "0.20.1-r2"}
+  "py3-imagesize" {= "1.4.1-r4"}
+  "py3-jinja2" {= "3.1.4-r0"}
+  "py3-packaging" {= "24.0-r1"}
+  "py3-pygments" {= "2.18.0-r0"}
+  "py3-requests" {= "2.32.3-r0"}
+  "py3-snowballstemmer" {= "2.2.0-r4"}
+  "py3-sphinxcontrib-applehelp" {= "1.0.4-r3"}
+  "py3-sphinxcontrib-devhelp" {= "1.0.5-r2"}
+  "py3-sphinxcontrib-htmlhelp" {= "2.0.1-r3"}
+  "py3-sphinxcontrib-jsmath" {= "1.0.1-r8"}
+  "py3-sphinxcontrib-qthelp" {= "1.0.6-r2"}
+  "py3-sphinxcontrib-serializinghtml" {= "1.1.9-r2"}
   "python3" {>= "3.12"}
 ]
 extra-source "py3-sphinx-pyc-7.2.6-r1.apk" {

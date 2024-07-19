@@ -8,7 +8,7 @@ remove: [
 depends: [
   "mariadb-common" {= "10.4.25-r0"}
   "musl" {= "1.1.24-r10"}
-  "perl"
+  "perl" {= "5.30.3-r0"}
 ]
 extra-source "mariadb-server-utils-10.4.25-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/mariadb-server-utils-10.4.25-r0.apk"

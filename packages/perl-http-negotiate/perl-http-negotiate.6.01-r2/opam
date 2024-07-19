@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del perl-http-negotiate"]
 ]
 depends: [
-  "perl"
-  "perl-http-message"
+  "perl" {= "5.30.3-r0"}
+  "perl-http-message" {= "6.24-r0"}
 ]
 extra-source "perl-http-negotiate-6.01-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-http-negotiate-6.01-r2.apk"

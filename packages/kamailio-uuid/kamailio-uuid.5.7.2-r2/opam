@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del kamailio-uuid"]
 ]
 depends: [
-  "kamailio"
+  "kamailio" {= "5.7.2-r2"}
   "libuuid" {= "2.39.3-r0"}
   "musl" {= "1.2.4_git20230717-r4"}
 ]

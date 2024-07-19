@@ -8,7 +8,7 @@ remove: [
 depends: [
   "gcc" {= "12.2.1_git20220924-r10"}
   "gmp" {= "6.2.1-r3"}
-  "libc-dev"
+  "libc-dev" {= "0.7.2-r5"}
   "libobjc" {= "12.2.1_git20220924-r10"}
   "mpc1" {= "1.3.1-r1"}
   "mpfr4" {= "4.2.0_p12-r0"}

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del ruby-net-telnet"]
 ]
 depends: [
-  "ruby-libs"
+  "ruby-libs" {= "2.7.6-r0"}
 ]
 extra-source "ruby-net-telnet-2.7.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/ruby-net-telnet-2.7.6-r0.apk"

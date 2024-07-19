@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del perl-cgi-fast"]
 ]
 depends: [
-  "perl"
-  "perl-cgi"
-  "perl-fcgi"
+  "perl" {= "5.38.2-r0"}
+  "perl-cgi" {= "4.60-r0"}
+  "perl-fcgi" {= "0.82-r3"}
 ]
 extra-source "perl-cgi-fast-2.17-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/perl-cgi-fast-2.17-r0.apk"

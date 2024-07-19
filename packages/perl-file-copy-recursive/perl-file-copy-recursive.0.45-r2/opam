@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del perl-file-copy-recursive"]
 ]
 depends: [
-  "perl"
+  "perl" {= "5.36.2-r0"}
 ]
 extra-source "perl-file-copy-recursive-0.45-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-file-copy-recursive-0.45-r2.apk"

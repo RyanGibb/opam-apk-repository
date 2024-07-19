@@ -8,9 +8,9 @@ remove: [
 depends: [
   "libcrypto1-1" {= "1.1.1o-r0"}
   "musl" {= "1.1.24-r10"}
-  "openssh-client"
-  "openssh-server"
-  "openssh-sftp-server"
+  "openssh-client" {= "8.3_p1-r3"}
+  "openssh-server" {= "8.3_p1-r3"}
+  "openssh-sftp-server" {= "8.3_p1-r3"}
 ]
 extra-source "openssh-8.3_p1-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/openssh-8.3_p1-r3.apk"

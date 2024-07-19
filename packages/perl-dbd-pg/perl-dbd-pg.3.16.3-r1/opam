@@ -8,8 +8,8 @@ remove: [
 depends: [
   "libpq" {= "15.7-r0"}
   "musl" {= "1.2.4-r2"}
-  "perl"
-  "perl-dbi"
+  "perl" {= "5.36.2-r0"}
+  "perl-dbi" {= "1.643-r5"}
 ]
 extra-source "perl-dbd-pg-3.16.3-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-dbd-pg-3.16.3-r1.apk"

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del hylafax-lang"]
 ]
 depends: [
-  "bash"
-  "ghostscript"
-  "tiff-tools"
+  "bash" {= "5.2.15-r5"}
+  "ghostscript" {= "10.02.0-r0"}
+  "tiff-tools" {= "4.5.1-r0"}
 ]
 extra-source "hylafax-lang-6.0.7-r9.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/hylafax-lang-6.0.7-r9.apk"

@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del nagios-plugins-openrc"]
 ]
 depends: [
-  "doas"
-  "nagios-plugins"
-  "openrc"
+  "doas" {= "6.8.2-r4"}
+  "nagios-plugins" {= "2.4.5-r2"}
+  "openrc" {= "0.48-r0"}
 ]
 extra-source "nagios-plugins-openrc-2.4.5-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/nagios-plugins-openrc-2.4.5-r2.apk"

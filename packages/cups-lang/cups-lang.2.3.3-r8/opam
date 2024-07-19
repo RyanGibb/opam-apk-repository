@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del cups-lang"]
 ]
 depends: [
-  "cups-client"
-  "dbus"
-  "openssl"
-  "poppler-utils"
+  "cups-client" {= "2.3.3-r8"}
+  "dbus" {= "1.12.26-r0"}
+  "openssl" {= "1.1.1w-r1"}
+  "poppler-utils" {= "21.11.0-r0"}
 ]
 extra-source "cups-lang-2.3.3-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/cups-lang-2.3.3-r8.apk"

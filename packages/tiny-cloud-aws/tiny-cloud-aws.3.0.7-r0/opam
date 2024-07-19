@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del tiny-cloud-aws"]
 ]
 depends: [
-  "ifupdown-ng"
-  "iproute2-minimal"
-  "nvme-cli"
+  "ifupdown-ng" {= "0.12.1-r5"}
+  "iproute2-minimal" {= "6.9.0-r0"}
+  "nvme-cli" {= "2.9.1-r0"}
   "tiny-cloud" {= "3.0.7-r0"}
   ("busybox-binsh" {= "1.36.1-r29"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.56.1-r1"})
 ]

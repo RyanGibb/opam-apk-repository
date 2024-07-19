@@ -8,14 +8,14 @@ remove: [
 depends: [
   "fontconfig-dev" {= "2.14.1-r0"}
   "freetype-dev" {= "2.12.1-r0"}
-  "gd"
+  "gd" {= "2.3.3-r3"}
   "libavif-dev" {= "0.11.1-r0"}
   "libgd" {= "2.3.3-r3"}
   "libjpeg-turbo-dev" {= "2.1.4-r0"}
   "libpng-dev" {= "1.6.39-r0"}
   "libwebp-dev" {= "1.2.4-r3"}
   "libxpm-dev" {= "3.5.15-r0"}
-  "perl"
+  "perl" {= "5.36.2-r0"}
   "pkgconf" {= "1.9.4-r0"}
   "tiff-dev" {= "4.4.0-r4"}
   "zlib-dev" {= "1.2.13-r0"}

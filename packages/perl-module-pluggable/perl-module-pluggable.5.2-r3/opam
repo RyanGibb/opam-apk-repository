@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del perl-module-pluggable"]
 ]
 depends: [
-  "perl"
+  "perl" {= "5.36.2-r0"}
 ]
 extra-source "perl-module-pluggable-5.2-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-module-pluggable-5.2-r3.apk"

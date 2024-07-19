@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del asciidoc"]
 ]
 depends: [
-  "docbook-xsl"
-  "libxml2-utils"
-  "python3"
+  "docbook-xsl" {= "1.79.2-r9"}
+  "libxml2-utils" {= "2.12.7-r0"}
+  "python3" {= "3.12.3-r1"}
   "python3" {>= "3.12"}
 ]
 extra-source "asciidoc-10.2.0-r5.apk" {

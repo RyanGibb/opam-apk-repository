@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del postgresql15-openrc"]
 ]
 depends: [
-  "postgresql-common-openrc"
+  "postgresql-common-openrc" {= "1.2-r1"}
 ]
 extra-source "postgresql15-openrc-15.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/postgresql15-openrc-15.7-r0.apk"

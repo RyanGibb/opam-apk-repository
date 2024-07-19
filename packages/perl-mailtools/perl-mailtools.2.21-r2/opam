@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del perl-mailtools"]
 ]
 depends: [
-  "perl"
-  "perl-timedate"
+  "perl" {= "5.36.2-r0"}
+  "perl-timedate" {= "2.33-r1"}
 ]
 extra-source "perl-mailtools-2.21-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-mailtools-2.21-r2.apk"

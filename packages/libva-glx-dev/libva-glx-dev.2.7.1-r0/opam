@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del libva-glx-dev"]
 ]
 depends: [
-  "libva-dev"
+  "libva-dev" {= "2.7.1-r0"}
   "libva-glx" {= "2.7.1-r0"}
-  "libxfixes-dev"
-  "mesa-dev"
+  "libxfixes-dev" {= "5.0.3-r2"}
+  "mesa-dev" {= "20.0.7-r0"}
   "pkgconf" {= "1.7.2-r0"}
 ]
 extra-source "libva-glx-dev-2.7.1-r0.apk" {

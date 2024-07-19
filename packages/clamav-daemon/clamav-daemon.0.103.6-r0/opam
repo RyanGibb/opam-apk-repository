@@ -7,9 +7,9 @@ remove: [
 ]
 depends: [
   "busybox" {= "1.32.1-r9"}
-  "clamav-clamdscan"
+  "clamav-clamdscan" {= "0.103.6-r0"}
   "clamav-libs" {= "0.103.6-r0"}
-  "freshclam"
+  "freshclam" {= "0.103.6-r0"}
   "musl" {= "1.2.2-r2"}
   "ncurses-libs" {= "6.2_p20210109-r1"}
   "zlib" {= "1.2.12-r3"}

@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del perl-http-daemon"]
 ]
 depends: [
-  "perl"
-  "perl-http-date"
-  "perl-http-message"
-  "perl-lwp-mediatypes"
+  "perl" {= "5.38.2-r0"}
+  "perl-http-date" {= "6.06-r0"}
+  "perl-http-message" {= "6.45-r0"}
+  "perl-lwp-mediatypes" {= "6.04-r3"}
 ]
 extra-source "perl-http-daemon-6.16-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-http-daemon-6.16-r2.apk"

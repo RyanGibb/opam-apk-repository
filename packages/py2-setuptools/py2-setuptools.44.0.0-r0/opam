@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del py2-setuptools"]
 ]
 depends: [
-  "python2"
+  "python2" {= "2.7.18-r0"}
 ]
 extra-source "py2-setuptools-44.0.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/py2-setuptools-44.0.0-r0.apk"

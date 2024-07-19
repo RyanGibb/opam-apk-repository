@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del lua5.2-hashids"]
 ]
 depends: [
-  "lua5-2"
+  "lua5-2" {= "5.2.4-r7"}
   "musl" {= "1.1.24-r10"}
 ]
 extra-source "lua5.2-hashids-1.0.6-r1.apk" {

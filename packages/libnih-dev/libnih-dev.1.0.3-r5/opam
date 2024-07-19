@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del libnih-dev"]
 ]
 depends: [
-  "dbus-dev"
-  "expat-dev"
+  "dbus-dev" {= "1.12.18-r0"}
+  "expat-dev" {= "2.2.10-r4"}
   "libnih" {= "1.0.3-r5"}
   "pkgconf" {= "1.7.2-r0"}
 ]

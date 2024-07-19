@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "libcrypto3" {= "3.1.6-r0"}
-  "mount"
+  "mount" {= "2.38.1-r8"}
   "musl" {= "1.2.4-r2"}
 ]
 extra-source "efitools-1.9.2-r7.apk" {

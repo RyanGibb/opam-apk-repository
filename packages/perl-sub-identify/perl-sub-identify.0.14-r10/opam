@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "musl" {= "1.2.5-r0"}
-  "perl"
+  "perl" {= "5.38.2-r0"}
 ]
 extra-source "perl-sub-identify-0.14-r10.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-sub-identify-0.14-r10.apk"

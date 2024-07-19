@@ -8,7 +8,7 @@ remove: [
 depends: [
   "libdrm" {= "2.4.115-r4"}
   "libpciaccess-dev" {= "0.17-r2"}
-  "linux-headers"
+  "linux-headers" {= "6.3-r0"}
   "pkgconf" {= "1.9.5-r0"}
 ]
 extra-source "libdrm-dev-2.4.115-r4.apk" {

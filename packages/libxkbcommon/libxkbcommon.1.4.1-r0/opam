@@ -8,7 +8,7 @@ remove: [
 depends: [
   "libxml2" {= "2.10.4-r0"}
   "musl" {= "1.2.3-r5"}
-  "xkeyboard-config"
+  "xkeyboard-config" {= "2.37-r0"}
 ]
 extra-source "libxkbcommon-1.4.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libxkbcommon-1.4.1-r0.apk"

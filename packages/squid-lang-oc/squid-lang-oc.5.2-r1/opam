@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del squid-lang-oc"]
 ]
 depends: [
-  "logrotate"
+  "logrotate" {= "3.18.1-r4"}
 ]
 extra-source "squid-lang-oc-5.2-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/squid-lang-oc-5.2-r1.apk"

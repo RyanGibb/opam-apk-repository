@@ -7,38 +7,29 @@ remove: [
 ]
 depends: [
   "at-spi2-atk-dev" {= "2.38.0-r0"}
-  "atk-dev"
   "atk-dev" {= "2.36.0-r0"}
   "cairo-dev" {= "1.16.0-r5"}
   "fontconfig-dev" {= "2.13.1-r4"}
   "fribidi-dev" {= "1.0.10-r0"}
-  "gdk-pixbuf-dev"
   "gdk-pixbuf-dev" {= "2.42.6-r1"}
-  "glib-dev"
   "glib-dev" {= "2.68.3-r0"}
   "gtk+3-0" {= "3.24.28-r0"}
-  "libepoxy-dev"
   "libepoxy-dev" {= "1.5.8-r0"}
   "libx11-dev" {= "1.7.3.1-r0"}
   "libxcomposite-dev" {= "0.4.5-r0"}
   "libxcursor-dev" {= "1.2.0-r0"}
   "libxdamage-dev" {= "1.1.5-r1"}
-  "libxext-dev"
   "libxext-dev" {= "1.3.4-r0"}
   "libxfixes-dev" {= "6.0.0-r0"}
-  "libxi-dev"
   "libxi-dev" {= "1.7.10-r0"}
-  "libxinerama-dev"
   "libxinerama-dev" {= "1.1.4-r1"}
-  "libxkbcommon-dev"
   "libxkbcommon-dev" {= "1.2.1-r0"}
   "libxrandr-dev" {= "1.5.2-r1"}
   "pango-dev" {= "1.48.5-r0"}
   "pkgconf" {= "1.7.4-r1"}
   "wayland-dev" {= "1.19.0-r0"}
-  "wayland-libs-client"
-  "wayland-libs-cursor"
-  "wayland-protocols"
+  "wayland-libs-client" {= "1.19.0-r0"}
+  "wayland-libs-cursor" {= "1.19.0-r0"}
   "wayland-protocols" {= "1.21-r0"}
 ]
 extra-source "gtk+3.0-dev-3.24.28-r0.apk" {

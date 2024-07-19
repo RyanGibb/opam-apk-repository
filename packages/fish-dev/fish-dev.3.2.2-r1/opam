@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del fish-dev"]
 ]
 depends: [
-  "fish-tools"
+  "fish-tools" {= "3.2.2-r1"}
   "pkgconf" {= "1.7.4-r1"}
 ]
 extra-source "fish-dev-3.2.2-r1.apk" {

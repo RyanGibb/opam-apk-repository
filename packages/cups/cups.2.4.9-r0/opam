@@ -7,18 +7,17 @@ remove: [
 ]
 depends: [
   "avahi-libs" {= "0.8-r17"}
-  "cups-client"
   "cups-client" {= "2.4.9-r0"}
   "cups-libs" {= "2.4.9-r0"}
-  "dbus"
+  "dbus" {= "1.14.10-r1"}
   "dbus-libs" {= "1.14.10-r1"}
   "libgcc" {= "13.2.1_git20240309-r0"}
   "libpaper" {= "2.2.5-r0"}
   "libstdc++" {= "13.2.1_git20240309-r0"}
   "libusb" {= "1.0.27-r0"}
   "musl" {= "1.2.5-r0"}
-  "openssl"
-  "poppler-utils"
+  "openssl" {= "3.3.1-r3"}
+  "poppler-utils" {= "24.02.0-r1"}
   ("busybox-binsh" {= "1.36.1-r29"} | "dash-binsh" {= "0.5.12-r2"} | "yash-binsh" {= "2.56.1-r1"})
 ]
 extra-source "cups-2.4.9-r0.apk" {

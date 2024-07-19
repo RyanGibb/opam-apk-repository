@@ -7,10 +7,10 @@ remove: [
 ]
 depends: [
   "e2fsprogs-libs" {= "1.47.0-r2"}
-  "gawk"
+  "gawk" {= "5.2.2-r0"}
   "libcom_err" {= "1.47.0-r2"}
   "pkgconf" {= "1.9.5-r0"}
-  "util-linux-dev"
+  "util-linux-dev" {= "2.38.1-r8"}
 ]
 extra-source "e2fsprogs-dev-1.47.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/e2fsprogs-dev-1.47.0-r2.apk"

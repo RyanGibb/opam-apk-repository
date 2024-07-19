@@ -10,7 +10,7 @@ depends: [
   "libgd" {= "2.3.3-r3"}
   "libssl3" {= "3.0.14-r0"}
   "musl" {= "1.2.3-r5"}
-  "perl"
+  "perl" {= "5.36.2-r0"}
   ("yash-binsh" {= "2.53-r2"} | "busybox-binsh" {= "1.35.0-r31"} | "dash-binsh" {= "0.5.11.5-r2"})
 ]
 extra-source "nagios-4.4.10-r0.apk" {

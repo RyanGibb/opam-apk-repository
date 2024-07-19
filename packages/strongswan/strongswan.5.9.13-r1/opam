@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "gmp" {= "6.3.0-r1"}
-  "iproute2"
+  "iproute2" {= "6.9.0-r0"}
   "libcap2" {= "2.70-r0"}
   "libcrypto3" {= "3.3.1-r3"}
   "libcurl" {= "8.8.0-r0"}

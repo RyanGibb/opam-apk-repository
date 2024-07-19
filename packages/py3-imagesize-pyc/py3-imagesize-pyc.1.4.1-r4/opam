@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del py3-imagesize-pyc"]
 ]
 depends: [
-  "python3"
+  "python3" {= "3.12.3-r1"}
   "python3" {>= "3.12"}
 ]
 extra-source "py3-imagesize-pyc-1.4.1-r4.apk" {

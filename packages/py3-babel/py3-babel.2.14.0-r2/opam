@@ -6,8 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del py3-babel"]
 ]
 depends: [
-  "py3-setuptools"
-  "py3-tz"
+  "py3-setuptools" {= "69.5.1-r0"}
+  "py3-tz" {= "2024.1-r1"}
   "python3" {>= "3.12"}
 ]
 extra-source "py3-babel-2.14.0-r2.apk" {

@@ -102,7 +102,7 @@ def process_index(alpine_version):
             else:
                 dep_name = dep.split('=')[0].split('>=')[0].split('<=')[0].split('<')[0].split('>')[0].split('~')[0]
                 if dep_name in packages:
-                    package_depends.append(convert_dep_to_opam(dep))
+                    package_depends.append(convert_dep_to_opam(dep, version=packages[dep_name]["version"]))
                 elif dep_name in package_provides:
                     providers = package_provides[dep_name]
                     if len(providers) == 1:

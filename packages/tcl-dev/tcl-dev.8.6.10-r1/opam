@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "pkgconf" {= "1.7.4-r1"}
-  "tcl"
+  "tcl" {= "8.6.10-r1"}
   "zlib-dev" {= "1.2.12-r3"}
 ]
 extra-source "tcl-dev-8.6.10-r1.apk" {

@@ -7,7 +7,7 @@ remove: [
 ]
 depends: [
   "kea-common" {= "2.4.1-r2"}
-  "kea-hook-lease-cmds"
+  "kea-hook-lease-cmds" {= "2.4.1-r2"}
   "libgcc" {= "13.2.1_git20240309-r0"}
   "musl" {= "1.2.5-r0"}
 ]

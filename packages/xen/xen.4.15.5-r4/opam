@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del xen"]
 ]
 depends: [
-  "bash"
+  "bash" {= "5.1.16-r0"}
   "glib" {= "2.70.5-r0"}
   "gnutls" {= "3.7.1-r2"}
-  "iproute2"
+  "iproute2" {= "5.15.0-r0"}
   "libaio" {= "0.3.112-r1"}
   "libbz2" {= "1.0.8-r1"}
   "libcap-ng" {= "0.8.2-r1"}
@@ -17,14 +17,14 @@ depends: [
   "libgcc" {= "10.3.1_git20211027-r0"}
   "libjpeg-turbo" {= "2.1.2-r0"}
   "libsasl" {= "2.1.28-r0"}
-  "logrotate"
+  "logrotate" {= "3.18.1-r4"}
   "lzo" {= "2.10-r2"}
   "musl" {= "1.2.2-r9"}
   "ncurses-libs" {= "6.3_p20211120-r2"}
   "nettle" {= "3.7.3-r0"}
   "pciutils-libs" {= "3.7.0-r0"}
   "pixman" {= "0.40.0-r4"}
-  "seabios-bin"
+  "seabios-bin" {= "1.14.0-r2"}
   "spice-server" {= "0.15.0-r2"}
   "xen-libs" {= "4.15.5-r4"}
   "yajl" {= "2.1.0-r2"}

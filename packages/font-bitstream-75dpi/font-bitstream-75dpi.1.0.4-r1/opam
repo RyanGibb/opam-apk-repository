@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del font-bitstream-75dpi"]
 ]
 depends: [
-  "encodings"
-  "font-alias"
-  "fontconfig"
-  "mkfontscale"
+  "encodings" {= "1.0.7-r1"}
+  "font-alias" {= "1.0.5-r0"}
+  "fontconfig" {= "2.14.2-r4"}
+  "mkfontscale" {= "1.2.2-r4"}
 ]
 extra-source "font-bitstream-75dpi-1.0.4-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/font-bitstream-75dpi-1.0.4-r1.apk"

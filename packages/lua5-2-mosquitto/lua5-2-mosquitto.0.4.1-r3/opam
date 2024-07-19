@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del lua5.2-mosquitto"]
 ]
 depends: [
-  "lua5-2"
+  "lua5-2" {= "5.2.4-r13"}
   "mosquitto-libs" {= "2.0.18-r0"}
   "musl" {= "1.2.5-r0"}
 ]

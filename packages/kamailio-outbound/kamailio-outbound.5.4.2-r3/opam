@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del kamailio-outbound"]
 ]
 depends: [
-  "kamailio"
+  "kamailio" {= "5.4.2-r3"}
   "libcrypto1-1" {= "1.1.1s-r0"}
   "musl" {= "1.2.2-r2"}
 ]

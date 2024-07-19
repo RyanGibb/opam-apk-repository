@@ -8,7 +8,7 @@ remove: [
 depends: [
   "libcurl" {= "8.5.0-r0"}
   "musl" {= "1.2.4-r2"}
-  "uwsgi"
+  "uwsgi" {= "2.0.21-r3"}
 ]
 extra-source "uwsgi-alarm_curl-2.0.21-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/uwsgi-alarm_curl-2.0.21-r3.apk"
