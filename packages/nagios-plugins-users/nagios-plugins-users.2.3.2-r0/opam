@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add nagios-plugins-users-2.3.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del nagios-plugins-users"]
+]
+depends: [
+  "libcrypto1.1"
+  "musl"
+  "nagios-plugins"
+]
+extra-source "nagios-plugins-users-2.3.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/nagios-plugins-users-2.3.2-r0.apk"
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mysql-5.5.44-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mysql"]
+]
+depends: [
+  "libaio"
+  "libcrypto1.0"
+  "libssl1.0"
+  "libstdc++"
+  "musl"
+  "mysql-common"
+  "ncurses-libs"
+  "zlib"
+]
+extra-source "mysql-5.5.44-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/mysql-5.5.44-r0.apk"
+}

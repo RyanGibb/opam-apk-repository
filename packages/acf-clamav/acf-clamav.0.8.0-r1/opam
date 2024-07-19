@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add acf-clamav-0.8.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del acf-clamav"]
+]
+depends: [
+  "acf-core"
+  "clamav"
+]
+extra-source "acf-clamav-0.8.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/acf-clamav-0.8.0-r1.apk"
+}

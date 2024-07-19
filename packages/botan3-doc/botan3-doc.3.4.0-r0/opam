@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del botan3-doc"]
 ]
-
-
 extra-source "botan3-doc-3.4.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/botan3-doc-3.4.0-r0.apk"
 }

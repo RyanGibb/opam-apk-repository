@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del icecast-openrc"]
 ]
-
-
 extra-source "icecast-openrc-2.4.4-r10.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/icecast-openrc-2.4.4-r10.apk"
 }

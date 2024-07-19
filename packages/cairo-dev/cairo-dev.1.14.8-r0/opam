@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add cairo-dev-1.14.8-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del cairo-dev"]
+]
+depends: [
+  "cairo" {= "1.14.8-r0"}
+  "cairo-gobject" {= "1.14.8-r0"}
+  "cairo-tools"
+  "fontconfig-dev"
+  "freetype-dev"
+  "glib-dev"
+  "libpng-dev"
+  "libx11-dev"
+  "libxcb-dev"
+  "libxext-dev"
+  "libxrender-dev"
+  "pixman-dev"
+  "pkgconf"
+  "xcb-util-dev"
+]
+extra-source "cairo-dev-1.14.8-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/cairo-dev-1.14.8-r0.apk"
+}

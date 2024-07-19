@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add jq-dev-1.5-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del jq-dev"]
+]
+depends: [
+  "jq" {= "1.5-r4"}
+]
+extra-source "jq-dev-1.5-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/jq-dev-1.5-r4.apk"
+}

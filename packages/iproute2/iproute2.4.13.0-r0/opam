@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add iproute2-4.13.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del iproute2"]
+]
+depends: [
+  "busybox"
+  "iptables"
+  "libelf"
+  "musl"
+]
+extra-source "iproute2-4.13.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/iproute2-4.13.0-r0.apk"
+}

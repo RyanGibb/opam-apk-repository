@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gst-plugins-ugly1-1.2.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gst-plugins-ugly1"]
+]
+depends: [
+  "a52dec"
+  "glib"
+  "gst-plugins-base1"
+  "gstreamer1"
+  "lame"
+  "libcdio"
+  "libdvdread"
+  "libintl"
+  "libmad"
+  "libmpeg2"
+  "musl"
+  "orc"
+  "x264"
+]
+extra-source "gst-plugins-ugly1-1.2.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/gst-plugins-ugly1-1.2.4-r0.apk"
+}

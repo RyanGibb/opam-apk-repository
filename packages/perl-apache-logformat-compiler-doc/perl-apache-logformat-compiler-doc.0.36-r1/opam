@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-apache-logformat-compiler-doc-0.36-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-apache-logformat-compiler-doc"]
+]
+extra-source "perl-apache-logformat-compiler-doc-0.36-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-apache-logformat-compiler-doc-0.36-r1.apk"
+}

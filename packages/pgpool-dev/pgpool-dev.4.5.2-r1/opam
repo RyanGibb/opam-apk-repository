@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del pgpool-dev"]
 ]
 depends: [
-  "pgpool"
+  "pgpool" {= "4.5.2-r1"}
 ]
-
 extra-source "pgpool-dev-4.5.2-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/pgpool-dev-4.5.2-r1.apk"
 }

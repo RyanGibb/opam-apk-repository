@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add f2fs-tools-dev-1.15.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del f2fs-tools-dev"]
+]
+depends: [
+  "f2fs-tools-libs" {= "1.15.0-r0"}
+]
+extra-source "f2fs-tools-dev-1.15.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/f2fs-tools-dev-1.15.0-r0.apk"
+}

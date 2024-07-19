@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add acf-ppp-0.5.0-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del acf-ppp"]
+]
+depends: [
+  "acf-core"
+  "ppp"
+]
+extra-source "acf-ppp-0.5.0-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/acf-ppp-0.5.0-r2.apk"
+}

@@ -8,9 +8,8 @@ remove: [
 depends: [
   "libncursesw"
   "musl"
-  "ncurses-terminfo-base"
+  "ncurses-terminfo-base" {= "6.4_p20240420-r0"}
 ]
-
 extra-source "libformw-6.4_p20240420-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libformw-6.4_p20240420-r0.apk"
 }

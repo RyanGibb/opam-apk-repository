@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add openldap-2.4.44-r5.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del openldap"]
+]
+depends: [
+  "busybox"
+  "libldap"
+  "libltdl"
+  "libsasl"
+  "libuuid"
+  "musl"
+]
+extra-source "openldap-2.4.44-r5.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/openldap-2.4.44-r5.apk"
+}

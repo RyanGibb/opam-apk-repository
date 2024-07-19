@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add bctoolbox-dev-0.6.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del bctoolbox-dev"]
+]
+depends: [
+  "bctoolbox" {= "0.6.0-r1"}
+  "pkgconf"
+]
+extra-source "bctoolbox-dev-0.6.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/bctoolbox-dev-0.6.0-r1.apk"
+}

@@ -7,11 +7,10 @@ remove: [
 ]
 depends: [
   "libx11-dev"
-  "libxfixes"
+  "libxfixes" {= "6.0.1-r4"}
   "pkgconf"
   "xorgproto"
 ]
-
 extra-source "libxfixes-dev-6.0.1-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libxfixes-dev-6.0.1-r4.apk"
 }

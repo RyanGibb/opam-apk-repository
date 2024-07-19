@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add vde2-doc-2.3.2-r16.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del vde2-doc"]
+]
+extra-source "vde2-doc-2.3.2-r16.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/vde2-doc-2.3.2-r16.apk"
+}

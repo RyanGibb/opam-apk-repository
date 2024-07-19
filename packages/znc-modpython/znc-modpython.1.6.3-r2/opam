@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add znc-modpython-1.6.3-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del znc-modpython"]
+]
+depends: [
+  "libgcc"
+  "libstdc++"
+  "musl"
+  "python3"
+  "znc"
+]
+extra-source "znc-modpython-1.6.3-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/znc-modpython-1.6.3-r2.apk"
+}

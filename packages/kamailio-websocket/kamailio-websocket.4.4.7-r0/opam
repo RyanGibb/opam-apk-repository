@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add kamailio-websocket-4.4.7-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del kamailio-websocket"]
+]
+depends: [
+  "kamailio"
+  "libressl2.4-libcrypto"
+  "libunistring"
+  "musl"
+]
+extra-source "kamailio-websocket-4.4.7-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/kamailio-websocket-4.4.7-r0.apk"
+}

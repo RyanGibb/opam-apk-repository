@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libvpx-1.8.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libvpx"]
+]
+depends: [
+  "musl"
+]
+extra-source "libvpx-1.8.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/libvpx-1.8.1-r0.apk"
+}

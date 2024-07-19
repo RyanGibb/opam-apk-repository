@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del libxpm-doc"]
 ]
-
-
 extra-source "libxpm-doc-3.5.17-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libxpm-doc-3.5.17-r0.apk"
 }

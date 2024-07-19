@@ -15,7 +15,6 @@ depends: [
   "perl-dbix-dbschema"
   "perl-want"
 ]
-
 extra-source "perl-dbix-searchbuilder-1.82-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-dbix-searchbuilder-1.82-r0.apk"
 }

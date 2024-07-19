@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del dash-binsh"]
 ]
 depends: [
-  "dash"
+  "dash" {= "0.5.12-r2"}
 ]
-
 extra-source "dash-binsh-0.5.12-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/dash-binsh-0.5.12-r2.apk"
 }

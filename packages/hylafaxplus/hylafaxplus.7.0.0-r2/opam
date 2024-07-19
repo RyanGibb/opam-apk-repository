@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add hylafaxplus-7.0.0-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del hylafaxplus"]
+]
+depends: [
+  "bash"
+  "ghostscript"
+  "lcms2"
+  "libgcc"
+  "libldap"
+  "libressl2.7-libssl"
+  "libstdc++"
+  "musl"
+  "tiff"
+  "tiff-tools"
+  "zlib"
+]
+conflicts: [
+  "hylafax"
+]
+extra-source "hylafaxplus-7.0.0-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/hylafaxplus-7.0.0-r2.apk"
+}

@@ -7,9 +7,8 @@ remove: [
 ]
 depends: [
   "gdb"
-  "rust"
+  "rust" {= "1.78.0-r0"}
 ]
-
 extra-source "rust-gdb-1.78.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/rust-gdb-1.78.0-r0.apk"
 }

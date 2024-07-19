@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add g++-9.3.0-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del g++"]
+]
+depends: [
+  "gcc" {= "9.3.0-r2"}
+  "gmp"
+  "isl"
+  "libc-dev"
+  "libstdc++" {= "9.3.0-r2"}
+  "mpc1"
+  "mpfr4"
+  "musl"
+  "zlib"
+]
+extra-source "g++-9.3.0-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/g++-9.3.0-r2.apk"
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add llvm-libunwind-16.0.6-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del llvm-libunwind"]
+]
+depends: [
+  "musl"
+]
+conflicts: [
+  "libunwind-dev"
+]
+extra-source "llvm-libunwind-16.0.6-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/llvm-libunwind-16.0.6-r1.apk"
+}

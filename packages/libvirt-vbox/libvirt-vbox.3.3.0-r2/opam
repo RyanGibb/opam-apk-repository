@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libvirt-vbox-3.3.0-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libvirt-vbox"]
+]
+depends: [
+  "libintl"
+  "libvirt-common-drivers" {= "3.3.0-r2"}
+  "libvirt-daemon" {= "3.3.0-r2"}
+  "libxml2"
+  "musl"
+]
+extra-source "libvirt-vbox-3.3.0-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/libvirt-vbox-3.3.0-r2.apk"
+}

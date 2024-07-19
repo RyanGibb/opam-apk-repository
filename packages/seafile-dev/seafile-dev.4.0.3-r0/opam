@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add seafile-dev-4.0.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del seafile-dev"]
+]
+depends: [
+  "pkgconfig"
+  "py-seafile" {= "4.0.3-r0"}
+  "seafile" {= "4.0.3-r0"}
+  "seafile-common" {= "4.0.3-r0"}
+  "seafile-server" {= "4.0.3-r0"}
+]
+extra-source "seafile-dev-4.0.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/seafile-dev-4.0.3-r0.apk"
+}

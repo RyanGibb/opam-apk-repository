@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add fuse-dev-2.9.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del fuse-dev"]
+]
+depends: [
+  "fuse" {= "2.9.4-r0"}
+  "pkgconfig"
+]
+extra-source "fuse-dev-2.9.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/fuse-dev-2.9.4-r0.apk"
+}

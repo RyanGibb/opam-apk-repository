@@ -12,7 +12,6 @@ depends: [
   "readline"
   "unixodbc"
 ]
-
 extra-source "freetds-1.4.14-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/freetds-1.4.14-r0.apk"
 }

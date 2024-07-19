@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add nodejs-6.10.3-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del nodejs"]
+]
+depends: [
+  "ca-certificates"
+  "http-parser"
+  "libcrypto1.0"
+  "libgcc"
+  "libssl1.0"
+  "libstdc++"
+  "libuv"
+  "musl"
+  "zlib"
+]
+extra-source "nodejs-6.10.3-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/nodejs-6.10.3-r2.apk"
+}

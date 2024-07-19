@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-dbix-dbschema-doc"]
 ]
-
-
 extra-source "perl-dbix-dbschema-doc-0.47-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-dbix-dbschema-doc-0.47-r2.apk"
 }

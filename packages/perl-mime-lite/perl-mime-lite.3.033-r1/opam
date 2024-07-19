@@ -12,7 +12,6 @@ depends: [
   "perl-mime-types"
   "perl-test-pod-coverage"
 ]
-
 extra-source "perl-mime-lite-3.033-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-mime-lite-3.033-r1.apk"
 }

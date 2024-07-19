@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add bacula-client-13.0.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del bacula-client"]
+]
+depends: [
+  "bacula-libs"
+  "libacl"
+  "libstdc++"
+  "lzo"
+  "musl"
+  "ncurses-libs"
+  "zlib"
+]
+extra-source "bacula-client-13.0.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/bacula-client-13.0.1-r0.apk"
+}

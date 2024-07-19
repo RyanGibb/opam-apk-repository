@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-importer-0.026-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-importer"]
+]
+depends: [
+  "perl"
+]
+extra-source "perl-importer-0.026-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-importer-0.026-r1.apk"
+}

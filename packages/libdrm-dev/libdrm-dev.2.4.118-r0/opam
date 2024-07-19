@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libdrm-dev-2.4.118-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libdrm-dev"]
+]
+depends: [
+  "libdrm" {= "2.4.118-r0"}
+  "libpciaccess-dev"
+  "linux-headers"
+  "pkgconf"
+]
+extra-source "libdrm-dev-2.4.118-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/libdrm-dev-2.4.118-r0.apk"
+}

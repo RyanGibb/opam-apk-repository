@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add freeswitch-pgsql-1.4.13-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del freeswitch-pgsql"]
+]
+depends: [
+  "curl"
+  "freeswitch"
+  "libcrypto1.0"
+  "libedit"
+  "libspeex"
+  "libssl1.0"
+  "libuuid"
+  "musl"
+  "ncurses-libs"
+  "pcre"
+  "sqlite-libs"
+  "zlib"
+  ("pgcluster-libpq" | "libpq")
+]
+extra-source "freeswitch-pgsql-1.4.13-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/freeswitch-pgsql-1.4.13-r0.apk"
+}

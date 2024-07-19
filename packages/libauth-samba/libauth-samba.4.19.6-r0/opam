@@ -10,12 +10,12 @@ depends: [
   "linux-pam"
   "musl"
   "samba-libs"
+  "samba-libs" {= "4.19.6-r0"}
   "samba-util-libs"
   "talloc"
   "tdb-libs"
   "tevent"
 ]
-
 extra-source "libauth-samba-4.19.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libauth-samba-4.19.6-r0.apk"
 }

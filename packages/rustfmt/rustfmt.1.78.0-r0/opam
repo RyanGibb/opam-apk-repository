@@ -6,12 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del rustfmt"]
 ]
 depends: [
-  "cargo"
+  "cargo" {= "1.78.0-r0"}
   "libgcc"
   "musl"
   "rust"
 ]
-
 extra-source "rustfmt-1.78.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/rustfmt-1.78.0-r0.apk"
 }

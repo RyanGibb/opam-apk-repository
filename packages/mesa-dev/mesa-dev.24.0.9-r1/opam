@@ -14,17 +14,16 @@ depends: [
   "libxfixes-dev"
   "libxshmfence-dev"
   "libxxf86vm-dev"
-  "mesa-egl"
-  "mesa-gbm"
-  "mesa-gl"
-  "mesa-glapi"
-  "mesa-gles"
-  "mesa-osmesa"
-  "mesa-rusticl"
-  "mesa-xatracker"
+  "mesa-egl" {= "24.0.9-r1"}
+  "mesa-gbm" {= "24.0.9-r1"}
+  "mesa-gl" {= "24.0.9-r1"}
+  "mesa-glapi" {= "24.0.9-r1"}
+  "mesa-gles" {= "24.0.9-r1"}
+  "mesa-osmesa" {= "24.0.9-r1"}
+  "mesa-rusticl" {= "24.0.9-r1"}
+  "mesa-xatracker" {= "24.0.9-r1"}
   "pkgconf"
 ]
-
 extra-source "mesa-dev-24.0.9-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/mesa-dev-24.0.9-r1.apk"
 }

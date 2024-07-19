@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del lua-expat"]
 ]
-
-
 extra-source "lua-expat-1.5.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lua-expat-1.5.1-r1.apk"
 }

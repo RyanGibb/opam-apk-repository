@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add qt-dev-4.8.7-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del qt-dev"]
+]
+depends: [
+  "alsa-lib-dev"
+  "dbus-dev"
+  "fontconfig-dev"
+  "freetype-dev"
+  "glib-dev"
+  "libgcc"
+  "libice-dev"
+  "libpng-dev"
+  "libsm-dev"
+  "libstdc++"
+  "libx11-dev"
+  "libxext-dev"
+  "libxrender-dev"
+  "mesa-dev"
+  "musl"
+  "openssl-dev"
+  "pkgconfig"
+  "qt"
+  "qt" {= "4.8.7-r0"}
+  "qt-webkit"
+  "qt-webkit" {= "4.8.7-r0"}
+  "qt-x11"
+  "qt-x11" {= "4.8.7-r0"}
+  "sqlite-dev"
+  "zlib"
+  "zlib-dev"
+]
+extra-source "qt-dev-4.8.7-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/qt-dev-4.8.7-r0.apk"
+}

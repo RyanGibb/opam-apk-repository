@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del rng-tools-doc"]
 ]
-
-
 extra-source "rng-tools-doc-6.16-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/rng-tools-doc-6.16-r5.apk"
 }

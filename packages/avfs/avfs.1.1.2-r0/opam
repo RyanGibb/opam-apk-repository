@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add avfs-1.1.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del avfs"]
+]
+depends: [
+  "bash"
+  "fuse"
+  "libbz2"
+  "musl"
+  "xz-libs"
+  "zlib"
+  "zstd-libs"
+]
+extra-source "avfs-1.1.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/avfs-1.1.2-r0.apk"
+}

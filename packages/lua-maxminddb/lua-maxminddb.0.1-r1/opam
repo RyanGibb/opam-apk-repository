@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lua-maxminddb-0.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lua-maxminddb"]
+]
+depends: [
+  "lua5.1-maxminddb"
+  "lua5.2-maxminddb"
+  "lua5.3-maxminddb"
+]
+extra-source "lua-maxminddb-0.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/lua-maxminddb-0.1-r1.apk"
+}

@@ -9,7 +9,6 @@ depends: [
   "kmod-libs"
   "musl"
 ]
-
 extra-source "open-iscsi-libs-2.1.9-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/open-iscsi-libs-2.1.9-r1.apk"
 }

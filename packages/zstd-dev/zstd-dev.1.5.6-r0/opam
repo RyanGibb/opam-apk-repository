@@ -7,10 +7,9 @@ remove: [
 ]
 depends: [
   "pkgconf"
-  "zstd"
-  "zstd-libs"
+  "zstd" {= "1.5.6-r0"}
+  "zstd-libs" {= "1.5.6-r0"}
 ]
-
 extra-source "zstd-dev-1.5.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/zstd-dev-1.5.6-r0.apk"
 }

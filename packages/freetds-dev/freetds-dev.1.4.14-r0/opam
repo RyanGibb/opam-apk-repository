@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del freetds-dev"]
 ]
 depends: [
-  "freetds"
+  "freetds" {= "1.4.14-r0"}
 ]
-
 extra-source "freetds-dev-1.4.14-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/freetds-dev-1.4.14-r0.apk"
 }

@@ -10,7 +10,6 @@ depends: [
   "musl"
   "tcl"
 ]
-
 extra-source "pgtcl-3.0.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/pgtcl-3.0.1-r0.apk"
 }

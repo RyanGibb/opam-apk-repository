@@ -13,7 +13,6 @@ depends: [
   "perl-mailtools"
   "perl-net-dns"
 ]
-
 extra-source "perl-mail-dkim-1.20240124-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-mail-dkim-1.20240124-r0.apk"
 }

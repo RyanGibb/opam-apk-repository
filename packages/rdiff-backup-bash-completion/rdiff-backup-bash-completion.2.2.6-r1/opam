@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del rdiff-backup-bash-completion"]
 ]
-
-
 extra-source "rdiff-backup-bash-completion-2.2.6-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/rdiff-backup-bash-completion-2.2.6-r1.apk"
 }

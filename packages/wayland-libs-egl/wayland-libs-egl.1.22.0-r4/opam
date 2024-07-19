@@ -8,7 +8,6 @@ remove: [
 depends: [
   "musl"
 ]
-
 extra-source "wayland-libs-egl-1.22.0-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/wayland-libs-egl-1.22.0-r4.apk"
 }

@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gnome-vfs-2.24.4-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gnome-vfs"]
+]
+depends: [
+  "busybox"
+  "dbus-glib"
+  "dbus-libs"
+  "gamin"
+  "gconf"
+  "glib"
+  "gnome-mime-data"
+  "libbz2"
+  "libintl"
+  "libxml2"
+  "musl"
+  "zlib"
+]
+extra-source "gnome-vfs-2.24.4-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/gnome-vfs-2.24.4-r6.apk"
+}

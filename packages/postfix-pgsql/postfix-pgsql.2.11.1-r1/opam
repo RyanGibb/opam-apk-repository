@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add postfix-pgsql-2.11.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del postfix-pgsql"]
+]
+depends: [
+  "busybox"
+  "musl"
+  "postfix"
+  ("libpq" | "pgcluster-libpq")
+]
+extra-source "postfix-pgsql-2.11.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/postfix-pgsql-2.11.1-r1.apk"
+}

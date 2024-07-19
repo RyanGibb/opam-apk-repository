@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add psqlodbc-09.03.0400-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del psqlodbc"]
+]
+depends: [
+  "libpq"
+  "libressl2.5-libssl"
+  "musl"
+  "unixodbc"
+]
+extra-source "psqlodbc-09.03.0400-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/psqlodbc-09.03.0400-r2.apk"
+}

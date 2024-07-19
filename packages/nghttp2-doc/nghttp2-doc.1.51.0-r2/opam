@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add nghttp2-doc-1.51.0-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del nghttp2-doc"]
+]
+extra-source "nghttp2-doc-1.51.0-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nghttp2-doc-1.51.0-r2.apk"
+}

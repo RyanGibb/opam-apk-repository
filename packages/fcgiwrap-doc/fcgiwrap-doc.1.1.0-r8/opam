@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del fcgiwrap-doc"]
 ]
-
-
 extra-source "fcgiwrap-doc-1.1.0-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/fcgiwrap-doc-1.1.0-r8.apk"
 }

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add linux-vanilla-4.19.176-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del linux-vanilla"]
+]
+depends: [
+  "mkinitfs"
+  ("linux-firmware-mwl8k" | "linux-firmware-ath9k_htc" | "linux-firmware-acenic" | "linux-firmware-moxa" | "linux-firmware-ti-connectivity" | "linux-firmware-atmel" | "linux-firmware-rtlwifi" | "linux-firmware-rockchip" | "linux-firmware-ttusb-budget" | "linux-firmware-cxgb4" | "linux-firmware-adaptec" | "linux-firmware-kaweth" | "linux-firmware-ositech" | "linux-firmware-matrox" | "linux-firmware-ath10k" | "linux-firmware-microchip" | "linux-firmware-dpaa2" | "linux-firmware-cis" | "linux-firmware-cpia2" | "linux-firmware-cavium" | "linux-firmware-amdgpu" | "linux-firmware-keyspan_pda" | "linux-firmware-mediatek" | "linux-firmware-sun" | "linux-firmware-ath6k" | "linux-firmware-edgeport" | "linux-firmware-rtl_nic" | "linux-firmware-yam" | "linux-firmware-i915" | "linux-firmware-av7110" | "linux-firmware-atusb" | "linux-firmware-bnx2" | "linux-firmware-ess" | "linux-firmware-cadence" | "linux-firmware-intel" | "linux-firmware-ar3k" | "linux-firmware-tigon" | "linux-firmware-qlogic" | "linux-firmware-libertas" | "linux-firmware-ti-keystone" | "linux-firmware-qcom" | "linux-firmware-cxgb3" | "linux-firmware-dabusb" | "linux-firmware-qca" | "linux-firmware-emi62" | "linux-firmware-tehuti" | "linux-firmware-korg" | "linux-firmware-e100" | "linux-firmware-mrvl" | "linux-firmware-rsi" | "linux-firmware-bnx2x" | "linux-firmware-emi26" | "linux-firmware-3com" | "linux-firmware-meson" | "linux-firmware-slicoss" | "linux-firmware-netronome" | "linux-firmware-amd-ucode" | "linux-firmware-brcm" | "linux-firmware-isci" | "linux-firmware-rtw88" | "linux-firmware-rtl_bt" | "linux-firmware-ueagle-atm" | "linux-firmware-dsp56k" | "linux-firmware-vicam" | "linux-firmware-advansys" | "linux-firmware-none" | "linux-firmware-liquidio" | "linux-firmware-rtl8192e" | "linux-firmware-sxg" | "linux-firmware-mwlwifi" | "linux-firmware-sb16" | "linux-firmware-amd" | "linux-firmware" | "linux-firmware-other" | "linux-firmware-yamaha" | "linux-firmware-radeon" | "linux-firmware-ene-ub6250" | "linux-firmware-r128" | "linux-firmware-mellanox" | "linux-firmware-keyspan" | "linux-firmware-qed" | "linux-firmware-nvidia" | "linux-firmware-go7007" | "linux-firmware-myricom" | "linux-firmware-vxge" | "linux-firmware-imx")
+]
+extra-source "linux-vanilla-4.19.176-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/linux-vanilla-4.19.176-r0.apk"
+}

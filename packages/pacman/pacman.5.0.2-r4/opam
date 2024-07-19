@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add pacman-5.0.2-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del pacman"]
+]
+depends: [
+  "gpgme"
+  "libarchive"
+  "libarchive-tools"
+  "libcrypto1.1"
+  "libcurl"
+  "libintl"
+  "musl"
+]
+extra-source "pacman-5.0.2-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/pacman-5.0.2-r4.apk"
+}

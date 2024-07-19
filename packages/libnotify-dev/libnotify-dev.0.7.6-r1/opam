@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libnotify-dev-0.7.6-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libnotify-dev"]
+]
+depends: [
+  "dbus-dev"
+  "gdk-pixbuf-dev"
+  "glib-dev"
+  "libnotify" {= "0.7.6-r1"}
+  "pkgconf"
+]
+extra-source "libnotify-dev-0.7.6-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/libnotify-dev-0.7.6-r1.apk"
+}

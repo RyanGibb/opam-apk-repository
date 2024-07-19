@@ -9,11 +9,10 @@ depends: [
   "gmp-dev"
   "libucontext-dev"
   "pkgconf"
-  "ruby"
-  "ruby-libs"
-  "ruby-rdoc"
+  "ruby" {= "3.3.3-r0"}
+  "ruby-libs" {= "3.3.3-r0"}
+  "ruby-rdoc" {= "3.3.3-r0"}
 ]
-
 extra-source "ruby-dev-3.3.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/ruby-dev-3.3.3-r0.apk"
 }

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add android-tools-zsh-completion-5.9-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del android-tools-zsh-completion"]
+]
+depends: [
+  "zsh"
+]
+extra-source "android-tools-zsh-completion-5.9-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/android-tools-zsh-completion-5.9-r0.apk"
+}

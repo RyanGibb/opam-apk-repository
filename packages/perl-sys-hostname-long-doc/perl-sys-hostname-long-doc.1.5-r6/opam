@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-sys-hostname-long-doc"]
 ]
-
-
 extra-source "perl-sys-hostname-long-doc-1.5-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-sys-hostname-long-doc-1.5-r6.apk"
 }

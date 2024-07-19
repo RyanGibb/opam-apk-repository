@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-net-rblclient-doc-0.5-r7.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-net-rblclient-doc"]
+]
+extra-source "perl-net-rblclient-doc-0.5-r7.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/perl-net-rblclient-doc-0.5-r7.apk"
+}

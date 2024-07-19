@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-universal-isa-doc"]
 ]
-
-
 extra-source "perl-universal-isa-doc-1.20171012-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-universal-isa-doc-1.20171012-r3.apk"
 }

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ruby-libs-2.6.8-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ruby-libs"]
+]
+depends: [
+  "gmp"
+  "libcrypto1.1"
+  "libssl1.1"
+  "musl"
+  "readline"
+  "yaml"
+  "zlib"
+]
+extra-source "ruby-libs-2.6.8-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/ruby-libs-2.6.8-r0.apk"
+}

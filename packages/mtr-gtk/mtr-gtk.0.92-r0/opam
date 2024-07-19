@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mtr-gtk-0.92-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mtr-gtk"]
+]
+depends: [
+  "gdk-pixbuf"
+  "glib"
+  "gtk+2.0"
+  "libcap"
+  "musl"
+  "ncurses"
+  "ncurses-libs"
+]
+extra-source "mtr-gtk-0.92-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/mtr-gtk-0.92-r0.apk"
+}

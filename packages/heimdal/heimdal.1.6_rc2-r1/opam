@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add heimdal-1.6_rc2-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del heimdal"]
+]
+depends: [
+  "heimdal-libs"
+  "krb5-conf"
+  "libcom_err"
+  "musl"
+  "readline"
+]
+extra-source "heimdal-1.6_rc2-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/heimdal-1.6_rc2-r1.apk"
+}

@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del yash-binsh"]
 ]
 depends: [
-  "yash"
+  "yash" {= "2.56.1-r1"}
 ]
-
 extra-source "yash-binsh-2.56.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/yash-binsh-2.56.1-r1.apk"
 }

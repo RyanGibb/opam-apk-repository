@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add graphviz-gtk-2.38.0-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del graphviz-gtk"]
+]
+depends: [
+  "atk"
+  "cairo"
+  "gdk-pixbuf"
+  "glib"
+  "graphviz"
+  "gtk+2.0"
+  "librsvg"
+  "musl"
+]
+extra-source "graphviz-gtk-2.38.0-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/graphviz-gtk-2.38.0-r6.apk"
+}

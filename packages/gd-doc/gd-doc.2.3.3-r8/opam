@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gd-doc-2.3.3-r8.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gd-doc"]
+]
+extra-source "gd-doc-2.3.3-r8.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/gd-doc-2.3.3-r8.apk"
+}

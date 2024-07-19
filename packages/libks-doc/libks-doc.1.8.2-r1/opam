@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del libks-doc"]
 ]
-
-
 extra-source "libks-doc-1.8.2-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libks-doc-1.8.2-r1.apk"
 }

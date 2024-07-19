@@ -1,0 +1,39 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add qt5-qtbase-dev-5.4.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del qt5-qtbase-dev"]
+]
+depends: [
+  "dbus-dev"
+  "fontconfig-dev"
+  "freetype-dev"
+  "glib-dev"
+  "libgcc"
+  "libice-dev"
+  "libpng-dev"
+  "libsm-dev"
+  "libstdc++"
+  "libx11-dev"
+  "libxext-dev"
+  "mesa-dev"
+  "musl"
+  "openssl-dev"
+  "pkgconfig"
+  "qt5-qtbase"
+  "qt5-qtbase" {= "5.4.1-r1"}
+  "qt5-qtbase-doc" {= "5.4.1-r1"}
+  "qt5-qtbase-mysql" {= "5.4.1-r1"}
+  "qt5-qtbase-odbc" {= "5.4.1-r1"}
+  "qt5-qtbase-postgresql" {= "5.4.1-r1"}
+  "qt5-qtbase-sqlite" {= "5.4.1-r1"}
+  "qt5-qtbase-tds" {= "5.4.1-r1"}
+  "qt5-qtbase-x11" {= "5.4.1-r1"}
+  "sqlite-dev"
+  "zlib"
+  "zlib-dev"
+]
+extra-source "qt5-qtbase-dev-5.4.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/qt5-qtbase-dev-5.4.1-r1.apk"
+}

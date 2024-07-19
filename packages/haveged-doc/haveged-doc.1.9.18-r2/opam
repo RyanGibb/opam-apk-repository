@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del haveged-doc"]
 ]
-
-
 extra-source "haveged-doc-1.9.18-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/haveged-doc-1.9.18-r2.apk"
 }

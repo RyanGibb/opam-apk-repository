@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add sharutils-lang-4.15.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del sharutils-lang"]
+]
+depends: [
+  "bzip2"
+]
+extra-source "sharutils-lang-4.15.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/sharutils-lang-4.15.2-r0.apk"
+}

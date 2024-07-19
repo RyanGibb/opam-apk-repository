@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add cairo-gobject-1.14.8-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del cairo-gobject"]
+]
+depends: [
+  "cairo"
+  "glib"
+  "musl"
+]
+extra-source "cairo-gobject-1.14.8-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/cairo-gobject-1.14.8-r0.apk"
+}

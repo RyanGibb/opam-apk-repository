@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add openipmi-lanserv-2.0.21-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del openipmi-lanserv"]
+]
+depends: [
+  "libcrypto1.0"
+  "musl"
+  "openipmi-libs"
+  "popt"
+]
+extra-source "openipmi-lanserv-2.0.21-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/openipmi-lanserv-2.0.21-r3.apk"
+}

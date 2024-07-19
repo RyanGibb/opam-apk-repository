@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add upower-0.99.10-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del upower"]
+]
+depends: [
+  "glib"
+  "libgudev"
+  "libusb"
+  "musl"
+]
+extra-source "upower-0.99.10-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/upower-0.99.10-r0.apk"
+}

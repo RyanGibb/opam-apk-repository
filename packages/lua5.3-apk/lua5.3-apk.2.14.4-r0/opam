@@ -9,8 +9,8 @@ depends: [
   "apk-tools"
   "ca-certificates-bundle"
   "musl"
+  "musl" {>= "1.2.3_git20230424"}
 ]
-
 extra-source "lua5.3-apk-2.14.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lua5.3-apk-2.14.4-r0.apk"
 }

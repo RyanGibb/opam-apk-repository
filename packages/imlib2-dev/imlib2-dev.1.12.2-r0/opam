@@ -7,12 +7,11 @@ remove: [
 ]
 depends: [
   "freetype-dev"
-  "imlib2"
+  "imlib2" {= "1.12.2-r0"}
   "libsm-dev"
   "libxext-dev"
   "pkgconf"
 ]
-
 extra-source "imlib2-dev-1.12.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/imlib2-dev-1.12.2-r0.apk"
 }

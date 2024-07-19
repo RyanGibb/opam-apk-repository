@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del cracklib-words"]
 ]
-
-
 extra-source "cracklib-words-2.9.11-r7.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/cracklib-words-2.9.11-r7.apk"
 }

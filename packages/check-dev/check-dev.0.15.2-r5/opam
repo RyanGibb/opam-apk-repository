@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del check-dev"]
 ]
 depends: [
-  "check"
+  "check" {= "0.15.2-r5"}
   "pkgconf"
 ]
-
 extra-source "check-dev-0.15.2-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/check-dev-0.15.2-r5.apk"
 }

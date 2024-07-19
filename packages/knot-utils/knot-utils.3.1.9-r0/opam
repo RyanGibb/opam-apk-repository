@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add knot-utils-3.1.9-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del knot-utils"]
+]
+depends: [
+  "gnutls"
+  "knot-libs"
+  "libedit"
+  "libidn"
+  "lmdb"
+  "musl"
+  "nghttp2-libs"
+  "userspace-rcu"
+]
+extra-source "knot-utils-3.1.9-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/knot-utils-3.1.9-r0.apk"
+}

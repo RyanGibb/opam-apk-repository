@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add virt-install-1.0.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del virt-install"]
+]
+depends: [
+  "virt-manager-common" {= "1.0.1-r0"}
+]
+extra-source "virt-install-1.0.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/virt-install-1.0.1-r0.apk"
+}

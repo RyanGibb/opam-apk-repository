@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-html-mason-1.59-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-html-mason"]
+]
+depends: [
+  "perl-cache-cache"
+  "perl-cgi"
+  "perl-class-container"
+  "perl-exception-class"
+  "perl-html-parser"
+  "perl-log-any"
+  "perl-params-validate"
+]
+extra-source "perl-html-mason-1.59-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-html-mason-1.59-r0.apk"
+}

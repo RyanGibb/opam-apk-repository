@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libotr-dev-4.0.0-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libotr-dev"]
+]
+depends: [
+  "libgcrypt-dev"
+  "libotr" {= "4.0.0-r2"}
+  "libotr-doc" {= "4.0.0-r2"}
+  "libotr-tools" {= "4.0.0-r2"}
+  "pkgconfig"
+]
+extra-source "libotr-dev-4.0.0-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/libotr-dev-4.0.0-r2.apk"
+}

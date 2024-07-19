@@ -19,7 +19,6 @@ depends: [
   "tiff"
   "zlib"
 ]
-
 extra-source "poppler-24.02.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/poppler-24.02.0-r1.apk"
 }

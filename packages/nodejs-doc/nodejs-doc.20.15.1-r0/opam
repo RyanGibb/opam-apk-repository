@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del nodejs-doc"]
 ]
-
-
 extra-source "nodejs-doc-20.15.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/nodejs-doc-20.15.1-r0.apk"
 }

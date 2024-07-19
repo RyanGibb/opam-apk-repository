@@ -10,7 +10,6 @@ depends: [
   "libpcap"
   "musl"
 ]
-
 extra-source "iftop-0.17-r11.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/iftop-0.17-r11.apk"
 }

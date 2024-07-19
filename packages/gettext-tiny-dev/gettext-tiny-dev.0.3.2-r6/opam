@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del gettext-tiny-dev"]
 ]
 depends: [
-  "gettext-tiny"
+  "gettext-tiny" {= "0.3.2-r6"}
   "musl-libintl"
 ]
-
 extra-source "gettext-tiny-dev-0.3.2-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/gettext-tiny-dev-0.3.2-r6.apk"
 }

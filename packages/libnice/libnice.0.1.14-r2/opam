@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libnice-0.1.14-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libnice"]
+]
+depends: [
+  "glib"
+  "gnutls"
+  "musl"
+]
+extra-source "libnice-0.1.14-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libnice-0.1.14-r2.apk"
+}

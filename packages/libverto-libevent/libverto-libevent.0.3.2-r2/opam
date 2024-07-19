@@ -10,7 +10,6 @@ depends: [
   "libverto"
   "musl"
 ]
-
 extra-source "libverto-libevent-0.3.2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libverto-libevent-0.3.2-r2.apk"
 }

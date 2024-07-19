@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add openssl-1.1.1l-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del openssl"]
+]
+depends: [
+  "libcrypto1.1"
+  "libssl1.1"
+  "musl"
+]
+extra-source "openssl-1.1.1l-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/openssl-1.1.1l-r0.apk"
+}

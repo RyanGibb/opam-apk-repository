@@ -11,7 +11,6 @@ depends: [
   "libproc2"
   "musl"
 ]
-
 extra-source "procps-ng-4.0.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/procps-ng-4.0.4-r0.apk"
 }

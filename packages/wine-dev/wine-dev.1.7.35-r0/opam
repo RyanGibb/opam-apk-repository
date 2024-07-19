@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add wine-dev-1.7.35-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del wine-dev"]
+]
+depends: [
+  "wine" {= "1.7.35-r0"}
+  "wine-doc" {= "1.7.35-r0"}
+]
+extra-source "wine-dev-1.7.35-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/wine-dev-1.7.35-r0.apk"
+}

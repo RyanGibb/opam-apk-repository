@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ttf-dejavu-2.37-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ttf-dejavu"]
+]
+depends: [
+  "encodings"
+  "fontconfig"
+  "mkfontdir"
+  "mkfontscale"
+]
+extra-source "ttf-dejavu-2.37-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/ttf-dejavu-2.37-r1.apk"
+}

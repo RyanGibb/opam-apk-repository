@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-list-utilsby-doc"]
 ]
-
-
 extra-source "perl-list-utilsby-doc-0.12-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-list-utilsby-doc-0.12-r2.apk"
 }

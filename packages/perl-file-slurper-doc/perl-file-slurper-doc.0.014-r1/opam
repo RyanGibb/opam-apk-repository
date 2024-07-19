@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-file-slurper-doc"]
 ]
-
-
 extra-source "perl-file-slurper-doc-0.014-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-file-slurper-doc-0.014-r1.apk"
 }

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-dbd-mysql-4.027-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-dbd-mysql"]
+]
+depends: [
+  "libcrypto1.0"
+  "libssl1.0"
+  "musl"
+  "mysql-libs"
+  "perl"
+  "perl-dbi"
+  "zlib"
+]
+extra-source "perl-dbd-mysql-4.027-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/perl-dbd-mysql-4.027-r0.apk"
+}

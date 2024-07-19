@@ -10,7 +10,6 @@ depends: [
   "popt"
   "vanessa_logger"
 ]
-
 extra-source "vanessa_socket-0.0.13-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/vanessa_socket-0.0.13-r2.apk"
 }

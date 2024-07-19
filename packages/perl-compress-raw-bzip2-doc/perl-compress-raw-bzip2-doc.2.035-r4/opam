@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-compress-raw-bzip2-doc-2.035-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-compress-raw-bzip2-doc"]
+]
+extra-source "perl-compress-raw-bzip2-doc-2.035-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/perl-compress-raw-bzip2-doc-2.035-r4.apk"
+}

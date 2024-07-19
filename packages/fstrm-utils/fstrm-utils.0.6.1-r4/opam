@@ -10,7 +10,6 @@ depends: [
   "libevent"
   "musl"
 ]
-
 extra-source "fstrm-utils-0.6.1-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/fstrm-utils-0.6.1-r4.apk"
 }

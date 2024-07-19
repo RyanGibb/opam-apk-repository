@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add at-spi2-atk-dev-2.34.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del at-spi2-atk-dev"]
+]
+depends: [
+  "at-spi2-atk" {= "2.34.1-r0"}
+  "at-spi2-core-dev"
+  "glib-dev"
+  "pkgconf"
+]
+extra-source "at-spi2-atk-dev-2.34.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/at-spi2-atk-dev-2.34.1-r0.apk"
+}

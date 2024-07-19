@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del libmilter-dev"]
 ]
 depends: [
-  "libmilter"
+  "libmilter" {= "1.0.2-r9"}
 ]
-
 extra-source "libmilter-dev-1.0.2-r9.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libmilter-dev-1.0.2-r9.apk"
 }

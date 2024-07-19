@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del font-vollkorn"]
 ]
-
-
 extra-source "font-vollkorn-4.105-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/font-vollkorn-4.105-r2.apk"
 }

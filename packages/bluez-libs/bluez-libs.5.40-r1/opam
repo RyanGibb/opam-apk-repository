@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add bluez-libs-5.40-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del bluez-libs"]
+]
+depends: [
+  "consolekit"
+  "dbus"
+  "musl"
+]
+extra-source "bluez-libs-5.40-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/bluez-libs-5.40-r1.apk"
+}

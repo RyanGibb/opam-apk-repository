@@ -12,7 +12,6 @@ depends: [
   "py3-pygments"
   "python3"
 ]
-
 extra-source "gtk-doc-1.33.2-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/gtk-doc-1.33.2-r3.apk"
 }

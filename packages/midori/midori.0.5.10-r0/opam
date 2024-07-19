@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add midori-0.5.10-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del midori"]
+]
+depends: [
+  "cairo"
+  "gcr"
+  "gdk-pixbuf"
+  "glib"
+  "gtk+2.0"
+  "libintl"
+  "libsoup"
+  "libxml2"
+  "musl"
+  "pango"
+  "sqlite-libs"
+  "webkitgtk2"
+]
+extra-source "midori-0.5.10-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/midori-0.5.10-r0.apk"
+}

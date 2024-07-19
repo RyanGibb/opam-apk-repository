@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libmms-dev-0.6.4-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libmms-dev"]
+]
+depends: [
+  "glib-dev"
+  "libmms" {= "0.6.4-r1"}
+  "pkgconf"
+]
+extra-source "libmms-dev-0.6.4-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/libmms-dev-0.6.4-r1.apk"
+}

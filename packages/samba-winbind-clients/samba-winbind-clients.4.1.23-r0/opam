@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add samba-winbind-clients-4.1.23-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del samba-winbind-clients"]
+]
+depends: [
+  "iniparser"
+  "libcom_err"
+  "libwbclient"
+  "musl"
+  "popt"
+  "samba-libs"
+  "talloc"
+]
+extra-source "samba-winbind-clients-4.1.23-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/samba-winbind-clients-4.1.23-r0.apk"
+}

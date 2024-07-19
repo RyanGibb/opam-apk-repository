@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del ndisc6-doc"]
 ]
-
-
 extra-source "ndisc6-doc-1.0.8-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/ndisc6-doc-1.0.8-r1.apk"
 }

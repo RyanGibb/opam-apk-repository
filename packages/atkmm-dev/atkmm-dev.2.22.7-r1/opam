@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add atkmm-dev-2.22.7-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del atkmm-dev"]
+]
+depends: [
+  "atkmm" {= "2.22.7-r1"}
+  "atkmm-doc" {= "2.22.7-r1"}
+  "pkgconfig"
+]
+extra-source "atkmm-dev-2.22.7-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/atkmm-dev-2.22.7-r1.apk"
+}

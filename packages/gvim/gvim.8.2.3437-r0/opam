@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gvim-8.2.3437-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gvim"]
+]
+depends: [
+  "cairo"
+  "gdk-pixbuf"
+  "glib"
+  "gtk+3.0"
+  "libice"
+  "libsm"
+  "libx11"
+  "libxt"
+  "lua5.3-libs"
+  "musl"
+  "ncurses-libs"
+  "pango"
+  "xxd"
+]
+extra-source "gvim-8.2.3437-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/gvim-8.2.3437-r0.apk"
+}

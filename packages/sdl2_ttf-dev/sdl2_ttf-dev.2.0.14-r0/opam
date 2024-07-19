@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add sdl2_ttf-dev-2.0.14-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del sdl2_ttf-dev"]
+]
+depends: [
+  "freetype-dev"
+  "pkgconf"
+  "sdl2-dev"
+  "sdl2_ttf" {= "2.0.14-r0"}
+]
+extra-source "sdl2_ttf-dev-2.0.14-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/sdl2_ttf-dev-2.0.14-r0.apk"
+}

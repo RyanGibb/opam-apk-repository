@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del debian-devscripts-doc"]
 ]
-
-
 extra-source "debian-devscripts-doc-2.23.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/debian-devscripts-doc-2.23.7-r0.apk"
 }

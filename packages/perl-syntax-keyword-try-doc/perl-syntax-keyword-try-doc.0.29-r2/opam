@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-syntax-keyword-try-doc"]
 ]
-
-
 extra-source "perl-syntax-keyword-try-doc-0.29-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-syntax-keyword-try-doc-0.29-r2.apk"
 }

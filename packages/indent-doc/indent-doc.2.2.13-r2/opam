@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del indent-doc"]
 ]
-
-
 extra-source "indent-doc-2.2.13-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/indent-doc-2.2.13-r2.apk"
 }

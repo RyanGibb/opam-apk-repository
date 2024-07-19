@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del freetds-static"]
 ]
-
-
 extra-source "freetds-static-1.4.14-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/freetds-static-1.4.14-r0.apk"
 }

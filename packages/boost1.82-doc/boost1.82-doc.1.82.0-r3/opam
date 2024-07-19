@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add boost1.82-doc-1.82.0-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del boost1.82-doc"]
+]
+extra-source "boost1.82-doc-1.82.0-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/boost1.82-doc-1.82.0-r3.apk"
+}

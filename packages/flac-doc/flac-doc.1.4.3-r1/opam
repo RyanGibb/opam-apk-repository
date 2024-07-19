@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del flac-doc"]
 ]
-
-
 extra-source "flac-doc-1.4.3-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/flac-doc-1.4.3-r1.apk"
 }

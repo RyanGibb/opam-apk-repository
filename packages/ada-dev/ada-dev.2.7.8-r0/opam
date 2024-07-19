@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del ada-dev"]
 ]
 depends: [
-  "ada"
-  "ada-libs"
+  "ada" {= "2.7.8-r0"}
+  "ada-libs" {= "2.7.8-r0"}
 ]
-
 extra-source "ada-dev-2.7.8-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/ada-dev-2.7.8-r0.apk"
 }

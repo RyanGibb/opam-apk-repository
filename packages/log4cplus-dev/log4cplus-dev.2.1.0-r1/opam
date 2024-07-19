@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add log4cplus-dev-2.1.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del log4cplus-dev"]
+]
+depends: [
+  "log4cplus" {= "2.1.0-r1"}
+  "log4cplus-unicode" {= "2.1.0-r1"}
+  "pkgconf"
+]
+extra-source "log4cplus-dev-2.1.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/log4cplus-dev-2.1.0-r1.apk"
+}

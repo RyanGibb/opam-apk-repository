@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add sipp-3.5.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del sipp"]
+]
+depends: [
+  "libcrypto1.1"
+  "libgcc"
+  "libpcap"
+  "libssl1.1"
+  "libstdc++"
+  "lksctp-tools"
+  "musl"
+  "ncurses-libs"
+]
+extra-source "sipp-3.5.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/sipp-3.5.2-r0.apk"
+}

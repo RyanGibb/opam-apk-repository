@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add harfbuzz-utils-2.7.4-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del harfbuzz-utils"]
+]
+depends: [
+  "cairo"
+  "freetype"
+  "glib"
+  "harfbuzz"
+  "libstdc++"
+  "musl"
+]
+extra-source "harfbuzz-utils-2.7.4-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/harfbuzz-utils-2.7.4-r1.apk"
+}

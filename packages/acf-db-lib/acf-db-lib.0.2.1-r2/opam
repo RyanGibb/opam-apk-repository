@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add acf-db-lib-0.2.1-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del acf-db-lib"]
+]
+depends: [
+  "acf-core"
+  "acf-lib"
+  ("luajit" | "lua5.2" | "lua5.1" | "lua5.3")
+]
+extra-source "acf-db-lib-0.2.1-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/acf-db-lib-0.2.1-r2.apk"
+}

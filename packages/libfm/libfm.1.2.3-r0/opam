@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libfm-1.2.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libfm"]
+]
+depends: [
+  "atk"
+  "cairo"
+  "dbus-glib"
+  "dbus-libs"
+  "fontconfig"
+  "freetype"
+  "gdk-pixbuf"
+  "glib"
+  "gtk+2.0"
+  "libexif"
+  "libintl"
+  "menu-cache"
+  "musl"
+  "pango"
+]
+extra-source "libfm-1.2.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/libfm-1.2.3-r0.apk"
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libwebp-1.2.0-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libwebp"]
+]
+depends: [
+  "musl"
+]
+extra-source "libwebp-1.2.0-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/libwebp-1.2.0-r2.apk"
+}

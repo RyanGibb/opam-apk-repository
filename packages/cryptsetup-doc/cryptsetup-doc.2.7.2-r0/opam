@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del cryptsetup-doc"]
 ]
-
-
 extra-source "cryptsetup-doc-2.7.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/cryptsetup-doc-2.7.2-r0.apk"
 }

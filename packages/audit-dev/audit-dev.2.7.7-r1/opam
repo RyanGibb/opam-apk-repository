@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add audit-dev-2.7.7-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del audit-dev"]
+]
+depends: [
+  "audit-libs" {= "2.7.7-r1"}
+  "linux-headers"
+]
+extra-source "audit-dev-2.7.7-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/audit-dev-2.7.7-r1.apk"
+}

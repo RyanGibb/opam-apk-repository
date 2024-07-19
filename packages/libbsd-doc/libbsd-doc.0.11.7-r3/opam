@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libbsd-doc-0.11.7-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libbsd-doc"]
+]
+extra-source "libbsd-doc-0.11.7-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/libbsd-doc-0.11.7-r3.apk"
+}

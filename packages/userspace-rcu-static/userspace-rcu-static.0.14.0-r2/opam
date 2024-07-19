@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del userspace-rcu-static"]
 ]
-
-
 extra-source "userspace-rcu-static-0.14.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/userspace-rcu-static-0.14.0-r2.apk"
 }

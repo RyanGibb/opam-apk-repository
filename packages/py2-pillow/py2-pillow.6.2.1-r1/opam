@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py2-pillow-6.2.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py2-pillow"]
+]
+depends: [
+  "freetype"
+  "lcms2"
+  "libjpeg-turbo"
+  "libwebp"
+  "musl"
+  "py2-olefile"
+  "python2"
+  "tiff"
+  "zlib"
+]
+extra-source "py2-pillow-6.2.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/py2-pillow-6.2.1-r1.apk"
+}

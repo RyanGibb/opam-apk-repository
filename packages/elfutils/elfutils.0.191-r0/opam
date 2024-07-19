@@ -7,14 +7,16 @@ remove: [
 ]
 depends: [
   "libasm"
+  "libasm" {= "0.191-r0"}
   "libdw"
+  "libdw" {= "0.191-r0"}
   "libelf"
+  "libelf" {= "0.191-r0"}
   "libgcc"
   "libstdc++"
   "musl"
   "musl-obstack"
 ]
-
 extra-source "elfutils-0.191-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/elfutils-0.191-r0.apk"
 }

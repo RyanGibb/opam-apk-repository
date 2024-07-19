@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add cogl-1.22.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del cogl"]
+]
+depends: [
+  "cairo"
+  "gdk-pixbuf"
+  "glib"
+  "libdrm"
+  "libintl"
+  "libx11"
+  "libxdamage"
+  "libxext"
+  "libxfixes"
+  "libxrandr"
+  "mesa-egl"
+  "mesa-gbm"
+  "musl"
+  "pango"
+  "wayland-libs-client"
+  "wayland-libs-egl"
+  "wayland-libs-server"
+]
+extra-source "cogl-1.22.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/cogl-1.22.4-r0.apk"
+}

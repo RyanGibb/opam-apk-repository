@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add rest-0.7.92-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del rest"]
+]
+depends: [
+  "glib"
+  "libintl"
+  "libsoup"
+  "libxml2"
+  "musl"
+]
+extra-source "rest-0.7.92-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/rest-0.7.92-r0.apk"
+}

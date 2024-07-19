@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lua5.1-cjson-2.1.0-r7.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lua5.1-cjson"]
+]
+depends: [
+  "musl"
+]
+extra-source "lua5.1-cjson-2.1.0-r7.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/lua5.1-cjson-2.1.0-r7.apk"
+}

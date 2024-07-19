@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add meson-bash-completion-1.1.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del meson-bash-completion"]
+]
+extra-source "meson-bash-completion-1.1.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/meson-bash-completion-1.1.0-r1.apk"
+}

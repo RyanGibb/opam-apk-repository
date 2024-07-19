@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add kamailio-extras-5.6.3-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del kamailio-extras"]
+]
+depends: [
+  "hiredis"
+  "kamailio"
+  "libevent"
+  "musl"
+]
+extra-source "kamailio-extras-5.6.3-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/kamailio-extras-5.6.3-r6.apk"
+}

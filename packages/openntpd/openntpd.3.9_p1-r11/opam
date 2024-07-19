@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add openntpd-3.9_p1-r11.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del openntpd"]
+]
+depends: [
+  "busybox"
+  "libcrypto1.0"
+  "musl"
+]
+extra-source "openntpd-3.9_p1-r11.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/openntpd-3.9_p1-r11.apk"
+}

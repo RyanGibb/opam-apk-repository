@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del llvm18-gtest"]
 ]
-
-
 extra-source "llvm18-gtest-18.1.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/llvm18-gtest-18.1.6-r0.apk"
 }

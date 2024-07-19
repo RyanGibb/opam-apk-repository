@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add openvpn-2.5.10-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del openvpn"]
+]
+depends: [
+  "iproute2-minimal"
+  "libcrypto3"
+  "libssl3"
+  "lzo"
+  "musl"
+  ("yash-binsh" | "busybox-binsh" | "dash-binsh")
+]
+extra-source "openvpn-2.5.10-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/openvpn-2.5.10-r1.apk"
+}

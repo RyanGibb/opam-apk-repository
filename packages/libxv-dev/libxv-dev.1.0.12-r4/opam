@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libxv-dev-1.0.12-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libxv-dev"]
+]
+depends: [
+  "libx11-dev"
+  "libxext-dev"
+  "libxv" {= "1.0.12-r4"}
+  "pkgconf"
+  "xorgproto"
+]
+extra-source "libxv-dev-1.0.12-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/libxv-dev-1.0.12-r4.apk"
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add virglrenderer-doc-0.7.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del virglrenderer-doc"]
+]
+extra-source "virglrenderer-doc-0.7.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/virglrenderer-doc-0.7.0-r1.apk"
+}

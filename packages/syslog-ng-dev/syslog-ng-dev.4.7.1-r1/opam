@@ -8,9 +8,8 @@ remove: [
 depends: [
   "glib-dev"
   "pkgconf"
-  "syslog-ng"
+  "syslog-ng" {= "4.7.1-r1"}
 ]
-
 extra-source "syslog-ng-dev-4.7.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/syslog-ng-dev-4.7.1-r1.apk"
 }

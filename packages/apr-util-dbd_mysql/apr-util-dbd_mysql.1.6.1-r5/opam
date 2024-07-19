@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add apr-util-dbd_mysql-1.6.1-r5.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del apr-util-dbd_mysql"]
+]
+depends: [
+  "mariadb-connector-c"
+  "musl"
+]
+extra-source "apr-util-dbd_mysql-1.6.1-r5.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/apr-util-dbd_mysql-1.6.1-r5.apk"
+}

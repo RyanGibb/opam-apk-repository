@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add zsh-calendar-5.8.1-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del zsh-calendar"]
+]
+depends: [
+  "zsh" {= "5.8.1-r4"}
+]
+extra-source "zsh-calendar-5.8.1-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/zsh-calendar-5.8.1-r4.apk"
+}

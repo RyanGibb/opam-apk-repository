@@ -1,0 +1,43 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add boost-libs-1.71.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del boost-libs"]
+]
+depends: [
+  "boost-atomic"
+  "boost-chrono"
+  "boost-container"
+  "boost-context"
+  "boost-contract"
+  "boost-coroutine"
+  "boost-date_time"
+  "boost-fiber"
+  "boost-filesystem"
+  "boost-graph"
+  "boost-iostreams"
+  "boost-locale"
+  "boost-log"
+  "boost-log_setup"
+  "boost-math"
+  "boost-prg_exec_monitor"
+  "boost-program_options"
+  "boost-python2"
+  "boost-python3"
+  "boost-random"
+  "boost-regex"
+  "boost-serialization"
+  "boost-stacktrace_basic"
+  "boost-stacktrace_noop"
+  "boost-system"
+  "boost-thread"
+  "boost-timer"
+  "boost-type_erasure"
+  "boost-unit_test_framework"
+  "boost-wave"
+  "boost-wserialization"
+]
+extra-source "boost-libs-1.71.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/boost-libs-1.71.0-r1.apk"
+}

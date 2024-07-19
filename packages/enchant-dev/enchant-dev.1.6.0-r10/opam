@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add enchant-dev-1.6.0-r10.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del enchant-dev"]
+]
+depends: [
+  "enchant" {= "1.6.0-r10"}
+  "glib-dev"
+  "pkgconfig"
+]
+extra-source "enchant-dev-1.6.0-r10.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/enchant-dev-1.6.0-r10.apk"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add abiword-plugin-applix-3.0.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del abiword-plugin-applix"]
+]
+depends: [
+  "abiword"
+  "glib"
+  "libgcc"
+  "libgsf"
+  "libstdc++"
+  "musl"
+]
+extra-source "abiword-plugin-applix-3.0.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/abiword-plugin-applix-3.0.1-r1.apk"
+}

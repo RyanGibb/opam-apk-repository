@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add nginx-1.8.1-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del nginx"]
+]
+depends: [
+  "libcrypto1.0"
+  "libssl1.0"
+  "musl"
+  "nginx-initscripts"
+  "pcre"
+  "zlib"
+]
+extra-source "nginx-1.8.1-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/nginx-1.8.1-r2.apk"
+}

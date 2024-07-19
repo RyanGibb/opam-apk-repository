@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xscreensaver-gl-extras-5.34-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xscreensaver-gl-extras"]
+]
+depends: [
+  "bc"
+  "gdk-pixbuf"
+  "glib"
+  "glu"
+  "libx11"
+  "libxext"
+  "libxft"
+  "libxmu"
+  "libxt"
+  "mesa-gl"
+  "musl"
+]
+extra-source "xscreensaver-gl-extras-5.34-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/xscreensaver-gl-extras-5.34-r0.apk"
+}

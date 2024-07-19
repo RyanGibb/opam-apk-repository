@@ -12,7 +12,6 @@ depends: [
   "lua5.4-libs"
   "musl"
 ]
-
 extra-source "nmap-ncat-7.95-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/nmap-ncat-7.95-r0.apk"
 }

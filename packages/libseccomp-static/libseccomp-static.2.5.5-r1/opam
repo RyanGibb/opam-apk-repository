@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del libseccomp-static"]
 ]
-
-
 extra-source "libseccomp-static-2.5.5-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libseccomp-static-2.5.5-r1.apk"
 }

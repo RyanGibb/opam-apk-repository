@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del cppunit-dev"]
 ]
 depends: [
-  "cppunit"
+  "cppunit" {= "1.15.1-r4"}
   "pkgconf"
 ]
-
 extra-source "cppunit-dev-1.15.1-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/cppunit-dev-1.15.1-r4.apk"
 }

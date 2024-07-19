@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py3-coverage-5.5-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py3-coverage"]
+]
+depends: [
+  "musl"
+]
+extra-source "py3-coverage-5.5-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/py3-coverage-5.5-r0.apk"
+}

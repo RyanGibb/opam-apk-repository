@@ -9,7 +9,6 @@ depends: [
   "lua-expat"
   ("lua5.1" | "lua5.2" | "lua5.3" | "lua5.4" | "luajit")
 ]
-
 extra-source "lua-feedparser-0.71-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lua-feedparser-0.71-r3.apk"
 }

@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add samba-test-4.18.9-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del samba-test"]
+]
+depends: [
+  "gnutls"
+  "ldb"
+  "libsmbclient"
+  "libwbclient"
+  "musl"
+  "popt"
+  "samba-client-libs"
+  "samba-common-server-libs"
+  "samba-dc"
+  "samba-dc-libs"
+  "samba-libs"
+  "samba-libs-py3"
+  "samba-server-libs"
+  "samba-util-libs"
+  "talloc"
+  "tdb-libs"
+  "tevent"
+]
+extra-source "samba-test-4.18.9-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/samba-test-4.18.9-r0.apk"
+}

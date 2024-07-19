@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add util-linux-doc-2.38.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del util-linux-doc"]
+]
+extra-source "util-linux-doc-2.38.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/util-linux-doc-2.38.1-r1.apk"
+}

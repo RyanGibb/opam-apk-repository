@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libdvbpsi-dev-1.2.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libdvbpsi-dev"]
+]
+depends: [
+  "libdvbpsi" {= "1.2.0-r0"}
+  "pkgconfig"
+]
+extra-source "libdvbpsi-dev-1.2.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/libdvbpsi-dev-1.2.0-r0.apk"
+}

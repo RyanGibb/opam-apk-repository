@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lcms2-doc-2.13.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lcms2-doc"]
+]
+extra-source "lcms2-doc-2.13.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/lcms2-doc-2.13.1-r0.apk"
+}

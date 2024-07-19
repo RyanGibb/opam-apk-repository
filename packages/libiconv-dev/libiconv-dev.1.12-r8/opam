@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libiconv-dev-1.12-r8.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libiconv-dev"]
+]
+depends: [
+  "libiconv" {= "1.12-r8"}
+  "libiconv-doc" {= "1.12-r8"}
+]
+extra-source "libiconv-dev-1.12-r8.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/libiconv-dev-1.12-r8.apk"
+}

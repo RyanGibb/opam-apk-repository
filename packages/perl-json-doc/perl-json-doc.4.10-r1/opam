@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-json-doc"]
 ]
-
-
 extra-source "perl-json-doc-4.10-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-json-doc-4.10-r1.apk"
 }

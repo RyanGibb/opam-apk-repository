@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add owncloud-9.1.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del owncloud"]
+]
+depends: [
+  "php5"
+  "php5-ctype"
+  "php5-curl"
+  "php5-dom"
+  "php5-gd"
+  "php5-iconv"
+  "php5-json"
+  "php5-xml"
+  "php5-xmlreader"
+  "php5-zip"
+  "php5-zlib"
+]
+extra-source "owncloud-9.1.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/owncloud-9.1.4-r0.apk"
+}

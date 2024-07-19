@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libtirpc-dev-0.2.5-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libtirpc-dev"]
+]
+depends: [
+  "krb5-dev"
+  "libtirpc" {= "0.2.5-r2"}
+  "libtirpc-dbg" {= "0.2.5-r2"}
+  "libtirpc-doc" {= "0.2.5-r2"}
+  "pkgconfig"
+]
+extra-source "libtirpc-dev-0.2.5-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/libtirpc-dev-0.2.5-r2.apk"
+}

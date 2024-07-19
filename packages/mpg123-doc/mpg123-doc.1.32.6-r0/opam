@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del mpg123-doc"]
 ]
-
-
 extra-source "mpg123-doc-1.32.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/mpg123-doc-1.32.6-r0.apk"
 }

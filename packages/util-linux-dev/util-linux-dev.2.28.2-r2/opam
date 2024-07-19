@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add util-linux-dev-2.28.2-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del util-linux-dev"]
+]
+depends: [
+  "libblkid" {= "2.28.2-r2"}
+  "libfdisk" {= "2.28.2-r2"}
+  "libmount" {= "2.28.2-r2"}
+  "libsmartcols" {= "2.28.2-r2"}
+  "libuuid" {= "2.28.2-r2"}
+  "pkgconf"
+]
+extra-source "util-linux-dev-2.28.2-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/util-linux-dev-2.28.2-r2.apk"
+}

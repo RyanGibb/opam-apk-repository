@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add freeswitch-1.4.26-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del freeswitch"]
+]
+depends: [
+  "alsa-lib"
+  "busybox"
+  "curl"
+  "freeswitch-freetdm"
+  "lame"
+  "ldns"
+  "libcrypto1.0"
+  "libedit"
+  "libgcc"
+  "libjpeg-turbo"
+  "libpri"
+  "libssl1.0"
+  "libstdc++"
+  "libuuid"
+  "libvorbis"
+  "lua5.2-libs"
+  "musl"
+  "ncurses-libs"
+  "pcre"
+  "portaudio"
+  "speex"
+  "speexdsp"
+  "sqlite-libs"
+  "unixodbc"
+  "zlib"
+  ("pgcluster-libpq" | "libpq")
+]
+extra-source "freeswitch-1.4.26-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/freeswitch-1.4.26-r3.apk"
+}

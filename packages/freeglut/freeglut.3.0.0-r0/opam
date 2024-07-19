@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add freeglut-3.0.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del freeglut"]
+]
+depends: [
+  "libx11"
+  "libxi"
+  "libxxf86vm"
+  "mesa-gl"
+  "musl"
+]
+extra-source "freeglut-3.0.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/freeglut-3.0.0-r0.apk"
+}

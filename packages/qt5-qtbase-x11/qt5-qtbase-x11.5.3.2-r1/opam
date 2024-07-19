@@ -1,0 +1,40 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add qt5-qtbase-x11-5.3.2-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del qt5-qtbase-x11"]
+]
+depends: [
+  "cups-libs"
+  "fontconfig"
+  "freetype"
+  "glib"
+  "gtk+2.0"
+  "hicolor-icon-theme"
+  "libdrm"
+  "libice"
+  "libjpeg-turbo"
+  "libpng"
+  "libsm"
+  "libstdc++"
+  "libudev"
+  "libx11"
+  "libxcb"
+  "libxi"
+  "libxkbcommon"
+  "libxrender"
+  "mesa-egl"
+  "mesa-gbm"
+  "mesa-gl"
+  "musl"
+  "pango"
+  "qt5-qtbase"
+  "xcb-util-image"
+  "xcb-util-keysyms"
+  "xcb-util-wm"
+  "zlib"
+]
+extra-source "qt5-qtbase-x11-5.3.2-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/qt5-qtbase-x11-5.3.2-r1.apk"
+}

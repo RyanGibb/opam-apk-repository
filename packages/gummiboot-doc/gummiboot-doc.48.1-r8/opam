@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del gummiboot-doc"]
 ]
-
-
 extra-source "gummiboot-doc-48.1-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/gummiboot-doc-48.1-r8.apk"
 }

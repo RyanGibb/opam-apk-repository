@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del git-gitweb"]
 ]
 depends: [
-  "git"
+  "git" {= "2.45.2-r0"}
   "perl"
 ]
-
 extra-source "git-gitweb-2.45.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/git-gitweb-2.45.2-r0.apk"
 }

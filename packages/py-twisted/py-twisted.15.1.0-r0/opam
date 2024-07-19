@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py-twisted-15.1.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py-twisted"]
+]
+depends: [
+  "musl"
+  "py-crypto"
+  "py-zope-interface"
+  "python"
+]
+extra-source "py-twisted-15.1.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/py-twisted-15.1.0-r0.apk"
+}

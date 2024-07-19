@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lua-rrd-1.5.5-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lua-rrd"]
+]
+depends: [
+  "cairo"
+  "glib"
+  "libintl"
+  "libpng"
+  "librrd"
+  "libxml2"
+  "lua5.1-libs"
+  "musl"
+  "pango"
+]
+extra-source "lua-rrd-1.5.5-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/lua-rrd-1.5.5-r0.apk"
+}

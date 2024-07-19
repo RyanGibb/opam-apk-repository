@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-xml-xpath-1.44-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-xml-xpath"]
+]
+depends: [
+  "perl"
+  "perl-xml-parser"
+]
+extra-source "perl-xml-xpath-1.44-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/perl-xml-xpath-1.44-r2.apk"
+}

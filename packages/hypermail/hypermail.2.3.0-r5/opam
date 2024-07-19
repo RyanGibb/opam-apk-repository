@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add hypermail-2.3.0-r5.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del hypermail"]
+]
+depends: [
+  "gdbm"
+  "musl"
+  "pcre"
+  ("lua5.4" | "lua5.1" | "lua5.3" | "lua5.2" | "luajit")
+]
+extra-source "hypermail-2.3.0-r5.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/hypermail-2.3.0-r5.apk"
+}

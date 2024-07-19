@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add weechat-ruby-1.5-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del weechat-ruby"]
+]
+depends: [
+  "musl"
+  "ruby-libs"
+  "weechat"
+]
+extra-source "weechat-ruby-1.5-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/weechat-ruby-1.5-r2.apk"
+}

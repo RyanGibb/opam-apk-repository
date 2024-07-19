@@ -6,11 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del librtlsdr-dev"]
 ]
 depends: [
-  "librtlsdr"
+  "librtlsdr" {= "2.0.2-r0"}
   "libusb-dev"
   "pkgconf"
 ]
-
 extra-source "librtlsdr-dev-2.0.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/librtlsdr-dev-2.0.2-r0.apk"
 }

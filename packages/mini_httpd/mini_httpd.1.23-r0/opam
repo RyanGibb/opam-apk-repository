@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mini_httpd-1.23-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mini_httpd"]
+]
+depends: [
+  "busybox"
+  "libcrypto1.0"
+  "libssl1.0"
+  "logrotate"
+  "musl"
+]
+extra-source "mini_httpd-1.23-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/mini_httpd-1.23-r0.apk"
+}

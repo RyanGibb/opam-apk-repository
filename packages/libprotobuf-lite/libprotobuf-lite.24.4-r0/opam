@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libprotobuf-lite-24.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libprotobuf-lite"]
+]
+depends: [
+  "abseil-cpp-cord"
+  "abseil-cpp-hash"
+  "abseil-cpp-log-internal-check-op"
+  "abseil-cpp-log-internal-message"
+  "abseil-cpp-log-internal-nullguard"
+  "abseil-cpp-raw-hash-set"
+  "abseil-cpp-strings"
+  "abseil-cpp-synchronization"
+  "abseil-cpp-throw-delegate"
+  "libgcc"
+  "libstdc++"
+  "musl"
+]
+extra-source "libprotobuf-lite-24.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/libprotobuf-lite-24.4-r0.apk"
+}

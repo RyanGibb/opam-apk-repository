@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del harfbuzz-doc"]
 ]
-
-
 extra-source "harfbuzz-doc-8.5.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/harfbuzz-doc-8.5.0-r0.apk"
 }

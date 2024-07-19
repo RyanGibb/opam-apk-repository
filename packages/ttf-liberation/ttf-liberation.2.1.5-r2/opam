@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del ttf-liberation"]
 ]
 depends: [
-  "font-liberation"
+  "font-liberation" {= "2.1.5-r2"}
   "font-liberation-sans-narrow"
 ]
-
 extra-source "ttf-liberation-2.1.5-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/ttf-liberation-2.1.5-r2.apk"
 }

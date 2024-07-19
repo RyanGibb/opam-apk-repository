@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-log-dispatch-doc"]
 ]
-
-
 extra-source "perl-log-dispatch-doc-2.71-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-log-dispatch-doc-2.71-r1.apk"
 }

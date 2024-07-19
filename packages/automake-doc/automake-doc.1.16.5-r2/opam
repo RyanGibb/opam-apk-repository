@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del automake-doc"]
 ]
-
-
 extra-source "automake-doc-1.16.5-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/automake-doc-1.16.5-r2.apk"
 }

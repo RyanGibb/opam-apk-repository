@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add zfs-vanilla-dev-4.14.167-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del zfs-vanilla-dev"]
+]
+depends: [
+  "e2fsprogs-dev"
+  "glib-dev"
+  "libtirpc-dev"
+  "linux-vanilla-dev" {= "4.14.167-r0"}
+  "spl-vanilla-dev"
+  "util-linux-dev"
+]
+extra-source "zfs-vanilla-dev-4.14.167-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/zfs-vanilla-dev-4.14.167-r2.apk"
+}

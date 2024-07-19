@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add encfs-1.9.5-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del encfs"]
+]
+depends: [
+  "fuse"
+  "libgcc"
+  "libintl"
+  "libressl2.7-libcrypto"
+  "libressl2.7-libssl"
+  "libstdc++"
+  "musl"
+  "tinyxml2"
+]
+extra-source "encfs-1.9.5-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/encfs-1.9.5-r0.apk"
+}

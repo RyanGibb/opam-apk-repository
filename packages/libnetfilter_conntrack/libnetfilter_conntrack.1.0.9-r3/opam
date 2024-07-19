@@ -10,7 +10,6 @@ depends: [
   "libnfnetlink"
   "musl"
 ]
-
 extra-source "libnetfilter_conntrack-1.0.9-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libnetfilter_conntrack-1.0.9-r3.apk"
 }

@@ -1,0 +1,40 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xen-dev-4.17.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xen-dev"]
+]
+depends: [
+  "argp-standalone"
+  "attr-dev"
+  "bison"
+  "curl-dev"
+  "dev86"
+  "e2fsprogs-dev"
+  "flex"
+  "gnutls-dev"
+  "libaio-dev"
+  "libcap-ng-dev"
+  "libnl3-dev"
+  "linux-headers"
+  "lzo-dev"
+  "ncurses-dev"
+  "openssl-dev" {> "3"}
+  "pciutils-dev"
+  "perl"
+  "perl-dev"
+  "pkgconf"
+  "python3-dev"
+  "spice-dev"
+  "texinfo"
+  "util-linux-dev"
+  "xen-libs" {= "4.17.4-r0"}
+  "xz-dev"
+  "yajl-dev"
+  "zlib-dev"
+  "zstd-dev"
+]
+extra-source "xen-dev-4.17.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/xen-dev-4.17.4-r0.apk"
+}

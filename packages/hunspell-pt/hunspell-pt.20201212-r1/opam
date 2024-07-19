@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del hunspell-pt"]
 ]
-
-
 extra-source "hunspell-pt-20201212-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/hunspell-pt-20201212-r1.apk"
 }

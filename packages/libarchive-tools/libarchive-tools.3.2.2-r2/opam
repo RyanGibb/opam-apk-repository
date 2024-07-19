@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libarchive-tools-3.2.2-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libarchive-tools"]
+]
+depends: [
+  "expat"
+  "libacl"
+  "libbz2"
+  "libressl2.4-libcrypto"
+  "musl"
+  "xz-libs"
+  "zlib"
+]
+extra-source "libarchive-tools-3.2.2-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/libarchive-tools-3.2.2-r2.apk"
+}

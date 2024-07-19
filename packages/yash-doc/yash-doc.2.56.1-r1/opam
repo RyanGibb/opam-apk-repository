@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del yash-doc"]
 ]
-
-
 extra-source "yash-doc-2.56.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/yash-doc-2.56.1-r1.apk"
 }

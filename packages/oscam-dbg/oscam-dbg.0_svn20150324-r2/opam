@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add oscam-dbg-0_svn20150324-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del oscam-dbg"]
+]
+depends: [
+  "libcrypto1.0"
+  "libssl1.0"
+  "libusb"
+  "musl"
+  "pcsc-lite-libs"
+]
+extra-source "oscam-dbg-0_svn20150324-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/oscam-dbg-0_svn20150324-r2.apk"
+}

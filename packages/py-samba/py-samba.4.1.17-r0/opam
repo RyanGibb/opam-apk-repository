@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py-samba-4.1.17-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py-samba"]
+]
+depends: [
+  "heimdal-libs"
+  "ldb"
+  "musl"
+  "py-ldb"
+  "py-talloc"
+  "python"
+  "samba-dc-libs"
+  "samba-libs"
+  "samba-libs-py"
+  "talloc"
+  "tevent"
+]
+extra-source "py-samba-4.1.17-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/py-samba-4.1.17-r0.apk"
+}

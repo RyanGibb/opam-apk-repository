@@ -11,11 +11,11 @@ depends: [
   "musl"
   "popt"
   "samba-libs"
+  "samba-libs" {= "4.19.6-r0"}
   "samba-util-libs"
   "talloc"
   "tevent"
 ]
-
 extra-source "samba-winbind-clients-4.19.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/samba-winbind-clients-4.19.6-r0.apk"
 }

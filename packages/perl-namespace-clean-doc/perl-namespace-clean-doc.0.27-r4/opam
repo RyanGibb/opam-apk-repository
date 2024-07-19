@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-namespace-clean-doc"]
 ]
-
-
 extra-source "perl-namespace-clean-doc-0.27-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-namespace-clean-doc-0.27-r4.apk"
 }

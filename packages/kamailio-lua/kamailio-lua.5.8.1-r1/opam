@@ -10,7 +10,6 @@ depends: [
   "lua5.1-libs"
   "musl"
 ]
-
 extra-source "kamailio-lua-5.8.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/kamailio-lua-5.8.1-r1.apk"
 }

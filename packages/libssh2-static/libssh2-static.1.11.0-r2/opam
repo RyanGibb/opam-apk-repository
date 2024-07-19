@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del libssh2-static"]
 ]
-
-
 extra-source "libssh2-static-1.11.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libssh2-static-1.11.0-r2.apk"
 }

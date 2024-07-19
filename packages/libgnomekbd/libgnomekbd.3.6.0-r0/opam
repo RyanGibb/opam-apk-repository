@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libgnomekbd-3.6.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libgnomekbd"]
+]
+depends: [
+  "cairo"
+  "gdk-pixbuf"
+  "glib"
+  "gtk+3.0"
+  "libintl"
+  "libx11"
+  "libxklavier"
+  "musl"
+  "pango"
+]
+extra-source "libgnomekbd-3.6.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/libgnomekbd-3.6.0-r0.apk"
+}

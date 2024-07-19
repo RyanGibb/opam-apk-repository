@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add qt5-qtwebkit-5.6.0-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del qt5-qtwebkit"]
+]
+depends: [
+  "glib"
+  "gst-plugins-base1"
+  "gstreamer1"
+  "icu-libs"
+  "libjpeg-turbo"
+  "libpng"
+  "libstdc++"
+  "libwebp"
+  "libx11"
+  "libxcomposite"
+  "libxml2"
+  "libxrender"
+  "libxslt"
+  "mesa-gl"
+  "musl"
+  "qt5-qtbase"
+  "qt5-qtbase-x11"
+  "qt5-qtdeclarative"
+  "sqlite-libs"
+  "zlib"
+]
+extra-source "qt5-qtwebkit-5.6.0-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/qt5-qtwebkit-5.6.0-r2.apk"
+}

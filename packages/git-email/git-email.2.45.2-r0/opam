@@ -13,11 +13,10 @@ depends: [
   "pcre2"
   "perl"
   "perl-authen-sasl"
-  "perl-git"
+  "perl-git" {= "2.45.2-r0"}
   "perl-net-smtp-ssl"
   "zlib"
 ]
-
 extra-source "git-email-2.45.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/git-email-2.45.2-r0.apk"
 }

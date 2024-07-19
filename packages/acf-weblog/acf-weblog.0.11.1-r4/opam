@@ -13,7 +13,6 @@ depends: [
   ("busybox-binsh" | "dash-binsh" | "yash-binsh")
   ("postgresql15-client" | "postgresql16-client")
 ]
-
 extra-source "acf-weblog-0.11.1-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/acf-weblog-0.11.1-r4.apk"
 }

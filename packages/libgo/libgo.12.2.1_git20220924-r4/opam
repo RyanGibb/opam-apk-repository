@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libgo-12.2.1_git20220924-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libgo"]
+]
+depends: [
+  "libgcc"
+  "musl"
+]
+extra-source "libgo-12.2.1_git20220924-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libgo-12.2.1_git20220924-r4.apk"
+}

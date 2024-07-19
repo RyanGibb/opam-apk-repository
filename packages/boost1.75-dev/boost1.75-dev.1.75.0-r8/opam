@@ -1,0 +1,50 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add boost1.75-dev-1.75.0-r8.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del boost1.75-dev"]
+]
+depends: [
+  "boost1.75"
+  "boost1.75-atomic" {= "1.75.0-r8"}
+  "boost1.75-chrono" {= "1.75.0-r8"}
+  "boost1.75-container" {= "1.75.0-r8"}
+  "boost1.75-context" {= "1.75.0-r8"}
+  "boost1.75-contract" {= "1.75.0-r8"}
+  "boost1.75-coroutine" {= "1.75.0-r8"}
+  "boost1.75-date_time" {= "1.75.0-r8"}
+  "boost1.75-fiber" {= "1.75.0-r8"}
+  "boost1.75-filesystem" {= "1.75.0-r8"}
+  "boost1.75-graph" {= "1.75.0-r8"}
+  "boost1.75-iostreams" {= "1.75.0-r8"}
+  "boost1.75-json" {= "1.75.0-r8"}
+  "boost1.75-locale" {= "1.75.0-r8"}
+  "boost1.75-log" {= "1.75.0-r8"}
+  "boost1.75-log_setup" {= "1.75.0-r8"}
+  "boost1.75-math" {= "1.75.0-r8"}
+  "boost1.75-nowide" {= "1.75.0-r8"}
+  "boost1.75-prg_exec_monitor" {= "1.75.0-r8"}
+  "boost1.75-program_options" {= "1.75.0-r8"}
+  "boost1.75-python3" {= "1.75.0-r8"}
+  "boost1.75-random" {= "1.75.0-r8"}
+  "boost1.75-regex" {= "1.75.0-r8"}
+  "boost1.75-serialization" {= "1.75.0-r8"}
+  "boost1.75-stacktrace_basic" {= "1.75.0-r8"}
+  "boost1.75-stacktrace_noop" {= "1.75.0-r8"}
+  "boost1.75-system" {= "1.75.0-r8"}
+  "boost1.75-thread" {= "1.75.0-r8"}
+  "boost1.75-timer" {= "1.75.0-r8"}
+  "boost1.75-type_erasure" {= "1.75.0-r8"}
+  "boost1.75-unit_test_framework" {= "1.75.0-r8"}
+  "boost1.75-wave" {= "1.75.0-r8"}
+  "boost1.75-wserialization" {= "1.75.0-r8"}
+  "bzip2-dev"
+  "icu-dev"
+  "linux-headers"
+  "xz-dev"
+  "zlib-dev"
+]
+extra-source "boost1.75-dev-1.75.0-r8.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/boost1.75-dev-1.75.0-r8.apk"
+}

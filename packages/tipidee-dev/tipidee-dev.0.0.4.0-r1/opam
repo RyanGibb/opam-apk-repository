@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del tipidee-dev"]
 ]
 depends: [
-  "tipidee-libs"
+  "tipidee-libs" {= "0.0.4.0-r1"}
 ]
-
 extra-source "tipidee-dev-0.0.4.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/tipidee-dev-0.0.4.0-r1.apk"
 }

@@ -6,13 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del e2fsprogs-dev"]
 ]
 depends: [
-  "e2fsprogs-libs"
+  "e2fsprogs-libs" {= "1.47.0-r5"}
   "gawk"
-  "libcom_err"
+  "libcom_err" {= "1.47.0-r5"}
   "pkgconf"
   "util-linux-dev"
 ]
-
 extra-source "e2fsprogs-dev-1.47.0-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/e2fsprogs-dev-1.47.0-r5.apk"
 }

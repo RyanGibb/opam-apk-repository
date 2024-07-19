@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add pinentry-gnome-1.1.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del pinentry-gnome"]
+]
+depends: [
+  "busybox"
+  "gcr-base"
+  "glib"
+  "libassuan"
+  "libcap"
+  "libgpg-error"
+  "libsecret"
+  "musl"
+  "ncurses-libs"
+]
+extra-source "pinentry-gnome-1.1.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/pinentry-gnome-1.1.0-r1.apk"
+}

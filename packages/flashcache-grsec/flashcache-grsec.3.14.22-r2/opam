@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add flashcache-grsec-3.14.22-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del flashcache-grsec"]
+]
+depends: [
+  "linux-grsec" {= "3.14.22-r2"}
+]
+extra-source "flashcache-grsec-3.14.22-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/flashcache-grsec-3.14.22-r2.apk"
+}

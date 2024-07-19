@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-cgi-psgi-doc"]
 ]
-
-
 extra-source "perl-cgi-psgi-doc-0.15-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-cgi-psgi-doc-0.15-r5.apk"
 }

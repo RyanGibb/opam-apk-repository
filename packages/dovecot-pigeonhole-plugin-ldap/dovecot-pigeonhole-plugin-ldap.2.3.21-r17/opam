@@ -6,12 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del dovecot-pigeonhole-plugin-ldap"]
 ]
 depends: [
-  "dovecot-ldap"
-  "dovecot-pigeonhole-plugin"
+  "dovecot-ldap" {= "2.3.21-r17"}
+  "dovecot-pigeonhole-plugin" {= "2.3.21-r17"}
   "libldap"
   "musl"
 ]
-
 extra-source "dovecot-pigeonhole-plugin-ldap-2.3.21-r17.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/dovecot-pigeonhole-plugin-ldap-2.3.21-r17.apk"
 }

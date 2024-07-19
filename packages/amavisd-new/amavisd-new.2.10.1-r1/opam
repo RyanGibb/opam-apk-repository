@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add amavisd-new-2.10.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del amavisd-new"]
+]
+depends: [
+  "busybox"
+  "file"
+  "perl"
+  "perl-archive-zip"
+  "perl-compress-raw-zlib"
+  "perl-convert-tnef"
+  "perl-convert-uulib"
+  "perl-db"
+  "perl-digest-md5"
+  "perl-io-compress"
+  "perl-io-stringy"
+  "perl-mail-dkim"
+  "perl-mail-tools"
+  "perl-mime-tools"
+  "perl-net-server"
+  "perl-unix-syslog"
+  "sed"
+]
+extra-source "amavisd-new-2.10.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/amavisd-new-2.10.1-r1.apk"
+}

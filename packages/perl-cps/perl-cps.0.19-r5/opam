@@ -9,7 +9,6 @@ depends: [
   "perl"
   "perl-future"
 ]
-
 extra-source "perl-cps-0.19-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-cps-0.19-r5.apk"
 }

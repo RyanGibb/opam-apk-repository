@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add haproxy-1.4.25-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del haproxy"]
+]
+depends: [
+  "busybox"
+  "musl"
+  "pcre"
+]
+extra-source "haproxy-1.4.25-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/haproxy-1.4.25-r0.apk"
+}

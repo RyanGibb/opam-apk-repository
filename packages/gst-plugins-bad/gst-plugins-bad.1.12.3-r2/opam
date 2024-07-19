@@ -1,0 +1,50 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gst-plugins-bad-1.12.3-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gst-plugins-bad"]
+]
+depends: [
+  "cairo"
+  "directfb"
+  "faac"
+  "faad2"
+  "flite"
+  "glib"
+  "gsm"
+  "gst-plugins-base"
+  "gstreamer"
+  "libbz2"
+  "libcurl"
+  "libdc1394"
+  "libdrm"
+  "libgcc"
+  "libintl"
+  "libjpeg-turbo"
+  "libmms"
+  "libmodplug"
+  "libpng"
+  "libressl2.6-libcrypto"
+  "libressl2.6-libssl"
+  "librsvg"
+  "libstdc++"
+  "libvdpau"
+  "libwebp"
+  "libx11"
+  "libxcb"
+  "libxml2"
+  "mesa-egl"
+  "mesa-gl"
+  "mesa-libwayland-egl"
+  "musl"
+  "neon"
+  "orc"
+  "pango"
+  "spandsp"
+  "wayland-libs-client"
+  "x265"
+]
+extra-source "gst-plugins-bad-1.12.3-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/gst-plugins-bad-1.12.3-r2.apk"
+}

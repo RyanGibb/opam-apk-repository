@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add alpine-conf-3.14.6-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del alpine-conf"]
+]
+depends: [
+  "busybox" {>= "1.26.1-r3"}
+  "musl"
+  "openrc" {>= "0.24.1-r6"}
+]
+extra-source "alpine-conf-3.14.6-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/alpine-conf-3.14.6-r1.apk"
+}

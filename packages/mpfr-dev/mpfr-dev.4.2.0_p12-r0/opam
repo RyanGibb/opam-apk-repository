@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mpfr-dev-4.2.0_p12-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mpfr-dev"]
+]
+depends: [
+  "mpfr4" {= "4.2.0_p12-r0"}
+  "pkgconf"
+]
+extra-source "mpfr-dev-4.2.0_p12-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/mpfr-dev-4.2.0_p12-r0.apk"
+}

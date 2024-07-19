@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xorg-server-xephyr-1.15.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xorg-server-xephyr"]
+]
+depends: [
+  "libcrypto1.0"
+  "libxau"
+  "libxcb"
+  "libxdmcp"
+  "libxfont"
+  "mesa-gl"
+  "musl"
+  "pixman"
+  "xcb-util"
+  "xcb-util-image"
+  "xcb-util-keysyms"
+  "xcb-util-wm"
+]
+extra-source "xorg-server-xephyr-1.15.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/xorg-server-xephyr-1.15.2-r0.apk"
+}

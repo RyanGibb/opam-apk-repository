@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gpicview-0.2.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gpicview"]
+]
+depends: [
+  "cairo"
+  "gdk-pixbuf"
+  "glib"
+  "gtk+2.0"
+  "libintl"
+  "libjpeg-turbo"
+  "libx11"
+  "musl"
+]
+extra-source "gpicview-0.2.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/gpicview-0.2.4-r0.apk"
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lua-openrc-0.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lua-openrc"]
+]
+depends: [
+  "lua5.1-openrc"
+]
+extra-source "lua-openrc-0.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/lua-openrc-0.2-r0.apk"
+}

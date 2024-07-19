@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add knot-mod-dnstap-3.1.9-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del knot-mod-dnstap"]
+]
+depends: [
+  "fstrm"
+  "knot" {= "3.1.9-r0"}
+  "musl"
+  "protobuf-c"
+]
+extra-source "knot-mod-dnstap-3.1.9-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/knot-mod-dnstap-3.1.9-r0.apk"
+}

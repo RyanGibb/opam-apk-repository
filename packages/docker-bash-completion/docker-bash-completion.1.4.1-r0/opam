@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add docker-bash-completion-1.4.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del docker-bash-completion"]
+]
+extra-source "docker-bash-completion-1.4.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/docker-bash-completion-1.4.1-r0.apk"
+}

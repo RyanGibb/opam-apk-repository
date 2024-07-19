@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gst-plugins-good-gnome-0.10.31-r5.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gst-plugins-good-gnome"]
+]
+depends: [
+  "busybox"
+  "gconf"
+  "glib"
+  "gst-plugins-base-gnome"
+  "gstreamer"
+  "libintl"
+  "libxml2"
+  "musl"
+]
+extra-source "gst-plugins-good-gnome-0.10.31-r5.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/gst-plugins-good-gnome-0.10.31-r5.apk"
+}

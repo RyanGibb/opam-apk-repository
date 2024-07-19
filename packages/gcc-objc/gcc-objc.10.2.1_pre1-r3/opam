@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gcc-objc-10.2.1_pre1-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gcc-objc"]
+]
+depends: [
+  "gcc" {= "10.2.1_pre1-r3"}
+  "gmp"
+  "isl22"
+  "libc-dev"
+  "libobjc" {= "10.2.1_pre1-r3"}
+  "mpc1"
+  "mpfr4"
+  "musl"
+  "zlib"
+]
+extra-source "gcc-objc-10.2.1_pre1-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/gcc-objc-10.2.1_pre1-r3.apk"
+}

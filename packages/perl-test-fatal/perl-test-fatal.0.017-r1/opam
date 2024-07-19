@@ -9,7 +9,6 @@ depends: [
   "perl"
   "perl-try-tiny"
 ]
-
 extra-source "perl-test-fatal-0.017-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-test-fatal-0.017-r1.apk"
 }

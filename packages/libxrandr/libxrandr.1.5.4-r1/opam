@@ -11,7 +11,6 @@ depends: [
   "libxrender"
   "musl"
 ]
-
 extra-source "libxrandr-1.5.4-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libxrandr-1.5.4-r1.apk"
 }

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add scanelf-1.2.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del scanelf"]
+]
+depends: [
+  "musl"
+]
+extra-source "scanelf-1.2.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/scanelf-1.2.2-r0.apk"
+}

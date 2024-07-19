@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add drupal7-7.43-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del drupal7"]
+]
+depends: [
+  "php-ctype"
+  "php-curl"
+  "php-dom"
+  "php-fpm"
+  "php-ftp"
+  "php-gd"
+  "php-json"
+  "php-posix"
+  "php-sockets"
+  "php-xml"
+  "php-zlib"
+]
+extra-source "drupal7-7.43-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/drupal7-7.43-r0.apk"
+}

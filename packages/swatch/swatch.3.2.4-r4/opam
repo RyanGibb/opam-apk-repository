@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add swatch-3.2.4-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del swatch"]
+]
+depends: [
+  "perl"
+  "perl-carp-clan"
+  "perl-date-calc"
+  "perl-date-format"
+  "perl-date-manip"
+  "perl-file-tail"
+]
+extra-source "swatch-3.2.4-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/swatch-3.2.4-r4.apk"
+}

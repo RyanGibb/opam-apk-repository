@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ada-2.7.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ada"]
+]
+depends: [
+  "ada-libs"
+  "fmt"
+  "libgcc"
+  "libstdc++"
+  "musl"
+]
+extra-source "ada-2.7.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/ada-2.7.4-r0.apk"
+}

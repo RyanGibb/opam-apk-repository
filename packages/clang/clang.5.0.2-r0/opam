@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add clang-5.0.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del clang"]
+]
+depends: [
+  "clang-libs"
+  "libgcc"
+  "libstdc++"
+  "libxml2"
+  "musl"
+  "zlib"
+]
+extra-source "clang-5.0.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/clang-5.0.2-r0.apk"
+}

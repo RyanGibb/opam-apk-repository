@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add eggdrop-1.8.4-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del eggdrop"]
+]
+depends: [
+  "libcrypto1.1"
+  "libssl1.1"
+  "musl"
+  "tcl"
+  "zlib"
+]
+extra-source "eggdrop-1.8.4-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/eggdrop-1.8.4-r4.apk"
+}

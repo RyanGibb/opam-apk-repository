@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add openrc-dev-0.41.2-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del openrc-dev"]
+]
+depends: [
+  "openrc" {= "0.41.2-r2"}
+  "pkgconf"
+]
+extra-source "openrc-dev-0.41.2-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/openrc-dev-0.41.2-r2.apk"
+}

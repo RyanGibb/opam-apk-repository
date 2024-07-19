@@ -6,11 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del libfido2-dev"]
 ]
 depends: [
-  "libfido2"
+  "libfido2" {= "1.14.0-r1"}
   "openssl-dev"
   "pkgconf"
 ]
-
 extra-source "libfido2-dev-1.14.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libfido2-dev-1.14.0-r1.apk"
 }

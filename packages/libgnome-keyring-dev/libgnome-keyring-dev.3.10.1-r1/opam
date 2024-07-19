@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libgnome-keyring-dev-3.10.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libgnome-keyring-dev"]
+]
+depends: [
+  "gconf-dev"
+  "gnome-doc-utils"
+  "gtk+3.0-dev"
+  "libgcrypt-dev"
+  "libgnome-dev"
+  "libgnome-keyring" {= "3.10.1-r1"}
+  "libgnome-keyring-lang" {= "3.10.1-r1"}
+  "libtasn1-dev"
+  "libwnck-dev"
+  "libx11-dev"
+  "libxau-dev"
+  "libxcb-dev"
+  "libxcomposite-dev"
+  "libxcursor-dev"
+  "libxdmcp-dev"
+  "libxext-dev"
+  "libxi-dev"
+  "pkgconfig"
+]
+extra-source "libgnome-keyring-dev-3.10.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/libgnome-keyring-dev-3.10.1-r1.apk"
+}

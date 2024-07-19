@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add dns-root-hints-2022062901-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del dns-root-hints"]
+]
+depends: [
+  "curl"
+  "gpgv"
+]
+extra-source "dns-root-hints-2022062901-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/dns-root-hints-2022062901-r0.apk"
+}

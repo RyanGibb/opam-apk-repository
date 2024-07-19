@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add audacity-2.0.6-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del audacity"]
+]
+depends: [
+  "alsa-lib"
+  "expat"
+  "flac"
+  "glib"
+  "gtk+2.0"
+  "libgcc"
+  "libmad"
+  "libogg"
+  "libsamplerate"
+  "libsndfile"
+  "libstdc++"
+  "libvorbis"
+  "musl"
+  "wxgtk2.8"
+  "wxgtk2.8-base"
+]
+extra-source "audacity-2.0.6-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/audacity-2.0.6-r1.apk"
+}

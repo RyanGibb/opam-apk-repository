@@ -8,7 +8,6 @@ remove: [
 depends: [
   "curl"
 ]
-
 extra-source "dpaste-de-0.7-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/dpaste-de-0.7-r2.apk"
 }

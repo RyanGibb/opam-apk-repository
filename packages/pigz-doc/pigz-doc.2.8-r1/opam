@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del pigz-doc"]
 ]
-
-
 extra-source "pigz-doc-2.8-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/pigz-doc-2.8-r1.apk"
 }

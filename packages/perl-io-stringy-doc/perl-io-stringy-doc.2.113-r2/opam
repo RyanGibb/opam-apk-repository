@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-io-stringy-doc-2.113-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-io-stringy-doc"]
+]
+extra-source "perl-io-stringy-doc-2.113-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/perl-io-stringy-doc-2.113-r2.apk"
+}

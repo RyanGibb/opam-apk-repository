@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del tzdata-right"]
 ]
-
-
 extra-source "tzdata-right-2024a-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/tzdata-right-2024a-r1.apk"
 }

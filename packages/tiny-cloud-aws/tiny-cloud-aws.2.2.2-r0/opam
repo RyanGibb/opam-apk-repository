@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add tiny-cloud-aws-2.2.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del tiny-cloud-aws"]
+]
+depends: [
+  "tiny-cloud-network" {= "2.2.2-r0"}
+  ("yash-binsh" | "busybox-binsh" | "dash-binsh")
+]
+extra-source "tiny-cloud-aws-2.2.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/tiny-cloud-aws-2.2.2-r0.apk"
+}

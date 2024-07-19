@@ -28,7 +28,6 @@ depends: [
   "wayland-libs-client"
   "wireless-tools-libs"
 ]
-
 extra-source "conky-1.21.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/conky-1.21.0-r0.apk"
 }

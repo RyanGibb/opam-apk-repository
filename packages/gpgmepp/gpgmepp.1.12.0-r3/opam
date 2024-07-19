@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gpgmepp-1.12.0-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gpgmepp"]
+]
+depends: [
+  "gnupg1"
+  "gpgme"
+  "libgcc"
+  "libstdc++"
+  "musl"
+]
+extra-source "gpgmepp-1.12.0-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/gpgmepp-1.12.0-r3.apk"
+}

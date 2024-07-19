@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gdb-7.9.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gdb"]
+]
+depends: [
+  "expat"
+  "musl"
+  "ncurses-libs"
+  "python"
+  "readline"
+]
+extra-source "gdb-7.9.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/gdb-7.9.1-r0.apk"
+}

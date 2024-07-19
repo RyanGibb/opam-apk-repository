@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mate-power-manager-1.10.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mate-power-manager"]
+]
+depends: [
+  "cairo"
+  "dbus-glib"
+  "dbus-libs"
+  "gdk-pixbuf"
+  "glib"
+  "gtk+2.0"
+  "libcanberra"
+  "libcanberra-gtk2"
+  "libgnome-keyring"
+  "libintl"
+  "libnotify"
+  "libunique"
+  "libx11"
+  "libxext"
+  "libxrandr"
+  "mate-desktop"
+  "mate-panel"
+  "musl"
+  "pango"
+  "upower"
+]
+extra-source "mate-power-manager-1.10.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/mate-power-manager-1.10.0-r0.apk"
+}

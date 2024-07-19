@@ -7,9 +7,8 @@ remove: [
 ]
 depends: [
   "logrotate"
-  "squid-lang-es"
+  "squid-lang-es" {= "6.9-r0"}
 ]
-
 extra-source "squid-lang-spq-6.9-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/squid-lang-spq-6.9-r0.apk"
 }

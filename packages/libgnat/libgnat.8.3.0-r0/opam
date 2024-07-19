@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libgnat-8.3.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libgnat"]
+]
+depends: [
+  "libgcc"
+  "musl"
+]
+extra-source "libgnat-8.3.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libgnat-8.3.0-r0.apk"
+}

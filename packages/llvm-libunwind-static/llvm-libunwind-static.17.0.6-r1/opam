@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del llvm-libunwind-static"]
 ]
-
-
 extra-source "llvm-libunwind-static-17.0.6-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/llvm-libunwind-static-17.0.6-r1.apk"
 }

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add git-prompt-2.43.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del git-prompt"]
+]
+depends: [
+  "git" {= "2.43.4-r0"}
+]
+extra-source "git-prompt-2.43.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/git-prompt-2.43.4-r0.apk"
+}

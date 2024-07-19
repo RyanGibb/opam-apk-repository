@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del mqtt-exec-openrc"]
 ]
-
-
 extra-source "mqtt-exec-openrc-0.5-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/mqtt-exec-openrc-0.5-r3.apk"
 }

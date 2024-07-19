@@ -9,7 +9,6 @@ depends: [
   "abseil-cpp-log-internal-globals"
   "abseil-cpp-time-zone"
 ]
-
 extra-source "abseil-cpp-log-initialize-20230802.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/abseil-cpp-log-initialize-20230802.1-r0.apk"
 }

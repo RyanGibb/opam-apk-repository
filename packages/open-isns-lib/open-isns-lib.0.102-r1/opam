@@ -9,7 +9,6 @@ depends: [
   "libcrypto3"
   "musl"
 ]
-
 extra-source "open-isns-lib-0.102-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/open-isns-lib-0.102-r1.apk"
 }

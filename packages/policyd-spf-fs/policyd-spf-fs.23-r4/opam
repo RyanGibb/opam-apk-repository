@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add policyd-spf-fs-23-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del policyd-spf-fs"]
+]
+depends: [
+  "libspf2"
+  "musl"
+]
+extra-source "policyd-spf-fs-23-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/policyd-spf-fs-23-r4.apk"
+}

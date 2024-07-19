@@ -10,7 +10,6 @@ depends: [
   "wasi-libc"
   "wasi-libcxx"
 ]
-
 extra-source "wasi-sdk-21-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/wasi-sdk-21-r0.apk"
 }

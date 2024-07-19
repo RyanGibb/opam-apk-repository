@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add vlc-plugins-access-2.2.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del vlc-plugins-access"]
+]
+depends: [
+  "alsa-lib"
+  "dbus-libs"
+  "libavc1394"
+  "libbluray"
+  "libcddb"
+  "libdc1394"
+  "libdvbpsi"
+  "libdvdnav"
+  "libdvdread"
+  "libgcc"
+  "libgcrypt"
+  "libgpg-error"
+  "libraw1394"
+  "libstdc++"
+  "live-media"
+  "musl"
+  "vlc-libs"
+  "zlib"
+]
+extra-source "vlc-plugins-access-2.2.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/vlc-plugins-access-2.2.4-r0.apk"
+}

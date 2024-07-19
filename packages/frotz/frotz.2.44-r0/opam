@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add frotz-2.44-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del frotz"]
+]
+depends: [
+  "musl"
+  "ncurses-libs"
+]
+extra-source "frotz-2.44-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/frotz-2.44-r0.apk"
+}

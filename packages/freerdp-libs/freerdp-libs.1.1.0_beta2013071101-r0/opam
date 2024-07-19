@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add freerdp-libs-1.1.0_beta2013071101-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del freerdp-libs"]
+]
+depends: [
+  "libcrypto1.0"
+  "libjpeg-turbo"
+  "libssl1.0"
+  "libx11"
+  "libxcursor"
+  "libxext"
+  "libxi"
+  "libxinerama"
+  "libxkbfile"
+  "libxrender"
+  "libxv"
+  "musl"
+]
+extra-source "freerdp-libs-1.1.0_beta2013071101-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/freerdp-libs-1.1.0_beta2013071101-r0.apk"
+}

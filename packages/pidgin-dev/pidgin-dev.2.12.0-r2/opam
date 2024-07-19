@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add pidgin-dev-2.12.0-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del pidgin-dev"]
+]
+depends: [
+  "finch" {= "2.12.0-r2"}
+  "glib-dev"
+  "gtk+2.0-dev"
+  "libpurple" {= "2.12.0-r2"}
+  "pkgconf"
+]
+extra-source "pidgin-dev-2.12.0-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/pidgin-dev-2.12.0-r2.apk"
+}

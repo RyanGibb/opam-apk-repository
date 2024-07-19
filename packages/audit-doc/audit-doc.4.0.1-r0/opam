@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del audit-doc"]
 ]
-
-
 extra-source "audit-doc-4.0.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/audit-doc-4.0.1-r0.apk"
 }

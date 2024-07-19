@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add transmission-cli-2.84-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del transmission-cli"]
+]
+depends: [
+  "curl"
+  "libcrypto1.0"
+  "libevent"
+  "libintl"
+  "musl"
+  "zlib"
+]
+extra-source "transmission-cli-2.84-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/transmission-cli-2.84-r1.apk"
+}

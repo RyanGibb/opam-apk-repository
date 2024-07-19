@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del python3-pycache-pyc0"]
 ]
 depends: [
-  "libssl3"
+  "libssl3" {>= "3.3.0"}
 ]
-
 extra-source "python3-pycache-pyc0-3.12.3-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/python3-pycache-pyc0-3.12.3-r1.apk"
 }

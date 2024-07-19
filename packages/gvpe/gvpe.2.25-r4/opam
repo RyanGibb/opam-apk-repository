@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gvpe-2.25-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gvpe"]
+]
+depends: [
+  "gmp"
+  "libgcc"
+  "libressl2.6-libcrypto"
+  "libstdc++"
+  "musl"
+]
+extra-source "gvpe-2.25-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/gvpe-2.25-r4.apk"
+}

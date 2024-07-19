@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add nss-pam-ldapd-doc-0.9.11-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del nss-pam-ldapd-doc"]
+]
+extra-source "nss-pam-ldapd-doc-0.9.11-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/nss-pam-ldapd-doc-0.9.11-r1.apk"
+}

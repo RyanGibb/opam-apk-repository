@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py2-flask-0.12.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py2-flask"]
+]
+depends: [
+  "py2-click"
+  "py2-itsdangerous"
+  "py2-jinja2"
+  "py2-werkzeug"
+  "python2"
+]
+extra-source "py2-flask-0.12.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/py2-flask-0.12.1-r0.apk"
+}

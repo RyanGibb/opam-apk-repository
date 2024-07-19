@@ -6,12 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del ncurses-libs"]
 ]
 depends: [
-  "libformw"
-  "libmenuw"
-  "libncursesw"
-  "libpanelw"
+  "libformw" {= "6.4_p20240420-r0"}
+  "libmenuw" {= "6.4_p20240420-r0"}
+  "libncursesw" {= "6.4_p20240420-r0"}
+  "libpanelw" {= "6.4_p20240420-r0"}
 ]
-
 extra-source "ncurses-libs-6.4_p20240420-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/ncurses-libs-6.4_p20240420-r0.apk"
 }

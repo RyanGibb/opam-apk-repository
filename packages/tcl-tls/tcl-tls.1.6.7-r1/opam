@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add tcl-tls-1.6.7-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del tcl-tls"]
+]
+depends: [
+  "libressl2.4-libcrypto"
+  "libressl2.4-libssl"
+  "musl"
+]
+extra-source "tcl-tls-1.6.7-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/tcl-tls-1.6.7-r1.apk"
+}

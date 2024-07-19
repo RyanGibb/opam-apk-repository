@@ -12,7 +12,6 @@ depends: [
   "rabbitmq-c"
   "syslog-ng"
 ]
-
 extra-source "syslog-ng-amqp-4.7.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/syslog-ng-amqp-4.7.1-r1.apk"
 }

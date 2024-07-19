@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add cups-filters-dev-1.2.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del cups-filters-dev"]
+]
+depends: [
+  "cups-filters-libs" {= "1.2.0-r1"}
+  "pkgconfig"
+]
+extra-source "cups-filters-dev-1.2.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/cups-filters-dev-1.2.0-r1.apk"
+}

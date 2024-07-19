@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del sbsigntool-doc"]
 ]
-
-
 extra-source "sbsigntool-doc-0.9.5-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/sbsigntool-doc-0.9.5-r2.apk"
 }

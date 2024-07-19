@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del vanessa_socket-doc"]
 ]
-
-
 extra-source "vanessa_socket-doc-0.0.13-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/vanessa_socket-doc-0.0.13-r2.apk"
 }

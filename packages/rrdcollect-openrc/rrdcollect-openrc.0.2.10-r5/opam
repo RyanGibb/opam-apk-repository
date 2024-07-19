@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del rrdcollect-openrc"]
 ]
-
-
 extra-source "rrdcollect-openrc-0.2.10-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/rrdcollect-openrc-0.2.10-r5.apk"
 }

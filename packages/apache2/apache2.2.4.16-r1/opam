@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add apache2-2.4.16-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del apache2"]
+]
+depends: [
+  "apr"
+  "apr-util"
+  "busybox"
+  "musl"
+  "pcre"
+  "zlib"
+]
+extra-source "apache2-2.4.16-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/apache2-2.4.16-r1.apk"
+}

@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del freetdm-dev"]
 ]
 depends: [
-  "freetdm"
+  "freetdm" {= "0_git20210830-r5"}
   "pkgconf"
 ]
-
 extra-source "freetdm-dev-0_git20210830-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/freetdm-dev-0_git20210830-r5.apk"
 }

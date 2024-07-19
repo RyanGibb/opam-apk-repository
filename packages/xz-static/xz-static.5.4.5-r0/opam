@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xz-static-5.4.5-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xz-static"]
+]
+extra-source "xz-static-5.4.5-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/xz-static-5.4.5-r0.apk"
+}

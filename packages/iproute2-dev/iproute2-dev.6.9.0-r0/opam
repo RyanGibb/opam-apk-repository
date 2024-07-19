@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del iproute2-dev"]
 ]
-
-
 extra-source "iproute2-dev-6.9.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/iproute2-dev-6.9.0-r0.apk"
 }

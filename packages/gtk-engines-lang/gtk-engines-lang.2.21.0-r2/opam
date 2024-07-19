@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gtk-engines-lang-2.21.0-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gtk-engines-lang"]
+]
+depends: [
+  "gtk-engines-clearlooks"
+  "gtk-engines-crux"
+  "gtk-engines-industrial"
+  "gtk-engines-mist"
+  "gtk-engines-redmond"
+  "gtk-engines-thinice"
+]
+extra-source "gtk-engines-lang-2.21.0-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/gtk-engines-lang-2.21.0-r2.apk"
+}

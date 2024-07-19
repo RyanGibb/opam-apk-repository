@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add java-gcj-compat-4.9.2-r7.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del java-gcj-compat"]
+]
+depends: [
+  "fastjar"
+  "gcc-java" {= "4.9.2-r6"}
+  "java-common"
+  "libgcc"
+  "libgcj"
+  "musl"
+  "zlib"
+]
+extra-source "java-gcj-compat-4.9.2-r7.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/java-gcj-compat-4.9.2-r7.apk"
+}

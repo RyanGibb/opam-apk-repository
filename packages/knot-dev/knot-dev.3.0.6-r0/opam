@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add knot-dev-3.0.6-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del knot-dev"]
+]
+depends: [
+  "gnutls-dev"
+  "knot"
+  "knot-libs" {= "3.0.6-r0"}
+  "knot-libs-static"
+  "knot-utils"
+  "pkgconf"
+]
+extra-source "knot-dev-3.0.6-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/knot-dev-3.0.6-r0.apk"
+}

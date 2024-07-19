@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add uwsgi-transformation_gzip-2.0.17.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del uwsgi-transformation_gzip"]
+]
+depends: [
+  "musl"
+  "uwsgi"
+]
+extra-source "uwsgi-transformation_gzip-2.0.17.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/uwsgi-transformation_gzip-2.0.17.1-r0.apk"
+}

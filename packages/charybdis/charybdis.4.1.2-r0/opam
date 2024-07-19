@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add charybdis-4.1.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del charybdis"]
+]
+depends: [
+  "busybox"
+  "libcrypto1.1"
+  "libltdl"
+  "libssl1.1"
+  "musl"
+  "sqlite-libs"
+  "zlib"
+]
+extra-source "charybdis-4.1.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/charybdis-4.1.2-r0.apk"
+}

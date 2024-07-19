@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mesa-vulkan-layer-20.0.7-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mesa-vulkan-layer"]
+]
+depends: [
+  "libgcc"
+  "libstdc++"
+  "musl"
+]
+extra-source "mesa-vulkan-layer-20.0.7-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/mesa-vulkan-layer-20.0.7-r0.apk"
+}

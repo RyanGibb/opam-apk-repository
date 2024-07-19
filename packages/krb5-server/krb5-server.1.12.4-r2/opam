@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add krb5-server-1.12.4-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del krb5-server"]
+]
+depends: [
+  "e2fsprogs"
+  "krb5-libs"
+  "krb5-server-ldap"
+  "libcom_err"
+  "libverto"
+  "libverto-libev"
+  "musl"
+]
+extra-source "krb5-server-1.12.4-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/krb5-server-1.12.4-r2.apk"
+}

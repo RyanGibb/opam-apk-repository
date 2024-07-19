@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mesa-va-gallium-20.0.7-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mesa-va-gallium"]
+]
+depends: [
+  "expat"
+  "libdrm"
+  "libelf"
+  "libgcc"
+  "libstdc++"
+  "libva"
+  "libx11"
+  "libxcb"
+  "libxshmfence"
+  "llvm10-libs"
+  "mesa" {= "20.0.7-r0"}
+  "musl"
+  "zlib"
+  "zstd-libs"
+]
+extra-source "mesa-va-gallium-20.0.7-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/mesa-va-gallium-20.0.7-r0.apk"
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add php-pdo_dblib-5.6.27-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del php-pdo_dblib"]
+]
+depends: [
+  "freetds"
+  "musl"
+  "php"
+  "php-pdo"
+]
+extra-source "php-pdo_dblib-5.6.27-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/php-pdo_dblib-5.6.27-r0.apk"
+}

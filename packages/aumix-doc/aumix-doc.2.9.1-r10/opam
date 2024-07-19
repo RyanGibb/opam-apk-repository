@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del aumix-doc"]
 ]
-
-
 extra-source "aumix-doc-2.9.1-r10.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/aumix-doc-2.9.1-r10.apk"
 }

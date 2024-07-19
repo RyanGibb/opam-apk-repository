@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del pango-dbg"]
 ]
-
-
 extra-source "pango-dbg-1.52.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/pango-dbg-1.52.2-r0.apk"
 }

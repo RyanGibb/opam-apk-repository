@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add umurmur-0.2.16a-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del umurmur"]
+]
+depends: [
+  "busybox"
+  "libconfig"
+  "libcrypto1.0"
+  "libssl1.0"
+  "musl"
+  "protobuf-c"
+]
+extra-source "umurmur-0.2.16a-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/umurmur-0.2.16a-r1.apk"
+}

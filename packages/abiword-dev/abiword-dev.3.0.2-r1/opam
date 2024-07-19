@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add abiword-dev-3.0.2-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del abiword-dev"]
+]
+depends: [
+  "cairo-dev"
+  "enchant-dev"
+  "fribidi-dev"
+  "glib-dev"
+  "goffice-dev"
+  "gtk+3.0-dev"
+  "libgsf-dev"
+  "librsvg-dev"
+  "libx11-dev"
+  "libxslt-dev"
+  "pango-dev"
+  "pkgconf"
+  "wv-dev"
+]
+extra-source "abiword-dev-3.0.2-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/abiword-dev-3.0.2-r1.apk"
+}

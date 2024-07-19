@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add cyrus-sasl-openrc-2.1.28-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del cyrus-sasl-openrc"]
+]
+extra-source "cyrus-sasl-openrc-2.1.28-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/cyrus-sasl-openrc-2.1.28-r4.apk"
+}

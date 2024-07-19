@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libisofs-1.5.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libisofs"]
+]
+depends: [
+  "libacl"
+  "musl"
+  "zlib"
+]
+extra-source "libisofs-1.5.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/libisofs-1.5.0-r0.apk"
+}

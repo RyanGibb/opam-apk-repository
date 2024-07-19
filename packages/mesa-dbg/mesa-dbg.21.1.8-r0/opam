@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mesa-dbg-21.1.8-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mesa-dbg"]
+]
+extra-source "mesa-dbg-21.1.8-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/mesa-dbg-21.1.8-r0.apk"
+}

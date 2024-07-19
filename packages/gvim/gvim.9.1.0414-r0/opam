@@ -17,10 +17,9 @@ depends: [
   "libxt"
   "musl"
   "pango"
-  "vim-common"
-  "xxd"
+  "vim-common" {= "9.1.0414-r0"}
+  "xxd" {= "9.1.0414-r0"}
 ]
-
 extra-source "gvim-9.1.0414-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/gvim-9.1.0414-r0.apk"
 }

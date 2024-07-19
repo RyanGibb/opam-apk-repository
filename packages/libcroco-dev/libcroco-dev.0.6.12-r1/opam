@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libcroco-dev-0.6.12-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libcroco-dev"]
+]
+depends: [
+  "glib-dev"
+  "libcroco" {= "0.6.12-r1"}
+  "libxml2-dev"
+  "pkgconf"
+]
+extra-source "libcroco-dev-0.6.12-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/libcroco-dev-0.6.12-r1.apk"
+}

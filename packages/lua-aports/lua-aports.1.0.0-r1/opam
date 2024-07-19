@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lua-aports-1.0.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lua-aports"]
+]
+depends: [
+  "lua5.2"
+  "lua5.2-cjson"
+  "lua5.2-filesystem"
+  "lua5.2-optarg"
+]
+extra-source "lua-aports-1.0.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/lua-aports-1.0.0-r1.apk"
+}

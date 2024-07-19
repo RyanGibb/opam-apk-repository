@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add clamav-daemon-0.103.6-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del clamav-daemon"]
+]
+depends: [
+  "busybox"
+  "clamav-clamdscan"
+  "clamav-libs"
+  "freshclam"
+  "musl"
+  "ncurses-libs"
+  "zlib"
+]
+extra-source "clamav-daemon-0.103.6-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/clamav-daemon-0.103.6-r0.apk"
+}

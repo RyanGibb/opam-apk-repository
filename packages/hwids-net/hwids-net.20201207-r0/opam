@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add hwids-net-20201207-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del hwids-net"]
+]
+extra-source "hwids-net-20201207-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/hwids-net-20201207-r0.apk"
+}

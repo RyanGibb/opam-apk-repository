@@ -8,8 +8,8 @@ remove: [
 depends: [
   "libcrypto3"
   "musl"
-  "openssh-client-common"
-  "openssh-keygen"
+  "openssh-client-common" {= "9.7_p1-r4"}
+  "openssh-keygen" {= "9.7_p1-r4"}
   "zlib"
 ]
 conflicts: [

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add bzr-zsh-completion-5.3.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del bzr-zsh-completion"]
+]
+depends: [
+  "zsh"
+]
+extra-source "bzr-zsh-completion-5.3.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/bzr-zsh-completion-5.3.1-r1.apk"
+}

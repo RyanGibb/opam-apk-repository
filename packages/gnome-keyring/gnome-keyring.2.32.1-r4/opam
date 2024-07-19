@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gnome-keyring-2.32.1-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gnome-keyring"]
+]
+depends: [
+  "atk"
+  "cairo"
+  "dbus-libs"
+  "fontconfig"
+  "freetype"
+  "gdk-pixbuf"
+  "glib"
+  "gtk+2.0"
+  "libgcrypt"
+  "libgpg-error"
+  "libintl"
+  "musl"
+  "pango"
+]
+extra-source "gnome-keyring-2.32.1-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/gnome-keyring-2.32.1-r4.apk"
+}

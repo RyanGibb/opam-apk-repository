@@ -6,12 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del libepoxy-dev"]
 ]
 depends: [
-  "libepoxy"
+  "libepoxy" {= "1.5.10-r1"}
   "libx11-dev"
   "mesa-dev"
   "pkgconf"
 ]
-
 extra-source "libepoxy-dev-1.5.10-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libepoxy-dev-1.5.10-r1.apk"
 }

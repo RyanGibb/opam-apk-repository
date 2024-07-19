@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add krb5-server-ldap-1.14.3-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del krb5-server-ldap"]
+]
+depends: [
+  "krb5-conf"
+  "krb5-libs"
+  "libcom_err"
+  "libldap"
+  "musl"
+]
+extra-source "krb5-server-ldap-1.14.3-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/krb5-server-ldap-1.14.3-r1.apk"
+}

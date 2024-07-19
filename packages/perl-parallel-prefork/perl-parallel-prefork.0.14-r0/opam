@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-parallel-prefork-0.14-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-parallel-prefork"]
+]
+depends: [
+  "perl-class-accessor-lite"
+  "perl-list-moreutils"
+  "perl-proc-wait3"
+  "perl-scope-guard"
+]
+extra-source "perl-parallel-prefork-0.14-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/perl-parallel-prefork-0.14-r0.apk"
+}

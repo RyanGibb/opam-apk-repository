@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add awesome-3.5.5-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del awesome"]
+]
+depends: [
+  "cairo"
+  "dbus-libs"
+  "gdk-pixbuf"
+  "glib"
+  "imagemagick"
+  "libx11"
+  "libxcb"
+  "libxdg-basedir"
+  "lua-lgi"
+  "lua5.1-libs"
+  "musl"
+  "startup-notification"
+  "xcb-util"
+  "xcb-util-cursor"
+  "xcb-util-keysyms"
+  "xcb-util-wm"
+]
+extra-source "awesome-3.5.5-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/awesome-3.5.5-r0.apk"
+}

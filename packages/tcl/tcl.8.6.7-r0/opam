@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add tcl-8.6.7-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del tcl"]
+]
+depends: [
+  "musl"
+  "zlib"
+]
+extra-source "tcl-8.6.7-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/tcl-8.6.7-r0.apk"
+}

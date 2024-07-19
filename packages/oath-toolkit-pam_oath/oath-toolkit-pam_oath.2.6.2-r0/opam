@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add oath-toolkit-pam_oath-2.6.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del oath-toolkit-pam_oath"]
+]
+depends: [
+  "linux-pam"
+  "musl"
+  "oath-toolkit-liboath"
+]
+extra-source "oath-toolkit-pam_oath-2.6.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/oath-toolkit-pam_oath-2.6.2-r0.apk"
+}

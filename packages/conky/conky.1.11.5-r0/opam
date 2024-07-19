@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add conky-1.11.5-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del conky"]
+]
+depends: [
+  "imlib2"
+  "libcurl"
+  "libgcc"
+  "libstdc++"
+  "libx11"
+  "libxdamage"
+  "libxext"
+  "libxfixes"
+  "libxft"
+  "libxinerama"
+  "libxml2"
+  "lua5.3-libs"
+  "musl"
+  "ncurses-libs"
+]
+extra-source "conky-1.11.5-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/conky-1.11.5-r0.apk"
+}

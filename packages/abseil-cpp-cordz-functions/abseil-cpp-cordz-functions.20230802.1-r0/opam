@@ -9,7 +9,6 @@ depends: [
   "abseil-cpp-exponential-biased"
   "musl"
 ]
-
 extra-source "abseil-cpp-cordz-functions-20230802.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/abseil-cpp-cordz-functions-20230802.1-r0.apk"
 }

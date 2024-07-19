@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-data-page-doc"]
 ]
-
-
 extra-source "perl-data-page-doc-2.03-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-data-page-doc-2.03-r4.apk"
 }

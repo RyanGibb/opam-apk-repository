@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del nftables-dev"]
 ]
 depends: [
-  "nftables"
+  "nftables" {= "1.0.9-r2"}
   "pkgconf"
 ]
-
 extra-source "nftables-dev-1.0.9-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/nftables-dev-1.0.9-r2.apk"
 }

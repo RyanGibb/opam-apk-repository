@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add v4l-utils-dvbv5-1.12.5-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del v4l-utils-dvbv5"]
+]
+depends: [
+  "eudev-libs"
+  "libintl"
+  "musl"
+]
+extra-source "v4l-utils-dvbv5-1.12.5-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/v4l-utils-dvbv5-1.12.5-r1.apk"
+}

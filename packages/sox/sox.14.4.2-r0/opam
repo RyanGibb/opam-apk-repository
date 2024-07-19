@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add sox-14.4.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del sox"]
+]
+depends: [
+  "alsa-lib"
+  "flac"
+  "gsm"
+  "lame"
+  "libao"
+  "libgomp"
+  "libltdl"
+  "libmad"
+  "libmagic"
+  "libogg"
+  "libsndfile"
+  "libvorbis"
+  "musl"
+  "opusfile"
+]
+extra-source "sox-14.4.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/sox-14.4.2-r0.apk"
+}

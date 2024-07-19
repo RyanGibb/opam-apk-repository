@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add kamailio-uuid-5.4.2-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del kamailio-uuid"]
+]
+depends: [
+  "kamailio"
+  "libuuid"
+  "musl"
+]
+extra-source "kamailio-uuid-5.4.2-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/kamailio-uuid-5.4.2-r3.apk"
+}

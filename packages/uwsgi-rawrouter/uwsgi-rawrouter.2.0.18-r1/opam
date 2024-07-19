@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add uwsgi-rawrouter-2.0.18-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del uwsgi-rawrouter"]
+]
+depends: [
+  "musl"
+  "uwsgi"
+  "uwsgi-corerouter"
+]
+extra-source "uwsgi-rawrouter-2.0.18-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/uwsgi-rawrouter-2.0.18-r1.apk"
+}

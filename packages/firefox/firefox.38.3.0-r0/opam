@@ -1,0 +1,46 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add firefox-38.3.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del firefox"]
+]
+depends: [
+  "alsa-lib"
+  "atk"
+  "cairo"
+  "dbus-glib"
+  "dbus-libs"
+  "fontconfig"
+  "freetype"
+  "gdk-pixbuf"
+  "glib"
+  "gtk+2.0"
+  "hunspell"
+  "icu-libs"
+  "libevent"
+  "libffi"
+  "libgcc"
+  "libjpeg-turbo"
+  "libpng"
+  "libstdc++"
+  "libvpx"
+  "libx11"
+  "libxcomposite"
+  "libxdamage"
+  "libxext"
+  "libxfixes"
+  "libxrender"
+  "libxt"
+  "musl"
+  "nspr"
+  "nss"
+  "pango"
+  "pixman"
+  "sqlite-libs"
+  "startup-notification"
+  "zlib"
+]
+extra-source "firefox-38.3.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/firefox-38.3.0-r0.apk"
+}

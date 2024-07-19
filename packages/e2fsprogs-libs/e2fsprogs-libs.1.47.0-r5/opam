@@ -9,7 +9,6 @@ depends: [
   "libcom_err"
   "musl"
 ]
-
 extra-source "e2fsprogs-libs-1.47.0-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/e2fsprogs-libs-1.47.0-r5.apk"
 }

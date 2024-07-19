@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add inih-inireader-dev-56-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del inih-inireader-dev"]
+]
+depends: [
+  "inih-dev"
+  "inih-inireader" {= "56-r1"}
+  "pkgconf"
+]
+extra-source "inih-inireader-dev-56-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/inih-inireader-dev-56-r1.apk"
+}

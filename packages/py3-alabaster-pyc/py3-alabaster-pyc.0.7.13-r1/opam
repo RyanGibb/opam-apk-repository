@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py3-alabaster-pyc-0.7.13-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py3-alabaster-pyc"]
+]
+depends: [
+  "python3"
+  "python3" {>= "3.11"}
+]
+extra-source "py3-alabaster-pyc-0.7.13-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/py3-alabaster-pyc-0.7.13-r1.apk"
+}

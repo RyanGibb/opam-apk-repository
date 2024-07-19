@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add rsyslog-mmutf8fix-8.2212.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del rsyslog-mmutf8fix"]
+]
+depends: [
+  "musl"
+  "rsyslog" {= "8.2212.0-r0"}
+]
+extra-source "rsyslog-mmutf8fix-8.2212.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/rsyslog-mmutf8fix-8.2212.0-r0.apk"
+}

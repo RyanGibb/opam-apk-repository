@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add fish-doc-3.3.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del fish-doc"]
+]
+depends: [
+  "util-linux"
+]
+extra-source "fish-doc-3.3.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/fish-doc-3.3.1-r1.apk"
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add avahi-libs-0.6.32-r5.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del avahi-libs"]
+]
+depends: [
+  "dbus-libs"
+  "libintl"
+  "musl"
+]
+extra-source "avahi-libs-0.6.32-r5.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/avahi-libs-0.6.32-r5.apk"
+}

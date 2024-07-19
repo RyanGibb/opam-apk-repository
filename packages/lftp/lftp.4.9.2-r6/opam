@@ -14,7 +14,6 @@ depends: [
   "readline"
   "zlib"
 ]
-
 extra-source "lftp-4.9.2-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lftp-4.9.2-r6.apk"
 }

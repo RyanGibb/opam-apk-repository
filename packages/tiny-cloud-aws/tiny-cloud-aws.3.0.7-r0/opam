@@ -9,10 +9,9 @@ depends: [
   "ifupdown-ng"
   "iproute2-minimal"
   "nvme-cli"
-  "tiny-cloud"
+  "tiny-cloud" {= "3.0.7-r0"}
   ("busybox-binsh" | "dash-binsh" | "yash-binsh")
 ]
-
 extra-source "tiny-cloud-aws-3.0.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/tiny-cloud-aws-3.0.7-r0.apk"
 }

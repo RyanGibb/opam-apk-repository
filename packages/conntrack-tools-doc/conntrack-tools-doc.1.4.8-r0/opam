@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del conntrack-tools-doc"]
 ]
-
-
 extra-source "conntrack-tools-doc-1.4.8-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/conntrack-tools-doc-1.4.8-r0.apk"
 }

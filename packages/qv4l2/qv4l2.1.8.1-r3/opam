@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add qv4l2-1.8.1-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del qv4l2"]
+]
+depends: [
+  "alsa-lib"
+  "libgcc"
+  "libstdc++"
+  "mesa-gl"
+  "musl"
+  "qt"
+  "qt-x11"
+  "v4l-utils-libs"
+]
+extra-source "qv4l2-1.8.1-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/qv4l2-1.8.1-r3.apk"
+}

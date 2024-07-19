@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add curl-7.37.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del curl"]
+]
+depends: [
+  "ca-certificates"
+  "libcrypto1.0"
+  "libssh2"
+  "libssl1.0"
+  "musl"
+  "zlib"
+]
+extra-source "curl-7.37.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/curl-7.37.0-r0.apk"
+}

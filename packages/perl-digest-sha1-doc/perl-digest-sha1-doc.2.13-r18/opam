@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-digest-sha1-doc"]
 ]
-
-
 extra-source "perl-digest-sha1-doc-2.13-r18.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-digest-sha1-doc-2.13-r18.apk"
 }

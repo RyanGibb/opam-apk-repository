@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add imagemagick-perlmagick-doc-7.0.8.68-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del imagemagick-perlmagick-doc"]
+]
+extra-source "imagemagick-perlmagick-doc-7.0.8.68-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/imagemagick-perlmagick-doc-7.0.8.68-r0.apk"
+}

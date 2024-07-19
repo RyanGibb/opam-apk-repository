@@ -9,7 +9,6 @@ depends: [
   "libcrypto3"
   "musl"
 ]
-
 extra-source "libsrtp-2.5.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libsrtp-2.5.0-r1.apk"
 }

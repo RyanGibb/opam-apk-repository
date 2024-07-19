@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del perl-git"]
 ]
 depends: [
-  "git"
+  "git" {= "2.45.2-r0"}
   "perl-error"
 ]
-
 extra-source "perl-git-2.45.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-git-2.45.2-r0.apk"
 }

@@ -9,7 +9,6 @@ depends: [
   "libncursesw"
   "musl"
 ]
-
 extra-source "dmesg-2.40.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/dmesg-2.40.1-r1.apk"
 }

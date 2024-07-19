@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add openldap-backend-all-2.6.3-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del openldap-backend-all"]
+]
+depends: [
+  "openldap-back-asyncmeta"
+  "openldap-back-dnssrv"
+  "openldap-back-ldap"
+  "openldap-back-lload"
+  "openldap-back-mdb"
+  "openldap-back-meta"
+  "openldap-back-null"
+  "openldap-back-passwd"
+  "openldap-back-relay"
+  "openldap-back-sock"
+  "openldap-back-sql"
+]
+extra-source "openldap-backend-all-2.6.3-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/openldap-backend-all-2.6.3-r3.apk"
+}

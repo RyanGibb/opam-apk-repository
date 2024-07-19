@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del open-iscsi-doc"]
 ]
-
-
 extra-source "open-iscsi-doc-2.1.9-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/open-iscsi-doc-2.1.9-r1.apk"
 }

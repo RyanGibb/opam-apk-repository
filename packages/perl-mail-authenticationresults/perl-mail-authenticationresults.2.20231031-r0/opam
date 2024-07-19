@@ -10,7 +10,6 @@ depends: [
   "perl-clone"
   "perl-json"
 ]
-
 extra-source "perl-mail-authenticationresults-2.20231031-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-mail-authenticationresults-2.20231031-r0.apk"
 }

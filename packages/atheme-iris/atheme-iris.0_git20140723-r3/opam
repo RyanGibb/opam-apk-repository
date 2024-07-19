@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add atheme-iris-0_git20140723-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del atheme-iris"]
+]
+depends: [
+  "busybox"
+  "py-openssl"
+  "py-simplejson"
+  "py-twisted"
+  "py-twisted-mail"
+  "py-twisted-names"
+  "py-twisted-web"
+  "py-twisted-words"
+  "py-zope-interface"
+]
+extra-source "atheme-iris-0_git20140723-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/atheme-iris-0_git20140723-r3.apk"
+}

@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del screen-doc"]
 ]
-
-
 extra-source "screen-doc-4.9.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/screen-doc-4.9.1-r1.apk"
 }

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add sqlite-dev-3.44.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del sqlite-dev"]
+]
+depends: [
+  "pkgconf"
+  "sqlite" {= "3.44.2-r0"}
+  "sqlite-libs" {= "3.44.2-r0"}
+]
+extra-source "sqlite-dev-3.44.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/sqlite-dev-3.44.2-r0.apk"
+}

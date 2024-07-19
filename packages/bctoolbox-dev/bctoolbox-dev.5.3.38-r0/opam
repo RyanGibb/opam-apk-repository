@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del bctoolbox-dev"]
 ]
 depends: [
-  "bctoolbox"
+  "bctoolbox" {= "5.3.38-r0"}
   "pkgconf"
 ]
-
 extra-source "bctoolbox-dev-5.3.38-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/bctoolbox-dev-5.3.38-r0.apk"
 }

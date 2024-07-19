@@ -16,7 +16,6 @@ depends: [
   "musl"
   ("busybox-binsh" | "dash-binsh" | "yash-binsh")
 ]
-
 extra-source "icecast-2.4.4-r10.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/icecast-2.4.4-r10.apk"
 }

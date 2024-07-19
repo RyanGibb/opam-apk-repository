@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add duplicity-0.7.07.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del duplicity"]
+]
+depends: [
+  "gnupg1"
+  "librsync"
+  "musl"
+  "ncftp"
+  "py-boto"
+  "py-lockfile"
+  "python2"
+]
+extra-source "duplicity-0.7.07.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/duplicity-0.7.07.1-r0.apk"
+}

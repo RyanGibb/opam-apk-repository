@@ -6,12 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del readline-dev"]
 ]
 depends: [
-  "libhistory"
+  "libhistory" {= "8.2.10-r0"}
   "ncurses-dev"
   "pkgconf"
-  "readline"
+  "readline" {= "8.2.10-r0"}
 ]
-
 extra-source "readline-dev-8.2.10-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/readline-dev-8.2.10-r0.apk"
 }

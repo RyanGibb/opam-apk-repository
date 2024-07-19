@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add appstream-glib-dev-0.3.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del appstream-glib-dev"]
+]
+depends: [
+  "appstream-glib" {= "0.3.4-r0"}
+  "appstream-glib-builder" {= "0.3.4-r0"}
+  "gdk-pixbuf-dev"
+  "glib-dev"
+  "libarchive-dev"
+  "pkgconfig"
+]
+extra-source "appstream-glib-dev-0.3.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/appstream-glib-dev-0.3.4-r0.apk"
+}

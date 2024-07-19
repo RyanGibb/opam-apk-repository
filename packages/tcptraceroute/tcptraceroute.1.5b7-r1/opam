@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add tcptraceroute-1.5b7-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del tcptraceroute"]
+]
+depends: [
+  "libnet"
+  "libpcap"
+  "musl"
+]
+extra-source "tcptraceroute-1.5b7-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/tcptraceroute-1.5b7-r1.apk"
+}

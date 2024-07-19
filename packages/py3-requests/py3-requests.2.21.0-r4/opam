@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py3-requests-2.21.0-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py3-requests"]
+]
+depends: [
+  "py3-certifi"
+  "py3-chardet"
+  "py3-idna"
+  "py3-urllib3"
+  "python3"
+]
+extra-source "py3-requests-2.21.0-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/py3-requests-2.21.0-r4.apk"
+}

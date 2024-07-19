@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del py3-clang17"]
 ]
 depends: [
-  "clang17-libs"
+  "clang17-libs" {= "17.0.6-r1"}
   "python3"
+  "python3" {>= "3.12"}
 ]
-
 extra-source "py3-clang17-17.0.6-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/py3-clang17-17.0.6-r1.apk"
 }

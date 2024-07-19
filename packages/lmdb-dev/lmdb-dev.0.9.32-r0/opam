@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del lmdb-dev"]
 ]
 depends: [
-  "lmdb"
+  "lmdb" {= "0.9.32-r0"}
   "pkgconf"
 ]
-
 extra-source "lmdb-dev-0.9.32-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lmdb-dev-0.9.32-r0.apk"
 }

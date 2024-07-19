@@ -13,7 +13,6 @@ depends: [
   "zlib"
   "zstd-libs"
 ]
-
 extra-source "lld-libs-17.0.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lld-libs-17.0.6-r0.apk"
 }

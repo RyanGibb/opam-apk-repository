@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add farstream0.1-0.1.2-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del farstream0.1"]
+]
+depends: [
+  "glib"
+  "gst-plugins-base0.10"
+  "gstreamer0.10"
+  "libnice"
+  "musl"
+]
+extra-source "farstream0.1-0.1.2-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/farstream0.1-0.1.2-r2.apk"
+}

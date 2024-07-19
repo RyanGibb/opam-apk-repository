@@ -12,15 +12,16 @@ depends: [
   "libcap2"
   "libldap"
   "libwbclient"
+  "libwbclient" {= "4.19.6-r0"}
   "musl"
   "popt"
   "samba-util-libs"
+  "samba-util-libs" {= "4.19.6-r0"}
   "talloc"
   "tdb-libs"
   "tevent"
   "zlib"
 ]
-
 extra-source "samba-libs-4.19.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/samba-libs-4.19.6-r0.apk"
 }

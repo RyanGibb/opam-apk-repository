@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add jwm-2.3.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del jwm"]
+]
+depends: [
+  "cairo"
+  "glib"
+  "libintl"
+  "libjpeg-turbo"
+  "libpng"
+  "librsvg"
+  "libx11"
+  "libxext"
+  "libxft"
+  "libxinerama"
+  "libxmu"
+  "libxpm"
+  "libxrender"
+  "musl"
+]
+extra-source "jwm-2.3.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/jwm-2.3.4-r0.apk"
+}

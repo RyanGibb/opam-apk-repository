@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mate-applets-1.10.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mate-applets"]
+]
+depends: [
+  "atk"
+  "cairo"
+  "gdk-pixbuf"
+  "glib"
+  "gtk+2.0"
+  "libintl"
+  "libx11"
+  "mate-desktop"
+  "mate-icon-theme"
+  "mate-panel"
+  "musl"
+  "pango"
+]
+extra-source "mate-applets-1.10.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/mate-applets-1.10.0-r0.apk"
+}

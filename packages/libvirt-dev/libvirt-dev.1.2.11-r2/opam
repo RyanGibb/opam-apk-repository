@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libvirt-dev-1.2.11-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libvirt-dev"]
+]
+depends: [
+  "libtirpc-dev"
+  "libvirt" {= "1.2.11-r2"}
+  "libvirt-client" {= "1.2.11-r2"}
+  "libvirt-common-drivers" {= "1.2.11-r2"}
+  "libvirt-daemon" {= "1.2.11-r2"}
+  "libvirt-doc" {= "1.2.11-r2"}
+  "libvirt-lang" {= "1.2.11-r2"}
+  "libvirt-lxc" {= "1.2.11-r2"}
+  "libvirt-qemu" {= "1.2.11-r2"}
+  "libvirt-uml" {= "1.2.11-r2"}
+  "libvirt-vbox" {= "1.2.11-r2"}
+  "libvirt-xen" {= "1.2.11-r2"}
+  "pkgconfig"
+]
+extra-source "libvirt-dev-1.2.11-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/libvirt-dev-1.2.11-r2.apk"
+}

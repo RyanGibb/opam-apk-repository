@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add spice-glib-0.33-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del spice-glib"]
+]
+depends: [
+  "celt051"
+  "glib"
+  "gst-plugins-base1"
+  "gstreamer1"
+  "libintl"
+  "libjpeg-turbo"
+  "libressl2.4-libcrypto"
+  "libressl2.4-libssl"
+  "libsasl"
+  "libsoup"
+  "libusb"
+  "lz4"
+  "musl"
+  "phodav"
+  "pixman"
+  "usbredir"
+  "zlib"
+]
+extra-source "spice-glib-0.33-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/spice-glib-0.33-r0.apk"
+}

@@ -1,0 +1,37 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add thunar-1.6.11-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del thunar"]
+]
+depends: [
+  "atk"
+  "cairo"
+  "dbus-glib"
+  "dbus-libs"
+  "desktop-file-utils"
+  "exo"
+  "gdk-pixbuf"
+  "glib"
+  "gtk+2.0"
+  "hicolor-icon-theme"
+  "libexif"
+  "libgudev"
+  "libice"
+  "libintl"
+  "libnotify"
+  "libsm"
+  "libx11"
+  "libxfce4ui"
+  "libxfce4util"
+  "musl"
+  "pango"
+  "pcre"
+  "shared-mime-info"
+  "xfce4-panel"
+  "xfconf"
+]
+extra-source "thunar-1.6.11-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/thunar-1.6.11-r0.apk"
+}

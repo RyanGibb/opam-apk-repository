@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add qt5-qttools-dev-5.4.1-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del qt5-qttools-dev"]
+]
+depends: [
+  "libstdc++"
+  "musl"
+  "pkgconfig"
+  "qt5-assistant" {= "5.4.1-r3"}
+  "qt5-designer-plugin-webkit" {= "5.4.1-r3"}
+  "qt5-qdbusviewer" {= "5.4.1-r3"}
+  "qt5-qtbase"
+  "qt5-qtbase-dev"
+  "qt5-qtbase-x11"
+  "qt5-qttools"
+  "qt5-qttools" {= "5.4.1-r3"}
+]
+extra-source "qt5-qttools-dev-5.4.1-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/qt5-qttools-dev-5.4.1-r3.apk"
+}

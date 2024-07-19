@@ -6,11 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del gummiboot"]
 ]
 depends: [
-  "gummiboot-efistub"
+  "gummiboot-efistub" {= "48.1-r8"}
   "libblkid"
   "musl"
 ]
-
 extra-source "gummiboot-48.1-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/gummiboot-48.1-r8.apk"
 }

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-http-daemon-6.12-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-http-daemon"]
+]
+depends: [
+  "perl"
+  "perl-http-date"
+  "perl-http-message"
+]
+extra-source "perl-http-daemon-6.12-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/perl-http-daemon-6.12-r1.apk"
+}

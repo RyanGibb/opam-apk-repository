@@ -16,7 +16,6 @@ depends: [
   "perl-test-fatal"
   "perl-try-tiny"
 ]
-
 extra-source "perl-specio-0.48-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-specio-0.48-r1.apk"
 }

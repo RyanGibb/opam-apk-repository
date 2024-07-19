@@ -12,7 +12,6 @@ depends: [
   "sbsigntool"
   ("busybox-binsh" | "dash-binsh" | "yash-binsh")
 ]
-
 extra-source "secureboot-hook-0.2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/secureboot-hook-0.2-r2.apk"
 }

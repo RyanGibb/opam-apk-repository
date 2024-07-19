@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add openldap-passwd-sha2-2.6.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del openldap-passwd-sha2"]
+]
+depends: [
+  "libldap"
+  "musl"
+  "openldap"
+]
+extra-source "openldap-passwd-sha2-2.6.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/openldap-passwd-sha2-2.6.2-r0.apk"
+}

@@ -7,10 +7,9 @@ remove: [
 ]
 depends: [
   "gdbm"
-  "libssl3"
+  "libssl3" {>= "3.3.0"}
   "musl"
 ]
-
 extra-source "python3-gdbm-3.12.3-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/python3-gdbm-3.12.3-r1.apk"
 }

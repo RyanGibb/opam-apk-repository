@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ruby-dbg-2.7.8-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ruby-dbg"]
+]
+depends: [
+  "ca-certificates"
+]
+extra-source "ruby-dbg-2.7.8-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/ruby-dbg-2.7.8-r0.apk"
+}

@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add cups-1.7.4-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del cups"]
+]
+depends: [
+  "avahi-libs"
+  "busybox"
+  "cups-client"
+  "cups-libs"
+  "dbus"
+  "dbus-libs"
+  "libcrypto1.0"
+  "libgcc"
+  "libpaper"
+  "libssl1.0"
+  "libstdc++"
+  "musl"
+  "openssl"
+  "poppler-utils"
+]
+extra-source "cups-1.7.4-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/cups-1.7.4-r2.apk"
+}

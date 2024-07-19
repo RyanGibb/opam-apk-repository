@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del jack-doc"]
 ]
-
-
 extra-source "jack-doc-1.9.22-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/jack-doc-1.9.22-r4.apk"
 }

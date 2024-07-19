@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-netaddr-ip-doc"]
 ]
-
-
 extra-source "perl-netaddr-ip-doc-4.079-r12.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-netaddr-ip-doc-4.079-r12.apk"
 }

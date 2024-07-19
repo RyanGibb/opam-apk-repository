@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libjpeg-turbo-doc-2.1.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libjpeg-turbo-doc"]
+]
+extra-source "libjpeg-turbo-doc-2.1.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/libjpeg-turbo-doc-2.1.0-r0.apk"
+}

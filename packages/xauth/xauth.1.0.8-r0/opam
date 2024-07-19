@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xauth-1.0.8-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xauth"]
+]
+depends: [
+  "libx11"
+  "libxau"
+  "libxext"
+  "libxmu"
+  "musl"
+]
+extra-source "xauth-1.0.8-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/xauth-1.0.8-r0.apk"
+}

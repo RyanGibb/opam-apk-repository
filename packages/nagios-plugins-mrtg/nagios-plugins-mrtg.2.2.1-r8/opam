@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add nagios-plugins-mrtg-2.2.1-r8.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del nagios-plugins-mrtg"]
+]
+depends: [
+  "musl"
+  "nagios-plugins"
+]
+extra-source "nagios-plugins-mrtg-2.2.1-r8.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/nagios-plugins-mrtg-2.2.1-r8.apk"
+}

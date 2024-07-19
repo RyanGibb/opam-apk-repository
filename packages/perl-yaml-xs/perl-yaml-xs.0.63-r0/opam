@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-yaml-xs-0.63-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-yaml-xs"]
+]
+depends: [
+  "musl"
+]
+extra-source "perl-yaml-xs-0.63-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/perl-yaml-xs-0.63-r0.apk"
+}

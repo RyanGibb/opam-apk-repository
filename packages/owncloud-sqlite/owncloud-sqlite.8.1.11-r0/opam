@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add owncloud-sqlite-8.1.11-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del owncloud-sqlite"]
+]
+depends: [
+  "owncloud"
+  "php-pdo_sqlite"
+  "php-sqlite3"
+]
+extra-source "owncloud-sqlite-8.1.11-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/owncloud-sqlite-8.1.11-r0.apk"
+}

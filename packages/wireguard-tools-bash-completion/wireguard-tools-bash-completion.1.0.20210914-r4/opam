@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del wireguard-tools-bash-completion"]
 ]
-
-
 extra-source "wireguard-tools-bash-completion-1.0.20210914-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/wireguard-tools-bash-completion-1.0.20210914-r4.apk"
 }

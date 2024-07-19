@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libobjc-6.3.0-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libobjc"]
+]
+depends: [
+  "libgcc"
+  "musl"
+]
+extra-source "libobjc-6.3.0-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/libobjc-6.3.0-r4.apk"
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mbedtls-dev-1.3.10-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mbedtls-dev"]
+]
+depends: [
+  "mbedtls" {= "1.3.10-r0"}
+  "mbedtls-utils" {= "1.3.10-r0"}
+]
+extra-source "mbedtls-dev-1.3.10-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/mbedtls-dev-1.3.10-r0.apk"
+}

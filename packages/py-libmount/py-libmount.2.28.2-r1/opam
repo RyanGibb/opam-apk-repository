@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py-libmount-2.28.2-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py-libmount"]
+]
+depends: [
+  "findmnt"
+  "libmount"
+  "musl"
+  "python2"
+]
+extra-source "py-libmount-2.28.2-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/py-libmount-2.28.2-r1.apk"
+}

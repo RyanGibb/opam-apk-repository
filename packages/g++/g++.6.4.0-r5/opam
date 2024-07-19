@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add g++-6.4.0-r5.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del g++"]
+]
+depends: [
+  "gcc" {= "6.4.0-r5"}
+  "gmp"
+  "isl"
+  "libc-dev"
+  "libstdc++" {= "6.4.0-r5"}
+  "mpc1"
+  "mpfr3"
+  "musl"
+  "zlib"
+]
+extra-source "g++-6.4.0-r5.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/g++-6.4.0-r5.apk"
+}

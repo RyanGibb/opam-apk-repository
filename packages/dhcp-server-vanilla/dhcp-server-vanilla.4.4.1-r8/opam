@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add dhcp-server-vanilla-4.4.1-r8.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del dhcp-server-vanilla"]
+]
+depends: [
+  "dhcp"
+  "libgcc"
+  "musl"
+]
+conflicts: [
+  "dhcp-server-ldap"
+]
+extra-source "dhcp-server-vanilla-4.4.1-r8.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/dhcp-server-vanilla-4.4.1-r8.apk"
+}

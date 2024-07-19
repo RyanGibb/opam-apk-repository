@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ir_keytable-1.10.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ir_keytable"]
+]
+depends: [
+  "libintl"
+  "musl"
+]
+extra-source "ir_keytable-1.10.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/ir_keytable-1.10.0-r0.apk"
+}

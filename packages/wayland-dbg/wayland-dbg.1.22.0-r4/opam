@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del wayland-dbg"]
 ]
-
-
 extra-source "wayland-dbg-1.22.0-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/wayland-dbg-1.22.0-r4.apk"
 }

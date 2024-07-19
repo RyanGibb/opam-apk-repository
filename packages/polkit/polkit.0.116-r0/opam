@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add polkit-0.116-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del polkit"]
+]
+depends: [
+  "busybox"
+  "expat"
+  "glib"
+  "libgcc"
+  "libintl"
+  "libstdc++"
+  "linux-pam"
+  "mozjs60"
+  "musl"
+]
+extra-source "polkit-0.116-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/polkit-0.116-r0.apk"
+}

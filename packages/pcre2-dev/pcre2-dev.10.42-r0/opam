@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add pcre2-dev-10.42-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del pcre2-dev"]
+]
+depends: [
+  "libedit-dev"
+  "libpcre2-16" {= "10.42-r0"}
+  "libpcre2-32" {= "10.42-r0"}
+  "pcre2" {= "10.42-r0"}
+  "pkgconf"
+  "zlib-dev"
+]
+extra-source "pcre2-dev-10.42-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/pcre2-dev-10.42-r0.apk"
+}

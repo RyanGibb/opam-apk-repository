@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add cairomm-1.12.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del cairomm"]
+]
+depends: [
+  "cairo"
+  "libgcc"
+  "libsigc++"
+  "libstdc++"
+  "musl"
+]
+extra-source "cairomm-1.12.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/cairomm-1.12.2-r0.apk"
+}

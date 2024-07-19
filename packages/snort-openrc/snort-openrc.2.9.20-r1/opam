@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add snort-openrc-2.9.20-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del snort-openrc"]
+]
+extra-source "snort-openrc-2.9.20-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/snort-openrc-2.9.20-r1.apk"
+}

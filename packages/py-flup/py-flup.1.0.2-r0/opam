@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py-flup-1.0.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py-flup"]
+]
+depends: [
+  "python2"
+]
+extra-source "py-flup-1.0.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/py-flup-1.0.2-r0.apk"
+}

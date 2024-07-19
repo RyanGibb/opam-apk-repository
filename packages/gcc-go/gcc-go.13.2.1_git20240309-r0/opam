@@ -6,9 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del gcc-go"]
 ]
 depends: [
-  "gcc"
+  "gcc" {= "13.2.1_git20240309-r0"}
   "gmp"
   "libgo"
+  "libgo" {= "13.2.1_git20240309-r0"}
   "mpc1"
   "mpfr4"
   "musl"

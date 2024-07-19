@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mesa-dev-18.1.7-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mesa-dev"]
+]
+depends: [
+  "libdrm-dev"
+  "libx11-dev"
+  "libxcb-dev"
+  "libxdamage-dev"
+  "libxext-dev"
+  "libxfixes-dev"
+  "libxshmfence-dev"
+  "libxxf86vm-dev"
+  "mesa-egl" {= "18.1.7-r2"}
+  "mesa-gbm" {= "18.1.7-r2"}
+  "mesa-gl" {= "18.1.7-r2"}
+  "mesa-glapi" {= "18.1.7-r2"}
+  "mesa-gles" {= "18.1.7-r2"}
+  "mesa-osmesa" {= "18.1.7-r2"}
+  "mesa-xatracker" {= "18.1.7-r2"}
+  "pkgconf"
+]
+extra-source "mesa-dev-18.1.7-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/mesa-dev-18.1.7-r2.apk"
+}

@@ -7,9 +7,8 @@ remove: [
 ]
 depends: [
   "flex"
-  "flex-libs"
+  "flex-libs" {= "2.6.4-r6"}
 ]
-
 extra-source "flex-dev-2.6.4-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/flex-dev-2.6.4-r6.apk"
 }

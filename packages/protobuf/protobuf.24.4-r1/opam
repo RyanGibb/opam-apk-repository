@@ -6,12 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del protobuf"]
 ]
 depends: [
-  "libprotobuf"
-  "libprotobuf-lite"
-  "libprotoc"
-  "protoc"
+  "libprotobuf" {= "24.4-r1"}
+  "libprotobuf-lite" {= "24.4-r1"}
+  "libprotoc" {= "24.4-r1"}
+  "protoc" {= "24.4-r1"}
 ]
-
 extra-source "protobuf-24.4-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/protobuf-24.4-r1.apk"
 }

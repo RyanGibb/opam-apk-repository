@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del patch-doc"]
 ]
-
-
 extra-source "patch-doc-2.7.6-r10.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/patch-doc-2.7.6-r10.apk"
 }

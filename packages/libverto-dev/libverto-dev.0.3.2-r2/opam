@@ -6,13 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del libverto-dev"]
 ]
 depends: [
-  "libverto"
-  "libverto-glib"
-  "libverto-libev"
-  "libverto-libevent"
+  "libverto" {= "0.3.2-r2"}
+  "libverto-glib" {= "0.3.2-r2"}
+  "libverto-libev" {= "0.3.2-r2"}
+  "libverto-libevent" {= "0.3.2-r2"}
   "pkgconf"
 ]
-
 extra-source "libverto-dev-0.3.2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libverto-dev-0.3.2-r2.apk"
 }

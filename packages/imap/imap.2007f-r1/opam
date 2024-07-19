@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add imap-2007f-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del imap"]
+]
+depends: [
+  "libcrypto1.0"
+  "libssl1.0"
+  "musl"
+]
+extra-source "imap-2007f-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/imap-2007f-r1.apk"
+}

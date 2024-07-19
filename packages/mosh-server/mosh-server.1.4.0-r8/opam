@@ -16,7 +16,6 @@ depends: [
   "musl"
   "zlib"
 ]
-
 extra-source "mosh-server-1.4.0-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/mosh-server-1.4.0-r8.apk"
 }

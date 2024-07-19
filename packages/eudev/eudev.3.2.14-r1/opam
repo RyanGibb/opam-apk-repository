@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add eudev-3.2.14-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del eudev"]
+]
+depends: [
+  "eudev-libs" {= "3.2.14-r1"}
+  "kmod-libs"
+  "libblkid"
+  "musl"
+  "udev-init-scripts"
+  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
+]
+extra-source "eudev-3.2.14-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/eudev-3.2.14-r1.apk"
+}

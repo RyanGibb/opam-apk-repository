@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xineramaproto-1.2.1-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xineramaproto"]
+]
+depends: [
+  "pkgconf"
+]
+extra-source "xineramaproto-1.2.1-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/xineramaproto-1.2.1-r3.apk"
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add scstadmin-openrc-2.2.0-r5.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del scstadmin-openrc"]
+]
+extra-source "scstadmin-openrc-2.2.0-r5.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/scstadmin-openrc-2.2.0-r5.apk"
+}

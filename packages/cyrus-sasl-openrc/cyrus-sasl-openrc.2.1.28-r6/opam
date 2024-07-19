@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del cyrus-sasl-openrc"]
 ]
-
-
 extra-source "cyrus-sasl-openrc-2.1.28-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/cyrus-sasl-openrc-2.1.28-r6.apk"
 }

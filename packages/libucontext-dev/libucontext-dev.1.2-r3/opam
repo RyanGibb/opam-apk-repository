@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del libucontext-dev"]
 ]
 depends: [
-  "libucontext"
+  "libucontext" {= "1.2-r3"}
   "pkgconf"
 ]
-
 extra-source "libucontext-dev-1.2-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libucontext-dev-1.2-r3.apk"
 }

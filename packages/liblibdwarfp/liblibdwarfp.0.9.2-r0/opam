@@ -9,7 +9,6 @@ depends: [
   "libdwarf"
   "musl"
 ]
-
 extra-source "liblibdwarfp-0.9.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/liblibdwarfp-0.9.2-r0.apk"
 }

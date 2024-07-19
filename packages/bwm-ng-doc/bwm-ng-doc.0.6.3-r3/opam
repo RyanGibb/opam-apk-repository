@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del bwm-ng-doc"]
 ]
-
-
 extra-source "bwm-ng-doc-0.6.3-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/bwm-ng-doc-0.6.3-r3.apk"
 }

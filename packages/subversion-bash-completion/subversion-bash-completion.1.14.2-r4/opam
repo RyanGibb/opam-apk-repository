@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add subversion-bash-completion-1.14.2-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del subversion-bash-completion"]
+]
+extra-source "subversion-bash-completion-1.14.2-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/subversion-bash-completion-1.14.2-r4.apk"
+}

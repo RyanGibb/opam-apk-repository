@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libmaxminddb-libs-1.7.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libmaxminddb-libs"]
+]
+depends: [
+  "musl"
+]
+extra-source "libmaxminddb-libs-1.7.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/libmaxminddb-libs-1.7.1-r1.apk"
+}

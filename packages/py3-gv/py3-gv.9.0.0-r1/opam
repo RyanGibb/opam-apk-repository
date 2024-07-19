@@ -11,8 +11,8 @@ depends: [
   "libstdc++"
   "musl"
   "python3"
+  "python3" {>= "3.12"}
 ]
-
 extra-source "py3-gv-9.0.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/py3-gv-9.0.0-r1.apk"
 }

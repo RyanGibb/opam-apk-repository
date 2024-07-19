@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add glib-dev-2.52.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del glib-dev"]
+]
+depends: [
+  "bzip2-dev"
+  "gettext-dev"
+  "glib"
+  "glib" {= "2.52.1-r0"}
+  "libffi-dev"
+  "libintl"
+  "musl"
+  "pcre-dev"
+  "perl"
+  "pkgconf"
+  "python2"
+  "util-linux-dev"
+  "zlib-dev"
+]
+extra-source "glib-dev-2.52.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/glib-dev-2.52.1-r0.apk"
+}

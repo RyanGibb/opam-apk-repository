@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add zabbix-mysql-2.4.7-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del zabbix-mysql"]
+]
+depends: [
+  "curl"
+  "libxml2"
+  "musl"
+  "mysql-libs"
+  "net-snmp-libs"
+  "openipmi-libs"
+  "unixodbc"
+  "zabbix"
+]
+conflicts: [
+  "zabbix-pgsql"
+  "zabbix-sqlite"
+]
+extra-source "zabbix-mysql-2.4.7-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/zabbix-mysql-2.4.7-r0.apk"
+}

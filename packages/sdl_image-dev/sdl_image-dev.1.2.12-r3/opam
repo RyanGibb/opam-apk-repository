@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add sdl_image-dev-1.2.12-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del sdl_image-dev"]
+]
+depends: [
+  "pkgconf"
+  "sdl-dev"
+  "sdl_image" {= "1.2.12-r3"}
+]
+extra-source "sdl_image-dev-1.2.12-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/sdl_image-dev-1.2.12-r3.apk"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add open-iscsi-2.1.6-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del open-iscsi"]
+]
+depends: [
+  "kmod-libs"
+  "libcrypto1.1"
+  "libmount"
+  "musl"
+  "open-iscsi-libs"
+  "open-isns-lib"
+]
+extra-source "open-iscsi-2.1.6-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/open-iscsi-2.1.6-r0.apk"
+}

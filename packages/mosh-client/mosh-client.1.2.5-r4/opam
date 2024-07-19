@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mosh-client-1.2.5-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mosh-client"]
+]
+depends: [
+  "libcrypto1.0"
+  "libgcc"
+  "libstdc++"
+  "musl"
+  "ncurses-libs"
+  "openssh-client"
+  "perl-io-tty"
+  "protobuf"
+  "zlib"
+]
+extra-source "mosh-client-1.2.5-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/mosh-client-1.2.5-r4.apk"
+}

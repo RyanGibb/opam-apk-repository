@@ -11,7 +11,6 @@ depends: [
   "musl"
   "nettle"
 ]
-
 extra-source "rdfind-1.6.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/rdfind-1.6.0-r1.apk"
 }

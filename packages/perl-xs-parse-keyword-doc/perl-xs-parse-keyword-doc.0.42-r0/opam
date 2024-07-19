@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-xs-parse-keyword-doc"]
 ]
-
-
 extra-source "perl-xs-parse-keyword-doc-0.42-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-xs-parse-keyword-doc-0.42-r0.apk"
 }

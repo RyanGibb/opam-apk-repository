@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add hylafaxplus-dbg-7.0.5-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del hylafaxplus-dbg"]
+]
+depends: [
+  "bash"
+  "findutils"
+  "ghostscript"
+  "tiff-tools"
+]
+conflicts: [
+  "hylafax"
+]
+extra-source "hylafaxplus-dbg-7.0.5-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/hylafaxplus-dbg-7.0.5-r0.apk"
+}

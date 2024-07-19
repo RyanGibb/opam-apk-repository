@@ -9,7 +9,6 @@ depends: [
   "libtasn1"
   "musl"
 ]
-
 extra-source "libtasn1-progs-4.19.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libtasn1-progs-4.19.0-r2.apk"
 }

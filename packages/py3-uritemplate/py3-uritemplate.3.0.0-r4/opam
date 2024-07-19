@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py3-uritemplate-3.0.0-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py3-uritemplate"]
+]
+depends: [
+  "python3"
+]
+extra-source "py3-uritemplate-3.0.0-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/py3-uritemplate-3.0.0-r4.apk"
+}

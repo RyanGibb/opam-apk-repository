@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add openrc-0.39.2-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del openrc"]
+]
+depends: [
+  "busybox"
+  "musl"
+]
+extra-source "openrc-0.39.2-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/openrc-0.39.2-r3.apk"
+}

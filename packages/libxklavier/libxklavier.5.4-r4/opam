@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libxklavier-5.4-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libxklavier"]
+]
+depends: [
+  "glib"
+  "iso-codes"
+  "libintl"
+  "libx11"
+  "libxi"
+  "libxkbfile"
+  "libxml2"
+  "musl"
+  "xkeyboard-config"
+]
+extra-source "libxklavier-5.4-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libxklavier-5.4-r4.apk"
+}

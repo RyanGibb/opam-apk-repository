@@ -7,9 +7,8 @@ remove: [
 ]
 depends: [
   "pkgconf"
-  "spandsp"
+  "spandsp" {= "0.0.6-r5"}
 ]
-
 extra-source "spandsp-dev-0.0.6-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/spandsp-dev-0.0.6-r5.apk"
 }

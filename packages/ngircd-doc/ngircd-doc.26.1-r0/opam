@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ngircd-doc-26.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ngircd-doc"]
+]
+extra-source "ngircd-doc-26.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/ngircd-doc-26.1-r0.apk"
+}

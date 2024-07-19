@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add wavpack-dev-4.70.0-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del wavpack-dev"]
+]
+depends: [
+  "pkgconfig"
+  "wavpack" {= "4.70.0-r2"}
+  "wavpack-doc" {= "4.70.0-r2"}
+]
+extra-source "wavpack-dev-4.70.0-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/wavpack-dev-4.70.0-r2.apk"
+}

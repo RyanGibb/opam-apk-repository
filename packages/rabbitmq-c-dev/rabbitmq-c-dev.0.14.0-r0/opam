@@ -8,9 +8,8 @@ remove: [
 depends: [
   "pkgconf"
   "popt-dev"
-  "rabbitmq-c"
+  "rabbitmq-c" {= "0.14.0-r0"}
 ]
-
 extra-source "rabbitmq-c-dev-0.14.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/rabbitmq-c-dev-0.14.0-r0.apk"
 }

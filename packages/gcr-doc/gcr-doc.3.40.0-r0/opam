@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gcr-doc-3.40.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gcr-doc"]
+]
+extra-source "gcr-doc-3.40.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/gcr-doc-3.40.0-r0.apk"
+}

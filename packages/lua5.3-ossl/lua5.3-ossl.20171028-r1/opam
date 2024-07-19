@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lua5.3-ossl-20171028-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lua5.3-ossl"]
+]
+depends: [
+  "libressl2.6-libcrypto"
+  "libressl2.6-libssl"
+  "lua5.3"
+  "musl"
+]
+extra-source "lua5.3-ossl-20171028-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/lua5.3-ossl-20171028-r1.apk"
+}

@@ -24,7 +24,6 @@ depends: [
   "zlib"
   ("busybox-binsh" | "dash-binsh" | "yash-binsh")
 ]
-
 extra-source "asterisk-20.8.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/asterisk-20.8.1-r0.apk"
 }

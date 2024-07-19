@@ -1,0 +1,97 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add linux-firmware-20200519-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del linux-firmware"]
+]
+depends: [
+  "linux-firmware-3com" {= "20200519-r1"}
+  "linux-firmware-acenic" {= "20200519-r1"}
+  "linux-firmware-adaptec" {= "20200519-r1"}
+  "linux-firmware-advansys" {= "20200519-r1"}
+  "linux-firmware-amd" {= "20200519-r1"}
+  "linux-firmware-amd-ucode" {= "20200519-r1"}
+  "linux-firmware-amdgpu" {= "20200519-r1"}
+  "linux-firmware-ar3k" {= "20200519-r1"}
+  "linux-firmware-ath10k" {= "20200519-r1"}
+  "linux-firmware-ath6k" {= "20200519-r1"}
+  "linux-firmware-ath9k_htc" {= "20200519-r1"}
+  "linux-firmware-atmel" {= "20200519-r1"}
+  "linux-firmware-atusb" {= "20200519-r1"}
+  "linux-firmware-av7110" {= "20200519-r1"}
+  "linux-firmware-bnx2" {= "20200519-r1"}
+  "linux-firmware-bnx2x" {= "20200519-r1"}
+  "linux-firmware-brcm" {= "20200519-r1"}
+  "linux-firmware-cadence" {= "20200519-r1"}
+  "linux-firmware-cavium" {= "20200519-r1"}
+  "linux-firmware-cis" {= "20200519-r1"}
+  "linux-firmware-cpia2" {= "20200519-r1"}
+  "linux-firmware-cxgb3" {= "20200519-r1"}
+  "linux-firmware-cxgb4" {= "20200519-r1"}
+  "linux-firmware-dabusb" {= "20200519-r1"}
+  "linux-firmware-dpaa2" {= "20200519-r1"}
+  "linux-firmware-dsp56k" {= "20200519-r1"}
+  "linux-firmware-e100" {= "20200519-r1"}
+  "linux-firmware-edgeport" {= "20200519-r1"}
+  "linux-firmware-emi26" {= "20200519-r1"}
+  "linux-firmware-emi62" {= "20200519-r1"}
+  "linux-firmware-ene-ub6250" {= "20200519-r1"}
+  "linux-firmware-ess" {= "20200519-r1"}
+  "linux-firmware-go7007" {= "20200519-r1"}
+  "linux-firmware-i915" {= "20200519-r1"}
+  "linux-firmware-imx" {= "20200519-r1"}
+  "linux-firmware-inside-secure" {= "20200519-r1"}
+  "linux-firmware-intel" {= "20200519-r1"}
+  "linux-firmware-isci" {= "20200519-r1"}
+  "linux-firmware-kaweth" {= "20200519-r1"}
+  "linux-firmware-keyspan" {= "20200519-r1"}
+  "linux-firmware-keyspan_pda" {= "20200519-r1"}
+  "linux-firmware-korg" {= "20200519-r1"}
+  "linux-firmware-libertas" {= "20200519-r1"}
+  "linux-firmware-liquidio" {= "20200519-r1"}
+  "linux-firmware-matrox" {= "20200519-r1"}
+  "linux-firmware-mediatek" {= "20200519-r1"}
+  "linux-firmware-mellanox" {= "20200519-r1"}
+  "linux-firmware-meson" {= "20200519-r1"}
+  "linux-firmware-microchip" {= "20200519-r1"}
+  "linux-firmware-moxa" {= "20200519-r1"}
+  "linux-firmware-mrvl" {= "20200519-r1"}
+  "linux-firmware-mwl8k" {= "20200519-r1"}
+  "linux-firmware-mwlwifi" {= "20200519-r1"}
+  "linux-firmware-myricom" {= "20200519-r1"}
+  "linux-firmware-netronome" {= "20200519-r1"}
+  "linux-firmware-nvidia" {= "20200519-r1"}
+  "linux-firmware-ositech" {= "20200519-r1"}
+  "linux-firmware-other" {= "20200519-r1"}
+  "linux-firmware-qca" {= "20200519-r1"}
+  "linux-firmware-qcom" {= "20200519-r1"}
+  "linux-firmware-qed" {= "20200519-r1"}
+  "linux-firmware-qlogic" {= "20200519-r1"}
+  "linux-firmware-r128" {= "20200519-r1"}
+  "linux-firmware-radeon" {= "20200519-r1"}
+  "linux-firmware-rockchip" {= "20200519-r1"}
+  "linux-firmware-rsi" {= "20200519-r1"}
+  "linux-firmware-rtl8192e" {= "20200519-r1"}
+  "linux-firmware-rtl_bt" {= "20200519-r1"}
+  "linux-firmware-rtl_nic" {= "20200519-r1"}
+  "linux-firmware-rtlwifi" {= "20200519-r1"}
+  "linux-firmware-rtw88" {= "20200519-r1"}
+  "linux-firmware-sb16" {= "20200519-r1"}
+  "linux-firmware-slicoss" {= "20200519-r1"}
+  "linux-firmware-sun" {= "20200519-r1"}
+  "linux-firmware-sxg" {= "20200519-r1"}
+  "linux-firmware-tehuti" {= "20200519-r1"}
+  "linux-firmware-ti-connectivity" {= "20200519-r1"}
+  "linux-firmware-ti-keystone" {= "20200519-r1"}
+  "linux-firmware-tigon" {= "20200519-r1"}
+  "linux-firmware-ttusb-budget" {= "20200519-r1"}
+  "linux-firmware-ueagle-atm" {= "20200519-r1"}
+  "linux-firmware-vicam" {= "20200519-r1"}
+  "linux-firmware-vxge" {= "20200519-r1"}
+  "linux-firmware-yam" {= "20200519-r1"}
+  "linux-firmware-yamaha" {= "20200519-r1"}
+]
+extra-source "linux-firmware-20200519-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/linux-firmware-20200519-r1.apk"
+}

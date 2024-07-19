@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mesa-xatracker-11.2.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mesa-xatracker"]
+]
+depends: [
+  "expat"
+  "libdrm"
+  "libgcc"
+  "libstdc++"
+  "llvm-libs"
+  "musl"
+]
+extra-source "mesa-xatracker-11.2.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/mesa-xatracker-11.2.2-r0.apk"
+}

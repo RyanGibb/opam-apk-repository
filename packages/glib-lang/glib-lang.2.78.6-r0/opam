@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add glib-lang-2.78.6-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del glib-lang"]
+]
+extra-source "glib-lang-2.78.6-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/glib-lang-2.78.6-r0.apk"
+}

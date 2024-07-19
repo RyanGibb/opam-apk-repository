@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del dpkg-doc"]
 ]
-
-
 extra-source "dpkg-doc-1.22.6-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/dpkg-doc-1.22.6-r1.apk"
 }

@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del bonding"]
 ]
-
-
 extra-source "bonding-2.6-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/bonding-2.6-r5.apk"
 }

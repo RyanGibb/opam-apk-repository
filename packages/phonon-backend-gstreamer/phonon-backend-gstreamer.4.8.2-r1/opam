@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add phonon-backend-gstreamer-4.8.2-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del phonon-backend-gstreamer"]
+]
+depends: [
+  "glib"
+  "gst-plugins-base1"
+  "gstreamer1"
+  "libstdc++"
+  "mesa-gl"
+  "musl"
+  "phonon"
+  "qt"
+  "qt-x11"
+]
+extra-source "phonon-backend-gstreamer-4.8.2-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/phonon-backend-gstreamer-4.8.2-r1.apk"
+}

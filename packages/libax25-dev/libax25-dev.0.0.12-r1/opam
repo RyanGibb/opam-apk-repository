@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libax25-dev-0.0.12-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libax25-dev"]
+]
+depends: [
+  "libax25" {= "0.0.12-r1"}
+]
+extra-source "libax25-dev-0.0.12-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/libax25-dev-0.0.12-r1.apk"
+}

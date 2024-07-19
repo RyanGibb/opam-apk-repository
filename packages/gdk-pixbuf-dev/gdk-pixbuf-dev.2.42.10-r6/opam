@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gdk-pixbuf-dev-2.42.10-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gdk-pixbuf-dev"]
+]
+depends: [
+  "gdk-pixbuf" {= "2.42.10-r6"}
+  "glib-dev"
+  "libjpeg-turbo-dev"
+  "libpng-dev"
+  "pkgconf"
+  "shared-mime-info"
+  "tiff-dev"
+]
+extra-source "gdk-pixbuf-dev-2.42.10-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/gdk-pixbuf-dev-2.42.10-r6.apk"
+}

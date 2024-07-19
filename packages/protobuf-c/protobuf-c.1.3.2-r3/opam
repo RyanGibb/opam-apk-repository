@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add protobuf-c-1.3.2-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del protobuf-c"]
+]
+depends: [
+  "libgcc"
+  "libprotobuf"
+  "libprotoc"
+  "libstdc++"
+  "musl"
+]
+extra-source "protobuf-c-1.3.2-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/protobuf-c-1.3.2-r3.apk"
+}

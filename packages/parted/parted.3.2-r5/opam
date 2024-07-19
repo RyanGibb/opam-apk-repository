@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add parted-3.2-r5.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del parted"]
+]
+depends: [
+  "device-mapper-libs"
+  "libblkid"
+  "libuuid"
+  "musl"
+  "ncurses-libs"
+  "readline"
+]
+extra-source "parted-3.2-r5.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/parted-3.2-r5.apk"
+}

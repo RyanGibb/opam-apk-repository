@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add asterisk-sample-config-18.20.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del asterisk-sample-config"]
+]
+extra-source "asterisk-sample-config-18.20.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/asterisk-sample-config-18.20.2-r0.apk"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-http-message-6.36-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-http-message"]
+]
+depends: [
+  "perl"
+  "perl-encode-locale"
+  "perl-http-date"
+  "perl-io-html"
+  "perl-lwp-mediatypes"
+  "perl-uri"
+]
+extra-source "perl-http-message-6.36-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/perl-http-message-6.36-r0.apk"
+}

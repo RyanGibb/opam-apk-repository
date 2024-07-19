@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add vigra-dev-1.10.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del vigra-dev"]
+]
+depends: [
+  "boost-dev"
+  "libjpeg-turbo-dev"
+  "libpng-dev"
+  "tiff-dev"
+  "vigra" {= "1.10.0-r0"}
+  "vigra-doc" {= "1.10.0-r0"}
+]
+extra-source "vigra-dev-1.10.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/vigra-dev-1.10.0-r0.apk"
+}

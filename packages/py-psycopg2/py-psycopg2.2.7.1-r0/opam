@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py-psycopg2-2.7.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py-psycopg2"]
+]
+extra-source "py-psycopg2-2.7.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/py-psycopg2-2.7.1-r0.apk"
+}

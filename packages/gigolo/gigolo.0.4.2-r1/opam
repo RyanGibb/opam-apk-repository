@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gigolo-0.4.2-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gigolo"]
+]
+depends: [
+  "glib"
+  "gtk+2.0"
+  "libintl"
+  "libx11"
+  "musl"
+]
+extra-source "gigolo-0.4.2-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/gigolo-0.4.2-r1.apk"
+}

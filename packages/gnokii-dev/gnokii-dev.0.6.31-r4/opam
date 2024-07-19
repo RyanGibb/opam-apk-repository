@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gnokii-dev-0.6.31-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gnokii-dev"]
+]
+depends: [
+  "gnokii" {= "0.6.31-r4"}
+  "gnokii-doc" {= "0.6.31-r4"}
+  "gnokii-lang" {= "0.6.31-r4"}
+  "gnokii-libs" {= "0.6.31-r4"}
+  "gnokii-smsd" {= "0.6.31-r4"}
+  "gnokii-smsd-mysql" {= "0.6.31-r4"}
+  "gnokii-smsd-pgsql" {= "0.6.31-r4"}
+  "gnokii-smsd-sqlite" {= "0.6.31-r4"}
+  "pkgconfig"
+  "xgnokii" {= "0.6.31-r4"}
+]
+extra-source "gnokii-dev-0.6.31-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/gnokii-dev-0.6.31-r4.apk"
+}

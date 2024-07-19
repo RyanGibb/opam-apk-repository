@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add pcre-tools-8.44-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del pcre-tools"]
+]
+depends: [
+  "libpcre16"
+  "libpcre32"
+  "musl"
+  "pcre"
+]
+extra-source "pcre-tools-8.44-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/pcre-tools-8.44-r0.apk"
+}

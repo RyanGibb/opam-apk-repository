@@ -23,7 +23,6 @@ depends: [
   "zstd-libs"
   ("busybox-binsh" | "dash-binsh" | "yash-binsh")
 ]
-
 extra-source "mariadb-10.11.8-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/mariadb-10.11.8-r0.apk"
 }

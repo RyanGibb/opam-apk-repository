@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add pjproject-dev-2.4.5-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del pjproject-dev"]
+]
+depends: [
+  "alsa-lib-dev"
+  "gsm-dev"
+  "libsamplerate-dev"
+  "libsrtp-dev"
+  "openssl-dev"
+  "pjproject" {= "2.4.5-r0"}
+  "pkgconfig"
+  "portaudio-dev"
+  "speex-dev"
+  "speexdsp-dev"
+]
+extra-source "pjproject-dev-2.4.5-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/pjproject-dev-2.4.5-r0.apk"
+}

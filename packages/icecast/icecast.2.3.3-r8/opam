@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add icecast-2.3.3-r8.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del icecast"]
+]
+depends: [
+  "busybox"
+  "curl"
+  "libogg"
+  "libssl1.0"
+  "libtheora"
+  "libvorbis"
+  "libxml2"
+  "libxslt"
+  "musl"
+]
+extra-source "icecast-2.3.3-r8.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/icecast-2.3.3-r8.apk"
+}

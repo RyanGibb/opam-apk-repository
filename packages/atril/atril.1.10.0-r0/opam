@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add atril-1.10.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del atril"]
+]
+depends: [
+  "abiword-plugin-epub"
+  "atk"
+  "cairo"
+  "caja"
+  "fontconfig"
+  "freetype"
+  "gdk-pixbuf"
+  "glib"
+  "gtk+2.0"
+  "libgcc"
+  "libice"
+  "libintl"
+  "libsecret"
+  "libsm"
+  "libstdc++"
+  "libx11"
+  "libxml2"
+  "mate-desktop"
+  "mate-icon-theme"
+  "musl"
+  "pango"
+  "poppler-glib"
+  "tiff"
+  "zlib"
+]
+extra-source "atril-1.10.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/atril-1.10.0-r0.apk"
+}

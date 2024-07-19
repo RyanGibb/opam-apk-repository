@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-scope-guard-doc"]
 ]
-
-
 extra-source "perl-scope-guard-doc-0.21-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-scope-guard-doc-0.21-r5.apk"
 }

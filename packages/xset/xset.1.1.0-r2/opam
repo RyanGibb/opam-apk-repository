@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xset-1.1.0-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xset"]
+]
+depends: [
+  "libx11"
+  "libxext"
+  "libxmu"
+  "musl"
+]
+extra-source "xset-1.1.0-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/xset-1.1.0-r2.apk"
+}

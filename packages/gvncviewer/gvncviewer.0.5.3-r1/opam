@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gvncviewer-0.5.3-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gvncviewer"]
+]
+depends: [
+  "gdk-pixbuf"
+  "glib"
+  "gtk+3.0"
+  "gtk-vnc"
+  "libintl"
+  "musl"
+]
+extra-source "gvncviewer-0.5.3-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/gvncviewer-0.5.3-r1.apk"
+}

@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del lua-term"]
 ]
-
-
 extra-source "lua-term-0.07-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lua-term-0.07-r2.apk"
 }

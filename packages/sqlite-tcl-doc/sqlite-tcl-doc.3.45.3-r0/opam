@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del sqlite-tcl-doc"]
 ]
-
-
 extra-source "sqlite-tcl-doc-3.45.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/sqlite-tcl-doc-3.45.3-r0.apk"
 }

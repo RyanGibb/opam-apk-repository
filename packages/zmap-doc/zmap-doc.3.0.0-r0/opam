@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del zmap-doc"]
 ]
-
-
 extra-source "zmap-doc-3.0.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/zmap-doc-3.0.0-r0.apk"
 }

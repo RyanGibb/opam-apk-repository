@@ -10,7 +10,6 @@ depends: [
   "lua5.3"
   "musl"
 ]
-
 extra-source "lua5.3-curl-0.3.13-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lua5.3-curl-0.3.13-r1.apk"
 }

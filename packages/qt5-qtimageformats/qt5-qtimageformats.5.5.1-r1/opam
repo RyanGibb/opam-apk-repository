@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add qt5-qtimageformats-5.5.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del qt5-qtimageformats"]
+]
+depends: [
+  "libjasper"
+  "libmng"
+  "libstdc++"
+  "libwebp"
+  "musl"
+  "qt5-qtbase"
+  "qt5-qtbase-x11"
+  "tiff"
+]
+extra-source "qt5-qtimageformats-5.5.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/qt5-qtimageformats-5.5.1-r1.apk"
+}

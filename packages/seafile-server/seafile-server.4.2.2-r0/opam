@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add seafile-server-4.2.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del seafile-server"]
+]
+depends: [
+  "bash"
+  "busybox"
+  "ccnet-libs"
+  "fuse"
+  "glib"
+  "jansson"
+  "libarchive"
+  "libcrypto1.0"
+  "libevent"
+  "libevhtp"
+  "libsearpc"
+  "libuuid"
+  "libzdb"
+  "musl"
+  "seafile-common"
+  "sqlite-libs"
+  "zlib"
+]
+extra-source "seafile-server-4.2.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/seafile-server-4.2.2-r0.apk"
+}

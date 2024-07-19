@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-convert-uulib-doc-1.8-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-convert-uulib-doc"]
+]
+extra-source "perl-convert-uulib-doc-1.8-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-convert-uulib-doc-1.8-r0.apk"
+}

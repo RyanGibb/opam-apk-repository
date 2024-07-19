@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add weechat-0.4.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del weechat"]
+]
+depends: [
+  "aspell"
+  "curl"
+  "gnutls"
+  "libgcrypt"
+  "lua5.1-libs"
+  "musl"
+  "ncurses-widec-libs"
+  "perl"
+  "python"
+  "zlib"
+]
+extra-source "weechat-0.4.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/weechat-0.4.3-r0.apk"
+}

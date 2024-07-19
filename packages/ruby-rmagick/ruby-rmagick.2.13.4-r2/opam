@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ruby-rmagick-2.13.4-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ruby-rmagick"]
+]
+depends: [
+  "ghostscript-fonts"
+  "imagemagick"
+  "musl"
+  "ruby"
+  "ruby-libs"
+]
+extra-source "ruby-rmagick-2.13.4-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/ruby-rmagick-2.13.4-r2.apk"
+}

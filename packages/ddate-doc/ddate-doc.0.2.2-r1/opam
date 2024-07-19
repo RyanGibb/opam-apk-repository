@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ddate-doc-0.2.2-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ddate-doc"]
+]
+extra-source "ddate-doc-0.2.2-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/ddate-doc-0.2.2-r1.apk"
+}

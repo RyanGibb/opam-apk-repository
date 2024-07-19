@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ppp-dev-2.4.7-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ppp-dev"]
+]
+depends: [
+  "ppp" {= "2.4.7-r2"}
+  "ppp-atm" {= "2.4.7-r2"}
+  "ppp-chat" {= "2.4.7-r2"}
+  "ppp-daemon" {= "2.4.7-r2"}
+  "ppp-doc" {= "2.4.7-r2"}
+  "ppp-l2tp" {= "2.4.7-r2"}
+  "ppp-minconn" {= "2.4.7-r2"}
+  "ppp-passprompt" {= "2.4.7-r2"}
+  "ppp-passwordfd" {= "2.4.7-r2"}
+  "ppp-pppoe" {= "2.4.7-r2"}
+  "ppp-radius" {= "2.4.7-r2"}
+  "ppp-winbind" {= "2.4.7-r2"}
+]
+extra-source "ppp-dev-2.4.7-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/ppp-dev-2.4.7-r2.apk"
+}

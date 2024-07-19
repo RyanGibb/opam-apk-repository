@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add bluez-dev-5.25-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del bluez-dev"]
+]
+depends: [
+  "bluez" {= "5.25-r0"}
+  "bluez-cups" {= "5.25-r0"}
+  "bluez-doc" {= "5.25-r0"}
+  "bluez-hid2hci" {= "5.25-r0"}
+  "bluez-libs" {= "5.25-r0"}
+  "pkgconfig"
+]
+extra-source "bluez-dev-5.25-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/bluez-dev-5.25-r0.apk"
+}

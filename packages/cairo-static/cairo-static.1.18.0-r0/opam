@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del cairo-static"]
 ]
-
-
 extra-source "cairo-static-1.18.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/cairo-static-1.18.0-r0.apk"
 }

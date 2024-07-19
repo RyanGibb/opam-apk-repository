@@ -6,11 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del newt-dev"]
 ]
 depends: [
-  "newt"
+  "newt" {= "0.52.24-r1"}
   "pkgconf"
   "slang-dev"
 ]
-
 extra-source "newt-dev-0.52.24-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/newt-dev-0.52.24-r1.apk"
 }

@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del at-spi2-core-lang"]
 ]
-
-
 extra-source "at-spi2-core-lang-2.52.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/at-spi2-core-lang-2.52.0-r0.apk"
 }

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add openvswitch-2.3.2-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del openvswitch"]
+]
+depends: [
+  "libcrypto1.0"
+  "libssl1.0"
+  "musl"
+]
+extra-source "openvswitch-2.3.2-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/openvswitch-2.3.2-r1.apk"
+}

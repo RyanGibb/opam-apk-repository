@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del mosh-server-doc"]
 ]
-
-
 extra-source "mosh-server-doc-1.4.0-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/mosh-server-doc-1.4.0-r8.apk"
 }

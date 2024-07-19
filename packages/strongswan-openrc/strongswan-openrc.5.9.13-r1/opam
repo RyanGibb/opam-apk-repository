@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del strongswan-openrc"]
 ]
-
-
 extra-source "strongswan-openrc-5.9.13-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/strongswan-openrc-5.9.13-r1.apk"
 }

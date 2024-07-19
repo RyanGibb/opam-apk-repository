@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-www-robotrules-doc-6.02-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-www-robotrules-doc"]
+]
+extra-source "perl-www-robotrules-doc-6.02-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-www-robotrules-doc-6.02-r3.apk"
+}

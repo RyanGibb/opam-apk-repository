@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add rsync-zsh-completion-5.8.1-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del rsync-zsh-completion"]
+]
+depends: [
+  "zsh"
+]
+extra-source "rsync-zsh-completion-5.8.1-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/rsync-zsh-completion-5.8.1-r4.apk"
+}

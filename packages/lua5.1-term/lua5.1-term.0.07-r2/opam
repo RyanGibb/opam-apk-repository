@@ -9,7 +9,6 @@ depends: [
   "lua5.1"
   "musl"
 ]
-
 extra-source "lua5.1-term-0.07-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lua5.1-term-0.07-r2.apk"
 }

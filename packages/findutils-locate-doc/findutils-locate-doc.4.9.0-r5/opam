@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del findutils-locate-doc"]
 ]
-
-
 extra-source "findutils-locate-doc-4.9.0-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/findutils-locate-doc-4.9.0-r5.apk"
 }

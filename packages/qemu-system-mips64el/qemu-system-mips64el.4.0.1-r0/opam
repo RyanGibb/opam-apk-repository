@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add qemu-system-mips64el-4.0.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del qemu-system-mips64el"]
+]
+depends: [
+  "glib"
+  "gnutls"
+  "libaio"
+  "libepoxy"
+  "libgcc"
+  "libjpeg-turbo"
+  "libpng"
+  "libseccomp"
+  "libstdc++"
+  "libusb"
+  "lzo"
+  "mesa-gbm"
+  "musl"
+  "nettle"
+  "pixman"
+  "qemu"
+  "snappy"
+  "spice-server"
+  "usbredir"
+  "vde2-libs"
+  "virglrenderer"
+  "zlib"
+]
+extra-source "qemu-system-mips64el-4.0.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/qemu-system-mips64el-4.0.1-r0.apk"
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xsetroot-1.1.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xsetroot"]
+]
+depends: [
+  "libx11"
+  "libxcursor"
+  "libxmu"
+  "musl"
+]
+extra-source "xsetroot-1.1.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/xsetroot-1.1.2-r0.apk"
+}

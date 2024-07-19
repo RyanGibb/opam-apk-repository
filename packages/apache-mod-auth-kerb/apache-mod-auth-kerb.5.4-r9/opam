@@ -11,7 +11,6 @@ depends: [
   "libcom_err"
   "musl"
 ]
-
 extra-source "apache-mod-auth-kerb-5.4-r9.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/apache-mod-auth-kerb-5.4-r9.apk"
 }

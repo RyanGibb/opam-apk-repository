@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add bind-tools-9.16.44-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del bind-tools"]
+]
+depends: [
+  "bind-libs"
+  "krb5-libs"
+  "musl"
+  "protobuf-c"
+]
+extra-source "bind-tools-9.16.44-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/bind-tools-9.16.44-r0.apk"
+}

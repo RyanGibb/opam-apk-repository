@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add cpufrequtils-008-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del cpufrequtils"]
+]
+depends: [
+  "musl"
+  "sysfsutils"
+]
+extra-source "cpufrequtils-008-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/cpufrequtils-008-r2.apk"
+}

@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del lua-discount-doc"]
 ]
-
-
 extra-source "lua-discount-doc-1.2.10.1-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lua-discount-doc-1.2.10.1-r8.apk"
 }

@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del hunspell-en-za"]
 ]
 depends: [
-  "hunspell-en-gb"
+  "hunspell-en-gb" {= "2020.12.07-r4"}
 ]
-
 extra-source "hunspell-en-za-2020.12.07-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/hunspell-en-za-2020.12.07-r4.apk"
 }

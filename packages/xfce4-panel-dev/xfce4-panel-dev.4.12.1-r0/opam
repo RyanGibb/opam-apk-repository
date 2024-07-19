@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xfce4-panel-dev-4.12.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xfce4-panel-dev"]
+]
+depends: [
+  "glib-dev"
+  "gtk+2.0-dev"
+  "libxfce4util-dev"
+  "pkgconf"
+  "xfce4-panel" {= "4.12.1-r0"}
+]
+extra-source "xfce4-panel-dev-4.12.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/xfce4-panel-dev-4.12.1-r0.apk"
+}

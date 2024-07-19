@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del font-cantarell"]
 ]
-
-
 extra-source "font-cantarell-0.303.1-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/font-cantarell-0.303.1-r2.apk"
 }

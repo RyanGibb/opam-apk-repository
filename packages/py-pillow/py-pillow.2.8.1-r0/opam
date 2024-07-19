@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py-pillow-2.8.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py-pillow"]
+]
+depends: [
+  "freetype"
+  "lcms2"
+  "libjpeg-turbo"
+  "libwebp"
+  "musl"
+  "openjpeg"
+  "python"
+  "tiff"
+  "zlib"
+]
+extra-source "py-pillow-2.8.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/py-pillow-2.8.1-r0.apk"
+}

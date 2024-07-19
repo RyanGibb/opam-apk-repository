@@ -20,7 +20,6 @@ depends: [
   "xtables-addons"
   ("busybox-binsh" | "dash-binsh" | "yash-binsh")
 ]
-
 extra-source "awall-1.12.3-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/awall-1.12.3-r1.apk"
 }

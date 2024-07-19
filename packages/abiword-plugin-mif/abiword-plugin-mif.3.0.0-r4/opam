@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add abiword-plugin-mif-3.0.0-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del abiword-plugin-mif"]
+]
+depends: [
+  "abiword"
+  "atk"
+  "cairo"
+  "cairo-gobject"
+  "enchant"
+  "fontconfig"
+  "freetype"
+  "fribidi"
+  "gdk-pixbuf"
+  "glib"
+  "goffice"
+  "gtk+3.0"
+  "libgcc"
+  "libgsf"
+  "libintl"
+  "libjpeg-turbo"
+  "libpng"
+  "librsvg"
+  "libstdc++"
+  "libx11"
+  "libxml2"
+  "libxslt"
+  "musl"
+  "pango"
+  "wv"
+  "zlib"
+]
+extra-source "abiword-plugin-mif-3.0.0-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/abiword-plugin-mif-3.0.0-r4.apk"
+}

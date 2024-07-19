@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libxdamage-1.1.5-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libxdamage"]
+]
+depends: [
+  "libx11"
+  "musl"
+]
+extra-source "libxdamage-1.1.5-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libxdamage-1.1.5-r1.apk"
+}

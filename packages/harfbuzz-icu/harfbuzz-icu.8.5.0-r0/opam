@@ -10,7 +10,6 @@ depends: [
   "icu-libs"
   "musl"
 ]
-
 extra-source "harfbuzz-icu-8.5.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/harfbuzz-icu-8.5.0-r0.apk"
 }

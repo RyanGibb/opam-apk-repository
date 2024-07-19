@@ -10,7 +10,6 @@ depends: [
   "musl"
   "python3"
 ]
-
 extra-source "apache2-mod-wsgi-5.0.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/apache2-mod-wsgi-5.0.0-r1.apk"
 }

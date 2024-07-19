@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add pangomm-2.40.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del pangomm"]
+]
+depends: [
+  "cairo"
+  "cairomm"
+  "glib"
+  "glibmm"
+  "libgcc"
+  "libintl"
+  "libsigc++"
+  "libstdc++"
+  "musl"
+  "pango"
+]
+extra-source "pangomm-2.40.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/pangomm-2.40.0-r0.apk"
+}

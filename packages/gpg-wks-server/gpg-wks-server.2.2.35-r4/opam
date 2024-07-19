@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gpg-wks-server-2.2.35-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gpg-wks-server"]
+]
+depends: [
+  "gpg" {= "2.2.35-r4"}
+  "gpg-agent" {= "2.2.35-r4"}
+  "libgcrypt"
+  "libgpg-error"
+  "musl"
+]
+extra-source "gpg-wks-server-2.2.35-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/gpg-wks-server-2.2.35-r4.apk"
+}

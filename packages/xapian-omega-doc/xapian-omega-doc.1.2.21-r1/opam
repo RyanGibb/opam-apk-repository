@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xapian-omega-doc-1.2.21-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xapian-omega-doc"]
+]
+extra-source "xapian-omega-doc-1.2.21-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/xapian-omega-doc-1.2.21-r1.apk"
+}

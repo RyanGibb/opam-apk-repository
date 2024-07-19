@@ -10,7 +10,6 @@ depends: [
   "libstdc++"
   "musl"
 ]
-
 extra-source "doxygen-1.11.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/doxygen-1.11.0-r0.apk"
 }

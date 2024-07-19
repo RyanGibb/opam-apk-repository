@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libasyncns-dev-0.8-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libasyncns-dev"]
+]
+depends: [
+  "libasyncns" {= "0.8-r0"}
+  "pkgconf"
+]
+extra-source "libasyncns-dev-0.8-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/libasyncns-dev-0.8-r0.apk"
+}

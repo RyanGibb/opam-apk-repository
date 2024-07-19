@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gcc-4.9.2-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gcc"]
+]
+depends: [
+  "binutils"
+  "gmp"
+  "libgcc"
+  "libgomp" {= "4.9.2-r6"}
+  "libstdc++"
+  "mpc1"
+  "mpfr3"
+  "musl"
+  "pkgconfig"
+  "zlib"
+]
+extra-source "gcc-4.9.2-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/gcc-4.9.2-r6.apk"
+}

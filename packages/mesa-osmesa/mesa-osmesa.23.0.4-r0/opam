@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mesa-osmesa-23.0.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mesa-osmesa"]
+]
+depends: [
+  "libgcc"
+  "libstdc++"
+  "llvm15-libs"
+  "mesa" {= "23.0.4-r0"}
+  "mesa-glapi"
+  "musl"
+  "zlib"
+  "zstd-libs"
+]
+extra-source "mesa-osmesa-23.0.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/mesa-osmesa-23.0.4-r0.apk"
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libxcomposite-dev-0.4.4-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libxcomposite-dev"]
+]
+depends: [
+  "compositeproto"
+  "libx11-dev"
+  "libxcomposite" {= "0.4.4-r1"}
+  "libxext-dev"
+  "libxfixes-dev"
+  "pkgconf"
+  "xproto"
+]
+extra-source "libxcomposite-dev-0.4.4-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/libxcomposite-dev-0.4.4-r1.apk"
+}

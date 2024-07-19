@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add wayland-libs-server-1.14.0-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del wayland-libs-server"]
+]
+depends: [
+  "libffi"
+  "musl"
+  "wayland-libs-client"
+  "wayland-libs-cursor"
+  "wayland-libs-server"
+]
+extra-source "wayland-libs-server-1.14.0-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/wayland-libs-server-1.14.0-r2.apk"
+}

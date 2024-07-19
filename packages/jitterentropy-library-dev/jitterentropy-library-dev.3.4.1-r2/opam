@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del jitterentropy-library-dev"]
 ]
 depends: [
-  "jitterentropy-library"
+  "jitterentropy-library" {= "3.4.1-r2"}
 ]
-
 extra-source "jitterentropy-library-dev-3.4.1-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/jitterentropy-library-dev-3.4.1-r2.apk"
 }

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add clang-analyzer-10.0.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del clang-analyzer"]
+]
+depends: [
+  "clang" {= "10.0.1-r0"}
+  "perl"
+  "python3"
+]
+extra-source "clang-analyzer-10.0.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/clang-analyzer-10.0.1-r0.apk"
+}

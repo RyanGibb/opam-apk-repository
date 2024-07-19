@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add freeswitch-dev-1.10.3-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del freeswitch-dev"]
+]
+depends: [
+  "freeswitch" {= "1.10.3-r2"}
+  "freeswitch-freetdm" {= "1.10.3-r2"}
+  "pkgconf"
+]
+extra-source "freeswitch-dev-1.10.3-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/freeswitch-dev-1.10.3-r2.apk"
+}

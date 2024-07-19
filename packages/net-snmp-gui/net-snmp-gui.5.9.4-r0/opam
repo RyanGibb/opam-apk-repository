@@ -9,7 +9,6 @@ depends: [
   "net-snmp-perl"
   "perl-tk"
 ]
-
 extra-source "net-snmp-gui-5.9.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/net-snmp-gui-5.9.4-r0.apk"
 }

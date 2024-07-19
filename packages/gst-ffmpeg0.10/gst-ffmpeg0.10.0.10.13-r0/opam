@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gst-ffmpeg0.10-0.10.13-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gst-ffmpeg0.10"]
+]
+depends: [
+  "glib"
+  "gst-plugins-base0.10"
+  "gstreamer0.10"
+  "libbz2"
+  "libintl"
+  "libxml2"
+  "musl"
+  "orc"
+  "zlib"
+]
+extra-source "gst-ffmpeg0.10-0.10.13-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/gst-ffmpeg0.10-0.10.13-r0.apk"
+}

@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del termrec-dev"]
 ]
 depends: [
-  "termrec"
+  "termrec" {= "0.19-r3"}
 ]
-
 extra-source "termrec-dev-0.19-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/termrec-dev-0.19-r3.apk"
 }

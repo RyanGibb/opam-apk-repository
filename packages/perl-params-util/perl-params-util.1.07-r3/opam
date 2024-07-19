@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-params-util-1.07-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-params-util"]
+]
+depends: [
+  "musl"
+  "perl"
+]
+extra-source "perl-params-util-1.07-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/perl-params-util-1.07-r3.apk"
+}

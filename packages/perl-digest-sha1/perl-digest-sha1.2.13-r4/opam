@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-digest-sha1-2.13-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-digest-sha1"]
+]
+depends: [
+  "musl"
+  "perl"
+]
+extra-source "perl-digest-sha1-2.13-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/perl-digest-sha1-2.13-r4.apk"
+}

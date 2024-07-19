@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del dmraid-doc"]
 ]
-
-
 extra-source "dmraid-doc-1.0.0_rc16-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/dmraid-doc-1.0.0_rc16-r6.apk"
 }

@@ -7,11 +7,10 @@ remove: [
 ]
 depends: [
   "expat-dev"
-  "fontconfig"
+  "fontconfig" {= "2.15.0-r1"}
   "freetype-dev"
   "pkgconf"
 ]
-
 extra-source "fontconfig-dev-2.15.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/fontconfig-dev-2.15.0-r1.apk"
 }

@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del llvm17-static"]
 ]
-
-
 extra-source "llvm17-static-17.0.6-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/llvm17-static-17.0.6-r1.apk"
 }

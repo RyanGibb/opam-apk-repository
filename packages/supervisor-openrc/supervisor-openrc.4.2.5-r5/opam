@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del supervisor-openrc"]
 ]
-
-
 extra-source "supervisor-openrc-4.2.5-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/supervisor-openrc-4.2.5-r5.apk"
 }

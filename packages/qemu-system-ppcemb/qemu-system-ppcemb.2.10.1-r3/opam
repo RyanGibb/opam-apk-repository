@@ -1,0 +1,37 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add qemu-system-ppcemb-2.10.1-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del qemu-system-ppcemb"]
+]
+depends: [
+  "alsa-lib"
+  "glib"
+  "gnutls"
+  "libaio"
+  "libbz2"
+  "libcurl"
+  "libepoxy"
+  "libgcc"
+  "libjpeg-turbo"
+  "libnfs"
+  "libpng"
+  "libssh2"
+  "libusb"
+  "lzo"
+  "mesa-gbm"
+  "musl"
+  "ncurses-libs"
+  "nettle"
+  "pixman"
+  "qemu"
+  "snappy"
+  "spice-server"
+  "usbredir"
+  "vde2-libs"
+  "zlib"
+]
+extra-source "qemu-system-ppcemb-2.10.1-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/qemu-system-ppcemb-2.10.1-r3.apk"
+}

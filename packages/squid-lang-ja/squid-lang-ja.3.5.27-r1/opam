@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add squid-lang-ja-3.5.27-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del squid-lang-ja"]
+]
+depends: [
+  "logrotate"
+]
+extra-source "squid-lang-ja-3.5.27-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/squid-lang-ja-3.5.27-r1.apk"
+}

@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del font-bh-75dpi-doc"]
 ]
-
-
 extra-source "font-bh-75dpi-doc-1.0.4-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/font-bh-75dpi-doc-1.0.4-r1.apk"
 }

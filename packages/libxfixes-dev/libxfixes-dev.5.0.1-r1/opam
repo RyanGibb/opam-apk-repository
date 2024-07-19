@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libxfixes-dev-5.0.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libxfixes-dev"]
+]
+depends: [
+  "fixesproto"
+  "libx11-dev"
+  "libxfixes" {= "5.0.1-r1"}
+  "libxfixes-doc" {= "5.0.1-r1"}
+  "pkgconfig"
+  "xproto"
+]
+extra-source "libxfixes-dev-5.0.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/libxfixes-dev-5.0.1-r1.apk"
+}

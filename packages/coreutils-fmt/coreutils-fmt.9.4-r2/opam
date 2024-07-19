@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add coreutils-fmt-9.4-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del coreutils-fmt"]
+]
+depends: [
+  "musl"
+]
+extra-source "coreutils-fmt-9.4-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/coreutils-fmt-9.4-r2.apk"
+}

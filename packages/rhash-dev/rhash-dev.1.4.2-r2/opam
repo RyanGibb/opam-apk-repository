@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add rhash-dev-1.4.2-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del rhash-dev"]
+]
+depends: [
+  "rhash-libs" {= "1.4.2-r2"}
+]
+extra-source "rhash-dev-1.4.2-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/rhash-dev-1.4.2-r2.apk"
+}

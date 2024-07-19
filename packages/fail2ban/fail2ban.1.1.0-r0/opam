@@ -9,8 +9,8 @@ depends: [
   "iptables"
   "logrotate"
   "python3"
+  "python3" {>= "3.12"}
 ]
-
 extra-source "fail2ban-1.1.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/fail2ban-1.1.0-r0.apk"
 }

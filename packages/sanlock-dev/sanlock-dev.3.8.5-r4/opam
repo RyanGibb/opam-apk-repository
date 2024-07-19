@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add sanlock-dev-3.8.5-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del sanlock-dev"]
+]
+depends: [
+  "pkgconf"
+  "sanlock" {= "3.8.5-r4"}
+]
+extra-source "sanlock-dev-3.8.5-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/sanlock-dev-3.8.5-r4.apk"
+}

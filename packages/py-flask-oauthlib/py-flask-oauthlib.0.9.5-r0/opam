@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py-flask-oauthlib-0.9.5-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py-flask-oauthlib"]
+]
+depends: [
+  "py-flask"
+  "py-requests-oauthlib"
+]
+extra-source "py-flask-oauthlib-0.9.5-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/py-flask-oauthlib-0.9.5-r0.apk"
+}

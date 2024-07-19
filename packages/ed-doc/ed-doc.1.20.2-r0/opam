@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del ed-doc"]
 ]
-
-
 extra-source "ed-doc-1.20.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/ed-doc-1.20.2-r0.apk"
 }

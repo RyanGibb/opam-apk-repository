@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add utmps-libs-0.1.2.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del utmps-libs"]
+]
+depends: [
+  "musl"
+  "skalibs"
+]
+extra-source "utmps-libs-0.1.2.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/utmps-libs-0.1.2.0-r0.apk"
+}

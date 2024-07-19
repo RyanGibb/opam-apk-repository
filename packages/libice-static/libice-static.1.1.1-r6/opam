@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del libice-static"]
 ]
-
-
 extra-source "libice-static-1.1.1-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libice-static-1.1.1-r6.apk"
 }

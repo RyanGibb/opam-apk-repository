@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add open-vm-tools-9.4.6_p1770165-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del open-vm-tools"]
+]
+depends: [
+  "busybox"
+  "fuse"
+  "glib"
+  "icu-libs"
+  "libgcc"
+  "libintl"
+  "libproc"
+  "libtirpc"
+  "musl"
+]
+extra-source "open-vm-tools-9.4.6_p1770165-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/open-vm-tools-9.4.6_p1770165-r4.apk"
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add s6-dns-static-2.3.5.5-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del s6-dns-static"]
+]
+extra-source "s6-dns-static-2.3.5.5-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/s6-dns-static-2.3.5.5-r1.apk"
+}

@@ -10,7 +10,6 @@ depends: [
   "perl-gd"
   "perl-gdtextutil"
 ]
-
 extra-source "perl-gdgraph-1.56-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-gdgraph-1.56-r2.apk"
 }

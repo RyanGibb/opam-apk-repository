@@ -7,10 +7,9 @@ remove: [
 ]
 depends: [
   "libusb-dev"
-  "openobex"
+  "openobex" {= "1.7.2-r5"}
   "pkgconf"
 ]
-
 extra-source "openobex-dev-1.7.2-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/openobex-dev-1.7.2-r5.apk"
 }

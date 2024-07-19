@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libmicrohttpd-doc-0.9.49-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libmicrohttpd-doc"]
+]
+extra-source "libmicrohttpd-doc-0.9.49-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/libmicrohttpd-doc-0.9.49-r0.apk"
+}

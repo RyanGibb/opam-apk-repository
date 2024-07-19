@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del libcap"]
 ]
 depends: [
-  "libcap-utils"
-  "libcap2"
+  "libcap-utils" {= "2.70-r0"}
+  "libcap2" {= "2.70-r0"}
 ]
-
 extra-source "libcap-2.70-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libcap-2.70-r0.apk"
 }

@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gtk-vnc-0.5.3-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gtk-vnc"]
+]
+depends: [
+  "atk"
+  "cairo"
+  "cairo-gobject"
+  "gdk-pixbuf"
+  "glib"
+  "gnutls"
+  "gtk+3.0"
+  "libgcrypt"
+  "libgpg-error"
+  "libintl"
+  "libsasl"
+  "libx11"
+  "musl"
+  "pango"
+  "zlib"
+]
+extra-source "gtk-vnc-0.5.3-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/gtk-vnc-0.5.3-r1.apk"
+}

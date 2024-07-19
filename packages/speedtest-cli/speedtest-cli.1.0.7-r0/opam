@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add speedtest-cli-1.0.7-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del speedtest-cli"]
+]
+depends: [
+  "python3"
+]
+extra-source "speedtest-cli-1.0.7-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/speedtest-cli-1.0.7-r0.apk"
+}

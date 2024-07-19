@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-term-readkey-doc"]
 ]
-
-
 extra-source "perl-term-readkey-doc-2.38-r9.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-term-readkey-doc-2.38-r9.apk"
 }

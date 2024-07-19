@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add kea-shell-pyc-2.2.0-r12.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del kea-shell-pyc"]
+]
+depends: [
+  "kea-dhcp4"
+  "kea-dhcp6"
+  "python3" {>= "3.11"}
+]
+extra-source "kea-shell-pyc-2.2.0-r12.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/kea-shell-pyc-2.2.0-r12.apk"
+}

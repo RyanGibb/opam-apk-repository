@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libpthread-stubs-0.3-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libpthread-stubs"]
+]
+depends: [
+  "pkgconf"
+]
+extra-source "libpthread-stubs-0.3-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/libpthread-stubs-0.3-r3.apk"
+}

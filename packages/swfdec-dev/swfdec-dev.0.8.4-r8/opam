@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add swfdec-dev-0.8.4-r8.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del swfdec-dev"]
+]
+depends: [
+  "alsa-lib-dev"
+  "cairo-dev"
+  "glib-dev"
+  "gst-plugins-base-dev"
+  "gstreamer-dev"
+  "gtk+-dev"
+  "liboil-dev"
+  "libsoup-dev"
+  "pango-dev"
+  "pkgconfig"
+  "swfdec" {= "0.8.4-r8"}
+  "swfdec-doc" {= "0.8.4-r8"}
+]
+extra-source "swfdec-dev-0.8.4-r8.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/swfdec-dev-0.8.4-r8.apk"
+}

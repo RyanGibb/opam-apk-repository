@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xrdp-0.9.2-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xrdp"]
+]
+depends: [
+  "fuse"
+  "libjpeg-turbo"
+  "libressl2.6-libcrypto"
+  "libressl2.6-libssl"
+  "libx11"
+  "libxfixes"
+  "libxrandr"
+  "musl"
+]
+extra-source "xrdp-0.9.2-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/xrdp-0.9.2-r3.apk"
+}

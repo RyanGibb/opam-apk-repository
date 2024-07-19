@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add parallel-20160922-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del parallel"]
+]
+depends: [
+  "perl"
+]
+extra-source "parallel-20160922-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/parallel-20160922-r0.apk"
+}

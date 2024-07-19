@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add freeradius-krb5-3.0.12-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del freeradius-krb5"]
+]
+depends: [
+  "freeradius" {= "3.0.12-r2"}
+  "krb5-libs"
+  "libcom_err"
+  "musl"
+]
+extra-source "freeradius-krb5-3.0.12-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/freeradius-krb5-3.0.12-r2.apk"
+}

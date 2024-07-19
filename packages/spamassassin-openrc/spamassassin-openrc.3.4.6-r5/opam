@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add spamassassin-openrc-3.4.6-r5.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del spamassassin-openrc"]
+]
+extra-source "spamassassin-openrc-3.4.6-r5.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/spamassassin-openrc-3.4.6-r5.apk"
+}

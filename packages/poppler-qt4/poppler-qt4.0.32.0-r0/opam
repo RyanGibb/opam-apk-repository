@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add poppler-qt4-0.32.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del poppler-qt4"]
+]
+depends: [
+  "libgcc"
+  "libstdc++"
+  "musl"
+  "poppler"
+  "qt"
+  "qt-x11"
+  "zlib"
+]
+extra-source "poppler-qt4-0.32.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/poppler-qt4-0.32.0-r0.apk"
+}

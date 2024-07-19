@@ -7,11 +7,10 @@ remove: [
 ]
 depends: [
   "bsd-compat-headers"
-  "libedit"
+  "libedit" {= "20240517.3.1-r0"}
   "ncurses-dev"
   "pkgconf"
 ]
-
 extra-source "libedit-dev-20240517.3.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libedit-dev-20240517.3.1-r0.apk"
 }

@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del imake-doc"]
 ]
-
-
 extra-source "imake-doc-1.0.10-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/imake-doc-1.0.10-r1.apk"
 }

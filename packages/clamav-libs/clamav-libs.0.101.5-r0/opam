@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add clamav-libs-0.101.5-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del clamav-libs"]
+]
+depends: [
+  "libbz2"
+  "libcrypto1.1"
+  "libssl1.1"
+  "musl"
+  "pcre"
+  "zlib"
+]
+extra-source "clamav-libs-0.101.5-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/clamav-libs-0.101.5-r0.apk"
+}

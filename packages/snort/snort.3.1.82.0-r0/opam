@@ -24,7 +24,6 @@ depends: [
   "zlib"
   ("busybox-binsh" | "dash-binsh" | "yash-binsh")
 ]
-
 extra-source "snort-3.1.82.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/snort-3.1.82.0-r0.apk"
 }

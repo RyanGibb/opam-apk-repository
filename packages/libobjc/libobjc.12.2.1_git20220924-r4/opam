@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libobjc-12.2.1_git20220924-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libobjc"]
+]
+depends: [
+  "libgcc"
+  "musl"
+]
+extra-source "libobjc-12.2.1_git20220924-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libobjc-12.2.1_git20220924-r4.apk"
+}

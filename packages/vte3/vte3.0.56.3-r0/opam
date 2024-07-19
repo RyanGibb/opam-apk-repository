@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add vte3-0.56.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del vte3"]
+]
+depends: [
+  "atk"
+  "cairo"
+  "cairo-gobject"
+  "gdk-pixbuf"
+  "glib"
+  "gnutls"
+  "gtk+3.0"
+  "libintl"
+  "libstdc++"
+  "musl"
+  "pango"
+  "pcre2"
+  "zlib"
+]
+extra-source "vte3-0.56.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/vte3-0.56.3-r0.apk"
+}

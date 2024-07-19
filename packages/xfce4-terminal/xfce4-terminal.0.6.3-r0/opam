@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xfce4-terminal-0.6.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xfce4-terminal"]
+]
+depends: [
+  "atk"
+  "gdk-pixbuf"
+  "glib"
+  "gtk+2.0"
+  "hicolor-icon-theme"
+  "libx11"
+  "libxfce4ui"
+  "libxfce4util"
+  "musl"
+  "pango"
+  "startup-notification"
+  "vte"
+]
+extra-source "xfce4-terminal-0.6.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/xfce4-terminal-0.6.3-r0.apk"
+}

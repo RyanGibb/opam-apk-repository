@@ -6,11 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del libarchive-dev"]
 ]
 depends: [
-  "libarchive"
+  "libarchive" {= "3.7.4-r0"}
   "openssl-dev"
   "pkgconf"
 ]
-
 extra-source "libarchive-dev-3.7.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libarchive-dev-3.7.4-r0.apk"
 }

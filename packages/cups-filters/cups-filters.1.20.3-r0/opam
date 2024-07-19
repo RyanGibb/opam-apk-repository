@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add cups-filters-1.20.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del cups-filters"]
+]
+depends: [
+  "avahi-glib"
+  "avahi-libs"
+  "bc"
+  "cups-filters-libs"
+  "cups-libs"
+  "fontconfig"
+  "glib"
+  "lcms2"
+  "libgcc"
+  "libstdc++"
+  "musl"
+  "poppler"
+  "poppler-utils"
+  "qpdf-libs"
+  "ttf-freefont"
+  "zlib"
+]
+extra-source "cups-filters-1.20.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/cups-filters-1.20.3-r0.apk"
+}

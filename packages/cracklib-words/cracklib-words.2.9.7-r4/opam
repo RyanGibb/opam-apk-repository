@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add cracklib-words-2.9.7-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del cracklib-words"]
+]
+extra-source "cracklib-words-2.9.7-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/cracklib-words-2.9.7-r4.apk"
+}

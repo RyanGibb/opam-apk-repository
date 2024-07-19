@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del busybox-doc"]
 ]
-
-
 extra-source "busybox-doc-1.36.1-r29.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/busybox-doc-1.36.1-r29.apk"
 }

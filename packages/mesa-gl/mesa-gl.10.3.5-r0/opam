@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mesa-gl-10.3.5-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mesa-gl"]
+]
+depends: [
+  "expat"
+  "libdrm"
+  "libx11"
+  "libxcb"
+  "libxdamage"
+  "libxext"
+  "libxfixes"
+  "libxshmfence"
+  "libxxf86vm"
+  "mesa-glapi"
+  "musl"
+]
+extra-source "mesa-gl-10.3.5-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/mesa-gl-10.3.5-r0.apk"
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ruby-rails-dom-testing4.2-1.0.6-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ruby-rails-dom-testing4.2"]
+]
+depends: [
+  "ruby"
+  "ruby-activesupport4.2"
+  "ruby-nokogiri"
+  "ruby-rails-deprecated_sanitizer4.2"
+]
+extra-source "ruby-rails-dom-testing4.2-1.0.6-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/ruby-rails-dom-testing4.2-1.0.6-r0.apk"
+}

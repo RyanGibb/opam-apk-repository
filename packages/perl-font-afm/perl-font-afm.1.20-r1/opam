@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-font-afm-1.20-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-font-afm"]
+]
+extra-source "perl-font-afm-1.20-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-font-afm-1.20-r1.apk"
+}

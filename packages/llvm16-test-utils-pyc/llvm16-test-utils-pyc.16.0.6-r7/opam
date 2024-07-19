@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add llvm16-test-utils-pyc-16.0.6-r7.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del llvm16-test-utils-pyc"]
+]
+depends: [
+  "python3" {>= "3.11"}
+]
+extra-source "llvm16-test-utils-pyc-16.0.6-r7.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/llvm16-test-utils-pyc-16.0.6-r7.apk"
+}

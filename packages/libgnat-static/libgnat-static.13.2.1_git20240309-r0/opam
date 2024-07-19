@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del libgnat-static"]
 ]
-
-
 extra-source "libgnat-static-13.2.1_git20240309-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libgnat-static-13.2.1_git20240309-r0.apk"
 }

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add kamailio-kazoo-5.5.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del kamailio-kazoo"]
+]
+depends: [
+  "json-c"
+  "kamailio"
+  "libevent"
+  "libuuid"
+  "musl"
+  "rabbitmq-c"
+]
+extra-source "kamailio-kazoo-5.5.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/kamailio-kazoo-5.5.4-r0.apk"
+}

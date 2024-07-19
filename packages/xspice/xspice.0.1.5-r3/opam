@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xspice-0.1.5-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xspice"]
+]
+depends: [
+  "libxfont2"
+  "musl"
+  "python2"
+  "spice-server"
+]
+extra-source "xspice-0.1.5-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/xspice-0.1.5-r3.apk"
+}

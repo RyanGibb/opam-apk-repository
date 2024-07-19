@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del sipsak-doc"]
 ]
-
-
 extra-source "sipsak-doc-0.9.8.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/sipsak-doc-0.9.8.1-r1.apk"
 }

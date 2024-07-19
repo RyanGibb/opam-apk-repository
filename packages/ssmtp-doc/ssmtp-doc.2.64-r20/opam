@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ssmtp-doc-2.64-r20.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ssmtp-doc"]
+]
+extra-source "ssmtp-doc-2.64-r20.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/ssmtp-doc-2.64-r20.apk"
+}

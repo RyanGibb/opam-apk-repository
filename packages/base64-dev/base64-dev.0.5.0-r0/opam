@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add base64-dev-0.5.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del base64-dev"]
+]
+depends: [
+  "libbase64" {= "0.5.0-r0"}
+]
+extra-source "base64-dev-0.5.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/base64-dev-0.5.0-r0.apk"
+}

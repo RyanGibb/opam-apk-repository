@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xkbcomp-1.4.5-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xkbcomp"]
+]
+depends: [
+  "libx11"
+  "libxkbfile"
+  "musl"
+]
+extra-source "xkbcomp-1.4.5-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/xkbcomp-1.4.5-r0.apk"
+}

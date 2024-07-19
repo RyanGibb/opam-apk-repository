@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add sipcalc-doc-1.1.6-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del sipcalc-doc"]
+]
+extra-source "sipcalc-doc-1.1.6-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/sipcalc-doc-1.1.6-r1.apk"
+}

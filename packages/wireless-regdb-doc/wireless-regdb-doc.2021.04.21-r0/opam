@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add wireless-regdb-doc-2021.04.21-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del wireless-regdb-doc"]
+]
+extra-source "wireless-regdb-doc-2021.04.21-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/wireless-regdb-doc-2021.04.21-r0.apk"
+}

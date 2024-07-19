@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add hydrogen-0.9.6.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del hydrogen"]
+]
+depends: [
+  "alsa-lib"
+  "jack"
+  "libarchive"
+  "libgcc"
+  "libsndfile"
+  "libstdc++"
+  "musl"
+  "qt"
+  "qt-x11"
+]
+extra-source "hydrogen-0.9.6.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/hydrogen-0.9.6.1-r0.apk"
+}

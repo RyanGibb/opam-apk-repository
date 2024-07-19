@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add kodi-pvr-addons-20150322-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del kodi-pvr-addons"]
+]
+depends: [
+  "kodi-pvr-addons-argustv"
+  "kodi-pvr-addons-demo"
+  "kodi-pvr-addons-dvbviewer"
+  "kodi-pvr-addons-hts"
+  "kodi-pvr-addons-mediaportal"
+  "kodi-pvr-addons-mythtv"
+  "kodi-pvr-addons-nextpvr"
+  "kodi-pvr-addons-njoy"
+  "kodi-pvr-addons-vdr"
+  "kodi-pvr-addons-vuplus"
+]
+extra-source "kodi-pvr-addons-20150322-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/kodi-pvr-addons-20150322-r0.apk"
+}

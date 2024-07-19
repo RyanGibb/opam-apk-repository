@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-mime-lite-doc"]
 ]
-
-
 extra-source "perl-mime-lite-doc-3.033-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-mime-lite-doc-3.033-r1.apk"
 }

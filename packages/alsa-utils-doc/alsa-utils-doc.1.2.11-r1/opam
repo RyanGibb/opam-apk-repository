@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del alsa-utils-doc"]
 ]
-
-
 extra-source "alsa-utils-doc-1.2.11-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/alsa-utils-doc-1.2.11-r1.apk"
 }

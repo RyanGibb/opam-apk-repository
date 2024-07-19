@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libfetch-2.33-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libfetch"]
+]
+depends: [
+  "libcrypto1.0"
+  "libssl1.0"
+  "musl"
+]
+extra-source "libfetch-2.33-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/libfetch-2.33-r0.apk"
+}

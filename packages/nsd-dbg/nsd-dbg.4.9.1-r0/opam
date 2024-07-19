@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del nsd-dbg"]
 ]
-
-
 extra-source "nsd-dbg-4.9.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/nsd-dbg-4.9.1-r0.apk"
 }

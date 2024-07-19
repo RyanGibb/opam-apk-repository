@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mate-notification-daemon-1.10.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mate-notification-daemon"]
+]
+depends: [
+  "atk"
+  "cairo"
+  "dbus-glib"
+  "dbus-libs"
+  "fontconfig"
+  "freetype"
+  "gdk-pixbuf"
+  "glib"
+  "gtk+2.0"
+  "libcanberra"
+  "libcanberra-gtk2"
+  "libintl"
+  "libnotify"
+  "libwnck"
+  "libx11"
+  "mate-common"
+  "musl"
+  "pango"
+]
+extra-source "mate-notification-daemon-1.10.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/mate-notification-daemon-1.10.0-r0.apk"
+}

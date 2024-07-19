@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add busybox-initscripts-3.1-r7.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del busybox-initscripts"]
+]
+depends: [
+  "busybox"
+  "openrc" {>= "0.24.1-r6"}
+]
+extra-source "busybox-initscripts-3.1-r7.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/busybox-initscripts-3.1-r7.apk"
+}

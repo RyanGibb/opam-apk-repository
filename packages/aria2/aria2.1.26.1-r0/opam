@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add aria2-1.26.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del aria2"]
+]
+depends: [
+  "c-ares"
+  "ca-certificates"
+  "expat"
+  "gmp"
+  "gnutls"
+  "libgcc"
+  "libstdc++"
+  "musl"
+  "nettle"
+  "sqlite-libs"
+  "zlib"
+]
+extra-source "aria2-1.26.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/aria2-1.26.1-r0.apk"
+}

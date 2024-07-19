@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lua-lyaml-6.2.8-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lua-lyaml"]
+]
+extra-source "lua-lyaml-6.2.8-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lua-lyaml-6.2.8-r0.apk"
+}

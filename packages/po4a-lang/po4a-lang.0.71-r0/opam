@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del po4a-lang"]
 ]
-
-
 extra-source "po4a-lang-0.71-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/po4a-lang-0.71-r0.apk"
 }

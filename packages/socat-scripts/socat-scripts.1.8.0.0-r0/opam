@@ -7,9 +7,8 @@ remove: [
 ]
 depends: [
   "bash"
-  "socat"
+  "socat" {= "1.8.0.0-r0"}
 ]
-
 extra-source "socat-scripts-1.8.0.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/socat-scripts-1.8.0.0-r0.apk"
 }

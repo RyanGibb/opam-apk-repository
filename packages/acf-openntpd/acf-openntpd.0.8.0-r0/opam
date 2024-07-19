@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add acf-openntpd-0.8.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del acf-openntpd"]
+]
+depends: [
+  "acf-core"
+  "lua"
+  "openntpd"
+]
+extra-source "acf-openntpd-0.8.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/acf-openntpd-0.8.0-r0.apk"
+}

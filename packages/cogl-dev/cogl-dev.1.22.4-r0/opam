@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add cogl-dev-1.22.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del cogl-dev"]
+]
+depends: [
+  "cairo-dev"
+  "cogl" {= "1.22.4-r0"}
+  "gdk-pixbuf-dev"
+  "glib-dev"
+  "libdrm-dev"
+  "libx11-dev"
+  "libxcomposite-dev"
+  "libxdamage-dev"
+  "libxext-dev"
+  "libxfixes-dev"
+  "libxrandr-dev"
+  "mesa-dev"
+  "pkgconf"
+  "wayland-dev"
+]
+extra-source "cogl-dev-1.22.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/cogl-dev-1.22.4-r0.apk"
+}

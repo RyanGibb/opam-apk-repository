@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del icu-data-full"]
 ]
-
-
 extra-source "icu-data-full-74.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/icu-data-full-74.2-r0.apk"
 }

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xkeyboard-config-dev-2.38-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xkeyboard-config-dev"]
+]
+depends: [
+  "pkgconf"
+  "xkeyboard-config"
+]
+extra-source "xkeyboard-config-dev-2.38-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/xkeyboard-config-dev-2.38-r0.apk"
+}

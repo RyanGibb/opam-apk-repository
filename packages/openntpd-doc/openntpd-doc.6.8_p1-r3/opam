@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add openntpd-doc-6.8_p1-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del openntpd-doc"]
+]
+extra-source "openntpd-doc-6.8_p1-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/openntpd-doc-6.8_p1-r3.apk"
+}

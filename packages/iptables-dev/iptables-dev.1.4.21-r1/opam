@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add iptables-dev-1.4.21-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del iptables-dev"]
+]
+depends: [
+  "ip6tables" {= "1.4.21-r1"}
+  "iptables" {= "1.4.21-r1"}
+  "iptables-doc" {= "1.4.21-r1"}
+  "pkgconfig"
+]
+extra-source "iptables-dev-1.4.21-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/iptables-dev-1.4.21-r1.apk"
+}

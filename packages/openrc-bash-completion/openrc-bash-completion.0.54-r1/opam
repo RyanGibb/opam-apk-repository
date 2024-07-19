@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del openrc-bash-completion"]
 ]
-
-
 extra-source "openrc-bash-completion-0.54-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/openrc-bash-completion-0.54-r1.apk"
 }

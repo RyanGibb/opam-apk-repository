@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add sems-diameter_client-1.6.0-r8.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del sems-diameter_client"]
+]
+depends: [
+  "libgcc"
+  "libressl2.7-libcrypto"
+  "libressl2.7-libssl"
+  "libstdc++"
+  "musl"
+  "sems"
+]
+extra-source "sems-diameter_client-1.6.0-r8.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/sems-diameter_client-1.6.0-r8.apk"
+}

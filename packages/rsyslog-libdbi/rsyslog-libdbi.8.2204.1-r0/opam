@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add rsyslog-libdbi-8.2204.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del rsyslog-libdbi"]
+]
+depends: [
+  "libdbi"
+  "musl"
+  "rsyslog" {= "8.2204.1-r0"}
+]
+extra-source "rsyslog-libdbi-8.2204.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/rsyslog-libdbi-8.2204.1-r0.apk"
+}

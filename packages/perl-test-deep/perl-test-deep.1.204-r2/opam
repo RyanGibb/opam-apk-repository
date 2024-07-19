@@ -10,7 +10,6 @@ depends: [
   "perl-test-nowarnings"
   "perl-test-simple"
 ]
-
 extra-source "perl-test-deep-1.204-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-test-deep-1.204-r2.apk"
 }

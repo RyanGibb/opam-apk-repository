@@ -7,11 +7,10 @@ remove: [
 ]
 depends: [
   "eudev-dev"
-  "pcsc-lite-libs"
-  "pcsc-lite-spy-libs"
+  "pcsc-lite-libs" {= "2.2.3-r0"}
+  "pcsc-lite-spy-libs" {= "2.2.3-r0"}
   "pkgconf"
 ]
-
 extra-source "pcsc-lite-dev-2.2.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/pcsc-lite-dev-2.2.3-r0.apk"
 }

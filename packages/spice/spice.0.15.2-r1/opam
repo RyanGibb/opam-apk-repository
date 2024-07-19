@@ -21,7 +21,6 @@ depends: [
   "pixman"
   "zlib"
 ]
-
 extra-source "spice-0.15.2-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/spice-0.15.2-r1.apk"
 }

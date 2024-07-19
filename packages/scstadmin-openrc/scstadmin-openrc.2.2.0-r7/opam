@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del scstadmin-openrc"]
 ]
-
-
 extra-source "scstadmin-openrc-2.2.0-r7.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/scstadmin-openrc-2.2.0-r7.apk"
 }

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-specio-0.47-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-specio"]
+]
+depends: [
+  "perl"
+  "perl-devel-stacktrace"
+  "perl-eval-closure"
+  "perl-module-runtime"
+  "perl-mro-compat"
+  "perl-role-tiny"
+  "perl-sub-quote"
+  "perl-test-fatal"
+  "perl-try-tiny"
+]
+extra-source "perl-specio-0.47-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/perl-specio-0.47-r0.apk"
+}

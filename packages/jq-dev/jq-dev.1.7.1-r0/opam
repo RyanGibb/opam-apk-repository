@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del jq-dev"]
 ]
 depends: [
-  "jq"
+  "jq" {= "1.7.1-r0"}
   "pkgconf"
 ]
-
 extra-source "jq-dev-1.7.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/jq-dev-1.7.1-r0.apk"
 }

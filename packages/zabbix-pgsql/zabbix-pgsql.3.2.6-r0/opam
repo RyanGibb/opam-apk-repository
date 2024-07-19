@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add zabbix-pgsql-3.2.6-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del zabbix-pgsql"]
+]
+depends: [
+  "gnutls"
+  "libcurl"
+  "libssh2"
+  "libxml2"
+  "musl"
+  "net-snmp-libs"
+  "openipmi-libs"
+  "unixodbc"
+  "zabbix"
+  ("pgcluster-libpq" | "libpq")
+]
+conflicts: [
+  "zabbix-mysql"
+  "zabbix-sqlite"
+]
+extra-source "zabbix-pgsql-3.2.6-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/zabbix-pgsql-3.2.6-r0.apk"
+}

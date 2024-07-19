@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add poppler-utils-20.12.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del poppler-utils"]
+]
+depends: [
+  "cairo"
+  "freetype"
+  "lcms2"
+  "libstdc++"
+  "musl"
+  "poppler"
+]
+extra-source "poppler-utils-20.12.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/poppler-utils-20.12.1-r0.apk"
+}

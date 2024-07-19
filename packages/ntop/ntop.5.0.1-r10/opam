@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ntop-5.0.1-r10.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ntop"]
+]
+depends: [
+  "busybox"
+  "gdbm"
+  "geoip"
+  "libpcap"
+  "libressl2.5-libcrypto"
+  "libressl2.5-libssl"
+  "librrd-th"
+  "musl"
+  "python2"
+  "zlib"
+]
+extra-source "ntop-5.0.1-r10.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/ntop-5.0.1-r10.apk"
+}

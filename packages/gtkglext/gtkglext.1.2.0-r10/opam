@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gtkglext-1.2.0-r10.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gtkglext"]
+]
+depends: [
+  "atk"
+  "cairo"
+  "fontconfig"
+  "freetype"
+  "gdk-pixbuf"
+  "glib"
+  "glu"
+  "gtk+2.0"
+  "libintl"
+  "libx11"
+  "mesa-gl"
+  "musl"
+  "pango"
+  "pangox-compat"
+]
+extra-source "gtkglext-1.2.0-r10.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/gtkglext-1.2.0-r10.apk"
+}

@@ -6,11 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del fcgi-dev"]
 ]
 depends: [
-  "fcgi"
-  "fcgi++"
+  "fcgi" {= "2.4.2-r4"}
+  "fcgi++" {= "2.4.2-r4"}
   "pkgconf"
 ]
-
 extra-source "fcgi-dev-2.4.2-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/fcgi-dev-2.4.2-r4.apk"
 }

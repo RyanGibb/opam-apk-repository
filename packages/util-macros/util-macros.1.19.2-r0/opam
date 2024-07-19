@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add util-macros-1.19.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del util-macros"]
+]
+extra-source "util-macros-1.19.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/util-macros-1.19.2-r0.apk"
+}

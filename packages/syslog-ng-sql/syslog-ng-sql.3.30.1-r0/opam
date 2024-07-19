@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add syslog-ng-sql-3.30.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del syslog-ng-sql"]
+]
+depends: [
+  "glib"
+  "libcrypto1.1"
+  "libdbi"
+  "musl"
+  "syslog-ng"
+]
+extra-source "syslog-ng-sql-3.30.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/syslog-ng-sql-3.30.1-r0.apk"
+}

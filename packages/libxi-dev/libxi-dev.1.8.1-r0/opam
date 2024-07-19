@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libxi-dev-1.8.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libxi-dev"]
+]
+depends: [
+  "libx11-dev"
+  "libxext-dev"
+  "libxfixes-dev"
+  "libxi" {= "1.8.1-r0"}
+  "pkgconf"
+  "xorgproto"
+]
+extra-source "libxi-dev-1.8.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/libxi-dev-1.8.1-r0.apk"
+}

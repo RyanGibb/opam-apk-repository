@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del efibootmgr-doc"]
 ]
-
-
 extra-source "efibootmgr-doc-18-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/efibootmgr-doc-18-r2.apk"
 }

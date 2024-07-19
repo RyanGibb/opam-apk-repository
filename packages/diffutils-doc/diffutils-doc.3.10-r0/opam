@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del diffutils-doc"]
 ]
-
-
 extra-source "diffutils-doc-3.10-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/diffutils-doc-3.10-r0.apk"
 }

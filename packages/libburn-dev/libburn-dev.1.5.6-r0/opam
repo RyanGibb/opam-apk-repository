@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del libburn-dev"]
 ]
 depends: [
-  "libburn"
+  "libburn" {= "1.5.6-r0"}
   "pkgconf"
 ]
-
 extra-source "libburn-dev-1.5.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libburn-dev-1.5.6-r0.apk"
 }

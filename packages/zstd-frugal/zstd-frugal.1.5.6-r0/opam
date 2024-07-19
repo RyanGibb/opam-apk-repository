@@ -9,7 +9,6 @@ depends: [
   "musl"
   "zstd-libs"
 ]
-
 extra-source "zstd-frugal-1.5.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/zstd-frugal-1.5.6-r0.apk"
 }

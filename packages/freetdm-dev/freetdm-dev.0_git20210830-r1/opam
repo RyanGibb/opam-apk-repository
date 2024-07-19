@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add freetdm-dev-0_git20210830-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del freetdm-dev"]
+]
+depends: [
+  "freetdm" {= "0_git20210830-r1"}
+  "pkgconf"
+]
+extra-source "freetdm-dev-0_git20210830-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/freetdm-dev-0_git20210830-r1.apk"
+}

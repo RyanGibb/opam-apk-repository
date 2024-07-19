@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add dconf-dev-0.24.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del dconf-dev"]
+]
+depends: [
+  "dconf" {= "0.24.0-r0"}
+  "dconf-doc" {= "0.24.0-r0"}
+  "pkgconfig"
+]
+extra-source "dconf-dev-0.24.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/dconf-dev-0.24.0-r0.apk"
+}

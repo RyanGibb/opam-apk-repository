@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add tiny-cloud-nocloud-2.2.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del tiny-cloud-nocloud"]
+]
+depends: [
+  "tiny-cloud" {= "2.2.2-r0"}
+  "yx"
+  ("yash-binsh" | "busybox-binsh" | "dash-binsh")
+]
+extra-source "tiny-cloud-nocloud-2.2.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/tiny-cloud-nocloud-2.2.2-r0.apk"
+}

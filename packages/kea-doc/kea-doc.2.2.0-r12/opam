@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add kea-doc-2.2.0-r12.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del kea-doc"]
+]
+extra-source "kea-doc-2.2.0-r12.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/kea-doc-2.2.0-r12.apk"
+}

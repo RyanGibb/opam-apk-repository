@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-crypt-openssl-random-doc"]
 ]
-
-
 extra-source "perl-crypt-openssl-random-doc-0.16-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-crypt-openssl-random-doc-0.16-r0.apk"
 }

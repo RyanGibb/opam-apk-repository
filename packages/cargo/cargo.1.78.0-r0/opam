@@ -11,11 +11,10 @@ depends: [
   "libgcc"
   "libssl3"
   "musl"
-  "rust"
+  "rust" {= "1.78.0-r0"}
   "scudo-malloc"
   "zlib"
 ]
-
 extra-source "cargo-1.78.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/cargo-1.78.0-r0.apk"
 }

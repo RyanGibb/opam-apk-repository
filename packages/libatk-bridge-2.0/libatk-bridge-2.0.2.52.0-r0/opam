@@ -12,7 +12,6 @@ depends: [
   "libatk-1.0"
   "musl"
 ]
-
 extra-source "libatk-bridge-2.0-2.52.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libatk-bridge-2.0-2.52.0-r0.apk"
 }

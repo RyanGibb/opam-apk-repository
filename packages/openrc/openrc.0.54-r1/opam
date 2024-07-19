@@ -11,7 +11,6 @@ depends: [
   ("busybox-binsh" | "dash-binsh" | "yash-binsh")
   ("busybox-ifupdown" | "ifupdown-ng")
 ]
-
 extra-source "openrc-0.54-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/openrc-0.54-r1.apk"
 }

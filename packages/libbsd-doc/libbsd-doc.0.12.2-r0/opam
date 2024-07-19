@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del libbsd-doc"]
 ]
-
-
 extra-source "libbsd-doc-0.12.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libbsd-doc-0.12.2-r0.apk"
 }

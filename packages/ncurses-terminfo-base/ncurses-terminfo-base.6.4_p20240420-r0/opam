@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del ncurses-terminfo-base"]
 ]
-
-
 extra-source "ncurses-terminfo-base-6.4_p20240420-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/ncurses-terminfo-base-6.4_p20240420-r0.apk"
 }

@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add opensmtpd-6.6.4p1-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del opensmtpd"]
+]
+depends: [
+  "busybox"
+  "ca-certificates"
+  "db"
+  "fts"
+  "libasr"
+  "libcrypto1.1"
+  "libevent"
+  "libssl1.1"
+  "musl"
+  "zlib"
+]
+conflicts: [
+  "postfix"
+]
+extra-source "opensmtpd-6.6.4p1-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/opensmtpd-6.6.4p1-r2.apk"
+}

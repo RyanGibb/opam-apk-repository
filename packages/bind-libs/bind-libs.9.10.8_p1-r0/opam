@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add bind-libs-9.10.8_p1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del bind-libs"]
+]
+depends: [
+  "libgcc"
+  "libressl2.4-libcrypto"
+  "libxml2"
+  "musl"
+]
+extra-source "bind-libs-9.10.8_p1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/bind-libs-9.10.8_p1-r0.apk"
+}

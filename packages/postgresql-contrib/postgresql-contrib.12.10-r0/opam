@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add postgresql-contrib-12.10-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del postgresql-contrib"]
+]
+depends: [
+  "libcrypto1.1"
+  "libpq"
+  "libssl1.1"
+  "libuuid"
+  "libxml2"
+  "musl"
+  "zlib"
+]
+extra-source "postgresql-contrib-12.10-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/postgresql-contrib-12.10-r0.apk"
+}

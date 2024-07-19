@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add clang-static-13.0.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del clang-static"]
+]
+extra-source "clang-static-13.0.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/clang-static-13.0.1-r1.apk"
+}

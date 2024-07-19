@@ -1,0 +1,49 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add abiword-plugins-3.0.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del abiword-plugins"]
+]
+depends: [
+  "abiword-plugin-applix"
+  "abiword-plugin-babelfish"
+  "abiword-plugin-bmp"
+  "abiword-plugin-clarisworks"
+  "abiword-plugin-collab"
+  "abiword-plugin-docbook"
+  "abiword-plugin-eml"
+  "abiword-plugin-epub"
+  "abiword-plugin-freetranslation"
+  "abiword-plugin-garble"
+  "abiword-plugin-gdict"
+  "abiword-plugin-gimp"
+  "abiword-plugin-google"
+  "abiword-plugin-hancom"
+  "abiword-plugin-hrtext"
+  "abiword-plugin-iscii"
+  "abiword-plugin-kword"
+  "abiword-plugin-latex"
+  "abiword-plugin-loadbindings"
+  "abiword-plugin-mht"
+  "abiword-plugin-mif"
+  "abiword-plugin-mswrite"
+  "abiword-plugin-openwriter"
+  "abiword-plugin-openxml"
+  "abiword-plugin-opml"
+  "abiword-plugin-paint"
+  "abiword-plugin-passepartout"
+  "abiword-plugin-pdb"
+  "abiword-plugin-pdf"
+  "abiword-plugin-presentation"
+  "abiword-plugin-s5"
+  "abiword-plugin-sdw"
+  "abiword-plugin-t602"
+  "abiword-plugin-urldict"
+  "abiword-plugin-wikipedia"
+  "abiword-plugin-wml"
+  "abiword-plugin-xslfo"
+]
+extra-source "abiword-plugins-3.0.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/abiword-plugins-3.0.1-r1.apk"
+}

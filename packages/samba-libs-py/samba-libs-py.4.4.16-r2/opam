@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add samba-libs-py-4.4.16-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del samba-libs-py"]
+]
+depends: [
+  "ldb"
+  "musl"
+  "py-talloc"
+  "python"
+  "samba-client-libs"
+  "samba-common-libs"
+  "samba-dc"
+  "samba-libs"
+  "samba-server-libs"
+  "talloc"
+  "tevent"
+]
+extra-source "samba-libs-py-4.4.16-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/samba-libs-py-4.4.16-r2.apk"
+}

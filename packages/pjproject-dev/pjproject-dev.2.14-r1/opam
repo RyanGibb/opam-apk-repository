@@ -10,14 +10,13 @@ depends: [
   "gsm-dev"
   "libsamplerate-dev"
   "libsrtp-dev"
-  "openssl-dev"
-  "pjproject"
+  "openssl-dev" {> "3"}
+  "pjproject" {= "2.14-r1"}
   "pkgconf"
   "portaudio-dev"
   "speex-dev"
   "speexdsp-dev"
 ]
-
 extra-source "pjproject-dev-2.14-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/pjproject-dev-2.14-r1.apk"
 }

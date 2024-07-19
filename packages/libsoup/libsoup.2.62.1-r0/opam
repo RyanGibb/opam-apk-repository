@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libsoup-2.62.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libsoup"]
+]
+depends: [
+  "glib"
+  "glib-networking"
+  "libintl"
+  "libxml2"
+  "musl"
+  "sqlite-libs"
+]
+extra-source "libsoup-2.62.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/libsoup-2.62.1-r0.apk"
+}

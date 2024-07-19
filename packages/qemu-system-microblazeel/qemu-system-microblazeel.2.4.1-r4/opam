@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add qemu-system-microblazeel-2.4.1-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del qemu-system-microblazeel"]
+]
+depends: [
+  "alsa-lib"
+  "curl"
+  "glib"
+  "gnutls"
+  "libaio"
+  "libbz2"
+  "libgcc"
+  "libjpeg-turbo"
+  "libnfs"
+  "libpng"
+  "libssh2"
+  "libusb"
+  "libuuid"
+  "lzo"
+  "musl"
+  "ncurses-libs"
+  "nettle"
+  "pixman"
+  "qemu"
+  "snappy"
+  "spice-server"
+  "usbredir"
+  "vde2-libs"
+  "zlib"
+]
+extra-source "qemu-system-microblazeel-2.4.1-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/qemu-system-microblazeel-2.4.1-r4.apk"
+}

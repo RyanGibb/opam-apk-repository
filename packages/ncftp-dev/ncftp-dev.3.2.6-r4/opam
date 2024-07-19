@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ncftp-dev-3.2.6-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ncftp-dev"]
+]
+depends: [
+  "ncftp" {= "3.2.6-r4"}
+]
+extra-source "ncftp-dev-3.2.6-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/ncftp-dev-3.2.6-r4.apk"
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ckbcomp-1.184-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ckbcomp"]
+]
+depends: [
+  "perl"
+]
+extra-source "ckbcomp-1.184-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/ckbcomp-1.184-r0.apk"
+}

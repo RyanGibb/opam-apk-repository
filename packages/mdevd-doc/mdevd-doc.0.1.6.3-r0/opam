@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del mdevd-doc"]
 ]
-
-
 extra-source "mdevd-doc-0.1.6.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/mdevd-doc-0.1.6.3-r0.apk"
 }

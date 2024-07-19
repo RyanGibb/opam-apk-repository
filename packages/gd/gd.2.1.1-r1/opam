@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gd-2.1.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gd"]
+]
+depends: [
+  "freetype"
+  "libjpeg-turbo"
+  "libpng"
+  "musl"
+  "zlib"
+]
+extra-source "gd-2.1.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/gd-2.1.1-r1.apk"
+}

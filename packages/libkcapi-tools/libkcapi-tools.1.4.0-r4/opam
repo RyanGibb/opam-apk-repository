@@ -9,7 +9,6 @@ depends: [
   "libkcapi"
   "musl"
 ]
-
 extra-source "libkcapi-tools-1.4.0-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libkcapi-tools-1.4.0-r4.apk"
 }

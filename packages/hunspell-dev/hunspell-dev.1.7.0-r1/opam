@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add hunspell-dev-1.7.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del hunspell-dev"]
+]
+depends: [
+  "libhunspell" {= "1.7.0-r1"}
+  "pkgconf"
+]
+extra-source "hunspell-dev-1.7.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/hunspell-dev-1.7.0-r1.apk"
+}

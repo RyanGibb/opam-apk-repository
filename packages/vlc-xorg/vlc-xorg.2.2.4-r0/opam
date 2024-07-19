@@ -1,0 +1,43 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add vlc-xorg-2.2.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del vlc-xorg"]
+]
+depends: [
+  "atk"
+  "cairo"
+  "dbus-libs"
+  "ffmpeg2.8-libs"
+  "fontconfig"
+  "freetype"
+  "fribidi"
+  "gdk-pixbuf"
+  "glib"
+  "gtk+2.0"
+  "libgcc"
+  "libice"
+  "libintl"
+  "libnotify"
+  "libsm"
+  "libstdc++"
+  "libva"
+  "libx11"
+  "libxcb"
+  "libxext"
+  "libxinerama"
+  "libxpm"
+  "mesa-egl"
+  "mesa-gl"
+  "musl"
+  "pango"
+  "vlc" {= "2.2.4-r0"}
+  "vlc-libs"
+  "xcb-util-keysyms"
+  "xdg-utils"
+  "zlib"
+]
+extra-source "vlc-xorg-2.2.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/vlc-xorg-2.2.4-r0.apk"
+}

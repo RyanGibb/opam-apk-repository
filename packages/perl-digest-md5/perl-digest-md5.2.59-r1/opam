@@ -9,7 +9,6 @@ depends: [
   "musl"
   "perl"
 ]
-
 extra-source "perl-digest-md5-2.59-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-digest-md5-2.59-r1.apk"
 }

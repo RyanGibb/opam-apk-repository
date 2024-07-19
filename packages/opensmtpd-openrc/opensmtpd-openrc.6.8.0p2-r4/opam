@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add opensmtpd-openrc-6.8.0p2-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del opensmtpd-openrc"]
+]
+extra-source "opensmtpd-openrc-6.8.0p2-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/opensmtpd-openrc-6.8.0p2-r4.apk"
+}

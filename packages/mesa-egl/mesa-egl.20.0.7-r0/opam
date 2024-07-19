@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mesa-egl-20.0.7-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mesa-egl"]
+]
+depends: [
+  "expat"
+  "libdrm"
+  "libx11"
+  "libxcb"
+  "libxshmfence"
+  "mesa" {= "20.0.7-r0"}
+  "mesa-gbm"
+  "mesa-glapi"
+  "musl"
+  "wayland-libs-client"
+  "wayland-libs-server"
+]
+extra-source "mesa-egl-20.0.7-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/mesa-egl-20.0.7-r0.apk"
+}

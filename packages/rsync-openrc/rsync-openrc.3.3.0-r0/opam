@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del rsync-openrc"]
 ]
-
-
 extra-source "rsync-openrc-3.3.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/rsync-openrc-3.3.0-r0.apk"
 }

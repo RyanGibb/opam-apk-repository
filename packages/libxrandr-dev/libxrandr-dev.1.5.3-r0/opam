@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libxrandr-dev-1.5.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libxrandr-dev"]
+]
+depends: [
+  "libx11-dev"
+  "libxext-dev"
+  "libxrandr" {= "1.5.3-r0"}
+  "libxrender-dev"
+  "pkgconf"
+  "xorgproto"
+]
+extra-source "libxrandr-dev-1.5.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libxrandr-dev-1.5.3-r0.apk"
+}

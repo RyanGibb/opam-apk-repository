@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libdnet-doc-1.16.4-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libdnet-doc"]
+]
+extra-source "libdnet-doc-1.16.4-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/libdnet-doc-1.16.4-r1.apk"
+}

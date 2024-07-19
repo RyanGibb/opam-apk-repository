@@ -8,7 +8,6 @@ remove: [
 depends: [
   "musl"
 ]
-
 extra-source "gsm-1.0.22-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/gsm-1.0.22-r3.apk"
 }

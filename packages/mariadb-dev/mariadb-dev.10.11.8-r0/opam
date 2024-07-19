@@ -8,12 +8,11 @@ remove: [
 depends: [
   "fmt-dev"
   "mariadb-connector-c-dev"
-  "mariadb-embedded"
+  "mariadb-embedded" {= "10.11.8-r0"}
   "openssl-dev"
   "pkgconf"
   "zlib-dev"
 ]
-
 extra-source "mariadb-dev-10.11.8-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/mariadb-dev-10.11.8-r0.apk"
 }

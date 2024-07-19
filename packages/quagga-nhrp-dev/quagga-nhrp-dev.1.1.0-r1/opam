@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add quagga-nhrp-dev-1.1.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del quagga-nhrp-dev"]
+]
+depends: [
+  "quagga-nhrp" {= "1.1.0-r1"}
+]
+extra-source "quagga-nhrp-dev-1.1.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/quagga-nhrp-dev-1.1.0-r1.apk"
+}

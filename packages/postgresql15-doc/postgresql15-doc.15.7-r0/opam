@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del postgresql15-doc"]
 ]
-
-
 extra-source "postgresql15-doc-15.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/postgresql15-doc-15.7-r0.apk"
 }

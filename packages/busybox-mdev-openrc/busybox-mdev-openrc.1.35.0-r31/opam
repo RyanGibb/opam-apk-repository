@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add busybox-mdev-openrc-1.35.0-r31.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del busybox-mdev-openrc"]
+]
+depends: [
+  "mdev-conf"
+  "openrc" {>= "0.24.1-r6"}
+]
+extra-source "busybox-mdev-openrc-1.35.0-r31.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/busybox-mdev-openrc-1.35.0-r31.apk"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add glfw-3.2.1-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del glfw"]
+]
+depends: [
+  "libx11"
+  "libxcursor"
+  "libxinerama"
+  "libxrandr"
+  "libxxf86vm"
+  "musl"
+]
+extra-source "glfw-3.2.1-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/glfw-3.2.1-r2.apk"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lighttpd-1.4.39-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lighttpd"]
+]
+depends: [
+  "busybox"
+  "libbz2"
+  "libcrypto1.0"
+  "libev"
+  "libssl1.0"
+  "lua5.1-libs"
+  "musl"
+  "pcre"
+  "zlib"
+]
+extra-source "lighttpd-1.4.39-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/lighttpd-1.4.39-r0.apk"
+}

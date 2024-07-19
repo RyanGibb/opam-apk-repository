@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add remmina-xfce-0.8.1-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del remmina-xfce"]
+]
+depends: [
+  "atk"
+  "cairo"
+  "fontconfig"
+  "freetype"
+  "gdk-pixbuf"
+  "glib"
+  "gtk+2.0"
+  "libintl"
+  "libxfce4util"
+  "musl"
+  "pango"
+  "remmina"
+  "xfce4-panel"
+]
+extra-source "remmina-xfce-0.8.1-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/remmina-xfce-0.8.1-r6.apk"
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lua5.3-posix-33.3.1-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lua5.3-posix"]
+]
+depends: [
+  "lua5.3-bitlib" {< "26"}
+  "musl"
+  "ncurses-libs"
+]
+extra-source "lua5.3-posix-33.3.1-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/lua5.3-posix-33.3.1-r4.apk"
+}

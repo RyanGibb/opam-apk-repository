@@ -9,7 +9,6 @@ depends: [
   "libattr"
   "musl"
 ]
-
 extra-source "attr-2.5.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/attr-2.5.2-r0.apk"
 }

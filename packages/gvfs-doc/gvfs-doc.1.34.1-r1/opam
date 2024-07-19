@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gvfs-doc-1.34.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gvfs-doc"]
+]
+extra-source "gvfs-doc-1.34.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/gvfs-doc-1.34.1-r1.apk"
+}

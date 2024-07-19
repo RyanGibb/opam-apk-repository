@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del execline-dev"]
 ]
 depends: [
-  "execline"
+  "execline" {= "2.9.5.1-r0"}
 ]
-
 extra-source "execline-dev-2.9.5.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/execline-dev-2.9.5.1-r0.apk"
 }

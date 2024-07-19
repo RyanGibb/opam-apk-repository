@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del apache2-doc"]
 ]
-
-
 extra-source "apache2-doc-2.4.61-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/apache2-doc-2.4.61-r0.apk"
 }

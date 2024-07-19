@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-datetime-1.51-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-datetime"]
+]
+depends: [
+  "musl"
+  "perl-datetime-locale"
+  "perl-datetime-timezone"
+  "perl-dist-checkconflicts"
+  "perl-namespace-autoclean"
+  "perl-params-validationcompiler"
+  "perl-specio"
+  "perl-try-tiny"
+]
+extra-source "perl-datetime-1.51-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/perl-datetime-1.51-r1.apk"
+}

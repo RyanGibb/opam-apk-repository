@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-crypt-ssleay-0.72-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-crypt-ssleay"]
+]
+depends: [
+  "libcrypto1.0"
+  "libssl1.0"
+  "musl"
+  "perl-path-class"
+  "perl-try-tiny"
+  "zlib"
+]
+extra-source "perl-crypt-ssleay-0.72-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/perl-crypt-ssleay-0.72-r1.apk"
+}

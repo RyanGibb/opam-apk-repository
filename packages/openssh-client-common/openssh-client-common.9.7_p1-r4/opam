@@ -7,11 +7,11 @@ remove: [
 ]
 depends: [
   "libcrypto3"
+  "libcrypto3" {>= "3.1.0"}
   "libedit"
   "musl"
   "zlib"
 ]
-
 extra-source "openssh-client-common-9.7_p1-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/openssh-client-common-9.7_p1-r4.apk"
 }

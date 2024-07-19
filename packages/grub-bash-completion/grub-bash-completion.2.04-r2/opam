@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add grub-bash-completion-2.04-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del grub-bash-completion"]
+]
+extra-source "grub-bash-completion-2.04-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/grub-bash-completion-2.04-r2.apk"
+}

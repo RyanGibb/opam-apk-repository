@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mesa-libd3dadapter9-23.3.6-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mesa-libd3dadapter9"]
+]
+depends: [
+  "libdrm"
+  "libelf"
+  "libexpat"
+  "libgcc"
+  "libstdc++"
+  "llvm17-libs"
+  "mesa" {= "23.3.6-r0"}
+  "musl"
+  "zlib"
+  "zstd-libs"
+]
+extra-source "mesa-libd3dadapter9-23.3.6-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/mesa-libd3dadapter9-23.3.6-r0.apk"
+}

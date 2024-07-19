@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add wpa_supplicant-2.7-r5.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del wpa_supplicant"]
+]
+depends: [
+  "dbus-libs"
+  "libcrypto1.1"
+  "libnl3"
+  "libssl1.1"
+  "musl"
+  "pcsc-lite-libs"
+]
+extra-source "wpa_supplicant-2.7-r5.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/wpa_supplicant-2.7-r5.apk"
+}

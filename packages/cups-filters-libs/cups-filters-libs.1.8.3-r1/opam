@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add cups-filters-libs-1.8.3-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del cups-filters-libs"]
+]
+depends: [
+  "bc"
+  "cups-libs"
+  "dbus-libs"
+  "gnutls"
+  "libjpeg-turbo"
+  "libpng"
+  "musl"
+  "poppler-utils"
+  "tiff"
+  "ttf-freefont"
+  "zlib"
+]
+extra-source "cups-filters-libs-1.8.3-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/cups-filters-libs-1.8.3-r1.apk"
+}

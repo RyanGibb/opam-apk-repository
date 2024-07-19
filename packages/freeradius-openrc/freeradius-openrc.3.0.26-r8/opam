@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del freeradius-openrc"]
 ]
-
-
 extra-source "freeradius-openrc-3.0.26-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/freeradius-openrc-3.0.26-r8.apk"
 }

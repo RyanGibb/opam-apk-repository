@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-time-parsedate-doc"]
 ]
-
-
 extra-source "perl-time-parsedate-doc-2015.103-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-time-parsedate-doc-2015.103-r6.apk"
 }

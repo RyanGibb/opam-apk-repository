@@ -8,7 +8,6 @@ remove: [
 depends: [
   ("busybox-binsh" | "dash-binsh" | "yash-binsh")
 ]
-
 extra-source "wireguard-tools-openrc-1.0.20210914-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/wireguard-tools-openrc-1.0.20210914-r4.apk"
 }

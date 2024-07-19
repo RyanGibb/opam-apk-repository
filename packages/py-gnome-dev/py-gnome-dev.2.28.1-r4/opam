@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py-gnome-dev-2.28.1-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py-gnome-dev"]
+]
+depends: [
+  "gtk+-dev"
+  "libgnome-dev"
+  "pkgconfig"
+  "py-gnome" {= "2.28.1-r4"}
+  "py-gnome-bonobo" {= "2.28.1-r4"}
+  "py-gnome-gconf" {= "2.28.1-r4"}
+  "py-gnome-gnomevfs" {= "2.28.1-r4"}
+  "py-gnome-libgnome" {= "2.28.1-r4"}
+  "py-gobject-dev"
+  "py-gtk-dev"
+  "python-dev"
+]
+extra-source "py-gnome-dev-2.28.1-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/py-gnome-dev-2.28.1-r4.apk"
+}

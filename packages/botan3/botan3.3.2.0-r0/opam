@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add botan3-3.2.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del botan3"]
+]
+depends: [
+  "botan3-libs"
+  "libgcc"
+  "libstdc++"
+  "musl"
+]
+extra-source "botan3-3.2.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/botan3-3.2.0-r0.apk"
+}

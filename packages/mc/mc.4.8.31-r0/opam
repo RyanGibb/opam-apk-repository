@@ -14,7 +14,6 @@ depends: [
   "musl"
   "slang"
 ]
-
 extra-source "mc-4.8.31-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/mc-4.8.31-r0.apk"
 }

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add linux-firmware-vxge-20230515-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del linux-firmware-vxge"]
+]
+extra-source "linux-firmware-vxge-20230515-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/linux-firmware-vxge-20230515-r6.apk"
+}

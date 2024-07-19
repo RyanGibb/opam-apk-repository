@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del snappy-static"]
 ]
-
-
 extra-source "snappy-static-1.1.10-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/snappy-static-1.1.10-r2.apk"
 }

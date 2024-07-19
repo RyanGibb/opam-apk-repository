@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add glamor-egl-0.6.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del glamor-egl"]
+]
+depends: [
+  "mesa-egl"
+  "mesa-gl"
+  "musl"
+]
+extra-source "glamor-egl-0.6.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/glamor-egl-0.6.0-r1.apk"
+}

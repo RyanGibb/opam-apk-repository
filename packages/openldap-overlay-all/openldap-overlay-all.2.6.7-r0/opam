@@ -33,7 +33,6 @@ depends: [
   "openldap-overlay-unique"
   "openldap-overlay-valsort"
 ]
-
 extra-source "openldap-overlay-all-2.6.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/openldap-overlay-all-2.6.7-r0.apk"
 }

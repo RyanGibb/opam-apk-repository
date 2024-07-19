@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mariadb-10.2.32-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mariadb"]
+]
+depends: [
+  "busybox"
+  "libaio"
+  "libressl2.7-libcrypto"
+  "libressl2.7-libssl"
+  "libstdc++"
+  "libxml2"
+  "linux-pam"
+  "mariadb-common"
+  "musl"
+  "ncurses-libs"
+  "pcre"
+  "xz-libs"
+  "zlib"
+]
+extra-source "mariadb-10.2.32-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/mariadb-10.2.32-r0.apk"
+}

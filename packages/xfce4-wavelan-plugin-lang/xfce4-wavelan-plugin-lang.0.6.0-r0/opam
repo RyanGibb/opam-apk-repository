@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xfce4-wavelan-plugin-lang-0.6.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xfce4-wavelan-plugin-lang"]
+]
+extra-source "xfce4-wavelan-plugin-lang-0.6.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/xfce4-wavelan-plugin-lang-0.6.0-r0.apk"
+}

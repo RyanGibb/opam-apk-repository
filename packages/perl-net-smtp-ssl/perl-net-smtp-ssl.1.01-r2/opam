@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-net-smtp-ssl-1.01-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-net-smtp-ssl"]
+]
+depends: [
+  "perl"
+  "perl-io-socket-ssl"
+]
+extra-source "perl-net-smtp-ssl-1.01-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/perl-net-smtp-ssl-1.01-r2.apk"
+}

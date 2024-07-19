@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add jemalloc-dev-5.0.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del jemalloc-dev"]
+]
+depends: [
+  "jemalloc" {= "5.0.1-r0"}
+  "pkgconf"
+]
+extra-source "jemalloc-dev-5.0.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/jemalloc-dev-5.0.1-r0.apk"
+}

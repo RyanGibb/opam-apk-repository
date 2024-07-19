@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del dropbear-openrc"]
 ]
-
-
 extra-source "dropbear-openrc-2024.85-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/dropbear-openrc-2024.85-r0.apk"
 }

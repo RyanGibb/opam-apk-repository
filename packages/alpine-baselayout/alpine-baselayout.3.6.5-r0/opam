@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del alpine-baselayout"]
 ]
 depends: [
-  "alpine-baselayout-data"
+  "alpine-baselayout-data" {= "3.6.5-r0"}
   ("busybox-binsh" | "dash-binsh" | "yash-binsh")
 ]
-
 extra-source "alpine-baselayout-3.6.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/alpine-baselayout-3.6.5-r0.apk"
 }

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add avahi-dev-0.8-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del avahi-dev"]
+]
+depends: [
+  "avahi" {= "0.8-r6"}
+  "avahi-compat-howl" {= "0.8-r6"}
+  "avahi-compat-libdns_sd" {= "0.8-r6"}
+  "avahi-glib" {= "0.8-r6"}
+  "avahi-libs" {= "0.8-r6"}
+  "gdbm-dev"
+  "glib-dev"
+  "pkgconf"
+]
+extra-source "avahi-dev-0.8-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/avahi-dev-0.8-r6.apk"
+}

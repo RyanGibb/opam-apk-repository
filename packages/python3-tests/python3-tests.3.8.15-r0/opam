@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add python3-tests-3.8.15-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del python3-tests"]
+]
+extra-source "python3-tests-3.8.15-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/python3-tests-3.8.15-r0.apk"
+}

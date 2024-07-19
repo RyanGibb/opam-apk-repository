@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py-gtk-dev-2.24.0-r14.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py-gtk-dev"]
+]
+depends: [
+  "gtk+2.0-dev"
+  "pkgconf"
+  "py-gobject-dev"
+  "py-gtk"
+]
+extra-source "py-gtk-dev-2.24.0-r14.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/py-gtk-dev-2.24.0-r14.apk"
+}

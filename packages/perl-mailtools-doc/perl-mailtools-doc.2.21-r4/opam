@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-mailtools-doc"]
 ]
-
-
 extra-source "perl-mailtools-doc-2.21-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-mailtools-doc-2.21-r4.apk"
 }

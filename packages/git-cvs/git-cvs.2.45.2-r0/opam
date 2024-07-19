@@ -8,9 +8,8 @@ remove: [
 depends: [
   "perl"
   "perl-dbd-sqlite"
-  "perl-git"
+  "perl-git" {= "2.45.2-r0"}
 ]
-
 extra-source "git-cvs-2.45.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/git-cvs-2.45.2-r0.apk"
 }

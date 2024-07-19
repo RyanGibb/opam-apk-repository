@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add go-tools-1.4.2-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del go-tools"]
+]
+depends: [
+  "go"
+  "musl"
+]
+extra-source "go-tools-1.4.2-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/go-tools-1.4.2-r1.apk"
+}

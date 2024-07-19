@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add snownews-1.5.12-r7.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del snownews"]
+]
+depends: [
+  "libintl"
+  "libressl2.7-libcrypto"
+  "libxml2"
+  "musl"
+  "ncurses"
+  "ncurses-libs"
+  "zlib"
+]
+extra-source "snownews-1.5.12-r7.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/snownews-1.5.12-r7.apk"
+}

@@ -10,7 +10,6 @@ depends: [
   "libssl3"
   "musl"
 ]
-
 extra-source "u-boot-tools-2024.04-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/u-boot-tools-2024.04-r1.apk"
 }

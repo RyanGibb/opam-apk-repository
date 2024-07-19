@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add dahdi-linux-grsec-4.4.59-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del dahdi-linux-grsec"]
+]
+depends: [
+  "dahdi-linux"
+  "linux-grsec" {= "4.4.59-r0"}
+]
+extra-source "dahdi-linux-grsec-4.4.59-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/dahdi-linux-grsec-4.4.59-r0.apk"
+}

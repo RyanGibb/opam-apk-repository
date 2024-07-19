@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libxapian-1.2.23-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libxapian"]
+]
+depends: [
+  "libgcc"
+  "libstdc++"
+  "libuuid"
+  "musl"
+  "zlib"
+]
+extra-source "libxapian-1.2.23-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/libxapian-1.2.23-r0.apk"
+}

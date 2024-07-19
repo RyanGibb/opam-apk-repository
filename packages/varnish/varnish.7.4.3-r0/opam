@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add varnish-7.4.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del varnish"]
+]
+depends: [
+  "gcc"
+  "libc-dev"
+  "libedit"
+  "libgcc"
+  "libncursesw"
+  "libunwind"
+  "musl"
+  "pcre2"
+  "varnish-libs"
+  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
+]
+extra-source "varnish-7.4.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/varnish-7.4.3-r0.apk"
+}

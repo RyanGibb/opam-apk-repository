@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libcmis-0.5.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libcmis"]
+]
+depends: [
+  "boost-date_time"
+  "curl"
+  "libgcc"
+  "libstdc++"
+  "libxml2"
+  "musl"
+]
+extra-source "libcmis-0.5.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/libcmis-0.5.0-r1.apk"
+}

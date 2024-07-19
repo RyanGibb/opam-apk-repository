@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del bsd-compat-headers"]
 ]
-
-
 extra-source "bsd-compat-headers-0.7.2-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/bsd-compat-headers-0.7.2-r6.apk"
 }

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-starlet-0.30-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-starlet"]
+]
+depends: [
+  "perl-parallel-prefork"
+  "perl-plack"
+  "perl-server-starter"
+]
+extra-source "perl-starlet-0.30-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/perl-starlet-0.30-r0.apk"
+}

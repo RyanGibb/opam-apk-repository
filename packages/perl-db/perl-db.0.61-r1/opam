@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-db-0.61-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-db"]
+]
+depends: [
+  "db"
+  "musl"
+  "perl"
+]
+extra-source "perl-db-0.61-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/perl-db-0.61-r1.apk"
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add vim-tutor-9.0.2127-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del vim-tutor"]
+]
+depends: [
+  "gvim"
+]
+extra-source "vim-tutor-9.0.2127-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/vim-tutor-9.0.2127-r0.apk"
+}

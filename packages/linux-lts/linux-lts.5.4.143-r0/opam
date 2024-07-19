@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add linux-lts-5.4.143-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del linux-lts"]
+]
+depends: [
+  "mkinitfs"
+  ("linux-firmware-ueagle-atm" | "linux-firmware-radeon" | "linux-firmware-qed" | "linux-firmware-dabusb" | "linux-firmware-nvidia" | "linux-firmware-mediatek" | "linux-firmware-cpia2" | "linux-firmware-rtw88" | "linux-firmware-amdgpu" | "linux-firmware-amd" | "linux-firmware-vicam" | "linux-firmware-cxgb3" | "linux-firmware-cxgb4" | "linux-firmware-keyspan_pda" | "linux-firmware-ath6k" | "linux-firmware-ositech" | "linux-firmware-rtl8192e" | "linux-firmware-tehuti" | "linux-firmware-yam" | "linux-firmware-dpaa2" | "linux-firmware-atmel" | "linux-firmware-yamaha" | "linux-firmware-dsp56k" | "linux-firmware-sxg" | "linux-firmware-ene-ub6250" | "linux-firmware-intel" | "linux-firmware-liquidio" | "linux-firmware-cis" | "linux-firmware-none" | "linux-firmware-advansys" | "linux-firmware-rockchip" | "linux-firmware-ttusb-budget" | "linux-firmware-qlogic" | "linux-firmware-vxge" | "linux-firmware-acenic" | "linux-firmware-e100" | "linux-firmware-rtl_bt" | "linux-firmware-mellanox" | "linux-firmware-cadence" | "linux-firmware-r128" | "linux-firmware-libertas" | "linux-firmware-adaptec" | "linux-firmware-matrox" | "linux-firmware-ess" | "linux-firmware-tigon" | "linux-firmware-microchip" | "linux-firmware-mwl8k" | "linux-firmware-av7110" | "linux-firmware" | "linux-firmware-kaweth" | "linux-firmware-ath9k_htc" | "linux-firmware-bnx2x" | "linux-firmware-edgeport" | "linux-firmware-amd-ucode" | "linux-firmware-rtlwifi" | "linux-firmware-other" | "linux-firmware-meson" | "linux-firmware-sb16" | "linux-firmware-atusb" | "linux-firmware-sun" | "linux-firmware-bnx2" | "linux-firmware-netronome" | "linux-firmware-3com" | "linux-firmware-i915" | "linux-firmware-moxa" | "linux-firmware-cavium" | "linux-firmware-keyspan" | "linux-firmware-mwlwifi" | "linux-firmware-qca" | "linux-firmware-emi62" | "linux-firmware-ti-keystone" | "linux-firmware-myricom" | "linux-firmware-ti-connectivity" | "linux-firmware-korg" | "linux-firmware-slicoss" | "linux-firmware-rsi" | "linux-firmware-brcm" | "linux-firmware-emi26" | "linux-firmware-imx" | "linux-firmware-rtl_nic" | "linux-firmware-go7007" | "linux-firmware-qcom" | "linux-firmware-inside-secure" | "linux-firmware-isci" | "linux-firmware-mrvl" | "linux-firmware-ath10k" | "linux-firmware-ar3k")
+]
+extra-source "linux-lts-5.4.143-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/linux-lts-5.4.143-r0.apk"
+}

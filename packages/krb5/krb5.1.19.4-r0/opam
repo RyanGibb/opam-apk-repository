@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add krb5-1.19.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del krb5"]
+]
+depends: [
+  "e2fsprogs-libs"
+  "krb5-conf"
+  "krb5-libs"
+  "libcom_err"
+  "musl"
+]
+extra-source "krb5-1.19.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/krb5-1.19.4-r0.apk"
+}

@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del font-cronyx-cyrillic-doc"]
 ]
-
-
 extra-source "font-cronyx-cyrillic-doc-1.0.4-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/font-cronyx-cyrillic-doc-1.0.4-r1.apk"
 }

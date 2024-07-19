@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-test-mockrandom-doc"]
 ]
-
-
 extra-source "perl-test-mockrandom-doc-1.01-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-test-mockrandom-doc-1.01-r5.apk"
 }

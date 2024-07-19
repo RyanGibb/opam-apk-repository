@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-package-stash-xs-doc-0.29-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-package-stash-xs-doc"]
+]
+extra-source "perl-package-stash-xs-doc-0.29-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/perl-package-stash-xs-doc-0.29-r4.apk"
+}

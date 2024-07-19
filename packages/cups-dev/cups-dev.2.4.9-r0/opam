@@ -7,13 +7,12 @@ remove: [
 ]
 depends: [
   "avahi-dev"
-  "cups-libs"
+  "cups-libs" {= "2.4.9-r0"}
   "gnutls-dev"
   "libgcrypt-dev"
   "pkgconf"
   "zlib-dev"
 ]
-
 extra-source "cups-dev-2.4.9-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/cups-dev-2.4.9-r0.apk"
 }

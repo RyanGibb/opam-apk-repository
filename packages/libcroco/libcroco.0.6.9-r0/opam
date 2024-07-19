@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libcroco-0.6.9-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libcroco"]
+]
+depends: [
+  "glib"
+  "libintl"
+  "libxml2"
+  "musl"
+]
+extra-source "libcroco-0.6.9-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/libcroco-0.6.9-r0.apk"
+}

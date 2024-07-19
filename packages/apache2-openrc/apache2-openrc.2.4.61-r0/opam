@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del apache2-openrc"]
 ]
-
-
 extra-source "apache2-openrc-2.4.61-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/apache2-openrc-2.4.61-r0.apk"
 }

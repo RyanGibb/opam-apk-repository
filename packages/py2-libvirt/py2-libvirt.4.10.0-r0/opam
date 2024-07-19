@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py2-libvirt-4.10.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py2-libvirt"]
+]
+depends: [
+  "libvirt-libs"
+  "musl"
+  "python2"
+]
+extra-source "py2-libvirt-4.10.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/py2-libvirt-4.10.0-r0.apk"
+}

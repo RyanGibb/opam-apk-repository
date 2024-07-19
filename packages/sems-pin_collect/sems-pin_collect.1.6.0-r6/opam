@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add sems-pin_collect-1.6.0-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del sems-pin_collect"]
+]
+depends: [
+  "sems"
+  "sems-ivr"
+]
+extra-source "sems-pin_collect-1.6.0-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/sems-pin_collect-1.6.0-r6.apk"
+}

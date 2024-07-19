@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add amavis-2.13.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del amavis"]
+]
+depends: [
+  "file"
+  "perl"
+  "perl-archive-zip"
+  "perl-carp"
+  "perl-compress-raw-zlib"
+  "perl-convert-tnef"
+  "perl-convert-uulib"
+  "perl-digest-md5"
+  "perl-exporter"
+  "perl-io"
+  "perl-io-socket-inet6"
+  "perl-io-socket-ssl"
+  "perl-io-stringy"
+  "perl-mail-dkim"
+  "perl-mail-spamassassin"
+  "perl-mailtools"
+  "perl-mime-tools"
+  "perl-net-libidn"
+  "perl-net-server"
+  "perl-socket"
+  "perl-time-hires"
+  "perl-unix-syslog"
+  "sed"
+  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
+]
+extra-source "amavis-2.13.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/amavis-2.13.0-r0.apk"
+}

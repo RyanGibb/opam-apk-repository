@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xfce4-whiskermenu-plugin-1.7.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xfce4-whiskermenu-plugin"]
+]
+depends: [
+  "cairo"
+  "exo"
+  "garcon"
+  "gdk-pixbuf"
+  "glib"
+  "gtk+2.0"
+  "libgcc"
+  "libstdc++"
+  "libxfce4ui"
+  "libxfce4util"
+  "musl"
+  "xfce4-panel"
+]
+extra-source "xfce4-whiskermenu-plugin-1.7.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/xfce4-whiskermenu-plugin-1.7.0-r0.apk"
+}

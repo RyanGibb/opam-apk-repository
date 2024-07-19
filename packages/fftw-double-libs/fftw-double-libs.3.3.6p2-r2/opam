@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add fftw-double-libs-3.3.6p2-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del fftw-double-libs"]
+]
+depends: [
+  "musl"
+]
+extra-source "fftw-double-libs-3.3.6p2-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/fftw-double-libs-3.3.6p2-r2.apk"
+}

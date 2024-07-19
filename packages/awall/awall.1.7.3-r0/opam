@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add awall-1.7.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del awall"]
+]
+depends: [
+  "busybox"
+  "drill"
+  "ip6tables"
+  "ipset"
+  "iptables"
+  "lua5.2"
+  "lua5.2-alt-getopt"
+  "lua5.2-cjson"
+  "lua5.2-pc"
+  "lua5.2-posix"
+  "lua5.2-stringy"
+  "xtables-addons"
+]
+extra-source "awall-1.7.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/awall-1.7.3-r0.apk"
+}

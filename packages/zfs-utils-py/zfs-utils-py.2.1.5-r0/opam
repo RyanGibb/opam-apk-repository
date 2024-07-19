@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add zfs-utils-py-2.1.5-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del zfs-utils-py"]
+]
+depends: [
+  "python3"
+]
+extra-source "zfs-utils-py-2.1.5-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/zfs-utils-py-2.1.5-r0.apk"
+}

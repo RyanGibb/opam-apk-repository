@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del libxslt-static"]
 ]
-
-
 extra-source "libxslt-static-1.1.39-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libxslt-static-1.1.39-r1.apk"
 }

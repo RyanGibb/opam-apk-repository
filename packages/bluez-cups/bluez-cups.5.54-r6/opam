@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add bluez-cups-5.54-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del bluez-cups"]
+]
+depends: [
+  "dbus"
+  "dbus-libs"
+  "glib"
+  "musl"
+]
+extra-source "bluez-cups-5.54-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/bluez-cups-5.54-r6.apk"
+}

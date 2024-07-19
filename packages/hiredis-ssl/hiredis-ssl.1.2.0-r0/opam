@@ -10,7 +10,6 @@ depends: [
   "libssl3"
   "musl"
 ]
-
 extra-source "hiredis-ssl-1.2.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/hiredis-ssl-1.2.0-r0.apk"
 }

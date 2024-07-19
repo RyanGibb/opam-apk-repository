@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add e2fsprogs-extra-1.43.7-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del e2fsprogs-extra"]
+]
+depends: [
+  "e2fsprogs"
+  "e2fsprogs-libs"
+  "libblkid"
+  "libcom_err"
+  "libuuid"
+  "musl"
+]
+extra-source "e2fsprogs-extra-1.43.7-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/e2fsprogs-extra-1.43.7-r1.apk"
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add busybox-static-1.35.0-r18.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del busybox-static"]
+]
+extra-source "busybox-static-1.35.0-r18.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/busybox-static-1.35.0-r18.apk"
+}

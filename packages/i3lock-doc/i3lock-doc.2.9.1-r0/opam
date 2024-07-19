@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add i3lock-doc-2.9.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del i3lock-doc"]
+]
+extra-source "i3lock-doc-2.9.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/i3lock-doc-2.9.1-r0.apk"
+}

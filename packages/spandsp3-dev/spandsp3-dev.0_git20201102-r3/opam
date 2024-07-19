@@ -7,9 +7,8 @@ remove: [
 ]
 depends: [
   "pkgconf"
-  "spandsp3"
+  "spandsp3" {= "0_git20201102-r3"}
 ]
-
 extra-source "spandsp3-dev-0_git20201102-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/spandsp3-dev-0_git20201102-r3.apk"
 }

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libvirt-static-5.9.0-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libvirt-static"]
+]
+depends: [
+  "lvm2"
+]
+extra-source "libvirt-static-5.9.0-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/libvirt-static-5.9.0-r2.apk"
+}

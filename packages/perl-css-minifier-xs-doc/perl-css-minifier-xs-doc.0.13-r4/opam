@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-css-minifier-xs-doc"]
 ]
-
-
 extra-source "perl-css-minifier-xs-doc-0.13-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-css-minifier-xs-doc-0.13-r4.apk"
 }

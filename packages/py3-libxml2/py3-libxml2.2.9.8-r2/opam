@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py3-libxml2-2.9.8-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py3-libxml2"]
+]
+depends: [
+  "libxml2"
+  "musl"
+  "python3"
+]
+extra-source "py3-libxml2-2.9.8-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/py3-libxml2-2.9.8-r2.apk"
+}

@@ -10,7 +10,6 @@ depends: [
   "musl"
   "popt"
 ]
-
 extra-source "ipvsadm-1.31-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/ipvsadm-1.31-r3.apk"
 }

@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del quagga-dev"]
 ]
 depends: [
-  "quagga"
+  "quagga" {= "1.2.4-r9"}
 ]
-
 extra-source "quagga-dev-1.2.4-r9.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/quagga-dev-1.2.4-r9.apk"
 }

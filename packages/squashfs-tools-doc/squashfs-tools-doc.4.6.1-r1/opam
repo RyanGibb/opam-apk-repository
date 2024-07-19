@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del squashfs-tools-doc"]
 ]
-
-
 extra-source "squashfs-tools-doc-4.6.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/squashfs-tools-doc-4.6.1-r1.apk"
 }

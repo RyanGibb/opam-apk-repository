@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libpurple-bonjour-2.10.11-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libpurple-bonjour"]
+]
+depends: [
+  "avahi-glib"
+  "avahi-libs"
+  "glib"
+  "libintl"
+  "libxml2"
+  "musl"
+]
+extra-source "libpurple-bonjour-2.10.11-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/libpurple-bonjour-2.10.11-r3.apk"
+}

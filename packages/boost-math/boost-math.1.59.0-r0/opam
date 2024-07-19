@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add boost-math-1.59.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del boost-math"]
+]
+depends: [
+  "libgcc"
+  "musl"
+]
+extra-source "boost-math-1.59.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/boost-math-1.59.0-r0.apk"
+}

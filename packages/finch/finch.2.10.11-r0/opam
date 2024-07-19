@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add finch-2.10.11-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del finch"]
+]
+depends: [
+  "dbus-glib"
+  "dbus-libs"
+  "farstream0.1"
+  "glib"
+  "gst-plugins-base0.10"
+  "gstreamer0.10"
+  "libidn"
+  "libintl"
+  "libpurple"
+  "libx11"
+  "libxml2"
+  "musl"
+  "ncurses-widec-libs"
+  "python"
+]
+extra-source "finch-2.10.11-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/finch-2.10.11-r0.apk"
+}

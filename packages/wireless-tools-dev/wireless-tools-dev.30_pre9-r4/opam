@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del wireless-tools-dev"]
 ]
 depends: [
-  "wireless-tools-libs"
+  "wireless-tools-libs" {= "30_pre9-r4"}
 ]
-
 extra-source "wireless-tools-dev-30_pre9-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/wireless-tools-dev-30_pre9-r4.apk"
 }

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add grub-bios-2.02-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del grub-bios"]
+]
+depends: [
+  "grub"
+]
+extra-source "grub-bios-2.02-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/grub-bios-2.02-r3.apk"
+}

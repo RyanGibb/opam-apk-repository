@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add parted-dev-3.1-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del parted-dev"]
+]
+depends: [
+  "parted" {= "3.1-r2"}
+  "parted-doc" {= "3.1-r2"}
+  "pkgconfig"
+]
+extra-source "parted-dev-3.1-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/parted-dev-3.1-r2.apk"
+}

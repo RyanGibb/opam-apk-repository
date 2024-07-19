@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add nautilus-dev-2.32.2.1-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del nautilus-dev"]
+]
+depends: [
+  "gconf-dev"
+  "gnome-desktop-dev"
+  "gnome-doc-utils"
+  "gtk+-dev"
+  "libgnome-dev"
+  "librsvg-dev"
+  "libunique-dev"
+  "libwnck-dev"
+  "libx11-dev"
+  "libxau-dev"
+  "libxcb-dev"
+  "libxcomposite-dev"
+  "libxcursor-dev"
+  "libxdmcp-dev"
+  "libxext-dev"
+  "libxi-dev"
+  "nautilus" {= "2.32.2.1-r3"}
+  "nautilus-lang" {= "2.32.2.1-r3"}
+  "pkgconfig"
+]
+extra-source "nautilus-dev-2.32.2.1-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/nautilus-dev-2.32.2.1-r3.apk"
+}

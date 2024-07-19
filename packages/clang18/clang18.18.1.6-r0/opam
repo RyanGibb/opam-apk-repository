@@ -6,9 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del clang18"]
 ]
 depends: [
-  "clang18-headers"
+  "clang18-headers" {= "18.1.6-r0"}
   "clang18-libs"
-  "fortify-headers"
+  "clang18-libs" {= "18.1.6-r0"}
+  "fortify-headers" {>= "1.1-r2"}
   "gcc"
   "libgcc"
   "libstdc++"
@@ -18,7 +19,6 @@ depends: [
   "musl"
   "musl-dev"
 ]
-
 extra-source "clang18-18.1.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/clang18-18.1.6-r0.apk"
 }

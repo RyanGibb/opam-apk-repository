@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del iso-codes"]
 ]
-
-
 extra-source "iso-codes-4.16.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/iso-codes-4.16.0-r0.apk"
 }

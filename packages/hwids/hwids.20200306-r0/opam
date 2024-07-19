@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add hwids-20200306-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del hwids"]
+]
+depends: [
+  "hwids-net"
+  "hwids-pci"
+  "hwids-udev"
+  "hwids-usb"
+]
+extra-source "hwids-20200306-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/hwids-20200306-r0.apk"
+}

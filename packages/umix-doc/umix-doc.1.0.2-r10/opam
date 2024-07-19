@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del umix-doc"]
 ]
-
-
 extra-source "umix-doc-1.0.2-r10.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/umix-doc-1.0.2-r10.apk"
 }

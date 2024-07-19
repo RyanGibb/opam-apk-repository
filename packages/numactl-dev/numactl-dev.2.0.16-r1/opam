@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add numactl-dev-2.0.16-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del numactl-dev"]
+]
+depends: [
+  "numactl" {= "2.0.16-r1"}
+  "pkgconf"
+]
+extra-source "numactl-dev-2.0.16-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/numactl-dev-2.0.16-r1.apk"
+}

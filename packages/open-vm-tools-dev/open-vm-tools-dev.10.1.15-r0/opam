@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add open-vm-tools-dev-10.1.15-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del open-vm-tools-dev"]
+]
+depends: [
+  "open-vm-tools" {= "10.1.15-r0"}
+  "pkgconf"
+]
+extra-source "open-vm-tools-dev-10.1.15-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/open-vm-tools-dev-10.1.15-r0.apk"
+}

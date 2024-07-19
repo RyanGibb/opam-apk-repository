@@ -13,12 +13,11 @@ depends: [
   "libsmartcols"
   "libuuid"
   "musl"
-  "setarch"
+  "setarch" {= "2.40.1-r1"}
   "util-linux"
   "zlib"
   ("busybox-binsh" | "dash-binsh" | "yash-binsh")
 ]
-
 extra-source "util-linux-misc-2.40.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/util-linux-misc-2.40.1-r1.apk"
 }

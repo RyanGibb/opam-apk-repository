@@ -6,14 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del freeradius-eap"]
 ]
 depends: [
-  "freeradius"
+  "freeradius" {= "3.0.26-r8"}
   "freeradius-lib"
   "libcrypto3"
   "libssl3"
   "musl"
   "talloc"
 ]
-
 extra-source "freeradius-eap-3.0.26-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/freeradius-eap-3.0.26-r8.apk"
 }

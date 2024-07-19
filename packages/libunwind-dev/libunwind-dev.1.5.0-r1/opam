@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libunwind-dev-1.5.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libunwind-dev"]
+]
+depends: [
+  "libucontext-dev"
+  "libunwind" {= "1.5.0-r1"}
+  "pkgconf"
+]
+extra-source "libunwind-dev-1.5.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libunwind-dev-1.5.0-r1.apk"
+}

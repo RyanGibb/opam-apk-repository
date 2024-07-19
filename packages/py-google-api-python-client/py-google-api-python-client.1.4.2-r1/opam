@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py-google-api-python-client-1.4.2-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py-google-api-python-client"]
+]
+depends: [
+  "py-httplib2"
+  "py-oauth2client"
+  "py-six"
+  "py-uritemplate"
+  "python2"
+]
+extra-source "py-google-api-python-client-1.4.2-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/py-google-api-python-client-1.4.2-r1.apk"
+}

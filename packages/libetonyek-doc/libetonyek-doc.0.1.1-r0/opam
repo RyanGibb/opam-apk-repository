@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libetonyek-doc-0.1.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libetonyek-doc"]
+]
+extra-source "libetonyek-doc-0.1.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/libetonyek-doc-0.1.1-r0.apk"
+}

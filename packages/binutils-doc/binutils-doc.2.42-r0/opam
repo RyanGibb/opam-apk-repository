@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del binutils-doc"]
 ]
-
-
 extra-source "binutils-doc-2.42-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/binutils-doc-2.42-r0.apk"
 }

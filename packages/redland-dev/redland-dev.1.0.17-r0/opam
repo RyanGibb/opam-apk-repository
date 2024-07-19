@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add redland-dev-1.0.17-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del redland-dev"]
+]
+depends: [
+  "pkgconfig"
+  "raptor2-dev"
+  "rasqal-dev"
+  "redland" {= "1.0.17-r0"}
+  "sqlite-dev"
+]
+extra-source "redland-dev-1.0.17-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/redland-dev-1.0.17-r0.apk"
+}

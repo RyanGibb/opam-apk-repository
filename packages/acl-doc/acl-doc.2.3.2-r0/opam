@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del acl-doc"]
 ]
-
-
 extra-source "acl-doc-2.3.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/acl-doc-2.3.2-r0.apk"
 }

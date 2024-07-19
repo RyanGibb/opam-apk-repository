@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add strongswan-logfile-5.8.1-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del strongswan-logfile"]
+]
+depends: [
+  "strongswan"
+]
+extra-source "strongswan-logfile-5.8.1-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/strongswan-logfile-5.8.1-r2.apk"
+}

@@ -6,11 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del brotli-dev"]
 ]
 depends: [
-  "brotli"
-  "brotli-libs"
+  "brotli" {= "1.1.0-r2"}
+  "brotli-libs" {= "1.1.0-r2"}
   "pkgconf"
 ]
-
 extra-source "brotli-dev-1.1.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/brotli-dev-1.1.0-r2.apk"
 }

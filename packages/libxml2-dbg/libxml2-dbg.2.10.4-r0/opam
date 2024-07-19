@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libxml2-dbg-2.10.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libxml2-dbg"]
+]
+extra-source "libxml2-dbg-2.10.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libxml2-dbg-2.10.4-r0.apk"
+}

@@ -1,0 +1,37 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gtk+3.0-dev-3.24.22-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gtk+3.0-dev"]
+]
+depends: [
+  "at-spi2-atk-dev"
+  "atk-dev"
+  "cairo-dev"
+  "fontconfig-dev"
+  "fribidi-dev"
+  "gdk-pixbuf-dev"
+  "glib-dev"
+  "gtk+3.0" {= "3.24.22-r1"}
+  "libepoxy-dev"
+  "libx11-dev"
+  "libxcomposite-dev"
+  "libxcursor-dev"
+  "libxdamage-dev"
+  "libxext-dev"
+  "libxfixes-dev"
+  "libxi-dev"
+  "libxinerama-dev"
+  "libxkbcommon-dev"
+  "libxrandr-dev"
+  "pango-dev"
+  "pkgconf"
+  "wayland-dev"
+  "wayland-libs-client"
+  "wayland-libs-cursor"
+  "wayland-protocols"
+]
+extra-source "gtk+3.0-dev-3.24.22-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/gtk+3.0-dev-3.24.22-r1.apk"
+}

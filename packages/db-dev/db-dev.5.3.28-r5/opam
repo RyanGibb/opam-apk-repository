@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del db-dev"]
 ]
 depends: [
-  "db"
-  "db-c++"
+  "db" {= "5.3.28-r5"}
+  "db-c++" {= "5.3.28-r5"}
 ]
-
 extra-source "db-dev-5.3.28-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/db-dev-5.3.28-r5.apk"
 }

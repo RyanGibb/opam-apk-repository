@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add testdisk-6.14-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del testdisk"]
+]
+depends: [
+  "e2fsprogs"
+  "libjpeg-turbo"
+  "libuuid"
+  "musl"
+  "ncurses-widec-libs"
+  "ntfs-3g"
+  "zlib"
+]
+extra-source "testdisk-6.14-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/testdisk-6.14-r1.apk"
+}

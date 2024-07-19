@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libva-glx-dev-2.7.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libva-glx-dev"]
+]
+depends: [
+  "libva-dev"
+  "libva-glx" {= "2.7.1-r0"}
+  "libxfixes-dev"
+  "mesa-dev"
+  "pkgconf"
+]
+extra-source "libva-glx-dev-2.7.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/libva-glx-dev-2.7.1-r0.apk"
+}

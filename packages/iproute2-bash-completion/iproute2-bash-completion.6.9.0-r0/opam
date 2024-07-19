@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del iproute2-bash-completion"]
 ]
-
-
 extra-source "iproute2-bash-completion-6.9.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/iproute2-bash-completion-6.9.0-r0.apk"
 }

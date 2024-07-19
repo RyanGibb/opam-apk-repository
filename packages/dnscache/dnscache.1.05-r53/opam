@@ -10,7 +10,6 @@ depends: [
   "musl"
   ("busybox-binsh" | "dash-binsh" | "yash-binsh")
 ]
-
 extra-source "dnscache-1.05-r53.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/dnscache-1.05-r53.apk"
 }

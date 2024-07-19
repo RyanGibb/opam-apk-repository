@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add rarian-dev-0.8.1-r9.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del rarian-dev"]
+]
+depends: [
+  "pkgconf"
+  "rarian" {= "0.8.1-r9"}
+]
+extra-source "rarian-dev-0.8.1-r9.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/rarian-dev-0.8.1-r9.apk"
+}

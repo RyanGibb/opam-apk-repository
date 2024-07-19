@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-dbix-dbschema-0.45-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-dbix-dbschema"]
+]
+depends: [
+  "perl"
+  "perl-dbi"
+]
+extra-source "perl-dbix-dbschema-0.45-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/perl-dbix-dbschema-0.45-r0.apk"
+}

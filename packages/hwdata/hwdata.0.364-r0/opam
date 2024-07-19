@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add hwdata-0.364-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del hwdata"]
+]
+depends: [
+  "hwdata-net"
+  "hwdata-pci"
+  "hwdata-pnp"
+  "hwdata-usb"
+]
+extra-source "hwdata-0.364-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/hwdata-0.364-r0.apk"
+}

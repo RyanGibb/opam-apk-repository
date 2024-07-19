@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-mime-tools-5.505-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-mime-tools"]
+]
+depends: [
+  "perl"
+  "perl-convert-binhex"
+  "perl-io-stringy"
+  "perl-mail-tools"
+]
+extra-source "perl-mime-tools-5.505-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/perl-mime-tools-5.505-r0.apk"
+}

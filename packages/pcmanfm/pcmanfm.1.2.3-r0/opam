@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add pcmanfm-1.2.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del pcmanfm"]
+]
+depends: [
+  "atk"
+  "cairo"
+  "gdk-pixbuf"
+  "glib"
+  "gtk+2.0"
+  "libfm"
+  "libintl"
+  "libx11"
+  "musl"
+  "pango"
+]
+extra-source "pcmanfm-1.2.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/pcmanfm-1.2.3-r0.apk"
+}

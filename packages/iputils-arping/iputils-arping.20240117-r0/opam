@@ -9,7 +9,6 @@ depends: [
   "libcap2"
   "musl"
 ]
-
 extra-source "iputils-arping-20240117-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/iputils-arping-20240117-r0.apk"
 }

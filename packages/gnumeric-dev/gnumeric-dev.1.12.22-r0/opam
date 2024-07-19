@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gnumeric-dev-1.12.22-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gnumeric-dev"]
+]
+depends: [
+  "gnumeric" {= "1.12.22-r0"}
+  "gnumeric-doc" {= "1.12.22-r0"}
+  "gnumeric-lang" {= "1.12.22-r0"}
+  "pkgconfig"
+]
+extra-source "gnumeric-dev-1.12.22-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/gnumeric-dev-1.12.22-r0.apk"
+}

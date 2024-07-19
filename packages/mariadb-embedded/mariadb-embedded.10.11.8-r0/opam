@@ -11,12 +11,11 @@ depends: [
   "libgcc"
   "libssl3"
   "libstdc++"
-  "mariadb-common"
+  "mariadb-common" {= "10.11.8-r0"}
   "musl"
   "pcre2"
   "zlib"
 ]
-
 extra-source "mariadb-embedded-10.11.8-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/mariadb-embedded-10.11.8-r0.apk"
 }

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add bluez-meshctl-5.70-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del bluez-meshctl"]
+]
+depends: [
+  "dbus"
+  "dbus-libs"
+  "glib"
+  "json-c"
+  "musl"
+  "readline"
+]
+extra-source "bluez-meshctl-5.70-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/bluez-meshctl-5.70-r0.apk"
+}

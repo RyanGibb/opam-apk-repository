@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-b-hooks-endofscope-0.24-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-b-hooks-endofscope"]
+]
+depends: [
+  "perl-module-implementation"
+  "perl-module-runtime"
+  "perl-sub-exporter-progressive"
+  "perl-variable-magic"
+]
+extra-source "perl-b-hooks-endofscope-0.24-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/perl-b-hooks-endofscope-0.24-r2.apk"
+}

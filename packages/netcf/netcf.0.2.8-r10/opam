@@ -10,7 +10,6 @@ depends: [
   "netcf-libs"
   "readline"
 ]
-
 extra-source "netcf-0.2.8-r10.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/netcf-0.2.8-r10.apk"
 }

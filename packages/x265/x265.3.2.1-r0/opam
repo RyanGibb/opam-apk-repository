@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add x265-3.2.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del x265"]
+]
+depends: [
+  "libstdc++"
+  "musl"
+  "x265-libs"
+]
+extra-source "x265-3.2.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/x265-3.2.1-r0.apk"
+}

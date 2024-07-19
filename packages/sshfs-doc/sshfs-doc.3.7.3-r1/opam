@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del sshfs-doc"]
 ]
-
-
 extra-source "sshfs-doc-3.7.3-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/sshfs-doc-3.7.3-r1.apk"
 }

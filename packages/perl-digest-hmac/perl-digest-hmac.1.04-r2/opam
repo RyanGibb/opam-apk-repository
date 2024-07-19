@@ -10,7 +10,6 @@ depends: [
   "perl-digest-md5"
   "perl-digest-sha1"
 ]
-
 extra-source "perl-digest-hmac-1.04-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-digest-hmac-1.04-r2.apk"
 }

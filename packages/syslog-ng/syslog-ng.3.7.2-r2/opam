@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add syslog-ng-3.7.2-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del syslog-ng"]
+]
+depends: [
+  "busybox"
+  "eventlog"
+  "glib"
+  "hiredis"
+  "libcrypto1.0"
+  "libintl"
+  "libssl1.0"
+  "musl"
+  "pcre"
+  "python"
+]
+extra-source "syslog-ng-3.7.2-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/syslog-ng-3.7.2-r2.apk"
+}

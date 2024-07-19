@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libcrypto1.1-1.1.1t-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libcrypto1.1"]
+]
+depends: [
+  "musl"
+]
+extra-source "libcrypto1.1-1.1.1t-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/libcrypto1.1-1.1.1t-r2.apk"
+}

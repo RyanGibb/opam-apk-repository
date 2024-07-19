@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add asterisk-sounds-moh-18.2.1-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del asterisk-sounds-moh"]
+]
+extra-source "asterisk-sounds-moh-18.2.1-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/asterisk-sounds-moh-18.2.1-r2.apk"
+}

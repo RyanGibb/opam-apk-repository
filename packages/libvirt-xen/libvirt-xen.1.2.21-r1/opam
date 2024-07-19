@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libvirt-xen-1.2.21-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libvirt-xen"]
+]
+depends: [
+  "libintl"
+  "libtirpc"
+  "libvirt-common-drivers" {= "1.2.21-r1"}
+  "libvirt-daemon" {= "1.2.21-r1"}
+  "musl"
+  "xen-libs"
+]
+extra-source "libvirt-xen-1.2.21-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/libvirt-xen-1.2.21-r1.apk"
+}

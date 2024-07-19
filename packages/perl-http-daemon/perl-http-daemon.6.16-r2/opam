@@ -11,7 +11,6 @@ depends: [
   "perl-http-message"
   "perl-lwp-mediatypes"
 ]
-
 extra-source "perl-http-daemon-6.16-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-http-daemon-6.16-r2.apk"
 }

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add openntpd-6.0_p1-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del openntpd"]
+]
+depends: [
+  "busybox"
+  "libressl2.4-libtls"
+  "musl"
+]
+extra-source "openntpd-6.0_p1-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/openntpd-6.0_p1-r2.apk"
+}

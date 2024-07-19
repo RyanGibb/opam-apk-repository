@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del xfsprogs-dev"]
 ]
 depends: [
-  "xfsprogs-libs"
+  "xfsprogs-libs" {= "6.8.0-r0"}
 ]
-
 extra-source "xfsprogs-dev-6.8.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/xfsprogs-dev-6.8.0-r0.apk"
 }

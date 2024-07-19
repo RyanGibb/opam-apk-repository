@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-encode-dev-2.98-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-encode-dev"]
+]
+depends: [
+  "perl-encode-utils"
+]
+extra-source "perl-encode-dev-2.98-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/perl-encode-dev-2.98-r0.apk"
+}

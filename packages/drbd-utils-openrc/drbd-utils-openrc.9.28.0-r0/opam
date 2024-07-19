@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del drbd-utils-openrc"]
 ]
-
-
 extra-source "drbd-utils-openrc-9.28.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/drbd-utils-openrc-9.28.0-r0.apk"
 }

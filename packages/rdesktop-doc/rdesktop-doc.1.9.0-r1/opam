@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add rdesktop-doc-1.9.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del rdesktop-doc"]
+]
+extra-source "rdesktop-doc-1.9.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/rdesktop-doc-1.9.0-r1.apk"
+}

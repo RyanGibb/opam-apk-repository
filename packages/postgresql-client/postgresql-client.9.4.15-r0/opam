@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add postgresql-client-9.4.15-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del postgresql-client"]
+]
+depends: [
+  "libedit"
+  "libssl1.0"
+  "musl"
+  ("libpq" | "pgcluster-libpq")
+]
+extra-source "postgresql-client-9.4.15-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/postgresql-client-9.4.15-r0.apk"
+}

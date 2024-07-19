@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del samurai-doc"]
 ]
-
-
 extra-source "samurai-doc-1.2-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/samurai-doc-1.2-r5.apk"
 }

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add dbus-dev-1.8.16-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del dbus-dev"]
+]
+depends: [
+  "dbus" {= "1.8.16-r1"}
+  "dbus-doc" {= "1.8.16-r1"}
+  "dbus-libs" {= "1.8.16-r1"}
+  "dbus-x11" {= "1.8.16-r1"}
+  "pkgconfig"
+  "util-linux-dev"
+]
+extra-source "dbus-dev-1.8.16-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/dbus-dev-1.8.16-r1.apk"
+}

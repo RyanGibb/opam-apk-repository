@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add aports-build-1.5.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del aports-build"]
+]
+depends: [
+  "abuild" {> "2.20.0"}
+  "build-base"
+  "git"
+  "lua-aports" {> "1.0.0"}
+  "lua5.2-cjson"
+  "lua5.2-mqtt-publish"
+  "mosquitto-clients"
+  "mqtt-exec"
+  "pigz"
+  "rsync"
+  ("openssh-client-krb5" | "openssh-client-default")
+  ("yash-binsh" | "busybox-binsh" | "dash-binsh")
+]
+extra-source "aports-build-1.5.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/aports-build-1.5.4-r0.apk"
+}

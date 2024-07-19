@@ -6,13 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del dhcp-server-ldap"]
 ]
 depends: [
-  "dhcp"
+  "dhcp" {= "4.4.3_p1-r4"}
   "krb5-libs"
   "libgcc"
   "libldap"
   "musl"
 ]
-
 extra-source "dhcp-server-ldap-4.4.3_p1-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/dhcp-server-ldap-4.4.3_p1-r4.apk"
 }

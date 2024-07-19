@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add openldap-overlay-constraint-2.4.57-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del openldap-overlay-constraint"]
+]
+depends: [
+  "libldap"
+  "musl"
+]
+extra-source "openldap-overlay-constraint-2.4.57-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/openldap-overlay-constraint-2.4.57-r1.apk"
+}

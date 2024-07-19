@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-xml-parser-doc"]
 ]
-
-
 extra-source "perl-xml-parser-doc-2.47-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-xml-parser-doc-2.47-r0.apk"
 }

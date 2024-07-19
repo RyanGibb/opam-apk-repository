@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add raptor2-2.0.14-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del raptor2"]
+]
+depends: [
+  "curl"
+  "libxml2"
+  "libxslt"
+  "musl"
+  "yajl"
+  "zlib"
+]
+extra-source "raptor2-2.0.14-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/raptor2-2.0.14-r0.apk"
+}

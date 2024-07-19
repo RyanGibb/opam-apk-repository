@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libodfgen-dev-0.1.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libodfgen-dev"]
+]
+depends: [
+  "boost-dev"
+  "libodfgen" {= "0.1.3-r0"}
+  "libodfgen-doc" {= "0.1.3-r0"}
+  "librevenge-dev"
+  "pkgconfig"
+]
+extra-source "libodfgen-dev-0.1.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/libodfgen-dev-0.1.3-r0.apk"
+}

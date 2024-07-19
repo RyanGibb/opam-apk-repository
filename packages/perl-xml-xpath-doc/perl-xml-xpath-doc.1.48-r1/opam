@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-xml-xpath-doc"]
 ]
-
-
 extra-source "perl-xml-xpath-doc-1.48-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-xml-xpath-doc-1.48-r1.apk"
 }

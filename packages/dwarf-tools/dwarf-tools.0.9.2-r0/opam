@@ -12,7 +12,6 @@ depends: [
   "libstdc++"
   "musl"
 ]
-
 extra-source "dwarf-tools-0.9.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/dwarf-tools-0.9.2-r0.apk"
 }

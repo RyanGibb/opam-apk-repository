@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add open-vm-tools-gtk-10.1.0-r7.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del open-vm-tools-gtk"]
+]
+depends: [
+  "atkmm"
+  "cairomm"
+  "fuse"
+  "glib"
+  "glibmm"
+  "gtk+2.0"
+  "gtkmm"
+  "libgcc"
+  "libice"
+  "libsigc++"
+  "libsm"
+  "libstdc++"
+  "libtirpc"
+  "libx11"
+  "libxext"
+  "libxi"
+  "libxinerama"
+  "libxrandr"
+  "libxtst"
+  "musl"
+  "open-vm-tools"
+]
+extra-source "open-vm-tools-gtk-10.1.0-r7.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/open-vm-tools-gtk-10.1.0-r7.apk"
+}

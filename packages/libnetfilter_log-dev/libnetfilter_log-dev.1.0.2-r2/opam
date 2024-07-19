@@ -7,12 +7,11 @@ remove: [
 ]
 depends: [
   "libmnl-dev"
-  "libnetfilter_log"
+  "libnetfilter_log" {= "1.0.2-r2"}
   "libnfnetlink-dev"
   "linux-headers"
   "pkgconf"
 ]
-
 extra-source "libnetfilter_log-dev-1.0.2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libnetfilter_log-dev-1.0.2-r2.apk"
 }

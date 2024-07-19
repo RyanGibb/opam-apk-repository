@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add iputils-tracepath-20221126-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del iputils-tracepath"]
+]
+depends: [
+  "musl"
+]
+extra-source "iputils-tracepath-20221126-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/iputils-tracepath-20221126-r2.apk"
+}

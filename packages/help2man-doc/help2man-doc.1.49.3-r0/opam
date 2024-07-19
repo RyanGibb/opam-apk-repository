@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del help2man-doc"]
 ]
-
-
 extra-source "help2man-doc-1.49.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/help2man-doc-1.49.3-r0.apk"
 }

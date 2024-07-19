@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-uri-doc"]
 ]
-
-
 extra-source "perl-uri-doc-5.28-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-uri-doc-5.28-r0.apk"
 }

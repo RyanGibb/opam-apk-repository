@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add minetest-0.4.12-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del minetest"]
+]
+depends: [
+  "irrlicht"
+  "libgcc"
+  "libstdc++"
+  "libvorbis"
+  "libx11"
+  "lua5.1-libs"
+  "minetest-common"
+  "musl"
+  "openal-soft"
+  "sqlite-libs"
+  "zlib"
+]
+extra-source "minetest-0.4.12-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/minetest-0.4.12-r0.apk"
+}

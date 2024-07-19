@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add aria2-bash-completion-1.34.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del aria2-bash-completion"]
+]
+depends: [
+  "ca-certificates"
+]
+extra-source "aria2-bash-completion-1.34.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/aria2-bash-completion-1.34.0-r1.apk"
+}

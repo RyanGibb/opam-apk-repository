@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add icecast-2.4.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del icecast"]
+]
+depends: [
+  "busybox"
+  "curl"
+  "libogg"
+  "libssl1.0"
+  "libtheora"
+  "libvorbis"
+  "libxml2"
+  "libxslt"
+  "musl"
+]
+extra-source "icecast-2.4.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/icecast-2.4.2-r0.apk"
+}

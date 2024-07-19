@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add python-doc-2.7.12-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del python-doc"]
+]
+extra-source "python-doc-2.7.12-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/python-doc-2.7.12-r0.apk"
+}

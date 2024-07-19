@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add asterisk-speex-13.3.2-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del asterisk-speex"]
+]
+depends: [
+  "libogg"
+  "musl"
+  "speex"
+  "speexdsp"
+]
+extra-source "asterisk-speex-13.3.2-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/asterisk-speex-13.3.2-r2.apk"
+}

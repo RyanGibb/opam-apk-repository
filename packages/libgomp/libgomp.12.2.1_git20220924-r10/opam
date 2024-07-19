@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libgomp-12.2.1_git20220924-r10.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libgomp"]
+]
+depends: [
+  "musl"
+]
+extra-source "libgomp-12.2.1_git20220924-r10.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/libgomp-12.2.1_git20220924-r10.apk"
+}

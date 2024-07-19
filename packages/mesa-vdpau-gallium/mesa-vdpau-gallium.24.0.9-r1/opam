@@ -16,12 +16,11 @@ depends: [
   "libxcb"
   "libxshmfence"
   "llvm17-libs"
-  "mesa"
+  "mesa" {= "24.0.9-r1"}
   "musl"
   "zlib"
   "zstd-libs"
 ]
-
 extra-source "mesa-vdpau-gallium-24.0.9-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/mesa-vdpau-gallium-24.0.9-r1.apk"
 }

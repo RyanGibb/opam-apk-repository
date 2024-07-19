@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del ez-ipupdate-openrc"]
 ]
-
-
 extra-source "ez-ipupdate-openrc-3.0.10-r13.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/ez-ipupdate-openrc-3.0.10-r13.apk"
 }

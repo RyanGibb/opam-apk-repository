@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add imake-1.0.9-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del imake"]
+]
+depends: [
+  "musl"
+]
+extra-source "imake-1.0.9-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/imake-1.0.9-r2.apk"
+}

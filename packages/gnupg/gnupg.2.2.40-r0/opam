@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gnupg-2.2.40-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gnupg"]
+]
+depends: [
+  "gnupg-dirmngr" {= "2.2.40-r0"}
+  "gnupg-utils" {= "2.2.40-r0"}
+  "gnupg-wks-client" {= "2.2.40-r0"}
+  "gpg" {= "2.2.40-r0"}
+  "gpg-agent" {= "2.2.40-r0"}
+  "gpg-wks-server" {= "2.2.40-r0"}
+  "gpgsm" {= "2.2.40-r0"}
+  "gpgv" {= "2.2.40-r0"}
+]
+extra-source "gnupg-2.2.40-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gnupg-2.2.40-r0.apk"
+}

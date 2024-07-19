@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del lxc-templates-legacy-alpine"]
 ]
-
-
 extra-source "lxc-templates-legacy-alpine-3.0.3-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lxc-templates-legacy-alpine-3.0.3-r5.apk"
 }

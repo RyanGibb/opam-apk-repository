@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lockdev-dev-0_git20130107-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lockdev-dev"]
+]
+depends: [
+  "lockdev" {= "0_git20130107-r1"}
+  "lockdev-doc" {= "0_git20130107-r1"}
+  "pkgconfig"
+]
+extra-source "lockdev-dev-0_git20130107-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/lockdev-dev-0_git20130107-r1.apk"
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add dhclient-4.4.3_p1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del dhclient"]
+]
+depends: [
+  "coreutils"
+  "iproute2"
+  "libgcc"
+  "musl"
+  "run-parts"
+]
+extra-source "dhclient-4.4.3_p1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/dhclient-4.4.3_p1-r0.apk"
+}

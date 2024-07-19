@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py3-sphinx-4.3.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py3-sphinx"]
+]
+depends: [
+  "py3-alabaster"
+  "py3-babel"
+  "py3-docutils"
+  "py3-imagesize"
+  "py3-jinja2"
+  "py3-pygments"
+  "py3-requests"
+  "py3-setuptools"
+  "py3-snowballstemmer"
+  "py3-sphinxcontrib-applehelp"
+  "py3-sphinxcontrib-devhelp"
+  "py3-sphinxcontrib-htmlhelp"
+  "py3-sphinxcontrib-jsmath"
+  "py3-sphinxcontrib-qthelp"
+  "py3-sphinxcontrib-serializinghtml"
+]
+extra-source "py3-sphinx-4.3.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/py3-sphinx-4.3.0-r1.apk"
+}

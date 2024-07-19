@@ -11,7 +11,6 @@ depends: [
   "perl-pod-coverage"
   "perl-test-pod"
 ]
-
 extra-source "perl-test-pod-coverage-1.10-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-test-pod-coverage-1.10-r5.apk"
 }

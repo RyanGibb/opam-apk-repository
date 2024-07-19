@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add apkbuild-pypi-3.10.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del apkbuild-pypi"]
+]
+depends: [
+  "perl"
+  "perl-ipc-system-simple"
+  "perl-json"
+  "perl-libwww"
+  "perl-lwp-protocol-https"
+  "perl-module-build-tiny"
+]
+extra-source "apkbuild-pypi-3.10.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/apkbuild-pypi-3.10.0-r0.apk"
+}

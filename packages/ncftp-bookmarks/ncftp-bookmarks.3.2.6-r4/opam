@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ncftp-bookmarks-3.2.6-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ncftp-bookmarks"]
+]
+depends: [
+  "musl"
+  "ncftp"
+  "ncurses-libs"
+]
+extra-source "ncftp-bookmarks-3.2.6-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/ncftp-bookmarks-3.2.6-r4.apk"
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add pekwm-0.1.17-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del pekwm"]
+]
+depends: [
+  "libgcc"
+  "libpng"
+  "libstdc++"
+  "libx11"
+  "libxext"
+  "libxpm"
+  "libxrandr"
+  "musl"
+]
+extra-source "pekwm-0.1.17-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/pekwm-0.1.17-r3.apk"
+}

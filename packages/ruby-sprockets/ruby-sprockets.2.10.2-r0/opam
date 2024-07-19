@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ruby-sprockets-2.10.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ruby-sprockets"]
+]
+depends: [
+  "ruby"
+  "ruby-hike"
+  "ruby-multi_json"
+  "ruby-rack"
+  "ruby-tilt"
+]
+extra-source "ruby-sprockets-2.10.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/ruby-sprockets-2.10.2-r0.apk"
+}

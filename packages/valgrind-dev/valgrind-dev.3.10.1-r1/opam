@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add valgrind-dev-3.10.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del valgrind-dev"]
+]
+depends: [
+  "pkgconfig"
+  "valgrind" {= "3.10.1-r1"}
+  "valgrind-doc" {= "3.10.1-r1"}
+]
+extra-source "valgrind-dev-3.10.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/valgrind-dev-3.10.1-r1.apk"
+}

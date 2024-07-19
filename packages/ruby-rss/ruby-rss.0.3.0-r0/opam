@@ -9,7 +9,6 @@ depends: [
   "ruby"
   "ruby-rexml"
 ]
-
 extra-source "ruby-rss-0.3.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/ruby-rss-0.3.0-r0.apk"
 }

@@ -12,7 +12,6 @@ depends: [
   "libstdc++"
   "musl"
 ]
-
 extra-source "nload-0.7.4-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/nload-0.7.4-r6.apk"
 }

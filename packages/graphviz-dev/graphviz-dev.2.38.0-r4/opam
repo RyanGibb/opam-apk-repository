@@ -1,0 +1,39 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add graphviz-dev-2.38.0-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del graphviz-dev"]
+]
+depends: [
+  "bison"
+  "cairo-dev"
+  "expat-dev"
+  "flex"
+  "fontconfig-dev"
+  "freetype-dev"
+  "gmp-dev"
+  "graphviz" {= "2.38.0-r4"}
+  "graphviz-doc" {= "2.38.0-r4"}
+  "graphviz-graphs" {= "2.38.0-r4"}
+  "graphviz-gtk" {= "2.38.0-r4"}
+  "gtk+2.0-dev"
+  "libjpeg-turbo-dev"
+  "libpng-dev"
+  "librsvg-dev"
+  "libsm-dev"
+  "libtool"
+  "libxext-dev"
+  "lua-graphviz" {= "2.38.0-r4"}
+  "lua5.2-dev"
+  "m4"
+  "pango-dev"
+  "pkgconfig"
+  "py-gv" {= "2.38.0-r4"}
+  "python-dev"
+  "swig"
+  "zlib-dev"
+]
+extra-source "graphviz-dev-2.38.0-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/graphviz-dev-2.38.0-r4.apk"
+}

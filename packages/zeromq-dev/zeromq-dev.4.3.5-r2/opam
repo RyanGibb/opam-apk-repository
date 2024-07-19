@@ -7,10 +7,9 @@ remove: [
 ]
 depends: [
   "libsodium-dev"
-  "libzmq"
+  "libzmq" {= "4.3.5-r2"}
   "pkgconf"
 ]
-
 extra-source "zeromq-dev-4.3.5-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/zeromq-dev-4.3.5-r2.apk"
 }

@@ -10,7 +10,6 @@ depends: [
   "glib"
   "musl"
 ]
-
 extra-source "dbus-glib-0.112-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/dbus-glib-0.112-r6.apk"
 }

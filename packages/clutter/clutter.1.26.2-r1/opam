@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add clutter-1.26.2-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del clutter"]
+]
+depends: [
+  "atk"
+  "cairo"
+  "cairo-gobject"
+  "cogl"
+  "fontconfig"
+  "glib"
+  "json-glib"
+  "libintl"
+  "libx11"
+  "libxcomposite"
+  "libxdamage"
+  "libxi"
+  "musl"
+  "pango"
+]
+extra-source "clutter-1.26.2-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/clutter-1.26.2-r1.apk"
+}

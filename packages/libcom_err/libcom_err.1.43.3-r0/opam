@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libcom_err-1.43.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libcom_err"]
+]
+depends: [
+  "musl"
+]
+extra-source "libcom_err-1.43.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/libcom_err-1.43.3-r0.apk"
+}

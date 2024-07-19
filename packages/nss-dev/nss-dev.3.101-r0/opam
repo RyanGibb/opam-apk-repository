@@ -7,10 +7,9 @@ remove: [
 ]
 depends: [
   "nspr-dev"
-  "nss"
+  "nss" {= "3.101-r0"}
   "pkgconf"
 ]
-
 extra-source "nss-dev-3.101-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/nss-dev-3.101-r0.apk"
 }

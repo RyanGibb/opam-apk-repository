@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-universal-isa-doc-1.20171012-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-universal-isa-doc"]
+]
+extra-source "perl-universal-isa-doc-1.20171012-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-universal-isa-doc-1.20171012-r2.apk"
+}

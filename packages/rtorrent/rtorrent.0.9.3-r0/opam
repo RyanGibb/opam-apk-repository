@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add rtorrent-0.9.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del rtorrent"]
+]
+depends: [
+  "curl"
+  "libgcc"
+  "libsigc++"
+  "libstdc++"
+  "libtorrent"
+  "musl"
+  "ncurses-widec-libs"
+  "xmlrpc-c"
+]
+extra-source "rtorrent-0.9.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/rtorrent-0.9.3-r0.apk"
+}

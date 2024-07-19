@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del s6-networking-dev"]
 ]
 depends: [
-  "s6-networking"
+  "s6-networking" {= "2.7.0.2-r0"}
 ]
-
 extra-source "s6-networking-dev-2.7.0.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/s6-networking-dev-2.7.0.2-r0.apk"
 }

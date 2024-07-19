@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mate-notification-daemon-dev-1.10.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mate-notification-daemon-dev"]
+]
+depends: [
+  "mate-notification-daemon" {= "1.10.0-r0"}
+  "mate-notification-daemon-doc" {= "1.10.0-r0"}
+  "mate-notification-daemon-lang" {= "1.10.0-r0"}
+]
+extra-source "mate-notification-daemon-dev-1.10.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/mate-notification-daemon-dev-1.10.0-r0.apk"
+}

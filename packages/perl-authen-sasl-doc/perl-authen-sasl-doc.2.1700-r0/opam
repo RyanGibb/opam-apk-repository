@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-authen-sasl-doc"]
 ]
-
-
 extra-source "perl-authen-sasl-doc-2.1700-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-authen-sasl-doc-2.1700-r0.apk"
 }

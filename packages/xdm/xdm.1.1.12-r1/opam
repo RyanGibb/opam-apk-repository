@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xdm-1.1.12-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xdm"]
+]
+depends: [
+  "libx11"
+  "libxau"
+  "libxaw"
+  "libxdmcp"
+  "libxext"
+  "libxmu"
+  "libxpm"
+  "libxt"
+  "linux-pam"
+  "musl"
+  "sessreg"
+]
+extra-source "xdm-1.1.12-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/xdm-1.1.12-r1.apk"
+}

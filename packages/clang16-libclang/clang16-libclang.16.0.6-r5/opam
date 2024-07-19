@@ -6,13 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del clang16-libclang"]
 ]
 depends: [
-  "clang16-headers"
+  "clang16-headers" {= "16.0.6-r5"}
   "libgcc"
   "libstdc++"
   "llvm16-libs"
   "musl"
 ]
-
 extra-source "clang16-libclang-16.0.6-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/clang16-libclang-16.0.6-r5.apk"
 }

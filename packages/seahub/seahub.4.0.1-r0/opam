@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add seahub-4.0.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del seahub"]
+]
+depends: [
+  "bash"
+  "busybox"
+  "py-ccnet"
+  "py-chardet"
+  "py-dateutil"
+  "py-django-djblets"
+  "py-django-registration"
+  "py-django-simple-captcha"
+  "py-django1.5"
+  "py-flup"
+  "py-gunicorn"
+  "py-libsearpc"
+  "py-mako"
+  "py-pillow"
+  "py-pip"
+  "py-seafile"
+  "py-simplejson"
+  "py-six"
+  "py-virtualenv"
+  "python"
+  "seafile-server"
+]
+extra-source "seahub-4.0.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/seahub-4.0.1-r0.apk"
+}

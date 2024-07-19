@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add tcpflow-1.6.1-r8.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del tcpflow"]
+]
+depends: [
+  "libcrypto3"
+  "libgcc"
+  "libpcap"
+  "libstdc++"
+  "musl"
+  "zlib"
+]
+extra-source "tcpflow-1.6.1-r8.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/tcpflow-1.6.1-r8.apk"
+}

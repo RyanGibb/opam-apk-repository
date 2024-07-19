@@ -9,9 +9,8 @@ depends: [
   "bash"
   "iproute2"
   "openresolv"
-  "wireguard-tools-wg"
+  "wireguard-tools-wg" {= "1.0.20210914-r4"}
 ]
-
 extra-source "wireguard-tools-wg-quick-1.0.20210914-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/wireguard-tools-wg-quick-1.0.20210914-r4.apk"
 }

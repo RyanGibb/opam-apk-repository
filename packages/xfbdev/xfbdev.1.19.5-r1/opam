@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xfbdev-1.19.5-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xfbdev"]
+]
+depends: [
+  "eudev-libs"
+  "libcrypto1.0"
+  "libxau"
+  "libxdmcp"
+  "libxfont2"
+  "musl"
+  "pixman"
+]
+extra-source "xfbdev-1.19.5-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/xfbdev-1.19.5-r1.apk"
+}

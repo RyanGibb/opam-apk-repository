@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gmp-doc-6.2.1-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gmp-doc"]
+]
+extra-source "gmp-doc-6.2.1-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gmp-doc-6.2.1-r2.apk"
+}

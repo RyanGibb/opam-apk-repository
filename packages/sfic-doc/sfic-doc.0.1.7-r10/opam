@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del sfic-doc"]
 ]
-
-
 extra-source "sfic-doc-0.1.7-r10.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/sfic-doc-0.1.7-r10.apk"
 }

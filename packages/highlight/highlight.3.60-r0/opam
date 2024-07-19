@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add highlight-3.60-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del highlight"]
+]
+depends: [
+  "libgcc"
+  "libstdc++"
+  "lua5.3-libs"
+  "musl"
+]
+extra-source "highlight-3.60-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/highlight-3.60-r0.apk"
+}

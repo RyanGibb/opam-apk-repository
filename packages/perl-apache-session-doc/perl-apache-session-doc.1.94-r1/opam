@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-apache-session-doc"]
 ]
-
-
 extra-source "perl-apache-session-doc-1.94-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-apache-session-doc-1.94-r1.apk"
 }

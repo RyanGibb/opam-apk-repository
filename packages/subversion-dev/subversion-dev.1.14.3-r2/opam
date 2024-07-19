@@ -8,14 +8,13 @@ remove: [
 depends: [
   "apr-dev"
   "apr-util-dev"
-  "perl-subversion"
+  "perl-subversion" {= "1.14.3-r2"}
   "pkgconf"
-  "py3-subversion"
+  "py3-subversion" {= "1.14.3-r2"}
   "serf-dev"
   "sqlite-dev"
-  "subversion-libs"
+  "subversion-libs" {= "1.14.3-r2"}
 ]
-
 extra-source "subversion-dev-1.14.3-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/subversion-dev-1.14.3-r2.apk"
 }

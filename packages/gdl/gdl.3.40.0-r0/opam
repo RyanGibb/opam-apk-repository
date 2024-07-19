@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gdl-3.40.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gdl"]
+]
+depends: [
+  "cairo"
+  "gdk-pixbuf"
+  "glib"
+  "gtk+3.0"
+  "libxml2"
+  "musl"
+]
+extra-source "gdl-3.40.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gdl-3.40.0-r0.apk"
+}

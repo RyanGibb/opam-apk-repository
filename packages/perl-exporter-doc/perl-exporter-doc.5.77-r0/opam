@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-exporter-doc-5.77-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-exporter-doc"]
+]
+extra-source "perl-exporter-doc-5.77-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-exporter-doc-5.77-r0.apk"
+}

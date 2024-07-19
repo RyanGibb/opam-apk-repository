@@ -14,6 +14,7 @@ depends: [
   "samba-client-libs"
   "samba-common-server-libs"
   "samba-libs"
+  "samba-libs" {= "4.19.6-r0"}
   "samba-libs-py3"
   "samba-server-libs"
   "samba-util-libs"
@@ -21,7 +22,6 @@ depends: [
   "tdb-libs"
   "tevent"
 ]
-
 extra-source "samba-dc-libs-4.19.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/samba-dc-libs-4.19.6-r0.apk"
 }

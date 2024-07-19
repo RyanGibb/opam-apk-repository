@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add acf-alpine-conf-0.9.0-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del acf-alpine-conf"]
+]
+depends: [
+  "acf-core"
+  "lua-posix"
+  "openssl"
+]
+extra-source "acf-alpine-conf-0.9.0-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/acf-alpine-conf-0.9.0-r6.apk"
+}

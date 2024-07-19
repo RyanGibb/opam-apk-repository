@@ -17,7 +17,6 @@ depends: [
   "pcre2"
   "zlib"
 ]
-
 extra-source "mariadb-test-10.11.8-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/mariadb-test-10.11.8-r0.apk"
 }

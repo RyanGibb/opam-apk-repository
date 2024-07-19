@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add inkscape-lang-0.48.5-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del inkscape-lang"]
+]
+depends: [
+  "desktop-file-utils"
+]
+extra-source "inkscape-lang-0.48.5-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/inkscape-lang-0.48.5-r2.apk"
+}

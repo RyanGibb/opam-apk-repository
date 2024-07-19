@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libxmu-dev-1.1.2-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libxmu-dev"]
+]
+depends: [
+  "libx11-dev"
+  "libxext-dev"
+  "libxmu" {= "1.1.2-r1"}
+  "libxt-dev"
+  "pkgconf"
+  "util-linux-dev"
+  "xorgproto"
+]
+extra-source "libxmu-dev-1.1.2-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libxmu-dev-1.1.2-r1.apk"
+}

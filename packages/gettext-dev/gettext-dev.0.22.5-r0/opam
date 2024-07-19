@@ -6,10 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del gettext-dev"]
 ]
 depends: [
-  "gettext"
-  "gettext-asprintf"
-  "gettext-libs"
-  "libintl"
+  "gettext" {= "0.22.5-r0"}
+  "gettext-asprintf" {= "0.22.5-r0"}
+  "gettext-libs" {= "0.22.5-r0"}
+  "libintl" {= "0.22.5-r0"}
   "xz"
 ]
 conflicts: [

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libiec61883-dev-1.2.0-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libiec61883-dev"]
+]
+depends: [
+  "libiec61883" {= "1.2.0-r2"}
+  "libraw1394-dev"
+  "pkgconf"
+]
+extra-source "libiec61883-dev-1.2.0-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libiec61883-dev-1.2.0-r2.apk"
+}

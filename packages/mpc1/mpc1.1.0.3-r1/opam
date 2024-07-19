@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mpc1-1.0.3-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mpc1"]
+]
+depends: [
+  "gmp"
+  "mpfr3"
+  "musl"
+]
+extra-source "mpc1-1.0.3-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/mpc1-1.0.3-r1.apk"
+}

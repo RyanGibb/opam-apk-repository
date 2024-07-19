@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libxfce4util-doc-4.12.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libxfce4util-doc"]
+]
+extra-source "libxfce4util-doc-4.12.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/libxfce4util-doc-4.12.1-r0.apk"
+}

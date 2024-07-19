@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del check-doc"]
 ]
-
-
 extra-source "check-doc-0.15.2-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/check-doc-0.15.2-r5.apk"
 }

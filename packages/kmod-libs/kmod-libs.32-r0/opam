@@ -12,7 +12,6 @@ depends: [
   "zlib"
   "zstd-libs"
 ]
-
 extra-source "kmod-libs-32-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/kmod-libs-32-r0.apk"
 }

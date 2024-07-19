@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add nodejs-lts-4.6.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del nodejs-lts"]
+]
+depends: [
+  "libcrypto1.0"
+  "libgcc"
+  "libssl1.0"
+  "libstdc++"
+  "libuv"
+  "musl"
+  "zlib"
+]
+extra-source "nodejs-lts-4.6.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/nodejs-lts-4.6.0-r0.apk"
+}

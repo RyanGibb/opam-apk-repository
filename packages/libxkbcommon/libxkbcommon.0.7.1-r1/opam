@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libxkbcommon-0.7.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libxkbcommon"]
+]
+depends: [
+  "libxcb"
+  "musl"
+]
+extra-source "libxkbcommon-0.7.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/libxkbcommon-0.7.1-r1.apk"
+}

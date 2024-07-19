@@ -9,7 +9,6 @@ depends: [
   "libcrypto3"
   "musl"
 ]
-
 extra-source "ldns-1.8.3-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/ldns-1.8.3-r2.apk"
 }

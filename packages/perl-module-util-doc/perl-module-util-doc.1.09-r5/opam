@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-module-util-doc"]
 ]
-
-
 extra-source "perl-module-util-doc-1.09-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-module-util-doc-1.09-r5.apk"
 }

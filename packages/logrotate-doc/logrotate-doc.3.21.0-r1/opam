@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del logrotate-doc"]
 ]
-
-
 extra-source "logrotate-doc-3.21.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/logrotate-doc-3.21.0-r1.apk"
 }

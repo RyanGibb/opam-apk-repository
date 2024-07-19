@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libraw-dev-0.16.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libraw-dev"]
+]
+depends: [
+  "libraw" {= "0.16.1-r0"}
+  "libraw-doc" {= "0.16.1-r0"}
+  "pkgconfig"
+]
+extra-source "libraw-dev-0.16.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/libraw-dev-0.16.1-r0.apk"
+}

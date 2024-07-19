@@ -10,7 +10,6 @@ depends: [
   "musl"
   "perl"
 ]
-
 extra-source "perl-gd-2.81-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-gd-2.81-r1.apk"
 }

@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del gnupg-scdaemon"]
 ]
 depends: [
-  "gpg-agent"
+  "gpg-agent" {= "2.4.5-r0"}
   "libassuan"
   "libgcrypt"
   "libgpg-error"
@@ -16,7 +16,6 @@ depends: [
   "npth"
   ("busybox-binsh" | "dash-binsh" | "yash-binsh")
 ]
-
 extra-source "gnupg-scdaemon-2.4.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/gnupg-scdaemon-2.4.5-r0.apk"
 }

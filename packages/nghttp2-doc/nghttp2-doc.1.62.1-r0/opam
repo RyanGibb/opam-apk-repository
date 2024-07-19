@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del nghttp2-doc"]
 ]
-
-
 extra-source "nghttp2-doc-1.62.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/nghttp2-doc-1.62.1-r0.apk"
 }

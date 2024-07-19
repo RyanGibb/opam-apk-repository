@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add samba-4.8.12-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del samba"]
+]
+depends: [
+  "samba-client" {= "4.8.12-r2"}
+  "samba-common-tools" {= "4.8.12-r2"}
+  "samba-server" {= "4.8.12-r2"}
+]
+extra-source "samba-4.8.12-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/samba-4.8.12-r2.apk"
+}

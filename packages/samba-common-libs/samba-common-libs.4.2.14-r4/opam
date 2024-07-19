@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add samba-common-libs-4.2.14-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del samba-common-libs"]
+]
+depends: [
+  "cups-libs"
+  "heimdal-libs"
+  "ldb"
+  "libacl"
+  "libcom_err"
+  "libldap"
+  "libwbclient"
+  "musl"
+  "samba-libs"
+  "talloc"
+  "tdb-libs"
+  "tevent"
+]
+extra-source "samba-common-libs-4.2.14-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/samba-common-libs-4.2.14-r4.apk"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libva-dev-2.2.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libva-dev"]
+]
+depends: [
+  "libdrm-dev"
+  "libva" {= "2.2.0-r0"}
+  "libx11-dev"
+  "libxext-dev"
+  "libxfixes-dev"
+  "pkgconf"
+]
+extra-source "libva-dev-2.2.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libva-dev-2.2.0-r0.apk"
+}

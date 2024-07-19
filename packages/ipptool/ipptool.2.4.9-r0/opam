@@ -9,7 +9,6 @@ depends: [
   "cups-libs"
   "musl"
 ]
-
 extra-source "ipptool-2.4.9-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/ipptool-2.4.9-r0.apk"
 }

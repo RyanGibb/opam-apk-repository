@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del squid-doc"]
 ]
-
-
 extra-source "squid-doc-6.9-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/squid-doc-6.9-r0.apk"
 }

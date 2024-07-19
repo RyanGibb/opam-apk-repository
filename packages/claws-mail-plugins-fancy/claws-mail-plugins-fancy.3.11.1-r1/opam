@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add claws-mail-plugins-fancy-3.11.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del claws-mail-plugins-fancy"]
+]
+depends: [
+  "atk"
+  "cairo"
+  "claws-mail" {= "3.11.1-r1"}
+  "curl"
+  "db"
+  "fontconfig"
+  "freetype"
+  "gdk-pixbuf"
+  "glib"
+  "gnutls"
+  "gtk+2.0"
+  "libarchive"
+  "libetpan"
+  "libgcrypt"
+  "libgpg-error"
+  "libintl"
+  "libsasl"
+  "libsoup"
+  "musl"
+  "pango"
+  "webkitgtk2"
+  "zlib"
+]
+extra-source "claws-mail-plugins-fancy-3.11.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/claws-mail-plugins-fancy-3.11.1-r1.apk"
+}

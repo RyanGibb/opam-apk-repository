@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del luajit-doc"]
 ]
-
-
 extra-source "luajit-doc-2.1_p20240314-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/luajit-doc-2.1_p20240314-r0.apk"
 }

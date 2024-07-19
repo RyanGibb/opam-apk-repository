@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add open-lldp-0.9.45-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del open-lldp"]
+]
+depends: [
+  "libconfig"
+  "libnl"
+  "musl"
+]
+extra-source "open-lldp-0.9.45-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/open-lldp-0.9.45-r1.apk"
+}

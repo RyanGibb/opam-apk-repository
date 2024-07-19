@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del libgpg-error-lisp"]
 ]
-
-
 extra-source "libgpg-error-lisp-1.49-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libgpg-error-lisp-1.49-r0.apk"
 }

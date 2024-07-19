@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lucene++-3.0.7-r10.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lucene++"]
+]
+depends: [
+  "boost-filesystem"
+  "boost-iostreams"
+  "boost-regex"
+  "boost-thread"
+  "libgcc"
+  "libstdc++"
+  "musl"
+]
+extra-source "lucene++-3.0.7-r10.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/lucene++-3.0.7-r10.apk"
+}

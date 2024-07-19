@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add util-linux-2.26.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del util-linux"]
+]
+depends: [
+  "libblkid"
+  "libmount"
+  "libuuid"
+  "musl"
+  "ncurses-widec-libs"
+  "zlib"
+]
+extra-source "util-linux-2.26.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/util-linux-2.26.2-r0.apk"
+}

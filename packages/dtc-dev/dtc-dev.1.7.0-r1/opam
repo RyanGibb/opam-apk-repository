@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add dtc-dev-1.7.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del dtc-dev"]
+]
+depends: [
+  "dtc" {= "1.7.0-r1"}
+  "libfdt" {= "1.7.0-r1"}
+]
+extra-source "dtc-dev-1.7.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/dtc-dev-1.7.0-r1.apk"
+}

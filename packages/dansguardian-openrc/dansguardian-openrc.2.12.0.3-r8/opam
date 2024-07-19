@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del dansguardian-openrc"]
 ]
-
-
 extra-source "dansguardian-openrc-2.12.0.3-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/dansguardian-openrc-2.12.0.3-r8.apk"
 }

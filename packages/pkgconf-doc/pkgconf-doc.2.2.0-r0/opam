@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del pkgconf-doc"]
 ]
-
-
 extra-source "pkgconf-doc-2.2.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/pkgconf-doc-2.2.0-r0.apk"
 }

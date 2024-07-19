@@ -17,7 +17,6 @@ depends: [
   "ngtcp2-gnutls"
   "userspace-rcu"
 ]
-
 extra-source "knot-utils-3.3.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/knot-utils-3.3.5-r0.apk"
 }

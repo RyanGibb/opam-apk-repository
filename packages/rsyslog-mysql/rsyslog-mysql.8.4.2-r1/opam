@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add rsyslog-mysql-8.4.2-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del rsyslog-mysql"]
+]
+depends: [
+  "json-c"
+  "libcrypto1.0"
+  "libestr"
+  "libssl1.0"
+  "musl"
+  "mysql-libs"
+  "zlib"
+]
+extra-source "rsyslog-mysql-8.4.2-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/rsyslog-mysql-8.4.2-r1.apk"
+}

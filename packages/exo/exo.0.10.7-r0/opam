@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add exo-0.10.7-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del exo"]
+]
+depends: [
+  "atk"
+  "cairo"
+  "fontconfig"
+  "freetype"
+  "gdk-pixbuf"
+  "glib"
+  "gtk+2.0"
+  "hicolor-icon-theme"
+  "libice"
+  "libintl"
+  "libsm"
+  "libx11"
+  "libxfce4ui"
+  "libxfce4util"
+  "musl"
+  "pango"
+]
+extra-source "exo-0.10.7-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/exo-0.10.7-r0.apk"
+}

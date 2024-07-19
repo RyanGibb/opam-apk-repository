@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add flashrom-0.9.8-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del flashrom"]
+]
+depends: [
+  "busybox"
+  "dmidecode"
+  "libusb-compat"
+  "musl"
+  "pciutils-libs"
+]
+extra-source "flashrom-0.9.8-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/flashrom-0.9.8-r0.apk"
+}

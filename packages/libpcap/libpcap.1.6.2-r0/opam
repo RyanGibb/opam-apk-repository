@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libpcap-1.6.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libpcap"]
+]
+depends: [
+  "musl"
+]
+extra-source "libpcap-1.6.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/libpcap-1.6.2-r0.apk"
+}

@@ -7,14 +7,13 @@ remove: [
 ]
 depends: [
   "libjpeg-turbo-dev"
-  "libtiffxx"
+  "libtiffxx" {= "4.6.0t-r0"}
   "libwebp-dev"
   "pkgconf"
-  "tiff"
+  "tiff" {= "4.6.0t-r0"}
   "zlib-dev"
   "zstd-dev"
 ]
-
 extra-source "tiff-dev-4.6.0t-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/tiff-dev-4.6.0t-r0.apk"
 }

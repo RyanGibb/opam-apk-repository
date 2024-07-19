@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add which-2.21-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del which"]
+]
+depends: [
+  "musl"
+]
+extra-source "which-2.21-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/which-2.21-r0.apk"
+}

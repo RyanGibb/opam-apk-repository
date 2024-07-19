@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add nextcloud-mysql-11.0.7-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del nextcloud-mysql"]
+]
+depends: [
+  "nextcloud"
+  "php5-mysql"
+  "php5-pdo_mysql"
+  "php5-pear-mdb2-driver-mysql"
+]
+extra-source "nextcloud-mysql-11.0.7-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/nextcloud-mysql-11.0.7-r0.apk"
+}

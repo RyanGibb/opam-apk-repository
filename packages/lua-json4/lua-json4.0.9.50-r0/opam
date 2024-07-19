@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lua-json4-0.9.50-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lua-json4"]
+]
+depends: [
+  "lua"
+]
+extra-source "lua-json4-0.9.50-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/lua-json4-0.9.50-r0.apk"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mutt-1.5.23-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mutt"]
+]
+depends: [
+  "gdbm"
+  "gpgme"
+  "libcrypto1.0"
+  "libidn"
+  "libintl"
+  "libsasl"
+  "libssl1.0"
+  "musl"
+  "ncurses-widec-libs"
+]
+extra-source "mutt-1.5.23-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/mutt-1.5.23-r1.apk"
+}

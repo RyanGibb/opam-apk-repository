@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add cadaver-0.23.3-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del cadaver"]
+]
+depends: [
+  "libcrypto1.0"
+  "libintl"
+  "libproxy"
+  "libssl1.0"
+  "musl"
+]
+extra-source "cadaver-0.23.3-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/cadaver-0.23.3-r1.apk"
+}

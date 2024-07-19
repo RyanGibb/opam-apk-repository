@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add tvheadend-3.4.27-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del tvheadend"]
+]
+depends: [
+  "avahi-libs"
+  "busybox"
+  "curl"
+  "libcrypto1.0"
+  "libdvbcsa"
+  "musl"
+  "zlib"
+]
+extra-source "tvheadend-3.4.27-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/tvheadend-3.4.27-r2.apk"
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add wpa_supplicant-openrc-2.10-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del wpa_supplicant-openrc"]
+]
+extra-source "wpa_supplicant-openrc-2.10-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/wpa_supplicant-openrc-2.10-r1.apk"
+}

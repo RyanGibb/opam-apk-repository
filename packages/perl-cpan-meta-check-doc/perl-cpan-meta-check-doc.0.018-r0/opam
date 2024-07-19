@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-cpan-meta-check-doc"]
 ]
-
-
 extra-source "perl-cpan-meta-check-doc-0.018-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-cpan-meta-check-doc-0.018-r0.apk"
 }

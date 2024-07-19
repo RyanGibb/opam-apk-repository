@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add openipmi-dev-2.0.21-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del openipmi-dev"]
+]
+depends: [
+  "openipmi" {= "2.0.21-r0"}
+  "openipmi-doc" {= "2.0.21-r0"}
+  "openipmi-lanserv" {= "2.0.21-r0"}
+  "openipmi-libs" {= "2.0.21-r0"}
+  "pkgconfig"
+]
+extra-source "openipmi-dev-2.0.21-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/openipmi-dev-2.0.21-r0.apk"
+}

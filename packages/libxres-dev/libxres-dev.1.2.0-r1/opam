@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libxres-dev-1.2.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libxres-dev"]
+]
+depends: [
+  "libx11-dev"
+  "libxext-dev"
+  "libxres" {= "1.2.0-r1"}
+  "pkgconf"
+  "xorgproto"
+]
+extra-source "libxres-dev-1.2.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libxres-dev-1.2.0-r1.apk"
+}

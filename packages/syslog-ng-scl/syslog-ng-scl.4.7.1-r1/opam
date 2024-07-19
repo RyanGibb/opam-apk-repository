@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del syslog-ng-scl"]
 ]
 depends: [
-  "syslog-ng"
+  "syslog-ng" {= "4.7.1-r1"}
 ]
-
 extra-source "syslog-ng-scl-4.7.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/syslog-ng-scl-4.7.1-r1.apk"
 }

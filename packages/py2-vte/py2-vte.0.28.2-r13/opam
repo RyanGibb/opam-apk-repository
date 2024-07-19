@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py2-vte-0.28.2-r13.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py2-vte"]
+]
+depends: [
+  "gdk-pixbuf"
+  "glib"
+  "gtk+2.0"
+  "musl"
+  "pango"
+  "vte"
+]
+extra-source "py2-vte-0.28.2-r13.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/py2-vte-0.28.2-r13.apk"
+}

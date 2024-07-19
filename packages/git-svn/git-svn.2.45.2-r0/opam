@@ -7,11 +7,10 @@ remove: [
 ]
 depends: [
   "perl"
-  "perl-git-svn"
+  "perl-git-svn" {= "2.45.2-r0"}
   "perl-subversion"
   "perl-term-readkey"
 ]
-
 extra-source "git-svn-2.45.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/git-svn-2.45.2-r0.apk"
 }

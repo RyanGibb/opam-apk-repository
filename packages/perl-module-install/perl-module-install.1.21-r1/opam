@@ -12,7 +12,6 @@ depends: [
   "perl-module-scandeps"
   "perl-yaml-tiny"
 ]
-
 extra-source "perl-module-install-1.21-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-module-install-1.21-r1.apk"
 }

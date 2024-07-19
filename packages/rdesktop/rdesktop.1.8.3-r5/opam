@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add rdesktop-1.8.3-r5.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del rdesktop"]
+]
+depends: [
+  "libcrypto1.1"
+  "libgssglue"
+  "libsamplerate"
+  "libssl1.1"
+  "libx11"
+  "libxrandr"
+  "musl"
+]
+extra-source "rdesktop-1.8.3-r5.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/rdesktop-1.8.3-r5.apk"
+}

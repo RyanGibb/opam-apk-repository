@@ -12,7 +12,6 @@ depends: [
   "subversion-libs"
   ("busybox-binsh" | "dash-binsh" | "yash-binsh")
 ]
-
 extra-source "subversion-1.14.3-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/subversion-1.14.3-r2.apk"
 }

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ruby-net-imap-0.3.4.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ruby-net-imap"]
+]
+depends: [
+  "ruby"
+]
+extra-source "ruby-net-imap-0.3.4.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/ruby-net-imap-0.3.4.1-r0.apk"
+}

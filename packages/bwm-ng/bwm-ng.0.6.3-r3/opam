@@ -9,7 +9,6 @@ depends: [
   "libncursesw"
   "musl"
 ]
-
 extra-source "bwm-ng-0.6.3-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/bwm-ng-0.6.3-r3.apk"
 }

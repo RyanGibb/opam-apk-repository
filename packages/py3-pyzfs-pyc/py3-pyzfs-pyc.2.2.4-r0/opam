@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del py3-pyzfs-pyc"]
 ]
 depends: [
-  "python3"
+  "python3" {>= "3.12"}
 ]
-
 extra-source "py3-pyzfs-pyc-2.2.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/py3-pyzfs-pyc-2.2.4-r0.apk"
 }

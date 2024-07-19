@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add nss-3.99-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del nss"]
+]
+depends: [
+  "musl"
+  "nspr"
+  "sqlite-libs"
+]
+extra-source "nss-3.99-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/nss-3.99-r0.apk"
+}

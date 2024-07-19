@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add openldap-back-bdb-2.4.44-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del openldap-back-bdb"]
+]
+depends: [
+  "db"
+  "libcrypto1.0"
+  "libldap"
+  "libsasl"
+  "libssl1.0"
+  "musl"
+]
+extra-source "openldap-back-bdb-2.4.44-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/openldap-back-bdb-2.4.44-r1.apk"
+}

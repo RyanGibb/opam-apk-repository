@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add zeromq-dev-4.0.6-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del zeromq-dev"]
+]
+depends: [
+  "libzmq" {= "4.0.6-r0"}
+  "pkgconfig"
+  "zeromq" {= "4.0.6-r0"}
+  "zeromq-doc" {= "4.0.6-r0"}
+]
+extra-source "zeromq-dev-4.0.6-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/zeromq-dev-4.0.6-r0.apk"
+}

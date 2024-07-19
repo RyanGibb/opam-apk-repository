@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add uriparser-0.8.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del uriparser"]
+]
+depends: [
+  "musl"
+]
+extra-source "uriparser-0.8.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/uriparser-0.8.4-r0.apk"
+}

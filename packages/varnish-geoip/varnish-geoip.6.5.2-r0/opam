@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add varnish-geoip-6.5.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del varnish-geoip"]
+]
+depends: [
+  "libmaxminddb-dev"
+]
+extra-source "varnish-geoip-6.5.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/varnish-geoip-6.5.2-r0.apk"
+}

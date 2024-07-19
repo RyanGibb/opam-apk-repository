@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del fail2ban-openrc"]
 ]
-
-
 extra-source "fail2ban-openrc-1.1.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/fail2ban-openrc-1.1.0-r0.apk"
 }

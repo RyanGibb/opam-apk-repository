@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libgc++-8.0.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libgc++"]
+]
+depends: [
+  "gc"
+  "libstdc++"
+]
+extra-source "libgc++-8.0.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/libgc++-8.0.4-r0.apk"
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add apk-tools-2.7.6-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del apk-tools"]
+]
+depends: [
+  "libressl2.5-libcrypto"
+  "libressl2.5-libssl"
+  "musl"
+  "zlib"
+]
+extra-source "apk-tools-2.7.6-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/apk-tools-2.7.6-r0.apk"
+}

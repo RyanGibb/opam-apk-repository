@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-config-autoconf-doc"]
 ]
-
-
 extra-source "perl-config-autoconf-doc-0.320-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-config-autoconf-doc-0.320-r2.apk"
 }

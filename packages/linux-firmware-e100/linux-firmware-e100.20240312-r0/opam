@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add linux-firmware-e100-20240312-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del linux-firmware-e100"]
+]
+extra-source "linux-firmware-e100-20240312-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/linux-firmware-e100-20240312-r0.apk"
+}

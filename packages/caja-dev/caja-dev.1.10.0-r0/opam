@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add caja-dev-1.10.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del caja-dev"]
+]
+depends: [
+  "caja" {= "1.10.0-r0"}
+  "caja-doc" {= "1.10.0-r0"}
+  "caja-lang" {= "1.10.0-r0"}
+  "pkgconfig"
+]
+extra-source "caja-dev-1.10.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/caja-dev-1.10.0-r0.apk"
+}

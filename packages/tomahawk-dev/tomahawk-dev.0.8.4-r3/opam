@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add tomahawk-dev-0.8.4-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del tomahawk-dev"]
+]
+depends: [
+  "attica-dev"
+  "boost-dev"
+  "gnutls-dev"
+  "jreen-dev"
+  "libechonest-dev"
+  "liblastfm-dev"
+  "lucene++-dev"
+  "phonon-dev"
+  "qca-dev"
+  "qt-dev"
+  "qtkeychain-dev"
+  "quazip-dev"
+  "taglib-dev"
+  "tomahawk" {= "0.8.4-r3"}
+]
+extra-source "tomahawk-dev-0.8.4-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/tomahawk-dev-0.8.4-r3.apk"
+}

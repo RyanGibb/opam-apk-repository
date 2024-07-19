@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del kea-admin"]
 ]
 depends: [
-  "kea-common"
+  "kea-common" {= "2.4.1-r2"}
 ]
-
 extra-source "kea-admin-2.4.1-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/kea-admin-2.4.1-r2.apk"
 }

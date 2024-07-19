@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mtd-utils-nor-2.1.6-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mtd-utils-nor"]
+]
+depends: [
+  "musl"
+]
+extra-source "mtd-utils-nor-2.1.6-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/mtd-utils-nor-2.1.6-r0.apk"
+}

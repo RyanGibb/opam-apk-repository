@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add php-apache2-5.6.27-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del php-apache2"]
+]
+depends: [
+  "apache2"
+  "libcrypto1.0"
+  "libssl1.0"
+  "libstdc++"
+  "libxml2"
+  "musl"
+  "pcre"
+  "php-common"
+  "zlib"
+]
+extra-source "php-apache2-5.6.27-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/php-apache2-5.6.27-r0.apk"
+}

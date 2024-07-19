@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add qemu-2.4.0.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del qemu"]
+]
+depends: [
+  "busybox"
+  "curl"
+  "glib"
+  "gnutls"
+  "libaio"
+  "libbz2"
+  "libcap"
+  "libcap-ng"
+  "libgcc"
+  "libssh2"
+  "libuuid"
+  "musl"
+  "nettle"
+  "zlib"
+]
+extra-source "qemu-2.4.0.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/qemu-2.4.0.1-r1.apk"
+}

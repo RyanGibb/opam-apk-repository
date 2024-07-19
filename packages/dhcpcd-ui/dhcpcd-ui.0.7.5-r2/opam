@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add dhcpcd-ui-0.7.5-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del dhcpcd-ui"]
+]
+depends: [
+  "dhcpcd-dbus"
+  "gdk-pixbuf"
+  "glib"
+  "gtk+2.0"
+  "hicolor-icon-theme"
+  "libintl"
+  "libnotify"
+  "musl"
+]
+extra-source "dhcpcd-ui-0.7.5-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/dhcpcd-ui-0.7.5-r2.apk"
+}

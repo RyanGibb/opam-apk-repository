@@ -11,7 +11,6 @@ depends: [
   "musl"
   "xmlrpc-c"
 ]
-
 extra-source "xmlrpc-c-abyss-1.51.08-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/xmlrpc-c-abyss-1.51.08-r4.apk"
 }

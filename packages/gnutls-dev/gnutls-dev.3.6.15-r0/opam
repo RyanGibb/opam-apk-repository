@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gnutls-dev-3.6.15-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gnutls-dev"]
+]
+depends: [
+  "gnutls" {= "3.6.15-r0"}
+  "gnutls-c++" {= "3.6.15-r0"}
+  "libtasn1-dev"
+  "nettle-dev"
+  "p11-kit-dev"
+  "pkgconf"
+]
+extra-source "gnutls-dev-3.6.15-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/gnutls-dev-3.6.15-r0.apk"
+}

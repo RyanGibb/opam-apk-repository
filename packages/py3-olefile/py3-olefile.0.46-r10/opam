@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del py3-olefile"]
 ]
 depends: [
-  "python3"
+  "python3" {>= "3.12"}
 ]
-
 extra-source "py3-olefile-0.46-r10.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/py3-olefile-0.46-r10.apk"
 }

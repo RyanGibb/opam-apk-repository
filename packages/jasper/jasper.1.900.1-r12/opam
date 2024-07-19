@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add jasper-1.900.1-r12.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del jasper"]
+]
+depends: [
+  "libjasper"
+  "musl"
+]
+extra-source "jasper-1.900.1-r12.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/jasper-1.900.1-r12.apk"
+}

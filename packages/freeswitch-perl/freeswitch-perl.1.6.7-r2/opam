@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add freeswitch-perl-1.6.7-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del freeswitch-perl"]
+]
+depends: [
+  "freeswitch"
+  "libcrypto1.0"
+  "libcurl"
+  "libedit"
+  "libgcc"
+  "libssl1.0"
+  "libstdc++"
+  "libuuid"
+  "musl"
+  "ncurses-libs"
+  "pcre"
+  "perl"
+  "speex"
+  "speexdsp"
+  "sqlite-libs"
+  "zlib"
+  ("pgcluster-libpq" | "libpq")
+]
+extra-source "freeswitch-perl-1.6.7-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/freeswitch-perl-1.6.7-r2.apk"
+}

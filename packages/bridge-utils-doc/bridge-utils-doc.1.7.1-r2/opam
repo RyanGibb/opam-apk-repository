@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del bridge-utils-doc"]
 ]
-
-
 extra-source "bridge-utils-doc-1.7.1-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/bridge-utils-doc-1.7.1-r2.apk"
 }

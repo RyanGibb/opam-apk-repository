@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libnotify-doc-0.7.6-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libnotify-doc"]
+]
+extra-source "libnotify-doc-0.7.6-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/libnotify-doc-0.7.6-r1.apk"
+}

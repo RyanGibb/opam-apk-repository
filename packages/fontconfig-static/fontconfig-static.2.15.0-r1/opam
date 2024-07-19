@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del fontconfig-static"]
 ]
-
-
 extra-source "fontconfig-static-2.15.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/fontconfig-static-2.15.0-r1.apk"
 }

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mariadb-test-10.4.25-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mariadb-test"]
+]
+depends: [
+  "libaio"
+  "libcrypto1.1"
+  "libssl1.1"
+  "libstdc++"
+  "linux-pam"
+  "mariadb-common"
+  "musl"
+  "pcre"
+  "xz-libs"
+  "zlib"
+]
+extra-source "mariadb-test-10.4.25-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/mariadb-test-10.4.25-r0.apk"
+}

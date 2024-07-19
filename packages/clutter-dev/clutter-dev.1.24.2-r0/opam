@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add clutter-dev-1.24.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del clutter-dev"]
+]
+depends: [
+  "atk-dev"
+  "cairo-dev"
+  "clutter" {= "1.24.2-r0"}
+  "cogl-dev"
+  "gdk-pixbuf-dev"
+  "glib-dev"
+  "json-glib-dev"
+  "libx11-dev"
+  "libxcomposite-dev"
+  "libxdamage-dev"
+  "libxext-dev"
+  "mesa-dev"
+  "pango-dev"
+  "pkgconfig"
+]
+extra-source "clutter-dev-1.24.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/clutter-dev-1.24.2-r0.apk"
+}

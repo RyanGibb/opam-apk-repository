@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del highlight-doc"]
 ]
-
-
 extra-source "highlight-doc-4.11-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/highlight-doc-4.11-r1.apk"
 }

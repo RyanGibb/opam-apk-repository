@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add tk-dev-8.6.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del tk-dev"]
+]
+depends: [
+  "fontconfig-dev"
+  "libx11-dev"
+  "libxft-dev"
+  "pkgconfig"
+  "tcl-dev"
+]
+extra-source "tk-dev-8.6.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/tk-dev-8.6.4-r0.apk"
+}

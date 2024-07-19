@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gtkspell-dev-2.0.16-r7.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gtkspell-dev"]
+]
+depends: [
+  "gtk+2.0-dev"
+  "gtkspell" {= "2.0.16-r7"}
+  "pkgconf"
+]
+extra-source "gtkspell-dev-2.0.16-r7.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/gtkspell-dev-2.0.16-r7.apk"
+}

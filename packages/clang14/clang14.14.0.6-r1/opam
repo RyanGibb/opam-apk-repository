@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add clang14-14.0.6-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del clang14"]
+]
+depends: [
+  "clang14-libclang"
+  "clang14-libs"
+  "libgcc"
+  "libstdc++"
+  "libstdc++-dev"
+  "libxml2"
+  "llvm14-libs"
+  "musl"
+]
+extra-source "clang14-14.0.6-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/clang14-14.0.6-r1.apk"
+}

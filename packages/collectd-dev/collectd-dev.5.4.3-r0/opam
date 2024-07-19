@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add collectd-dev-5.4.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del collectd-dev"]
+]
+depends: [
+  "collectd" {= "5.4.3-r0"}
+  "collectd-apache" {= "5.4.3-r0"}
+  "collectd-ascent" {= "5.4.3-r0"}
+  "collectd-bind" {= "5.4.3-r0"}
+  "collectd-curl" {= "5.4.3-r0"}
+  "collectd-doc" {= "5.4.3-r0"}
+  "collectd-iptables" {= "5.4.3-r0"}
+  "collectd-libvirt" {= "5.4.3-r0"}
+  "collectd-mysql" {= "5.4.3-r0"}
+  "collectd-network" {= "5.4.3-r0"}
+  "collectd-nginx" {= "5.4.3-r0"}
+  "collectd-perl" {= "5.4.3-r0"}
+  "collectd-postgresql" {= "5.4.3-r0"}
+  "collectd-python" {= "5.4.3-r0"}
+  "collectd-rrdtool" {= "5.4.3-r0"}
+  "collectd-sensors" {= "5.4.3-r0"}
+  "collectd-snmp" {= "5.4.3-r0"}
+  "collectd-write_http" {= "5.4.3-r0"}
+  "pkgconfig"
+]
+extra-source "collectd-dev-5.4.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/collectd-dev-5.4.3-r0.apk"
+}

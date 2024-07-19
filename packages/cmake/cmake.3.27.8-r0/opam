@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add cmake-3.27.8-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del cmake"]
+]
+depends: [
+  "libarchive"
+  "libcrypto3"
+  "libexpat"
+  "libgcc"
+  "libssl3"
+  "libstdc++"
+  "libuv"
+  "musl"
+  "nghttp2-libs"
+  "rhash-libs"
+  "zlib"
+]
+extra-source "cmake-3.27.8-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/cmake-3.27.8-r0.apk"
+}

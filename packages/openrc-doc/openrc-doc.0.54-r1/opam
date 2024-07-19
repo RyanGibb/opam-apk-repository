@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del openrc-doc"]
 ]
-
-
 extra-source "openrc-doc-0.54-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/openrc-doc-0.54-r1.apk"
 }

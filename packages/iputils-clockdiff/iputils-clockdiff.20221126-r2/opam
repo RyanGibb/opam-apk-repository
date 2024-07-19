@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add iputils-clockdiff-20221126-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del iputils-clockdiff"]
+]
+depends: [
+  "libcap2"
+  "musl"
+]
+extra-source "iputils-clockdiff-20221126-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/iputils-clockdiff-20221126-r2.apk"
+}

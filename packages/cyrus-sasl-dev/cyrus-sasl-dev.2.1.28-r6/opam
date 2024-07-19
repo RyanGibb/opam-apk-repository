@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del cyrus-sasl-dev"]
 ]
 depends: [
-  "libsasl"
+  "libsasl" {= "2.1.28-r6"}
   "pkgconf"
 ]
-
 extra-source "cyrus-sasl-dev-2.1.28-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/cyrus-sasl-dev-2.1.28-r6.apk"
 }

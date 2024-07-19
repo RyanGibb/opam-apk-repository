@@ -12,7 +12,6 @@ depends: [
   "perl-getopt-long"
   "perl-uri"
 ]
-
 extra-source "razor-2.85-r15.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/razor-2.85-r15.apk"
 }

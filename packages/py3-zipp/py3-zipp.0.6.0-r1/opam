@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py3-zipp-0.6.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py3-zipp"]
+]
+depends: [
+  "py3-more-itertools"
+  "py3-six"
+]
+extra-source "py3-zipp-0.6.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/py3-zipp-0.6.0-r1.apk"
+}

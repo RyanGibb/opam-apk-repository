@@ -6,9 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del clang16"]
 ]
 depends: [
-  "clang16-headers"
+  "clang16-headers" {= "16.0.6-r5"}
   "clang16-libs"
-  "fortify-headers"
+  "clang16-libs" {= "16.0.6-r5"}
+  "fortify-headers" {>= "1.1-r2"}
   "gcc"
   "libgcc"
   "libstdc++"
@@ -19,7 +20,6 @@ depends: [
   "musl-dev"
   ("busybox-binsh" | "dash-binsh" | "yash-binsh")
 ]
-
 extra-source "clang16-16.0.6-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/clang16-16.0.6-r5.apk"
 }

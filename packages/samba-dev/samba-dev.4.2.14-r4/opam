@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add samba-dev-4.2.14-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del samba-dev"]
+]
+depends: [
+  "ldb-dev"
+  "libsmbclient" {= "4.2.14-r4"}
+  "libwbclient" {= "4.2.14-r4"}
+  "pkgconfig"
+  "samba-client" {= "4.2.14-r4"}
+  "samba-client-libs" {= "4.2.14-r4"}
+  "samba-common-libs" {= "4.2.14-r4"}
+  "samba-dc-libs" {= "4.2.14-r4"}
+  "samba-libnss-winbind" {= "4.2.14-r4"}
+  "samba-libs" {= "4.2.14-r4"}
+  "samba-test" {= "4.2.14-r4"}
+  "talloc-dev"
+  "tevent-dev"
+]
+extra-source "samba-dev-4.2.14-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/samba-dev-4.2.14-r4.apk"
+}

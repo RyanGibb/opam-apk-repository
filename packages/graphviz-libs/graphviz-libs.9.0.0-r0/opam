@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add graphviz-libs-9.0.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del graphviz-libs"]
+]
+depends: [
+  "libexpat"
+  "musl"
+  "zlib"
+]
+extra-source "graphviz-libs-9.0.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/graphviz-libs-9.0.0-r0.apk"
+}

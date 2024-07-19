@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add git-svn-2.32.7-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del git-svn"]
+]
+depends: [
+  "perl"
+  "perl-git-svn" {= "2.32.7-r0"}
+  "perl-subversion"
+  "perl-term-readkey"
+]
+extra-source "git-svn-2.32.7-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/git-svn-2.32.7-r0.apk"
+}

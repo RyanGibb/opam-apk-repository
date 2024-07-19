@@ -6,13 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del libx11-dev"]
 ]
 depends: [
-  "libx11"
+  "libx11" {= "1.8.9-r1"}
   "libxcb-dev"
   "pkgconf"
   "xorgproto"
   "xtrans"
 ]
-
 extra-source "libx11-dev-1.8.9-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libx11-dev-1.8.9-r1.apk"
 }

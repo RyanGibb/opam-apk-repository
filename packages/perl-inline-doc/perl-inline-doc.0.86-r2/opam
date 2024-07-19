@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-inline-doc"]
 ]
-
-
 extra-source "perl-inline-doc-0.86-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-inline-doc-0.86-r2.apk"
 }

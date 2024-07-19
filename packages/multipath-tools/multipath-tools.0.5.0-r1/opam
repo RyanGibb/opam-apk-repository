@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add multipath-tools-0.5.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del multipath-tools"]
+]
+depends: [
+  "device-mapper"
+  "libaio"
+  "libgcc"
+  "libudev"
+  "musl"
+  "readline"
+  "udev"
+]
+extra-source "multipath-tools-0.5.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/multipath-tools-0.5.0-r1.apk"
+}

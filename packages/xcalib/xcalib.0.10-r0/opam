@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xcalib-0.10-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xcalib"]
+]
+depends: [
+  "libx11"
+  "libxrandr"
+  "libxxf86vm"
+  "musl"
+]
+extra-source "xcalib-0.10-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/xcalib-0.10-r0.apk"
+}

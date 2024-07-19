@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mate-settings-daemon-lang-1.10.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mate-settings-daemon-lang"]
+]
+depends: [
+  "mate-common"
+  "mate-desktop"
+]
+extra-source "mate-settings-daemon-lang-1.10.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/mate-settings-daemon-lang-1.10.0-r0.apk"
+}

@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del mqtt-exec-dbg"]
 ]
-
-
 extra-source "mqtt-exec-dbg-0.5-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/mqtt-exec-dbg-0.5-r3.apk"
 }

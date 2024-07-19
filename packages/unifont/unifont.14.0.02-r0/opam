@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add unifont-14.0.02-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del unifont"]
+]
+depends: [
+  "bdftopcf"
+  "musl"
+  "perl-gd"
+]
+extra-source "unifont-14.0.02-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/unifont-14.0.02-r0.apk"
+}

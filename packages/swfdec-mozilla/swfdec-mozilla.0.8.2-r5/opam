@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add swfdec-mozilla-0.8.2-r5.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del swfdec-mozilla"]
+]
+depends: [
+  "atk"
+  "cairo"
+  "fontconfig"
+  "freetype"
+  "gdk-pixbuf"
+  "glib"
+  "gtk+2.0"
+  "libintl"
+  "liboil"
+  "musl"
+  "pango"
+  "swfdec"
+]
+extra-source "swfdec-mozilla-0.8.2-r5.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/swfdec-mozilla-0.8.2-r5.apk"
+}

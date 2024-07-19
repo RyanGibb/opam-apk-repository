@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add samba-dc-libs-4.1.23-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del samba-dc-libs"]
+]
+depends: [
+  "heimdal-libs"
+  "ldb"
+  "libcom_err"
+  "musl"
+  "popt"
+  "python"
+  "samba-dc"
+  "samba-libs"
+  "samba-libs-py"
+  "talloc"
+  "tdb-libs"
+  "tevent"
+]
+extra-source "samba-dc-libs-4.1.23-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/samba-dc-libs-4.1.23-r0.apk"
+}

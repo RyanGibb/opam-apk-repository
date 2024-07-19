@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add net-snmp-libs-5.7.3-r5.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del net-snmp-libs"]
+]
+depends: [
+  "libcrypto1.0"
+  "musl"
+]
+extra-source "net-snmp-libs-5.7.3-r5.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/net-snmp-libs-5.7.3-r5.apk"
+}

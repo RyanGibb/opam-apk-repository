@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mariadb-10.11.6-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mariadb"]
+]
+depends: [
+  "libaio"
+  "libcrypto3"
+  "libcurl"
+  "libgcc"
+  "libncursesw"
+  "libssl3"
+  "libstdc++"
+  "libxml2"
+  "linux-pam"
+  "mariadb-common"
+  "musl"
+  "pcre2"
+  "xz-libs"
+  "zlib"
+  "zstd-libs"
+  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
+]
+extra-source "mariadb-10.11.6-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/mariadb-10.11.6-r0.apk"
+}

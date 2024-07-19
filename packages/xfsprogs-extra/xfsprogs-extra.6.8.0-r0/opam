@@ -12,7 +12,6 @@ depends: [
   "userspace-rcu"
   "xfsprogs"
 ]
-
 extra-source "xfsprogs-extra-6.8.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/xfsprogs-extra-6.8.0-r0.apk"
 }

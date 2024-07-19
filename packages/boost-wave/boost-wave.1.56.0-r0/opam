@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add boost-wave-1.56.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del boost-wave"]
+]
+depends: [
+  "boost"
+  "boost-date_time"
+  "boost-filesystem"
+  "boost-system"
+  "boost-thread"
+  "libgcc"
+  "musl"
+]
+extra-source "boost-wave-1.56.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/boost-wave-1.56.0-r0.apk"
+}

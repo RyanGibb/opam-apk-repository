@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-yaml-doc"]
 ]
-
-
 extra-source "perl-yaml-doc-1.31-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-yaml-doc-1.31-r0.apk"
 }

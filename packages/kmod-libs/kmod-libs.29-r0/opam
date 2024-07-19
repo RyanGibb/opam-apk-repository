@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add kmod-libs-29-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del kmod-libs"]
+]
+depends: [
+  "libcrypto1.1"
+  "musl"
+  "xz-libs"
+  "zlib"
+  "zstd-libs"
+]
+extra-source "kmod-libs-29-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/kmod-libs-29-r0.apk"
+}

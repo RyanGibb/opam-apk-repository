@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mupdf-x11-1.16.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mupdf-x11"]
+]
+depends: [
+  "freetype"
+  "harfbuzz"
+  "jbig2dec"
+  "libjpeg-turbo"
+  "libx11"
+  "libxext"
+  "mupdf"
+  "musl"
+  "openjpeg"
+]
+extra-source "mupdf-x11-1.16.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/mupdf-x11-1.16.1-r1.apk"
+}

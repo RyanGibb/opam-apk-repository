@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ruby-multi_json-1.10.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ruby-multi_json"]
+]
+depends: [
+  "ghostscript-fonts"
+  "ruby"
+]
+extra-source "ruby-multi_json-1.10.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/ruby-multi_json-1.10.1-r0.apk"
+}

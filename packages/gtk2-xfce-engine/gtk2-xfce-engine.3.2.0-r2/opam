@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gtk2-xfce-engine-3.2.0-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gtk2-xfce-engine"]
+]
+depends: [
+  "cairo"
+  "glib"
+  "gtk+2.0"
+  "musl"
+]
+extra-source "gtk2-xfce-engine-3.2.0-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/gtk2-xfce-engine-3.2.0-r2.apk"
+}

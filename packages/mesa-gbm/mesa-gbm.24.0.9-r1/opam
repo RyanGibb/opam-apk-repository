@@ -9,11 +9,10 @@ depends: [
   "libdrm"
   "libexpat"
   "libxcb"
-  "mesa"
+  "mesa" {= "24.0.9-r1"}
   "musl"
   "wayland-libs-server"
 ]
-
 extra-source "mesa-gbm-24.0.9-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/mesa-gbm-24.0.9-r1.apk"
 }

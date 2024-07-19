@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-mail-authenticationresults-doc"]
 ]
-
-
 extra-source "perl-mail-authenticationresults-doc-2.20231031-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-mail-authenticationresults-doc-2.20231031-r0.apk"
 }

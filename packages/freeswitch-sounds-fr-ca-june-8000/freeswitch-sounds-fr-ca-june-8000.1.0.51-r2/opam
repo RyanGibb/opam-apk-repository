@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del freeswitch-sounds-fr-ca-june-8000"]
 ]
-
-
 extra-source "freeswitch-sounds-fr-ca-june-8000-1.0.51-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/freeswitch-sounds-fr-ca-june-8000-1.0.51-r2.apk"
 }

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add linux-grsec-dev-3.14.51-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del linux-grsec-dev"]
+]
+depends: [
+  "bash"
+  "gmp-dev"
+  "libgcc"
+  "libstdc++"
+  "musl"
+]
+extra-source "linux-grsec-dev-3.14.51-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/linux-grsec-dev-3.14.51-r0.apk"
+}

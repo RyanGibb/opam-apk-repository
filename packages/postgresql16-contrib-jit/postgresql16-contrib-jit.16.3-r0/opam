@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del postgresql16-contrib-jit"]
 ]
 depends: [
-  "postgresql16-contrib"
+  "postgresql16-contrib" {= "16.3-r0"}
 ]
-
 extra-source "postgresql16-contrib-jit-16.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/postgresql16-contrib-jit-16.3-r0.apk"
 }

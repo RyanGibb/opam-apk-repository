@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add nftables-1.0.9-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del nftables"]
+]
+depends: [
+  "gmp"
+  "jansson"
+  "libmnl"
+  "libnftnl"
+  "musl"
+  "readline"
+  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
+]
+extra-source "nftables-1.0.9-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/nftables-1.0.9-r1.apk"
+}

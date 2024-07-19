@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add binutils-gold-2.40-r7.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del binutils-gold"]
+]
+depends: [
+  "libgcc"
+  "libstdc++"
+  "musl"
+  "zlib"
+  "zstd-libs"
+]
+extra-source "binutils-gold-2.40-r7.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/binutils-gold-2.40-r7.apk"
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add pinentry-gtk-1.0.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del pinentry-gtk"]
+]
+depends: [
+  "busybox"
+  "glib"
+  "gtk+2.0"
+  "libassuan"
+  "libcap"
+  "libgpg-error"
+  "musl"
+  "ncurses-libs"
+]
+extra-source "pinentry-gtk-1.0.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/pinentry-gtk-1.0.0-r0.apk"
+}

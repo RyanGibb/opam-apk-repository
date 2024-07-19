@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-dbi-doc"]
 ]
-
-
 extra-source "perl-dbi-doc-1.643-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-dbi-doc-1.643-r6.apk"
 }

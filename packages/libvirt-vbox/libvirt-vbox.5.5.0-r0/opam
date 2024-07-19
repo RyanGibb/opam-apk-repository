@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libvirt-vbox-5.5.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libvirt-vbox"]
+]
+depends: [
+  "libgcc"
+  "libintl"
+  "libvirt-client"
+  "libvirt-common-drivers" {= "5.5.0-r0"}
+  "libvirt-daemon" {= "5.5.0-r0"}
+  "libxml2"
+  "musl"
+]
+extra-source "libvirt-vbox-5.5.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/libvirt-vbox-5.5.0-r0.apk"
+}

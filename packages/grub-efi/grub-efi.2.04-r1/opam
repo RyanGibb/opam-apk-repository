@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add grub-efi-2.04-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del grub-efi"]
+]
+depends: [
+  "grub"
+]
+extra-source "grub-efi-2.04-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/grub-efi-2.04-r1.apk"
+}

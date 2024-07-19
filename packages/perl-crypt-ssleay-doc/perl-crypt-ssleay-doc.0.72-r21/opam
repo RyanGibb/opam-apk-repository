@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-crypt-ssleay-doc"]
 ]
-
-
 extra-source "perl-crypt-ssleay-doc-0.72-r21.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-crypt-ssleay-doc-0.72-r21.apk"
 }

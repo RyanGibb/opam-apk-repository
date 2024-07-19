@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add nspr-dev-4.19-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del nspr-dev"]
+]
+depends: [
+  "nspr"
+  "pkgconf"
+]
+extra-source "nspr-dev-4.19-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/nspr-dev-4.19-r0.apk"
+}

@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del binutils-dev"]
 ]
 depends: [
-  "binutils"
+  "binutils" {= "2.42-r0"}
 ]
-
 extra-source "binutils-dev-2.42-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/binutils-dev-2.42-r0.apk"
 }

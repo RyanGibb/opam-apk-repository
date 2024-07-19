@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add deadbeef-dev-0.6.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del deadbeef-dev"]
+]
+depends: [
+  "alsa-lib-dev"
+  "deadbeef" {= "0.6.2-r0"}
+  "deadbeef-lang" {= "0.6.2-r0"}
+  "ffmpeg-dev"
+  "gettext-dev"
+  "gtk+-dev"
+  "libiconv-dev"
+  "libmad-dev"
+  "libsamplerate-dev"
+]
+extra-source "deadbeef-dev-0.6.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/deadbeef-dev-0.6.2-r0.apk"
+}

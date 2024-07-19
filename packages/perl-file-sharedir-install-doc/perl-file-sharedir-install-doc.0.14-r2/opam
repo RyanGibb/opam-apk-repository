@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-file-sharedir-install-doc"]
 ]
-
-
 extra-source "perl-file-sharedir-install-doc-0.14-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-file-sharedir-install-doc-0.14-r2.apk"
 }

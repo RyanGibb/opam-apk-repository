@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add icu-libs-74.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del icu-libs"]
+]
+depends: [
+  "libgcc"
+  "libstdc++"
+  "musl"
+  ("icu-data-en" | "icu-data-full")
+]
+extra-source "icu-libs-74.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/icu-libs-74.1-r0.apk"
+}

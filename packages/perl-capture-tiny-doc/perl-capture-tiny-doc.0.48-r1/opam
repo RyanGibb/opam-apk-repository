@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-capture-tiny-doc-0.48-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-capture-tiny-doc"]
+]
+extra-source "perl-capture-tiny-doc-0.48-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-capture-tiny-doc-0.48-r1.apk"
+}

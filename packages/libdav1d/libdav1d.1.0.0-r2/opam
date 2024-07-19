@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libdav1d-1.0.0-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libdav1d"]
+]
+depends: [
+  "musl"
+]
+extra-source "libdav1d-1.0.0-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libdav1d-1.0.0-r2.apk"
+}

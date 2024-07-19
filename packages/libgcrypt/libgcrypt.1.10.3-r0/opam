@@ -9,7 +9,6 @@ depends: [
   "libgpg-error"
   "musl"
 ]
-
 extra-source "libgcrypt-1.10.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libgcrypt-1.10.3-r0.apk"
 }

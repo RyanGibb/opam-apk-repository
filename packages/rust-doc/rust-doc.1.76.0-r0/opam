@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add rust-doc-1.76.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del rust-doc"]
+]
+extra-source "rust-doc-1.76.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/rust-doc-1.76.0-r0.apk"
+}

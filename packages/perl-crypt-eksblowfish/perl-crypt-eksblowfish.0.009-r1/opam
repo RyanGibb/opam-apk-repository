@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-crypt-eksblowfish-0.009-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-crypt-eksblowfish"]
+]
+depends: [
+  "musl"
+  "perl-class-mix"
+]
+extra-source "perl-crypt-eksblowfish-0.009-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/perl-crypt-eksblowfish-0.009-r1.apk"
+}

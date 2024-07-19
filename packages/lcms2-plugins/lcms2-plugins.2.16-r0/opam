@@ -9,7 +9,6 @@ depends: [
   "lcms2"
   "musl"
 ]
-
 extra-source "lcms2-plugins-2.16-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lcms2-plugins-2.16-r0.apk"
 }

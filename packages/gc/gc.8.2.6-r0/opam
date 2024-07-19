@@ -9,7 +9,6 @@ depends: [
   "libstdc++"
   "musl"
 ]
-
 extra-source "gc-8.2.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/gc-8.2.6-r0.apk"
 }

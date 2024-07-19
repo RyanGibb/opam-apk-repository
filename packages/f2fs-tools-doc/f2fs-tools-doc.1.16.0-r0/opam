@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add f2fs-tools-doc-1.16.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del f2fs-tools-doc"]
+]
+extra-source "f2fs-tools-doc-1.16.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/f2fs-tools-doc-1.16.0-r0.apk"
+}

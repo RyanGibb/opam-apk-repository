@@ -12,14 +12,13 @@ depends: [
   "libx11"
   "libxcb"
   "libxshmfence"
-  "mesa"
+  "mesa" {= "24.0.9-r1"}
   "mesa-gbm"
   "mesa-glapi"
   "musl"
   "wayland-libs-client"
   "wayland-libs-server"
 ]
-
 extra-source "mesa-egl-24.0.9-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/mesa-egl-24.0.9-r1.apk"
 }

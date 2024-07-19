@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xbmc-pvr-addons-mythtv-12.0-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xbmc-pvr-addons-mythtv"]
+]
+depends: [
+  "libcrypto1.0"
+  "libgcc"
+  "libssl1.0"
+  "libstdc++"
+  "musl"
+  "mysql-libs"
+  "zlib"
+]
+extra-source "xbmc-pvr-addons-mythtv-12.0-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/xbmc-pvr-addons-mythtv-12.0-r4.apk"
+}

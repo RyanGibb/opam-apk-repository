@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add glade3-doc-3.8.5-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del glade3-doc"]
+]
+extra-source "glade3-doc-3.8.5-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/glade3-doc-3.8.5-r4.apk"
+}

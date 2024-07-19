@@ -5,7 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del util-linux-login-doc"]
 ]
-
 conflicts: [
   "shadow-login-doc"
 ]

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add spawn-fcgi-doc-1.6.5-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del spawn-fcgi-doc"]
+]
+extra-source "spawn-fcgi-doc-1.6.5-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/spawn-fcgi-doc-1.6.5-r2.apk"
+}

@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del unfs3-openrc"]
 ]
-
-
 extra-source "unfs3-openrc-0.10.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/unfs3-openrc-0.10.0-r2.apk"
 }

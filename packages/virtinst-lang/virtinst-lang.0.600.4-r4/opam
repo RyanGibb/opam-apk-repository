@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add virtinst-lang-0.600.4-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del virtinst-lang"]
+]
+depends: [
+  "libvirt"
+  "py-libvirt"
+  "py-libxml2"
+  "py-urlgrabber"
+  "python2"
+]
+extra-source "virtinst-lang-0.600.4-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/virtinst-lang-0.600.4-r4.apk"
+}

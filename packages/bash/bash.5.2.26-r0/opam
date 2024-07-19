@@ -10,7 +10,6 @@ depends: [
   "readline"
   ("busybox-binsh" | "dash-binsh" | "yash-binsh")
 ]
-
 extra-source "bash-5.2.26-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/bash-5.2.26-r0.apk"
 }

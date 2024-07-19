@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add botan-doc-2.19.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del botan-doc"]
+]
+extra-source "botan-doc-2.19.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/botan-doc-2.19.1-r1.apk"
+}

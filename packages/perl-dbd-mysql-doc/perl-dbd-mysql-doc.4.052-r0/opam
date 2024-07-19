@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-dbd-mysql-doc"]
 ]
-
-
 extra-source "perl-dbd-mysql-doc-4.052-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-dbd-mysql-doc-4.052-r0.apk"
 }

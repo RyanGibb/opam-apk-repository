@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xtables-addons-grsec-3.18.21-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xtables-addons-grsec"]
+]
+depends: [
+  "linux-grsec" {= "3.18.21-r2"}
+]
+extra-source "xtables-addons-grsec-3.18.21-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/xtables-addons-grsec-3.18.21-r2.apk"
+}

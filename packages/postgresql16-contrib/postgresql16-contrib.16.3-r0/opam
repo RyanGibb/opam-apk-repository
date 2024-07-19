@@ -11,10 +11,9 @@ depends: [
   "libuuid"
   "libxml2"
   "musl"
-  "postgresql16"
+  "postgresql16" {= "16.3-r0"}
   "zlib"
 ]
-
 extra-source "postgresql16-contrib-16.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/postgresql16-contrib-16.3-r0.apk"
 }

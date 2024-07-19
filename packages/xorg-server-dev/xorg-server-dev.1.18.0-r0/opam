@@ -1,0 +1,40 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xorg-server-dev-1.18.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xorg-server-dev"]
+]
+depends: [
+  "bigreqsproto"
+  "compositeproto"
+  "damageproto"
+  "dri2proto"
+  "dri3proto"
+  "fixesproto"
+  "fontsproto"
+  "glproto"
+  "inputproto"
+  "kbproto"
+  "libepoxy-dev"
+  "libpciaccess-dev"
+  "libxfont-dev"
+  "mesa-dev"
+  "pixman-dev"
+  "pkgconfig"
+  "presentproto"
+  "randrproto"
+  "recordproto"
+  "renderproto"
+  "resourceproto"
+  "scrnsaverproto"
+  "videoproto"
+  "xcmiscproto"
+  "xextproto"
+  "xf86driproto"
+  "xineramaproto"
+  "xproto"
+]
+extra-source "xorg-server-dev-1.18.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/xorg-server-dev-1.18.0-r0.apk"
+}

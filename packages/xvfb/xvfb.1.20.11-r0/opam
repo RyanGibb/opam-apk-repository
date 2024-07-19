@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xvfb-1.20.11-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xvfb"]
+]
+depends: [
+  "font-cursor-misc"
+  "font-misc-misc"
+  "libxau"
+  "libxdmcp"
+  "libxfont2"
+  "mesa-gl"
+  "musl"
+  "nettle"
+  "pixman"
+  "xinit"
+  "xkbcomp"
+  "xkeyboard-config"
+]
+extra-source "xvfb-1.20.11-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/xvfb-1.20.11-r0.apk"
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py3-sanlock-3.8.5-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py3-sanlock"]
+]
+depends: [
+  "musl"
+  "python3" {>= "3.11"}
+  "sanlock"
+]
+extra-source "py3-sanlock-3.8.5-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/py3-sanlock-3.8.5-r4.apk"
+}

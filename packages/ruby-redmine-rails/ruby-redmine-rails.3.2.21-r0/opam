@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ruby-redmine-rails-3.2.21-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ruby-redmine-rails"]
+]
+depends: [
+  "ruby"
+  "ruby-bundler"
+  "ruby-redmine-actionmailer"
+  "ruby-redmine-actionpack"
+  "ruby-redmine-activerecord"
+  "ruby-redmine-activeresource"
+  "ruby-redmine-activesupport"
+  "ruby-redmine-railties"
+]
+extra-source "ruby-redmine-rails-3.2.21-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/ruby-redmine-rails-3.2.21-r0.apk"
+}

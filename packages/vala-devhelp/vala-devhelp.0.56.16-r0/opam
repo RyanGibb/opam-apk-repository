@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del vala-devhelp"]
 ]
-
-
 extra-source "vala-devhelp-0.56.16-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/vala-devhelp-0.56.16-r0.apk"
 }

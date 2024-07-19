@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del libtheora-static"]
 ]
-
-
 extra-source "libtheora-static-1.1.1-r18.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libtheora-static-1.1.1-r18.apk"
 }

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add boost1.77-static-1.77.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del boost1.77-static"]
+]
+extra-source "boost1.77-static-1.77.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/boost1.77-static-1.77.0-r1.apk"
+}

@@ -8,12 +8,11 @@ remove: [
 depends: [
   "libx11-dev"
   "libxext-dev"
-  "libxrandr"
+  "libxrandr" {= "1.5.4-r1"}
   "libxrender-dev"
   "pkgconf"
   "xorgproto"
 ]
-
 extra-source "libxrandr-dev-1.5.4-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libxrandr-dev-1.5.4-r1.apk"
 }

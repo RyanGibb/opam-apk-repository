@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add git-dbg-2.43.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del git-dbg"]
+]
+extra-source "git-dbg-2.43.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/git-dbg-2.43.4-r0.apk"
+}

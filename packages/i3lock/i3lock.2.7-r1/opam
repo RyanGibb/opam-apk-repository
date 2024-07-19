@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add i3lock-2.7-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del i3lock"]
+]
+depends: [
+  "cairo"
+  "libev"
+  "libxcb"
+  "libxkbcommon"
+  "linux-pam"
+  "musl"
+  "xcb-util-image"
+  "xkeyboard-config"
+]
+extra-source "i3lock-2.7-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/i3lock-2.7-r1.apk"
+}

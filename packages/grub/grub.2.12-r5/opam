@@ -12,7 +12,6 @@ depends: [
   "xz-libs"
   ("busybox-binsh" | "dash-binsh" | "yash-binsh")
 ]
-
 extra-source "grub-2.12-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/grub-2.12-r5.apk"
 }

@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del curl-zsh-completion"]
 ]
-
-
 extra-source "curl-zsh-completion-8.8.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/curl-zsh-completion-8.8.0-r0.apk"
 }

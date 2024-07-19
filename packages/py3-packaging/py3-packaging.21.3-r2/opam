@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py3-packaging-21.3-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py3-packaging"]
+]
+depends: [
+  "py3-parsing"
+  "python3"
+]
+extra-source "py3-packaging-21.3-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/py3-packaging-21.3-r2.apk"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add freeradius-eap-3.0.12-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del freeradius-eap"]
+]
+depends: [
+  "freeradius" {= "3.0.12-r2"}
+  "freeradius-lib"
+  "libressl2.4-libcrypto"
+  "libressl2.4-libssl"
+  "musl"
+  "talloc"
+]
+extra-source "freeradius-eap-3.0.12-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/freeradius-eap-3.0.12-r2.apk"
+}

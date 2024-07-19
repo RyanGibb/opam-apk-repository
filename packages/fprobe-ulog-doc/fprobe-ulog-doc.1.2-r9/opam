@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del fprobe-ulog-doc"]
 ]
-
-
 extra-source "fprobe-ulog-doc-1.2-r9.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/fprobe-ulog-doc-1.2-r9.apk"
 }

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py3-virtualenv-20.2.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py3-virtualenv"]
+]
+depends: [
+  "py3-distlib"
+  "py3-filelock"
+  "py3-setuptools"
+  "python3"
+]
+extra-source "py3-virtualenv-20.2.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/py3-virtualenv-20.2.2-r0.apk"
+}

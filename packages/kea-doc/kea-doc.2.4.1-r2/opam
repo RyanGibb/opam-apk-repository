@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del kea-doc"]
 ]
-
-
 extra-source "kea-doc-2.4.1-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/kea-doc-2.4.1-r2.apk"
 }

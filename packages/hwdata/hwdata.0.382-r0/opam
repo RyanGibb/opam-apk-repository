@@ -6,12 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del hwdata"]
 ]
 depends: [
-  "hwdata-net"
-  "hwdata-pci"
-  "hwdata-pnp"
-  "hwdata-usb"
+  "hwdata-net" {= "0.382-r0"}
+  "hwdata-pci" {= "0.382-r0"}
+  "hwdata-pnp" {= "0.382-r0"}
+  "hwdata-usb" {= "0.382-r0"}
 ]
-
 extra-source "hwdata-0.382-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/hwdata-0.382-r0.apk"
 }

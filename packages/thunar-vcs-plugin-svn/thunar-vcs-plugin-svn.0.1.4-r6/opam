@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add thunar-vcs-plugin-svn-0.1.4-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del thunar-vcs-plugin-svn"]
+]
+depends: [
+  "apr"
+  "glib"
+  "gtk+2.0"
+  "libxfce4util"
+  "musl"
+  "subversion-libs"
+]
+extra-source "thunar-vcs-plugin-svn-0.1.4-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/thunar-vcs-plugin-svn-0.1.4-r6.apk"
+}

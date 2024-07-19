@@ -9,7 +9,6 @@ depends: [
   "libldap"
   "musl"
 ]
-
 extra-source "apr-util-ldap-1.6.3-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/apr-util-ldap-1.6.3-r1.apk"
 }

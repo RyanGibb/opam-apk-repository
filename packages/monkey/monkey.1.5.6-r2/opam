@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add monkey-1.5.6-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del monkey"]
+]
+depends: [
+  "musl"
+  "pkgconfig"
+]
+extra-source "monkey-1.5.6-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/monkey-1.5.6-r2.apk"
+}

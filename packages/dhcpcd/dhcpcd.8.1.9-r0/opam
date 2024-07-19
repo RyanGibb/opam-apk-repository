@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add dhcpcd-8.1.9-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del dhcpcd"]
+]
+depends: [
+  "busybox"
+  "musl"
+]
+extra-source "dhcpcd-8.1.9-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/dhcpcd-8.1.9-r0.apk"
+}

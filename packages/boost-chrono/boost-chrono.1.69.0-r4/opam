@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add boost-chrono-1.69.0-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del boost-chrono"]
+]
+depends: [
+  "libgcc"
+  "musl"
+]
+extra-source "boost-chrono-1.69.0-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/boost-chrono-1.69.0-r4.apk"
+}

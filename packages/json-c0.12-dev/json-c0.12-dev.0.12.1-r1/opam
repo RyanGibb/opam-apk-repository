@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add json-c0.12-dev-0.12.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del json-c0.12-dev"]
+]
+depends: [
+  "json-c0.12" {= "0.12.1-r1"}
+  "pkgconf"
+]
+extra-source "json-c0.12-dev-0.12.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/json-c0.12-dev-0.12.1-r1.apk"
+}

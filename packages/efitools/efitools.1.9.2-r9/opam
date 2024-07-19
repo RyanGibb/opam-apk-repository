@@ -10,7 +10,6 @@ depends: [
   "mount"
   "musl"
 ]
-
 extra-source "efitools-1.9.2-r9.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/efitools-1.9.2-r9.apk"
 }

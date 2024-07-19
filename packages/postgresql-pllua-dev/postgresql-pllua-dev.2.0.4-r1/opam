@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add postgresql-pllua-dev-2.0.4-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del postgresql-pllua-dev"]
+]
+extra-source "postgresql-pllua-dev-2.0.4-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/postgresql-pllua-dev-2.0.4-r1.apk"
+}

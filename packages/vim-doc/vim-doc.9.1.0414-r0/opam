@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del vim-doc"]
 ]
-
-
 extra-source "vim-doc-9.1.0414-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/vim-doc-9.1.0414-r0.apk"
 }

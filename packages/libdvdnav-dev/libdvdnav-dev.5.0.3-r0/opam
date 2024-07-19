@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libdvdnav-dev-5.0.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libdvdnav-dev"]
+]
+depends: [
+  "libdvdnav" {= "5.0.3-r0"}
+  "libdvdread-dev"
+  "libdvdread-dev" {>= "5.0.3"}
+  "pkgconf"
+]
+extra-source "libdvdnav-dev-5.0.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/libdvdnav-dev-5.0.3-r0.apk"
+}

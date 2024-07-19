@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del libnetfilter_cthelper-dev"]
 ]
 depends: [
-  "libnetfilter_cthelper"
+  "libnetfilter_cthelper" {= "1.0.1-r2"}
   "pkgconf"
 ]
-
 extra-source "libnetfilter_cthelper-dev-1.0.1-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libnetfilter_cthelper-dev-1.0.1-r2.apk"
 }

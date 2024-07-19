@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add axel-doc-2.17.10-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del axel-doc"]
+]
+extra-source "axel-doc-2.17.10-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/axel-doc-2.17.10-r0.apk"
+}

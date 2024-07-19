@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add vsftpd-3.0.3-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del vsftpd"]
+]
+depends: [
+  "busybox"
+  "libcap"
+  "libcrypto1.1"
+  "libssl1.1"
+  "linux-pam"
+  "musl"
+]
+extra-source "vsftpd-3.0.3-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/vsftpd-3.0.3-r6.apk"
+}

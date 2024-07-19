@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add musl-dev-1.1.5-r5.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del musl-dev"]
+]
+depends: [
+  "musl" {= "1.1.5-r5"}
+  "musl-dbg" {= "1.1.5-r5"}
+  "musl-utils" {= "1.1.5-r5"}
+]
+conflicts: [
+  "uclibc-dev"
+]
+extra-source "musl-dev-1.1.5-r5.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/musl-dev-1.1.5-r5.apk"
+}

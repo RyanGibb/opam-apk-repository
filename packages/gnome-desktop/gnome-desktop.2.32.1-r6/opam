@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gnome-desktop-2.32.1-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gnome-desktop"]
+]
+depends: [
+  "atk"
+  "cairo"
+  "fontconfig"
+  "freetype"
+  "gconf"
+  "gdk-pixbuf"
+  "glib"
+  "gtk+2.0"
+  "libintl"
+  "libx11"
+  "libxrandr"
+  "musl"
+  "pango"
+  "py-gtk"
+  "python"
+]
+extra-source "gnome-desktop-2.32.1-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/gnome-desktop-2.32.1-r6.apk"
+}

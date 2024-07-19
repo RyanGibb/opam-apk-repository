@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mate-themes-1.9.0-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mate-themes"]
+]
+depends: [
+  "mate-common"
+]
+extra-source "mate-themes-1.9.0-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/mate-themes-1.9.0-r2.apk"
+}

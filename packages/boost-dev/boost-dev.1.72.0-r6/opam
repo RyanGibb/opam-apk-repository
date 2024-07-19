@@ -1,0 +1,44 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add boost-dev-1.72.0-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del boost-dev"]
+]
+depends: [
+  "boost"
+  "boost-atomic" {= "1.72.0-r6"}
+  "boost-chrono" {= "1.72.0-r6"}
+  "boost-container" {= "1.72.0-r6"}
+  "boost-context" {= "1.72.0-r6"}
+  "boost-contract" {= "1.72.0-r6"}
+  "boost-coroutine" {= "1.72.0-r6"}
+  "boost-date_time" {= "1.72.0-r6"}
+  "boost-fiber" {= "1.72.0-r6"}
+  "boost-filesystem" {= "1.72.0-r6"}
+  "boost-graph" {= "1.72.0-r6"}
+  "boost-iostreams" {= "1.72.0-r6"}
+  "boost-locale" {= "1.72.0-r6"}
+  "boost-log" {= "1.72.0-r6"}
+  "boost-log_setup" {= "1.72.0-r6"}
+  "boost-math" {= "1.72.0-r6"}
+  "boost-prg_exec_monitor" {= "1.72.0-r6"}
+  "boost-program_options" {= "1.72.0-r6"}
+  "boost-python3" {= "1.72.0-r6"}
+  "boost-random" {= "1.72.0-r6"}
+  "boost-regex" {= "1.72.0-r6"}
+  "boost-serialization" {= "1.72.0-r6"}
+  "boost-stacktrace_basic" {= "1.72.0-r6"}
+  "boost-stacktrace_noop" {= "1.72.0-r6"}
+  "boost-system" {= "1.72.0-r6"}
+  "boost-thread" {= "1.72.0-r6"}
+  "boost-timer" {= "1.72.0-r6"}
+  "boost-type_erasure" {= "1.72.0-r6"}
+  "boost-unit_test_framework" {= "1.72.0-r6"}
+  "boost-wave" {= "1.72.0-r6"}
+  "boost-wserialization" {= "1.72.0-r6"}
+  "linux-headers"
+]
+extra-source "boost-dev-1.72.0-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/boost-dev-1.72.0-r6.apk"
+}

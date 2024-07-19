@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libedit-dev-20181209.3.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libedit-dev"]
+]
+depends: [
+  "libedit" {= "20181209.3.1-r0"}
+  "ncurses-dev"
+  "pkgconf"
+]
+extra-source "libedit-dev-20181209.3.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libedit-dev-20181209.3.1-r0.apk"
+}

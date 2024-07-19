@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libass-0.12.2-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libass"]
+]
+depends: [
+  "enca"
+  "fontconfig"
+  "freetype"
+  "fribidi"
+  "musl"
+]
+extra-source "libass-0.12.2-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/libass-0.12.2-r1.apk"
+}

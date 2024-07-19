@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add uwsgi-cheaper_backlog2-2.0.18-r8.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del uwsgi-cheaper_backlog2"]
+]
+depends: [
+  "uwsgi"
+]
+extra-source "uwsgi-cheaper_backlog2-2.0.18-r8.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/uwsgi-cheaper_backlog2-2.0.18-r8.apk"
+}

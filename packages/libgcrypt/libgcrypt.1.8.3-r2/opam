@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libgcrypt-1.8.3-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libgcrypt"]
+]
+depends: [
+  "libgpg-error"
+  "musl"
+]
+extra-source "libgcrypt-1.8.3-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/libgcrypt-1.8.3-r2.apk"
+}

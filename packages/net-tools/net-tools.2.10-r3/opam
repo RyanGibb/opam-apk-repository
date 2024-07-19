@@ -9,7 +9,6 @@ depends: [
   "mii-tool"
   "musl"
 ]
-
 extra-source "net-tools-2.10-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/net-tools-2.10-r3.apk"
 }

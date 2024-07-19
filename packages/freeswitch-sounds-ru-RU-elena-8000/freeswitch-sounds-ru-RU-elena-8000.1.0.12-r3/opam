@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del freeswitch-sounds-ru-RU-elena-8000"]
 ]
-
-
 extra-source "freeswitch-sounds-ru-RU-elena-8000-1.0.12-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/freeswitch-sounds-ru-RU-elena-8000-1.0.12-r3.apk"
 }

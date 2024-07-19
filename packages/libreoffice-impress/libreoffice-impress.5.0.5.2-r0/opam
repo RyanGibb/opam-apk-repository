@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libreoffice-impress-5.0.5.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libreoffice-impress"]
+]
+depends: [
+  "glew"
+  "libetonyek"
+  "libgcc"
+  "libmwaw"
+  "libodfgen"
+  "libreoffice-common"
+  "libreoffice-common" {= "5.0.5.2-r0"}
+  "librevenge"
+  "libstdc++"
+  "libx11"
+  "mesa-gl"
+  "musl"
+]
+extra-source "libreoffice-impress-5.0.5.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/libreoffice-impress-5.0.5.2-r0.apk"
+}

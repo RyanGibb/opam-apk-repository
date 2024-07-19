@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del irqbalance-doc"]
 ]
-
-
 extra-source "irqbalance-doc-1.9.4-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/irqbalance-doc-1.9.4-r1.apk"
 }

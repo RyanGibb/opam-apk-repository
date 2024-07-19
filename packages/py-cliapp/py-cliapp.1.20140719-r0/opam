@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py-cliapp-1.20140719-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py-cliapp"]
+]
+depends: [
+  "python"
+]
+extra-source "py-cliapp-1.20140719-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/py-cliapp-1.20140719-r0.apk"
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ghi-1.2.0-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ghi"]
+]
+depends: [
+  "less"
+  "ncurses"
+  "ruby"
+]
+extra-source "ghi-1.2.0-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/ghi-1.2.0-r6.apk"
+}

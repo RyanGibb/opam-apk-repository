@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del pyc"]
 ]
-
-
 extra-source "pyc-3.12.3-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/pyc-3.12.3-r1.apk"
 }

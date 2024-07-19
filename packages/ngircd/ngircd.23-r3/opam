@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ngircd-23-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ngircd"]
+]
+depends: [
+  "busybox"
+  "libressl2.4-libcrypto"
+  "libressl2.4-libssl"
+  "linux-pam"
+  "musl"
+  "zlib"
+]
+extra-source "ngircd-23-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/ngircd-23-r3.apk"
+}

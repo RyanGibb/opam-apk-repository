@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-log-any-doc"]
 ]
-
-
 extra-source "perl-log-any-doc-1.717-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-log-any-doc-1.717-r0.apk"
 }

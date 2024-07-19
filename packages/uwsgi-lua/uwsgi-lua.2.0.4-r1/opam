@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add uwsgi-lua-2.0.4-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del uwsgi-lua"]
+]
+depends: [
+  "lua5.2-libs"
+  "musl"
+  "uwsgi"
+]
+extra-source "uwsgi-lua-2.0.4-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/uwsgi-lua-2.0.4-r1.apk"
+}

@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xscreensaver-5.38-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xscreensaver"]
+]
+depends: [
+  "atk"
+  "bc"
+  "gdk-pixbuf"
+  "glib"
+  "gtk+2.0"
+  "libglade"
+  "libintl"
+  "libx11"
+  "libxext"
+  "libxinerama"
+  "libxml2"
+  "libxmu"
+  "libxrandr"
+  "libxt"
+  "libxxf86vm"
+  "musl"
+  "pango"
+]
+extra-source "xscreensaver-5.38-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/xscreensaver-5.38-r0.apk"
+}

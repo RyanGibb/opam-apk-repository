@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del ngrep-doc"]
 ]
-
-
 extra-source "ngrep-doc-1.47-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/ngrep-doc-1.47-r3.apk"
 }

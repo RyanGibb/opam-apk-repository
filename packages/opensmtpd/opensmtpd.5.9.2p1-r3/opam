@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add opensmtpd-5.9.2p1-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del opensmtpd"]
+]
+depends: [
+  "busybox"
+  "db"
+  "fts"
+  "libasr"
+  "libevent"
+  "libressl2.4-libcrypto"
+  "libressl2.4-libssl"
+  "musl"
+  "zlib"
+]
+extra-source "opensmtpd-5.9.2p1-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/opensmtpd-5.9.2p1-r3.apk"
+}

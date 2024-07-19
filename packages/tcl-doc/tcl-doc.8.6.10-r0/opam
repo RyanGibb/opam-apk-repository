@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add tcl-doc-8.6.10-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del tcl-doc"]
+]
+extra-source "tcl-doc-8.6.10-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/tcl-doc-8.6.10-r0.apk"
+}

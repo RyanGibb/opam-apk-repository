@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ldb-dev-2.0.12-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ldb-dev"]
+]
+depends: [
+  "ldb" {= "2.0.12-r0"}
+  "pkgconf"
+  "py3-ldb" {= "2.0.12-r0"}
+  "talloc-dev"
+  "tdb-dev"
+]
+extra-source "ldb-dev-2.0.12-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/ldb-dev-2.0.12-r0.apk"
+}

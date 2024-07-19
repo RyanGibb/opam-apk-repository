@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del libgcrypt-doc"]
 ]
-
-
 extra-source "libgcrypt-doc-1.10.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libgcrypt-doc-1.10.3-r0.apk"
 }

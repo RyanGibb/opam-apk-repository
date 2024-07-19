@@ -1,0 +1,55 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add vlc-2.1.6-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del vlc"]
+]
+depends: [
+  "a52dec"
+  "alsa-lib"
+  "avahi-libs"
+  "busybox"
+  "dbus-libs"
+  "faad2"
+  "ffmpeg-libs"
+  "flac"
+  "fontconfig"
+  "freetype"
+  "fribidi"
+  "libavc1394"
+  "libbluray"
+  "libcddb"
+  "libdc1394"
+  "libdvbpsi"
+  "libdvdnav"
+  "libdvdread"
+  "libebml"
+  "libgcc"
+  "libgcrypt"
+  "libgpg-error"
+  "libmad"
+  "libmatroska"
+  "libmpeg2"
+  "libogg"
+  "libpng"
+  "libraw1394"
+  "libshout"
+  "libspeex"
+  "libstdc++"
+  "libtheora"
+  "libudev"
+  "libvorbis"
+  "libxml2"
+  "live-media"
+  "lua5.2-libs"
+  "musl"
+  "ncurses-widec-libs"
+  "taglib"
+  "ttf-dejavu"
+  "zlib"
+  ("ffmpeg-libs" | "ffmpeg1-libs")
+]
+extra-source "vlc-2.1.6-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/vlc-2.1.6-r0.apk"
+}

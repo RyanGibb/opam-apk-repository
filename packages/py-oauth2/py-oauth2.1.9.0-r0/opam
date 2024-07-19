@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py-oauth2-1.9.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py-oauth2"]
+]
+depends: [
+  "py-httplib2"
+  "python2"
+]
+extra-source "py-oauth2-1.9.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/py-oauth2-1.9.0-r0.apk"
+}

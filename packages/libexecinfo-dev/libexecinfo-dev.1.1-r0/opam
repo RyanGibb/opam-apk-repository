@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libexecinfo-dev-1.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libexecinfo-dev"]
+]
+depends: [
+  "libexecinfo" {= "1.1-r0"}
+]
+extra-source "libexecinfo-dev-1.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libexecinfo-dev-1.1-r0.apk"
+}

@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del man-pages-posix"]
 ]
-
-
 extra-source "man-pages-posix-2017a-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/man-pages-posix-2017a-r0.apk"
 }

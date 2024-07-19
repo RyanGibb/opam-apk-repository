@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add yeahconsole-0.3.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del yeahconsole"]
+]
+depends: [
+  "libx11"
+  "musl"
+]
+extra-source "yeahconsole-0.3.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/yeahconsole-0.3.4-r0.apk"
+}

@@ -6,11 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del libxdmcp-dev"]
 ]
 depends: [
-  "libxdmcp"
+  "libxdmcp" {= "1.1.5-r1"}
   "pkgconf"
   "xorgproto"
 ]
-
 extra-source "libxdmcp-dev-1.1.5-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libxdmcp-dev-1.1.5-r1.apk"
 }

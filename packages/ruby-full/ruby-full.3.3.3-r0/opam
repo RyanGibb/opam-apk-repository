@@ -8,25 +8,24 @@ remove: [
 depends: [
   "ruby"
   "ruby-bundler"
-  "ruby-debug"
-  "ruby-matrix"
-  "ruby-minitest"
-  "ruby-net-ftp"
-  "ruby-net-imap"
-  "ruby-net-pop"
-  "ruby-net-smtp"
-  "ruby-power_assert"
-  "ruby-prime"
-  "ruby-racc"
-  "ruby-rake"
-  "ruby-rbs"
+  "ruby-debug" {>= "1.9.1"}
+  "ruby-matrix" {>= "0.4.2"}
+  "ruby-minitest" {>= "5.20.0"}
+  "ruby-net-ftp" {>= "0.3.4"}
+  "ruby-net-imap" {>= "0.4.9.1"}
+  "ruby-net-pop" {>= "0.1.2"}
+  "ruby-net-smtp" {>= "0.4.0.1"}
+  "ruby-power_assert" {>= "2.0.3"}
+  "ruby-prime" {>= "0.1.2"}
+  "ruby-racc" {>= "1.7.3"}
+  "ruby-rake" {>= "13.1.0"}
+  "ruby-rbs" {>= "3.4.0"}
   "ruby-rdoc"
-  "ruby-rexml"
-  "ruby-rss"
-  "ruby-test-unit"
-  "ruby-typeprof"
+  "ruby-rexml" {>= "3.2.8"}
+  "ruby-rss" {>= "0.3.0"}
+  "ruby-test-unit" {>= "3.6.1"}
+  "ruby-typeprof" {>= "0.21.9"}
 ]
-
 extra-source "ruby-full-3.3.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/ruby-full-3.3.3-r0.apk"
 }

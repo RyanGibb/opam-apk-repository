@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libgudev-233-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libgudev"]
+]
+depends: [
+  "eudev-libs"
+  "glib"
+  "musl"
+]
+extra-source "libgudev-233-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/libgudev-233-r0.apk"
+}

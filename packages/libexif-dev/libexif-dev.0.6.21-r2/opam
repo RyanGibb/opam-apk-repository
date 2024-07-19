@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libexif-dev-0.6.21-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libexif-dev"]
+]
+depends: [
+  "libexif" {= "0.6.21-r2"}
+  "pkgconf"
+]
+extra-source "libexif-dev-0.6.21-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/libexif-dev-0.6.21-r2.apk"
+}

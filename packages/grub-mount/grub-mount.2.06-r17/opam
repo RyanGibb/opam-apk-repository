@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add grub-mount-2.06-r17.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del grub-mount"]
+]
+depends: [
+  "device-mapper-libs"
+  "fuse"
+  "musl"
+]
+extra-source "grub-mount-2.06-r17.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/grub-mount-2.06-r17.apk"
+}

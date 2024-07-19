@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add acf-mariadb-0.1.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del acf-mariadb"]
+]
+depends: [
+  "acf-core"
+  "acf-db-lib"
+  "lua"
+  "lua-sql-mysql"
+  "mariadb"
+  "mariadb-client"
+]
+extra-source "acf-mariadb-0.1.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/acf-mariadb-0.1.2-r0.apk"
+}

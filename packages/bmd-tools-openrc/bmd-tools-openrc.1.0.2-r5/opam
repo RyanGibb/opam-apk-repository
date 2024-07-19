@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del bmd-tools-openrc"]
 ]
-
-
 extra-source "bmd-tools-openrc-1.0.2-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/bmd-tools-openrc-1.0.2-r5.apk"
 }

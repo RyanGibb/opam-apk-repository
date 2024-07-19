@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libvirt-qemu-1.2.11-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libvirt-qemu"]
+]
+depends: [
+  "gnutls"
+  "libcap-ng"
+  "libintl"
+  "libnl"
+  "libtirpc"
+  "libvirt-common-drivers" {= "1.2.11-r2"}
+  "libvirt-daemon" {= "1.2.11-r2"}
+  "libxml2"
+  "musl"
+]
+extra-source "libvirt-qemu-1.2.11-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/libvirt-qemu-1.2.11-r2.apk"
+}

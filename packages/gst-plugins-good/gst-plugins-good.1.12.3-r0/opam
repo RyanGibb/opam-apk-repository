@@ -1,0 +1,43 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gst-plugins-good-1.12.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gst-plugins-good"]
+]
+depends: [
+  "flac"
+  "gdk-pixbuf"
+  "glib"
+  "gst-plugins-base"
+  "gstreamer"
+  "jack"
+  "libavc1394"
+  "libbz2"
+  "libdv"
+  "libgcc"
+  "libgudev"
+  "libiec61883"
+  "libintl"
+  "libjpeg-turbo"
+  "libpng"
+  "libraw1394"
+  "libshout"
+  "libsoup"
+  "libstdc++"
+  "libvpx"
+  "libx11"
+  "libxdamage"
+  "libxext"
+  "libxfixes"
+  "musl"
+  "orc"
+  "speex"
+  "taglib"
+  "v4l-utils-libs"
+  "wavpack"
+  "zlib"
+]
+extra-source "gst-plugins-good-1.12.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/gst-plugins-good-1.12.3-r0.apk"
+}

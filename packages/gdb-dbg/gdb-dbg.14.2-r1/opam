@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del gdb-dbg"]
 ]
-
-
 extra-source "gdb-dbg-14.2-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/gdb-dbg-14.2-r1.apk"
 }

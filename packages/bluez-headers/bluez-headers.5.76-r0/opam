@@ -5,7 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del bluez-headers"]
 ]
-
 conflicts: [
   "bluez-dev"
 ]

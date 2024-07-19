@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add postgresql-bdr-dev-9.4.14_p1-r8.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del postgresql-bdr-dev"]
+]
+depends: [
+  "libpq"
+  "libxml2-dev"
+  "musl"
+  "openssl-dev"
+  "pkgconf"
+  "postgresql-bdr-libs" {= "9.4.14_p1-r8"}
+  "readline-dev"
+  "zlib-dev"
+]
+extra-source "postgresql-bdr-dev-9.4.14_p1-r8.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/postgresql-bdr-dev-9.4.14_p1-r8.apk"
+}

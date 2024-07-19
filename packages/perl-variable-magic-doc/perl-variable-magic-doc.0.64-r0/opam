@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-variable-magic-doc"]
 ]
-
-
 extra-source "perl-variable-magic-doc-0.64-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-variable-magic-doc-0.64-r0.apk"
 }

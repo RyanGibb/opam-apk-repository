@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-xml-rss-doc"]
 ]
-
-
 extra-source "perl-xml-rss-doc-1.63-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-xml-rss-doc-1.63-r0.apk"
 }

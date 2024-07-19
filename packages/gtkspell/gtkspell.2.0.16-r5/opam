@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gtkspell-2.0.16-r5.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gtkspell"]
+]
+depends: [
+  "atk"
+  "cairo"
+  "enchant"
+  "fontconfig"
+  "freetype"
+  "gdk-pixbuf"
+  "glib"
+  "gtk+2.0"
+  "libintl"
+  "musl"
+  "pango"
+]
+extra-source "gtkspell-2.0.16-r5.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/gtkspell-2.0.16-r5.apk"
+}

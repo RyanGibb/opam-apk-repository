@@ -11,7 +11,6 @@ depends: [
   "nginx"
   "nginx-mod-stream"
 ]
-
 extra-source "nginx-mod-stream-geoip2-1.26.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/nginx-mod-stream-geoip2-1.26.1-r0.apk"
 }

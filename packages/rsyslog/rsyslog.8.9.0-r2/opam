@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add rsyslog-8.9.0-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del rsyslog"]
+]
+depends: [
+  "json-c"
+  "libestr"
+  "libgcrypt"
+  "libgpg-error"
+  "liblogging"
+  "libnet"
+  "libuuid"
+  "musl"
+  "zlib"
+]
+extra-source "rsyslog-8.9.0-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/rsyslog-8.9.0-r2.apk"
+}

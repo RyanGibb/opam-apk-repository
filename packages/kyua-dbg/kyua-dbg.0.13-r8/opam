@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del kyua-dbg"]
 ]
-
-
 extra-source "kyua-dbg-0.13-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/kyua-dbg-0.13-r8.apk"
 }

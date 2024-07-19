@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gnome-system-monitor-2.28.2-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gnome-system-monitor"]
+]
+depends: [
+  "busybox"
+  "cairo"
+  "gconf"
+  "gdk-pixbuf"
+  "glib"
+  "glibmm"
+  "gtk+2.0"
+  "gtkmm"
+  "libgcc"
+  "libgtop"
+  "libintl"
+  "librsvg"
+  "libsigc++"
+  "libstdc++"
+  "libwnck"
+  "libxml2"
+  "musl"
+]
+extra-source "gnome-system-monitor-2.28.2-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/gnome-system-monitor-2.28.2-r6.apk"
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add tarsnap-1.0.39-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del tarsnap"]
+]
+depends: [
+  "libcrypto1.1"
+  "musl"
+  "zlib"
+]
+extra-source "tarsnap-1.0.39-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/tarsnap-1.0.39-r4.apk"
+}

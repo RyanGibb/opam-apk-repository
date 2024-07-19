@@ -1,0 +1,48 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add audacious-plugins-3.7.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del audacious-plugins"]
+]
+depends: [
+  "alsa-lib"
+  "audacious"
+  "cairo"
+  "dbus-glib"
+  "faad2"
+  "ffmpeg-libs"
+  "flac"
+  "gdk-pixbuf"
+  "glib"
+  "gtk+2.0"
+  "lame"
+  "libcddb"
+  "libcdio"
+  "libcdio-paranoia"
+  "libcue"
+  "libcurl"
+  "libgcc"
+  "libintl"
+  "libmms"
+  "libnotify"
+  "libogg"
+  "libsamplerate"
+  "libsndfile"
+  "libstdc++"
+  "libvorbis"
+  "libx11"
+  "libxcomposite"
+  "libxml2"
+  "libxrender"
+  "mpg123"
+  "musl"
+  "neon"
+  "pango"
+  "sdl"
+  "wavpack"
+  "zlib"
+]
+extra-source "audacious-plugins-3.7.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/audacious-plugins-3.7.2-r0.apk"
+}

@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del lockfile-progs-doc"]
 ]
-
-
 extra-source "lockfile-progs-doc-0.1.19-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lockfile-progs-doc-0.1.19-r3.apk"
 }

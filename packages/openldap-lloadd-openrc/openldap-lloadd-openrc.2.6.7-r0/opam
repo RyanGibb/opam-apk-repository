@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del openldap-lloadd-openrc"]
 ]
-
-
 extra-source "openldap-lloadd-openrc-2.6.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/openldap-lloadd-openrc-2.6.7-r0.apk"
 }

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add qt5-qtmultimedia-5.4.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del qt5-qtmultimedia"]
+]
+depends: [
+  "alsa-lib"
+  "glib"
+  "gst-plugins-base0.10"
+  "gstreamer0.10"
+  "libstdc++"
+  "mesa-gl"
+  "musl"
+  "qt5-qtbase"
+  "qt5-qtbase-x11"
+  "qt5-qtdeclarative"
+]
+extra-source "qt5-qtmultimedia-5.4.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/qt5-qtmultimedia-5.4.1-r1.apk"
+}

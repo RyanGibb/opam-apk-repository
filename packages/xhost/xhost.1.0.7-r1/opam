@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xhost-1.0.7-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xhost"]
+]
+depends: [
+  "libx11"
+  "libxmu"
+  "musl"
+]
+extra-source "xhost-1.0.7-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/xhost-1.0.7-r1.apk"
+}

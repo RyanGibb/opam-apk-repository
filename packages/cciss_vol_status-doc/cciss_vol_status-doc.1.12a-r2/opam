@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del cciss_vol_status-doc"]
 ]
-
-
 extra-source "cciss_vol_status-doc-1.12a-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/cciss_vol_status-doc-1.12a-r2.apk"
 }

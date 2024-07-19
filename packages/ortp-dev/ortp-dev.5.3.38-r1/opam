@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del ortp-dev"]
 ]
 depends: [
-  "ortp"
+  "ortp" {= "5.3.38-r1"}
   "pkgconf"
 ]
-
 extra-source "ortp-dev-5.3.38-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/ortp-dev-5.3.38-r1.apk"
 }

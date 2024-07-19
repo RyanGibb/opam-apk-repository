@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lxc-openrc-4.0.12-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lxc-openrc"]
+]
+extra-source "lxc-openrc-4.0.12-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/lxc-openrc-4.0.12-r2.apk"
+}

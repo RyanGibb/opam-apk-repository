@@ -11,7 +11,6 @@ depends: [
   "lxc-libs"
   "musl"
 ]
-
 extra-source "lxc-user-nic-6.0.0-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lxc-user-nic-6.0.0-r4.apk"
 }

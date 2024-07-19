@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del curl-doc"]
 ]
-
-
 extra-source "curl-doc-8.8.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/curl-doc-8.8.0-r0.apk"
 }

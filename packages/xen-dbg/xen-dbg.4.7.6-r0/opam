@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xen-dbg-4.7.6-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xen-dbg"]
+]
+depends: [
+  "bash"
+  "iproute2"
+  "logrotate"
+  "syslinux"
+]
+extra-source "xen-dbg-4.7.6-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/xen-dbg-4.7.6-r0.apk"
+}

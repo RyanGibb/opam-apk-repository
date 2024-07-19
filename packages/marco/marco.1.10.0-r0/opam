@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add marco-1.10.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del marco"]
+]
+depends: [
+  "atk"
+  "cairo"
+  "fontconfig"
+  "freetype"
+  "gdk-pixbuf"
+  "glib"
+  "gtk+2.0"
+  "libcanberra"
+  "libcanberra-gtk2"
+  "libintl"
+  "libx11"
+  "libxcomposite"
+  "libxcursor"
+  "libxdamage"
+  "libxext"
+  "libxfixes"
+  "libxinerama"
+  "libxrandr"
+  "libxrender"
+  "mate-common"
+  "musl"
+  "pango"
+  "yelp-tools"
+]
+extra-source "marco-1.10.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/marco-1.10.0-r0.apk"
+}

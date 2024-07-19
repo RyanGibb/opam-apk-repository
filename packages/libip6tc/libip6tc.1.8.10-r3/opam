@@ -8,7 +8,6 @@ remove: [
 depends: [
   "musl"
 ]
-
 extra-source "libip6tc-1.8.10-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libip6tc-1.8.10-r3.apk"
 }

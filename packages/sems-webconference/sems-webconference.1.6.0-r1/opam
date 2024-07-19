@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add sems-webconference-1.6.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del sems-webconference"]
+]
+depends: [
+  "libgcc"
+  "libstdc++"
+  "musl"
+  "sems"
+  "sems-xmlrpc2di"
+]
+extra-source "sems-webconference-1.6.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/sems-webconference-1.6.0-r1.apk"
+}

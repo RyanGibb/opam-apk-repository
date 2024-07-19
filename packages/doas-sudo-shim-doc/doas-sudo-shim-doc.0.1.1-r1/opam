@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del doas-sudo-shim-doc"]
 ]
-
-
 extra-source "doas-sudo-shim-doc-0.1.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/doas-sudo-shim-doc-0.1.1-r1.apk"
 }

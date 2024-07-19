@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add openldap-back-monitor-2.4.48-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del openldap-back-monitor"]
+]
+depends: [
+  "libldap"
+  "musl"
+]
+extra-source "openldap-back-monitor-2.4.48-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/openldap-back-monitor-2.4.48-r1.apk"
+}

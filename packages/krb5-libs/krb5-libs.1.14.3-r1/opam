@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add krb5-libs-1.14.3-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del krb5-libs"]
+]
+depends: [
+  "keyutils-libs"
+  "krb5-conf"
+  "libcom_err"
+  "libressl2.4-libcrypto"
+  "libressl2.4-libssl"
+  "libverto"
+  "musl"
+]
+extra-source "krb5-libs-1.14.3-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/krb5-libs-1.14.3-r1.apk"
+}

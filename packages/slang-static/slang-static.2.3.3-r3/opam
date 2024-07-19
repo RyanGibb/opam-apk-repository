@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del slang-static"]
 ]
-
-
 extra-source "slang-static-2.3.3-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/slang-static-2.3.3-r3.apk"
 }

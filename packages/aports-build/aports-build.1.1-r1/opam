@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add aports-build-1.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del aports-build"]
+]
+depends: [
+  "abuild" {> "2.20.0"}
+  "alpine-sdk"
+  "busybox"
+  "lua-aports"
+  "lua5.2-cjson"
+  "lua5.2-mqtt-publish"
+  "mosquitto-clients"
+  "mqtt-exec"
+  "rsync"
+]
+extra-source "aports-build-1.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/aports-build-1.1-r1.apk"
+}

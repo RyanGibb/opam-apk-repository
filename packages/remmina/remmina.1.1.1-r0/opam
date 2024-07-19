@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add remmina-1.1.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del remmina"]
+]
+depends: [
+  "avahi-libs"
+  "avahi-ui-gtk3"
+  "cairo"
+  "freerdp-libs"
+  "gdk-pixbuf"
+  "glib"
+  "gtk+3.0"
+  "libgcrypt"
+  "libintl"
+  "libssh"
+  "libvncserver"
+  "libx11"
+  "libxkbfile"
+  "musl"
+  "pango"
+  "vte3"
+]
+extra-source "remmina-1.1.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/remmina-1.1.1-r0.apk"
+}

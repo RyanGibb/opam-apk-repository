@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add atop-2.2_p3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del atop"]
+]
+depends: [
+  "musl"
+  "ncurses-libs"
+  "zlib"
+]
+extra-source "atop-2.2_p3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/atop-2.2_p3-r0.apk"
+}

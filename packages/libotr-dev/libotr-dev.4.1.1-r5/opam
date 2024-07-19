@@ -7,10 +7,9 @@ remove: [
 ]
 depends: [
   "libgcrypt-dev"
-  "libotr"
+  "libotr" {= "4.1.1-r5"}
   "pkgconf"
 ]
-
 extra-source "libotr-dev-4.1.1-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libotr-dev-4.1.1-r5.apk"
 }

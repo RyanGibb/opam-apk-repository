@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del gettext"]
 ]
 depends: [
-  "gettext-envsubst"
+  "gettext-envsubst" {= "0.22.5-r0"}
   "gettext-libs"
   "libgomp"
   "libintl"
@@ -14,7 +14,6 @@ depends: [
   "libxml2"
   "musl"
 ]
-
 extra-source "gettext-0.22.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/gettext-0.22.5-r0.apk"
 }

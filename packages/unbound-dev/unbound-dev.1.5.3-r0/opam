@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add unbound-dev-1.5.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del unbound-dev"]
+]
+depends: [
+  "expat-dev"
+  "ldns-dev"
+  "libevent-dev"
+  "openssl-dev"
+  "py-unbound" {= "1.5.3-r0"}
+  "unbound" {= "1.5.3-r0"}
+  "unbound-dbg" {= "1.5.3-r0"}
+  "unbound-doc" {= "1.5.3-r0"}
+  "unbound-libs" {= "1.5.3-r0"}
+  "unbound-migrate" {= "1.5.3-r0"}
+]
+extra-source "unbound-dev-1.5.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/unbound-dev-1.5.3-r0.apk"
+}

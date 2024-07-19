@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add yajl-2.1.0-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del yajl"]
+]
+depends: [
+  "musl"
+]
+extra-source "yajl-2.1.0-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/yajl-2.1.0-r6.apk"
+}

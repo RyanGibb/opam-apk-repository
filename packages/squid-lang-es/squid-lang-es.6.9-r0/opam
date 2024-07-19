@@ -8,7 +8,6 @@ remove: [
 depends: [
   "logrotate"
 ]
-
 extra-source "squid-lang-es-6.9-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/squid-lang-es-6.9-r0.apk"
 }

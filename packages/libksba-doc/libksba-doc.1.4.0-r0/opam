@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libksba-doc-1.4.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libksba-doc"]
+]
+extra-source "libksba-doc-1.4.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/libksba-doc-1.4.0-r0.apk"
+}

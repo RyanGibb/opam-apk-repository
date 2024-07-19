@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xorg-server-xnest-1.20.5-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xorg-server-xnest"]
+]
+depends: [
+  "font-cursor-misc"
+  "font-misc-misc"
+  "libcrypto1.1"
+  "libx11"
+  "libxau"
+  "libxdmcp"
+  "libxext"
+  "libxfont2"
+  "musl"
+  "pixman"
+  "xinit"
+  "xkbcomp"
+  "xkeyboard-config"
+]
+extra-source "xorg-server-xnest-1.20.5-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/xorg-server-xnest-1.20.5-r3.apk"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xkbcli-1.4.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xkbcli"]
+]
+depends: [
+  "libxcb"
+  "libxkbcommon"
+  "libxkbcommon-x11"
+  "musl"
+  "wayland-libs-client"
+  "xkeyboard-config"
+]
+extra-source "xkbcli-1.4.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/xkbcli-1.4.1-r0.apk"
+}

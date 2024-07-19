@@ -11,7 +11,6 @@ depends: [
   "lua5.2"
   "musl"
 ]
-
 extra-source "lua5.2-ossl-20220711-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lua5.2-ossl-20220711-r2.apk"
 }

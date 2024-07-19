@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del keyutils-dev"]
 ]
 depends: [
-  "keyutils-libs"
+  "keyutils-libs" {= "1.6.3-r3"}
   "pkgconf"
 ]
-
 extra-source "keyutils-dev-1.6.3-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/keyutils-dev-1.6.3-r3.apk"
 }

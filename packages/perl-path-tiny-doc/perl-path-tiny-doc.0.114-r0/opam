@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-path-tiny-doc-0.114-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-path-tiny-doc"]
+]
+extra-source "perl-path-tiny-doc-0.114-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-path-tiny-doc-0.114-r0.apk"
+}

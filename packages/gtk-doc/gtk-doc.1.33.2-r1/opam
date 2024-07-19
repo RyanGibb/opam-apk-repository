@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gtk-doc-1.33.2-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gtk-doc"]
+]
+depends: [
+  "docbook-xsl"
+  "glib-dev"
+  "pkgconf"
+  "py3-pygments"
+  "py3-six"
+  "python3"
+]
+extra-source "gtk-doc-1.33.2-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/gtk-doc-1.33.2-r1.apk"
+}

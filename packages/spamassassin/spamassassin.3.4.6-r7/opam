@@ -9,7 +9,6 @@ depends: [
   "curl"
   "perl-mail-spamassassin"
 ]
-
 extra-source "spamassassin-3.4.6-r7.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/spamassassin-3.4.6-r7.apk"
 }

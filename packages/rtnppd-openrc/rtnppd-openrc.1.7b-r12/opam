@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del rtnppd-openrc"]
 ]
-
-
 extra-source "rtnppd-openrc-1.7b-r12.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/rtnppd-openrc-1.7b-r12.apk"
 }

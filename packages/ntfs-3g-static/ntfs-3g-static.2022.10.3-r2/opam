@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ntfs-3g-static-2022.10.3-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ntfs-3g-static"]
+]
+extra-source "ntfs-3g-static-2022.10.3-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/ntfs-3g-static-2022.10.3-r2.apk"
+}

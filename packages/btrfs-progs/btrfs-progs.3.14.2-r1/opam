@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add btrfs-progs-3.14.2-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del btrfs-progs"]
+]
+depends: [
+  "e2fsprogs"
+  "libblkid"
+  "libcom_err"
+  "libuuid"
+  "lzo"
+  "musl"
+  "zlib"
+]
+extra-source "btrfs-progs-3.14.2-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/btrfs-progs-3.14.2-r1.apk"
+}

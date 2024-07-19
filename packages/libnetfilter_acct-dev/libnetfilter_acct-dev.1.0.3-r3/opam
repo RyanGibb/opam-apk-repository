@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del libnetfilter_acct-dev"]
 ]
 depends: [
-  "libnetfilter_acct"
+  "libnetfilter_acct" {= "1.0.3-r3"}
   "pkgconf"
 ]
-
 extra-source "libnetfilter_acct-dev-1.0.3-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libnetfilter_acct-dev-1.0.3-r3.apk"
 }

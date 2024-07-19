@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-crypt-openssl-rsa-doc"]
 ]
-
-
 extra-source "perl-crypt-openssl-rsa-doc-0.33-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-crypt-openssl-rsa-doc-0.33-r3.apk"
 }

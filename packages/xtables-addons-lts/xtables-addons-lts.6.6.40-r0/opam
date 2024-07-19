@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xtables-addons-lts-6.6.40-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xtables-addons-lts"]
+]
+depends: [
+  "linux-lts" {= "6.6.40-r0"}
+]
+extra-source "xtables-addons-lts-6.6.40-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/xtables-addons-lts-6.6.40-r0.apk"
+}

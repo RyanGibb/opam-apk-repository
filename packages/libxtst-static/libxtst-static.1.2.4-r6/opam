@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del libxtst-static"]
 ]
-
-
 extra-source "libxtst-static-1.2.4-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libxtst-static-1.2.4-r6.apk"
 }

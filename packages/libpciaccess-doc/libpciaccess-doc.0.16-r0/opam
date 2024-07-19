@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libpciaccess-doc-0.16-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libpciaccess-doc"]
+]
+extra-source "libpciaccess-doc-0.16-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/libpciaccess-doc-0.16-r0.apk"
+}

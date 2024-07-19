@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ansible-2.4.6.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ansible"]
+]
+depends: [
+  "py2-crypto"
+  "py2-jinja2"
+  "py2-markupsafe"
+  "py2-paramiko"
+  "py2-yaml"
+  "python2"
+]
+extra-source "ansible-2.4.6.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/ansible-2.4.6.0-r1.apk"
+}

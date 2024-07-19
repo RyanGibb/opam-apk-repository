@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gdb-13.1-r9.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gdb"]
+]
+depends: [
+  "gmp"
+  "libexpat"
+  "libgcc"
+  "libncursesw"
+  "libstdc++"
+  "musl"
+  "python3"
+  "readline"
+  "zlib"
+  "zstd-libs"
+]
+extra-source "gdb-13.1-r9.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/gdb-13.1-r9.apk"
+}

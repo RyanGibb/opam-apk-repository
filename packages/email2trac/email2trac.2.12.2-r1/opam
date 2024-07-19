@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add email2trac-2.12.2-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del email2trac"]
+]
+depends: [
+  "musl"
+  "trac"
+]
+extra-source "email2trac-2.12.2-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/email2trac-2.12.2-r1.apk"
+}

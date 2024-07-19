@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-crypt-openssl-rsa-doc-0.32-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-crypt-openssl-rsa-doc"]
+]
+extra-source "perl-crypt-openssl-rsa-doc-0.32-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/perl-crypt-openssl-rsa-doc-0.32-r2.apk"
+}

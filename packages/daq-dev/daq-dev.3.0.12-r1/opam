@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add daq-dev-3.0.12-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del daq-dev"]
+]
+depends: [
+  "daq" {= "3.0.12-r1"}
+  "pkgconf"
+]
+extra-source "daq-dev-3.0.12-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/daq-dev-3.0.12-r1.apk"
+}

@@ -6,12 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del iputils"]
 ]
 depends: [
-  "iputils-arping"
-  "iputils-clockdiff"
-  "iputils-ping"
-  "iputils-tracepath"
+  "iputils-arping" {= "20240117-r0"}
+  "iputils-clockdiff" {= "20240117-r0"}
+  "iputils-ping" {= "20240117-r0"}
+  "iputils-tracepath" {= "20240117-r0"}
 ]
-
 extra-source "iputils-20240117-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/iputils-20240117-r0.apk"
 }

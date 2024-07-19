@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-test-file-sharedir-doc"]
 ]
-
-
 extra-source "perl-test-file-sharedir-doc-1.001002-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-test-file-sharedir-doc-1.001002-r5.apk"
 }

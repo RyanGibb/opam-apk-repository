@@ -9,7 +9,6 @@ depends: [
   "perl"
   "perl-metrics-any"
 ]
-
 extra-source "perl-test-metrics-any-0.01-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-test-metrics-any-0.01-r2.apk"
 }

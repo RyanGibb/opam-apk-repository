@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del expat-doc"]
 ]
-
-
 extra-source "expat-doc-2.6.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/expat-doc-2.6.2-r0.apk"
 }

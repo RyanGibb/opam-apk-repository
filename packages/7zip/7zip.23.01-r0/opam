@@ -10,7 +10,6 @@ depends: [
   "libstdc++"
   "musl"
 ]
-
 extra-source "7zip-23.01-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/7zip-23.01-r0.apk"
 }

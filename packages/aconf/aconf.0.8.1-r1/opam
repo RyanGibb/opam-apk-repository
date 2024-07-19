@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add aconf-0.8.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del aconf"]
+]
+depends: [
+  "lua5.3-augeas"
+  "lua5.3-b64"
+  "lua5.3-cjson"
+  "lua5.3-file-magic"
+  "lua5.3-openrc"
+  "lua5.3-ossl"
+  "lua5.3-posix"
+  "lua5.3-stringy"
+  "uwsgi"
+  "uwsgi-lua"
+]
+extra-source "aconf-0.8.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/aconf-0.8.1-r1.apk"
+}

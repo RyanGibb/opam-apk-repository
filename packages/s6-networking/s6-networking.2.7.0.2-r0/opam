@@ -12,7 +12,6 @@ depends: [
   "s6-dns"
   "skalibs"
 ]
-
 extra-source "s6-networking-2.7.0.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/s6-networking-2.7.0.2-r0.apk"
 }

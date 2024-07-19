@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add php-json-5.5.35-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del php-json"]
+]
+depends: [
+  "musl"
+  "php"
+  "php-cgi"
+]
+extra-source "php-json-5.5.35-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/php-json-5.5.35-r0.apk"
+}

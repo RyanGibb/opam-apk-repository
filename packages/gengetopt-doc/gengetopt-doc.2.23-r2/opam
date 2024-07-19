@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del gengetopt-doc"]
 ]
-
-
 extra-source "gengetopt-doc-2.23-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/gengetopt-doc-2.23-r2.apk"
 }

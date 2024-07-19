@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add avahi-ui-gtk3-0.7-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del avahi-ui-gtk3"]
+]
+depends: [
+  "avahi-glib"
+  "avahi-libs"
+  "gdbm"
+  "glib"
+  "gtk+3.0"
+  "libintl"
+  "musl"
+]
+extra-source "avahi-ui-gtk3-0.7-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/avahi-ui-gtk3-0.7-r2.apk"
+}

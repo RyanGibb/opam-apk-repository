@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add udisks2-libs-2.1.6-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del udisks2-libs"]
+]
+depends: [
+  "glib"
+  "libintl"
+  "musl"
+]
+extra-source "udisks2-libs-2.1.6-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/udisks2-libs-2.1.6-r0.apk"
+}

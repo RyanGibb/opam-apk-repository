@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del swish-e-doc"]
 ]
-
-
 extra-source "swish-e-doc-2.4.7-r16.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/swish-e-doc-2.4.7-r16.apk"
 }

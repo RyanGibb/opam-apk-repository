@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add snort-dev-2.9.6.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del snort-dev"]
+]
+depends: [
+  "pkgconfig"
+  "snort" {= "2.9.6.1-r1"}
+  "snort-doc" {= "2.9.6.1-r1"}
+]
+extra-source "snort-dev-2.9.6.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/snort-dev-2.9.6.1-r1.apk"
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add guile-libs-3.0.6-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del guile-libs"]
+]
+depends: [
+  "gc"
+  "gmp"
+  "libffi"
+  "libunistring"
+  "musl"
+]
+extra-source "guile-libs-3.0.6-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/guile-libs-3.0.6-r1.apk"
+}

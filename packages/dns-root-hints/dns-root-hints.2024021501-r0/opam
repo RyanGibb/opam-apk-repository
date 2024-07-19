@@ -9,7 +9,6 @@ depends: [
   "curl"
   "gpgv"
 ]
-
 extra-source "dns-root-hints-2024021501-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/dns-root-hints-2024021501-r0.apk"
 }

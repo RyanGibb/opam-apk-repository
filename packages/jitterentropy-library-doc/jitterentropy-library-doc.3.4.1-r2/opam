@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del jitterentropy-library-doc"]
 ]
-
-
 extra-source "jitterentropy-library-doc-3.4.1-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/jitterentropy-library-doc-3.4.1-r2.apk"
 }

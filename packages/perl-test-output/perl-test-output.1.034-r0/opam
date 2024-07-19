@@ -10,7 +10,6 @@ depends: [
   "perl-capture-tiny"
   "perl-sub-exporter"
 ]
-
 extra-source "perl-test-output-1.034-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-test-output-1.034-r0.apk"
 }

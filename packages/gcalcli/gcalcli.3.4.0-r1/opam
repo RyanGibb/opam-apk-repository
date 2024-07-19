@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gcalcli-3.4.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gcalcli"]
+]
+depends: [
+  "py-dateutil"
+  "py-gflags"
+  "py-google-api-python-client"
+  "py-vobject"
+  "python3"
+]
+extra-source "gcalcli-3.4.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/gcalcli-3.4.0-r1.apk"
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add arpwatch-3.3-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del arpwatch"]
+]
+depends: [
+  "libpcap"
+  "musl"
+  "python3"
+  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
+]
+extra-source "arpwatch-3.3-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/arpwatch-3.3-r2.apk"
+}

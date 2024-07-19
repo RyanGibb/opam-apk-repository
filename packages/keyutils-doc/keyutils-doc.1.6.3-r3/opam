@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del keyutils-doc"]
 ]
-
-
 extra-source "keyutils-doc-1.6.3-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/keyutils-doc-1.6.3-r3.apk"
 }

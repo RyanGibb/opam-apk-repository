@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del dmraid-dev"]
 ]
 depends: [
-  "dmraid"
+  "dmraid" {= "1.0.0_rc16-r6"}
 ]
-
 extra-source "dmraid-dev-1.0.0_rc16-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/dmraid-dev-1.0.0_rc16-r6.apk"
 }

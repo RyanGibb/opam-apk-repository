@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-sub-quote-doc"]
 ]
-
-
 extra-source "perl-sub-quote-doc-2.006008-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-sub-quote-doc-2.006008-r1.apk"
 }

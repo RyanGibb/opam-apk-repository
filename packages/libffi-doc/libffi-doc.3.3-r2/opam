@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libffi-doc-3.3-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libffi-doc"]
+]
+extra-source "libffi-doc-3.3-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/libffi-doc-3.3-r2.apk"
+}

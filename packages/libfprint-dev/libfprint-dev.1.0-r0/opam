@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libfprint-dev-1.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libfprint-dev"]
+]
+depends: [
+  "glib-dev"
+  "libfprint" {= "1.0-r0"}
+  "libusb-dev"
+  "nss-dev"
+  "pixman-dev"
+  "pkgconf"
+]
+extra-source "libfprint-dev-1.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/libfprint-dev-1.0-r0.apk"
+}

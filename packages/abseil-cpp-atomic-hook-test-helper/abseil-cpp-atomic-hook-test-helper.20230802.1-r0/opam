@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del abseil-cpp-atomic-hook-test-helper"]
 ]
-
-
 extra-source "abseil-cpp-atomic-hook-test-helper-20230802.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/abseil-cpp-atomic-hook-test-helper-20230802.1-r0.apk"
 }

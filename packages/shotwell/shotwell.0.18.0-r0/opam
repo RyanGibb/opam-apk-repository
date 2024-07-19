@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add shotwell-0.18.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del shotwell"]
+]
+depends: [
+  "atk"
+  "cairo"
+  "cairo-gobject"
+  "gdk-pixbuf"
+  "gexiv2"
+  "glib"
+  "gst-plugins-base1"
+  "gstreamer1"
+  "gtk+3.0"
+  "json-glib"
+  "libexif"
+  "libgee"
+  "libgphoto2"
+  "libgudev"
+  "libintl"
+  "libraw"
+  "libsoup"
+  "libx11"
+  "libxml2"
+  "musl"
+  "pango"
+  "rest"
+  "sqlite-libs"
+  "webkitgtk"
+]
+extra-source "shotwell-0.18.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/shotwell-0.18.0-r0.apk"
+}

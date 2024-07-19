@@ -9,9 +9,8 @@ depends: [
   "pkgconf"
   "popt-dev"
   "vanessa_logger-dev"
-  "vanessa_socket"
+  "vanessa_socket" {= "0.0.13-r2"}
 ]
-
 extra-source "vanessa_socket-dev-0.0.13-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/vanessa_socket-dev-0.0.13-r2.apk"
 }

@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del privoxy-openrc"]
 ]
-
-
 extra-source "privoxy-openrc-3.0.34-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/privoxy-openrc-3.0.34-r2.apk"
 }

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-text-soundex-3.04-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-text-soundex"]
+]
+depends: [
+  "musl"
+]
+extra-source "perl-text-soundex-3.04-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/perl-text-soundex-3.04-r0.apk"
+}

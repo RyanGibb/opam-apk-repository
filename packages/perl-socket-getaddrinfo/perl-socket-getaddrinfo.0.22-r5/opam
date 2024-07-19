@@ -9,7 +9,6 @@ depends: [
   "perl"
   "perl-extutils-cchecker"
 ]
-
 extra-source "perl-socket-getaddrinfo-0.22-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-socket-getaddrinfo-0.22-r5.apk"
 }

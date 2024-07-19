@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del ruby-bundler-doc"]
 ]
-
-
 extra-source "ruby-bundler-doc-2.5.9-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/ruby-bundler-doc-2.5.9-r0.apk"
 }

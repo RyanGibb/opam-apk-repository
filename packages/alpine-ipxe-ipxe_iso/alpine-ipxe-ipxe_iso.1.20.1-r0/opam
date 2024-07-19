@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add alpine-ipxe-ipxe_iso-1.20.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del alpine-ipxe-ipxe_iso"]
+]
+extra-source "alpine-ipxe-ipxe_iso-1.20.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/alpine-ipxe-ipxe_iso-1.20.1-r0.apk"
+}

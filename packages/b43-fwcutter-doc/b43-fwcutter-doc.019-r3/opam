@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del b43-fwcutter-doc"]
 ]
-
-
 extra-source "b43-fwcutter-doc-019-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/b43-fwcutter-doc-019-r3.apk"
 }

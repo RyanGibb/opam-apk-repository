@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add geeqie-1.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del geeqie"]
+]
+depends: [
+  "cairo"
+  "exiv2"
+  "gdk-pixbuf"
+  "glib"
+  "gtk+2.0"
+  "lcms2"
+  "libgcc"
+  "libintl"
+  "libjpeg-turbo"
+  "libstdc++"
+  "lua5.1-libs"
+  "musl"
+  "pango"
+  "tiff"
+]
+extra-source "geeqie-1.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/geeqie-1.4-r0.apk"
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add pango-dbg-1.50.14-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del pango-dbg"]
+]
+extra-source "pango-dbg-1.50.14-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/pango-dbg-1.50.14-r1.apk"
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py-oauth2client-4.0.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py-oauth2client"]
+]
+depends: [
+  "py-asn1"
+  "py-asn1-modules"
+  "py-httplib2"
+  "py-rsa"
+  "py-six"
+]
+extra-source "py-oauth2client-4.0.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/py-oauth2client-4.0.0-r0.apk"
+}

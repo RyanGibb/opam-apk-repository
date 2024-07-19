@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del s6-openrc"]
 ]
-
-
 extra-source "s6-openrc-2.12.0.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/s6-openrc-2.12.0.4-r0.apk"
 }

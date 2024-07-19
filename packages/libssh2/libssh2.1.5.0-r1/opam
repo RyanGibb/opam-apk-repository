@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libssh2-1.5.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libssh2"]
+]
+depends: [
+  "libcrypto1.0"
+  "libssl1.0"
+  "musl"
+  "zlib"
+]
+extra-source "libssh2-1.5.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/libssh2-1.5.0-r1.apk"
+}

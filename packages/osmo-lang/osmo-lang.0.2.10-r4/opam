@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add osmo-lang-0.2.10-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del osmo-lang"]
+]
+extra-source "osmo-lang-0.2.10-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/osmo-lang-0.2.10-r4.apk"
+}

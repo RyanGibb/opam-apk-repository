@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add samba-dc-4.2.14-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del samba-dc"]
+]
+depends: [
+  "heimdal-libs"
+  "ldb"
+  "libcom_err"
+  "musl"
+  "popt"
+  "py-samba" {= "4.2.14-r2"}
+  "python"
+  "samba-client"
+  "samba-client-libs"
+  "samba-common" {= "4.2.14-r2"}
+  "samba-common-libs"
+  "samba-dc-libs"
+  "samba-libs"
+  "samba-libs-py"
+  "samba-server"
+  "samba-server-libs"
+  "samba-winbind"
+  "talloc"
+  "tdb-libs"
+  "tevent"
+]
+extra-source "samba-dc-4.2.14-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/samba-dc-4.2.14-r2.apk"
+}

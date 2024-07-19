@@ -1,0 +1,37 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mplayer-1.1.1-r11.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mplayer"]
+]
+depends: [
+  "alsa-lib"
+  "faac"
+  "freetype"
+  "lame"
+  "libbz2"
+  "libcdio-paranoia"
+  "libmad"
+  "libpng"
+  "libtheora"
+  "libvdpau"
+  "libvpx"
+  "libx11"
+  "libxext"
+  "libxv"
+  "libxvmc"
+  "libxxf86dga"
+  "libxxf86vm"
+  "mesa-egl"
+  "mesa-gl"
+  "musl"
+  "ncurses-libs"
+  "sdl"
+  "x264-libs"
+  "xvidcore"
+  "zlib"
+]
+extra-source "mplayer-1.1.1-r11.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/mplayer-1.1.1-r11.apk"
+}

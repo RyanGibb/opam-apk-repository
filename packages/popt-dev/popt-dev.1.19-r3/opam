@@ -7,9 +7,8 @@ remove: [
 ]
 depends: [
   "pkgconf"
-  "popt"
+  "popt" {= "1.19-r3"}
 ]
-
 extra-source "popt-dev-1.19-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/popt-dev-1.19-r3.apk"
 }

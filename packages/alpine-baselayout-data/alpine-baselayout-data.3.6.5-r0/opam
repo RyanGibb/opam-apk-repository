@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del alpine-baselayout-data"]
 ]
-
-
 extra-source "alpine-baselayout-data-3.6.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/alpine-baselayout-data-3.6.5-r0.apk"
 }

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add argon2-dev-20171227-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del argon2-dev"]
+]
+depends: [
+  "argon2-libs" {= "20171227-r2"}
+  "pkgconf"
+]
+extra-source "argon2-dev-20171227-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/argon2-dev-20171227-r2.apk"
+}

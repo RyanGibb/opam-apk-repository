@@ -9,10 +9,9 @@ depends: [
   "cairo-dev"
   "glib-dev"
   "pkgconf"
-  "poppler"
-  "poppler-glib"
+  "poppler" {= "24.02.0-r1"}
+  "poppler-glib" {= "24.02.0-r1"}
 ]
-
 extra-source "poppler-dev-24.02.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/poppler-dev-24.02.0-r1.apk"
 }

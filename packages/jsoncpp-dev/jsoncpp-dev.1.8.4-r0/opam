@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add jsoncpp-dev-1.8.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del jsoncpp-dev"]
+]
+depends: [
+  "jsoncpp" {= "1.8.4-r0"}
+  "pkgconf"
+]
+extra-source "jsoncpp-dev-1.8.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/jsoncpp-dev-1.8.4-r0.apk"
+}

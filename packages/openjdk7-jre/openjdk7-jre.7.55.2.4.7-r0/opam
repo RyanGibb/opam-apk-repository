@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add openjdk7-jre-7.55.2.4.7-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del openjdk7-jre"]
+]
+depends: [
+  "atk"
+  "cairo"
+  "cups-libs"
+  "fontconfig"
+  "freetype"
+  "gdk-pixbuf"
+  "giflib"
+  "glib"
+  "gtk+2.0"
+  "libintl"
+  "libjpeg-turbo"
+  "libpng"
+  "libx11"
+  "libxext"
+  "libxi"
+  "libxrender"
+  "libxtst"
+  "musl"
+  "openjdk7-jre-base"
+  "pango"
+  "zlib"
+]
+extra-source "openjdk7-jre-7.55.2.4.7-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/openjdk7-jre-7.55.2.4.7-r0.apk"
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add aconf-openrc-0.8.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del aconf-openrc"]
+]
+extra-source "aconf-openrc-0.8.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/aconf-openrc-0.8.1-r1.apk"
+}

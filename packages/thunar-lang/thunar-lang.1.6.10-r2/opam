@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add thunar-lang-1.6.10-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del thunar-lang"]
+]
+depends: [
+  "desktop-file-utils"
+  "hicolor-icon-theme"
+  "shared-mime-info"
+]
+extra-source "thunar-lang-1.6.10-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/thunar-lang-1.6.10-r2.apk"
+}

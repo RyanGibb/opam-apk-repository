@@ -7,10 +7,9 @@ remove: [
 ]
 depends: [
   "cyrus-sasl-dev"
-  "libmemcached-libs"
+  "libmemcached-libs" {= "1.1.4-r1"}
   "pkgconf"
 ]
-
 extra-source "libmemcached-dev-1.1.4-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libmemcached-dev-1.1.4-r1.apk"
 }

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-xml-sax-doc-1.02-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-xml-sax-doc"]
+]
+extra-source "perl-xml-sax-doc-1.02-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-xml-sax-doc-1.02-r0.apk"
+}

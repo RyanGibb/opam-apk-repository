@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gnumeric-1.12.16-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gnumeric"]
+]
+depends: [
+  "atk"
+  "cairo"
+  "cairo-gobject"
+  "gdk-pixbuf"
+  "glib"
+  "goffice"
+  "gtk+3.0"
+  "libgsf"
+  "libintl"
+  "libxml2"
+  "musl"
+  "pango"
+  "zlib"
+]
+extra-source "gnumeric-1.12.16-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/gnumeric-1.12.16-r0.apk"
+}

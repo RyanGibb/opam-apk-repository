@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add tinydns-1.05-r47.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del tinydns"]
+]
+depends: [
+  "busybox"
+  "musl"
+]
+extra-source "tinydns-1.05-r47.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/tinydns-1.05-r47.apk"
+}

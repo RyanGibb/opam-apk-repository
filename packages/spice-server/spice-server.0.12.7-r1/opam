@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add spice-server-0.12.7-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del spice-server"]
+]
+depends: [
+  "celt051"
+  "glib"
+  "libcrypto1.0"
+  "libintl"
+  "libjpeg-turbo"
+  "libsasl"
+  "libssl1.0"
+  "musl"
+  "opus"
+  "pixman"
+  "zlib"
+]
+extra-source "spice-server-0.12.7-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/spice-server-0.12.7-r1.apk"
+}

@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-test-taint-doc"]
 ]
-
-
 extra-source "perl-test-taint-doc-1.08-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-test-taint-doc-1.08-r8.apk"
 }

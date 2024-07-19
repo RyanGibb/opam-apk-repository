@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-path-class-doc"]
 ]
-
-
 extra-source "perl-path-class-doc-0.37-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-path-class-doc-0.37-r4.apk"
 }

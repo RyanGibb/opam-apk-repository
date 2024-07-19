@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add librsync-0.9.7-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del librsync"]
+]
+depends: [
+  "musl"
+]
+extra-source "librsync-0.9.7-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/librsync-0.9.7-r2.apk"
+}

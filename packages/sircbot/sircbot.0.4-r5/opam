@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add sircbot-0.4-r5.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del sircbot"]
+]
+depends: [
+  "musl"
+  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
+]
+extra-source "sircbot-0.4-r5.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/sircbot-0.4-r5.apk"
+}

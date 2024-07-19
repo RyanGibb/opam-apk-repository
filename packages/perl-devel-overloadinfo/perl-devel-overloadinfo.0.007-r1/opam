@@ -10,7 +10,6 @@ depends: [
   "perl-mro-compat"
   "perl-package-stash"
 ]
-
 extra-source "perl-devel-overloadinfo-0.007-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-devel-overloadinfo-0.007-r1.apk"
 }

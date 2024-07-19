@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libtheora-dev-1.1.1-r16.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libtheora-dev"]
+]
+depends: [
+  "libogg-dev"
+  "libtheora" {= "1.1.1-r16"}
+  "pkgconf"
+]
+extra-source "libtheora-dev-1.1.1-r16.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libtheora-dev-1.1.1-r16.apk"
+}

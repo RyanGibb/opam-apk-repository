@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del liblockfile-static"]
 ]
-
-
 extra-source "liblockfile-static-1.17-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/liblockfile-static-1.17-r4.apk"
 }

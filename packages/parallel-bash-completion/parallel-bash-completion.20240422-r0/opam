@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del parallel-bash-completion"]
 ]
-
-
 extra-source "parallel-bash-completion-20240422-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/parallel-bash-completion-20240422-r0.apk"
 }

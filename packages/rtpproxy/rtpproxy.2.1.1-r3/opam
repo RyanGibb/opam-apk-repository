@@ -9,7 +9,6 @@ depends: [
   "musl"
   ("busybox-binsh" | "dash-binsh" | "yash-binsh")
 ]
-
 extra-source "rtpproxy-2.1.1-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/rtpproxy-2.1.1-r3.apk"
 }

@@ -12,7 +12,6 @@ depends: [
   "lua-sql-sqlite3"
   ("busybox-binsh" | "dash-binsh" | "yash-binsh")
 ]
-
 extra-source "acf-freeswitch-vmail-0.6.2-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/acf-freeswitch-vmail-0.6.2-r5.apk"
 }

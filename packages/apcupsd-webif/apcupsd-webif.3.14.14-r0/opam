@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add apcupsd-webif-3.14.14-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del apcupsd-webif"]
+]
+depends: [
+  "libgd"
+  "musl"
+  "util-linux"
+]
+extra-source "apcupsd-webif-3.14.14-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/apcupsd-webif-3.14.14-r0.apk"
+}

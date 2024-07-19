@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add devicemaster-linux-openrc-7.34-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del devicemaster-linux-openrc"]
+]
+extra-source "devicemaster-linux-openrc-7.34-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/devicemaster-linux-openrc-7.34-r2.apk"
+}

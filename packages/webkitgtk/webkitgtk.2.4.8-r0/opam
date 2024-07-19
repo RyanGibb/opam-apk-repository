@@ -1,0 +1,46 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add webkitgtk-2.4.8-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del webkitgtk"]
+]
+depends: [
+  "atk"
+  "cairo"
+  "enchant"
+  "fontconfig"
+  "freetype"
+  "gdk-pixbuf"
+  "glib"
+  "gst-plugins-base1"
+  "gstreamer1"
+  "gtk+3.0"
+  "harfbuzz"
+  "harfbuzz-icu"
+  "icu-libs"
+  "libgcc"
+  "libintl"
+  "libjpeg-turbo"
+  "libpng"
+  "libsecret"
+  "libsoup"
+  "libstdc++"
+  "libwebp"
+  "libx11"
+  "libxcomposite"
+  "libxdamage"
+  "libxml2"
+  "libxrender"
+  "libxslt"
+  "libxt"
+  "mesa-egl"
+  "mesa-gl"
+  "musl"
+  "pango"
+  "sqlite-libs"
+  "zlib"
+]
+extra-source "webkitgtk-2.4.8-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/webkitgtk-2.4.8-r0.apk"
+}

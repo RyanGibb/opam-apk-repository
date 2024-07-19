@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add newt-lang-0.52.23-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del newt-lang"]
+]
+extra-source "newt-lang-0.52.23-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/newt-lang-0.52.23-r1.apk"
+}

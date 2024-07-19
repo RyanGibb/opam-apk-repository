@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del mesa-gles"]
 ]
 depends: [
-  "mesa"
+  "mesa" {= "24.0.9-r1"}
   "mesa-glapi"
 ]
-
 extra-source "mesa-gles-24.0.9-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/mesa-gles-24.0.9-r1.apk"
 }

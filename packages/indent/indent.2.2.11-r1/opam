@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add indent-2.2.11-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del indent"]
+]
+depends: [
+  "libintl"
+  "musl"
+]
+extra-source "indent-2.2.11-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/indent-2.2.11-r1.apk"
+}

@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add freeradius-dev-2.2.9-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del freeradius-dev"]
+]
+depends: [
+  "freeradius" {= "2.2.9-r0"}
+  "freeradius-dbg" {= "2.2.9-r0"}
+  "freeradius-doc" {= "2.2.9-r0"}
+  "freeradius-ldap" {= "2.2.9-r0"}
+  "freeradius-lib" {= "2.2.9-r0"}
+  "freeradius-mssql" {= "2.2.9-r0"}
+  "freeradius-mysql" {= "2.2.9-r0"}
+  "freeradius-oracle" {= "2.2.9-r0"}
+  "freeradius-pam" {= "2.2.9-r0"}
+  "freeradius-perl" {= "2.2.9-r0"}
+  "freeradius-postgresql" {= "2.2.9-r0"}
+  "freeradius-python" {= "2.2.9-r0"}
+  "freeradius-radclient" {= "2.2.9-r0"}
+  "freeradius-sqlite" {= "2.2.9-r0"}
+  "freeradius-unixodbc" {= "2.2.9-r0"}
+  "freeradius-webif" {= "2.2.9-r0"}
+  "freeradius-webif-doc" {= "2.2.9-r0"}
+]
+extra-source "freeradius-dev-2.2.9-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/freeradius-dev-2.2.9-r0.apk"
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lua-dev-5.1.5-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lua-dev"]
+]
+depends: [
+  "lua5.1-dev"
+  "pkgconf"
+]
+extra-source "lua-dev-5.1.5-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/lua-dev-5.1.5-r4.apk"
+}

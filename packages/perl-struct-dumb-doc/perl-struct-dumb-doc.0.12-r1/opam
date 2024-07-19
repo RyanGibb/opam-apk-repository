@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-struct-dumb-doc-0.12-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-struct-dumb-doc"]
+]
+extra-source "perl-struct-dumb-doc-0.12-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/perl-struct-dumb-doc-0.12-r1.apk"
+}

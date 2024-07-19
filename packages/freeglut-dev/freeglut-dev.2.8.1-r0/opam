@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add freeglut-dev-2.8.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del freeglut-dev"]
+]
+depends: [
+  "freeglut" {= "2.8.1-r0"}
+  "freeglut-doc" {= "2.8.1-r0"}
+  "glu-dev"
+  "libice-dev"
+  "libx11-dev"
+  "libxi-dev"
+  "libxxf86vm-dev"
+  "mesa-dev"
+]
+extra-source "freeglut-dev-2.8.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/freeglut-dev-2.8.1-r0.apk"
+}

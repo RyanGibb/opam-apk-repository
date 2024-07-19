@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del libmd-doc"]
 ]
-
-
 extra-source "libmd-doc-1.1.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libmd-doc-1.1.0-r0.apk"
 }

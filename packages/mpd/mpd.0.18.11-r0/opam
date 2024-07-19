@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mpd-0.18.11-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mpd"]
+]
+depends: [
+  "alsa-lib"
+  "busybox"
+  "curl"
+  "faad2"
+  "flac"
+  "glib"
+  "lame"
+  "libao"
+  "libbz2"
+  "libid3tag"
+  "libmad"
+  "libmodplug"
+  "libogg"
+  "libsamplerate"
+  "libshout"
+  "libstdc++"
+  "libvorbis"
+  "musl"
+]
+extra-source "mpd-0.18.11-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/mpd-0.18.11-r0.apk"
+}

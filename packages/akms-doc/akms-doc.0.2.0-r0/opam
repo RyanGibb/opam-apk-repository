@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add akms-doc-0.2.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del akms-doc"]
+]
+extra-source "akms-doc-0.2.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/akms-doc-0.2.0-r0.apk"
+}

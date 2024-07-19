@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libvirt-uml-6.6.0-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libvirt-uml"]
+]
+depends: [
+  "libvirt-common-drivers" {= "6.6.0-r4"}
+  "libvirt-daemon" {= "6.6.0-r4"}
+]
+extra-source "libvirt-uml-6.6.0-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/libvirt-uml-6.6.0-r4.apk"
+}

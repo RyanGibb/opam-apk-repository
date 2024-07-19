@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-libwww-doc"]
 ]
-
-
 extra-source "perl-libwww-doc-6.77-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-libwww-doc-6.77-r0.apk"
 }

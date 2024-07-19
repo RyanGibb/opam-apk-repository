@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add postgresql-plperl-contrib-11.12-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del postgresql-plperl-contrib"]
+]
+depends: [
+  "musl"
+  "perl"
+  "postgresql-plperl"
+]
+extra-source "postgresql-plperl-contrib-11.12-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/postgresql-plperl-contrib-11.12-r0.apk"
+}

@@ -13,7 +13,6 @@ depends: [
   "musl"
   "pcsc-lite-libs"
 ]
-
 extra-source "wpa_supplicant-2.10-r11.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/wpa_supplicant-2.10-r11.apk"
 }

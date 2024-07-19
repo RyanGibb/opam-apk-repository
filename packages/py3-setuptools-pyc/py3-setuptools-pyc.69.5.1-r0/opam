@@ -8,8 +8,8 @@ remove: [
 depends: [
   "py3-packaging"
   "python3"
+  "python3" {>= "3.12"}
 ]
-
 extra-source "py3-setuptools-pyc-69.5.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/py3-setuptools-pyc-69.5.1-r0.apk"
 }

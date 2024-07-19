@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ntfs-3g-libs-2017.3.23-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ntfs-3g-libs"]
+]
+depends: [
+  "musl"
+]
+extra-source "ntfs-3g-libs-2017.3.23-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/ntfs-3g-libs-2017.3.23-r2.apk"
+}

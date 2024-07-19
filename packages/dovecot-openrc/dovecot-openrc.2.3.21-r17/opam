@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del dovecot-openrc"]
 ]
-
-
 extra-source "dovecot-openrc-2.3.21-r17.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/dovecot-openrc-2.3.21-r17.apk"
 }

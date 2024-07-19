@@ -10,7 +10,6 @@ depends: [
   "uwsgi"
   "zlib"
 ]
-
 extra-source "uwsgi-graylog2-2.0.25.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/uwsgi-graylog2-2.0.25.1-r1.apk"
 }

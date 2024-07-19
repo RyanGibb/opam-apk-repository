@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add llvm15-static-15.0.7-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del llvm15-static"]
+]
+extra-source "llvm15-static-15.0.7-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/llvm15-static-15.0.7-r6.apk"
+}

@@ -10,7 +10,6 @@ depends: [
   "musl"
   "openldap"
 ]
-
 extra-source "openldap-passwd-pbkdf2-2.6.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/openldap-passwd-pbkdf2-2.6.7-r0.apk"
 }

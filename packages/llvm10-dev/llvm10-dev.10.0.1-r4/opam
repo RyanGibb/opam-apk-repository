@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add llvm10-dev-10.0.1-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del llvm10-dev"]
+]
+depends: [
+  "libstdc++"
+  "llvm10" {= "10.0.1-r4"}
+  "llvm10-libs"
+  "llvm10-libs" {= "10.0.1-r4"}
+  "musl"
+]
+extra-source "llvm10-dev-10.0.1-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/llvm10-dev-10.0.1-r4.apk"
+}

@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gettext-0.22.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gettext"]
+]
+depends: [
+  "gettext-envsubst" {= "0.22.3-r0"}
+  "gettext-libs"
+  "libgomp"
+  "libintl"
+  "libunistring"
+  "libxml2"
+  "musl"
+]
+extra-source "gettext-0.22.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/gettext-0.22.3-r0.apk"
+}

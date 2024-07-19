@@ -7,10 +7,9 @@ remove: [
 ]
 depends: [
   "lld"
-  "rust"
+  "rust" {= "1.78.0-r0"}
   "wasi-libc"
 ]
-
 extra-source "rust-wasm-1.78.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/rust-wasm-1.78.0-r0.apk"
 }

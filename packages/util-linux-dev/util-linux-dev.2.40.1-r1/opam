@@ -6,16 +6,15 @@ remove: [
   ["sh" "-c" "sudo apk del util-linux-dev"]
 ]
 depends: [
-  "libblkid"
-  "libfdisk"
-  "libmount"
-  "libsmartcols"
-  "libuuid"
+  "libblkid" {= "2.40.1-r1"}
+  "libfdisk" {= "2.40.1-r1"}
+  "libmount" {= "2.40.1-r1"}
+  "libsmartcols" {= "2.40.1-r1"}
+  "libuuid" {= "2.40.1-r1"}
   "pkgconf"
   "sqlite-dev"
-  "util-linux"
+  "util-linux" {= "2.40.1-r1"}
 ]
-
 extra-source "util-linux-dev-2.40.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/util-linux-dev-2.40.1-r1.apk"
 }

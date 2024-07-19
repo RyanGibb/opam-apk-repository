@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del libfido2-doc"]
 ]
-
-
 extra-source "libfido2-doc-1.14.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libfido2-doc-1.14.0-r1.apk"
 }

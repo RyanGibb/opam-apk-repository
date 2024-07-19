@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mesa-vulkan-layers-23.3.6-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mesa-vulkan-layers"]
+]
+depends: [
+  "libdrm"
+  "libgcc"
+  "libstdc++"
+  "libxcb"
+  "musl"
+  "python3"
+  "wayland-libs-client"
+]
+extra-source "mesa-vulkan-layers-23.3.6-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/mesa-vulkan-layers-23.3.6-r0.apk"
+}

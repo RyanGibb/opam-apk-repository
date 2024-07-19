@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add abiword-doc-3.0.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del abiword-doc"]
+]
+extra-source "abiword-doc-3.0.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/abiword-doc-3.0.2-r0.apk"
+}

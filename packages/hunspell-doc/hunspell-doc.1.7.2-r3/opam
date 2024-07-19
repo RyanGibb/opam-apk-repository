@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add hunspell-doc-1.7.2-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del hunspell-doc"]
+]
+extra-source "hunspell-doc-1.7.2-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/hunspell-doc-1.7.2-r3.apk"
+}

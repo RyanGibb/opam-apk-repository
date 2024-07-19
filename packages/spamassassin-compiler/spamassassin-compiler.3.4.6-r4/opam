@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add spamassassin-compiler-3.4.6-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del spamassassin-compiler"]
+]
+depends: [
+  "gcc"
+  "libc-dev"
+  "make"
+  "perl-dev"
+  "perl-mail-spamassassin"
+  "re2c"
+]
+extra-source "spamassassin-compiler-3.4.6-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/spamassassin-compiler-3.4.6-r4.apk"
+}

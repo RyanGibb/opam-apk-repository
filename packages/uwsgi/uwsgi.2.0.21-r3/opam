@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add uwsgi-2.0.21-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del uwsgi"]
+]
+depends: [
+  "jansson"
+  "libcap2"
+  "libcrypto3"
+  "libssl3"
+  "libxml2"
+  "mailcap"
+  "musl"
+  "pcre"
+  "zlib"
+  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
+]
+extra-source "uwsgi-2.0.21-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/uwsgi-2.0.21-r3.apk"
+}

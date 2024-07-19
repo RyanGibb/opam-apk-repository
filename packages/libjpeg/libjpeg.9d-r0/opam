@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libjpeg-9d-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libjpeg"]
+]
+depends: [
+  "libjpeg-turbo"
+]
+extra-source "libjpeg-9d-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/libjpeg-9d-r0.apk"
+}

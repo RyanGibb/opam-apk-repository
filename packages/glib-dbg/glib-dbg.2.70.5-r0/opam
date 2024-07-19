@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add glib-dbg-2.70.5-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del glib-dbg"]
+]
+extra-source "glib-dbg-2.70.5-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/glib-dbg-2.70.5-r0.apk"
+}

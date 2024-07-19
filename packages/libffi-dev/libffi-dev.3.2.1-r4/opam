@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libffi-dev-3.2.1-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libffi-dev"]
+]
+depends: [
+  "libffi" {= "3.2.1-r4"}
+  "pkgconf"
+]
+extra-source "libffi-dev-3.2.1-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/libffi-dev-3.2.1-r4.apk"
+}

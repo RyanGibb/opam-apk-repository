@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add bind-9.10.8_p1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del bind"]
+]
+depends: [
+  "bind-libs"
+  "busybox"
+  "libcap"
+  "libressl2.4-libcrypto"
+  "libxml2"
+  "musl"
+]
+extra-source "bind-9.10.8_p1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/bind-9.10.8_p1-r0.apk"
+}

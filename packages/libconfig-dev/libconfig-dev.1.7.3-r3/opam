@@ -6,11 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del libconfig-dev"]
 ]
 depends: [
-  "libconfig"
-  "libconfig++"
+  "libconfig" {= "1.7.3-r3"}
+  "libconfig++" {= "1.7.3-r3"}
   "pkgconf"
 ]
-
 extra-source "libconfig-dev-1.7.3-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libconfig-dev-1.7.3-r3.apk"
 }

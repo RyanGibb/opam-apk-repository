@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add taglib-dev-1.11-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del taglib-dev"]
+]
+depends: [
+  "pkgconf"
+  "taglib" {= "1.11-r1"}
+]
+extra-source "taglib-dev-1.11-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/taglib-dev-1.11-r1.apk"
+}

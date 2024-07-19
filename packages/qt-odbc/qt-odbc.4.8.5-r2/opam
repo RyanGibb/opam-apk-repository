@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add qt-odbc-4.8.5-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del qt-odbc"]
+]
+depends: [
+  "ca-certificates"
+  "libgcc"
+  "libstdc++"
+  "musl"
+  "qt"
+  "unixodbc"
+]
+extra-source "qt-odbc-4.8.5-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/qt-odbc-4.8.5-r2.apk"
+}

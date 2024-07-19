@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del smokeping-doc"]
 ]
-
-
 extra-source "smokeping-doc-2.8.2-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/smokeping-doc-2.8.2-r3.apk"
 }

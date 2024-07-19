@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libmaa-dev-1.3.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libmaa-dev"]
+]
+depends: [
+  "libmaa" {= "1.3.2-r0"}
+]
+extra-source "libmaa-dev-1.3.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/libmaa-dev-1.3.2-r0.apk"
+}

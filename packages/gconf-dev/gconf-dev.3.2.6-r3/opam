@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gconf-dev-3.2.6-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gconf-dev"]
+]
+depends: [
+  "gconf" {= "3.2.6-r3"}
+  "glib-dev"
+  "gtk+3.0-dev"
+  "libxml2-dev"
+  "orbit2-dev"
+  "pkgconf"
+  "polkit-dev"
+]
+extra-source "gconf-dev-3.2.6-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/gconf-dev-3.2.6-r3.apk"
+}

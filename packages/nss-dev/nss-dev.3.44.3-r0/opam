@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add nss-dev-3.44.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del nss-dev"]
+]
+depends: [
+  "libgcc"
+  "libstdc++"
+  "musl"
+  "nspr"
+  "nspr-dev"
+  "nss"
+  "pkgconf"
+]
+extra-source "nss-dev-3.44.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/nss-dev-3.44.3-r0.apk"
+}

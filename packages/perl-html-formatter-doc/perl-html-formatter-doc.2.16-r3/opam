@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-html-formatter-doc"]
 ]
-
-
 extra-source "perl-html-formatter-doc-2.16-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-html-formatter-doc-2.16-r3.apk"
 }

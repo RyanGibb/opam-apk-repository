@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add subversion-libs-1.13.0-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del subversion-libs"]
+]
+depends: [
+  "apr"
+  "apr-util"
+  "db"
+  "expat"
+  "libsasl"
+  "lz4-libs"
+  "musl"
+  "serf"
+  "sqlite-libs"
+  "zlib"
+]
+extra-source "subversion-libs-1.13.0-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/subversion-libs-1.13.0-r3.apk"
+}

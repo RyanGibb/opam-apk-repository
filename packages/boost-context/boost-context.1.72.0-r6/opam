@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add boost-context-1.72.0-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del boost-context"]
+]
+depends: [
+  "musl"
+]
+extra-source "boost-context-1.72.0-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/boost-context-1.72.0-r6.apk"
+}

@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del nss-pam-ldapd-openrc"]
 ]
-
-
 extra-source "nss-pam-ldapd-openrc-0.9.11-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/nss-pam-ldapd-openrc-0.9.11-r4.apk"
 }

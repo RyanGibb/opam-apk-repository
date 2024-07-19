@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add kamailio-mysql-4.2.7-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del kamailio-mysql"]
+]
+depends: [
+  "kamailio"
+  "kamailio-db"
+  "libcrypto1.0"
+  "libssl1.0"
+  "mariadb-libs"
+  "musl"
+  "zlib"
+]
+extra-source "kamailio-mysql-4.2.7-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/kamailio-mysql-4.2.7-r4.apk"
+}

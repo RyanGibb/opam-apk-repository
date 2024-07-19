@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add pgtcl-dev-3.0.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del pgtcl-dev"]
+]
+depends: [
+  "pgtcl" {= "3.0.0-r1"}
+]
+extra-source "pgtcl-dev-3.0.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/pgtcl-dev-3.0.0-r1.apk"
+}

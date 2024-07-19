@@ -9,7 +9,6 @@ depends: [
   "libncursesw"
   "musl"
 ]
-
 extra-source "umix-1.0.2-r10.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/umix-1.0.2-r10.apk"
 }

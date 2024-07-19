@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libgnome-dev-2.32.1-r7.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libgnome-dev"]
+]
+depends: [
+  "gconf-dev"
+  "glib-dev"
+  "gnome-vfs-dev"
+  "gtk+3.0-dev"
+  "libbonobo-dev"
+  "libcanberra-dev"
+  "libgnome" {= "2.32.1-r7"}
+  "orbit2-dev"
+  "pkgconf"
+]
+extra-source "libgnome-dev-2.32.1-r7.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libgnome-dev-2.32.1-r7.apk"
+}

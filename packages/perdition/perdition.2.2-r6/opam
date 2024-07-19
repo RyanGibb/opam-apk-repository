@@ -16,7 +16,6 @@ depends: [
   "vanessa_socket"
   ("busybox-binsh" | "dash-binsh" | "yash-binsh")
 ]
-
 extra-source "perdition-2.2-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perdition-2.2-r6.apk"
 }

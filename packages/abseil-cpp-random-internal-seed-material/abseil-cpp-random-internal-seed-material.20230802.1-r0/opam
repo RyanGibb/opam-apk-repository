@@ -10,7 +10,6 @@ depends: [
   "libstdc++"
   "musl"
 ]
-
 extra-source "abseil-cpp-random-internal-seed-material-20230802.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/abseil-cpp-random-internal-seed-material-20230802.1-r0.apk"
 }

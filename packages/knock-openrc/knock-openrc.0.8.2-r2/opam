@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del knock-openrc"]
 ]
-
-
 extra-source "knock-openrc-0.8.2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/knock-openrc-0.8.2-r2.apk"
 }

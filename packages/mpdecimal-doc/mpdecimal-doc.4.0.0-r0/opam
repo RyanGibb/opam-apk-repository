@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del mpdecimal-doc"]
 ]
-
-
 extra-source "mpdecimal-doc-4.0.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/mpdecimal-doc-4.0.0-r0.apk"
 }

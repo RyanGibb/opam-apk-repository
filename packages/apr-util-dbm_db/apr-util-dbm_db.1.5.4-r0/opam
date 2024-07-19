@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add apr-util-dbm_db-1.5.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del apr-util-dbm_db"]
+]
+depends: [
+  "db"
+  "musl"
+]
+extra-source "apr-util-dbm_db-1.5.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/apr-util-dbm_db-1.5.4-r0.apk"
+}

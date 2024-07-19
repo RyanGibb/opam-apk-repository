@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del hdparm-doc"]
 ]
-
-
 extra-source "hdparm-doc-9.65-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/hdparm-doc-9.65-r2.apk"
 }

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add scrnsaverproto-doc-1.2.2-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del scrnsaverproto-doc"]
+]
+extra-source "scrnsaverproto-doc-1.2.2-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/scrnsaverproto-doc-1.2.2-r2.apk"
+}

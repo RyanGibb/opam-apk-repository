@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add linux-hardened-dev-4.9.32-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del linux-hardened-dev"]
+]
+depends: [
+  "bash"
+  "elfutils-libelf"
+  "gmp-dev"
+  "libstdc++"
+  "musl"
+]
+extra-source "linux-hardened-dev-4.9.32-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/linux-hardened-dev-4.9.32-r0.apk"
+}

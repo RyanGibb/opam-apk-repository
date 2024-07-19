@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py-gobject3-3.14.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py-gobject3"]
+]
+depends: [
+  "cairo"
+  "cairo-gobject"
+  "glib"
+  "gobject-introspection"
+  "libffi"
+  "libintl"
+  "musl"
+  "py-cairo"
+]
+extra-source "py-gobject3-3.14.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/py-gobject3-3.14.0-r0.apk"
+}

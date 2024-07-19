@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add nsd-4.6.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del nsd"]
+]
+depends: [
+  "libcrypto3"
+  "libevent"
+  "libssl3"
+  "musl"
+  ("yash-binsh" | "busybox-binsh" | "dash-binsh")
+]
+extra-source "nsd-4.6.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nsd-4.6.1-r0.apk"
+}

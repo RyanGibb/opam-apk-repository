@@ -9,7 +9,6 @@ depends: [
   "musl"
   "pcre2"
 ]
-
 extra-source "grep-3.11-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/grep-3.11-r0.apk"
 }

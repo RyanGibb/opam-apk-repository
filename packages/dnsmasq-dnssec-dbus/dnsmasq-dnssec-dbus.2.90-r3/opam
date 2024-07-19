@@ -7,13 +7,12 @@ remove: [
 ]
 depends: [
   "dbus-libs"
-  "dnsmasq-common"
+  "dnsmasq-common" {= "2.90-r3"}
   "gmp"
   "musl"
   "nettle"
   ("busybox-binsh" | "dash-binsh" | "yash-binsh")
 ]
-
 extra-source "dnsmasq-dnssec-dbus-2.90-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/dnsmasq-dnssec-dbus-2.90-r3.apk"
 }

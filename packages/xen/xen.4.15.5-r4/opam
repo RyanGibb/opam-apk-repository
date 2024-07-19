@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xen-4.15.5-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xen"]
+]
+depends: [
+  "bash"
+  "glib"
+  "gnutls"
+  "iproute2"
+  "libaio"
+  "libbz2"
+  "libcap-ng"
+  "libcurl"
+  "libgcc"
+  "libjpeg-turbo"
+  "libsasl"
+  "logrotate"
+  "lzo"
+  "musl"
+  "ncurses-libs"
+  "nettle"
+  "pciutils-libs"
+  "pixman"
+  "seabios-bin"
+  "spice-server"
+  "xen-libs"
+  "yajl"
+  "zlib"
+  "zstd-libs"
+]
+extra-source "xen-4.15.5-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/xen-4.15.5-r4.apk"
+}

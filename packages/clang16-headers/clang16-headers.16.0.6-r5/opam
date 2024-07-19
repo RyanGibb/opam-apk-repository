@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del clang16-headers"]
 ]
-
-
 extra-source "clang16-headers-16.0.6-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/clang16-headers-16.0.6-r5.apk"
 }

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add cegui06-dev-0.6.2b-r14.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del cegui06-dev"]
+]
+depends: [
+  "cegui06" {= "0.6.2b-r14"}
+  "pkgconf"
+]
+extra-source "cegui06-dev-0.6.2b-r14.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/cegui06-dev-0.6.2b-r14.apk"
+}

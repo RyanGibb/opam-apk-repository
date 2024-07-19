@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del net-snmp-openrc"]
 ]
-
-
 extra-source "net-snmp-openrc-5.9.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/net-snmp-openrc-5.9.4-r0.apk"
 }

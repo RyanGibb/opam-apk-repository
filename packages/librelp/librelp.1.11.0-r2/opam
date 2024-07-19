@@ -11,7 +11,6 @@ depends: [
   "libssl3"
   "musl"
 ]
-
 extra-source "librelp-1.11.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/librelp-1.11.0-r2.apk"
 }

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add llvm15-dev-15.0.7-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del llvm15-dev"]
+]
+depends: [
+  "libffi-dev"
+  "libgcc"
+  "libstdc++"
+  "llvm15" {= "15.0.7-r0"}
+  "llvm15-libs" {= "15.0.7-r0"}
+  "llvm15-test-utils" {= "15.0.7-r0"}
+  "musl"
+  "zlib-dev"
+  "zstd-dev"
+]
+extra-source "llvm15-dev-15.0.7-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/llvm15-dev-15.0.7-r0.apk"
+}

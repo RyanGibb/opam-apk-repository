@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libxscrnsaver-1.2.2-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libxscrnsaver"]
+]
+depends: [
+  "libx11"
+  "libxext"
+  "musl"
+]
+extra-source "libxscrnsaver-1.2.2-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/libxscrnsaver-1.2.2-r2.apk"
+}

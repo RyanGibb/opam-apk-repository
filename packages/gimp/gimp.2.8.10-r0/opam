@@ -1,0 +1,40 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gimp-2.8.10-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gimp"]
+]
+depends: [
+  "atk"
+  "babl"
+  "cairo"
+  "dbus-glib"
+  "dbus-libs"
+  "fontconfig"
+  "freetype"
+  "gdk-pixbuf"
+  "gegl"
+  "glib"
+  "gtk+2.0"
+  "libbz2"
+  "libexif"
+  "libintl"
+  "libjpeg-turbo"
+  "liblcms"
+  "libpng"
+  "librsvg"
+  "libx11"
+  "libxext"
+  "libxfixes"
+  "libxmu"
+  "libxpm"
+  "musl"
+  "pango"
+  "poppler-glib"
+  "tiff"
+  "zlib"
+]
+extra-source "gimp-2.8.10-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/gimp-2.8.10-r0.apk"
+}

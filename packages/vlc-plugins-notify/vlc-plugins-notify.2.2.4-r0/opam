@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add vlc-plugins-notify-2.2.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del vlc-plugins-notify"]
+]
+extra-source "vlc-plugins-notify-2.2.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/vlc-plugins-notify-2.2.4-r0.apk"
+}

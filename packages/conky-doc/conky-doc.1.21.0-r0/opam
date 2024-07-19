@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del conky-doc"]
 ]
-
-
 extra-source "conky-doc-1.21.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/conky-doc-1.21.0-r0.apk"
 }

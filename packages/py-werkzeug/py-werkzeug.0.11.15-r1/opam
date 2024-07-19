@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py-werkzeug-0.11.15-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py-werkzeug"]
+]
+extra-source "py-werkzeug-0.11.15-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/py-werkzeug-0.11.15-r1.apk"
+}

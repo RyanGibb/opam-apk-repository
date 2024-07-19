@@ -10,7 +10,6 @@ depends: [
   "musl"
   "perl"
 ]
-
 extra-source "perl-crypt-openssl-random-0.16-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-crypt-openssl-random-0.16-r0.apk"
 }

@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-test-nowarnings-doc"]
 ]
-
-
 extra-source "perl-test-nowarnings-doc-1.06-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-test-nowarnings-doc-1.06-r1.apk"
 }

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add openssh-server-9.1_p1-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del openssh-server"]
+]
+depends: [
+  "libcrypto3"
+  "musl"
+  "openssh-keygen" {= "9.1_p1-r6"}
+  "openssh-server-common" {= "9.1_p1-r6"}
+  "zlib"
+]
+extra-source "openssh-server-9.1_p1-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/openssh-server-9.1_p1-r6.apk"
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libc++-static-16.0.6-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libc++-static"]
+]
+extra-source "libc++-static-16.0.6-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/libc++-static-16.0.6-r1.apk"
+}

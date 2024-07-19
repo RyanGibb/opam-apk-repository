@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add utmps-dev-0.1.2.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del utmps-dev"]
+]
+depends: [
+  "pkgconf"
+  "skalibs-dev"
+  "utmps-libs" {= "0.1.2.0-r0"}
+]
+extra-source "utmps-dev-0.1.2.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/utmps-dev-0.1.2.0-r0.apk"
+}

@@ -9,7 +9,6 @@ depends: [
   "musl"
   ("busybox-binsh" | "dash-binsh" | "yash-binsh")
 ]
-
 extra-source "ez-ipupdate-3.0.10-r13.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/ez-ipupdate-3.0.10-r13.apk"
 }

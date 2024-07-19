@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py-gtk-2.24.0-r14.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py-gtk"]
+]
+depends: [
+  "atk"
+  "cairo"
+  "gdk-pixbuf"
+  "glib"
+  "gtk+2.0"
+  "libglade"
+  "libintl"
+  "musl"
+  "pango"
+  "py-gobject"
+  "py2-cairo"
+]
+extra-source "py-gtk-2.24.0-r14.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/py-gtk-2.24.0-r14.apk"
+}

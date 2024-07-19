@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del nfs-utils-openrc"]
 ]
-
-
 extra-source "nfs-utils-openrc-2.6.4-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/nfs-utils-openrc-2.6.4-r1.apk"
 }

@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del librelp-dev"]
 ]
 depends: [
-  "librelp"
+  "librelp" {= "1.11.0-r2"}
   "pkgconf"
 ]
-
 extra-source "librelp-dev-1.11.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/librelp-dev-1.11.0-r2.apk"
 }

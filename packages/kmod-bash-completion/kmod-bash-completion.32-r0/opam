@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del kmod-bash-completion"]
 ]
-
-
 extra-source "kmod-bash-completion-32-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/kmod-bash-completion-32-r0.apk"
 }

@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-class-singleton-doc"]
 ]
-
-
 extra-source "perl-class-singleton-doc-1.6-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-class-singleton-doc-1.6-r2.apk"
 }

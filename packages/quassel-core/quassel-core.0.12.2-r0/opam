@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add quassel-core-0.12.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del quassel-core"]
+]
+depends: [
+  "busybox"
+  "libgcc"
+  "libstdc++"
+  "musl"
+  "qt"
+  "quassel-common"
+  "zlib"
+]
+extra-source "quassel-core-0.12.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/quassel-core-0.12.2-r0.apk"
+}

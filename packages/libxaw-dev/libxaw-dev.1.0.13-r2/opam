@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libxaw-dev-1.0.13-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libxaw-dev"]
+]
+depends: [
+  "libx11-dev"
+  "libxaw" {= "1.0.13-r2"}
+  "libxext-dev"
+  "libxmu-dev"
+  "libxpm-dev"
+  "libxt-dev"
+  "pkgconf"
+  "xorgproto"
+]
+extra-source "libxaw-dev-1.0.13-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libxaw-dev-1.0.13-r2.apk"
+}

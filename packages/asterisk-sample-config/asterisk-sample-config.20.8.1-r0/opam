@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del asterisk-sample-config"]
 ]
-
-
 extra-source "asterisk-sample-config-20.8.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/asterisk-sample-config-20.8.1-r0.apk"
 }

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add openssh-server-common-8.6_p1-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del openssh-server-common"]
+]
+extra-source "openssh-server-common-8.6_p1-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/openssh-server-common-8.6_p1-r3.apk"
+}

@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del dkimproxy-openrc"]
 ]
-
-
 extra-source "dkimproxy-openrc-1.4.1-r9.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/dkimproxy-openrc-1.4.1-r9.apk"
 }

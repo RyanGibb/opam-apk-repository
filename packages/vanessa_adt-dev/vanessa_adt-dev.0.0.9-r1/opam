@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add vanessa_adt-dev-0.0.9-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del vanessa_adt-dev"]
+]
+depends: [
+  "vanessa_adt" {= "0.0.9-r1"}
+  "vanessa_logger-dev"
+]
+extra-source "vanessa_adt-dev-0.0.9-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/vanessa_adt-dev-0.0.9-r1.apk"
+}

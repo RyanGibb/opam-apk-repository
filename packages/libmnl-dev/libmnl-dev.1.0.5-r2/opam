@@ -6,11 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del libmnl-dev"]
 ]
 depends: [
-  "libmnl"
+  "libmnl" {= "1.0.5-r2"}
   "linux-headers"
   "pkgconf"
 ]
-
 extra-source "libmnl-dev-1.0.5-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libmnl-dev-1.0.5-r2.apk"
 }

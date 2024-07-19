@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lua-socket-3.0_rc1_git20160306-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lua-socket"]
+]
+extra-source "lua-socket-3.0_rc1_git20160306-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/lua-socket-3.0_rc1_git20160306-r3.apk"
+}

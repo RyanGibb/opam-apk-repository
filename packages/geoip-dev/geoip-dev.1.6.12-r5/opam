@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del geoip-dev"]
 ]
 depends: [
-  "geoip"
+  "geoip" {= "1.6.12-r5"}
   "pkgconf"
 ]
-
 extra-source "geoip-dev-1.6.12-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/geoip-dev-1.6.12-r5.apk"
 }

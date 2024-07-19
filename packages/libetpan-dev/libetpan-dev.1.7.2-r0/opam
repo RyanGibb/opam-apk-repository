@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libetpan-dev-1.7.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libetpan-dev"]
+]
+depends: [
+  "cyrus-sasl-dev"
+  "db-dev"
+  "libetpan" {= "1.7.2-r0"}
+]
+extra-source "libetpan-dev-1.7.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/libetpan-dev-1.7.2-r0.apk"
+}

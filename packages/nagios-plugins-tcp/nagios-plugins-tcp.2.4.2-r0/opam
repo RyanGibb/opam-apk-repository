@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add nagios-plugins-tcp-2.4.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del nagios-plugins-tcp"]
+]
+depends: [
+  "libcrypto3"
+  "libssl3"
+  "musl"
+]
+extra-source "nagios-plugins-tcp-2.4.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/nagios-plugins-tcp-2.4.2-r0.apk"
+}

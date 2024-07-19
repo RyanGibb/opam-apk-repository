@@ -17,7 +17,6 @@ depends: [
   "varnish-libs"
   ("busybox-binsh" | "dash-binsh" | "yash-binsh")
 ]
-
 extra-source "varnish-7.5.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/varnish-7.5.0-r0.apk"
 }

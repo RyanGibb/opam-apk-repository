@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del libspf2-dev"]
 ]
 depends: [
-  "libspf2"
+  "libspf2" {= "1.2.11-r3"}
 ]
-
 extra-source "libspf2-dev-1.2.11-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libspf2-dev-1.2.11-r3.apk"
 }

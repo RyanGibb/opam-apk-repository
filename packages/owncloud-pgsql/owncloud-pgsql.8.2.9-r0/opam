@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add owncloud-pgsql-8.2.9-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del owncloud-pgsql"]
+]
+depends: [
+  "owncloud"
+  "php-pdo_pgsql"
+  "php-pear-mdb2-driver-pgsql"
+  "php-pgsql"
+]
+extra-source "owncloud-pgsql-8.2.9-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/owncloud-pgsql-8.2.9-r0.apk"
+}

@@ -9,7 +9,6 @@ depends: [
   "liblockfile"
   "musl"
 ]
-
 extra-source "lockfile-progs-0.1.19-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lockfile-progs-0.1.19-r3.apk"
 }

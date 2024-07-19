@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add linux-virt-dev-5.10.180-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del linux-virt-dev"]
+]
+depends: [
+  "bash"
+  "bison"
+  "elfutils-dev"
+  "flex"
+  "gmp-dev"
+  "libcrypto1.1"
+  "libelf"
+  "mpc1-dev"
+  "mpfr-dev"
+  "musl"
+  "perl"
+]
+extra-source "linux-virt-dev-5.10.180-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/linux-virt-dev-5.10.180-r0.apk"
+}

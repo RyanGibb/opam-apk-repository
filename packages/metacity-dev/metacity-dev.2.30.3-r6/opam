@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add metacity-dev-2.30.3-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del metacity-dev"]
+]
+depends: [
+  "gconf-dev"
+  "gnome-desktop-dev"
+  "gnome-doc-utils"
+  "gtk+-dev"
+  "libgnome-dev"
+  "librsvg-dev"
+  "libwnck-dev"
+  "libx11-dev"
+  "libxcomposite-dev"
+  "metacity" {= "2.30.3-r6"}
+  "metacity-lang" {= "2.30.3-r6"}
+  "pkgconfig"
+]
+extra-source "metacity-dev-2.30.3-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/metacity-dev-2.30.3-r6.apk"
+}

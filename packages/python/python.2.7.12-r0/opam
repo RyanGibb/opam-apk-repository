@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add python-2.7.12-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del python"]
+]
+depends: [
+  "expat"
+  "gdbm"
+  "libbz2"
+  "libcrypto1.0"
+  "libffi"
+  "libssl1.0"
+  "musl"
+  "ncurses-libs"
+  "readline"
+  "sqlite-libs"
+  "zlib"
+]
+extra-source "python-2.7.12-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/python-2.7.12-r0.apk"
+}

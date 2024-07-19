@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mate-terminal-1.10.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mate-terminal"]
+]
+depends: [
+  "atk"
+  "gdk-pixbuf"
+  "glib"
+  "gtk+2.0"
+  "libice"
+  "libintl"
+  "libsm"
+  "libx11"
+  "mate-common"
+  "mate-desktop"
+  "musl"
+  "pango"
+  "vte"
+  "yelp-tools"
+]
+extra-source "mate-terminal-1.10.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/mate-terminal-1.10.0-r0.apk"
+}

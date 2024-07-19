@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add afpfs-ng-dev-0.8.1-r5.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del afpfs-ng-dev"]
+]
+depends: [
+  "afpfs-ng" {= "0.8.1-r5"}
+  "afpfs-ng-doc" {= "0.8.1-r5"}
+  "libedit-dev"
+  "libgcrypt-dev"
+  "ncurses-dev"
+]
+extra-source "afpfs-ng-dev-0.8.1-r5.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/afpfs-ng-dev-0.8.1-r5.apk"
+}

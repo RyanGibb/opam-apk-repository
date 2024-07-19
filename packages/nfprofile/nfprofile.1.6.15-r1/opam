@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add nfprofile-1.6.15-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del nfprofile"]
+]
+depends: [
+  "librrd"
+  "musl"
+  "nfdump"
+]
+extra-source "nfprofile-1.6.15-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/nfprofile-1.6.15-r1.apk"
+}

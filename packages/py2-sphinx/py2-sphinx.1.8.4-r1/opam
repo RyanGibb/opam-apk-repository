@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py2-sphinx-1.8.4-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py2-sphinx"]
+]
+depends: [
+  "make"
+  "py-setuptools"
+  "py2-alabaster" {< "0.8"}
+  "py2-babel"
+  "py2-docutils"
+  "py2-imagesize"
+  "py2-jinja2"
+  "py2-packaging"
+  "py2-pygments"
+  "py2-requests"
+  "py2-six"
+  "py2-snowballstemmer"
+  "py2-sphinx_rtd_theme"
+  "py2-sphinxcontrib-websupport"
+  "py2-typing"
+  "python2"
+]
+extra-source "py2-sphinx-1.8.4-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/py2-sphinx-1.8.4-r1.apk"
+}

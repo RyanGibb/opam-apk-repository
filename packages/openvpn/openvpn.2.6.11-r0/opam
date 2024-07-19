@@ -15,7 +15,6 @@ depends: [
   "musl"
   ("busybox-binsh" | "dash-binsh" | "yash-binsh")
 ]
-
 extra-source "openvpn-2.6.11-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/openvpn-2.6.11-r0.apk"
 }

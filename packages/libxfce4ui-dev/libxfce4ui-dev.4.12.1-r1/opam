@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libxfce4ui-dev-4.12.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libxfce4ui-dev"]
+]
+depends: [
+  "glade3"
+  "glib"
+  "gtk+2.0"
+  "gtk+2.0-dev"
+  "gtk+3.0-dev"
+  "libxfce4ui"
+  "libxfce4ui" {= "4.12.1-r1"}
+  "libxfce4ui-gtk3" {= "4.12.1-r1"}
+  "libxfce4util-dev"
+  "musl"
+  "pkgconf"
+  "startup-notification-dev"
+  "xfconf-dev"
+]
+extra-source "libxfce4ui-dev-4.12.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/libxfce4ui-dev-4.12.1-r1.apk"
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add cups-doc-2.3.3-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del cups-doc"]
+]
+extra-source "cups-doc-2.3.3-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/cups-doc-2.3.3-r3.apk"
+}

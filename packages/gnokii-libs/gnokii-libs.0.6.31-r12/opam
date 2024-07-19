@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gnokii-libs-0.6.31-r12.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gnokii-libs"]
+]
+depends: [
+  "bluez-libs"
+  "glib"
+  "libical"
+  "libintl"
+  "libusb-compat"
+  "musl"
+]
+extra-source "gnokii-libs-0.6.31-r12.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/gnokii-libs-0.6.31-r12.apk"
+}

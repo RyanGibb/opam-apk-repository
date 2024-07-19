@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-class-accessor-chained-doc"]
 ]
-
-
 extra-source "perl-class-accessor-chained-doc-0.01-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-class-accessor-chained-doc-0.01-r4.apk"
 }

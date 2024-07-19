@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ivykis-dev-0.42.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ivykis-dev"]
+]
+depends: [
+  "ivykis" {= "0.42.3-r0"}
+  "pkgconf"
+]
+extra-source "ivykis-dev-0.42.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/ivykis-dev-0.42.3-r0.apk"
+}

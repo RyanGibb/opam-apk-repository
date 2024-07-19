@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del which-doc"]
 ]
-
-
 extra-source "which-doc-2.21-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/which-doc-2.21-r5.apk"
 }

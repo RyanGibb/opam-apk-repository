@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add openssh-keysign-7.4_p1-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del openssh-keysign"]
+]
+depends: [
+  "libressl2.4-libcrypto"
+  "musl"
+  "openssh-client"
+  "zlib"
+]
+extra-source "openssh-keysign-7.4_p1-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/openssh-keysign-7.4_p1-r2.apk"
+}

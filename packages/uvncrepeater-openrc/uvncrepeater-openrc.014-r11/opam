@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del uvncrepeater-openrc"]
 ]
-
-
 extra-source "uvncrepeater-openrc-014-r11.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/uvncrepeater-openrc-014-r11.apk"
 }

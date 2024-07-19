@@ -1,0 +1,90 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add linux-firmware-20180615-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del linux-firmware"]
+]
+depends: [
+  "linux-firmware-3com" {= "20180615-r2"}
+  "linux-firmware-acenic" {= "20180615-r2"}
+  "linux-firmware-adaptec" {= "20180615-r2"}
+  "linux-firmware-advansys" {= "20180615-r2"}
+  "linux-firmware-amd-ucode" {= "20180615-r2"}
+  "linux-firmware-amdgpu" {= "20180615-r2"}
+  "linux-firmware-ar3k" {= "20180615-r2"}
+  "linux-firmware-ath10k" {= "20180615-r2"}
+  "linux-firmware-ath6k" {= "20180615-r2"}
+  "linux-firmware-ath9k_htc" {= "20180615-r2"}
+  "linux-firmware-atmel" {= "20180615-r2"}
+  "linux-firmware-atusb" {= "20180615-r2"}
+  "linux-firmware-av7110" {= "20180615-r2"}
+  "linux-firmware-bnx2" {= "20180615-r2"}
+  "linux-firmware-bnx2x" {= "20180615-r2"}
+  "linux-firmware-brcm" {= "20180615-r2"}
+  "linux-firmware-carl9170fw" {= "20180615-r2"}
+  "linux-firmware-cavium" {= "20180615-r2"}
+  "linux-firmware-cis" {= "20180615-r2"}
+  "linux-firmware-cpia2" {= "20180615-r2"}
+  "linux-firmware-cxgb3" {= "20180615-r2"}
+  "linux-firmware-cxgb4" {= "20180615-r2"}
+  "linux-firmware-dabusb" {= "20180615-r2"}
+  "linux-firmware-dsp56k" {= "20180615-r2"}
+  "linux-firmware-e100" {= "20180615-r2"}
+  "linux-firmware-edgeport" {= "20180615-r2"}
+  "linux-firmware-emi26" {= "20180615-r2"}
+  "linux-firmware-emi62" {= "20180615-r2"}
+  "linux-firmware-ene-ub6250" {= "20180615-r2"}
+  "linux-firmware-ess" {= "20180615-r2"}
+  "linux-firmware-go7007" {= "20180615-r2"}
+  "linux-firmware-i915" {= "20180615-r2"}
+  "linux-firmware-imx" {= "20180615-r2"}
+  "linux-firmware-intel" {= "20180615-r2"}
+  "linux-firmware-isci" {= "20180615-r2"}
+  "linux-firmware-kaweth" {= "20180615-r2"}
+  "linux-firmware-keyspan" {= "20180615-r2"}
+  "linux-firmware-keyspan_pda" {= "20180615-r2"}
+  "linux-firmware-korg" {= "20180615-r2"}
+  "linux-firmware-libertas" {= "20180615-r2"}
+  "linux-firmware-liquidio" {= "20180615-r2"}
+  "linux-firmware-matrox" {= "20180615-r2"}
+  "linux-firmware-mellanox" {= "20180615-r2"}
+  "linux-firmware-moxa" {= "20180615-r2"}
+  "linux-firmware-mrvl" {= "20180615-r2"}
+  "linux-firmware-mwl8k" {= "20180615-r2"}
+  "linux-firmware-mwlwifi" {= "20180615-r2"}
+  "linux-firmware-myricom" {= "20180615-r2"}
+  "linux-firmware-netronome" {= "20180615-r2"}
+  "linux-firmware-nvidia" {= "20180615-r2"}
+  "linux-firmware-ositech" {= "20180615-r2"}
+  "linux-firmware-other" {= "20180615-r2"}
+  "linux-firmware-qca" {= "20180615-r2"}
+  "linux-firmware-qcom" {= "20180615-r2"}
+  "linux-firmware-qed" {= "20180615-r2"}
+  "linux-firmware-qlogic" {= "20180615-r2"}
+  "linux-firmware-r128" {= "20180615-r2"}
+  "linux-firmware-radeon" {= "20180615-r2"}
+  "linux-firmware-rockchip" {= "20180615-r2"}
+  "linux-firmware-rsi" {= "20180615-r2"}
+  "linux-firmware-rtl8192e" {= "20180615-r2"}
+  "linux-firmware-rtl_bt" {= "20180615-r2"}
+  "linux-firmware-rtl_nic" {= "20180615-r2"}
+  "linux-firmware-rtlwifi" {= "20180615-r2"}
+  "linux-firmware-sb16" {= "20180615-r2"}
+  "linux-firmware-slicoss" {= "20180615-r2"}
+  "linux-firmware-sun" {= "20180615-r2"}
+  "linux-firmware-sxg" {= "20180615-r2"}
+  "linux-firmware-tehuti" {= "20180615-r2"}
+  "linux-firmware-ti-connectivity" {= "20180615-r2"}
+  "linux-firmware-ti-keystone" {= "20180615-r2"}
+  "linux-firmware-tigon" {= "20180615-r2"}
+  "linux-firmware-ttusb-budget" {= "20180615-r2"}
+  "linux-firmware-ueagle-atm" {= "20180615-r2"}
+  "linux-firmware-vicam" {= "20180615-r2"}
+  "linux-firmware-vxge" {= "20180615-r2"}
+  "linux-firmware-yam" {= "20180615-r2"}
+  "linux-firmware-yamaha" {= "20180615-r2"}
+]
+extra-source "linux-firmware-20180615-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/linux-firmware-20180615-r2.apk"
+}

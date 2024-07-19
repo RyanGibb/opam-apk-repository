@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add rasqal-dev-0.9.33-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del rasqal-dev"]
+]
+depends: [
+  "pkgconfig"
+  "raptor2-dev"
+  "rasqal" {= "0.9.33-r0"}
+]
+extra-source "rasqal-dev-0.9.33-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/rasqal-dev-0.9.33-r0.apk"
+}

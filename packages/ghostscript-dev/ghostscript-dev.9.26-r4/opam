@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ghostscript-dev-9.26-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ghostscript-dev"]
+]
+depends: [
+  "ghostscript" {= "9.26-r4"}
+  "pkgconf"
+]
+extra-source "ghostscript-dev-9.26-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/ghostscript-dev-9.26-r4.apk"
+}

@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add font-winitzki-cyrillic-1.0.3-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del font-winitzki-cyrillic"]
+]
+depends: [
+  "encodings"
+  "font-alias"
+  "fontconfig"
+  "mkfontscale"
+]
+extra-source "font-winitzki-cyrillic-1.0.3-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/font-winitzki-cyrillic-1.0.3-r2.apk"
+}

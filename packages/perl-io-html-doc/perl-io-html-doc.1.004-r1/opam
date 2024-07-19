@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-io-html-doc"]
 ]
-
-
 extra-source "perl-io-html-doc-1.004-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-io-html-doc-1.004-r1.apk"
 }

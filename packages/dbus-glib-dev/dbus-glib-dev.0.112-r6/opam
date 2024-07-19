@@ -8,6 +8,7 @@ remove: [
 depends: [
   "dbus-dev"
   "dbus-glib"
+  "dbus-glib" {= "0.112-r6"}
   "dbus-libs"
   "glib"
   "glib-dev"
@@ -15,7 +16,6 @@ depends: [
   "musl"
   "pkgconf"
 ]
-
 extra-source "dbus-glib-dev-0.112-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/dbus-glib-dev-0.112-r6.apk"
 }

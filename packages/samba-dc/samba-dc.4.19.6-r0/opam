@@ -13,21 +13,21 @@ depends: [
   "popt"
   "py3-dnspython"
   "py3-markdown"
-  "py3-samba"
+  "py3-samba" {= "4.19.6-r0"}
   "samba-client-libs"
-  "samba-common"
+  "samba-common" {= "4.19.6-r0"}
   "samba-common-server-libs"
   "samba-dc-libs"
   "samba-libs"
-  "samba-server"
+  "samba-libs" {= "4.19.6-r0"}
+  "samba-server" {= "4.19.6-r0"}
   "samba-util-libs"
-  "samba-winbind"
+  "samba-winbind" {= "4.19.6-r0"}
   "talloc"
   "tdb"
   "tdb-libs"
   "tevent"
 ]
-
 extra-source "samba-dc-4.19.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/samba-dc-4.19.6-r0.apk"
 }

@@ -8,7 +8,6 @@ remove: [
 depends: [
   "aconf"
 ]
-
 extra-source "aconf-mod-dns-zone-0.8.1-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/aconf-mod-dns-zone-0.8.1-r2.apk"
 }

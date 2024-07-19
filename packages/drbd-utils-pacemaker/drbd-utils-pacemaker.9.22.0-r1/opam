@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add drbd-utils-pacemaker-9.22.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del drbd-utils-pacemaker"]
+]
+depends: [
+  "drbd-utils" {= "9.22.0-r1"}
+]
+extra-source "drbd-utils-pacemaker-9.22.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/drbd-utils-pacemaker-9.22.0-r1.apk"
+}

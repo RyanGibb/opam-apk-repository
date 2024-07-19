@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libcap-dev-2.25-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libcap-dev"]
+]
+depends: [
+  "libcap" {= "2.25-r0"}
+  "linux-headers"
+  "pkgconfig"
+]
+extra-source "libcap-dev-2.25-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/libcap-dev-2.25-r0.apk"
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mupdf-gl-1.13.0-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mupdf-gl"]
+]
+depends: [
+  "libx11"
+  "libxrandr"
+  "mesa-gl"
+  "mupdf"
+  "musl"
+]
+extra-source "mupdf-gl-1.13.0-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/mupdf-gl-1.13.0-r2.apk"
+}

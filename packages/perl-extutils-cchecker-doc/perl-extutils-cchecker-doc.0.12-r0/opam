@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-extutils-cchecker-doc"]
 ]
-
-
 extra-source "perl-extutils-cchecker-doc-0.12-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-extutils-cchecker-doc-0.12-r0.apk"
 }

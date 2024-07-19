@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add opus-1.2.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del opus"]
+]
+depends: [
+  "musl"
+]
+extra-source "opus-1.2.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/opus-1.2.1-r1.apk"
+}

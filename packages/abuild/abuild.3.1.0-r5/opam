@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add abuild-3.1.0-r5.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del abuild"]
+]
+depends: [
+  "apk-tools" {>= "2.0.7-r1"}
+  "attr"
+  "busybox"
+  "curl"
+  "fakeroot"
+  "libc-utils"
+  "libressl"
+  "libressl2.6-libcrypto"
+  "lzip"
+  "musl"
+  "patch"
+  "pax-utils"
+  "pkgconf"
+  "sudo"
+  "tar"
+  "zlib"
+]
+extra-source "abuild-3.1.0-r5.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/abuild-3.1.0-r5.apk"
+}

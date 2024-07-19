@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ruby-rr-3.1.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ruby-rr"]
+]
+depends: [
+  "ruby"
+]
+extra-source "ruby-rr-3.1.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/ruby-rr-3.1.0-r1.apk"
+}

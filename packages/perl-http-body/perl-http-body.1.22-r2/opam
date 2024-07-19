@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-http-body-1.22-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-http-body"]
+]
+depends: [
+  "perl"
+  "perl-http-message"
+  "perl-uri"
+]
+extra-source "perl-http-body-1.22-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-http-body-1.22-r2.apk"
+}

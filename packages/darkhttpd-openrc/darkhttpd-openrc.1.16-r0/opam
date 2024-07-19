@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del darkhttpd-openrc"]
 ]
-
-
 extra-source "darkhttpd-openrc-1.16-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/darkhttpd-openrc-1.16-r0.apk"
 }

@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del imap-dev"]
 ]
 depends: [
-  "c-client"
+  "c-client" {= "2007f-r15"}
 ]
-
 extra-source "imap-dev-2007f-r15.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/imap-dev-2007f-r15.apk"
 }

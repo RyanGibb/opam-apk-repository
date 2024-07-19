@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add imagemagick-dev-6.9.6.8-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del imagemagick-dev"]
+]
+depends: [
+  "imagemagick" {= "6.9.6.8-r1"}
+  "imagemagick-c++" {= "6.9.6.8-r1"}
+  "pkgconf"
+]
+extra-source "imagemagick-dev-6.9.6.8-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/imagemagick-dev-6.9.6.8-r1.apk"
+}

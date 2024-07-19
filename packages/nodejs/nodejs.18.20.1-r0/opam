@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add nodejs-18.20.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del nodejs"]
+]
+depends: [
+  "brotli-libs"
+  "c-ares"
+  "ca-certificates"
+  "icu-libs"
+  "libcrypto3"
+  "libgcc"
+  "libssl3"
+  "libstdc++"
+  "musl"
+  "nghttp2-libs"
+  "zlib"
+  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
+]
+extra-source "nodejs-18.20.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/nodejs-18.20.1-r0.apk"
+}

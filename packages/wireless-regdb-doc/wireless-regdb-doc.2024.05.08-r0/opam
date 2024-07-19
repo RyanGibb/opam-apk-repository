@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del wireless-regdb-doc"]
 ]
-
-
 extra-source "wireless-regdb-doc-2024.05.08-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/wireless-regdb-doc-2024.05.08-r0.apk"
 }

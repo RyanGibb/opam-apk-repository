@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py2-cryptography-1.8.1-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py2-cryptography"]
+]
+depends: [
+  "libressl2.5-libcrypto"
+  "libressl2.5-libssl"
+  "musl"
+  "py-enum34"
+  "py-setuptools"
+  "py2-asn1crypto"
+  "py2-cffi"
+  "py2-idna"
+  "py2-ipaddress"
+  "py2-packaging"
+  "py2-six"
+  "python2"
+]
+extra-source "py2-cryptography-1.8.1-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/py2-cryptography-1.8.1-r2.apk"
+}

@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-sub-name-doc"]
 ]
-
-
 extra-source "perl-sub-name-doc-0.27-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-sub-name-doc-0.27-r1.apk"
 }

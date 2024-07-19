@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del cairo-dev"]
 ]
 depends: [
-  "cairo"
-  "cairo-gobject"
-  "cairo-tools"
+  "cairo" {= "1.18.0-r0"}
+  "cairo-gobject" {= "1.18.0-r0"}
+  "cairo-tools" {= "1.18.0-r0"}
   "fontconfig-dev"
   "freetype-dev"
   "glib-dev"
@@ -22,7 +22,6 @@ depends: [
   "xcb-util-dev"
   "zlib-dev"
 ]
-
 extra-source "cairo-dev-1.18.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/cairo-dev-1.18.0-r0.apk"
 }

@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del openresolv"]
 ]
-
-
 extra-source "openresolv-3.13.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/openresolv-3.13.2-r0.apk"
 }

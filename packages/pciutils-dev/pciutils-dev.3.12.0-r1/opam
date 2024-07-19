@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del pciutils-dev"]
 ]
 depends: [
-  "pciutils-libs"
+  "pciutils-libs" {= "3.12.0-r1"}
   "pkgconf"
 ]
-
 extra-source "pciutils-dev-3.12.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/pciutils-dev-3.12.0-r1.apk"
 }

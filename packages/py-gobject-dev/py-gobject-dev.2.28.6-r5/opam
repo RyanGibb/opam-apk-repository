@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py-gobject-dev-2.28.6-r5.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py-gobject-dev"]
+]
+depends: [
+  "glib-dev"
+  "libffi-dev"
+  "pkgconf"
+  "py-gobject" {= "2.28.6-r5"}
+  "python2-dev"
+]
+extra-source "py-gobject-dev-2.28.6-r5.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/py-gobject-dev-2.28.6-r5.apk"
+}

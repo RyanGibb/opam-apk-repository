@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del ipvsadm-doc"]
 ]
-
-
 extra-source "ipvsadm-doc-1.31-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/ipvsadm-doc-1.31-r3.apk"
 }

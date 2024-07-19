@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libressl-3.0.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libressl"]
+]
+depends: [
+  "libressl3.0-libcrypto"
+  "libressl3.0-libssl"
+  "libressl3.0-libtls"
+  "musl"
+]
+extra-source "libressl-3.0.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/libressl-3.0.2-r0.apk"
+}

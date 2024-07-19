@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ruby-google-protobuf-3.21.12-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ruby-google-protobuf"]
+]
+depends: [
+  "musl"
+  "ruby-libs"
+]
+extra-source "ruby-google-protobuf-3.21.12-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/ruby-google-protobuf-3.21.12-r2.apk"
+}

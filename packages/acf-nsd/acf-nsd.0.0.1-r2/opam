@@ -9,7 +9,6 @@ depends: [
   "acf-core"
   "nsd"
 ]
-
 extra-source "acf-nsd-0.0.1-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/acf-nsd-0.0.1-r2.apk"
 }

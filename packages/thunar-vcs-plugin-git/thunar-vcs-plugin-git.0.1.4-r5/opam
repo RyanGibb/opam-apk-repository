@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add thunar-vcs-plugin-git-0.1.4-r5.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del thunar-vcs-plugin-git"]
+]
+depends: [
+  "cairo"
+  "glib"
+  "gtk+2.0"
+  "libxfce4util"
+  "musl"
+]
+extra-source "thunar-vcs-plugin-git-0.1.4-r5.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/thunar-vcs-plugin-git-0.1.4-r5.apk"
+}

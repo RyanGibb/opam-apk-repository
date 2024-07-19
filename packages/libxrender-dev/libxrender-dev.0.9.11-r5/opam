@@ -7,11 +7,10 @@ remove: [
 ]
 depends: [
   "libx11-dev"
-  "libxrender"
+  "libxrender" {= "0.9.11-r5"}
   "pkgconf"
   "xorgproto"
 ]
-
 extra-source "libxrender-dev-0.9.11-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libxrender-dev-0.9.11-r5.apk"
 }

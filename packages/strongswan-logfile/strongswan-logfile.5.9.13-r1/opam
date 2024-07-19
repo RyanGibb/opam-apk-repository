@@ -8,7 +8,6 @@ remove: [
 depends: [
   "strongswan"
 ]
-
 extra-source "strongswan-logfile-5.9.13-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/strongswan-logfile-5.9.13-r1.apk"
 }

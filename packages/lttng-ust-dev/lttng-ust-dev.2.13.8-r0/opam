@@ -6,12 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del lttng-ust-dev"]
 ]
 depends: [
-  "lttng-ust"
+  "lttng-ust" {= "2.13.8-r0"}
   "pkgconf"
-  "py3-lttng"
-  "userspace-rcu-dev"
+  "py3-lttng" {= "2.13.8-r0"}
+  "userspace-rcu-dev" {> "0.10"}
 ]
-
 extra-source "lttng-ust-dev-2.13.8-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lttng-ust-dev-2.13.8-r0.apk"
 }

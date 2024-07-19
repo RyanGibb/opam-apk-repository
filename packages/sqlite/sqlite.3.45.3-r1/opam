@@ -9,7 +9,6 @@ depends: [
   "musl"
   "readline"
 ]
-
 extra-source "sqlite-3.45.3-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/sqlite-3.45.3-r1.apk"
 }

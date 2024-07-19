@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del re2c-doc"]
 ]
-
-
 extra-source "re2c-doc-3.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/re2c-doc-3.1-r0.apk"
 }

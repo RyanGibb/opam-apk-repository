@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add postgresql-libs-10.10-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del postgresql-libs"]
+]
+depends: [
+  "libpq"
+  "musl"
+]
+extra-source "postgresql-libs-10.10-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/postgresql-libs-10.10-r0.apk"
+}

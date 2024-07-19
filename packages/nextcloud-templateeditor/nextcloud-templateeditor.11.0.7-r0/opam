@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add nextcloud-templateeditor-11.0.7-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del nextcloud-templateeditor"]
+]
+depends: [
+  "nextcloud"
+]
+extra-source "nextcloud-templateeditor-11.0.7-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/nextcloud-templateeditor-11.0.7-r0.apk"
+}

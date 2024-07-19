@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add dovecot-openrc-2.3.20-r7.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del dovecot-openrc"]
+]
+extra-source "dovecot-openrc-2.3.20-r7.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dovecot-openrc-2.3.20-r7.apk"
+}

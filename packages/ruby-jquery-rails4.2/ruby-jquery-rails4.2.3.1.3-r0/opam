@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ruby-jquery-rails4.2-3.1.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ruby-jquery-rails4.2"]
+]
+depends: [
+  "ruby"
+  "ruby-railties4.2"
+  "ruby-thor"
+]
+extra-source "ruby-jquery-rails4.2-3.1.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/ruby-jquery-rails4.2-3.1.3-r0.apk"
+}

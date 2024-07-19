@@ -9,7 +9,6 @@ depends: [
   "musl"
   "utmps-libs"
 ]
-
 extra-source "linux-pam-1.6.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/linux-pam-1.6.0-r0.apk"
 }

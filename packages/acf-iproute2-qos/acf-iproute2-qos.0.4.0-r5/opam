@@ -6,11 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del acf-iproute2-qos"]
 ]
 depends: [
-  "acf-alpine-baselayout"
+  "acf-alpine-baselayout" {>= "0.5.7"}
   "acf-core"
   "iproute2-qos"
 ]
-
 extra-source "acf-iproute2-qos-0.4.0-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/acf-iproute2-qos-0.4.0-r5.apk"
 }

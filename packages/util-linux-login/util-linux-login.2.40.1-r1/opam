@@ -10,9 +10,8 @@ depends: [
   "libsmartcols"
   "linux-pam"
   "musl"
-  "runuser"
+  "runuser" {= "2.40.1-r1"}
 ]
-
 extra-source "util-linux-login-2.40.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/util-linux-login-2.40.1-r1.apk"
 }

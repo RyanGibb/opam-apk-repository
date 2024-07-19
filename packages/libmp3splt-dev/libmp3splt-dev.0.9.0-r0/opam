@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libmp3splt-dev-0.9.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libmp3splt-dev"]
+]
+depends: [
+  "libid3tag-dev"
+  "libmad-dev"
+  "libmp3splt" {= "0.9.0-r0"}
+  "libogg-dev"
+  "libtool"
+  "libvorbis-dev"
+  "pcre-dev"
+  "pkgconfig"
+]
+extra-source "libmp3splt-dev-0.9.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/libmp3splt-dev-0.9.0-r0.apk"
+}

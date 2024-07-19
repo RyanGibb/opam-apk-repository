@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add spice-protocol-0.14.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del spice-protocol"]
+]
+depends: [
+  "pkgconf"
+]
+extra-source "spice-protocol-0.14.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/spice-protocol-0.14.3-r0.apk"
+}

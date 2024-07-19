@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mousepad-0.3.0-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mousepad"]
+]
+depends: [
+  "dbus-glib"
+  "dbus-libs"
+  "desktop-file-utils"
+  "glib"
+  "gtk+2.0"
+  "libintl"
+  "musl"
+  "pango"
+  ("gtksourceview2" | "gtksourceview")
+]
+extra-source "mousepad-0.3.0-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/mousepad-0.3.0-r2.apk"
+}

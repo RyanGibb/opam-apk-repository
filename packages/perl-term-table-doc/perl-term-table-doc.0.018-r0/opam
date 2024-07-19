@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-term-table-doc"]
 ]
-
-
 extra-source "perl-term-table-doc-0.018-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-term-table-doc-0.018-r0.apk"
 }

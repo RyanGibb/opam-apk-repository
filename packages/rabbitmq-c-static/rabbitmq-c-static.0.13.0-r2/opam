@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add rabbitmq-c-static-0.13.0-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del rabbitmq-c-static"]
+]
+extra-source "rabbitmq-c-static-0.13.0-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/rabbitmq-c-static-0.13.0-r2.apk"
+}

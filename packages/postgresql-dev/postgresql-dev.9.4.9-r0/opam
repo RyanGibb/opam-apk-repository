@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add postgresql-dev-9.4.9-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del postgresql-dev"]
+]
+depends: [
+  "libpq" {= "9.4.9-r0"}
+  "openssl-dev"
+  "pkgconfig"
+  "postgresql-bdr"
+  "postgresql-client" {= "9.4.9-r0"}
+  "postgresql-contrib" {= "9.4.9-r0"}
+  "postgresql-doc" {= "9.4.9-r0"}
+]
+extra-source "postgresql-dev-9.4.9-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/postgresql-dev-9.4.9-r0.apk"
+}

@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-posix-strftime-compiler-doc"]
 ]
-
-
 extra-source "perl-posix-strftime-compiler-doc-0.46-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-posix-strftime-compiler-doc-0.46-r0.apk"
 }

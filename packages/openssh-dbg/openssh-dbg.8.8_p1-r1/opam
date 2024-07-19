@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add openssh-dbg-8.8_p1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del openssh-dbg"]
+]
+depends: [
+  "openssh-server"
+  "openssh-sftp-server"
+  ("openssh-client-default" | "openssh-client-krb5")
+]
+extra-source "openssh-dbg-8.8_p1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/openssh-dbg-8.8_p1-r1.apk"
+}

@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gtkglext-1.2.0-r11.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gtkglext"]
+]
+depends: [
+  "glib"
+  "glu"
+  "gtk+2.0"
+  "libx11"
+  "mesa-gl"
+  "musl"
+  "pango"
+  "pangox-compat"
+]
+extra-source "gtkglext-1.2.0-r11.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/gtkglext-1.2.0-r11.apk"
+}

@@ -8,7 +8,6 @@ remove: [
 depends: [
   "ruby"
 ]
-
 extra-source "ruby-rexml-doc-3.2.9-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/ruby-rexml-doc-3.2.9-r0.apk"
 }

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add thunar-archive-plugin-0.3.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del thunar-archive-plugin"]
+]
+depends: [
+  "glib"
+  "gtk+2.0"
+  "libintl"
+  "musl"
+  "thunar"
+]
+extra-source "thunar-archive-plugin-0.3.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/thunar-archive-plugin-0.3.1-r1.apk"
+}

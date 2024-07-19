@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del hunspell-dev"]
 ]
 depends: [
-  "libhunspell"
+  "libhunspell" {= "1.7.2-r4"}
   "pkgconf"
 ]
-
 extra-source "hunspell-dev-1.7.2-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/hunspell-dev-1.7.2-r4.apk"
 }

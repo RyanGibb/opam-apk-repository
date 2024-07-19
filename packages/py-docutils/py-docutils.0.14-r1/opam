@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py-docutils-0.14-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py-docutils"]
+]
+depends: [
+  "py3-docutils"
+  "py3-docutils" {= "0.14-r1"}
+]
+extra-source "py-docutils-0.14-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/py-docutils-0.14-r1.apk"
+}

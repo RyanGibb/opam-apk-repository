@@ -9,7 +9,6 @@ depends: [
   "perl"
   "perl-sub-uplevel"
 ]
-
 extra-source "perl-test-exception-0.43-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-test-exception-0.43-r4.apk"
 }

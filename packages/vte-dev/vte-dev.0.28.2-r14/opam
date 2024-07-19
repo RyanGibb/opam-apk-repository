@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add vte-dev-0.28.2-r14.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del vte-dev"]
+]
+depends: [
+  "cairo-dev"
+  "glib-dev"
+  "gtk+2.0-dev"
+  "libx11-dev"
+  "pango-dev"
+  "pkgconf"
+  "vte" {= "0.28.2-r14"}
+]
+extra-source "vte-dev-0.28.2-r14.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/vte-dev-0.28.2-r14.apk"
+}

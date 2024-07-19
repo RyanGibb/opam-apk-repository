@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del xkbcomp-doc"]
 ]
-
-
 extra-source "xkbcomp-doc-1.4.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/xkbcomp-doc-1.4.7-r0.apk"
 }

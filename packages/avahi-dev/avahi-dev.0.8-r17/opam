@@ -6,16 +6,15 @@ remove: [
   ["sh" "-c" "sudo apk del avahi-dev"]
 ]
 depends: [
-  "avahi"
-  "avahi-compat-howl"
-  "avahi-compat-libdns_sd"
-  "avahi-glib"
-  "avahi-libs"
+  "avahi" {= "0.8-r17"}
+  "avahi-compat-howl" {= "0.8-r17"}
+  "avahi-compat-libdns_sd" {= "0.8-r17"}
+  "avahi-glib" {= "0.8-r17"}
+  "avahi-libs" {= "0.8-r17"}
   "gdbm-dev"
   "glib-dev"
   "pkgconf"
 ]
-
 extra-source "avahi-dev-0.8-r17.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/avahi-dev-0.8-r17.apk"
 }

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libgssglue-dev-0.4-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libgssglue-dev"]
+]
+depends: [
+  "libgssglue" {= "0.4-r1"}
+  "pkgconf"
+]
+extra-source "libgssglue-dev-0.4-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libgssglue-dev-0.4-r1.apk"
+}

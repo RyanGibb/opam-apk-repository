@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del nfs-utils-dev"]
 ]
 depends: [
-  "libnfsidmap"
+  "libnfsidmap" {= "2.6.4-r1"}
   "pkgconf"
 ]
-
 extra-source "nfs-utils-dev-2.6.4-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/nfs-utils-dev-2.6.4-r1.apk"
 }

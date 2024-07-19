@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ruby-full-3.1.5-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ruby-full"]
+]
+depends: [
+  "ruby"
+  "ruby-bundler"
+  "ruby-debug" {>= "1.6.3"}
+  "ruby-matrix" {>= "0.4.2"}
+  "ruby-minitest" {>= "5.15.0"}
+  "ruby-net-ftp" {>= "0.1.4"}
+  "ruby-net-imap" {>= "0.2.4"}
+  "ruby-net-pop" {>= "0.1.1"}
+  "ruby-net-smtp" {>= "0.3.1.1"}
+  "ruby-power_assert" {>= "2.0.1"}
+  "ruby-prime" {>= "0.1.2"}
+  "ruby-rake" {>= "13.0.6"}
+  "ruby-rbs" {>= "2.7.0"}
+  "ruby-rdoc"
+  "ruby-rexml" {>= "3.2.5"}
+  "ruby-rss" {>= "0.2.9"}
+  "ruby-test-unit" {>= "3.5.3"}
+  "ruby-typeprof" {>= "0.21.3"}
+]
+extra-source "ruby-full-3.1.5-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ruby-full-3.1.5-r0.apk"
+}

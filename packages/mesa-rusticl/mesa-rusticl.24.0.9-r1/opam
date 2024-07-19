@@ -8,21 +8,20 @@ remove: [
 depends: [
   "clang17-headers"
   "clang17-libs"
-  "libclc"
+  "libclc" {>= "17"}
   "libdrm"
   "libelf"
   "libexpat"
   "libgcc"
   "libstdc++"
   "llvm17-libs"
-  "mesa"
+  "mesa" {= "24.0.9-r1"}
   "musl"
   "spirv-llvm-translator-libs"
   "spirv-tools"
   "zlib"
   "zstd-libs"
 ]
-
 extra-source "mesa-rusticl-24.0.9-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/mesa-rusticl-24.0.9-r1.apk"
 }

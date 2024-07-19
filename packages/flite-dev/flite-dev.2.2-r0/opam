@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add flite-dev-2.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del flite-dev"]
+]
+depends: [
+  "flite" {= "2.2-r0"}
+  "pkgconf"
+]
+extra-source "flite-dev-2.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/flite-dev-2.2-r0.apk"
+}

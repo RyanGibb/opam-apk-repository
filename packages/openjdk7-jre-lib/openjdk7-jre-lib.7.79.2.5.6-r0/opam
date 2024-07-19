@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add openjdk7-jre-lib-7.79.2.5.6-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del openjdk7-jre-lib"]
+]
+extra-source "openjdk7-jre-lib-7.79.2.5.6-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/openjdk7-jre-lib-7.79.2.5.6-r0.apk"
+}

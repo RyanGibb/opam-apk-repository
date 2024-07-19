@@ -11,7 +11,6 @@ depends: [
   "perl-dbi"
   "sqlite-libs"
 ]
-
 extra-source "perl-dbd-sqlite-1.74-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-dbd-sqlite-1.74-r0.apk"
 }

@@ -14,7 +14,6 @@ depends: [
   "npth"
   "sqlite-libs"
 ]
-
 extra-source "gnupg-keyboxd-2.4.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/gnupg-keyboxd-2.4.5-r0.apk"
 }

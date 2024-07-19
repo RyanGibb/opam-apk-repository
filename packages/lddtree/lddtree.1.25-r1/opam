@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lddtree-1.25-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lddtree"]
+]
+depends: [
+  "scanelf"
+]
+extra-source "lddtree-1.25-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/lddtree-1.25-r1.apk"
+}

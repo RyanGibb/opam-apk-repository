@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add uriparser-dev-0.9.3-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del uriparser-dev"]
+]
+depends: [
+  "liburiparser" {= "0.9.3-r1"}
+  "pkgconf"
+]
+extra-source "uriparser-dev-0.9.3-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/uriparser-dev-0.9.3-r1.apk"
+}

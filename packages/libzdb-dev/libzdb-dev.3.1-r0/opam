@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libzdb-dev-3.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libzdb-dev"]
+]
+depends: [
+  "flex-dev"
+  "libzdb" {= "3.1-r0"}
+  "mariadb-dev"
+  "pkgconf"
+  "postgresql-dev"
+  "sqlite-dev"
+]
+extra-source "libzdb-dev-3.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/libzdb-dev-3.1-r0.apk"
+}

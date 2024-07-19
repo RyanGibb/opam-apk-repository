@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libosinfo-doc-0.2.11-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libosinfo-doc"]
+]
+extra-source "libosinfo-doc-0.2.11-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/libosinfo-doc-0.2.11-r0.apk"
+}

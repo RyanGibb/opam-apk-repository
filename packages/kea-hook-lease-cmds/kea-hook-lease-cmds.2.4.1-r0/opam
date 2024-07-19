@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add kea-hook-lease-cmds-2.4.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del kea-hook-lease-cmds"]
+]
+depends: [
+  "kea-common"
+  "libgcc"
+  "musl"
+]
+extra-source "kea-hook-lease-cmds-2.4.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/kea-hook-lease-cmds-2.4.1-r0.apk"
+}

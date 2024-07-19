@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libxrender-doc-0.9.11-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libxrender-doc"]
+]
+extra-source "libxrender-doc-0.9.11-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/libxrender-doc-0.9.11-r4.apk"
+}

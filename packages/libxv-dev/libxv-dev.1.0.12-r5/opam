@@ -8,11 +8,10 @@ remove: [
 depends: [
   "libx11-dev"
   "libxext-dev"
-  "libxv"
+  "libxv" {= "1.0.12-r5"}
   "pkgconf"
   "xorgproto"
 ]
-
 extra-source "libxv-dev-1.0.12-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libxv-dev-1.0.12-r5.apk"
 }

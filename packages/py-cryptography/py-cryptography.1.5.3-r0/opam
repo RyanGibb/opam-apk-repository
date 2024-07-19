@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py-cryptography-1.5.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py-cryptography"]
+]
+depends: [
+  "py-asn1"
+  "py-cffi"
+  "py-idna"
+  "py-six"
+]
+extra-source "py-cryptography-1.5.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/py-cryptography-1.5.3-r0.apk"
+}

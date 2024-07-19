@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add freeswitch-sangoma-1.8.7-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del freeswitch-sangoma"]
+]
+depends: [
+  "freeswitch"
+  "musl"
+  "sngtc_client"
+]
+extra-source "freeswitch-sangoma-1.8.7-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/freeswitch-sangoma-1.8.7-r0.apk"
+}

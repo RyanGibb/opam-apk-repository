@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add imagemagick-7.0.8.68-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del imagemagick"]
+]
+depends: [
+  "cairo"
+  "ghostscript"
+  "glib"
+  "imagemagick-libs"
+  "libbz2"
+  "libjpeg-turbo"
+  "libpng"
+  "librsvg"
+  "libwebp"
+  "libx11"
+  "libxml2"
+  "musl"
+  "pango"
+  "tiff"
+  "zlib"
+]
+extra-source "imagemagick-7.0.8.68-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/imagemagick-7.0.8.68-r0.apk"
+}

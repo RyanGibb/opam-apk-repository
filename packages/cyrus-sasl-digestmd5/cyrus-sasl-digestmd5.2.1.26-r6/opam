@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add cyrus-sasl-digestmd5-2.1.26-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del cyrus-sasl-digestmd5"]
+]
+depends: [
+  "libcrypto1.0"
+  "musl"
+]
+extra-source "cyrus-sasl-digestmd5-2.1.26-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/cyrus-sasl-digestmd5-2.1.26-r6.apk"
+}

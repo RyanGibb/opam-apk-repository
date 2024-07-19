@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del font-terminus"]
 ]
-
-
 extra-source "font-terminus-4.49.1-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/font-terminus-4.49.1-r4.apk"
 }

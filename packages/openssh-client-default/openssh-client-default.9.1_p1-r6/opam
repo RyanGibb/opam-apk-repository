@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add openssh-client-default-9.1_p1-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del openssh-client-default"]
+]
+depends: [
+  "libcrypto3"
+  "musl"
+  "openssh-client-common" {= "9.1_p1-r6"}
+  "openssh-keygen" {= "9.1_p1-r6"}
+  "zlib"
+]
+conflicts: [
+  "openssh-client-krb5"
+]
+extra-source "openssh-client-default-9.1_p1-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/openssh-client-default-9.1_p1-r6.apk"
+}

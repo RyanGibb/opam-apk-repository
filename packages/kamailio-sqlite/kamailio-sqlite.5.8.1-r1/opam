@@ -11,7 +11,6 @@ depends: [
   "musl"
   "sqlite-libs"
 ]
-
 extra-source "kamailio-sqlite-5.8.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/kamailio-sqlite-5.8.1-r1.apk"
 }

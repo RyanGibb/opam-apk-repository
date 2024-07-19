@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del seabios-bin"]
 ]
-
-
 extra-source "seabios-bin-1.16.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/seabios-bin-1.16.2-r0.apk"
 }

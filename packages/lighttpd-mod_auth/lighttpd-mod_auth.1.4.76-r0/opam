@@ -9,7 +9,6 @@ depends: [
   "libcrypto3"
   "musl"
 ]
-
 extra-source "lighttpd-mod_auth-1.4.76-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lighttpd-mod_auth-1.4.76-r0.apk"
 }

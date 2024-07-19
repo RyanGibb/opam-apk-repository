@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add syslog-ng-add-contextual-data-3.27.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del syslog-ng-add-contextual-data"]
+]
+depends: [
+  "glib"
+  "musl"
+  "syslog-ng"
+]
+extra-source "syslog-ng-add-contextual-data-3.27.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/syslog-ng-add-contextual-data-3.27.1-r0.apk"
+}

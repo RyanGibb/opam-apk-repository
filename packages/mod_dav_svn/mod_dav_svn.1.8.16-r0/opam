@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mod_dav_svn-1.8.16-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mod_dav_svn"]
+]
+depends: [
+  "apr"
+  "apr-util"
+  "db"
+  "expat"
+  "libldap"
+  "musl"
+  "sqlite-libs"
+  "subversion-libs"
+  "zlib"
+]
+extra-source "mod_dav_svn-1.8.16-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/mod_dav_svn-1.8.16-r0.apk"
+}

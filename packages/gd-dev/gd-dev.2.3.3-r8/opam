@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gd-dev-2.3.3-r8.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gd-dev"]
+]
+depends: [
+  "fontconfig-dev"
+  "freetype-dev"
+  "gd"
+  "libavif-dev"
+  "libgd" {= "2.3.3-r8"}
+  "libjpeg-turbo-dev"
+  "libpng-dev"
+  "libwebp-dev"
+  "libxpm-dev"
+  "perl"
+  "pkgconf"
+  "tiff-dev"
+  "zlib-dev"
+]
+extra-source "gd-dev-2.3.3-r8.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/gd-dev-2.3.3-r8.apk"
+}

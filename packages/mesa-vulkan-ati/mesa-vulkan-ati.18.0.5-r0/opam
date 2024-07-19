@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mesa-vulkan-ati-18.0.5-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mesa-vulkan-ati"]
+]
+depends: [
+  "libdrm"
+  "libelf"
+  "libgcc"
+  "libstdc++"
+  "libx11"
+  "libxcb"
+  "libxshmfence"
+  "llvm5-libs"
+  "musl"
+  "wayland-libs-client"
+  "zlib"
+]
+extra-source "mesa-vulkan-ati-18.0.5-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/mesa-vulkan-ati-18.0.5-r0.apk"
+}

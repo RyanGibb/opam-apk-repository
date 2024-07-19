@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add bacula-client-5.2.13-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del bacula-client"]
+]
+depends: [
+  "busybox"
+  "libcrypto1.0"
+  "libgcc"
+  "libssl1.0"
+  "libstdc++"
+  "lzo"
+  "musl"
+  "ncurses-libs"
+  "zlib"
+]
+extra-source "bacula-client-5.2.13-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/bacula-client-5.2.13-r6.apk"
+}

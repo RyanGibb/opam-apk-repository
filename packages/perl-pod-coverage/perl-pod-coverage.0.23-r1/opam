@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-pod-coverage-0.23-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-pod-coverage"]
+]
+depends: [
+  "perl"
+  "perl-devel-symdump"
+  "perl-test-pod"
+]
+extra-source "perl-pod-coverage-0.23-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-pod-coverage-0.23-r1.apk"
+}

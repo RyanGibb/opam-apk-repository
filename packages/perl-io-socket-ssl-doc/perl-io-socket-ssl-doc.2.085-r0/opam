@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-io-socket-ssl-doc"]
 ]
-
-
 extra-source "perl-io-socket-ssl-doc-2.085-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-io-socket-ssl-doc-2.085-r0.apk"
 }

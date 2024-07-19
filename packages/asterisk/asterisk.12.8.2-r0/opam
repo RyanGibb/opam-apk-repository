@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add asterisk-12.8.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del asterisk"]
+]
+depends: [
+  "busybox"
+  "jansson"
+  "libcrypto1.0"
+  "libedit"
+  "libssl1.0"
+  "libuuid"
+  "lua5.1-libs"
+  "musl"
+  "pjproject"
+  "portaudio"
+  "sqlite-libs"
+  "zlib"
+]
+extra-source "asterisk-12.8.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/asterisk-12.8.2-r0.apk"
+}

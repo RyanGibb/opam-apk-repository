@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del libcap-static"]
 ]
-
-
 extra-source "libcap-static-2.70-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libcap-static-2.70-r0.apk"
 }

@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del openssl-misc"]
 ]
 depends: [
-  "openssl"
+  "openssl" {= "3.3.1-r3"}
   "perl"
 ]
-
 extra-source "openssl-misc-3.3.1-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/openssl-misc-3.3.1-r3.apk"
 }

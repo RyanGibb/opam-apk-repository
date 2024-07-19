@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libplist-dev-1.12-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libplist-dev"]
+]
+depends: [
+  "glib-dev"
+  "libplist" {= "1.12-r0"}
+  "libplist++" {= "1.12-r0"}
+  "libplist-util" {= "1.12-r0"}
+  "libxml2-dev"
+  "pkgconfig"
+  "py-libplist" {= "1.12-r0"}
+]
+extra-source "libplist-dev-1.12-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/libplist-dev-1.12-r0.apk"
+}

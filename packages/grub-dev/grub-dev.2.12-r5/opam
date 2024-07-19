@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del grub-dev"]
 ]
-
-
 extra-source "grub-dev-2.12-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/grub-dev-2.12-r5.apk"
 }

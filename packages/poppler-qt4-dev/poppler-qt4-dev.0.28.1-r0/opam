@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add poppler-qt4-dev-0.28.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del poppler-qt4-dev"]
+]
+depends: [
+  "cairo-dev"
+  "fontconfig-dev"
+  "jpeg-dev"
+  "lcms2-dev"
+  "libxml2-dev"
+  "pkgconfig"
+  "poppler-dev"
+  "poppler-qt4" {= "0.28.1-r0"}
+  "qt-dev"
+]
+extra-source "poppler-qt4-dev-0.28.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/poppler-qt4-dev-0.28.1-r0.apk"
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gettext-libs-0.19.8.1-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gettext-libs"]
+]
+depends: [
+  "libintl"
+  "libunistring"
+  "musl"
+]
+extra-source "gettext-libs-0.19.8.1-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/gettext-libs-0.19.8.1-r2.apk"
+}

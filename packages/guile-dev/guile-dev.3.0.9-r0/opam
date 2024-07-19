@@ -8,11 +8,10 @@ remove: [
 depends: [
   "gc-dev"
   "gmp-dev"
-  "guile"
-  "guile-libs"
+  "guile" {= "3.0.9-r0"}
+  "guile-libs" {= "3.0.9-r0"}
   "pkgconf"
 ]
-
 extra-source "guile-dev-3.0.9-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/guile-dev-3.0.9-r0.apk"
 }

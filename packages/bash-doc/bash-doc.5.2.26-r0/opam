@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del bash-doc"]
 ]
-
-
 extra-source "bash-doc-5.2.26-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/bash-doc-5.2.26-r0.apk"
 }

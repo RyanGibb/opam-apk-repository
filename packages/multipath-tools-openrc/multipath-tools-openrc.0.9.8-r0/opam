@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del multipath-tools-openrc"]
 ]
-
-
 extra-source "multipath-tools-openrc-0.9.8-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/multipath-tools-openrc-0.9.8-r0.apk"
 }

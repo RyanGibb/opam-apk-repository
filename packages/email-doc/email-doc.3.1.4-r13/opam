@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del email-doc"]
 ]
-
-
 extra-source "email-doc-3.1.4-r13.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/email-doc-3.1.4-r13.apk"
 }

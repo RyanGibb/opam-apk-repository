@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del texinfo-doc"]
 ]
-
-
 extra-source "texinfo-doc-7.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/texinfo-doc-7.1-r1.apk"
 }

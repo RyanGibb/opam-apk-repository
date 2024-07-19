@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del rsyslog-openrc"]
 ]
-
-
 extra-source "rsyslog-openrc-8.2404.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/rsyslog-openrc-8.2404.0-r0.apk"
 }

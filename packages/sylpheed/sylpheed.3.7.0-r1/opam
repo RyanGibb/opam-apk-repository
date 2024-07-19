@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add sylpheed-3.7.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del sylpheed"]
+]
+depends: [
+  "cairo"
+  "gdk-pixbuf"
+  "glib"
+  "gpgme"
+  "gtk+2.0"
+  "libintl"
+  "libldap"
+  "libressl2.7-libcrypto"
+  "libressl2.7-libssl"
+  "musl"
+  "pango"
+  "pinentry-gtk"
+]
+extra-source "sylpheed-3.7.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/sylpheed-3.7.0-r1.apk"
+}

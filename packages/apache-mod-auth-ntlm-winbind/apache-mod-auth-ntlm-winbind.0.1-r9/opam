@@ -11,7 +11,6 @@ depends: [
   "samba"
   "samba-winbind"
 ]
-
 extra-source "apache-mod-auth-ntlm-winbind-0.1-r9.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/apache-mod-auth-ntlm-winbind-0.1-r9.apk"
 }

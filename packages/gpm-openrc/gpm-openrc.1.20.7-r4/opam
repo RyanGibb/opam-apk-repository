@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del gpm-openrc"]
 ]
-
-
 extra-source "gpm-openrc-1.20.7-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/gpm-openrc-1.20.7-r4.apk"
 }

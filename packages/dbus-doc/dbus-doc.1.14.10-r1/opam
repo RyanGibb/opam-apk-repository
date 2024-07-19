@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del dbus-doc"]
 ]
-
-
 extra-source "dbus-doc-1.14.10-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/dbus-doc-1.14.10-r1.apk"
 }

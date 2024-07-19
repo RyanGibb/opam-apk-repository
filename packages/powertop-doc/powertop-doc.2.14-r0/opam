@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add powertop-doc-2.14-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del powertop-doc"]
+]
+extra-source "powertop-doc-2.14-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/powertop-doc-2.14-r0.apk"
+}

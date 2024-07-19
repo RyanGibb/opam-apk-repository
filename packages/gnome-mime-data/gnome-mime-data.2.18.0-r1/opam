@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gnome-mime-data-2.18.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gnome-mime-data"]
+]
+extra-source "gnome-mime-data-2.18.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/gnome-mime-data-2.18.0-r1.apk"
+}

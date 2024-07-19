@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del nfdump-openrc"]
 ]
-
-
 extra-source "nfdump-openrc-1.7.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/nfdump-openrc-1.7.3-r0.apk"
 }

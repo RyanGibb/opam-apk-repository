@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del alpine-git-mirror-syncd-openrc"]
 ]
-
-
 extra-source "alpine-git-mirror-syncd-openrc-0.3.1-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/alpine-git-mirror-syncd-openrc-0.3.1-r2.apk"
 }

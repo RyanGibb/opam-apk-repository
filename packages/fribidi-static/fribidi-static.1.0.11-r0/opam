@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add fribidi-static-1.0.11-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del fribidi-static"]
+]
+extra-source "fribidi-static-1.0.11-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/fribidi-static-1.0.11-r0.apk"
+}

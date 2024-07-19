@@ -10,7 +10,6 @@ depends: [
   "ruby"
   "ruby-libs"
 ]
-
 extra-source "ruby-racc-1.7.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/ruby-racc-1.7.3-r0.apk"
 }

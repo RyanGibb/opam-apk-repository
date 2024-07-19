@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libc6-compat-1.1.19-r11.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libc6-compat"]
+]
+depends: [
+  "musl" {= "1.1.19-r11"}
+]
+extra-source "libc6-compat-1.1.19-r11.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/libc6-compat-1.1.19-r11.apk"
+}

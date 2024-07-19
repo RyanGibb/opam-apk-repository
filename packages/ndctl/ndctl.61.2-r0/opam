@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ndctl-61.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ndctl"]
+]
+depends: [
+  "json-c"
+  "kmod"
+  "libuuid"
+  "musl"
+  "ndctl-libs"
+]
+extra-source "ndctl-61.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/ndctl-61.2-r0.apk"
+}

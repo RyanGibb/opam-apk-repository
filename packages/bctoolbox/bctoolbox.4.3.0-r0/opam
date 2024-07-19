@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add bctoolbox-4.3.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del bctoolbox"]
+]
+depends: [
+  "libgcc"
+  "libstdc++"
+  "mbedtls"
+  "musl"
+]
+extra-source "bctoolbox-4.3.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/bctoolbox-4.3.0-r0.apk"
+}

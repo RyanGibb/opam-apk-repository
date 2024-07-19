@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add samba-libs-4.1.23-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del samba-libs"]
+]
+depends: [
+  "cups-libs"
+  "gnutls"
+  "heimdal-libs"
+  "ldb"
+  "libcap"
+  "libcom_err"
+  "libgcrypt"
+  "libldap"
+  "libsasl"
+  "libwbclient"
+  "musl"
+  "popt"
+  "samba-common"
+  "samba-libs-py"
+  "talloc"
+  "tdb-libs"
+  "tevent"
+  "zlib"
+]
+extra-source "samba-libs-4.1.23-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/samba-libs-4.1.23-r0.apk"
+}

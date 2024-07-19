@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add alpine-release-3.19.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del alpine-release"]
+]
+depends: [
+  "alpine-keys"
+]
+extra-source "alpine-release-3.19.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/alpine-release-3.19.2-r0.apk"
+}

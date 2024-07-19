@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add vim-9.0.0999-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del vim"]
+]
+depends: [
+  "musl"
+  "ncurses-libs"
+  "xxd"
+]
+extra-source "vim-9.0.0999-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/vim-9.0.0999-r0.apk"
+}

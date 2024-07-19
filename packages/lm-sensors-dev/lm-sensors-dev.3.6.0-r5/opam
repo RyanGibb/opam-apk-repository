@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del lm-sensors-dev"]
 ]
 depends: [
-  "lm-sensors-libs"
+  "lm-sensors-libs" {= "3.6.0-r5"}
 ]
-
 extra-source "lm-sensors-dev-3.6.0-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lm-sensors-dev-3.6.0-r5.apk"
 }

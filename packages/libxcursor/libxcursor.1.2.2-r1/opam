@@ -11,7 +11,6 @@ depends: [
   "libxrender"
   "musl"
 ]
-
 extra-source "libxcursor-1.2.2-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libxcursor-1.2.2-r1.apk"
 }

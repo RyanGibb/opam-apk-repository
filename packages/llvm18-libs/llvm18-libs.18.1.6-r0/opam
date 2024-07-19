@@ -14,7 +14,6 @@ depends: [
   "zlib"
   "zstd-libs"
 ]
-
 extra-source "llvm18-libs-18.1.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/llvm18-libs-18.1.6-r0.apk"
 }

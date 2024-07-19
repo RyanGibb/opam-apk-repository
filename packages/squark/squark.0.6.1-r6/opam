@@ -13,7 +13,6 @@ depends: [
   "net-snmp-libs"
   ("busybox-binsh" | "dash-binsh" | "yash-binsh")
 ]
-
 extra-source "squark-0.6.1-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/squark-0.6.1-r6.apk"
 }

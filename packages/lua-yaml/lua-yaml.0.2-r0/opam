@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lua-yaml-0.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lua-yaml"]
+]
+depends: [
+  "musl"
+]
+extra-source "lua-yaml-0.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/lua-yaml-0.2-r0.apk"
+}

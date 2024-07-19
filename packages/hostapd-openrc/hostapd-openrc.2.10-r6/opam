@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del hostapd-openrc"]
 ]
-
-
 extra-source "hostapd-openrc-2.10-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/hostapd-openrc-2.10-r6.apk"
 }

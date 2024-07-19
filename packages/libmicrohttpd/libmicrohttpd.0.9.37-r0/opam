@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libmicrohttpd-0.9.37-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libmicrohttpd"]
+]
+depends: [
+  "curl"
+  "libcrypto1.0"
+  "libssl1.0"
+  "musl"
+  "zlib"
+]
+extra-source "libmicrohttpd-0.9.37-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/libmicrohttpd-0.9.37-r0.apk"
+}

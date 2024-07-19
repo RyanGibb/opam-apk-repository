@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add poppler-0.56.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del poppler"]
+]
+depends: [
+  "fontconfig"
+  "freetype"
+  "lcms2"
+  "libjpeg-turbo"
+  "libpng"
+  "libstdc++"
+  "musl"
+  "openjpeg"
+  "tiff"
+  "zlib"
+]
+extra-source "poppler-0.56.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/poppler-0.56.0-r1.apk"
+}

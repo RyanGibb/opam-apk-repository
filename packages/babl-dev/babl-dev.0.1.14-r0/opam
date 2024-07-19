@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add babl-dev-0.1.14-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del babl-dev"]
+]
+depends: [
+  "babl" {= "0.1.14-r0"}
+  "pkgconfig"
+]
+extra-source "babl-dev-0.1.14-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/babl-dev-0.1.14-r0.apk"
+}

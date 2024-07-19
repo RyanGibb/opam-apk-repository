@@ -11,7 +11,6 @@ depends: [
   "musl"
   "sysfsutils"
 ]
-
 extra-source "lm-sensors-sensord-3.6.0-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lm-sensors-sensord-3.6.0-r5.apk"
 }

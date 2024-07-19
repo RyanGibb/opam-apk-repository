@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add meson-pyc-1.1.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del meson-pyc"]
+]
+depends: [
+  "python3"
+  "python3" {>= "3.11"}
+  "samurai"
+]
+extra-source "meson-pyc-1.1.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/meson-pyc-1.1.0-r1.apk"
+}

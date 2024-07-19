@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add e2fsprogs-dev-1.44.2-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del e2fsprogs-dev"]
+]
+depends: [
+  "e2fsprogs-libs" {= "1.44.2-r2"}
+  "libcom_err" {= "1.44.2-r2"}
+  "pkgconf"
+  "util-linux-dev"
+]
+extra-source "e2fsprogs-dev-1.44.2-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/e2fsprogs-dev-1.44.2-r2.apk"
+}

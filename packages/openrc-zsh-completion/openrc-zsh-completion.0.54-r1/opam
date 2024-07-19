@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del openrc-zsh-completion"]
 ]
-
-
 extra-source "openrc-zsh-completion-0.54-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/openrc-zsh-completion-0.54-r1.apk"
 }

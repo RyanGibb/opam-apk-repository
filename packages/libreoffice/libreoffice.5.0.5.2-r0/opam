@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libreoffice-5.0.5.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libreoffice"]
+]
+depends: [
+  "libreoffice-base"
+  "libreoffice-calc"
+  "libreoffice-common"
+  "libreoffice-connector-postgres"
+  "libreoffice-draw"
+  "libreoffice-gnome"
+  "libreoffice-impress"
+  "libreoffice-math"
+  "libreoffice-writer"
+]
+extra-source "libreoffice-5.0.5.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/libreoffice-5.0.5.2-r0.apk"
+}

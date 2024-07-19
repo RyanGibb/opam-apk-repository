@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py-future-0.15.2-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py-future"]
+]
+extra-source "py-future-0.15.2-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/py-future-0.15.2-r3.apk"
+}

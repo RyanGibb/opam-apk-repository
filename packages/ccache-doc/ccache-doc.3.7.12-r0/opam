@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ccache-doc-3.7.12-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ccache-doc"]
+]
+extra-source "ccache-doc-3.7.12-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/ccache-doc-3.7.12-r0.apk"
+}

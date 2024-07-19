@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libxdamage-dev-1.1.4-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libxdamage-dev"]
+]
+depends: [
+  "damageproto"
+  "fixesproto"
+  "libx11-dev"
+  "libxdamage" {= "1.1.4-r1"}
+  "libxfixes-dev"
+  "pkgconf"
+  "xproto"
+]
+extra-source "libxdamage-dev-1.1.4-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/libxdamage-dev-1.1.4-r1.apk"
+}

@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del tiny-cloud-oci"]
 ]
 depends: [
-  "tiny-cloud"
+  "tiny-cloud" {= "3.0.7-r0"}
   ("busybox-binsh" | "dash-binsh" | "yash-binsh")
 ]
-
 extra-source "tiny-cloud-oci-3.0.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/tiny-cloud-oci-3.0.7-r0.apk"
 }

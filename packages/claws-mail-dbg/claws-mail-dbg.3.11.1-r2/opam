@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add claws-mail-dbg-3.11.1-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del claws-mail-dbg"]
+]
+depends: [
+  "aspell-en"
+]
+extra-source "claws-mail-dbg-3.11.1-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/claws-mail-dbg-3.11.1-r2.apk"
+}

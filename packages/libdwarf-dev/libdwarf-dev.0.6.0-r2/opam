@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libdwarf-dev-0.6.0-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libdwarf-dev"]
+]
+depends: [
+  "libdwarf" {= "0.6.0-r2"}
+  "liblibdwarfp" {= "0.6.0-r2"}
+  "pkgconf"
+  "zstd-dev"
+]
+extra-source "libdwarf-dev-0.6.0-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/libdwarf-dev-0.6.0-r2.apk"
+}

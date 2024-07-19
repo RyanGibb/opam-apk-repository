@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-posix-strftime-compiler-doc-0.42-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-posix-strftime-compiler-doc"]
+]
+extra-source "perl-posix-strftime-compiler-doc-0.42-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/perl-posix-strftime-compiler-doc-0.42-r3.apk"
+}

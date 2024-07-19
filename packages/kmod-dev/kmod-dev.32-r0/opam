@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del kmod-dev"]
 ]
 depends: [
-  "kmod-libs"
+  "kmod-libs" {= "32-r0"}
   "pkgconf"
 ]
-
 extra-source "kmod-dev-32-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/kmod-dev-32-r0.apk"
 }

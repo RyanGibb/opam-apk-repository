@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add asterisk-18.20.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del asterisk"]
+]
+depends: [
+  "c-client"
+  "jansson"
+  "libcap2"
+  "libcrypto3"
+  "libcurl"
+  "libedit"
+  "libssl3"
+  "libuuid"
+  "libxml2"
+  "lua5.1-libs"
+  "musl"
+  "pjproject"
+  "portaudio"
+  "sqlite-libs"
+  "unbound-libs"
+  "zlib"
+  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
+]
+extra-source "asterisk-18.20.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/asterisk-18.20.2-r0.apk"
+}

@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del etckeeper-bash-completion"]
 ]
-
-
 extra-source "etckeeper-bash-completion-1.18.21-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/etckeeper-bash-completion-1.18.21-r1.apk"
 }

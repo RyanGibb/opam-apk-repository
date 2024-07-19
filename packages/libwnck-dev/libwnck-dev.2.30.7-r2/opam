@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libwnck-dev-2.30.7-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libwnck-dev"]
+]
+depends: [
+  "cairo-dev"
+  "glib-dev"
+  "gtk+-dev"
+  "libwnck" {= "2.30.7-r2"}
+  "libwnck-doc" {= "2.30.7-r2"}
+  "libwnck-lang" {= "2.30.7-r2"}
+  "libx11-dev"
+  "libxres-dev"
+  "pango-dev"
+  "pkgconfig"
+  "startup-notification-dev"
+]
+extra-source "libwnck-dev-2.30.7-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/libwnck-dev-2.30.7-r2.apk"
+}

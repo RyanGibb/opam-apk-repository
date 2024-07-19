@@ -10,7 +10,6 @@ depends: [
   "libstdc++"
   "musl"
 ]
-
 extra-source "boost1.84-math-1.84.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/boost1.84-math-1.84.0-r1.apk"
 }

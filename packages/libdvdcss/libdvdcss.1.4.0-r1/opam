@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libdvdcss-1.4.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libdvdcss"]
+]
+depends: [
+  "musl"
+]
+extra-source "libdvdcss-1.4.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/libdvdcss-1.4.0-r1.apk"
+}

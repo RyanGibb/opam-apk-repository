@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add qt-sqlite-4.8.7-r8.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del qt-sqlite"]
+]
+depends: [
+  "ca-certificates"
+  "libgcc"
+  "libstdc++"
+  "musl"
+  "qt"
+  "sqlite-libs"
+]
+extra-source "qt-sqlite-4.8.7-r8.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/qt-sqlite-4.8.7-r8.apk"
+}

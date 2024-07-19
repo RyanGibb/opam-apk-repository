@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del sntpc-openrc"]
 ]
-
-
 extra-source "sntpc-openrc-0.9-r12.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/sntpc-openrc-0.9-r12.apk"
 }

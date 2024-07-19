@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add compiler-rt-17.0.5-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del compiler-rt"]
+]
+depends: [
+  "libgcc"
+  "libstdc++"
+  "musl"
+]
+extra-source "compiler-rt-17.0.5-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/compiler-rt-17.0.5-r0.apk"
+}

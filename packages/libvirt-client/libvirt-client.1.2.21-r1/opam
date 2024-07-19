@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libvirt-client-1.2.21-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libvirt-client"]
+]
+depends: [
+  "curl"
+  "dbus-libs"
+  "device-mapper"
+  "gnutls"
+  "gnutls-utils"
+  "libcap-ng"
+  "libintl"
+  "libnl3"
+  "libsasl"
+  "libssh2"
+  "libtirpc"
+  "libvirt"
+  "libxml2"
+  "musl"
+  "netcat-openbsd"
+  "pm-utils"
+  "readline"
+  "xen-libs"
+  "yajl"
+]
+extra-source "libvirt-client-1.2.21-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/libvirt-client-1.2.21-r1.apk"
+}

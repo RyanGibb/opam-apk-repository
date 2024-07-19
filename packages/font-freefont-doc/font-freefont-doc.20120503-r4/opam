@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del font-freefont-doc"]
 ]
-
-
 extra-source "font-freefont-doc-20120503-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/font-freefont-doc-20120503-r4.apk"
 }

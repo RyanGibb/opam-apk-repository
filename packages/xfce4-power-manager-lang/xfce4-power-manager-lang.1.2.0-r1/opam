@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xfce4-power-manager-lang-1.2.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xfce4-power-manager-lang"]
+]
+depends: [
+  "polkit"
+]
+extra-source "xfce4-power-manager-lang-1.2.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/xfce4-power-manager-lang-1.2.0-r1.apk"
+}

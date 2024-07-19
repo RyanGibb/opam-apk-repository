@@ -9,12 +9,11 @@ depends: [
   "libgcc"
   "libstdc++"
   "llvm16-libs"
-  "llvm16-linker-tools"
+  "llvm16-linker-tools" {= "16.0.6-r8"}
   "musl"
   "zlib"
   "zstd-libs"
 ]
-
 extra-source "llvm16-16.0.6-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/llvm16-16.0.6-r8.apk"
 }

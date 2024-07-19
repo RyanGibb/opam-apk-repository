@@ -11,7 +11,6 @@ depends: [
   "mariadb-connector-c"
   "musl"
 ]
-
 extra-source "kea-hook-mysql-cb-2.4.1-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/kea-hook-mysql-cb-2.4.1-r2.apk"
 }

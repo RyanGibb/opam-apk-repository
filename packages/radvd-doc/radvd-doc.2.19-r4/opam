@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del radvd-doc"]
 ]
-
-
 extra-source "radvd-doc-2.19-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/radvd-doc-2.19-r4.apk"
 }

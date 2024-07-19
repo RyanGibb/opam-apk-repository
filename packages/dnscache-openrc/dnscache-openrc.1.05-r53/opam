@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del dnscache-openrc"]
 ]
-
-
 extra-source "dnscache-openrc-1.05-r53.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/dnscache-openrc-1.05-r53.apk"
 }

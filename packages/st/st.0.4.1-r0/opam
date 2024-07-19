@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add st-0.4.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del st"]
+]
+depends: [
+  "fontconfig"
+  "libx11"
+  "libxft"
+  "musl"
+]
+extra-source "st-0.4.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/st-0.4.1-r0.apk"
+}

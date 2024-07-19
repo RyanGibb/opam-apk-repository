@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gcc-go-12.2.1_git20220924-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gcc-go"]
+]
+depends: [
+  "gcc" {= "12.2.1_git20220924-r4"}
+  "gmp"
+  "libgo"
+  "libgo" {= "12.2.1_git20220924-r4"}
+  "mpc1"
+  "mpfr4"
+  "musl"
+  "zlib"
+  ("isl24" | "isl25")
+  ("yash-binsh" | "busybox-binsh" | "dash-binsh")
+]
+conflicts: [
+  "go"
+]
+extra-source "gcc-go-12.2.1_git20220924-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gcc-go-12.2.1_git20220924-r4.apk"
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add qemu-guest-agent-2.8.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del qemu-guest-agent"]
+]
+depends: [
+  "glib"
+  "libgcc"
+  "musl"
+]
+extra-source "qemu-guest-agent-2.8.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/qemu-guest-agent-2.8.1-r1.apk"
+}

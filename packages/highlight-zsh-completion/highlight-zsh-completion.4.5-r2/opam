@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add highlight-zsh-completion-4.5-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del highlight-zsh-completion"]
+]
+extra-source "highlight-zsh-completion-4.5-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/highlight-zsh-completion-4.5-r2.apk"
+}

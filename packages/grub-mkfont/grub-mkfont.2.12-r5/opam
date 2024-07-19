@@ -8,10 +8,9 @@ remove: [
 depends: [
   "device-mapper-libs"
   "freetype"
-  "grub"
+  "grub" {= "2.12-r5"}
   "musl"
 ]
-
 extra-source "grub-mkfont-2.12-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/grub-mkfont-2.12-r5.apk"
 }

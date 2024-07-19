@@ -10,9 +10,8 @@ depends: [
   "py3-packaging"
   "py3-pluggy"
   "py3-py"
-  "python3"
+  "python3" {>= "3.12"}
 ]
-
 extra-source "py3-pytest-pyc-8.2.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/py3-pytest-pyc-8.2.2-r0.apk"
 }

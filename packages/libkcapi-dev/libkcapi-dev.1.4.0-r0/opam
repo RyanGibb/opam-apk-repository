@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libkcapi-dev-1.4.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libkcapi-dev"]
+]
+depends: [
+  "libkcapi" {= "1.4.0-r0"}
+  "pkgconf"
+]
+extra-source "libkcapi-dev-1.4.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/libkcapi-dev-1.4.0-r0.apk"
+}

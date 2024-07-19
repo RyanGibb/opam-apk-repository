@@ -9,7 +9,6 @@ depends: [
   "libxcb"
   "musl"
 ]
-
 extra-source "xcb-util-0.4.1-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/xcb-util-0.4.1-r3.apk"
 }

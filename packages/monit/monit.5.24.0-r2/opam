@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add monit-5.24.0-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del monit"]
+]
+depends: [
+  "libressl2.6-libcrypto"
+  "libressl2.6-libssl"
+  "musl"
+  "zlib"
+]
+extra-source "monit-5.24.0-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/monit-5.24.0-r2.apk"
+}

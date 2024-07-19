@@ -11,7 +11,6 @@ depends: [
   "perl-namespace-clean"
   "perl-sub-identify"
 ]
-
 extra-source "perl-namespace-autoclean-0.29-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-namespace-autoclean-0.29-r3.apk"
 }

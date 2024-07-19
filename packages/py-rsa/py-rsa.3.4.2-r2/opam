@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py-rsa-3.4.2-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py-rsa"]
+]
+depends: [
+  "py-asn1"
+]
+extra-source "py-rsa-3.4.2-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/py-rsa-3.4.2-r2.apk"
+}

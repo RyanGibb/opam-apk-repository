@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add smokeping-2.7.3-r7.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del smokeping"]
+]
+depends: [
+  "busybox"
+  "fping"
+  "perl"
+  "perl-cgi"
+  "perl-cgi-fast"
+  "perl-cgi-session"
+  "perl-config-grammar"
+  "perl-data-hexdump"
+  "perl-digest-hmac"
+  "perl-fcgi"
+  "perl-io-socket-ssl"
+  "perl-io-tty"
+  "perl-ldap"
+  "perl-libwww"
+  "perl-mozilla-ca"
+  "perl-net-dns"
+  "perl-net-ip"
+  "perl-net-openssh"
+  "perl-net-snmp"
+  "perl-net-telnet"
+  "perl-rrd"
+  "perl-snmp-session"
+  "perl-text-soundex"
+  "perl-uri"
+  "rrdtool"
+  "ttf-dejavu"
+]
+extra-source "smokeping-2.7.3-r7.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/smokeping-2.7.3-r7.apk"
+}

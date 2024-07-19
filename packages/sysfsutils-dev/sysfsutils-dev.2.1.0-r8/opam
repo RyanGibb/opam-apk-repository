@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add sysfsutils-dev-2.1.0-r8.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del sysfsutils-dev"]
+]
+depends: [
+  "sysfsutils" {= "2.1.0-r8"}
+]
+extra-source "sysfsutils-dev-2.1.0-r8.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/sysfsutils-dev-2.1.0-r8.apk"
+}

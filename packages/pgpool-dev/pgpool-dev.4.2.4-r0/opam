@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add pgpool-dev-4.2.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del pgpool-dev"]
+]
+depends: [
+  "pgpool" {= "4.2.4-r0"}
+]
+extra-source "pgpool-dev-4.2.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/pgpool-dev-4.2.4-r0.apk"
+}

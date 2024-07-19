@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add g++-10.3.1_git20211027-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del g++"]
+]
+depends: [
+  "gcc" {= "10.3.1_git20211027-r0"}
+  "gmp"
+  "isl22"
+  "libc-dev"
+  "libstdc++" {= "10.3.1_git20211027-r0"}
+  "mpc1"
+  "mpfr4"
+  "musl"
+  "zlib"
+]
+extra-source "g++-10.3.1_git20211027-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/g++-10.3.1_git20211027-r0.apk"
+}

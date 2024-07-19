@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add spamassassin-3.4.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del spamassassin"]
+]
+depends: [
+  "gnupg1"
+  "musl"
+  "perl"
+  "perl-db_file"
+  "perl-digest-sha1"
+  "perl-html-parser"
+  "perl-io-compress"
+  "perl-libwww"
+  "perl-mail-dkim"
+  "perl-net-dns"
+  "perl-netaddr-ip"
+  "perl-time-hires"
+  "perl-uri"
+  "zlib"
+]
+extra-source "spamassassin-3.4.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/spamassassin-3.4.0-r0.apk"
+}

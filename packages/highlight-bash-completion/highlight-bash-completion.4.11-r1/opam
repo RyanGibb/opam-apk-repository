@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del highlight-bash-completion"]
 ]
-
-
 extra-source "highlight-bash-completion-4.11-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/highlight-bash-completion-4.11-r1.apk"
 }

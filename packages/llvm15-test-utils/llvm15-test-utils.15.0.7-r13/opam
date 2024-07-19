@@ -10,8 +10,8 @@ depends: [
   "libstdc++"
   "musl"
   "python3"
+  "python3" {>= "3.12"}
 ]
-
 extra-source "llvm15-test-utils-15.0.7-r13.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/llvm15-test-utils-15.0.7-r13.apk"
 }

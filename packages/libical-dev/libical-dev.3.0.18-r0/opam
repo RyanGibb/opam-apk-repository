@@ -9,11 +9,10 @@ depends: [
   "glib-dev"
   "gobject-introspection-dev"
   "icu-dev"
-  "libical"
+  "libical" {= "3.0.18-r0"}
   "libxml2-dev"
   "pkgconf"
 ]
-
 extra-source "libical-dev-3.0.18-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libical-dev-3.0.18-r0.apk"
 }

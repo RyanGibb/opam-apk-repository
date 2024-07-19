@@ -10,7 +10,6 @@ depends: [
   "libpq"
   "musl"
 ]
-
 extra-source "bacula-pgsql-13.0.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/bacula-pgsql-13.0.3-r0.apk"
 }

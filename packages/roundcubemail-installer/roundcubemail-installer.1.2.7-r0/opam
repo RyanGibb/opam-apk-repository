@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add roundcubemail-installer-1.2.7-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del roundcubemail-installer"]
+]
+depends: [
+  "php5"
+  "php5-dom"
+  "php5-exif"
+  "php5-imap"
+  "php5-json"
+  "php5-openssl"
+  "php5-pear-auth_sasl"
+  "php5-pear-mail_mime"
+  "php5-pear-net_idna2"
+  "php5-pear-net_smtp"
+  "php5-xml"
+]
+extra-source "roundcubemail-installer-1.2.7-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/roundcubemail-installer-1.2.7-r0.apk"
+}

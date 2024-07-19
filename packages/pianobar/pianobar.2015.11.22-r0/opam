@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add pianobar-2015.11.22-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del pianobar"]
+]
+depends: [
+  "ffmpeg-libs"
+  "json-c"
+  "libao"
+  "libcurl"
+  "libgcrypt"
+  "musl"
+]
+extra-source "pianobar-2015.11.22-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/pianobar-2015.11.22-r0.apk"
+}

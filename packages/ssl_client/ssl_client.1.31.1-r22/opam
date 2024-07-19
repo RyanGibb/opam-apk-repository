@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ssl_client-1.31.1-r22.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ssl_client"]
+]
+depends: [
+  "libtls-standalone"
+  "musl"
+]
+extra-source "ssl_client-1.31.1-r22.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/ssl_client-1.31.1-r22.apk"
+}

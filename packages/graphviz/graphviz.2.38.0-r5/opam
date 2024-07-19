@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add graphviz-2.38.0-r5.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del graphviz"]
+]
+depends: [
+  "busybox"
+  "cairo"
+  "expat"
+  "fontconfig"
+  "freetype"
+  "glib"
+  "libgcc"
+  "libintl"
+  "libltdl"
+  "libstdc++"
+  "libx11"
+  "libxrender"
+  "musl"
+  "pango"
+  "zlib"
+]
+extra-source "graphviz-2.38.0-r5.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/graphviz-2.38.0-r5.apk"
+}

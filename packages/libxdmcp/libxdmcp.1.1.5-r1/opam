@@ -9,7 +9,6 @@ depends: [
   "libbsd"
   "musl"
 ]
-
 extra-source "libxdmcp-1.1.5-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libxdmcp-1.1.5-r1.apk"
 }

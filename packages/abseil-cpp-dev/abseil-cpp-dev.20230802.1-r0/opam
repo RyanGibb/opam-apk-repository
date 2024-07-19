@@ -6,108 +6,107 @@ remove: [
   ["sh" "-c" "sudo apk del abseil-cpp-dev"]
 ]
 depends: [
-  "abseil-cpp-atomic-hook-test-helper"
-  "abseil-cpp-bad-any-cast-impl"
-  "abseil-cpp-bad-optional-access"
-  "abseil-cpp-bad-variant-access"
-  "abseil-cpp-base"
-  "abseil-cpp-city"
-  "abseil-cpp-civil-time"
-  "abseil-cpp-cord"
-  "abseil-cpp-cord-internal"
-  "abseil-cpp-cordz-functions"
-  "abseil-cpp-cordz-handle"
-  "abseil-cpp-cordz-info"
-  "abseil-cpp-cordz-sample-token"
-  "abseil-cpp-crc-cord-state"
-  "abseil-cpp-crc-cpu-detect"
-  "abseil-cpp-crc-internal"
-  "abseil-cpp-crc32c"
-  "abseil-cpp-debugging-internal"
-  "abseil-cpp-demangle-internal"
-  "abseil-cpp-die-if-null"
-  "abseil-cpp-examine-stack"
-  "abseil-cpp-exception-safety-testing"
-  "abseil-cpp-exponential-biased"
-  "abseil-cpp-failure-signal-handler"
-  "abseil-cpp-flags"
-  "abseil-cpp-flags-commandlineflag"
-  "abseil-cpp-flags-commandlineflag-internal"
-  "abseil-cpp-flags-config"
-  "abseil-cpp-flags-internal"
-  "abseil-cpp-flags-marshalling"
-  "abseil-cpp-flags-parse"
-  "abseil-cpp-flags-private-handle-accessor"
-  "abseil-cpp-flags-program-name"
-  "abseil-cpp-flags-reflection"
-  "abseil-cpp-flags-usage"
-  "abseil-cpp-flags-usage-internal"
-  "abseil-cpp-graphcycles-internal"
-  "abseil-cpp-hash"
-  "abseil-cpp-hash-generator-testing"
-  "abseil-cpp-hashtablez-sampler"
-  "abseil-cpp-int128"
-  "abseil-cpp-kernel-timeout-internal"
-  "abseil-cpp-leak-check"
-  "abseil-cpp-log-entry"
-  "abseil-cpp-log-flags"
-  "abseil-cpp-log-globals"
-  "abseil-cpp-log-initialize"
-  "abseil-cpp-log-internal-check-op"
-  "abseil-cpp-log-internal-conditions"
-  "abseil-cpp-log-internal-format"
-  "abseil-cpp-log-internal-globals"
-  "abseil-cpp-log-internal-log-sink-set"
-  "abseil-cpp-log-internal-message"
-  "abseil-cpp-log-internal-nullguard"
-  "abseil-cpp-log-internal-proto"
-  "abseil-cpp-log-internal-test-actions"
-  "abseil-cpp-log-internal-test-helpers"
-  "abseil-cpp-log-internal-test-matchers"
-  "abseil-cpp-log-severity"
-  "abseil-cpp-log-sink"
-  "abseil-cpp-low-level-hash"
-  "abseil-cpp-malloc-internal"
-  "abseil-cpp-per-thread-sem-test-common"
-  "abseil-cpp-periodic-sampler"
-  "abseil-cpp-pow10-helper"
-  "abseil-cpp-random-distributions"
-  "abseil-cpp-random-internal-distribution-test-util"
-  "abseil-cpp-random-internal-platform"
-  "abseil-cpp-random-internal-pool-urbg"
-  "abseil-cpp-random-internal-randen"
-  "abseil-cpp-random-internal-randen-hwaes"
-  "abseil-cpp-random-internal-randen-hwaes-impl"
-  "abseil-cpp-random-internal-randen-slow"
-  "abseil-cpp-random-internal-seed-material"
-  "abseil-cpp-random-seed-gen-exception"
-  "abseil-cpp-random-seed-sequences"
-  "abseil-cpp-raw-hash-set"
-  "abseil-cpp-raw-logging-internal"
-  "abseil-cpp-scoped-mock-log"
-  "abseil-cpp-scoped-set-env"
-  "abseil-cpp-spinlock-test-common"
-  "abseil-cpp-spinlock-wait"
-  "abseil-cpp-stack-consumption"
-  "abseil-cpp-stacktrace"
-  "abseil-cpp-status"
-  "abseil-cpp-statusor"
-  "abseil-cpp-str-format-internal"
-  "abseil-cpp-strerror"
-  "abseil-cpp-string-view"
-  "abseil-cpp-strings"
-  "abseil-cpp-strings-internal"
-  "abseil-cpp-symbolize"
-  "abseil-cpp-synchronization"
-  "abseil-cpp-test-instance-tracker"
-  "abseil-cpp-throw-delegate"
-  "abseil-cpp-time"
-  "abseil-cpp-time-internal-test-util"
-  "abseil-cpp-time-zone"
+  "abseil-cpp-atomic-hook-test-helper" {= "20230802.1-r0"}
+  "abseil-cpp-bad-any-cast-impl" {= "20230802.1-r0"}
+  "abseil-cpp-bad-optional-access" {= "20230802.1-r0"}
+  "abseil-cpp-bad-variant-access" {= "20230802.1-r0"}
+  "abseil-cpp-base" {= "20230802.1-r0"}
+  "abseil-cpp-city" {= "20230802.1-r0"}
+  "abseil-cpp-civil-time" {= "20230802.1-r0"}
+  "abseil-cpp-cord" {= "20230802.1-r0"}
+  "abseil-cpp-cord-internal" {= "20230802.1-r0"}
+  "abseil-cpp-cordz-functions" {= "20230802.1-r0"}
+  "abseil-cpp-cordz-handle" {= "20230802.1-r0"}
+  "abseil-cpp-cordz-info" {= "20230802.1-r0"}
+  "abseil-cpp-cordz-sample-token" {= "20230802.1-r0"}
+  "abseil-cpp-crc-cord-state" {= "20230802.1-r0"}
+  "abseil-cpp-crc-cpu-detect" {= "20230802.1-r0"}
+  "abseil-cpp-crc-internal" {= "20230802.1-r0"}
+  "abseil-cpp-crc32c" {= "20230802.1-r0"}
+  "abseil-cpp-debugging-internal" {= "20230802.1-r0"}
+  "abseil-cpp-demangle-internal" {= "20230802.1-r0"}
+  "abseil-cpp-die-if-null" {= "20230802.1-r0"}
+  "abseil-cpp-examine-stack" {= "20230802.1-r0"}
+  "abseil-cpp-exception-safety-testing" {= "20230802.1-r0"}
+  "abseil-cpp-exponential-biased" {= "20230802.1-r0"}
+  "abseil-cpp-failure-signal-handler" {= "20230802.1-r0"}
+  "abseil-cpp-flags" {= "20230802.1-r0"}
+  "abseil-cpp-flags-commandlineflag" {= "20230802.1-r0"}
+  "abseil-cpp-flags-commandlineflag-internal" {= "20230802.1-r0"}
+  "abseil-cpp-flags-config" {= "20230802.1-r0"}
+  "abseil-cpp-flags-internal" {= "20230802.1-r0"}
+  "abseil-cpp-flags-marshalling" {= "20230802.1-r0"}
+  "abseil-cpp-flags-parse" {= "20230802.1-r0"}
+  "abseil-cpp-flags-private-handle-accessor" {= "20230802.1-r0"}
+  "abseil-cpp-flags-program-name" {= "20230802.1-r0"}
+  "abseil-cpp-flags-reflection" {= "20230802.1-r0"}
+  "abseil-cpp-flags-usage" {= "20230802.1-r0"}
+  "abseil-cpp-flags-usage-internal" {= "20230802.1-r0"}
+  "abseil-cpp-graphcycles-internal" {= "20230802.1-r0"}
+  "abseil-cpp-hash" {= "20230802.1-r0"}
+  "abseil-cpp-hash-generator-testing" {= "20230802.1-r0"}
+  "abseil-cpp-hashtablez-sampler" {= "20230802.1-r0"}
+  "abseil-cpp-int128" {= "20230802.1-r0"}
+  "abseil-cpp-kernel-timeout-internal" {= "20230802.1-r0"}
+  "abseil-cpp-leak-check" {= "20230802.1-r0"}
+  "abseil-cpp-log-entry" {= "20230802.1-r0"}
+  "abseil-cpp-log-flags" {= "20230802.1-r0"}
+  "abseil-cpp-log-globals" {= "20230802.1-r0"}
+  "abseil-cpp-log-initialize" {= "20230802.1-r0"}
+  "abseil-cpp-log-internal-check-op" {= "20230802.1-r0"}
+  "abseil-cpp-log-internal-conditions" {= "20230802.1-r0"}
+  "abseil-cpp-log-internal-format" {= "20230802.1-r0"}
+  "abseil-cpp-log-internal-globals" {= "20230802.1-r0"}
+  "abseil-cpp-log-internal-log-sink-set" {= "20230802.1-r0"}
+  "abseil-cpp-log-internal-message" {= "20230802.1-r0"}
+  "abseil-cpp-log-internal-nullguard" {= "20230802.1-r0"}
+  "abseil-cpp-log-internal-proto" {= "20230802.1-r0"}
+  "abseil-cpp-log-internal-test-actions" {= "20230802.1-r0"}
+  "abseil-cpp-log-internal-test-helpers" {= "20230802.1-r0"}
+  "abseil-cpp-log-internal-test-matchers" {= "20230802.1-r0"}
+  "abseil-cpp-log-severity" {= "20230802.1-r0"}
+  "abseil-cpp-log-sink" {= "20230802.1-r0"}
+  "abseil-cpp-low-level-hash" {= "20230802.1-r0"}
+  "abseil-cpp-malloc-internal" {= "20230802.1-r0"}
+  "abseil-cpp-per-thread-sem-test-common" {= "20230802.1-r0"}
+  "abseil-cpp-periodic-sampler" {= "20230802.1-r0"}
+  "abseil-cpp-pow10-helper" {= "20230802.1-r0"}
+  "abseil-cpp-random-distributions" {= "20230802.1-r0"}
+  "abseil-cpp-random-internal-distribution-test-util" {= "20230802.1-r0"}
+  "abseil-cpp-random-internal-platform" {= "20230802.1-r0"}
+  "abseil-cpp-random-internal-pool-urbg" {= "20230802.1-r0"}
+  "abseil-cpp-random-internal-randen" {= "20230802.1-r0"}
+  "abseil-cpp-random-internal-randen-hwaes" {= "20230802.1-r0"}
+  "abseil-cpp-random-internal-randen-hwaes-impl" {= "20230802.1-r0"}
+  "abseil-cpp-random-internal-randen-slow" {= "20230802.1-r0"}
+  "abseil-cpp-random-internal-seed-material" {= "20230802.1-r0"}
+  "abseil-cpp-random-seed-gen-exception" {= "20230802.1-r0"}
+  "abseil-cpp-random-seed-sequences" {= "20230802.1-r0"}
+  "abseil-cpp-raw-hash-set" {= "20230802.1-r0"}
+  "abseil-cpp-raw-logging-internal" {= "20230802.1-r0"}
+  "abseil-cpp-scoped-mock-log" {= "20230802.1-r0"}
+  "abseil-cpp-scoped-set-env" {= "20230802.1-r0"}
+  "abseil-cpp-spinlock-test-common" {= "20230802.1-r0"}
+  "abseil-cpp-spinlock-wait" {= "20230802.1-r0"}
+  "abseil-cpp-stack-consumption" {= "20230802.1-r0"}
+  "abseil-cpp-stacktrace" {= "20230802.1-r0"}
+  "abseil-cpp-status" {= "20230802.1-r0"}
+  "abseil-cpp-statusor" {= "20230802.1-r0"}
+  "abseil-cpp-str-format-internal" {= "20230802.1-r0"}
+  "abseil-cpp-strerror" {= "20230802.1-r0"}
+  "abseil-cpp-string-view" {= "20230802.1-r0"}
+  "abseil-cpp-strings" {= "20230802.1-r0"}
+  "abseil-cpp-strings-internal" {= "20230802.1-r0"}
+  "abseil-cpp-symbolize" {= "20230802.1-r0"}
+  "abseil-cpp-synchronization" {= "20230802.1-r0"}
+  "abseil-cpp-test-instance-tracker" {= "20230802.1-r0"}
+  "abseil-cpp-throw-delegate" {= "20230802.1-r0"}
+  "abseil-cpp-time" {= "20230802.1-r0"}
+  "abseil-cpp-time-internal-test-util" {= "20230802.1-r0"}
+  "abseil-cpp-time-zone" {= "20230802.1-r0"}
   "linux-headers"
   "pkgconf"
 ]
-
 extra-source "abseil-cpp-dev-20230802.1-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/abseil-cpp-dev-20230802.1-r0.apk"
 }

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gnupg-scdaemon-2.2.19-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gnupg-scdaemon"]
+]
+depends: [
+  "busybox"
+  "gnupg1"
+  "libassuan"
+  "libgcrypt"
+  "libgpg-error"
+  "libksba"
+  "libusb"
+  "musl"
+  "npth"
+]
+extra-source "gnupg-scdaemon-2.2.19-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/gnupg-scdaemon-2.2.19-r0.apk"
+}

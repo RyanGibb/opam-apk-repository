@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add device-mapper-event-libs-2.02.182-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del device-mapper-event-libs"]
+]
+depends: [
+  "device-mapper-libs"
+  "musl"
+]
+extra-source "device-mapper-event-libs-2.02.182-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/device-mapper-event-libs-2.02.182-r0.apk"
+}

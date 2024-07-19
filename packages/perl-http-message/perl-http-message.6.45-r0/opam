@@ -7,14 +7,13 @@ remove: [
 ]
 depends: [
   "perl"
-  "perl-clone"
+  "perl-clone" {>= "0.46"}
   "perl-encode-locale"
   "perl-http-date"
   "perl-io-html"
   "perl-lwp-mediatypes"
   "perl-uri"
 ]
-
 extra-source "perl-http-message-6.45-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-http-message-6.45-r0.apk"
 }

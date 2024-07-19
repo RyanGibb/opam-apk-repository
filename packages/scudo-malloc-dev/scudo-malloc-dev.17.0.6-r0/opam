@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del scudo-malloc-dev"]
 ]
 depends: [
-  "scudo-malloc"
+  "scudo-malloc" {= "17.0.6-r0"}
 ]
-
 extra-source "scudo-malloc-dev-17.0.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/scudo-malloc-dev-17.0.6-r0.apk"
 }

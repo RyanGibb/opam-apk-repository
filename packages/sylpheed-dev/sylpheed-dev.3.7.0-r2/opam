@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add sylpheed-dev-3.7.0-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del sylpheed-dev"]
+]
+depends: [
+  "sylpheed" {= "3.7.0-r2"}
+]
+extra-source "sylpheed-dev-3.7.0-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/sylpheed-dev-3.7.0-r2.apk"
+}

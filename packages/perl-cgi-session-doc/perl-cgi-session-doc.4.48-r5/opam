@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-cgi-session-doc"]
 ]
-
-
 extra-source "perl-cgi-session-doc-4.48-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-cgi-session-doc-4.48-r5.apk"
 }

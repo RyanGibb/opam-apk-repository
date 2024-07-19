@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add samba-server-4.18.9-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del samba-server"]
+]
+depends: [
+  "cups-libs"
+  "dbus-libs"
+  "gnutls"
+  "libldap"
+  "liburing"
+  "libwbclient"
+  "musl"
+  "popt"
+  "samba-client-libs"
+  "samba-common" {= "4.18.9-r0"}
+  "samba-common-server-libs"
+  "samba-libs"
+  "samba-util-libs"
+  "talloc"
+  "tdb-libs"
+  "tevent"
+]
+extra-source "samba-server-4.18.9-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/samba-server-4.18.9-r0.apk"
+}

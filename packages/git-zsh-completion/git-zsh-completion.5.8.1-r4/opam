@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add git-zsh-completion-5.8.1-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del git-zsh-completion"]
+]
+depends: [
+  "zsh"
+]
+extra-source "git-zsh-completion-5.8.1-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/git-zsh-completion-5.8.1-r4.apk"
+}

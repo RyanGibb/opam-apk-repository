@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add drbd9-hardened-4.9.65-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del drbd9-hardened"]
+]
+depends: [
+  "linux-hardened" {= "4.9.65-r1"}
+]
+extra-source "drbd9-hardened-4.9.65-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/drbd9-hardened-4.9.65-r1.apk"
+}

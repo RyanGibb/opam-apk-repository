@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libfido2-doc-1.8.0-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libfido2-doc"]
+]
+extra-source "libfido2-doc-1.8.0-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libfido2-doc-1.8.0-r2.apk"
+}

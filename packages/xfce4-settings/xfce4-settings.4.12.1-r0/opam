@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xfce4-settings-4.12.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xfce4-settings"]
+]
+depends: [
+  "cairo"
+  "dbus-glib"
+  "dbus-libs"
+  "exo"
+  "fontconfig"
+  "garcon"
+  "gdk-pixbuf"
+  "glib"
+  "gtk+2.0"
+  "libintl"
+  "libnotify"
+  "libx11"
+  "libxcursor"
+  "libxfce4ui"
+  "libxfce4util"
+  "libxi"
+  "libxklavier"
+  "libxrandr"
+  "musl"
+  "pango"
+  "upower"
+  "xfconf"
+]
+extra-source "xfce4-settings-4.12.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/xfce4-settings-4.12.1-r0.apk"
+}

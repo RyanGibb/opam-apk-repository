@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del byacc-doc"]
 ]
-
-
 extra-source "byacc-doc-20240109-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/byacc-doc-20240109-r0.apk"
 }

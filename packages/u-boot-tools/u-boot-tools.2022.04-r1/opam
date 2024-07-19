@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add u-boot-tools-2022.04-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del u-boot-tools"]
+]
+depends: [
+  "libcrypto1.1"
+  "libssl1.1"
+  "musl"
+]
+extra-source "u-boot-tools-2022.04-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/u-boot-tools-2022.04-r1.apk"
+}

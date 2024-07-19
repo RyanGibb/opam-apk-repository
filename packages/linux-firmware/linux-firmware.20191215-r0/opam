@@ -1,0 +1,97 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add linux-firmware-20191215-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del linux-firmware"]
+]
+depends: [
+  "linux-firmware-3com" {= "20191215-r0"}
+  "linux-firmware-acenic" {= "20191215-r0"}
+  "linux-firmware-adaptec" {= "20191215-r0"}
+  "linux-firmware-advansys" {= "20191215-r0"}
+  "linux-firmware-amd" {= "20191215-r0"}
+  "linux-firmware-amd-ucode" {= "20191215-r0"}
+  "linux-firmware-amdgpu" {= "20191215-r0"}
+  "linux-firmware-ar3k" {= "20191215-r0"}
+  "linux-firmware-ath10k" {= "20191215-r0"}
+  "linux-firmware-ath6k" {= "20191215-r0"}
+  "linux-firmware-ath9k_htc" {= "20191215-r0"}
+  "linux-firmware-atmel" {= "20191215-r0"}
+  "linux-firmware-atusb" {= "20191215-r0"}
+  "linux-firmware-av7110" {= "20191215-r0"}
+  "linux-firmware-bnx2" {= "20191215-r0"}
+  "linux-firmware-bnx2x" {= "20191215-r0"}
+  "linux-firmware-brcm" {= "20191215-r0"}
+  "linux-firmware-cadence" {= "20191215-r0"}
+  "linux-firmware-cavium" {= "20191215-r0"}
+  "linux-firmware-cis" {= "20191215-r0"}
+  "linux-firmware-cpia2" {= "20191215-r0"}
+  "linux-firmware-cxgb3" {= "20191215-r0"}
+  "linux-firmware-cxgb4" {= "20191215-r0"}
+  "linux-firmware-dabusb" {= "20191215-r0"}
+  "linux-firmware-dpaa2" {= "20191215-r0"}
+  "linux-firmware-dsp56k" {= "20191215-r0"}
+  "linux-firmware-e100" {= "20191215-r0"}
+  "linux-firmware-edgeport" {= "20191215-r0"}
+  "linux-firmware-emi26" {= "20191215-r0"}
+  "linux-firmware-emi62" {= "20191215-r0"}
+  "linux-firmware-ene-ub6250" {= "20191215-r0"}
+  "linux-firmware-ess" {= "20191215-r0"}
+  "linux-firmware-go7007" {= "20191215-r0"}
+  "linux-firmware-i915" {= "20191215-r0"}
+  "linux-firmware-imx" {= "20191215-r0"}
+  "linux-firmware-inside-secure" {= "20191215-r0"}
+  "linux-firmware-intel" {= "20191215-r0"}
+  "linux-firmware-isci" {= "20191215-r0"}
+  "linux-firmware-kaweth" {= "20191215-r0"}
+  "linux-firmware-keyspan" {= "20191215-r0"}
+  "linux-firmware-keyspan_pda" {= "20191215-r0"}
+  "linux-firmware-korg" {= "20191215-r0"}
+  "linux-firmware-libertas" {= "20191215-r0"}
+  "linux-firmware-liquidio" {= "20191215-r0"}
+  "linux-firmware-matrox" {= "20191215-r0"}
+  "linux-firmware-mediatek" {= "20191215-r0"}
+  "linux-firmware-mellanox" {= "20191215-r0"}
+  "linux-firmware-meson" {= "20191215-r0"}
+  "linux-firmware-microchip" {= "20191215-r0"}
+  "linux-firmware-moxa" {= "20191215-r0"}
+  "linux-firmware-mrvl" {= "20191215-r0"}
+  "linux-firmware-mwl8k" {= "20191215-r0"}
+  "linux-firmware-mwlwifi" {= "20191215-r0"}
+  "linux-firmware-myricom" {= "20191215-r0"}
+  "linux-firmware-netronome" {= "20191215-r0"}
+  "linux-firmware-nvidia" {= "20191215-r0"}
+  "linux-firmware-ositech" {= "20191215-r0"}
+  "linux-firmware-other" {= "20191215-r0"}
+  "linux-firmware-qca" {= "20191215-r0"}
+  "linux-firmware-qcom" {= "20191215-r0"}
+  "linux-firmware-qed" {= "20191215-r0"}
+  "linux-firmware-qlogic" {= "20191215-r0"}
+  "linux-firmware-r128" {= "20191215-r0"}
+  "linux-firmware-radeon" {= "20191215-r0"}
+  "linux-firmware-rockchip" {= "20191215-r0"}
+  "linux-firmware-rsi" {= "20191215-r0"}
+  "linux-firmware-rtl8192e" {= "20191215-r0"}
+  "linux-firmware-rtl_bt" {= "20191215-r0"}
+  "linux-firmware-rtl_nic" {= "20191215-r0"}
+  "linux-firmware-rtlwifi" {= "20191215-r0"}
+  "linux-firmware-rtw88" {= "20191215-r0"}
+  "linux-firmware-sb16" {= "20191215-r0"}
+  "linux-firmware-slicoss" {= "20191215-r0"}
+  "linux-firmware-sun" {= "20191215-r0"}
+  "linux-firmware-sxg" {= "20191215-r0"}
+  "linux-firmware-tehuti" {= "20191215-r0"}
+  "linux-firmware-ti-connectivity" {= "20191215-r0"}
+  "linux-firmware-ti-keystone" {= "20191215-r0"}
+  "linux-firmware-tigon" {= "20191215-r0"}
+  "linux-firmware-ttusb-budget" {= "20191215-r0"}
+  "linux-firmware-ueagle-atm" {= "20191215-r0"}
+  "linux-firmware-vicam" {= "20191215-r0"}
+  "linux-firmware-vxge" {= "20191215-r0"}
+  "linux-firmware-yam" {= "20191215-r0"}
+  "linux-firmware-yamaha" {= "20191215-r0"}
+]
+extra-source "linux-firmware-20191215-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/linux-firmware-20191215-r0.apk"
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add bind-dnssec-tools-9.11.6_p1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del bind-dnssec-tools"]
+]
+depends: [
+  "py3-bind" {= "9.11.6_p1-r1"}
+]
+extra-source "bind-dnssec-tools-9.11.6_p1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/bind-dnssec-tools-9.11.6_p1-r1.apk"
+}

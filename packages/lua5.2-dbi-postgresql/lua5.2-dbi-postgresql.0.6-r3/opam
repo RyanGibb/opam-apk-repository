@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lua5.2-dbi-postgresql-0.6-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lua5.2-dbi-postgresql"]
+]
+depends: [
+  "libpq"
+  "lua5.2"
+  "musl"
+]
+extra-source "lua5.2-dbi-postgresql-0.6-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/lua5.2-dbi-postgresql-0.6-r3.apk"
+}

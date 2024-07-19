@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add wxgtk2.8-2.8.12.1-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del wxgtk2.8"]
+]
+depends: [
+  "gdk-pixbuf"
+  "glib"
+  "gtk+2.0"
+  "libgcc"
+  "libjpeg-turbo"
+  "libpng"
+  "libsm"
+  "libstdc++"
+  "libxinerama"
+  "libxxf86vm"
+  "musl"
+  "pango"
+  "sdl"
+  "tiff"
+  "wxgtk2.8-base"
+]
+extra-source "wxgtk2.8-2.8.12.1-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/wxgtk2.8-2.8.12.1-r4.apk"
+}

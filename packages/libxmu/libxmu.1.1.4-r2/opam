@@ -11,7 +11,6 @@ depends: [
   "libxt"
   "musl"
 ]
-
 extra-source "libxmu-1.1.4-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libxmu-1.1.4-r2.apk"
 }

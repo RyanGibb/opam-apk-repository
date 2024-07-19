@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del openssl-libs-static"]
 ]
-
-
 extra-source "openssl-libs-static-3.3.1-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/openssl-libs-static-3.3.1-r3.apk"
 }

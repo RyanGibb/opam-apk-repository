@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xorg-server-1.17.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xorg-server"]
+]
+depends: [
+  "dbus-x11"
+  "font-cursor-misc"
+  "font-misc-misc"
+  "libcrypto1.0"
+  "libdrm"
+  "libepoxy"
+  "libpciaccess"
+  "libudev"
+  "libxau"
+  "libxdmcp"
+  "libxfont"
+  "libxshmfence"
+  "mesa-gbm"
+  "mesa-gl"
+  "musl"
+  "pixman"
+  "xinit"
+  "xkbcomp"
+  "xkeyboard-config"
+]
+extra-source "xorg-server-1.17.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/xorg-server-1.17.2-r0.apk"
+}

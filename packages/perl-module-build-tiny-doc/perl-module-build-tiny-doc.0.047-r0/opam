@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-module-build-tiny-doc"]
 ]
-
-
 extra-source "perl-module-build-tiny-doc-0.047-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-module-build-tiny-doc-0.047-r0.apk"
 }

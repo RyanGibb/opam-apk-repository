@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add font-unifont-15.1.04-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del font-unifont"]
+]
+extra-source "font-unifont-15.1.04-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/font-unifont-15.1.04-r0.apk"
+}

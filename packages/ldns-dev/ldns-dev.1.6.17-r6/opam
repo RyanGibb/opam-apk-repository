@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ldns-dev-1.6.17-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ldns-dev"]
+]
+depends: [
+  "ldns" {= "1.6.17-r6"}
+  "libressl-dev"
+  "pkgconf"
+  ("libressl-dev" | "openssl-dev")
+]
+extra-source "ldns-dev-1.6.17-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/ldns-dev-1.6.17-r6.apk"
+}

@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del tipidee-static"]
 ]
-
-
 extra-source "tipidee-static-0.0.4.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/tipidee-static-0.0.4.0-r1.apk"
 }

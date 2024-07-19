@@ -7,13 +7,12 @@ remove: [
 ]
 depends: [
   "json-c-dev"
-  "libnvme"
-  "libnvmemi"
+  "libnvme" {= "1.9-r0"}
+  "libnvmemi" {= "1.9-r0"}
   "linux-headers"
   "openssl-dev"
   "pkgconf"
 ]
-
 extra-source "libnvme-dev-1.9-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libnvme-dev-1.9-r0.apk"
 }

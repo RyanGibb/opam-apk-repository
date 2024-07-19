@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del inotify-tools-doc"]
 ]
-
-
 extra-source "inotify-tools-doc-4.23.9.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/inotify-tools-doc-4.23.9.0-r0.apk"
 }

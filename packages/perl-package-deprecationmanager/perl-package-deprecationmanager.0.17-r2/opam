@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-package-deprecationmanager-0.17-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-package-deprecationmanager"]
+]
+depends: [
+  "perl"
+  "perl-list-moreutils"
+  "perl-package-stash"
+  "perl-params-util"
+  "perl-sub-install"
+  "perl-sub-name"
+  "perl-test-fatal"
+  "perl-test-requires"
+  "perl-test-warnings"
+]
+extra-source "perl-package-deprecationmanager-0.17-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-package-deprecationmanager-0.17-r2.apk"
+}

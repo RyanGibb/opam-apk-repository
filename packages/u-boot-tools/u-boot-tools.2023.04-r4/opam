@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add u-boot-tools-2023.04-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del u-boot-tools"]
+]
+depends: [
+  "libcrypto3"
+  "libssl3"
+  "musl"
+]
+extra-source "u-boot-tools-2023.04-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/u-boot-tools-2023.04-r4.apk"
+}

@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del libxft-doc"]
 ]
-
-
 extra-source "libxft-doc-2.3.8-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libxft-doc-2.3.8-r3.apk"
 }

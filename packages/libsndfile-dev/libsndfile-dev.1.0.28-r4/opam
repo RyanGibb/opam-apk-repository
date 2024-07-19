@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libsndfile-dev-1.0.28-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libsndfile-dev"]
+]
+depends: [
+  "flac-dev"
+  "libogg-dev"
+  "libsndfile" {= "1.0.28-r4"}
+  "libvorbis-dev"
+  "pkgconf"
+]
+extra-source "libsndfile-dev-1.0.28-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/libsndfile-dev-1.0.28-r4.apk"
+}

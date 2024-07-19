@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add git-fast-import-2.43.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del git-fast-import"]
+]
+depends: [
+  "git" {= "2.43.4-r0"}
+]
+extra-source "git-fast-import-2.43.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/git-fast-import-2.43.4-r0.apk"
+}

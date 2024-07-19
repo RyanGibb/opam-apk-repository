@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xcb-proto-1.16.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xcb-proto"]
+]
+depends: [
+  "pkgconf"
+  "python3" {>= "3.11"}
+]
+extra-source "xcb-proto-1.16.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/xcb-proto-1.16.0-r0.apk"
+}

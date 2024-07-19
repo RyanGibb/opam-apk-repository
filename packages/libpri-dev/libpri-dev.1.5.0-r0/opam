@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libpri-dev-1.5.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libpri-dev"]
+]
+depends: [
+  "libpri" {= "1.5.0-r0"}
+]
+extra-source "libpri-dev-1.5.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/libpri-dev-1.5.0-r0.apk"
+}

@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ebtables-2.0.10.4-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ebtables"]
+]
+depends: [
+  "musl"
+]
+extra-source "ebtables-2.0.10.4-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/ebtables-2.0.10.4-r2.apk"
+}

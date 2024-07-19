@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ghostscript-9.10-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ghostscript"]
+]
+depends: [
+  "cups-libs"
+  "fontconfig"
+  "libjpeg-turbo"
+  "libpng"
+  "musl"
+  "tiff"
+  "zlib"
+]
+extra-source "ghostscript-9.10-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/ghostscript-9.10-r2.apk"
+}

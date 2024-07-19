@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-mime-base64-3.15-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-mime-base64"]
+]
+depends: [
+  "musl"
+]
+extra-source "perl-mime-base64-3.15-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/perl-mime-base64-3.15-r3.apk"
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add eudev-dev-3.1.5-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del eudev-dev"]
+]
+depends: [
+  "eudev" {= "3.1.5-r0"}
+  "pkgconfig"
+]
+extra-source "eudev-dev-3.1.5-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/eudev-dev-3.1.5-r0.apk"
+}

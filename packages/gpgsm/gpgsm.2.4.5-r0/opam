@@ -6,7 +6,7 @@ remove: [
   ["sh" "-c" "sudo apk del gpgsm"]
 ]
 depends: [
-  "gnupg-gpgconf"
+  "gnupg-gpgconf" {= "2.4.5-r0"}
   "libassuan"
   "libgcrypt"
   "libgpg-error"
@@ -14,7 +14,6 @@ depends: [
   "musl"
   "npth"
 ]
-
 extra-source "gpgsm-2.4.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/gpgsm-2.4.5-r0.apk"
 }

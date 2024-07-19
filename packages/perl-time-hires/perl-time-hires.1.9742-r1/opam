@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-time-hires-1.9742-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-time-hires"]
+]
+depends: [
+  "musl"
+]
+extra-source "perl-time-hires-1.9742-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/perl-time-hires-1.9742-r1.apk"
+}

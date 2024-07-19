@@ -1,0 +1,30 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libxfce4ui-4.12.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libxfce4ui"]
+]
+depends: [
+  "atk"
+  "cairo"
+  "dbus-glib"
+  "dbus-libs"
+  "fontconfig"
+  "freetype"
+  "gdk-pixbuf"
+  "glib"
+  "gtk+2.0"
+  "libice"
+  "libintl"
+  "libsm"
+  "libx11"
+  "libxfce4util"
+  "musl"
+  "pango"
+  "startup-notification"
+  "xfconf"
+]
+extra-source "libxfce4ui-4.12.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/libxfce4ui-4.12.1-r0.apk"
+}

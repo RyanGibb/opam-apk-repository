@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add eom-1.10.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del eom"]
+]
+depends: [
+  "atk"
+  "cairo"
+  "fontconfig"
+  "freetype"
+  "gdk-pixbuf"
+  "glib"
+  "gtk+2.0"
+  "lcms2"
+  "libexif"
+  "libintl"
+  "libjpeg-turbo"
+  "librsvg"
+  "libx11"
+  "libxml2"
+  "mate-desktop"
+  "mate-icon-theme"
+  "musl"
+  "pango"
+  "zlib"
+]
+extra-source "eom-1.10.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/eom-1.10.0-r0.apk"
+}

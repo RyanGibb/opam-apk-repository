@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gfortran-11.2.1_git20220219-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gfortran"]
+]
+depends: [
+  "gcc" {= "11.2.1_git20220219-r2"}
+  "gmp"
+  "isl22"
+  "libgfortran" {= "11.2.1_git20220219-r2"}
+  "libquadmath" {= "11.2.1_git20220219-r2"}
+  "mpc1"
+  "mpfr4"
+  "musl"
+  "zlib"
+]
+extra-source "gfortran-11.2.1_git20220219-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/gfortran-11.2.1_git20220219-r2.apk"
+}

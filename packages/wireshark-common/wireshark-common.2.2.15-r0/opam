@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add wireshark-common-2.2.15-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del wireshark-common"]
+]
+depends: [
+  "c-ares"
+  "glib"
+  "gnutls"
+  "libcap"
+  "libgcrypt"
+  "libgpg-error"
+  "libnl3"
+  "libpcap"
+  "musl"
+  "zlib"
+]
+extra-source "wireshark-common-2.2.15-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/wireshark-common-2.2.15-r0.apk"
+}

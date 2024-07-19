@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add guvcview-doc-2.0.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del guvcview-doc"]
+]
+extra-source "guvcview-doc-2.0.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/guvcview-doc-2.0.1-r1.apk"
+}

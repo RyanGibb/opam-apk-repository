@@ -9,7 +9,6 @@ depends: [
   "perl"
   "perl-uri"
 ]
-
 extra-source "perl-www-robotrules-6.02-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-www-robotrules-6.02-r5.apk"
 }

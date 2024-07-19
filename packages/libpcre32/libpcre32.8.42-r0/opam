@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libpcre32-8.42-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libpcre32"]
+]
+depends: [
+  "musl"
+]
+extra-source "libpcre32-8.42-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/libpcre32-8.42-r0.apk"
+}

@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add nautilus-2.32.2.1-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del nautilus"]
+]
+depends: [
+  "atk"
+  "busybox"
+  "cairo"
+  "fontconfig"
+  "freetype"
+  "gconf"
+  "gdk-pixbuf"
+  "glib"
+  "gnome-desktop"
+  "gtk+2.0"
+  "libice"
+  "libintl"
+  "libsm"
+  "libunique"
+  "libx11"
+  "libxml2"
+  "libxrender"
+  "musl"
+  "pango"
+  "zenity"
+]
+extra-source "nautilus-2.32.2.1-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/nautilus-2.32.2.1-r3.apk"
+}

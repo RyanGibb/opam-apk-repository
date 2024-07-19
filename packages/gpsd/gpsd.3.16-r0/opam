@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gpsd-3.16-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gpsd"]
+]
+depends: [
+  "libgcc"
+  "libstdc++"
+  "musl"
+]
+extra-source "gpsd-3.16-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/gpsd-3.16-r0.apk"
+}

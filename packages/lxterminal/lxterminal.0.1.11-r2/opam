@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lxterminal-0.1.11-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lxterminal"]
+]
+depends: [
+  "gdk-pixbuf"
+  "glib"
+  "gtk+2.0"
+  "libintl"
+  "libx11"
+  "musl"
+  "vte"
+]
+extra-source "lxterminal-0.1.11-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/lxterminal-0.1.11-r2.apk"
+}

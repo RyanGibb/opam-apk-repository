@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del fuse-doc"]
 ]
-
-
 extra-source "fuse-doc-2.9.9-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/fuse-doc-2.9.9-r5.apk"
 }

@@ -9,8 +9,8 @@ depends: [
   "libxml2"
   "musl"
   "python3"
+  "python3" {>= "3.12"}
 ]
-
 extra-source "py3-libxml2-2.12.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/py3-libxml2-2.12.7-r0.apk"
 }

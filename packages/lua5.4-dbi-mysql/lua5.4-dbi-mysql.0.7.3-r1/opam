@@ -10,7 +10,6 @@ depends: [
   "mariadb-connector-c"
   "musl"
 ]
-
 extra-source "lua5.4-dbi-mysql-0.7.3-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lua5.4-dbi-mysql-0.7.3-r1.apk"
 }

@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xfce4-cpufreq-plugin-1.1.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xfce4-cpufreq-plugin"]
+]
+depends: [
+  "atk"
+  "cairo"
+  "fontconfig"
+  "freetype"
+  "gdk-pixbuf"
+  "glib"
+  "gtk+2.0"
+  "libintl"
+  "libxfce4ui"
+  "libxfce4util"
+  "musl"
+  "pango"
+  "xfce4-panel"
+]
+extra-source "xfce4-cpufreq-plugin-1.1.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/xfce4-cpufreq-plugin-1.1.1-r1.apk"
+}

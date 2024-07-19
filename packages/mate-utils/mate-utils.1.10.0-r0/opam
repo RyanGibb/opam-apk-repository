@@ -1,0 +1,31 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mate-utils-1.10.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mate-utils"]
+]
+depends: [
+  "atk"
+  "cairo"
+  "fontconfig"
+  "freetype"
+  "gdk-pixbuf"
+  "glib"
+  "gtk+2.0"
+  "libcanberra"
+  "libcanberra-gtk2"
+  "libgtop"
+  "libice"
+  "libintl"
+  "libsm"
+  "libx11"
+  "libxext"
+  "mate-panel"
+  "musl"
+  "pango"
+  "zlib"
+]
+extra-source "mate-utils-1.10.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/mate-utils-1.10.0-r0.apk"
+}

@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xfburn-0.5.2-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xfburn"]
+]
+depends: [
+  "desktop-file-utils"
+  "exo"
+  "gdk-pixbuf"
+  "glib"
+  "gst-plugins-base0.10"
+  "gstreamer0.10"
+  "gtk+2.0"
+  "hicolor-icon-theme"
+  "libburn"
+  "libisofs"
+  "libxfce4ui"
+  "libxfce4util"
+  "musl"
+]
+extra-source "xfburn-0.5.2-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/xfburn-0.5.2-r1.apk"
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libcrystalhd-20130708-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libcrystalhd"]
+]
+depends: [
+  "libgcc"
+  "libstdc++"
+  "musl"
+]
+extra-source "libcrystalhd-20130708-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/libcrystalhd-20130708-r0.apk"
+}

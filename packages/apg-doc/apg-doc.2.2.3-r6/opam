@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add apg-doc-2.2.3-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del apg-doc"]
+]
+extra-source "apg-doc-2.2.3-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/apg-doc-2.2.3-r6.apk"
+}

@@ -16,7 +16,6 @@ depends: [
   "musl"
   "zlib"
 ]
-
 extra-source "nmap-7.95-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/nmap-7.95-r0.apk"
 }

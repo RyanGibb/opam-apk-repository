@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add sbsigntool-doc-0.9.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del sbsigntool-doc"]
+]
+extra-source "sbsigntool-doc-0.9.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/sbsigntool-doc-0.9.3-r0.apk"
+}

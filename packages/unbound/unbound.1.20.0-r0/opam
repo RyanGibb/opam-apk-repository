@@ -16,7 +16,6 @@ depends: [
   "unbound-libs"
   ("busybox-binsh" | "dash-binsh" | "yash-binsh")
 ]
-
 extra-source "unbound-1.20.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/unbound-1.20.0-r0.apk"
 }

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add qpdf-dev-5.1.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del qpdf-dev"]
+]
+depends: [
+  "pcre-dev"
+  "pkgconfig"
+  "qpdf" {= "5.1.2-r0"}
+  "qpdf-doc" {= "5.1.2-r0"}
+  "qpdf-libs" {= "5.1.2-r0"}
+  "zlib-dev"
+]
+extra-source "qpdf-dev-5.1.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/qpdf-dev-5.1.2-r0.apk"
+}

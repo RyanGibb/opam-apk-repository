@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add eudev-3.2.2-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del eudev"]
+]
+depends: [
+  "eudev-libs" {= "3.2.2-r1"}
+  "kmod"
+  "libblkid"
+  "musl"
+  "udev-init-scripts"
+]
+extra-source "eudev-3.2.2-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/eudev-3.2.2-r1.apk"
+}

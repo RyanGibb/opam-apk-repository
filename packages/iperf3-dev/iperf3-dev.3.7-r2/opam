@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add iperf3-dev-3.7-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del iperf3-dev"]
+]
+depends: [
+  "iperf3" {= "3.7-r2"}
+]
+extra-source "iperf3-dev-3.7-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/iperf3-dev-3.7-r2.apk"
+}

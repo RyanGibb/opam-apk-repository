@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add qt-4.8.7-r11.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del qt"]
+]
+depends: [
+  "ca-certificates"
+  "glib"
+  "libcrypto1.1"
+  "libgcc"
+  "libssl1.1"
+  "libstdc++"
+  "musl"
+  "zlib"
+]
+extra-source "qt-4.8.7-r11.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/qt-4.8.7-r11.apk"
+}

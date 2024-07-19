@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add virtinst-0.600.4-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del virtinst"]
+]
+depends: [
+  "libvirt"
+  "py-libxml2"
+  "py-urlgrabber"
+  "python"
+]
+extra-source "virtinst-0.600.4-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/virtinst-0.600.4-r2.apk"
+}

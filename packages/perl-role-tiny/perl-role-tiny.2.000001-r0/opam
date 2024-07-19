@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-role-tiny-2.000001-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-role-tiny"]
+]
+depends: [
+  "perl-class-method-modifiers"
+  "perl-namespace-autoclean"
+]
+extra-source "perl-role-tiny-2.000001-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/perl-role-tiny-2.000001-r0.apk"
+}

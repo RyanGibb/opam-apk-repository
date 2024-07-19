@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gnome-terminal-2.33.5-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gnome-terminal"]
+]
+depends: [
+  "atk"
+  "busybox"
+  "gconf"
+  "gdk-pixbuf"
+  "glib"
+  "gtk+2.0"
+  "libgnome"
+  "libice"
+  "libintl"
+  "libsm"
+  "libx11"
+  "musl"
+  "pango"
+  "vte"
+]
+extra-source "gnome-terminal-2.33.5-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/gnome-terminal-2.33.5-r1.apk"
+}

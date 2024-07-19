@@ -8,13 +8,13 @@ remove: [
 depends: [
   "libbz2"
   "libelf"
+  "libelf" {= "0.191-r0"}
   "musl"
   "musl-fts"
   "xz-libs"
   "zlib"
   "zstd-libs"
 ]
-
 extra-source "libdw-0.191-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libdw-0.191-r0.apk"
 }

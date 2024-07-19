@@ -6,11 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del libgpg-error-dev"]
 ]
 depends: [
-  "libgpg-error"
+  "libgpg-error" {= "1.49-r0"}
   "musl"
   "pkgconf"
 ]
-
 extra-source "libgpg-error-dev-1.49-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libgpg-error-dev-1.49-r0.apk"
 }

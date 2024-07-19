@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-io-html-1.001-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-io-html"]
+]
+extra-source "perl-io-html-1.001-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/perl-io-html-1.001-r0.apk"
+}

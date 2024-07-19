@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-heap-doc"]
 ]
-
-
 extra-source "perl-heap-doc-0.80-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-heap-doc-0.80-r6.apk"
 }

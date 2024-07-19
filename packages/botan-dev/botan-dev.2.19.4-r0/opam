@@ -7,14 +7,13 @@ remove: [
 ]
 depends: [
   "boost-dev"
-  "botan-libs"
+  "botan-libs" {= "2.19.4-r0"}
   "bzip2-dev"
   "pkgconf"
   "sqlite-dev"
   "xz-dev"
   "zlib-dev"
 ]
-
 extra-source "botan-dev-2.19.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/botan-dev-2.19.4-r0.apk"
 }

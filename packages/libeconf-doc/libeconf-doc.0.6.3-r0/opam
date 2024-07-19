@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del libeconf-doc"]
 ]
-
-
 extra-source "libeconf-doc-0.6.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libeconf-doc-0.6.3-r0.apk"
 }

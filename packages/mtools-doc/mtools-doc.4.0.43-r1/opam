@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del mtools-doc"]
 ]
-
-
 extra-source "mtools-doc-4.0.43-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/mtools-doc-4.0.43-r1.apk"
 }

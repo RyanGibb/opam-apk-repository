@@ -6,11 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del libretls-dev"]
 ]
 depends: [
-  "libretls"
-  "openssl-dev"
+  "libretls" {= "3.7.0-r2"}
+  "openssl-dev" {> "3"}
   "pkgconf"
 ]
-
 extra-source "libretls-dev-3.7.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libretls-dev-3.7.0-r2.apk"
 }

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add vlc-plugins-demux-2.1.6-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del vlc-plugins-demux"]
+]
+depends: [
+  "dbus-libs"
+  "libdvbpsi"
+  "libebml"
+  "libgcc"
+  "libmatroska"
+  "libogg"
+  "libstdc++"
+  "musl"
+  "vlc-libs"
+  "zlib"
+]
+extra-source "vlc-plugins-demux-2.1.6-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/vlc-plugins-demux-2.1.6-r1.apk"
+}

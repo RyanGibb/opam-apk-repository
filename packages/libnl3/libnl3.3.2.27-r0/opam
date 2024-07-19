@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libnl3-3.2.27-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libnl3"]
+]
+depends: [
+  "musl"
+]
+extra-source "libnl3-3.2.27-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/libnl3-3.2.27-r0.apk"
+}

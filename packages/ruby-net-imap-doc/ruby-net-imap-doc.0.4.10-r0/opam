@@ -8,7 +8,6 @@ remove: [
 depends: [
   "ruby"
 ]
-
 extra-source "ruby-net-imap-doc-0.4.10-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/ruby-net-imap-doc-0.4.10-r0.apk"
 }

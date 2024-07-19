@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del libeconf-dev"]
 ]
 depends: [
-  "libeconf"
+  "libeconf" {= "0.6.3-r0"}
   "pkgconf"
 ]
-
 extra-source "libeconf-dev-0.6.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libeconf-dev-0.6.3-r0.apk"
 }

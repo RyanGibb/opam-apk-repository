@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add wpa_supplicant-gui-2.6-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del wpa_supplicant-gui"]
+]
+depends: [
+  "dbus"
+  "libgcc"
+  "libstdc++"
+  "musl"
+  "qt"
+  "qt-x11"
+]
+extra-source "wpa_supplicant-gui-2.6-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/wpa_supplicant-gui-2.6-r3.apk"
+}

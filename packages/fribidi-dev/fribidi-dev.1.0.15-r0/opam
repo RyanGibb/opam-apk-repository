@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del fribidi-dev"]
 ]
 depends: [
-  "fribidi"
+  "fribidi" {= "1.0.15-r0"}
   "pkgconf"
 ]
-
 extra-source "fribidi-dev-1.0.15-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/fribidi-dev-1.0.15-r0.apk"
 }

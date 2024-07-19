@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libx11-dev-1.6.2-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libx11-dev"]
+]
+depends: [
+  "inputproto"
+  "kbproto"
+  "libx11" {= "1.6.2-r3"}
+  "libx11-doc" {= "1.6.2-r3"}
+  "libxcb-dev"
+  "pkgconfig"
+  "xextproto"
+  "xf86bigfontproto"
+  "xproto"
+  "xtrans"
+]
+extra-source "libx11-dev-1.6.2-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/libx11-dev-1.6.2-r3.apk"
+}

@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gst-plugins-bad0.10-0.10.23-r7.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gst-plugins-bad0.10"]
+]
+depends: [
+  "cairo"
+  "faac"
+  "faad2"
+  "flite"
+  "glib"
+  "gsm"
+  "gst-plugins-base0.10"
+  "gstreamer0.10"
+  "jasper-libs"
+  "libbz2"
+  "libdc1394"
+  "libgcc"
+  "libintl"
+  "libmms"
+  "libpng"
+  "libressl2.6-libcrypto"
+  "librsvg"
+  "libstdc++"
+  "libvpx"
+  "libx11"
+  "musl"
+  "orc"
+  "sdl"
+  "xvidcore"
+]
+extra-source "gst-plugins-bad0.10-0.10.23-r7.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/gst-plugins-bad0.10-0.10.23-r7.apk"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add oscam-0_svn20140428-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del oscam"]
+]
+depends: [
+  "busybox"
+  "libcrypto1.0"
+  "libssl1.0"
+  "libusbx"
+  "musl"
+  "pcsc-lite-libs"
+]
+extra-source "oscam-0_svn20140428-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/oscam-0_svn20140428-r1.apk"
+}

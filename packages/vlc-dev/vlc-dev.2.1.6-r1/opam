@@ -1,0 +1,43 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add vlc-dev-2.1.6-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del vlc-dev"]
+]
+depends: [
+  "pkgconfig"
+  "vlc" {= "2.1.6-r1"}
+  "vlc-daemon" {= "2.1.6-r1"}
+  "vlc-doc" {= "2.1.6-r1"}
+  "vlc-libs" {= "2.1.6-r1"}
+  "vlc-plugins" {= "2.1.6-r1"}
+  "vlc-plugins-access" {= "2.1.6-r1"}
+  "vlc-plugins-access_output" {= "2.1.6-r1"}
+  "vlc-plugins-audio_filter" {= "2.1.6-r1"}
+  "vlc-plugins-audio_mixer" {= "2.1.6-r1"}
+  "vlc-plugins-audio_output" {= "2.1.6-r1"}
+  "vlc-plugins-codec" {= "2.1.6-r1"}
+  "vlc-plugins-control" {= "2.1.6-r1"}
+  "vlc-plugins-demux" {= "2.1.6-r1"}
+  "vlc-plugins-gui" {= "2.1.6-r1"}
+  "vlc-plugins-lua" {= "2.1.6-r1"}
+  "vlc-plugins-meta_engine" {= "2.1.6-r1"}
+  "vlc-plugins-misc" {= "2.1.6-r1"}
+  "vlc-plugins-mux" {= "2.1.6-r1"}
+  "vlc-plugins-notify" {= "2.1.6-r1"}
+  "vlc-plugins-packetizer" {= "2.1.6-r1"}
+  "vlc-plugins-services_discovery" {= "2.1.6-r1"}
+  "vlc-plugins-stream_filter" {= "2.1.6-r1"}
+  "vlc-plugins-stream_out" {= "2.1.6-r1"}
+  "vlc-plugins-text_renderer" {= "2.1.6-r1"}
+  "vlc-plugins-video_chroma" {= "2.1.6-r1"}
+  "vlc-plugins-video_filter" {= "2.1.6-r1"}
+  "vlc-plugins-video_output" {= "2.1.6-r1"}
+  "vlc-plugins-visualization" {= "2.1.6-r1"}
+  "vlc-qt" {= "2.1.6-r1"}
+  "vlc-xorg" {= "2.1.6-r1"}
+]
+extra-source "vlc-dev-2.1.6-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/vlc-dev-2.1.6-r1.apk"
+}

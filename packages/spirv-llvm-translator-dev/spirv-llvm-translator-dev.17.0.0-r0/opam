@@ -8,11 +8,10 @@ remove: [
 depends: [
   "llvm17-dev"
   "pkgconf"
-  "spirv-llvm-translator"
-  "spirv-llvm-translator-libs"
+  "spirv-llvm-translator" {= "17.0.0-r0"}
+  "spirv-llvm-translator-libs" {= "17.0.0-r0"}
   "spirv-tools-dev"
 ]
-
 extra-source "spirv-llvm-translator-dev-17.0.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/spirv-llvm-translator-dev-17.0.0-r0.apk"
 }

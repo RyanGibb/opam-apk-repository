@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py3-cffi-pyc-1.16.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py3-cffi-pyc"]
+]
+depends: [
+  "py3-cparser"
+  "python3" {>= "3.11"}
+]
+extra-source "py3-cffi-pyc-1.16.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/py3-cffi-pyc-1.16.0-r0.apk"
+}

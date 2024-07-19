@@ -9,7 +9,6 @@ depends: [
   "musl"
   "tdb-libs"
 ]
-
 extra-source "tdb-1.4.9-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/tdb-1.4.9-r1.apk"
 }

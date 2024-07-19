@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add resourceproto-1.2.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del resourceproto"]
+]
+depends: [
+  "pkgconf"
+]
+extra-source "resourceproto-1.2.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/resourceproto-1.2.0-r1.apk"
+}

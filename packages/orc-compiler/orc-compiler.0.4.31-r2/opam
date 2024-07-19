@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add orc-compiler-0.4.31-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del orc-compiler"]
+]
+depends: [
+  "musl"
+  "orc"
+]
+extra-source "orc-compiler-0.4.31-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/orc-compiler-0.4.31-r2.apk"
+}

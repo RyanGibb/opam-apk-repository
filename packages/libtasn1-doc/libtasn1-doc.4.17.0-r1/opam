@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libtasn1-doc-4.17.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libtasn1-doc"]
+]
+extra-source "libtasn1-doc-4.17.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/libtasn1-doc-4.17.0-r1.apk"
+}

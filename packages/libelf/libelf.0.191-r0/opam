@@ -10,7 +10,6 @@ depends: [
   "zlib"
   "zstd-libs"
 ]
-
 extra-source "libelf-0.191-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libelf-0.191-r0.apk"
 }

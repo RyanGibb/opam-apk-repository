@@ -9,14 +9,13 @@ depends: [
   "libffi-dev"
   "libgcc"
   "libstdc++"
-  "llvm15"
-  "llvm15-libs"
-  "llvm15-test-utils"
+  "llvm15" {= "15.0.7-r13"}
+  "llvm15-libs" {= "15.0.7-r13"}
+  "llvm15-test-utils" {= "15.0.7-r13"}
   "musl"
   "zlib-dev"
   "zstd-dev"
 ]
-
 extra-source "llvm15-dev-15.0.7-r13.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/llvm15-dev-15.0.7-r13.apk"
 }

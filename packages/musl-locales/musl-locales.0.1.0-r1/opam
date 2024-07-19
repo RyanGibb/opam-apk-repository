@@ -9,7 +9,6 @@ depends: [
   "libintl"
   "musl"
 ]
-
 extra-source "musl-locales-0.1.0-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/musl-locales-0.1.0-r1.apk"
 }

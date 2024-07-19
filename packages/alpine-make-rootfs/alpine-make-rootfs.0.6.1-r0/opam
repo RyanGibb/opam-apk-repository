@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add alpine-make-rootfs-0.6.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del alpine-make-rootfs"]
+]
+depends: [
+  "tar"
+]
+extra-source "alpine-make-rootfs-0.6.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/alpine-make-rootfs-0.6.1-r0.apk"
+}

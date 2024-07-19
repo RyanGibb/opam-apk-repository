@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libreoffice-calc-5.0.5.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libreoffice-calc"]
+]
+depends: [
+  "icu-libs"
+  "libetonyek"
+  "libgcc"
+  "libmwaw"
+  "libodfgen"
+  "libreoffice-common"
+  "libreoffice-common" {= "5.0.5.2-r0"}
+  "librevenge"
+  "libstdc++"
+  "libwps"
+  "libxml2"
+  "musl"
+]
+extra-source "libreoffice-calc-5.0.5.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/libreoffice-calc-5.0.5.2-r0.apk"
+}

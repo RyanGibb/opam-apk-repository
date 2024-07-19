@@ -10,7 +10,6 @@ depends: [
   "libncursesw"
   "musl"
 ]
-
 extra-source "mg-20230501-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/mg-20230501-r2.apk"
 }

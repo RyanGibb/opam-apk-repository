@@ -10,7 +10,6 @@ depends: [
   "musl"
   "unixodbc"
 ]
-
 extra-source "psqlodbc-16.00.0000-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/psqlodbc-16.00.0000-r0.apk"
 }

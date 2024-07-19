@@ -7,11 +7,10 @@ remove: [
 ]
 depends: [
   "libx11-dev"
-  "libxkbfile"
+  "libxkbfile" {= "1.1.3-r0"}
   "pkgconf"
   "xorgproto"
 ]
-
 extra-source "libxkbfile-dev-1.1.3-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libxkbfile-dev-1.1.3-r0.apk"
 }

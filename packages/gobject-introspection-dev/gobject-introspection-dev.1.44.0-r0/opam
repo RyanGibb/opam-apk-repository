@@ -1,0 +1,25 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gobject-introspection-dev-1.44.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gobject-introspection-dev"]
+]
+depends: [
+  "cairo-dev"
+  "glib"
+  "glib-dev"
+  "gobject-introspection"
+  "gobject-introspection" {= "1.44.0-r0"}
+  "gobject-introspection-doc" {= "1.44.0-r0"}
+  "libffi"
+  "libffi-dev"
+  "libintl"
+  "libtool"
+  "musl"
+  "pkgconfig"
+  "python"
+]
+extra-source "gobject-introspection-dev-1.44.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/gobject-introspection-dev-1.44.0-r0.apk"
+}

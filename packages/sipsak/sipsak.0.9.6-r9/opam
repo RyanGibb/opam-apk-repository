@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add sipsak-0.9.6-r9.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del sipsak"]
+]
+depends: [
+  "c-ares"
+  "libressl2.6-libcrypto"
+  "musl"
+]
+extra-source "sipsak-0.9.6-r9.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/sipsak-0.9.6-r9.apk"
+}

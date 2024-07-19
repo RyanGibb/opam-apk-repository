@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del patchelf-zsh-completion"]
 ]
-
-
 extra-source "patchelf-zsh-completion-0.18.0-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/patchelf-zsh-completion-0.18.0-r3.apk"
 }

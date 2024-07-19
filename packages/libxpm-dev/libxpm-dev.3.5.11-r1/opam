@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libxpm-dev-3.5.11-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libxpm-dev"]
+]
+depends: [
+  "libx11-dev"
+  "libxpm" {= "3.5.11-r1"}
+  "libxpm-doc" {= "3.5.11-r1"}
+  "pkgconfig"
+]
+extra-source "libxpm-dev-3.5.11-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/libxpm-dev-3.5.11-r1.apk"
+}

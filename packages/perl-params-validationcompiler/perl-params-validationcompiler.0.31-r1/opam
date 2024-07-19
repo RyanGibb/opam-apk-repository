@@ -17,7 +17,6 @@ depends: [
   "perl-test2-plugin-nowarnings"
   "perl-test2-suite"
 ]
-
 extra-source "perl-params-validationcompiler-0.31-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-params-validationcompiler-0.31-r1.apk"
 }

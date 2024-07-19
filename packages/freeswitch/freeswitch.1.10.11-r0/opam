@@ -26,7 +26,7 @@ depends: [
   "opus"
   "pcre"
   "portaudio"
-  "python3"
+  "python3" {>= "3.12"}
   "sofia-sip"
   "spandsp3"
   "speex"
@@ -35,7 +35,6 @@ depends: [
   "unixodbc"
   ("busybox-binsh" | "dash-binsh" | "yash-binsh")
 ]
-
 extra-source "freeswitch-1.10.11-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/freeswitch-1.10.11-r0.apk"
 }

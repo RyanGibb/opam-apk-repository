@@ -12,7 +12,6 @@ depends: [
   "musl"
   "run-parts"
 ]
-
 extra-source "dhclient-4.4.3_p1-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/dhclient-4.4.3_p1-r4.apk"
 }

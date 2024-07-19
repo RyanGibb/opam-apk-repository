@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gstreamer1-dev-1.4.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gstreamer1-dev"]
+]
+depends: [
+  "glib-dev"
+  "gstreamer1" {= "1.4.4-r0"}
+  "gstreamer1-doc" {= "1.4.4-r0"}
+  "gstreamer1-lang" {= "1.4.4-r0"}
+  "gstreamer1-tools" {= "1.4.4-r0"}
+  "libxml2-dev"
+  "pkgconfig"
+]
+extra-source "gstreamer1-dev-1.4.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/gstreamer1-dev-1.4.4-r0.apk"
+}

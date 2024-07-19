@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add charybdis-openrc-4.1.2-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del charybdis-openrc"]
+]
+extra-source "charybdis-openrc-4.1.2-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/charybdis-openrc-4.1.2-r6.apk"
+}

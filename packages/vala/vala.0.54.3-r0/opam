@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add vala-0.54.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del vala"]
+]
+depends: [
+  "glib"
+  "glib-dev"
+  "graphviz"
+  "graphviz-dev"
+  "musl"
+  "pkgconf"
+]
+extra-source "vala-0.54.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/vala-0.54.3-r0.apk"
+}

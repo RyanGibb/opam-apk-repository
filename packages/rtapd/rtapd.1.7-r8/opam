@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add rtapd-1.7-r8.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del rtapd"]
+]
+depends: [
+  "libpq"
+  "musl"
+  "rtnppd"
+]
+extra-source "rtapd-1.7-r8.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/rtapd-1.7-r8.apk"
+}

@@ -1,0 +1,28 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add spice-gtk-dev-0.25-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del spice-gtk-dev"]
+]
+depends: [
+  "acl-dev"
+  "celt051-dev"
+  "cyrus-sasl-dev"
+  "gst-plugins-base0.10-dev"
+  "gtk+3.0-dev"
+  "libjpeg-turbo-dev"
+  "libxrandr-dev"
+  "openssl-dev"
+  "pkgconfig"
+  "polkit-dev"
+  "spice-glib" {= "0.25-r1"}
+  "spice-gtk" {= "0.25-r1"}
+  "spice-gtk-doc" {= "0.25-r1"}
+  "spice-gtk-lang" {= "0.25-r1"}
+  "spice-gtk-tools" {= "0.25-r1"}
+  "zlib-dev"
+]
+extra-source "spice-gtk-dev-0.25-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/spice-gtk-dev-0.25-r1.apk"
+}

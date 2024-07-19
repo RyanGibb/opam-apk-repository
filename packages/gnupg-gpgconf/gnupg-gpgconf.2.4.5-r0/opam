@@ -12,7 +12,6 @@ depends: [
   "musl"
   "pinentry"
 ]
-
 extra-source "gnupg-gpgconf-2.4.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/gnupg-gpgconf-2.4.5-r0.apk"
 }

@@ -11,7 +11,6 @@ depends: [
   "musl"
   "popt"
 ]
-
 extra-source "efibootmgr-18-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/efibootmgr-18-r2.apk"
 }

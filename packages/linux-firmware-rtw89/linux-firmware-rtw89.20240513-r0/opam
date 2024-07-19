@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del linux-firmware-rtw89"]
 ]
-
-
 extra-source "linux-firmware-rtw89-20240513-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/linux-firmware-rtw89-20240513-r0.apk"
 }

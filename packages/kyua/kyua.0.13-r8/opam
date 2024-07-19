@@ -13,7 +13,6 @@ depends: [
   "musl"
   "sqlite-libs"
 ]
-
 extra-source "kyua-0.13-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/kyua-0.13-r8.apk"
 }

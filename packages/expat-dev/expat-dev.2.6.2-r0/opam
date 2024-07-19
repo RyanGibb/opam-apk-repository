@@ -6,11 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del expat-dev"]
 ]
 depends: [
-  "expat"
-  "libexpat"
+  "expat" {= "2.6.2-r0"}
+  "libexpat" {= "2.6.2-r0"}
   "pkgconf"
 ]
-
 extra-source "expat-dev-2.6.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/expat-dev-2.6.2-r0.apk"
 }

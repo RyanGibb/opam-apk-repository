@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add speex-dev-1.2_rc1-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del speex-dev"]
+]
+depends: [
+  "libspeex" {= "1.2_rc1-r2"}
+  "pkgconfig"
+  "speex" {= "1.2_rc1-r2"}
+  "speex-doc" {= "1.2_rc1-r2"}
+]
+extra-source "speex-dev-1.2_rc1-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/speex-dev-1.2_rc1-r2.apk"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add librrd-1.5.6-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del librrd"]
+]
+depends: [
+  "cairo"
+  "glib"
+  "libpng"
+  "libxml2"
+  "musl"
+  "pango"
+]
+extra-source "librrd-1.5.6-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/librrd-1.5.6-r3.apk"
+}

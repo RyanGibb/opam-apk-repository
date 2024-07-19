@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add linux-firmware-brcm-20240312-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del linux-firmware-brcm"]
+]
+depends: [
+  "linux-firmware-cypress" {= "20240312-r0"}
+  "linux-firmware-synaptics" {= "20240312-r0"}
+]
+extra-source "linux-firmware-brcm-20240312-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/linux-firmware-brcm-20240312-r0.apk"
+}

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ip6tables-1.4.21-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ip6tables"]
+]
+depends: [
+  "iptables"
+  "musl"
+]
+extra-source "ip6tables-1.4.21-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/ip6tables-1.4.21-r1.apk"
+}

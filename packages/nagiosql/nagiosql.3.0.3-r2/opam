@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add nagiosql-3.0.3-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del nagiosql"]
+]
+depends: [
+  "lighttpd"
+  "php5"
+  "php5-ftp"
+  "php5-gettext"
+  "php5-pear"
+]
+extra-source "nagiosql-3.0.3-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/nagiosql-3.0.3-r2.apk"
+}

@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-net-cidr-lite-doc"]
 ]
-
-
 extra-source "perl-net-cidr-lite-doc-0.22-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-net-cidr-lite-doc-0.22-r1.apk"
 }

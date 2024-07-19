@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-mime-tools-doc"]
 ]
-
-
 extra-source "perl-mime-tools-doc-5.515-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-mime-tools-doc-5.515-r0.apk"
 }

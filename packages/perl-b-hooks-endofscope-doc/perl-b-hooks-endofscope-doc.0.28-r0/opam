@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-b-hooks-endofscope-doc"]
 ]
-
-
 extra-source "perl-b-hooks-endofscope-doc-0.28-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-b-hooks-endofscope-doc-0.28-r0.apk"
 }

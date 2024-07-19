@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add vlc-plugins-codec-2.1.6-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del vlc-plugins-codec"]
+]
+depends: [
+  "dbus-libs"
+  "faad2"
+  "ffmpeg-libs"
+  "flac"
+  "libmpeg2"
+  "libogg"
+  "libpng"
+  "libspeex"
+  "libtheora"
+  "libvorbis"
+  "musl"
+  "vlc-libs"
+  "x264-libs"
+  "zlib"
+]
+extra-source "vlc-plugins-codec-2.1.6-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/vlc-plugins-codec-2.1.6-r1.apk"
+}

@@ -6,12 +6,11 @@ remove: [
   ["sh" "-c" "sudo apk del freeradius-krb5"]
 ]
 depends: [
-  "freeradius"
+  "freeradius" {= "3.0.26-r8"}
   "krb5-libs"
   "libcom_err"
   "musl"
 ]
-
 extra-source "freeradius-krb5-3.0.26-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/freeradius-krb5-3.0.26-r8.apk"
 }

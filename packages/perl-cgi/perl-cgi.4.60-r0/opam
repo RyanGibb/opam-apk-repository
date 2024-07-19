@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-cgi-4.60-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-cgi"]
+]
+depends: [
+  "perl"
+  "perl-html-parser"
+]
+extra-source "perl-cgi-4.60-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/perl-cgi-4.60-r0.apk"
+}

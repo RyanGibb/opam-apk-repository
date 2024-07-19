@@ -1,0 +1,34 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xen-qemu-4.17.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xen-qemu"]
+]
+depends: [
+  "bash"
+  "glib"
+  "gnutls"
+  "iproute2"
+  "libaio"
+  "libbz2"
+  "libcap-ng"
+  "libcurl"
+  "libgcc"
+  "libjpeg-turbo"
+  "libncursesw"
+  "libsasl"
+  "logrotate"
+  "lzo"
+  "musl"
+  "pciutils-libs"
+  "pixman"
+  "seabios-bin"
+  "spice"
+  "xen-libs"
+  "zlib"
+  "zstd-libs"
+]
+extra-source "xen-qemu-4.17.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/xen-qemu-4.17.4-r0.apk"
+}

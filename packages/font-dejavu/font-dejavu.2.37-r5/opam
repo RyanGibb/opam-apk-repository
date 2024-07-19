@@ -10,7 +10,6 @@ depends: [
   "fontconfig"
   "mkfontscale"
 ]
-
 extra-source "font-dejavu-2.37-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/font-dejavu-2.37-r5.apk"
 }

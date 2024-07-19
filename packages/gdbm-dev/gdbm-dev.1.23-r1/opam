@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del gdbm-dev"]
 ]
 depends: [
-  "gdbm"
-  "gdbm-tools"
+  "gdbm" {= "1.23-r1"}
+  "gdbm-tools" {= "1.23-r1"}
 ]
-
 extra-source "gdbm-dev-1.23-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/gdbm-dev-1.23-r1.apk"
 }

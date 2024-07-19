@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del py3-elftools-doc"]
 ]
-
-
 extra-source "py3-elftools-doc-0.30-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/py3-elftools-doc-0.30-r1.apk"
 }

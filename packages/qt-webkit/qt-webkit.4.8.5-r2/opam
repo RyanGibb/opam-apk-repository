@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add qt-webkit-4.8.5-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del qt-webkit"]
+]
+depends: [
+  "ca-certificates"
+  "libgcc"
+  "libstdc++"
+  "libx11"
+  "libxrender"
+  "musl"
+  "qt"
+  "qt-x11"
+  "sqlite-libs"
+]
+extra-source "qt-webkit-4.8.5-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/qt-webkit-4.8.5-r2.apk"
+}

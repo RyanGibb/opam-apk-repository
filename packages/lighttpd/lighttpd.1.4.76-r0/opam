@@ -18,7 +18,6 @@ depends: [
   "zstd-libs"
   ("busybox-binsh" | "dash-binsh" | "yash-binsh")
 ]
-
 extra-source "lighttpd-1.4.76-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lighttpd-1.4.76-r0.apk"
 }

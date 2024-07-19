@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libmnl-dev-1.0.5-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libmnl-dev"]
+]
+depends: [
+  "libmnl" {= "1.0.5-r1"}
+  "linux-headers"
+  "pkgconf"
+]
+extra-source "libmnl-dev-1.0.5-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/libmnl-dev-1.0.5-r1.apk"
+}

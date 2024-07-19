@@ -1,0 +1,44 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add boost1.78-libs-1.78.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del boost1.78-libs"]
+]
+depends: [
+  "boost1.78-atomic"
+  "boost1.78-chrono"
+  "boost1.78-container"
+  "boost1.78-context"
+  "boost1.78-contract"
+  "boost1.78-coroutine"
+  "boost1.78-date_time"
+  "boost1.78-fiber"
+  "boost1.78-filesystem"
+  "boost1.78-graph"
+  "boost1.78-iostreams"
+  "boost1.78-json"
+  "boost1.78-locale"
+  "boost1.78-log"
+  "boost1.78-log_setup"
+  "boost1.78-math"
+  "boost1.78-nowide"
+  "boost1.78-prg_exec_monitor"
+  "boost1.78-program_options"
+  "boost1.78-python3"
+  "boost1.78-random"
+  "boost1.78-regex"
+  "boost1.78-serialization"
+  "boost1.78-stacktrace_basic"
+  "boost1.78-stacktrace_noop"
+  "boost1.78-system"
+  "boost1.78-thread"
+  "boost1.78-timer"
+  "boost1.78-type_erasure"
+  "boost1.78-unit_test_framework"
+  "boost1.78-wave"
+  "boost1.78-wserialization"
+]
+extra-source "boost1.78-libs-1.78.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/boost1.78-libs-1.78.0-r1.apk"
+}

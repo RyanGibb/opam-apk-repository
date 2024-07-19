@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add taskd-1.1.0-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del taskd"]
+]
+depends: [
+  "gnutls"
+  "libgcc"
+  "libstdc++"
+  "libuuid"
+  "musl"
+]
+extra-source "taskd-1.1.0-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/taskd-1.1.0-r2.apk"
+}

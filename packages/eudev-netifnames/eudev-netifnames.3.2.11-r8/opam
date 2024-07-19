@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add eudev-netifnames-3.2.11-r8.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del eudev-netifnames"]
+]
+conflicts: [
+  "eudev-rule-generator"
+]
+extra-source "eudev-netifnames-3.2.11-r8.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/eudev-netifnames-3.2.11-r8.apk"
+}

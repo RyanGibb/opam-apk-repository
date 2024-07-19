@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add freeradius-static-3.0.21-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del freeradius-static"]
+]
+extra-source "freeradius-static-3.0.21-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/freeradius-static-3.0.21-r3.apk"
+}

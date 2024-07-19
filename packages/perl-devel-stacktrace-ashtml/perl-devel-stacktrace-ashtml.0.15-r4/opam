@@ -9,7 +9,6 @@ depends: [
   "perl"
   "perl-devel-stacktrace"
 ]
-
 extra-source "perl-devel-stacktrace-ashtml-0.15-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-devel-stacktrace-ashtml-0.15-r4.apk"
 }

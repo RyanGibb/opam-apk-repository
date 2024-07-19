@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-module-refresh-doc"]
 ]
-
-
 extra-source "perl-module-refresh-doc-0.18-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-module-refresh-doc-0.18-r2.apk"
 }

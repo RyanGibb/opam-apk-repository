@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add openssh-server-krb5-8.6_p1-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del openssh-server-krb5"]
+]
+depends: [
+  "krb5-libs"
+  "libcrypto1.1"
+  "linux-pam"
+  "musl"
+  "openssh-keygen" {= "8.6_p1-r3"}
+  "openssh-server-common" {= "8.6_p1-r3"}
+  "zlib"
+]
+extra-source "openssh-server-krb5-8.6_p1-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/openssh-server-krb5-8.6_p1-r3.apk"
+}

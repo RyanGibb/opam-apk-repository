@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add acf-core-0.22.0-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del acf-core"]
+]
+depends: [
+  "acf-jquery"
+  "acf-lib"
+  "acf-skins"
+  "busybox"
+  "haserl-lua5.2"
+  "lua-json4"
+  "lua5.2"
+  "lua5.2-md5"
+  "lua5.2-posix"
+  "lua5.2-subprocess"
+]
+extra-source "acf-core-0.22.0-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/acf-core-0.22.0-r2.apk"
+}

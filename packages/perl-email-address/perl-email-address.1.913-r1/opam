@@ -9,7 +9,6 @@ depends: [
   "perl"
   "perl-capture-tiny"
 ]
-
 extra-source "perl-email-address-1.913-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-email-address-1.913-r1.apk"
 }

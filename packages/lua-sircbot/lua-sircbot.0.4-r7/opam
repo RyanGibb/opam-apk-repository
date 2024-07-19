@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del lua-sircbot"]
 ]
-
-
 extra-source "lua-sircbot-0.4-r7.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lua-sircbot-0.4-r7.apk"
 }

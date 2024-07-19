@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-io-tty-doc"]
 ]
-
-
 extra-source "perl-io-tty-doc-1.20-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-io-tty-doc-1.20-r0.apk"
 }

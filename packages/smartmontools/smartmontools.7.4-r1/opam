@@ -10,7 +10,6 @@ depends: [
   "libstdc++"
   "musl"
 ]
-
 extra-source "smartmontools-7.4-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/smartmontools-7.4-r1.apk"
 }

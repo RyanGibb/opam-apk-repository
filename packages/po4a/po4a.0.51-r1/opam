@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add po4a-0.51-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del po4a"]
+]
+depends: [
+  "gettext"
+  "perl"
+]
+extra-source "po4a-0.51-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/po4a-0.51-r1.apk"
+}

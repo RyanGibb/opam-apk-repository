@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del lua-lyaml"]
 ]
-
-
 extra-source "lua-lyaml-6.2.8-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lua-lyaml-6.2.8-r1.apk"
 }

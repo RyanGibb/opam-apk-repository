@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add net-snmp-dev-5.7.3-r11.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del net-snmp-dev"]
+]
+depends: [
+  "libressl-dev"
+  "net-snmp-agent-libs" {= "5.7.3-r11"}
+  "net-snmp-libs" {= "5.7.3-r11"}
+]
+extra-source "net-snmp-dev-5.7.3-r11.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/net-snmp-dev-5.7.3-r11.apk"
+}

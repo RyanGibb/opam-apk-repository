@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del py3-nftables"]
 ]
 depends: [
-  "nftables"
-  "python3"
+  "nftables" {= "1.0.9-r2"}
+  "python3" {>= "3.12"}
 ]
-
 extra-source "py3-nftables-1.0.9-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/py3-nftables-1.0.9-r2.apk"
 }

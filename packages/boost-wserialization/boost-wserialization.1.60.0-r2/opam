@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add boost-wserialization-1.60.0-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del boost-wserialization"]
+]
+depends: [
+  "boost-serialization"
+  "libgcc"
+  "musl"
+]
+extra-source "boost-wserialization-1.60.0-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/boost-wserialization-1.60.0-r2.apk"
+}

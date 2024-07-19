@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del usb-modeswitch-doc"]
 ]
-
-
 extra-source "usb-modeswitch-doc-2.6.1-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/usb-modeswitch-doc-2.6.1-r3.apk"
 }

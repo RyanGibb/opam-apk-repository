@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gummiboot-efistub-48.1-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gummiboot-efistub"]
+]
+extra-source "gummiboot-efistub-48.1-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/gummiboot-efistub-48.1-r6.apk"
+}

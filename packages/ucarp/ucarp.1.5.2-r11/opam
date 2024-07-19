@@ -9,7 +9,6 @@ depends: [
   "libpcap"
   "musl"
 ]
-
 extra-source "ucarp-1.5.2-r11.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/ucarp-1.5.2-r11.apk"
 }

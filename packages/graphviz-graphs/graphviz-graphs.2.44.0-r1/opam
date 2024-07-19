@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add graphviz-graphs-2.44.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del graphviz-graphs"]
+]
+extra-source "graphviz-graphs-2.44.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/graphviz-graphs-2.44.0-r1.apk"
+}

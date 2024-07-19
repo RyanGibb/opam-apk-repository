@@ -8,9 +8,8 @@ remove: [
 depends: [
   "kea-dhcp4"
   "kea-dhcp6"
-  "python3"
+  "python3" {>= "3.12"}
 ]
-
 extra-source "kea-shell-pyc-2.4.1-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/kea-shell-pyc-2.4.1-r2.apk"
 }

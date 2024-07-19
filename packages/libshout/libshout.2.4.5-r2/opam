@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libshout-2.4.5-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libshout"]
+]
+depends: [
+  "libcrypto1.1"
+  "libogg"
+  "libssl1.1"
+  "libtheora"
+  "libvorbis"
+  "musl"
+  "speex"
+]
+extra-source "libshout-2.4.5-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libshout-2.4.5-r2.apk"
+}

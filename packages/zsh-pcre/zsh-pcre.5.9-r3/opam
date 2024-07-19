@@ -8,9 +8,8 @@ remove: [
 depends: [
   "musl"
   "pcre"
-  "zsh"
+  "zsh" {= "5.9-r3"}
 ]
-
 extra-source "zsh-pcre-5.9-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/zsh-pcre-5.9-r3.apk"
 }

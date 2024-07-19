@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add abuild-rootbld-3.11.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del abuild-rootbld"]
+]
+depends: [
+  "abuild"
+  "bubblewrap"
+  "gettext-envsubst"
+  "git"
+]
+extra-source "abuild-rootbld-3.11.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/abuild-rootbld-3.11.1-r0.apk"
+}

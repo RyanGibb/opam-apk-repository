@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-uri-doc-1.76-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-uri-doc"]
+]
+extra-source "perl-uri-doc-1.76-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-uri-doc-1.76-r0.apk"
+}

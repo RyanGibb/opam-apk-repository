@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del lvm2-dmeventd-openrc"]
 ]
 depends: [
-  "lvm2-libs"
+  "lvm2-libs" {= "2.03.23-r3"}
 ]
-
 extra-source "lvm2-dmeventd-openrc-2.03.23-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lvm2-dmeventd-openrc-2.03.23-r3.apk"
 }

@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add heimdal-dev-1.5.3-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del heimdal-dev"]
+]
+depends: [
+  "db-dev"
+  "e2fsprogs-dev"
+  "heimdal" {= "1.5.3-r1"}
+  "heimdal-doc" {= "1.5.3-r1"}
+  "heimdal-ftp" {= "1.5.3-r1"}
+  "heimdal-kf" {= "1.5.3-r1"}
+  "heimdal-libs" {= "1.5.3-r1"}
+  "heimdal-pagsh" {= "1.5.3-r1"}
+  "heimdal-rcp" {= "1.5.3-r1"}
+  "heimdal-rsh" {= "1.5.3-r1"}
+  "heimdal-su" {= "1.5.3-r1"}
+  "heimdal-telnet" {= "1.5.3-r1"}
+  "openssl-dev"
+  "pkgconfig"
+]
+extra-source "heimdal-dev-1.5.3-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/heimdal-dev-1.5.3-r1.apk"
+}

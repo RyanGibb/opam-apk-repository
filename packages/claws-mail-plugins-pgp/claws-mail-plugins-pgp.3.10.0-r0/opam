@@ -1,0 +1,35 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add claws-mail-plugins-pgp-3.10.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del claws-mail-plugins-pgp"]
+]
+depends: [
+  "atk"
+  "cairo"
+  "claws-mail" {= "3.10.0-r0"}
+  "db"
+  "enchant"
+  "fontconfig"
+  "freetype"
+  "gdk-pixbuf"
+  "glib"
+  "gnutls"
+  "gpgme"
+  "gtk+2.0"
+  "libarchive"
+  "libassuan"
+  "libetpan"
+  "libgcrypt"
+  "libgpg-error"
+  "libintl"
+  "libsasl"
+  "musl"
+  "pango"
+  "pinentry-gtk"
+  "zlib"
+]
+extra-source "claws-mail-plugins-pgp-3.10.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/claws-mail-plugins-pgp-3.10.0-r0.apk"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add apkbuild-cpan-3.8.0_rc4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del apkbuild-cpan"]
+]
+depends: [
+  "perl"
+  "perl-json"
+  "perl-libwww"
+  "perl-lwp-protocol-https"
+  "perl-module-build"
+  "perl-module-build-tiny"
+]
+extra-source "apkbuild-cpan-3.8.0_rc4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/apkbuild-cpan-3.8.0_rc4-r0.apk"
+}

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add randrproto-doc-1.5.0-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del randrproto-doc"]
+]
+extra-source "randrproto-doc-1.5.0-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/randrproto-doc-1.5.0-r2.apk"
+}

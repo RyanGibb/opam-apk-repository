@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add fribidi-doc-1.0.13-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del fribidi-doc"]
+]
+extra-source "fribidi-doc-1.0.13-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/fribidi-doc-1.0.13-r0.apk"
+}

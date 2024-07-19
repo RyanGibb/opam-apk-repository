@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del udns-doc"]
 ]
-
-
 extra-source "udns-doc-0.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/udns-doc-0.5-r0.apk"
 }

@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del gnupg-lang"]
 ]
-
-
 extra-source "gnupg-lang-2.4.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/gnupg-lang-2.4.5-r0.apk"
 }

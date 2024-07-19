@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add samba-server-libs-4.15.13-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del samba-server-libs"]
+]
+depends: [
+  "libldap"
+  "musl"
+  "samba-common-server-libs"
+  "samba-libs"
+  "samba-util-libs"
+  "talloc"
+  "tevent"
+]
+extra-source "samba-server-libs-4.15.13-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/samba-server-libs-4.15.13-r0.apk"
+}

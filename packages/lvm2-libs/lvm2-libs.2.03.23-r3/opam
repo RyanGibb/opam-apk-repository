@@ -12,7 +12,6 @@ depends: [
   "libblkid"
   "musl"
 ]
-
 extra-source "lvm2-libs-2.03.23-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lvm2-libs-2.03.23-r3.apk"
 }

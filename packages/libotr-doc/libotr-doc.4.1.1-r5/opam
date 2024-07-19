@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del libotr-doc"]
 ]
-
-
 extra-source "libotr-doc-4.1.1-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libotr-doc-4.1.1-r5.apk"
 }

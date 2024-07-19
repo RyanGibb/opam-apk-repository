@@ -6,14 +6,13 @@ remove: [
   ["sh" "-c" "sudo apk del dnsmasq-dnssec-nftset"]
 ]
 depends: [
-  "dnsmasq-common"
+  "dnsmasq-common" {= "2.90-r3"}
   "gmp"
   "musl"
   "nettle"
   "nftables"
   ("busybox-binsh" | "dash-binsh" | "yash-binsh")
 ]
-
 extra-source "dnsmasq-dnssec-nftset-2.90-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/dnsmasq-dnssec-nftset-2.90-r3.apk"
 }

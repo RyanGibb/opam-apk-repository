@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lmdb-dev-0.9.29-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lmdb-dev"]
+]
+depends: [
+  "lmdb" {= "0.9.29-r1"}
+  "pkgconf"
+]
+extra-source "lmdb-dev-0.9.29-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/lmdb-dev-0.9.29-r1.apk"
+}

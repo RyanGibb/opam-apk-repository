@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del sharutils-doc"]
 ]
-
-
 extra-source "sharutils-doc-4.15.2-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/sharutils-doc-4.15.2-r6.apk"
 }

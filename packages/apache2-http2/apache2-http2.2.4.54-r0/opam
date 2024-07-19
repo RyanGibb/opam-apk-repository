@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add apache2-http2-2.4.54-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del apache2-http2"]
+]
+depends: [
+  "apache2"
+  "libcrypto1.1"
+  "musl"
+  "nghttp2-libs"
+]
+extra-source "apache2-http2-2.4.54-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/apache2-http2-2.4.54-r0.apk"
+}

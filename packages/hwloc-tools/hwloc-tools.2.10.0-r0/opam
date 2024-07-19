@@ -12,7 +12,6 @@ depends: [
   "libx11"
   "musl"
 ]
-
 extra-source "hwloc-tools-2.10.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/hwloc-tools-2.10.0-r0.apk"
 }

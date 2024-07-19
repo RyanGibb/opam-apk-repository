@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libxrandr-1.5.1-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libxrandr"]
+]
+depends: [
+  "libx11"
+  "libxext"
+  "libxrender"
+  "musl"
+]
+extra-source "libxrandr-1.5.1-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libxrandr-1.5.1-r2.apk"
+}

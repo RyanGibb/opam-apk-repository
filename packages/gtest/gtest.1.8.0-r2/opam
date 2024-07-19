@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gtest-1.8.0-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gtest"]
+]
+depends: [
+  "bash"
+  "libgcc"
+  "libstdc++"
+  "musl"
+]
+extra-source "gtest-1.8.0-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/gtest-1.8.0-r2.apk"
+}

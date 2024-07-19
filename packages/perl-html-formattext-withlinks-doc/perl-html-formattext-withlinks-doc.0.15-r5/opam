@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-html-formattext-withlinks-doc"]
 ]
-
-
 extra-source "perl-html-formattext-withlinks-doc-0.15-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-html-formattext-withlinks-doc-0.15-r5.apk"
 }

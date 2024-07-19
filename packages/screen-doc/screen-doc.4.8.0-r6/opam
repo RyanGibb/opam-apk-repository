@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add screen-doc-4.8.0-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del screen-doc"]
+]
+extra-source "screen-doc-4.8.0-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/screen-doc-4.8.0-r6.apk"
+}

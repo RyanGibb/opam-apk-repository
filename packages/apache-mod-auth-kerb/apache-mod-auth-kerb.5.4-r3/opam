@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add apache-mod-auth-kerb-5.4-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del apache-mod-auth-kerb"]
+]
+depends: [
+  "apache2"
+  "heimdal"
+  "heimdal-libs"
+  "musl"
+]
+extra-source "apache-mod-auth-kerb-5.4-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/apache-mod-auth-kerb-5.4-r3.apk"
+}

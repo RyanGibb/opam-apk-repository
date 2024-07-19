@@ -1,0 +1,33 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gtk+2.0-2.24.28-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gtk+2.0"]
+]
+depends: [
+  "atk"
+  "busybox"
+  "cairo"
+  "cups-libs"
+  "fontconfig"
+  "gdk-pixbuf"
+  "glib"
+  "gtk-update-icon-cache"
+  "libintl"
+  "libx11"
+  "libxcomposite"
+  "libxcursor"
+  "libxdamage"
+  "libxext"
+  "libxfixes"
+  "libxi"
+  "libxrandr"
+  "libxrender"
+  "musl"
+  "pango"
+  "shared-mime-info"
+]
+extra-source "gtk+2.0-2.24.28-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/gtk+2.0-2.24.28-r1.apk"
+}

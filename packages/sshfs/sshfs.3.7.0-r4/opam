@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add sshfs-3.7.0-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del sshfs"]
+]
+depends: [
+  "fuse3"
+  "fuse3-libs"
+  "glib"
+  "musl"
+  "openssh-client"
+]
+extra-source "sshfs-3.7.0-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/sshfs-3.7.0-r4.apk"
+}

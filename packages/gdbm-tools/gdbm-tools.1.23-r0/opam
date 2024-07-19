@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gdbm-tools-1.23-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gdbm-tools"]
+]
+depends: [
+  "gdbm"
+  "gdbm" {= "1.23-r0"}
+  "musl"
+]
+extra-source "gdbm-tools-1.23-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gdbm-tools-1.23-r0.apk"
+}

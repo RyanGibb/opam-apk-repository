@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add php-pear-mdb2-driver-pgsql-2.5.0b5-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del php-pear-mdb2-driver-pgsql"]
+]
+depends: [
+  "php-pear-mdb2"
+  "php-pgsql"
+  "postgresql-bdr"
+]
+extra-source "php-pear-mdb2-driver-pgsql-2.5.0b5-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/php-pear-mdb2-driver-pgsql-2.5.0b5-r0.apk"
+}

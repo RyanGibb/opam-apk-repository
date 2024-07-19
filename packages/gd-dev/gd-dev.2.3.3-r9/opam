@@ -10,7 +10,7 @@ depends: [
   "freetype-dev"
   "gd"
   "libavif-dev"
-  "libgd"
+  "libgd" {= "2.3.3-r9"}
   "libjpeg-turbo-dev"
   "libpng-dev"
   "libwebp-dev"
@@ -20,7 +20,6 @@ depends: [
   "tiff-dev"
   "zlib-dev"
 ]
-
 extra-source "gd-dev-2.3.3-r9.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/gd-dev-2.3.3-r9.apk"
 }

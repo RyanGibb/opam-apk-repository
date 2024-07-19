@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add nagios-4.4.13-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del nagios"]
+]
+depends: [
+  "libcrypto3"
+  "libgd"
+  "libssl3"
+  "musl"
+  "perl"
+  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
+]
+extra-source "nagios-4.4.13-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/nagios-4.4.13-r1.apk"
+}

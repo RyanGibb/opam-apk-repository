@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mate-media-1.10.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mate-media"]
+]
+depends: [
+  "cairo"
+  "glib"
+  "gtk+2.0"
+  "libcanberra"
+  "libcanberra-gtk2"
+  "libintl"
+  "libmatemixer"
+  "libunique"
+  "libxml2"
+  "mate-desktop"
+  "musl"
+  "pango"
+]
+extra-source "mate-media-1.10.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/mate-media-1.10.0-r0.apk"
+}

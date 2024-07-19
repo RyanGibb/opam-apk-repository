@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add usb-modeswitch-udev-2.2.0-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del usb-modeswitch-udev"]
+]
+depends: [
+  "eudev"
+  "tcl"
+  "usb-modeswitch" {= "2.2.0-r2"}
+]
+extra-source "usb-modeswitch-udev-2.2.0-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/usb-modeswitch-udev-2.2.0-r2.apk"
+}

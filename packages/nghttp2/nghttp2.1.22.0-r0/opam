@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add nghttp2-1.22.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del nghttp2"]
+]
+depends: [
+  "c-ares"
+  "libev"
+  "libgcc"
+  "libressl2.5-libcrypto"
+  "libressl2.5-libssl"
+  "libstdc++"
+  "musl"
+  "nghttp2-libs"
+  "zlib"
+]
+extra-source "nghttp2-1.22.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/nghttp2-1.22.0-r0.apk"
+}

@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del amavisd-milter-openrc"]
 ]
-
-
 extra-source "amavisd-milter-openrc-1.7.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/amavisd-milter-openrc-1.7.2-r0.apk"
 }

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add device-mapper-udev-2.03.21-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del device-mapper-udev"]
+]
+depends: [
+  "lvm2-libs" {= "2.03.21-r3"}
+  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
+]
+extra-source "device-mapper-udev-2.03.21-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/device-mapper-udev-2.03.21-r3.apk"
+}

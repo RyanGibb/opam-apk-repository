@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del linux-firmware-brcm"]
 ]
 depends: [
-  "linux-firmware-cypress"
-  "linux-firmware-synaptics"
+  "linux-firmware-cypress" {= "20240513-r0"}
+  "linux-firmware-synaptics" {= "20240513-r0"}
 ]
-
 extra-source "linux-firmware-brcm-20240513-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/linux-firmware-brcm-20240513-r0.apk"
 }

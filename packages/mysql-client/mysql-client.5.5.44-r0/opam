@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mysql-client-5.5.44-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mysql-client"]
+]
+depends: [
+  "libcrypto1.0"
+  "libssl1.0"
+  "musl"
+  "mysql-common"
+  "ncurses-libs"
+  "zlib"
+]
+extra-source "mysql-client-5.5.44-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/mysql-client-5.5.44-r0.apk"
+}

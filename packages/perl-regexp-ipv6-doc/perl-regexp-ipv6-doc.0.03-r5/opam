@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-regexp-ipv6-doc"]
 ]
-
-
 extra-source "perl-regexp-ipv6-doc-0.03-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-regexp-ipv6-doc-0.03-r5.apk"
 }

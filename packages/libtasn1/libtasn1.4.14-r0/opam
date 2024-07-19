@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libtasn1-4.14-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libtasn1"]
+]
+depends: [
+  "musl"
+]
+extra-source "libtasn1-4.14-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libtasn1-4.14-r0.apk"
+}

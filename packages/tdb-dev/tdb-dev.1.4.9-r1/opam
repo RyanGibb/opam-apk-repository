@@ -8,9 +8,8 @@ remove: [
 depends: [
   "pkgconf"
   "python3"
-  "tdb-libs"
+  "tdb-libs" {= "1.4.9-r1"}
 ]
-
 extra-source "tdb-dev-1.4.9-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/tdb-dev-1.4.9-r1.apk"
 }

@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-config-inifiles-doc"]
 ]
-
-
 extra-source "perl-config-inifiles-doc-3.000003-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-config-inifiles-doc-3.000003-r3.apk"
 }

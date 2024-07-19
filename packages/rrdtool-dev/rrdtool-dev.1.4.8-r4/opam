@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add rrdtool-dev-1.4.8-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del rrdtool-dev"]
+]
+depends: [
+  "lua-rrd" {= "1.4.8-r4"}
+  "perl-rrd" {= "1.4.8-r4"}
+  "pkgconfig"
+  "py-rrd" {= "1.4.8-r4"}
+  "rrdtool" {= "1.4.8-r4"}
+  "rrdtool-doc" {= "1.4.8-r4"}
+]
+extra-source "rrdtool-dev-1.4.8-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/rrdtool-dev-1.4.8-r4.apk"
+}

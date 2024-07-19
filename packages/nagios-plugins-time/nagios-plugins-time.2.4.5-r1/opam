@@ -10,7 +10,6 @@ depends: [
   "musl"
   "nagios-plugins"
 ]
-
 extra-source "nagios-plugins-time-2.4.5-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/nagios-plugins-time-2.4.5-r1.apk"
 }

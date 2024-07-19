@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del hvtools-openrc"]
 ]
-
-
 extra-source "hvtools-openrc-4.11.9-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/hvtools-openrc-4.11.9-r4.apk"
 }

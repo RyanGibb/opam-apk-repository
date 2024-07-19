@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add bluefish-2.2.8-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del bluefish"]
+]
+depends: [
+  "cairo"
+  "enchant"
+  "gdk-pixbuf"
+  "glib"
+  "gtk+3.0"
+  "gucharmap"
+  "libintl"
+  "libxml2"
+  "musl"
+  "pango"
+]
+extra-source "bluefish-2.2.8-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/bluefish-2.2.8-r0.apk"
+}

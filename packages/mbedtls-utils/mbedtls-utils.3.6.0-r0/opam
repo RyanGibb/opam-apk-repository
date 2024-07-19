@@ -9,7 +9,6 @@ depends: [
   "mbedtls"
   "musl"
 ]
-
 extra-source "mbedtls-utils-3.6.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/mbedtls-utils-3.6.0-r0.apk"
 }

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add cifs-utils-doc-7.0-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del cifs-utils-doc"]
+]
+extra-source "cifs-utils-doc-7.0-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/cifs-utils-doc-7.0-r2.apk"
+}

@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gvfs-dev-1.22.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gvfs-dev"]
+]
+depends: [
+  "gvfs" {= "1.22.2-r0"}
+  "gvfs-afp" {= "1.22.2-r0"}
+  "gvfs-archive" {= "1.22.2-r0"}
+  "gvfs-avahi" {= "1.22.2-r0"}
+  "gvfs-cdda" {= "1.22.2-r0"}
+  "gvfs-dav" {= "1.22.2-r0"}
+  "gvfs-doc" {= "1.22.2-r0"}
+  "gvfs-fuse" {= "1.22.2-r0"}
+  "gvfs-gphoto2" {= "1.22.2-r0"}
+  "gvfs-lang" {= "1.22.2-r0"}
+  "gvfs-obexftp" {= "1.22.2-r0"}
+  "gvfs-smb" {= "1.22.2-r0"}
+]
+extra-source "gvfs-dev-1.22.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/gvfs-dev-1.22.2-r0.apk"
+}

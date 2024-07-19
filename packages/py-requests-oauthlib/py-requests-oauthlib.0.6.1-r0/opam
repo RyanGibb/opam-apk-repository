@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py-requests-oauthlib-0.6.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py-requests-oauthlib"]
+]
+depends: [
+  "py-oauthlib"
+  "py-requests"
+  "python3"
+]
+extra-source "py-requests-oauthlib-0.6.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/py-requests-oauthlib-0.6.1-r0.apk"
+}

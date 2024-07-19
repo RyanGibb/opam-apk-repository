@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py3-libvirt-2.5.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py3-libvirt"]
+]
+depends: [
+  "libvirt-client"
+  "musl"
+  "python3"
+]
+extra-source "py3-libvirt-2.5.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/py3-libvirt-2.5.0-r0.apk"
+}

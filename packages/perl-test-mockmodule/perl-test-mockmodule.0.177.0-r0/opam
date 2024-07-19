@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-test-mockmodule-0.177.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-test-mockmodule"]
+]
+depends: [
+  "perl"
+  "perl-super"
+]
+extra-source "perl-test-mockmodule-0.177.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-test-mockmodule-0.177.0-r0.apk"
+}

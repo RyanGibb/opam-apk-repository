@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mesa-osmesa-12.0.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mesa-osmesa"]
+]
+depends: [
+  "libgcc"
+  "libstdc++"
+  "mesa-glapi"
+  "musl"
+]
+extra-source "mesa-osmesa-12.0.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/mesa-osmesa-12.0.3-r0.apk"
+}

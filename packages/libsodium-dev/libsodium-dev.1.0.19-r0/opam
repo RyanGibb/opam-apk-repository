@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del libsodium-dev"]
 ]
 depends: [
-  "libsodium"
+  "libsodium" {= "1.0.19-r0"}
   "pkgconf"
 ]
-
 extra-source "libsodium-dev-1.0.19-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libsodium-dev-1.0.19-r0.apk"
 }

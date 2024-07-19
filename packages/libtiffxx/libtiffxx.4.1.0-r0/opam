@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libtiffxx-4.1.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libtiffxx"]
+]
+depends: [
+  "libstdc++"
+  "musl"
+  "tiff"
+]
+extra-source "libtiffxx-4.1.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/libtiffxx-4.1.0-r0.apk"
+}

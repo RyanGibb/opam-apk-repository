@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-javascript-minifier-xs-0.11-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-javascript-minifier-xs"]
+]
+depends: [
+  "musl"
+]
+extra-source "perl-javascript-minifier-xs-0.11-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/perl-javascript-minifier-xs-0.11-r1.apk"
+}

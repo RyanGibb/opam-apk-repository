@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add curl-dbg-7.66.0-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del curl-dbg"]
+]
+depends: [
+  "ca-certificates"
+]
+extra-source "curl-dbg-7.66.0-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/curl-dbg-7.66.0-r4.apk"
+}

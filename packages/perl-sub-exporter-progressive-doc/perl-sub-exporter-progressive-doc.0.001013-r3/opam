@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-sub-exporter-progressive-doc-0.001013-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-sub-exporter-progressive-doc"]
+]
+extra-source "perl-sub-exporter-progressive-doc-0.001013-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-sub-exporter-progressive-doc-0.001013-r3.apk"
+}

@@ -1,0 +1,26 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mpv-0.3.10-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mpv"]
+]
+depends: [
+  "alsa-lib"
+  "enca"
+  "ffmpeg-libs"
+  "libva"
+  "libvdpau"
+  "libx11"
+  "libxext"
+  "libxv"
+  "libxxf86vm"
+  "lua5.2-libs"
+  "mesa-gl"
+  "musl"
+  "zlib"
+  ("ffmpeg-libs" | "ffmpeg1-libs")
+]
+extra-source "mpv-0.3.10-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/mpv-0.3.10-r0.apk"
+}

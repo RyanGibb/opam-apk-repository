@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del rabbitmq-c-doc"]
 ]
-
-
 extra-source "rabbitmq-c-doc-0.14.0-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/rabbitmq-c-doc-0.14.0-r0.apk"
 }

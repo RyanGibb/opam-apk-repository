@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gst-plugins-base-lang-1.20.6-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gst-plugins-base-lang"]
+]
+extra-source "gst-plugins-base-lang-1.20.6-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gst-plugins-base-lang-1.20.6-r0.apk"
+}

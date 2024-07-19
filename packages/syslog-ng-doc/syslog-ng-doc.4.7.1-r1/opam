@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del syslog-ng-doc"]
 ]
-
-
 extra-source "syslog-ng-doc-4.7.1-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/syslog-ng-doc-4.7.1-r1.apk"
 }

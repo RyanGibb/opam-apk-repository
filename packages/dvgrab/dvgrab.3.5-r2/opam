@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add dvgrab-3.5-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del dvgrab"]
+]
+depends: [
+  "libavc1394"
+  "libdv"
+  "libgcc"
+  "libiec61883"
+  "libjpeg-turbo"
+  "libraw1394"
+  "libstdc++"
+  "musl"
+]
+extra-source "dvgrab-3.5-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/dvgrab-3.5-r2.apk"
+}

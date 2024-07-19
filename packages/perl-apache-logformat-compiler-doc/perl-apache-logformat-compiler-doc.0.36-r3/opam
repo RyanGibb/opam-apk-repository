@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-apache-logformat-compiler-doc"]
 ]
-
-
 extra-source "perl-apache-logformat-compiler-doc-0.36-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-apache-logformat-compiler-doc-0.36-r3.apk"
 }

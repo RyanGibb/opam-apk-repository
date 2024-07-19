@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-devel-symdump-doc-2.18-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-devel-symdump-doc"]
+]
+extra-source "perl-devel-symdump-doc-2.18-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-devel-symdump-doc-2.18-r2.apk"
+}

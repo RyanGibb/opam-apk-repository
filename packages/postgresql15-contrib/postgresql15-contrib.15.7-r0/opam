@@ -11,10 +11,9 @@ depends: [
   "libuuid"
   "libxml2"
   "musl"
-  "postgresql15"
+  "postgresql15" {= "15.7-r0"}
   "zlib"
 ]
-
 extra-source "postgresql15-contrib-15.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/postgresql15-contrib-15.7-r0.apk"
 }

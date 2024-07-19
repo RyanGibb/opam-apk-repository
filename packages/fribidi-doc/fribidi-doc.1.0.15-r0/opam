@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del fribidi-doc"]
 ]
-
-
 extra-source "fribidi-doc-1.0.15-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/fribidi-doc-1.0.15-r0.apk"
 }

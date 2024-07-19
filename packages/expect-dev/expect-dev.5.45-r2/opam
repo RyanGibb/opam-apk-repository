@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add expect-dev-5.45-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del expect-dev"]
+]
+depends: [
+  "expect" {= "5.45-r2"}
+  "tcl-dev"
+]
+extra-source "expect-dev-5.45-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/expect-dev-5.45-r2.apk"
+}

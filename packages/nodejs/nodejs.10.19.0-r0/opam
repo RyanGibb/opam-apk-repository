@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add nodejs-10.19.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del nodejs"]
+]
+depends: [
+  "c-ares"
+  "ca-certificates"
+  "libcrypto1.1"
+  "libgcc"
+  "libssl1.1"
+  "libstdc++"
+  "libuv"
+  "musl"
+  "zlib"
+]
+extra-source "nodejs-10.19.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/nodejs-10.19.0-r0.apk"
+}

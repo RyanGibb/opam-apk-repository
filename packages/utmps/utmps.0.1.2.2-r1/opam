@@ -7,11 +7,10 @@ remove: [
 ]
 depends: [
   "musl"
-  "s6-ipcserver"
+  "s6-ipcserver" {>= "2.12"}
   "skalibs"
   ("busybox-binsh" | "dash-binsh" | "yash-binsh")
 ]
-
 extra-source "utmps-0.1.2.2-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/utmps-0.1.2.2-r1.apk"
 }

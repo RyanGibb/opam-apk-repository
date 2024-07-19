@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del flex-doc"]
 ]
-
-
 extra-source "flex-doc-2.6.4-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/flex-doc-2.6.4-r6.apk"
 }

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add fuse3-3.11.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del fuse3"]
+]
+depends: [
+  "fuse-common"
+  "fuse3-libs"
+  "musl"
+]
+extra-source "fuse3-3.11.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/fuse3-3.11.0-r0.apk"
+}

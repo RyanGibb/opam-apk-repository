@@ -7,11 +7,10 @@ remove: [
 ]
 depends: [
   "alsa-lib-dev"
-  "libportaudiocxx"
+  "libportaudiocxx" {= "19.7.0-r2"}
   "pkgconf"
-  "portaudio"
+  "portaudio" {= "19.7.0-r2"}
 ]
-
 extra-source "portaudio-dev-19.7.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/portaudio-dev-19.7.0-r2.apk"
 }

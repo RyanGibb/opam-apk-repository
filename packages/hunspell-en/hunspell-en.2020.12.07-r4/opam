@@ -6,30 +6,29 @@ remove: [
   ["sh" "-c" "sudo apk del hunspell-en"]
 ]
 depends: [
-  "hunspell-en-ag"
-  "hunspell-en-au"
-  "hunspell-en-bs"
-  "hunspell-en-bw"
-  "hunspell-en-bz"
-  "hunspell-en-ca"
-  "hunspell-en-dk"
-  "hunspell-en-gb"
-  "hunspell-en-gh"
-  "hunspell-en-hk"
-  "hunspell-en-ie"
-  "hunspell-en-in"
-  "hunspell-en-jm"
-  "hunspell-en-na"
-  "hunspell-en-ng"
-  "hunspell-en-nz"
-  "hunspell-en-ph"
-  "hunspell-en-sg"
-  "hunspell-en-tt"
-  "hunspell-en-us"
-  "hunspell-en-za"
-  "hunspell-en-zw"
+  "hunspell-en-ag" {= "2020.12.07-r4"}
+  "hunspell-en-au" {= "2020.12.07-r4"}
+  "hunspell-en-bs" {= "2020.12.07-r4"}
+  "hunspell-en-bw" {= "2020.12.07-r4"}
+  "hunspell-en-bz" {= "2020.12.07-r4"}
+  "hunspell-en-ca" {= "2020.12.07-r4"}
+  "hunspell-en-dk" {= "2020.12.07-r4"}
+  "hunspell-en-gb" {= "2020.12.07-r4"}
+  "hunspell-en-gh" {= "2020.12.07-r4"}
+  "hunspell-en-hk" {= "2020.12.07-r4"}
+  "hunspell-en-ie" {= "2020.12.07-r4"}
+  "hunspell-en-in" {= "2020.12.07-r4"}
+  "hunspell-en-jm" {= "2020.12.07-r4"}
+  "hunspell-en-na" {= "2020.12.07-r4"}
+  "hunspell-en-ng" {= "2020.12.07-r4"}
+  "hunspell-en-nz" {= "2020.12.07-r4"}
+  "hunspell-en-ph" {= "2020.12.07-r4"}
+  "hunspell-en-sg" {= "2020.12.07-r4"}
+  "hunspell-en-tt" {= "2020.12.07-r4"}
+  "hunspell-en-us" {= "2020.12.07-r4"}
+  "hunspell-en-za" {= "2020.12.07-r4"}
+  "hunspell-en-zw" {= "2020.12.07-r4"}
 ]
-
 extra-source "hunspell-en-2020.12.07-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/hunspell-en-2020.12.07-r4.apk"
 }

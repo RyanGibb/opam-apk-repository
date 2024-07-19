@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del patchutils-doc"]
 ]
-
-
 extra-source "patchutils-doc-0.4.2-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/patchutils-doc-0.4.2-r2.apk"
 }

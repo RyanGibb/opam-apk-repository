@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-net-ssleay-doc-1.92-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-net-ssleay-doc"]
+]
+extra-source "perl-net-ssleay-doc-1.92-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-net-ssleay-doc-1.92-r2.apk"
+}

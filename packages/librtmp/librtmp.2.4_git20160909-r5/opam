@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add librtmp-2.4_git20160909-r5.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del librtmp"]
+]
+depends: [
+  "libressl2.7-libcrypto"
+  "libressl2.7-libssl"
+  "musl"
+  "zlib"
+]
+extra-source "librtmp-2.4_git20160909-r5.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/librtmp-2.4_git20160909-r5.apk"
+}

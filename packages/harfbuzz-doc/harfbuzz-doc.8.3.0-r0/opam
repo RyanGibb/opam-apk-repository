@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add harfbuzz-doc-8.3.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del harfbuzz-doc"]
+]
+extra-source "harfbuzz-doc-8.3.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/harfbuzz-doc-8.3.0-r0.apk"
+}

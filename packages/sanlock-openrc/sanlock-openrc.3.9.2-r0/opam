@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del sanlock-openrc"]
 ]
-
-
 extra-source "sanlock-openrc-3.9.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/sanlock-openrc-3.9.2-r0.apk"
 }

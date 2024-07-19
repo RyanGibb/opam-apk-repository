@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add alpine-sdk-0.5-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del alpine-sdk"]
+]
+depends: [
+  "abuild"
+  "acct"
+  "build-base"
+  "git"
+  "mkinitfs"
+  "mtools"
+  "squashfs-tools"
+  "xorriso"
+]
+extra-source "alpine-sdk-0.5-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/alpine-sdk-0.5-r0.apk"
+}

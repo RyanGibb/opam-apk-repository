@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del mini_httpd-doc"]
 ]
-
-
 extra-source "mini_httpd-doc-1.30-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/mini_httpd-doc-1.30-r5.apk"
 }

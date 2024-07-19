@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-term-table-doc-0.016-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-term-table-doc"]
+]
+extra-source "perl-term-table-doc-0.016-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-term-table-doc-0.016-r1.apk"
+}

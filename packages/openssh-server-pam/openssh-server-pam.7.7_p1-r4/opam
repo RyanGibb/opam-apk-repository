@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add openssh-server-pam-7.7_p1-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del openssh-server-pam"]
+]
+depends: [
+  "libressl2.7-libcrypto"
+  "linux-pam"
+  "musl"
+  "openssh-keygen"
+  "openssh-server-common"
+  "zlib"
+]
+extra-source "openssh-server-pam-7.7_p1-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/openssh-server-pam-7.7_p1-r4.apk"
+}

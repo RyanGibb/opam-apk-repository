@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add openssl-3.0.14-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del openssl"]
+]
+depends: [
+  "libcrypto3"
+  "libcrypto3" {= "3.0.14-r0"}
+  "libssl3"
+  "libssl3" {= "3.0.14-r0"}
+  "musl"
+]
+extra-source "openssl-3.0.14-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/openssl-3.0.14-r0.apk"
+}

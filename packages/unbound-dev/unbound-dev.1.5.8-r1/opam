@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add unbound-dev-1.5.8-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del unbound-dev"]
+]
+depends: [
+  "expat-dev"
+  "ldns-dev"
+  "libevent-dev"
+  "openssl-dev"
+  "unbound-libs" {= "1.5.8-r1"}
+]
+extra-source "unbound-dev-1.5.8-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/unbound-dev-1.5.8-r1.apk"
+}

@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add samba-libs-py3-4.12.15-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del samba-libs-py3"]
+]
+depends: [
+  "gnutls"
+  "ldb"
+  "musl"
+  "py3-ldb"
+  "py3-talloc"
+  "python3"
+  "samba-client-libs"
+  "samba-libs"
+  "samba-util-libs"
+  "talloc"
+  "tevent"
+]
+extra-source "samba-libs-py3-4.12.15-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/samba-libs-py3-4.12.15-r0.apk"
+}

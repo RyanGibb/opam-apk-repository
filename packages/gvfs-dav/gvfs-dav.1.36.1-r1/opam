@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gvfs-dav-1.36.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gvfs-dav"]
+]
+depends: [
+  "avahi-glib"
+  "avahi-libs"
+  "glib"
+  "gvfs"
+  "libintl"
+  "libsoup"
+  "libxml2"
+  "musl"
+]
+extra-source "gvfs-dav-1.36.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/gvfs-dav-1.36.1-r1.apk"
+}

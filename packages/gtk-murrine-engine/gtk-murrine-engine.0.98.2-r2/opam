@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gtk-murrine-engine-0.98.2-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gtk-murrine-engine"]
+]
+depends: [
+  "cairo"
+  "gdk-pixbuf"
+  "glib"
+  "gtk+2.0"
+  "musl"
+  "pango"
+  "pixman"
+]
+extra-source "gtk-murrine-engine-0.98.2-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/gtk-murrine-engine-0.98.2-r2.apk"
+}

@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add zfs-lts-dev-5.15.162-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del zfs-lts-dev"]
+]
+depends: [
+  "e2fsprogs-dev"
+  "glib-dev"
+  "libtirpc-dev"
+  "linux-lts-dev" {= "5.15.162-r0"}
+  "util-linux-dev"
+]
+extra-source "zfs-lts-dev-5.15.162-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/zfs-lts-dev-5.15.162-r0.apk"
+}

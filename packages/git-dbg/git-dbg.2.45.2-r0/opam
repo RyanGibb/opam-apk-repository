@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del git-dbg"]
 ]
-
-
 extra-source "git-dbg-2.45.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/git-dbg-2.45.2-r0.apk"
 }

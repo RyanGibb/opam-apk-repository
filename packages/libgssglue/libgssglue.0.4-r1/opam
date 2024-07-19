@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libgssglue-0.4-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libgssglue"]
+]
+depends: [
+  "heimdal-dev"
+  "heimdal-libs"
+  "musl"
+]
+extra-source "libgssglue-0.4-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libgssglue-0.4-r1.apk"
+}

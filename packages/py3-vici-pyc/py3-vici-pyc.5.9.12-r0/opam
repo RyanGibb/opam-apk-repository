@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py3-vici-pyc-5.9.12-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py3-vici-pyc"]
+]
+depends: [
+  "iproute2"
+  "python3" {>= "3.11"}
+]
+extra-source "py3-vici-pyc-5.9.12-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/py3-vici-pyc-5.9.12-r0.apk"
+}

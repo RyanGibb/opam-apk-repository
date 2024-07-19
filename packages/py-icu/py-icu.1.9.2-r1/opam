@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py-icu-1.9.2-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py-icu"]
+]
+depends: [
+  "icu-libs"
+  "libgcc"
+  "libstdc++"
+  "musl"
+  "python"
+]
+extra-source "py-icu-1.9.2-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/py-icu-1.9.2-r1.apk"
+}

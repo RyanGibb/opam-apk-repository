@@ -1,0 +1,45 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add boost-dev-1.71.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del boost-dev"]
+]
+depends: [
+  "boost"
+  "boost-atomic" {= "1.71.0-r1"}
+  "boost-chrono" {= "1.71.0-r1"}
+  "boost-container" {= "1.71.0-r1"}
+  "boost-context" {= "1.71.0-r1"}
+  "boost-contract" {= "1.71.0-r1"}
+  "boost-coroutine" {= "1.71.0-r1"}
+  "boost-date_time" {= "1.71.0-r1"}
+  "boost-fiber" {= "1.71.0-r1"}
+  "boost-filesystem" {= "1.71.0-r1"}
+  "boost-graph" {= "1.71.0-r1"}
+  "boost-iostreams" {= "1.71.0-r1"}
+  "boost-locale" {= "1.71.0-r1"}
+  "boost-log" {= "1.71.0-r1"}
+  "boost-log_setup" {= "1.71.0-r1"}
+  "boost-math" {= "1.71.0-r1"}
+  "boost-prg_exec_monitor" {= "1.71.0-r1"}
+  "boost-program_options" {= "1.71.0-r1"}
+  "boost-python2" {= "1.71.0-r1"}
+  "boost-python3" {= "1.71.0-r1"}
+  "boost-random" {= "1.71.0-r1"}
+  "boost-regex" {= "1.71.0-r1"}
+  "boost-serialization" {= "1.71.0-r1"}
+  "boost-stacktrace_basic" {= "1.71.0-r1"}
+  "boost-stacktrace_noop" {= "1.71.0-r1"}
+  "boost-system" {= "1.71.0-r1"}
+  "boost-thread" {= "1.71.0-r1"}
+  "boost-timer" {= "1.71.0-r1"}
+  "boost-type_erasure" {= "1.71.0-r1"}
+  "boost-unit_test_framework" {= "1.71.0-r1"}
+  "boost-wave" {= "1.71.0-r1"}
+  "boost-wserialization" {= "1.71.0-r1"}
+  "linux-headers"
+]
+extra-source "boost-dev-1.71.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/boost-dev-1.71.0-r1.apk"
+}

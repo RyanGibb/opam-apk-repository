@@ -7,11 +7,10 @@ remove: [
 ]
 depends: [
   "fstrm"
-  "knot"
+  "knot" {= "3.3.5-r0"}
   "musl"
   "protobuf-c"
 ]
-
 extra-source "knot-mod-dnstap-3.3.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/knot-mod-dnstap-3.3.5-r0.apk"
 }

@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gapk-0.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gapk"]
+]
+depends: [
+  "apk-tools"
+  "atk"
+  "cairo"
+  "cairo-gobject"
+  "gdk-pixbuf"
+  "glib"
+  "gtk+3.0"
+  "libintl"
+  "musl"
+  "pango"
+]
+extra-source "gapk-0.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/gapk-0.1-r0.apk"
+}

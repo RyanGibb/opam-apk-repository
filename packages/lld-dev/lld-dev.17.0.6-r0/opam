@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del lld-dev"]
 ]
 depends: [
-  "lld"
-  "lld-libs"
+  "lld" {= "17.0.6-r0"}
+  "lld-libs" {= "17.0.6-r0"}
 ]
-
 extra-source "lld-dev-17.0.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lld-dev-17.0.6-r0.apk"
 }

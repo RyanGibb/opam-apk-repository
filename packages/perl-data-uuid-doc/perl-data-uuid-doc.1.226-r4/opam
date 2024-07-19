@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-data-uuid-doc-1.226-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-data-uuid-doc"]
+]
+extra-source "perl-data-uuid-doc-1.226-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/perl-data-uuid-doc-1.226-r4.apk"
+}

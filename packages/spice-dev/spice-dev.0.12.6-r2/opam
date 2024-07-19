@@ -1,0 +1,20 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add spice-dev-0.12.6-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del spice-dev"]
+]
+depends: [
+  "celt051-dev"
+  "glib-dev"
+  "libxinerama-dev"
+  "openssl-dev"
+  "pixman-dev"
+  "pkgconfig"
+  "spice-protocol"
+  "spice-server" {= "0.12.6-r2"}
+]
+extra-source "spice-dev-0.12.6-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/spice-dev-0.12.6-r2.apk"
+}

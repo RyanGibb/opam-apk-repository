@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add dansguardian-2.12.0.3-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del dansguardian"]
+]
+depends: [
+  "libgcc"
+  "libstdc++"
+  "logrotate"
+  "musl"
+  "pcre"
+  "zlib"
+  ("yash-binsh" | "busybox-binsh" | "dash-binsh")
+]
+extra-source "dansguardian-2.12.0.3-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/dansguardian-2.12.0.3-r6.apk"
+}

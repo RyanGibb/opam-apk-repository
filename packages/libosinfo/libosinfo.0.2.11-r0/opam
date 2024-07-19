@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libosinfo-0.2.11-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libosinfo"]
+]
+depends: [
+  "glib"
+  "hwdata"
+  "libintl"
+  "libxml2"
+  "libxslt"
+  "musl"
+  "zlib"
+]
+extra-source "libosinfo-0.2.11-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/libosinfo-0.2.11-r0.apk"
+}

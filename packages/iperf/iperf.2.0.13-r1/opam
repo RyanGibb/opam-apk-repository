@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add iperf-2.0.13-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del iperf"]
+]
+depends: [
+  "libgcc"
+  "libstdc++"
+  "musl"
+]
+conflicts: [
+  "iperf3"
+]
+extra-source "iperf-2.0.13-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/iperf-2.0.13-r1.apk"
+}

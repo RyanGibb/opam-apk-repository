@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mdocml-dev-1.13.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mdocml-dev"]
+]
+depends: [
+  "mdocml" {= "1.13.3-r0"}
+  "mdocml-doc" {= "1.13.3-r0"}
+  "mdocml-man" {= "1.13.3-r0"}
+]
+extra-source "mdocml-dev-1.13.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/mdocml-dev-1.13.3-r0.apk"
+}

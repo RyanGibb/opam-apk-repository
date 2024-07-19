@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add openipmi-2.0.22-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del openipmi"]
+]
+depends: [
+  "glib"
+  "musl"
+  "ncurses-libs"
+  "net-snmp-libs"
+  "openipmi-libs"
+]
+extra-source "openipmi-2.0.22-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/openipmi-2.0.22-r1.apk"
+}

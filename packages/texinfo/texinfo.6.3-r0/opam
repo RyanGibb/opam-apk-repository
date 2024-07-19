@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add texinfo-6.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del texinfo"]
+]
+depends: [
+  "musl"
+  "ncurses-libs"
+  "perl"
+]
+extra-source "texinfo-6.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/texinfo-6.3-r0.apk"
+}

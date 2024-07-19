@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del libxml2-static"]
 ]
 depends: [
-  "python3"
+  "python3" {>= "3.12"}
 ]
-
 extra-source "libxml2-static-2.12.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libxml2-static-2.12.7-r0.apk"
 }

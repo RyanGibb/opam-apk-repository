@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gvfs-1.36.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gvfs"]
+]
+depends: [
+  "busybox"
+  "gcr"
+  "glib"
+  "libgudev"
+  "libintl"
+  "libsecret"
+  "libsoup"
+  "musl"
+  "polkit"
+  "udisks2-libs"
+]
+extra-source "gvfs-1.36.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/gvfs-1.36.1-r1.apk"
+}

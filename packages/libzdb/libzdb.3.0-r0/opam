@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libzdb-3.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libzdb"]
+]
+depends: [
+  "libcrypto1.0"
+  "libssl1.0"
+  "musl"
+  "mysql-libs"
+  "sqlite-libs"
+  "zlib"
+  ("pgcluster-libpq" | "libpq")
+]
+extra-source "libzdb-3.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/libzdb-3.0-r0.apk"
+}

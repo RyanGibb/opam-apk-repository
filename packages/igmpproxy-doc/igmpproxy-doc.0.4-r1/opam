@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del igmpproxy-doc"]
 ]
-
-
 extra-source "igmpproxy-doc-0.4-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/igmpproxy-doc-0.4-r1.apk"
 }

@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del autoconf-archive-doc"]
 ]
-
-
 extra-source "autoconf-archive-doc-2023.02.20-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/autoconf-archive-doc-2023.02.20-r0.apk"
 }

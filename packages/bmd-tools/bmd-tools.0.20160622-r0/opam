@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add bmd-tools-0.20160622-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del bmd-tools"]
+]
+depends: [
+  "libusb"
+  "musl"
+]
+extra-source "bmd-tools-0.20160622-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/bmd-tools-0.20160622-r0.apk"
+}

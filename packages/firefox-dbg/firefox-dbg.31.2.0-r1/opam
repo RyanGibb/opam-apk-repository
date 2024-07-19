@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add firefox-dbg-31.2.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del firefox-dbg"]
+]
+extra-source "firefox-dbg-31.2.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/firefox-dbg-31.2.0-r1.apk"
+}

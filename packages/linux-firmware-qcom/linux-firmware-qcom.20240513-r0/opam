@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del linux-firmware-qcom"]
 ]
 depends: [
-  "linux-firmware-ath10k"
+  "linux-firmware-ath10k" {= "20240513-r0"}
 ]
-
 extra-source "linux-firmware-qcom-20240513-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/linux-firmware-qcom-20240513-r0.apk"
 }

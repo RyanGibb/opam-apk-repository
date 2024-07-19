@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add protoc-3.11.2-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del protoc"]
+]
+depends: [
+  "libgcc"
+  "libprotoc"
+  "libstdc++"
+  "musl"
+]
+extra-source "protoc-3.11.2-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/protoc-3.11.2-r1.apk"
+}

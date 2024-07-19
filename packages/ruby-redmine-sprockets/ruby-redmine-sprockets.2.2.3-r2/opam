@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ruby-redmine-sprockets-2.2.3-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ruby-redmine-sprockets"]
+]
+depends: [
+  "ruby"
+  "ruby-hike"
+  "ruby-multi_json"
+  "ruby-redmine-rack"
+  "ruby-tilt"
+]
+extra-source "ruby-redmine-sprockets-2.2.3-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/ruby-redmine-sprockets-2.2.3-r2.apk"
+}

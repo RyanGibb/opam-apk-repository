@@ -6,11 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del glu-dev"]
 ]
 depends: [
-  "glu"
+  "glu" {= "9.0.3-r3"}
   "mesa-dev"
   "pkgconf"
 ]
-
 extra-source "glu-dev-9.0.3-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/glu-dev-9.0.3-r3.apk"
 }

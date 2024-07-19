@@ -9,7 +9,6 @@ depends: [
   "libx11"
   "musl"
 ]
-
 extra-source "libxdamage-1.1.6-r5.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libxdamage-1.1.6-r5.apk"
 }

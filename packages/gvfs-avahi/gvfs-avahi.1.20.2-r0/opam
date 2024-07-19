@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gvfs-avahi-1.20.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gvfs-avahi"]
+]
+depends: [
+  "avahi-glib"
+  "avahi-libs"
+  "glib"
+  "gvfs"
+  "libintl"
+  "musl"
+]
+extra-source "gvfs-avahi-1.20.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/gvfs-avahi-1.20.2-r0.apk"
+}

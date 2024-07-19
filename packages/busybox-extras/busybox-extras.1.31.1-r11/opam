@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add busybox-extras-1.31.1-r11.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del busybox-extras"]
+]
+depends: [
+  "busybox"
+  "musl"
+]
+extra-source "busybox-extras-1.31.1-r11.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/busybox-extras-1.31.1-r11.apk"
+}

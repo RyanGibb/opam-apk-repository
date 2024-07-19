@@ -13,7 +13,6 @@ depends: [
   "pcre2"
   "zlib"
 ]
-
 extra-source "pcre2-tools-10.43-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/pcre2-tools-10.43-r0.apk"
 }

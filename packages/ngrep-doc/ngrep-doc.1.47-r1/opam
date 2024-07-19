@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ngrep-doc-1.47-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ngrep-doc"]
+]
+extra-source "ngrep-doc-1.47-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/ngrep-doc-1.47-r1.apk"
+}

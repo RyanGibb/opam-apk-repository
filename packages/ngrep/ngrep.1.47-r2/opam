@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ngrep-1.47-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ngrep"]
+]
+depends: [
+  "libpcap"
+  "musl"
+]
+extra-source "ngrep-1.47-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/ngrep-1.47-r2.apk"
+}

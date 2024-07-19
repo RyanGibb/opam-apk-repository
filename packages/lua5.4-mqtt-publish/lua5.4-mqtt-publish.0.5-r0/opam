@@ -8,7 +8,6 @@ remove: [
 depends: [
   "lua5.4-mosquitto"
 ]
-
 extra-source "lua5.4-mqtt-publish-0.5-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lua5.4-mqtt-publish-0.5-r0.apk"
 }

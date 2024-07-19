@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add irssi-proxy-1.0.8-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del irssi-proxy"]
+]
+depends: [
+  "irssi"
+  "musl"
+]
+extra-source "irssi-proxy-1.0.8-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/irssi-proxy-1.0.8-r0.apk"
+}

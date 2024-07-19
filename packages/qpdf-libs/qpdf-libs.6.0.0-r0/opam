@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add qpdf-libs-6.0.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del qpdf-libs"]
+]
+depends: [
+  "libgcc"
+  "libstdc++"
+  "musl"
+  "pcre"
+  "perl"
+  "zlib"
+]
+extra-source "qpdf-libs-6.0.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/qpdf-libs-6.0.0-r0.apk"
+}

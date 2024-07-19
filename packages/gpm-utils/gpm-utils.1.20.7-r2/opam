@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gpm-utils-1.20.7-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gpm-utils"]
+]
+depends: [
+  "gpm"
+  "gpm-libs"
+  "musl"
+]
+extra-source "gpm-utils-1.20.7-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/gpm-utils-1.20.7-r2.apk"
+}

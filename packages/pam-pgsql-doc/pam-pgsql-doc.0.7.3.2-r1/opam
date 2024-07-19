@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add pam-pgsql-doc-0.7.3.2-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del pam-pgsql-doc"]
+]
+extra-source "pam-pgsql-doc-0.7.3.2-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/pam-pgsql-doc-0.7.3.2-r1.apk"
+}

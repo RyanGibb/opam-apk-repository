@@ -6,10 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del debian-devscripts"]
 ]
 depends: [
-  "checkbashisms"
-  "debian-devscripts-hardening-check"
+  "checkbashisms" {= "2.23.7-r0"}
+  "debian-devscripts-hardening-check" {= "2.23.7-r0"}
 ]
-
 extra-source "debian-devscripts-2.23.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/debian-devscripts-2.23.7-r0.apk"
 }

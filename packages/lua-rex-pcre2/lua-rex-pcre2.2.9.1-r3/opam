@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del lua-rex-pcre2"]
 ]
-
-
 extra-source "lua-rex-pcre2-2.9.1-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/lua-rex-pcre2-2.9.1-r3.apk"
 }

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add rrdcollect-doc-0.2.10-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del rrdcollect-doc"]
+]
+extra-source "rrdcollect-doc-0.2.10-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/rrdcollect-doc-0.2.10-r3.apk"
+}

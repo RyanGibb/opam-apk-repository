@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add freeradius-dbg-3.0.21-r7.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del freeradius-dbg"]
+]
+extra-source "freeradius-dbg-3.0.21-r7.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/freeradius-dbg-3.0.21-r7.apk"
+}

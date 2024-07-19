@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add qt-x11-4.8.6-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del qt-x11"]
+]
+depends: [
+  "alsa-lib"
+  "fontconfig"
+  "freetype"
+  "glib"
+  "hicolor-icon-theme"
+  "libgcc"
+  "libice"
+  "libjpeg-turbo"
+  "libmng"
+  "libpng"
+  "libsm"
+  "libstdc++"
+  "libx11"
+  "libxext"
+  "libxrender"
+  "mesa-gl"
+  "musl"
+  "qt"
+  "tiff"
+  "zlib"
+]
+extra-source "qt-x11-4.8.6-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/qt-x11-4.8.6-r2.apk"
+}

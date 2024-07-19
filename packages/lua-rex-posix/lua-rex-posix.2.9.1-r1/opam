@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lua-rex-posix-2.9.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lua-rex-posix"]
+]
+extra-source "lua-rex-posix-2.9.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/lua-rex-posix-2.9.1-r1.apk"
+}

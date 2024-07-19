@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add cvs-1.12.13-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del cvs"]
+]
+depends: [
+  "musl"
+  "zlib"
+]
+extra-source "cvs-1.12.13-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.14/main/x86_64/cvs-1.12.13-r0.apk"
+}

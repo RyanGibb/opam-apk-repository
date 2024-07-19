@@ -8,6 +8,7 @@ remove: [
 depends: [
   "avahi-libs"
   "cups-client"
+  "cups-client" {= "2.4.9-r0"}
   "cups-libs"
   "dbus"
   "dbus-libs"
@@ -20,7 +21,6 @@ depends: [
   "poppler-utils"
   ("busybox-binsh" | "dash-binsh" | "yash-binsh")
 ]
-
 extra-source "cups-2.4.9-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/cups-2.4.9-r0.apk"
 }

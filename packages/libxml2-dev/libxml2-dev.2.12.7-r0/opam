@@ -6,13 +6,12 @@ remove: [
   ["sh" "-c" "sudo apk del libxml2-dev"]
 ]
 depends: [
-  "libxml2"
-  "libxml2-utils"
+  "libxml2" {= "2.12.7-r0"}
+  "libxml2-utils" {= "2.12.7-r0"}
   "pkgconf"
   "xz-dev"
   "zlib-dev"
 ]
-
 extra-source "libxml2-dev-2.12.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libxml2-dev-2.12.7-r0.apk"
 }

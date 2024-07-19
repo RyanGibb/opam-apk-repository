@@ -7,9 +7,8 @@ remove: [
 ]
 depends: [
   "pkgconf"
-  "userspace-rcu"
+  "userspace-rcu" {= "0.14.0-r2"}
 ]
-
 extra-source "userspace-rcu-dev-0.14.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/userspace-rcu-dev-0.14.0-r2.apk"
 }

@@ -8,9 +8,8 @@ remove: [
 depends: [
   "eudev"
   "tcl"
-  "usb-modeswitch"
+  "usb-modeswitch" {= "2.6.1-r3"}
 ]
-
 extra-source "usb-modeswitch-udev-2.6.1-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/usb-modeswitch-udev-2.6.1-r3.apk"
 }

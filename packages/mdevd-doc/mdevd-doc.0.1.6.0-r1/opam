@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mdevd-doc-0.1.6.0-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mdevd-doc"]
+]
+extra-source "mdevd-doc-0.1.6.0-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/mdevd-doc-0.1.6.0-r1.apk"
+}

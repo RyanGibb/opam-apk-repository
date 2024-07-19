@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add eudev-openrc-3.2.11-r8.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del eudev-openrc"]
+]
+extra-source "eudev-openrc-3.2.11-r8.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/eudev-openrc-3.2.11-r8.apk"
+}

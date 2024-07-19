@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-math-round-doc-0.07-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-math-round-doc"]
+]
+extra-source "perl-math-round-doc-0.07-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/perl-math-round-doc-0.07-r2.apk"
+}

@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add minetest-server-0.4.11-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del minetest-server"]
+]
+depends: [
+  "busybox"
+  "hiredis"
+  "libgcc"
+  "libstdc++"
+  "lua5.1-libs"
+  "minetest-common"
+  "musl"
+  "sqlite-libs"
+  "zlib"
+]
+extra-source "minetest-server-0.4.11-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/minetest-server-0.4.11-r1.apk"
+}

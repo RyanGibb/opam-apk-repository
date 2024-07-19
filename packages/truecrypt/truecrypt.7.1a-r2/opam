@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add truecrypt-7.1a-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del truecrypt"]
+]
+depends: [
+  "device-mapper"
+  "fuse"
+  "libgcc"
+  "libstdc++"
+  "musl"
+  "wxgtk2.8"
+  "wxgtk2.8-base"
+]
+extra-source "truecrypt-7.1a-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/truecrypt-7.1a-r2.apk"
+}

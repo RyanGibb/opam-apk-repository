@@ -11,7 +11,6 @@ depends: [
   "llvm18-libs"
   "musl"
 ]
-
 extra-source "clang18-libs-18.1.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/clang18-libs-18.1.6-r0.apk"
 }

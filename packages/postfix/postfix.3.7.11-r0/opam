@@ -1,0 +1,19 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add postfix-3.7.11-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del postfix"]
+]
+depends: [
+  "icu-libs"
+  "libcrypto3"
+  "libsasl"
+  "libssl3"
+  "lmdb"
+  "musl"
+  ("yash-binsh" | "busybox-binsh" | "dash-binsh")
+]
+extra-source "postfix-3.7.11-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/postfix-3.7.11-r0.apk"
+}

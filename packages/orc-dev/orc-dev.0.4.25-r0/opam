@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add orc-dev-0.4.25-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del orc-dev"]
+]
+depends: [
+  "musl"
+  "orc"
+  "orc" {= "0.4.25-r0"}
+  "pkgconfig"
+]
+extra-source "orc-dev-0.4.25-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/orc-dev-0.4.25-r0.apk"
+}

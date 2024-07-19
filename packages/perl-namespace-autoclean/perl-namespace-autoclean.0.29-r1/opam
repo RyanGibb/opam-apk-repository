@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-namespace-autoclean-0.29-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-namespace-autoclean"]
+]
+depends: [
+  "perl"
+  "perl-b-hooks-endofscope"
+  "perl-namespace-clean"
+  "perl-sub-identify"
+]
+extra-source "perl-namespace-autoclean-0.29-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-namespace-autoclean-0.29-r1.apk"
+}

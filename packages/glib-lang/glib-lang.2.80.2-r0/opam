@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del glib-lang"]
 ]
-
-
 extra-source "glib-lang-2.80.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/glib-lang-2.80.2-r0.apk"
 }

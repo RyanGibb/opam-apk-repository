@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add pgcluster-1.9.0_rc5-r8.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del pgcluster"]
+]
+depends: [
+  "libcrypto1.0"
+  "libssl1.0"
+  "musl"
+  "zlib"
+  ("pgcluster-libpq" | "libpq")
+]
+extra-source "pgcluster-1.9.0_rc5-r8.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/pgcluster-1.9.0_rc5-r8.apk"
+}

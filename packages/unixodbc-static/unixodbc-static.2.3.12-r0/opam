@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del unixodbc-static"]
 ]
-
-
 extra-source "unixodbc-static-2.3.12-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/unixodbc-static-2.3.12-r0.apk"
 }

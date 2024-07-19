@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del zsh-doc"]
 ]
-
-
 extra-source "zsh-doc-5.9-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/zsh-doc-5.9-r3.apk"
 }

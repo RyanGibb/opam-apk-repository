@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-parse-yapp-doc"]
 ]
-
-
 extra-source "perl-parse-yapp-doc-1.21-r3.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-parse-yapp-doc-1.21-r3.apk"
 }

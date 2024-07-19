@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add jack-dev-1.9.9.5-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del jack-dev"]
+]
+depends: [
+  "jack" {= "1.9.9.5-r0"}
+  "jack-dbus" {= "1.9.9.5-r0"}
+  "jack-doc" {= "1.9.9.5-r0"}
+  "jack-example-clients" {= "1.9.9.5-r0"}
+  "pkgconfig"
+]
+extra-source "jack-dev-1.9.9.5-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/jack-dev-1.9.9.5-r0.apk"
+}

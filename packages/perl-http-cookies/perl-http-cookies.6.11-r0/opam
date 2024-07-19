@@ -10,7 +10,6 @@ depends: [
   "perl-http-date"
   "perl-http-message"
 ]
-
 extra-source "perl-http-cookies-6.11-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-http-cookies-6.11-r0.apk"
 }

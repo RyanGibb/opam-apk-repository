@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del bison-doc"]
 ]
-
-
 extra-source "bison-doc-3.8.2-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/bison-doc-3.8.2-r1.apk"
 }

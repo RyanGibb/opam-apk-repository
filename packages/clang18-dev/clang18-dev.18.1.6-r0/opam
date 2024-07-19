@@ -6,11 +6,10 @@ remove: [
   ["sh" "-c" "sudo apk del clang18-dev"]
 ]
 depends: [
-  "clang18"
-  "clang18-libclang"
-  "clang18-libs"
+  "clang18" {= "18.1.6-r0"}
+  "clang18-libclang" {= "18.1.6-r0"}
+  "clang18-libs" {= "18.1.6-r0"}
 ]
-
 extra-source "clang18-dev-18.1.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/clang18-dev-18.1.6-r0.apk"
 }

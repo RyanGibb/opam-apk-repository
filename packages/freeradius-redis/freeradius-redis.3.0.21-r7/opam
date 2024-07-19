@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add freeradius-redis-3.0.21-r7.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del freeradius-redis"]
+]
+depends: [
+  "freeradius" {= "3.0.21-r7"}
+  "hiredis"
+  "musl"
+]
+extra-source "freeradius-redis-3.0.21-r7.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/freeradius-redis-3.0.21-r7.apk"
+}

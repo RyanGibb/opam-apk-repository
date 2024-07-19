@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gpgme-doc-1.4.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gpgme-doc"]
+]
+extra-source "gpgme-doc-1.4.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/gpgme-doc-1.4.3-r0.apk"
+}

@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add lttng-ust-dev-2.10.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del lttng-ust-dev"]
+]
+depends: [
+  "lttng-ust" {= "2.10.4-r0"}
+  "pkgconf"
+  "userspace-rcu-dev"
+]
+extra-source "lttng-ust-dev-2.10.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/lttng-ust-dev-2.10.4-r0.apk"
+}

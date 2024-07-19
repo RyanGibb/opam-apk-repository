@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py-libvirt-glib-0.1.9-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py-libvirt-glib"]
+]
+depends: [
+  "glib"
+  "libintl"
+  "libvirt-client"
+  "libvirt-glib"
+  "musl"
+]
+extra-source "py-libvirt-glib-0.1.9-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/py-libvirt-glib-0.1.9-r0.apk"
+}

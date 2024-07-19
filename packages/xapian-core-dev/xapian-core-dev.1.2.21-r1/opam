@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xapian-core-dev-1.2.21-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xapian-core-dev"]
+]
+depends: [
+  "libxapian" {= "1.2.21-r1"}
+  "pkgconfig"
+  "util-linux-dev"
+  "zlib-dev"
+]
+extra-source "xapian-core-dev-1.2.21-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/xapian-core-dev-1.2.21-r1.apk"
+}

@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-http-cookiejar-doc"]
 ]
-
-
 extra-source "perl-http-cookiejar-doc-0.014-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-http-cookiejar-doc-0.014-r1.apk"
 }

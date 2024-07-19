@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del libxml2-dbg"]
 ]
-
-
 extra-source "libxml2-dbg-2.12.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/libxml2-dbg-2.12.7-r0.apk"
 }

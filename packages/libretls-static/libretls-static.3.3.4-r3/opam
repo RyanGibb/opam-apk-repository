@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libretls-static-3.3.4-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libretls-static"]
+]
+extra-source "libretls-static-3.3.4-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/libretls-static-3.3.4-r3.apk"
+}

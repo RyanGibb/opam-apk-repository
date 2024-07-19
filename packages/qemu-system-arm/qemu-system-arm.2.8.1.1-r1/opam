@@ -1,0 +1,38 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add qemu-system-arm-2.8.1.1-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del qemu-system-arm"]
+]
+depends: [
+  "alsa-lib"
+  "glib"
+  "gnutls"
+  "libaio"
+  "libbz2"
+  "libcurl"
+  "libepoxy"
+  "libgcc"
+  "libjpeg-turbo"
+  "libnfs"
+  "libpng"
+  "libssh2"
+  "libstdc++"
+  "libusb"
+  "lzo"
+  "mesa-gbm"
+  "musl"
+  "ncurses-libs"
+  "nettle"
+  "pixman"
+  "qemu"
+  "snappy"
+  "spice-server"
+  "usbredir"
+  "vde2-libs"
+  "zlib"
+]
+extra-source "qemu-system-arm-2.8.1.1-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/qemu-system-arm-2.8.1.1-r1.apk"
+}

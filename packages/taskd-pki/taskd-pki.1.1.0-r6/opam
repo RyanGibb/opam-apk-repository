@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add taskd-pki-1.1.0-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del taskd-pki"]
+]
+depends: [
+  "gnutls-utils"
+  "taskd"
+]
+extra-source "taskd-pki-1.1.0-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.11/main/x86_64/taskd-pki-1.1.0-r6.apk"
+}

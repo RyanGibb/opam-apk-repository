@@ -10,7 +10,6 @@ depends: [
   "musl"
   "ncftp"
 ]
-
 extra-source "ncftp-bookmarks-3.2.6-r6.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/ncftp-bookmarks-3.2.6-r6.apk"
 }

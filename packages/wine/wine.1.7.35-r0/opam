@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add wine-1.7.35-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del wine"]
+]
+depends: [
+  "alsa-lib"
+  "gettext"
+  "glib"
+  "gst-plugins-base0.10"
+  "gstreamer0.10"
+  "libgcc"
+  "libldap"
+  "libx11"
+  "libxext"
+  "libxml2"
+  "musl"
+  "zlib"
+]
+extra-source "wine-1.7.35-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.1/main/x86_64/wine-1.7.35-r0.apk"
+}

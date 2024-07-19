@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add net-snmp-tools-5.7.3-r8.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del net-snmp-tools"]
+]
+depends: [
+  "libressl2.5-libcrypto"
+  "musl"
+  "net-snmp-agent-libs"
+  "net-snmp-libs"
+]
+extra-source "net-snmp-tools-5.7.3-r8.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/net-snmp-tools-5.7.3-r8.apk"
+}

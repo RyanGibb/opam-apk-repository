@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add squid-lang-lv-6.6-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del squid-lang-lv"]
+]
+depends: [
+  "logrotate"
+]
+extra-source "squid-lang-lv-6.6-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/squid-lang-lv-6.6-r0.apk"
+}

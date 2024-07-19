@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add ruby-dev-2.2.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del ruby-dev"]
+]
+depends: [
+  "pkgconfig"
+  "ruby" {= "2.2.3-r0"}
+  "ruby-bigdecimal" {= "2.2.3-r0"}
+  "ruby-doc" {= "2.2.3-r0"}
+  "ruby-io-console" {= "2.2.3-r0"}
+  "ruby-irb" {= "2.2.3-r0"}
+  "ruby-json" {= "2.2.3-r0"}
+  "ruby-libs" {= "2.2.3-r0"}
+  "ruby-minitest" {= "2.2.3-r0"}
+  "ruby-rake" {= "2.2.3-r0"}
+  "ruby-rdoc" {= "2.2.3-r0"}
+]
+extra-source "ruby-dev-2.2.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/ruby-dev-2.2.3-r0.apk"
+}

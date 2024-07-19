@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-net-rblclient-doc"]
 ]
-
-
 extra-source "perl-net-rblclient-doc-0.5-r8.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-net-rblclient-doc-0.5-r8.apk"
 }

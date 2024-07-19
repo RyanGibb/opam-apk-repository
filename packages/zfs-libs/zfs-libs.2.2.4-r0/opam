@@ -14,7 +14,6 @@ depends: [
   "musl"
   "zlib"
 ]
-
 extra-source "zfs-libs-2.2.4-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/zfs-libs-2.2.4-r0.apk"
 }

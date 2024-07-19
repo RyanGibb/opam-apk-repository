@@ -1,0 +1,16 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libxkbfile-dev-1.0.9-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libxkbfile-dev"]
+]
+depends: [
+  "libx11-dev"
+  "libxkbfile" {= "1.0.9-r2"}
+  "pkgconf"
+  "xorgproto"
+]
+extra-source "libxkbfile-dev-1.0.9-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libxkbfile-dev-1.0.9-r2.apk"
+}

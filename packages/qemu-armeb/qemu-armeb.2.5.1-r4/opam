@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add qemu-armeb-2.5.1-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del qemu-armeb"]
+]
+depends: [
+  "glib"
+  "libgcc"
+  "libstdc++"
+  "musl"
+  "qemu"
+  "zlib"
+]
+extra-source "qemu-armeb-2.5.1-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/qemu-armeb-2.5.1-r4.apk"
+}

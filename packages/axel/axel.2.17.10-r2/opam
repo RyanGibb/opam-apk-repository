@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add axel-2.17.10-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del axel"]
+]
+depends: [
+  "libcrypto1.1"
+  "libssl1.1"
+  "musl"
+]
+extra-source "axel-2.17.10-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.15/main/x86_64/axel-2.17.10-r2.apk"
+}

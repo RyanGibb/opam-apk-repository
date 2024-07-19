@@ -9,7 +9,6 @@ depends: [
   "musl"
   "yaml"
 ]
-
 extra-source "yx-1.0.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/yx-1.0.2-r0.apk"
 }

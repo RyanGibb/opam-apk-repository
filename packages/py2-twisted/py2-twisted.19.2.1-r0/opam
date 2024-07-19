@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add py2-twisted-19.2.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del py2-twisted"]
+]
+depends: [
+  "musl"
+  "py2-constantly"
+  "py2-crypto"
+  "py2-incremental"
+  "py2-zope-interface"
+  "python2"
+]
+extra-source "py2-twisted-19.2.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.10/main/x86_64/py2-twisted-19.2.1-r0.apk"
+}

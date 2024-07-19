@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-class-data-inheritable-doc"]
 ]
-
-
 extra-source "perl-class-data-inheritable-doc-0.09-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-class-data-inheritable-doc-0.09-r1.apk"
 }

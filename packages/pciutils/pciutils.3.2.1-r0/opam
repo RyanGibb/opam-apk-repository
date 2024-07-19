@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add pciutils-3.2.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del pciutils"]
+]
+depends: [
+  "hwdata-pci"
+  "musl"
+]
+extra-source "pciutils-3.2.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.0/main/x86_64/pciutils-3.2.1-r0.apk"
+}

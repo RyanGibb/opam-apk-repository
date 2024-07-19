@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xorg-server-xwayland-1.18.4-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xorg-server-xwayland"]
+]
+depends: [
+  "font-cursor-misc"
+  "font-misc-misc"
+  "libdrm"
+  "libepoxy"
+  "libressl2.4-libcrypto"
+  "libxau"
+  "libxdmcp"
+  "libxfont"
+  "libxshmfence"
+  "mesa-gbm"
+  "mesa-gl"
+  "musl"
+  "pixman"
+  "wayland"
+  "xinit"
+  "xkbcomp"
+  "xkeyboard-config"
+]
+extra-source "xorg-server-xwayland-1.18.4-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.5/main/x86_64/xorg-server-xwayland-1.18.4-r3.apk"
+}

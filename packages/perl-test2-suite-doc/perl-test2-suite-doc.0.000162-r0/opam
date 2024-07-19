@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-test2-suite-doc"]
 ]
-
-
 extra-source "perl-test2-suite-doc-0.000162-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-test2-suite-doc-0.000162-r0.apk"
 }

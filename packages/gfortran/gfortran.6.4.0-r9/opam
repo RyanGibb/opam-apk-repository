@@ -1,0 +1,21 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gfortran-6.4.0-r9.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gfortran"]
+]
+depends: [
+  "gcc" {= "6.4.0-r9"}
+  "gmp"
+  "isl"
+  "libgfortran" {= "6.4.0-r9"}
+  "libquadmath" {= "6.4.0-r9"}
+  "mpc1"
+  "mpfr3"
+  "musl"
+  "zlib"
+]
+extra-source "gfortran-6.4.0-r9.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/gfortran-6.4.0-r9.apk"
+}

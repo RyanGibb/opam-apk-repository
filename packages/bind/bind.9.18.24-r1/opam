@@ -1,0 +1,27 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add bind-9.18.24-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del bind"]
+]
+depends: [
+  "bind-dnssec-root" {= "9.18.24-r1"}
+  "bind-libs"
+  "bind-tools"
+  "dns-root-hints"
+  "fstrm"
+  "json-c"
+  "libcap2"
+  "libcrypto3"
+  "libuv"
+  "libxml2"
+  "musl"
+  "nghttp2-libs"
+  "protobuf-c"
+  "zlib"
+  ("busybox-binsh" | "dash-binsh" | "yash-binsh")
+]
+extra-source "bind-9.18.24-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/bind-9.18.24-r1.apk"
+}

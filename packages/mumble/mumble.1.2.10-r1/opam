@@ -1,0 +1,29 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mumble-1.2.10-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mumble"]
+]
+depends: [
+  "alsa-lib"
+  "avahi-compat-libdns_sd"
+  "avahi-libs"
+  "libcrypto1.0"
+  "libgcc"
+  "libsndfile"
+  "libssl1.0"
+  "libstdc++"
+  "libx11"
+  "libxi"
+  "musl"
+  "protobuf"
+  "qt"
+  "qt-sqlite"
+  "qt-x11"
+  "speex"
+  "speexdsp"
+]
+extra-source "mumble-1.2.10-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/mumble-1.2.10-r1.apk"
+}

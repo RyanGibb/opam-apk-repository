@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del daq-static"]
 ]
-
-
 extra-source "daq-static-3.0.14-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/daq-static-3.0.14-r0.apk"
 }

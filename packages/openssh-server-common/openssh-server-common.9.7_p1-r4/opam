@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del openssh-server-common"]
 ]
-
-
 extra-source "openssh-server-common-9.7_p1-r4.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/openssh-server-common-9.7_p1-r4.apk"
 }

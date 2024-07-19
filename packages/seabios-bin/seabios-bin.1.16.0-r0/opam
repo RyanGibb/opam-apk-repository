@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add seabios-bin-1.16.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del seabios-bin"]
+]
+extra-source "seabios-bin-1.16.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/seabios-bin-1.16.0-r0.apk"
+}

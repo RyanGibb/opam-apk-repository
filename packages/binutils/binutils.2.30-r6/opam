@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add binutils-2.30-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del binutils"]
+]
+depends: [
+  "musl"
+  "zlib"
+]
+extra-source "binutils-2.30-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/binutils-2.30-r6.apk"
+}

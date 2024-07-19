@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add vde2-2.3.2-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del vde2"]
+]
+depends: [
+  "busybox"
+  "libcrypto1.0"
+  "libpcap"
+  "musl"
+  "openssl"
+  "vde2-libs"
+]
+extra-source "vde2-2.3.2-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/vde2-2.3.2-r3.apk"
+}

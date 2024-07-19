@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add cairo-tools-1.17.4-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del cairo-tools"]
+]
+depends: [
+  "musl"
+  "zlib"
+]
+extra-source "cairo-tools-1.17.4-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/cairo-tools-1.17.4-r2.apk"
+}

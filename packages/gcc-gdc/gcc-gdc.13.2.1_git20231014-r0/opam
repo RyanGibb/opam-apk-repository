@@ -1,0 +1,22 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gcc-gdc-13.2.1_git20231014-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gcc-gdc"]
+]
+depends: [
+  "gcc" {= "13.2.1_git20231014-r0"}
+  "gmp"
+  "libgphobos" {= "13.2.1_git20231014-r0"}
+  "libucontext-dev"
+  "mpc1"
+  "mpfr4"
+  "musl"
+  "musl-dev"
+  "zlib"
+  ("isl25" | "isl26")
+]
+extra-source "gcc-gdc-13.2.1_git20231014-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/gcc-gdc-13.2.1_git20231014-r0.apk"
+}

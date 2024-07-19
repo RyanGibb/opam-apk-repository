@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del ca-certificates-doc"]
 ]
-
-
 extra-source "ca-certificates-doc-20240705-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/ca-certificates-doc-20240705-r0.apk"
 }

@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mercurial-bash-completion-5.4-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mercurial-bash-completion"]
+]
+extra-source "mercurial-bash-completion-5.4-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/mercurial-bash-completion-5.4-r0.apk"
+}

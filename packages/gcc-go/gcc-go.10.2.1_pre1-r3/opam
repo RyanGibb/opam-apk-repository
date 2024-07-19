@@ -1,0 +1,24 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gcc-go-10.2.1_pre1-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gcc-go"]
+]
+depends: [
+  "gcc" {= "10.2.1_pre1-r3"}
+  "gmp"
+  "isl22"
+  "libgo"
+  "libgo" {= "10.2.1_pre1-r3"}
+  "mpc1"
+  "mpfr4"
+  "musl"
+  "zlib"
+]
+conflicts: [
+  "go"
+]
+extra-source "gcc-go-10.2.1_pre1-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/gcc-go-10.2.1_pre1-r3.apk"
+}

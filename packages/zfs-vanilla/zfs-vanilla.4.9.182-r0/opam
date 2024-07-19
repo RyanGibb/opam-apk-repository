@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add zfs-vanilla-4.9.182-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del zfs-vanilla"]
+]
+depends: [
+  "linux-vanilla" {= "4.9.182-r0"}
+  "spl-vanilla"
+]
+extra-source "zfs-vanilla-4.9.182-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/zfs-vanilla-4.9.182-r0.apk"
+}

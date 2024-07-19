@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add coreutils-sha512sum-9.4-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del coreutils-sha512sum"]
+]
+depends: [
+  "libcrypto3"
+  "musl"
+]
+extra-source "coreutils-sha512sum-9.4-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/coreutils-sha512sum-9.4-r2.apk"
+}

@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add xen-dev-4.6.6-r5.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del xen-dev"]
+]
+depends: [
+  "argp-standalone"
+  "curl-dev"
+  "dev86"
+  "e2fsprogs-dev"
+  "gettext"
+  "glib-dev"
+  "gnutls-dev"
+  "iasl"
+  "libaio-dev"
+  "libnl3-dev"
+  "linux-headers"
+  "lzo-dev"
+  "ncurses-dev"
+  "openssl-dev"
+  "pciutils-dev"
+  "perl"
+  "python-dev"
+  "spice-dev"
+  "texinfo"
+  "util-linux-dev"
+  "xen-libs" {= "4.6.6-r5"}
+  "xz-dev"
+  "yajl-dev"
+  "zlib-dev"
+]
+extra-source "xen-dev-4.6.6-r5.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.4/main/x86_64/xen-dev-4.6.6-r5.apk"
+}

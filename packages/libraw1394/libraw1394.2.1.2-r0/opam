@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libraw1394-2.1.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libraw1394"]
+]
+depends: [
+  "musl"
+]
+extra-source "libraw1394-2.1.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.7/main/x86_64/libraw1394-2.1.2-r0.apk"
+}

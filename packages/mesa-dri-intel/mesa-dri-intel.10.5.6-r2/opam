@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add mesa-dri-intel-10.5.6-r2.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del mesa-dri-intel"]
+]
+depends: [
+  "expat"
+  "libdrm"
+  "libgcc"
+  "libstdc++"
+  "musl"
+]
+extra-source "mesa-dri-intel-10.5.6-r2.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/mesa-dri-intel-10.5.6-r2.apk"
+}

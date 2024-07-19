@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del perl-dbix-searchbuilder-doc"]
 ]
-
-
 extra-source "perl-dbix-searchbuilder-doc-1.82-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/perl-dbix-searchbuilder-doc-1.82-r0.apk"
 }

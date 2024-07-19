@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add zmap-1.2.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del zmap"]
+]
+depends: [
+  "gmp"
+  "libpcap"
+  "musl"
+]
+extra-source "zmap-1.2.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/zmap-1.2.1-r0.apk"
+}

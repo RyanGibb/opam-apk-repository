@@ -1,0 +1,13 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add cunit-2.1.3-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del cunit"]
+]
+depends: [
+  "musl"
+]
+extra-source "cunit-2.1.3-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.18/main/x86_64/cunit-2.1.3-r6.apk"
+}

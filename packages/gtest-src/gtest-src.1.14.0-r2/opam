@@ -5,8 +5,6 @@ build: [
 remove: [
   ["sh" "-c" "sudo apk del gtest-src"]
 ]
-
-
 extra-source "gtest-src-1.14.0-r2.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/gtest-src-1.14.0-r2.apk"
 }

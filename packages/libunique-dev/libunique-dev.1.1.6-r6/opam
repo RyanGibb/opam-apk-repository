@@ -1,0 +1,15 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add libunique-dev-1.1.6-r6.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del libunique-dev"]
+]
+depends: [
+  "gtk+2.0-dev"
+  "libunique" {= "1.1.6-r6"}
+  "pkgconf"
+]
+extra-source "libunique-dev-1.1.6-r6.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libunique-dev-1.1.6-r6.apk"
+}

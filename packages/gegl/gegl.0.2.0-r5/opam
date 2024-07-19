@@ -1,0 +1,23 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gegl-0.2.0-r5.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gegl"]
+]
+depends: [
+  "babl"
+  "cairo"
+  "gdk-pixbuf"
+  "glib"
+  "jasper-libs"
+  "libintl"
+  "libjpeg-turbo"
+  "libpng"
+  "librsvg"
+  "musl"
+  "pango"
+]
+extra-source "gegl-0.2.0-r5.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/gegl-0.2.0-r5.apk"
+}

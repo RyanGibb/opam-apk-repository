@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add busybox-doc-1.35.0-r31.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del busybox-doc"]
+]
+extra-source "busybox-doc-1.35.0-r31.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/busybox-doc-1.35.0-r31.apk"
+}

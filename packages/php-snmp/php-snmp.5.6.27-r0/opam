@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add php-snmp-5.6.27-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del php-snmp"]
+]
+depends: [
+  "libcrypto1.0"
+  "musl"
+  "net-snmp-libs"
+  "php"
+  "php-cli"
+]
+extra-source "php-snmp-5.6.27-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/php-snmp-5.6.27-r0.apk"
+}

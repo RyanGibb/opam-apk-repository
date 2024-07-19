@@ -10,7 +10,6 @@ depends: [
   "mpg123-libs"
   "musl"
 ]
-
 extra-source "mpg123-1.32.6-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/mpg123-1.32.6-r0.apk"
 }

@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add aumix-2.9.1-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del aumix"]
+]
+depends: [
+  "musl"
+  "ncurses-libs"
+]
+extra-source "aumix-2.9.1-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.2/main/x86_64/aumix-2.9.1-r3.apk"
+}

@@ -1,0 +1,36 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add gst-plugins-base-1.18.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del gst-plugins-base"]
+]
+depends: [
+  "alsa-lib"
+  "cairo"
+  "cdparanoia-libs"
+  "glib"
+  "gstreamer"
+  "libintl"
+  "libogg"
+  "libpng"
+  "libtheora"
+  "libvorbis"
+  "libx11"
+  "libxcb"
+  "libxext"
+  "libxv"
+  "mesa-egl"
+  "mesa-gl"
+  "musl"
+  "opus"
+  "orc"
+  "pango"
+  "wayland-libs-client"
+  "wayland-libs-cursor"
+  "wayland-libs-egl"
+  "zlib"
+]
+extra-source "gst-plugins-base-1.18.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/gst-plugins-base-1.18.3-r0.apk"
+}

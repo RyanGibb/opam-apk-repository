@@ -1,0 +1,32 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add openldap-overlay-all-2.4.48-r1.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del openldap-overlay-all"]
+]
+depends: [
+  "openldap-overlay-accesslog"
+  "openldap-overlay-auditlog"
+  "openldap-overlay-collect"
+  "openldap-overlay-constraint"
+  "openldap-overlay-dds"
+  "openldap-overlay-deref"
+  "openldap-overlay-dyngroup"
+  "openldap-overlay-dynlist"
+  "openldap-overlay-memberof"
+  "openldap-overlay-ppolicy"
+  "openldap-overlay-proxycache"
+  "openldap-overlay-refint"
+  "openldap-overlay-retcode"
+  "openldap-overlay-rwm"
+  "openldap-overlay-seqmod"
+  "openldap-overlay-sssvlv"
+  "openldap-overlay-syncprov"
+  "openldap-overlay-translucent"
+  "openldap-overlay-unique"
+  "openldap-overlay-valsort"
+]
+extra-source "openldap-overlay-all-2.4.48-r1.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.8/main/x86_64/openldap-overlay-all-2.4.48-r1.apk"
+}

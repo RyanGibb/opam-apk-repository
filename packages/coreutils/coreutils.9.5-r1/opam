@@ -6,9 +6,9 @@ remove: [
   ["sh" "-c" "sudo apk del coreutils"]
 ]
 depends: [
-  "coreutils-env"
-  "coreutils-fmt"
-  "coreutils-sha512sum"
+  "coreutils-env" {= "9.5-r1"}
+  "coreutils-fmt" {= "9.5-r1"}
+  "coreutils-sha512sum" {= "9.5-r1"}
   "libacl"
   "libattr"
   "libcrypto3"
@@ -16,7 +16,6 @@ depends: [
   "utmps-libs"
   ("busybox-binsh" | "dash-binsh" | "yash-binsh")
 ]
-
 extra-source "coreutils-9.5-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/coreutils-9.5-r1.apk"
 }

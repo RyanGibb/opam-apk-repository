@@ -1,0 +1,17 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add clamav-scanner-0.100.3-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del clamav-scanner"]
+]
+depends: [
+  "clamav-libs"
+  "freshclam"
+  "libcrypto1.1"
+  "musl"
+  "zlib"
+]
+extra-source "clamav-scanner-0.100.3-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/clamav-scanner-0.100.3-r0.apk"
+}

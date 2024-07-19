@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add linux-lts-5.15.162-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del linux-lts"]
+]
+depends: [
+  "mkinitfs"
+  ("linux-firmware-atmel" | "linux-firmware" | "linux-firmware-libertas" | "linux-firmware-ath11k" | "linux-firmware-rtw89" | "linux-firmware-rockchip" | "linux-firmware-yam" | "linux-firmware-ti-connectivity" | "linux-firmware-advansys" | "linux-firmware-korg" | "linux-firmware-dpaa2" | "linux-firmware-adaptec" | "linux-firmware-ositech" | "linux-firmware-ath6k" | "linux-firmware-cis" | "linux-firmware-cpia2" | "linux-firmware-dsp56k" | "linux-firmware-cypress" | "linux-firmware-bnx2" | "linux-firmware-cnm" | "linux-firmware-sun" | "linux-firmware-brcm" | "linux-firmware-cxgb4" | "linux-firmware-cavium" | "linux-firmware-bnx2x" | "linux-firmware-mwl8k" | "linux-firmware-amphion" | "linux-firmware-yamaha" | "linux-firmware-wfx" | "linux-firmware-rtw88" | "linux-firmware-amdgpu" | "linux-firmware-inside-secure" | "linux-firmware-isci" | "linux-firmware-radeon" | "linux-firmware-emi62" | "linux-firmware-intel" | "linux-firmware-ti-keystone" | "linux-firmware-keyspan" | "linux-firmware-e100" | "linux-firmware-sxg" | "linux-firmware-liquidio" | "linux-firmware-rtlwifi" | "linux-firmware-av7110" | "linux-firmware-keyspan_pda" | "linux-firmware-rsi" | "linux-firmware-rtl_bt" | "linux-firmware-rtl_nic" | "linux-firmware-ess" | "linux-firmware-go7007" | "linux-firmware-dabusb" | "linux-firmware-mrvl" | "linux-firmware-myricom" | "linux-firmware-imx" | "linux-firmware-other" | "linux-firmware-meson" | "linux-firmware-cirrus" | "linux-firmware-edgeport" | "linux-firmware-rtl8192e" | "linux-firmware-vicam" | "linux-firmware-nxp" | "linux-firmware-nvidia" | "linux-firmware-qed" | "linux-firmware-qlogic" | "linux-firmware-cxgb3" | "linux-firmware-ene-ub6250" | "linux-firmware-amd" | "linux-firmware-mellanox" | "linux-firmware-ath10k" | "linux-firmware-ttusb-budget" | "linux-firmware-netronome" | "linux-firmware-amd-ucode" | "linux-firmware-tigon" | "linux-firmware-mwlwifi" | "linux-firmware-ar3k" | "linux-firmware-i915" | "linux-firmware-qca" | "linux-firmware-tehuti" | "linux-firmware-vxge" | "linux-firmware-qcom" | "linux-firmware-sb16" | "linux-firmware-microchip" | "linux-firmware-3com" | "linux-firmware-kaweth" | "linux-firmware-acenic" | "linux-firmware-slicoss" | "linux-firmware-r128" | "linux-firmware-moxa" | "linux-firmware-cadence" | "linux-firmware-mediatek" | "linux-firmware-ueagle-atm" | "linux-firmware-emi26" | "linux-firmware-none" | "linux-firmware-atusb" | "linux-firmware-ti" | "linux-firmware-ath9k_htc" | "linux-firmware-matrox")
+]
+extra-source "linux-lts-5.15.162-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/linux-lts-5.15.162-r0.apk"
+}

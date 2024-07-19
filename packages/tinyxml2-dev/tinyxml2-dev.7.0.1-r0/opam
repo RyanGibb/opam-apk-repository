@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add tinyxml2-dev-7.0.1-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del tinyxml2-dev"]
+]
+depends: [
+  "pkgconf"
+  "tinyxml2" {= "7.0.1-r0"}
+]
+extra-source "tinyxml2-dev-7.0.1-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/tinyxml2-dev-7.0.1-r0.apk"
+}

@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add curl-dev-7.79.1-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del curl-dev"]
+]
+depends: [
+  "brotli-dev"
+  "libcurl" {= "7.79.1-r3"}
+  "nghttp2-dev"
+  "openssl-dev"
+  "pkgconf"
+  "zlib-dev"
+]
+extra-source "curl-dev-7.79.1-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.13/main/x86_64/curl-dev-7.79.1-r3.apk"
+}

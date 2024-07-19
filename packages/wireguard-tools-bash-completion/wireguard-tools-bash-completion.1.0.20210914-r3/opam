@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add wireguard-tools-bash-completion-1.0.20210914-r3.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del wireguard-tools-bash-completion"]
+]
+extra-source "wireguard-tools-bash-completion-1.0.20210914-r3.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.19/main/x86_64/wireguard-tools-bash-completion-1.0.20210914-r3.apk"
+}

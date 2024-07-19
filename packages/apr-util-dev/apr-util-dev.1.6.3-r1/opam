@@ -7,17 +7,16 @@ remove: [
 ]
 depends: [
   "apr-dev"
-  "apr-util"
+  "apr-util" {= "1.6.3-r1"}
   "expat-dev"
   "gdbm-dev"
   "libpq-dev"
   "mariadb-dev"
   "openldap-dev"
-  "openssl-dev"
+  "openssl-dev" {> "3"}
   "pkgconf"
   "sqlite-dev"
 ]
-
 extra-source "apr-util-dev-1.6.3-r1.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/apr-util-dev-1.6.3-r1.apk"
 }

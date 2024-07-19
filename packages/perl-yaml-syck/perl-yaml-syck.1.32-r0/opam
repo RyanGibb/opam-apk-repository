@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add perl-yaml-syck-1.32-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del perl-yaml-syck"]
+]
+depends: [
+  "musl"
+  "perl"
+]
+extra-source "perl-yaml-syck-1.32-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.12/main/x86_64/perl-yaml-syck-1.32-r0.apk"
+}

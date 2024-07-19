@@ -1,0 +1,14 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add pixman-dev-0.40.0-r4.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del pixman-dev"]
+]
+depends: [
+  "pixman" {= "0.40.0-r4"}
+  "pkgconf"
+]
+extra-source "pixman-dev-0.40.0-r4.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.16/main/x86_64/pixman-dev-0.40.0-r4.apk"
+}

@@ -6,9 +6,8 @@ remove: [
   ["sh" "-c" "sudo apk del git-fast-import"]
 ]
 depends: [
-  "git"
+  "git" {= "2.45.2-r0"}
 ]
-
 extra-source "git-fast-import-2.45.2-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/git-fast-import-2.45.2-r0.apk"
 }

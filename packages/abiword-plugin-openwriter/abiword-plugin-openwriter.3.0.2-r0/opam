@@ -1,0 +1,18 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add abiword-plugin-openwriter-3.0.2-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del abiword-plugin-openwriter"]
+]
+depends: [
+  "abiword"
+  "glib"
+  "libgcc"
+  "libgsf"
+  "libstdc++"
+  "musl"
+]
+extra-source "abiword-plugin-openwriter-3.0.2-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.6/main/x86_64/abiword-plugin-openwriter-3.0.2-r0.apk"
+}

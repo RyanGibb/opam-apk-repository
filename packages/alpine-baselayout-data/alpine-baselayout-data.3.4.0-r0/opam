@@ -1,0 +1,10 @@
+opam-version: "2.0"
+build: [
+  ["sh" "-c" "sudo apk add alpine-baselayout-data-3.4.0-r0.apk"]
+]
+remove: [
+  ["sh" "-c" "sudo apk del alpine-baselayout-data"]
+]
+extra-source "alpine-baselayout-data-3.4.0-r0.apk" {
+  src: "https://dl-cdn.alpinelinux.org/alpine/v3.17/main/x86_64/alpine-baselayout-data-3.4.0-r0.apk"
+}

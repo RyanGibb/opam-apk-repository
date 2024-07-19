@@ -8,12 +8,11 @@ remove: [
 depends: [
   "cyrus-sasl-dev"
   "libevent-dev"
-  "libldap"
+  "libldap" {= "2.6.7-r0"}
   "libsodium-dev"
   "pkgconf"
   "util-linux-dev"
 ]
-
 extra-source "openldap-dev-2.6.7-r0.apk" {
   src: "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/openldap-dev-2.6.7-r0.apk"
 }
